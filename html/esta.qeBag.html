@@ -1,0 +1,2407 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>esta.qeBag package &mdash; EStA 2.8.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link href="_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> EStA
+            <img src="_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.8.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file3.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file3.html#ml-algorithms">ML algorithms</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="file3a.html">Cheat Sheet</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">EStA</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>esta.qeBag package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/esta.qeBag.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="esta-qebag-package">
+<h1>esta.qeBag package<a class="headerlink" href="#esta-qebag-package" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-esta.qeBag.23">
+<span id="esta-qebag-23-module"></span><h2>esta.qeBag.23 module<a class="headerlink" href="#module-esta.qeBag.23" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-esta.qeBag.bands_kpts_band_gap">
+<span id="esta-qebag-bands-kpts-band-gap-module"></span><h2>esta.qeBag.bands_kpts_band_gap module<a class="headerlink" href="#module-esta.qeBag.bands_kpts_band_gap" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.bands_kpts_band_gap.energies_kpts">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.bands_kpts_band_gap.</span></span><span class="sig-name descname"><span class="pre">energies_kpts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.bands_kpts_band_gap.energies_kpts" title="Permalink to this definition"></a></dt>
+<dd><p>finding:
+-nbands, band-energies
+-nkpts, kpt-coordinate
+-band gap for spin up channel
+-band gap for spin down channel
+-band gap between valence band(of spin up/down) and cond. band (spin up/down)
+for unpolarised/polarised qe scf.out file</p>
+<p>NOTE: use verbosity = ‘high’  to print the band energies</p>
+<dl class="simple">
+<dt>input:</dt><dd><p>name of scf.out file with verbosity high to be used in qe pw.x
+calculation</p>
+</dd>
+</dl>
+<p>output: see above</p>
+<dl>
+<dt>internal variables:</dt><dd><blockquote>
+<div><p>lspin
+lfermi
+nelec
+nband
+efermi
+energies
+occupations</p>
+<p>print(‘no of bands: {}, no of kpts: {}, Fermi level: {}’.format(nband, nkpt, efermi))
+print(‘no of elctrons: {}’.format(nelec))</p>
+<p>energies = np.zeros((nkpt, nband, 2)) # 2 for spin polarised calc
+occupations = np.zeros_like(energies)</p>
+<p>coord_kpts =[]</p>
+<dl class="simple">
+<dt>if lspin:</dt><dd><p>return energies, coord_kpts, band_gap_up, band_gap_down, band_gap, lspin, occupations</p>
+</dd>
+<dt>else:</dt><dd><p>return energies, coord_kpts, band_gap_up, None, None, lspin, occupations</p>
+</dd>
+</dl>
+</div></blockquote>
+<dl>
+<dt>====++++++++++++++++============================================================</dt><dd><p>MORE to do for fermi energy:</p>
+<blockquote>
+<div><p>see qexml.f90 in Modules of qe6.2 version:
+lines:  4152,42       89%</p>
+</div></blockquote>
+</dd>
+<dt>IF ( <a href="#id49"><span class="problematic" id="id50">two_fermi_energies_</span></a> ) THEN  ! sk<span class="classifier">fermi energies up down or up/down e eneties.. so on</span></dt><dd><blockquote>
+<div><p>!
+CALL iotk_scan_dat( iunit, “FERMI_ENERGY_UP”, <a href="#id51"><span class="problematic" id="id52">ef_up_</span></a>, IERR=ierr )
+IF (ierr/=0) RETURN
+CALL iotk_scan_dat( iunit, “FERMI_ENERGY_DOWN”, <a href="#id53"><span class="problematic" id="id54">ef_dw_</span></a>, IERR=ierr )
+IF (ierr/=0) RETURN
+CALL iotk_scan_dat( iunit, “ELECTRONS_UP”, <a href="#id55"><span class="problematic" id="id56">nel_up_</span></a>, IERR=ierr )
+IF (ierr/=0) RETURN
+CALL iotk_scan_dat( iunit, “ELECTRONS_DOWN”, <a href="#id57"><span class="problematic" id="id58">nel_down_</span></a>, IERR=ierr )
+IF (ierr/=0) RETURN
+!</p>
+</div></blockquote>
+<dl class="simple">
+<dt>ELSE</dt><dd><p>!
+CALL iotk_scan_dat  ( iunit, “FERMI_ENERGY”, <a href="#id59"><span class="problematic" id="id60">ef_</span></a> , FOUND=found )
+IF (ierr/=0) RETURN</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>=====++++++++++++++++++++++++=====================================================</p>
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.bands_kpts_band_gap0">
+<span id="esta-qebag-bands-kpts-band-gap0-module"></span><h2>esta.qeBag.bands_kpts_band_gap0 module<a class="headerlink" href="#module-esta.qeBag.bands_kpts_band_gap0" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.bands_kpts_band_gap0.energies_kpts">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.bands_kpts_band_gap0.</span></span><span class="sig-name descname"><span class="pre">energies_kpts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.bands_kpts_band_gap0.energies_kpts" title="Permalink to this definition"></a></dt>
+<dd><p>finding:
+-nbands, band-energies
+-nkpts, kpt-coordinate
+-band gap for spin up channel
+-band gap for spin down channel
+-band gap between valence band(of spin up/down) and cond. band (spin up/down)
+for unpolarised/polarised qe scf.out file</p>
+<p>NOTE: use verbosity = ‘high’  to print the band energies</p>
+<dl class="simple">
+<dt>input:</dt><dd><p>name of scf.out file with verbosity high to be used in qe pw.x
+calculation</p>
+</dd>
+</dl>
+<p>output: see above</p>
+<dl>
+<dt>internal variables:</dt><dd><blockquote>
+<div><p>lspin
+lfermi
+nelec
+nband
+efermi
+energies
+occupations</p>
+<p>print(‘no of bands: {}, no of kpts: {}, Fermi level: {}’.format(nband, nkpt, efermi))
+print(‘no of elctrons: {}’.format(nelec))</p>
+<p>energies = np.zeros((nkpt, nband, 2)) # 2 for spin polarised calc
+occupations = np.zeros_like(energies)</p>
+<p>coord_kpts =[]</p>
+<dl class="simple">
+<dt>if lspin:</dt><dd><p>return energies, coord_kpts, band_gap_up, band_gap_down, band_gap, lspin, occupations</p>
+</dd>
+<dt>else:</dt><dd><p>return energies, coord_kpts, band_gap_up, None, None, lspin, occupations</p>
+</dd>
+</dl>
+</div></blockquote>
+<dl>
+<dt>====++++++++++++++++============================================================</dt><dd><p>MORE to do for fermi energy:</p>
+<blockquote>
+<div><p>see qexml.f90 in Modules of qe6.2 version:
+lines:  4152,42       89%</p>
+</div></blockquote>
+</dd>
+<dt>IF ( <a href="#id61"><span class="problematic" id="id62">two_fermi_energies_</span></a> ) THEN  ! sk<span class="classifier">fermi energies up down or up/down e eneties.. so on</span></dt><dd><blockquote>
+<div><p>!
+CALL iotk_scan_dat( iunit, “FERMI_ENERGY_UP”, <a href="#id63"><span class="problematic" id="id64">ef_up_</span></a>, IERR=ierr )
+IF (ierr/=0) RETURN
+CALL iotk_scan_dat( iunit, “FERMI_ENERGY_DOWN”, <a href="#id65"><span class="problematic" id="id66">ef_dw_</span></a>, IERR=ierr )
+IF (ierr/=0) RETURN
+CALL iotk_scan_dat( iunit, “ELECTRONS_UP”, <a href="#id67"><span class="problematic" id="id68">nel_up_</span></a>, IERR=ierr )
+IF (ierr/=0) RETURN
+CALL iotk_scan_dat( iunit, “ELECTRONS_DOWN”, <a href="#id69"><span class="problematic" id="id70">nel_down_</span></a>, IERR=ierr )
+IF (ierr/=0) RETURN
+!</p>
+</div></blockquote>
+<dl class="simple">
+<dt>ELSE</dt><dd><p>!
+CALL iotk_scan_dat  ( iunit, “FERMI_ENERGY”, <a href="#id71"><span class="problematic" id="id72">ef_</span></a> , FOUND=found )
+IF (ierr/=0) RETURN</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>=====++++++++++++++++++++++++=====================================================</p>
+</dd></dl>
+
+</section>
+<section id="esta-qebag-gen-qeinput-copy1-module">
+<h2>esta.qeBag.gen_qeinput-Copy1 module<a class="headerlink" href="#esta-qebag-gen-qeinput-copy1-module" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-esta.qeBag.gen_qeinput">
+<span id="esta-qebag-gen-qeinput-module"></span><h2>esta.qeBag.gen_qeinput module<a class="headerlink" href="#module-esta.qeBag.gen_qeinput" title="Permalink to this headline"></a></h2>
+<p>generate qe input file using poscar and other input parameters</p>
+<dl>
+<dt>Input:</dt><dd><p>string, poscar filename
+string, pseudo-type info; e.g:</p>
+<blockquote>
+<div><p>ps_info =’.pbe-<em>kjpaw</em>’ or .pbe-<em>rrkjus_</em> for uspp</p>
+</div></blockquote>
+<dl class="simple">
+<dt>string (optional), cell vectors in angstrom or bohr; default is angstrom</dt><dd><p>set it to bohr for veiwing the qe input file in xcrysden (version:1.5.53)</p>
+</dd>
+</dl>
+</dd>
+<dt>output:</dt><dd><p>qe input file</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ol class="arabic simple" start="0">
+<li><p>Right now only for PBE functional .. can be used for other functionals</p></li>
+<li><p>NEEDED pseudo-potential directory; default is in ~ with
+location = ‘/home/sonu/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/’</p></li>
+</ol>
+</div>
+<dl class="simple">
+<dt>date: Jan, March 2020</dt><dd><p>Jan, 2021</p>
+</dd>
+</dl>
+<p>author: sk, <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput.delete_pseudo_pot">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput.</span></span><span class="sig-name descname"><span class="pre">delete_pseudo_pot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pseudo_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lremove_pseudo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput.delete_pseudo_pot" title="Permalink to this definition"></a></dt>
+<dd><p>remove the <a href="#id1"><span class="problematic" id="id2">*</span></a>UPF files in the current directory if not required</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput.get_N1_N2_N3_in_MP_grid">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput.</span></span><span class="sig-name descname"><span class="pre">get_N1_N2_N3_in_MP_grid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">posfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l_metal_insulator</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput.get_N1_N2_N3_in_MP_grid" title="Permalink to this definition"></a></dt>
+<dd><p>For auto-matic k-grid(taken from vasp manual):</p>
+<p>N 1 = max(1, l ∗ | b 1 | + 0.5)
+N 2 = max(1, l ∗ | b 2 | + 0.5)
+N 3 = max(1, l ∗ | b 3 | + 0.5).
+Symmetry is used to map equivalent k-points to each other,
+which can reduce the total number of k-points significantly.
+Usefulvalues for the length (l) vary between 10 (large gap insulators)
+and 100 (d-metals).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If length of lv1, lv2, lv3 &gt; 2; then taken N1/N2/N3 = 1, acoordingly</p>
+</div>
+<p>NOTE: need testing of this method/functions????????</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput.get_input_parameters">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput.</span></span><span class="sig-name descname"><span class="pre">get_input_parameters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cal_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput.get_input_parameters" title="Permalink to this definition"></a></dt>
+<dd><p>read input parameters provided by the user for different calculation types,
+such as scf, relax or vc-relax</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput.get_parameters_pseudo">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput.</span></span><span class="sig-name descname"><span class="pre">get_parameters_pseudo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">loc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ps_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atmsymbol</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lcopy_pseudo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput.get_parameters_pseudo" title="Permalink to this definition"></a></dt>
+<dd><p>find
+- the min kinetic energy cutoff
+- the min charge density cutoff by the reading the PP header files</p>
+<dl class="simple">
+<dt>input:</dt><dd><p>string: loc: location of PP files
+string: ps_info: PP information
+list: atmsymbols: atomic labels
+boolen: lcopy_pseudo: whether to copy PP to current dir from PP database</p>
+</dd>
+<dt>output:</dt><dd><p>scalar: min kinetic enrgy cutoff
+scalar: min charge density cutoff</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput.get_qe_input">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput.</span></span><span class="sig-name descname"><span class="pre">get_qe_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">posfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ps_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lprint_cell</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'angstrom'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lremove_pseudo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cal_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lspin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput.get_qe_input" title="Permalink to this definition"></a></dt>
+<dd><p>generate qe input file using poscar and other input parameters</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput.max_scalarlist">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput.</span></span><span class="sig-name descname"><span class="pre">max_scalarlist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput.max_scalarlist" title="Permalink to this definition"></a></dt>
+<dd><p>return the max element from scalar elements of a list</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput.min_scalarlist">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput.</span></span><span class="sig-name descname"><span class="pre">min_scalarlist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput.min_scalarlist" title="Permalink to this definition"></a></dt>
+<dd><p>return the minimum element from scalar elements of a list</p>
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.gen_qeinput0">
+<span id="esta-qebag-gen-qeinput0-module"></span><h2>esta.qeBag.gen_qeinput0 module<a class="headerlink" href="#module-esta.qeBag.gen_qeinput0" title="Permalink to this headline"></a></h2>
+<p>generate qe input file using poscar and other input parameters</p>
+<dl>
+<dt>Input:</dt><dd><p>string, poscar filename
+string, pseudo-type info; e.g:</p>
+<blockquote>
+<div><p>ps_info =’.pbe-<em>kjpaw</em>’ or .pbe-<em>rrkjus_</em> for uspp</p>
+</div></blockquote>
+<dl class="simple">
+<dt>string (optional), cell vectors in angstrom or bohr; default is angstrom</dt><dd><p>set it to bohr for veiwing the qe input file in xcrysden (version:1.5.53)</p>
+</dd>
+</dl>
+</dd>
+<dt>output:</dt><dd><p>qe input file</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ol class="arabic simple">
+<li><p>NEEDED pseudo-potential directory; default is in ~ with
+location = ‘/home/sonu/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/’</p></li>
+<li><dl class="simple">
+<dt>also copy the pseudo pots mentioned in the created input file to</dt><dd><p>its location</p>
+</dd>
+</dl>
+</li>
+<li><p>add automatic k-grid option ..easy to do</p></li>
+</ol>
+</div>
+<p>date: Jan, March 2020
+author: sk, <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput0.get_qe_input">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput0.</span></span><span class="sig-name descname"><span class="pre">get_qe_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">posfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ps_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lprint_cell</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'angstrom'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput0.get_qe_input" title="Permalink to this definition"></a></dt>
+<dd><p>generate qe input file using poscar and other input parameters</p>
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.gen_qeinput1">
+<span id="esta-qebag-gen-qeinput1-module"></span><h2>esta.qeBag.gen_qeinput1 module<a class="headerlink" href="#module-esta.qeBag.gen_qeinput1" title="Permalink to this headline"></a></h2>
+<p>generate qe input file using poscar and other input parameters</p>
+<dl>
+<dt>Input:</dt><dd><p>string, poscar filename
+string, pseudo-type info; e.g:</p>
+<blockquote>
+<div><p>ps_info =’.pbe-<em>kjpaw</em>’ or .pbe-<em>rrkjus_</em> for uspp</p>
+</div></blockquote>
+<dl class="simple">
+<dt>string (optional), cell vectors in angstrom or bohr; default is angstrom</dt><dd><p>set it to bohr for veiwing the qe input file in xcrysden (version:1.5.53)</p>
+</dd>
+</dl>
+</dd>
+<dt>output:</dt><dd><p>qe input file</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ol class="arabic simple" start="0">
+<li><p>Right now only for PBE functional .. can be used for other functionals</p></li>
+<li><p>NEEDED pseudo-potential directory; default is in ~ with
+location = ‘/home/sonu/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/’</p></li>
+<li><dl class="simple">
+<dt>also copy the pseudo pots mentioned in the created input file to</dt><dd><p>its location</p>
+</dd>
+</dl>
+</li>
+</ol>
+</div>
+<p>date: Jan, March 2020
+author: sk, <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput1.delete_pseudo_pot">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput1.</span></span><span class="sig-name descname"><span class="pre">delete_pseudo_pot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pseudo_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lremove_pseudo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput1.delete_pseudo_pot" title="Permalink to this definition"></a></dt>
+<dd><p>remove the <a href="#id3"><span class="problematic" id="id4">*</span></a>UPF files in the current directory if not required</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput1.get_N1_N2_N3_in_MP_grid">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput1.</span></span><span class="sig-name descname"><span class="pre">get_N1_N2_N3_in_MP_grid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l_metal_insulator</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput1.get_N1_N2_N3_in_MP_grid" title="Permalink to this definition"></a></dt>
+<dd><p>For auto-matic k-grid(taken from vasp manual):</p>
+<p>N 1 = max(1, l ∗ | b 1 | + 0.5)
+N 2 = max(1, l ∗ | b 2 | + 0.5)
+N 3 = max(1, l ∗ | b 3 | + 0.5).
+Symmetry is used to map equivalent k-points to each other,
+which can reduce the total number of k-points significantly.
+Usefulvalues for the length (l) vary between 10 (large gap insulators)
+and 100 (d-metals).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If length of lv1, lv2, lv3 &gt; 2; then taken N1/N2/N3 = 1, acoordingly</p>
+</div>
+<p>NOTE: need testing of this method/functions????????</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput1.get_cutoff_wfc_rho">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput1.</span></span><span class="sig-name descname"><span class="pre">get_cutoff_wfc_rho</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">loc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ps_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atmsymbol</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lcopy_pseudo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput1.get_cutoff_wfc_rho" title="Permalink to this definition"></a></dt>
+<dd><p>find
+- the min kinetic energy cutoff
+- the min charge density cutoff by the reading the PP header files</p>
+<dl class="simple">
+<dt>input:</dt><dd><p>string: loc: location of PP files
+string: ps_info: PP information
+list: atmsymbols: atomic labels
+boolen: lcopy_pseudo: whether to copy PP to current dir from PP database</p>
+</dd>
+<dt>output:</dt><dd><p>scalar: min kinetic enrgy cutoff
+scalar: min charge density cutoff</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput1.get_qe_input">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput1.</span></span><span class="sig-name descname"><span class="pre">get_qe_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">posfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ps_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lprint_cell</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'angstrom'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lremove_pseudo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput1.get_qe_input" title="Permalink to this definition"></a></dt>
+<dd><p>generate qe input file using poscar and other input parameters</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput1.max_scalarlist">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput1.</span></span><span class="sig-name descname"><span class="pre">max_scalarlist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput1.max_scalarlist" title="Permalink to this definition"></a></dt>
+<dd><p>return the max element from scalar elements of a list</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput1.min_scalarlist">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput1.</span></span><span class="sig-name descname"><span class="pre">min_scalarlist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput1.min_scalarlist" title="Permalink to this definition"></a></dt>
+<dd><p>return the minimum element from scalar elements of a list</p>
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.gen_qeinput2">
+<span id="esta-qebag-gen-qeinput2-module"></span><h2>esta.qeBag.gen_qeinput2 module<a class="headerlink" href="#module-esta.qeBag.gen_qeinput2" title="Permalink to this headline"></a></h2>
+<p>generate qe input file using poscar and other input parameters</p>
+<dl>
+<dt>Input:</dt><dd><p>string, poscar filename
+string, pseudo-type info; e.g:</p>
+<blockquote>
+<div><p>ps_info =’.pbe-<em>kjpaw</em>’ or .pbe-<em>rrkjus_</em> for uspp</p>
+</div></blockquote>
+<dl class="simple">
+<dt>string (optional), cell vectors in angstrom or bohr; default is angstrom</dt><dd><p>set it to bohr for veiwing the qe input file in xcrysden (version:1.5.53)</p>
+</dd>
+</dl>
+</dd>
+<dt>output:</dt><dd><p>qe input file</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ol class="arabic simple" start="0">
+<li><p>Right now only for PBE functional .. can be used for other functionals</p></li>
+<li><p>NEEDED pseudo-potential directory; default is in ~ with
+location = ‘/home/sonu/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/’</p></li>
+<li><dl class="simple">
+<dt>also copy the pseudo pots mentioned in the created input file to</dt><dd><p>its location .. done</p>
+</dd>
+</dl>
+</li>
+</ol>
+</div>
+<p>date: Jan, March 2020
+author: sk, <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput2.delete_pseudo_pot">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput2.</span></span><span class="sig-name descname"><span class="pre">delete_pseudo_pot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pseudo_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lremove_pseudo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput2.delete_pseudo_pot" title="Permalink to this definition"></a></dt>
+<dd><p>remove the <a href="#id5"><span class="problematic" id="id6">*</span></a>UPF files in the current directory if not required</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput2.get_N1_N2_N3_in_MP_grid">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput2.</span></span><span class="sig-name descname"><span class="pre">get_N1_N2_N3_in_MP_grid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">l_metal_insulator</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput2.get_N1_N2_N3_in_MP_grid" title="Permalink to this definition"></a></dt>
+<dd><p>For auto-matic k-grid(taken from vasp manual):</p>
+<p>N 1 = max(1, l ∗ | b 1 | + 0.5)
+N 2 = max(1, l ∗ | b 2 | + 0.5)
+N 3 = max(1, l ∗ | b 3 | + 0.5).
+Symmetry is used to map equivalent k-points to each other,
+which can reduce the total number of k-points significantly.
+Usefulvalues for the length (l) vary between 10 (large gap insulators)
+and 100 (d-metals).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If length of lv1, lv2, lv3 &gt; 2; then taken N1/N2/N3 = 1, acoordingly</p>
+</div>
+<p>NOTE: need testing of this method/functions????????</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput2.get_cutoff_wfc_rho">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput2.</span></span><span class="sig-name descname"><span class="pre">get_cutoff_wfc_rho</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">loc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ps_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atmsymbol</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lcopy_pseudo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput2.get_cutoff_wfc_rho" title="Permalink to this definition"></a></dt>
+<dd><p>find
+- the min kinetic energy cutoff
+- the min charge density cutoff by the reading the PP header files</p>
+<dl class="simple">
+<dt>input:</dt><dd><p>string: loc: location of PP files
+string: ps_info: PP information
+list: atmsymbols: atomic labels
+boolen: lcopy_pseudo: whether to copy PP to current dir from PP database</p>
+</dd>
+<dt>output:</dt><dd><p>scalar: min kinetic enrgy cutoff
+scalar: min charge density cutoff</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput2.get_qe_input">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput2.</span></span><span class="sig-name descname"><span class="pre">get_qe_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">posfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ps_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lprint_cell</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'angstrom'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lremove_pseudo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput2.get_qe_input" title="Permalink to this definition"></a></dt>
+<dd><p>generate qe input file using poscar and other input parameters</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput2.max_scalarlist">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput2.</span></span><span class="sig-name descname"><span class="pre">max_scalarlist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput2.max_scalarlist" title="Permalink to this definition"></a></dt>
+<dd><p>return the max element from scalar elements of a list</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput2.min_scalarlist">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput2.</span></span><span class="sig-name descname"><span class="pre">min_scalarlist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput2.min_scalarlist" title="Permalink to this definition"></a></dt>
+<dd><p>return the minimum element from scalar elements of a list</p>
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.gen_qeinput_adv">
+<span id="esta-qebag-gen-qeinput-adv-module"></span><h2>esta.qeBag.gen_qeinput_adv module<a class="headerlink" href="#module-esta.qeBag.gen_qeinput_adv" title="Permalink to this headline"></a></h2>
+<p>generate qe input file using poscar and other input parameters</p>
+<dl>
+<dt>Input:</dt><dd><p>string, poscar filename
+string, pseudo-type info; e.g:</p>
+<blockquote>
+<div><p>ps_info =’.pbe-<em>kjpaw</em>’ or .pbe-<em>rrkjus_</em> for uspp</p>
+</div></blockquote>
+<dl class="simple">
+<dt>string (optional), cell vectors in angstrom or bohr; default is angstrom</dt><dd><p>set it to bohr for veiwing the qe input file in xcrysden (version:1.5.53)</p>
+</dd>
+</dl>
+</dd>
+<dt>output:</dt><dd><p>qe input file</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ol class="arabic simple" start="0">
+<li><p>Right now only for PBE functional .. can be used for other functionals</p></li>
+<li><p>NEEDED pseudo-potential directory; default is in ~ with
+location = ‘/home/sonu/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/’</p></li>
+</ol>
+</div>
+<dl class="simple">
+<dt>date: Jan, March 2020</dt><dd><p>Jan, 2021</p>
+</dd>
+</dl>
+<p>author: sk, <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput_adv.delete_pseudo_pot">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput_adv.</span></span><span class="sig-name descname"><span class="pre">delete_pseudo_pot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pseudo_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lremove_pseudo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput_adv.delete_pseudo_pot" title="Permalink to this definition"></a></dt>
+<dd><p>remove the <a href="#id7"><span class="problematic" id="id8">*</span></a>UPF files in the current directory if not required</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput_adv.get_N1_N2_N3_in_MP_grid">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput_adv.</span></span><span class="sig-name descname"><span class="pre">get_N1_N2_N3_in_MP_grid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">posfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l_metal_insulator</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput_adv.get_N1_N2_N3_in_MP_grid" title="Permalink to this definition"></a></dt>
+<dd><p>For auto-matic k-grid(taken from vasp manual):</p>
+<p>N 1 = max(1, l ∗ | b 1 | + 0.5)
+N 2 = max(1, l ∗ | b 2 | + 0.5)
+N 3 = max(1, l ∗ | b 3 | + 0.5).
+Symmetry is used to map equivalent k-points to each other,
+which can reduce the total number of k-points significantly.
+Usefulvalues for the length (l) vary between 10 (large gap insulators)
+and 100 (d-metals).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If length of lv1, lv2, lv3 &gt; 2; then taken N1/N2/N3 = 1, acoordingly</p>
+</div>
+<p>NOTE: need testing of this method/functions????????</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput_adv.get_input_parameters">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput_adv.</span></span><span class="sig-name descname"><span class="pre">get_input_parameters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cal_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput_adv.get_input_parameters" title="Permalink to this definition"></a></dt>
+<dd><p>read input parameters provided by the user for different calculation types,
+such as scf, relax or vc-relax</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput_adv.get_parameters_pseudo">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput_adv.</span></span><span class="sig-name descname"><span class="pre">get_parameters_pseudo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">loc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ps_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atmsymbol</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lcopy_pseudo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput_adv.get_parameters_pseudo" title="Permalink to this definition"></a></dt>
+<dd><p>find
+- the min kinetic energy cutoff
+- the min charge density cutoff by the reading the PP header files</p>
+<dl class="simple">
+<dt>input:</dt><dd><p>string: loc: location of PP files
+string: ps_info: PP information –&gt; changed to functional_name
+list: atmsymbols: atomic labels
+boolen: lcopy_pseudo: whether to copy PP to current dir from PP database</p>
+</dd>
+<dt>output:</dt><dd><p>scalar: min kinetic enrgy cutoff
+scalar: min charge density cutoff</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput_adv.get_qe_input">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput_adv.</span></span><span class="sig-name descname"><span class="pre">get_qe_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">posfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ps_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lprint_cell</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'angstrom'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lremove_pseudo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cal_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lspin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput_adv.get_qe_input" title="Permalink to this definition"></a></dt>
+<dd><p>generate qe input file using poscar and other input parameters</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput_adv.max_scalarlist">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput_adv.</span></span><span class="sig-name descname"><span class="pre">max_scalarlist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput_adv.max_scalarlist" title="Permalink to this definition"></a></dt>
+<dd><p>return the max element from scalar elements of a list</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput_adv.min_scalarlist">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput_adv.</span></span><span class="sig-name descname"><span class="pre">min_scalarlist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput_adv.min_scalarlist" title="Permalink to this definition"></a></dt>
+<dd><p>return the minimum element from scalar elements of a list</p>
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.gen_qeinput_adv0">
+<span id="esta-qebag-gen-qeinput-adv0-module"></span><h2>esta.qeBag.gen_qeinput_adv0 module<a class="headerlink" href="#module-esta.qeBag.gen_qeinput_adv0" title="Permalink to this headline"></a></h2>
+<p>generate qe input file using poscar and other input parameters</p>
+<dl>
+<dt>Input:</dt><dd><p>string, poscar filename
+string, pseudo-type info; e.g:</p>
+<blockquote>
+<div><p>ps_info =’.pbe-<em>kjpaw</em>’ or .pbe-<em>rrkjus_</em> for uspp</p>
+</div></blockquote>
+<dl class="simple">
+<dt>string (optional), cell vectors in angstrom or bohr; default is angstrom</dt><dd><p>set it to bohr for veiwing the qe input file in xcrysden (version:1.5.53)</p>
+</dd>
+</dl>
+</dd>
+<dt>output:</dt><dd><p>qe input file</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ol class="arabic simple" start="0">
+<li><p>Right now only for PBE functional .. can be used for other functionals</p></li>
+<li><p>NEEDED pseudo-potential directory; default is in ~ with
+location = ‘/home/sonu/pslibrary.1.0.0/pbe/PSEUDOPOTENTIALS/’</p></li>
+</ol>
+</div>
+<dl class="simple">
+<dt>date: Jan, March 2020</dt><dd><p>Jan, 2021</p>
+</dd>
+</dl>
+<p>author: sk, <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput_adv0.delete_pseudo_pot">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput_adv0.</span></span><span class="sig-name descname"><span class="pre">delete_pseudo_pot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pseudo_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lremove_pseudo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput_adv0.delete_pseudo_pot" title="Permalink to this definition"></a></dt>
+<dd><p>remove the <a href="#id9"><span class="problematic" id="id10">*</span></a>UPF files in the current directory if not required</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput_adv0.get_N1_N2_N3_in_MP_grid">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput_adv0.</span></span><span class="sig-name descname"><span class="pre">get_N1_N2_N3_in_MP_grid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">posfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l_metal_insulator</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput_adv0.get_N1_N2_N3_in_MP_grid" title="Permalink to this definition"></a></dt>
+<dd><p>For auto-matic k-grid(taken from vasp manual):</p>
+<p>N 1 = max(1, l ∗ | b 1 | + 0.5)
+N 2 = max(1, l ∗ | b 2 | + 0.5)
+N 3 = max(1, l ∗ | b 3 | + 0.5).
+Symmetry is used to map equivalent k-points to each other,
+which can reduce the total number of k-points significantly.
+Usefulvalues for the length (l) vary between 10 (large gap insulators)
+and 100 (d-metals).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If length of lv1, lv2, lv3 &gt; 2; then taken N1/N2/N3 = 1, acoordingly</p>
+</div>
+<p>NOTE: need testing of this method/functions????????</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput_adv0.get_input_parameters">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput_adv0.</span></span><span class="sig-name descname"><span class="pre">get_input_parameters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cal_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput_adv0.get_input_parameters" title="Permalink to this definition"></a></dt>
+<dd><p>read input parameters provided by the user for different calculation types,
+such as scf, relax or vc-relax</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput_adv0.get_parameters_pseudo">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput_adv0.</span></span><span class="sig-name descname"><span class="pre">get_parameters_pseudo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">loc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ps_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atmsymbol</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lcopy_pseudo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput_adv0.get_parameters_pseudo" title="Permalink to this definition"></a></dt>
+<dd><p>find
+- the min kinetic energy cutoff
+- the min charge density cutoff by the reading the PP header files</p>
+<dl class="simple">
+<dt>input:</dt><dd><p>string: loc: location of PP files
+string: ps_info: PP information –&gt; changed to functional_name
+list: atmsymbols: atomic labels
+boolen: lcopy_pseudo: whether to copy PP to current dir from PP database</p>
+</dd>
+<dt>output:</dt><dd><p>scalar: min kinetic enrgy cutoff
+scalar: min charge density cutoff</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput_adv0.get_qe_input">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput_adv0.</span></span><span class="sig-name descname"><span class="pre">get_qe_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">posfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ps_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lprint_cell</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'angstrom'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lremove_pseudo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cal_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lspin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput_adv0.get_qe_input" title="Permalink to this definition"></a></dt>
+<dd><p>generate qe input file using poscar and other input parameters</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput_adv0.max_scalarlist">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput_adv0.</span></span><span class="sig-name descname"><span class="pre">max_scalarlist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput_adv0.max_scalarlist" title="Permalink to this definition"></a></dt>
+<dd><p>return the max element from scalar elements of a list</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.gen_qeinput_adv0.min_scalarlist">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.gen_qeinput_adv0.</span></span><span class="sig-name descname"><span class="pre">min_scalarlist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.gen_qeinput_adv0.min_scalarlist" title="Permalink to this definition"></a></dt>
+<dd><p>return the minimum element from scalar elements of a list</p>
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.get_bands_kpts_band_gap_adv3">
+<span id="esta-qebag-get-bands-kpts-band-gap-adv3-module"></span><h2>esta.qeBag.get_bands_kpts_band_gap_adv3 module<a class="headerlink" href="#module-esta.qeBag.get_bands_kpts_band_gap_adv3" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.get_bands_kpts_band_gap_adv3.energies_kpts">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.get_bands_kpts_band_gap_adv3.</span></span><span class="sig-name descname"><span class="pre">energies_kpts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epsilon</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.get_bands_kpts_band_gap_adv3.energies_kpts" title="Permalink to this definition"></a></dt>
+<dd><p>finding:
+-nbands, band-energies
+-nkpts, kpt-coordinate
+-band gap for spin up channel
+-band gap for spin down channel
+-band gap between valence band(of spin up/down) and cond. band (spin up/down)
+for unpolarised/polarised qe scf.out file</p>
+<p>NOTE: use verbosity = ‘high’  to print the band energies</p>
+<blockquote>
+<div><dl class="simple">
+<dt>filename: string</dt><dd><p>name of scf.out file with verbosity high to be used in qe pw.x
+calculation</p>
+</dd>
+<dt>epsilon<span class="classifier">tolerance for occupation of energy levels from 1 and 0</span></dt><dd><p>default is 0.05 (=&gt; level with occupation 0.95 is assumed to
+be fully occupied i.e. occupation is 1; similary level with occupation
+0.05 is assumed to be completely empty i.e. occupation is 0.)</p>
+</dd>
+</dl>
+</div></blockquote>
+<blockquote>
+<div><p>bandgap: scalar for a given spin/s channels
+band energies
+kpts</p>
+<p>better see the output:</p>
+<dl class="simple">
+<dt>if lspin:</dt><dd><p>return energies, coord_kpts, band_gap_up, band_gap_down, band_gap, lspin, occupations</p>
+</dd>
+<dt>else:</dt><dd><p>return energies, coord_kpts, band_gap_up, None, None, lspin, occupations</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.get_output_qe">
+<span id="esta-qebag-get-output-qe-module"></span><h2>esta.qeBag.get_output_qe module<a class="headerlink" href="#module-esta.qeBag.get_output_qe" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.get_output_qe.get_fermi">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.get_output_qe.</span></span><span class="sig-name descname"><span class="pre">get_fermi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">infile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lspin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.get_output_qe.get_fermi" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.get_output_qe.get_fermi2">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.get_output_qe.</span></span><span class="sig-name descname"><span class="pre">get_fermi2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">infile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.get_output_qe.get_fermi2" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.get_output_qe.get_forces">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.get_output_qe.</span></span><span class="sig-name descname"><span class="pre">get_forces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">infile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.get_output_qe.get_forces" title="Permalink to this definition"></a></dt>
+<dd><p>find Forces acting on atoms (cartesian axes, Ry/au):
+and print forces in eV/Ang</p>
+<p>force values…
+…
+…
+…
+…
+…</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.get_output_qe.get_natoms">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.get_output_qe.</span></span><span class="sig-name descname"><span class="pre">get_natoms</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">infile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.get_output_qe.get_natoms" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.get_output_qe.get_pressure">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.get_output_qe.</span></span><span class="sig-name descname"><span class="pre">get_pressure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">infile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.get_output_qe.get_pressure" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.get_output_qe.get_total_energy">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.get_output_qe.</span></span><span class="sig-name descname"><span class="pre">get_total_energy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">infile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.get_output_qe.get_total_energy" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.get_output_qe.qe_warning">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.get_output_qe.</span></span><span class="sig-name descname"><span class="pre">qe_warning</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.get_output_qe.qe_warning" title="Permalink to this definition"></a></dt>
+<dd><p>read output file of qe code and find:
+- no of atoms
+- forces on each atom; average force on each atom
+- pressure
+- total energy (last one in the file)
+- Fermi energy (last one)</p>
+<p>Author: sk, <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a>
+Date: August, 2019</p>
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.get_xyz_from_qe_rlxout">
+<span id="esta-qebag-get-xyz-from-qe-rlxout-module"></span><h2>esta.qeBag.get_xyz_from_qe_rlxout module<a class="headerlink" href="#module-esta.qeBag.get_xyz_from_qe_rlxout" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.get_xyz_from_qe_rlxout.get_xyz">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.get_xyz_from_qe_rlxout.</span></span><span class="sig-name descname"><span class="pre">get_xyz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimized</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.get_xyz_from_qe_rlxout.get_xyz" title="Permalink to this definition"></a></dt>
+<dd><p>read qe output file to extract xyz file/files</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.get_xyz_from_qe_rlxout.get_xyz_all">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.get_xyz_from_qe_rlxout.</span></span><span class="sig-name descname"><span class="pre">get_xyz_all</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.get_xyz_from_qe_rlxout.get_xyz_all" title="Permalink to this definition"></a></dt>
+<dd><p>read qe output file to extract set of atomic positions into xyz files</p>
+<blockquote>
+<div><p>filename: string, name of the qe output relaxation file or vc-relaxation file</p>
+</div></blockquote>
+<blockquote>
+<div><p>symbol: list of strings consisting of atomic labels
+position: array of all atomic positions with shape (number_of_rlx_cycles, natoms, 3)</p>
+</div></blockquote>
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.neb_qe">
+<span id="esta-qebag-neb-qe-module"></span><h2>esta.qeBag.neb_qe module<a class="headerlink" href="#module-esta.qeBag.neb_qe" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe.neb">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.qeBag.neb_qe.</span></span><span class="sig-name descname"><span class="pre">neb</span></span><a class="headerlink" href="#esta.qeBag.neb_qe.neb" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>python class</p>
+<p>1)
+–to generate supercard along with its contents such as</p>
+<blockquote>
+<div><p>BEGIN_POSITIONS
+… content of the supercard here …
+END_POSITIONS</p>
+<p>for details see documentation of neb.x manual
+link: <a class="reference external" href="https://www.quantum-espresso.org/Doc/INPUT_NEB.html">https://www.quantum-espresso.org/Doc/INPUT_NEB.html</a></p>
+</div></blockquote>
+<p>2)
+– to store data (atom no, no of images, atomic symbols,</p>
+<blockquote>
+<div><p>atomic positions) from <a href="#id11"><span class="problematic" id="id12">*</span></a>axsf data</p>
+</div></blockquote>
+<p>– to generate xyz files from <a href="#id13"><span class="problematic" id="id14">*</span></a>axsf file from xcrysden</p>
+<p>3)
+– to read pathx files; where x = 0, 1, 2, ….</p>
+<blockquote>
+<div><p>and then create xyz files …….</p>
+</div></blockquote>
+<p>4)
+– read xsf file and store data (atomic number, symbols, atomic positions)
+from xsf file
+– create poscar file from xsf file.</p>
+<p>more will be added according to the needs …TODO</p>
+<p>author: skumar
+email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a>
+date: July, 2020</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe.neb.get_grouped_list">
+<span class="sig-name descname"><span class="pre">get_grouped_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">llist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe.neb.get_grouped_list" title="Permalink to this definition"></a></dt>
+<dd><p>get same string elements of list grouped together</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe.neb.get_neach_type">
+<span class="sig-name descname"><span class="pre">get_neach_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe.neb.get_neach_type" title="Permalink to this definition"></a></dt>
+<dd><p>get number of list entries of each type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>list of integers for each type of atoms specifying their number</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe.neb.get_symbol_from_atomic_number">
+<span class="sig-name descname"><span class="pre">get_symbol_from_atomic_number</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atomic_num</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe.neb.get_symbol_from_atomic_number" title="Permalink to this definition"></a></dt>
+<dd><p>return list of atomic symbols from list of atomic numbers</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe.neb.get_unique_list">
+<span class="sig-name descname"><span class="pre">get_unique_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe.neb.get_unique_list" title="Permalink to this definition"></a></dt>
+<dd><p>get unique elements of list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>string for each type of atoms</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe.neb.np">
+<span class="sig-name descname"><span class="pre">np</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;module</span> <span class="pre">'numpy'</span> <span class="pre">from</span> <span class="pre">'/home/sonu/anaconda3/envs/py3/lib/python3.6/site-packages/numpy/__init__.py'&gt;</span></em><a class="headerlink" href="#esta.qeBag.neb_qe.neb.np" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe.neb.read_axsf">
+<span class="sig-name descname"><span class="pre">read_axsf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">axsf_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe.neb.read_axsf" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>str: <a href="#id15"><span class="problematic" id="id16">*</span></a>axsf file name</p>
+</div></blockquote>
+<blockquote>
+<div><p>rank 3 array: atomic positions: array: rank 3 array of shape (nimages, natoms, 3)
+list of strings: atomic labels: list/array of strings: rank 1 array of atomic labels
+scalar: no of images/number of structures
+rank 2 array: cell vectors
+rank 3 array: forces on atoms of shape (nimage, natoms, 3)</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe.neb.read_path">
+<span class="sig-name descname"><span class="pre">read_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qe_input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe.neb.read_path" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>str: <a href="#id17"><span class="problematic" id="id18">*</span></a>path file name
+str: qe neb input file (containing Atomic symbols); atomic symbols are not</p>
+<blockquote>
+<div><p>present in <a href="#id19"><span class="problematic" id="id20">*</span></a>path file</p>
+</div></blockquote>
+</div></blockquote>
+<blockquote>
+<div><p>rank 3 array: atomic positions: array: rank 3 array of shape (nimages, natoms, 3)
+list of strings: atomic labels: list/array of strings: rank 1 array of atomic labels
+scalar: no of images/number of structures
+rank 3 array: forces on atoms of shape (nimage, natoms, 3)
+scalar: energy</p>
+</div></blockquote>
+<dl class="simple">
+<dt>return (self.pos_path, self.label_qe_neb,</dt><dd><p>self.no_strs_path, self.force_path, self.energy_path)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe.neb.read_xsf">
+<span class="sig-name descname"><span class="pre">read_xsf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xsf_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe.neb.read_xsf" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>str: <a href="#id21"><span class="problematic" id="id22">*</span></a>xsf file name</p>
+</div></blockquote>
+<blockquote>
+<div><p>rank 2 array: atomic positions: array: rank 3 array of shape (natoms, 3)
+list of strings: atomic labels: list/array of strings: rank 1 array of atomic labels
+rank 2 array: cell vectors
+rank 2 array: forces on atoms of shape (natoms, 3)</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe.neb.read_xyz">
+<span class="sig-name descname"><span class="pre">read_xyz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyzfiles</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe.neb.read_xyz" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>filenames: list of str,  filename xyz file names</p>
+</div></blockquote>
+<blockquote>
+<div><p>atomic positions: array: rank 2 array of shape (natoms, 3)
+atomic labels: list/array of strings: rank 1 array of atomic labels</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe.neb.to_poscar">
+<span class="sig-name descname"><span class="pre">to_poscar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">latvec</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'POSCAR'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'xsf'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe.neb.to_poscar" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>str: filename for the output poscar file; default POSCAR
+str: extension ; redundant variable; default is xsf file
+rank 2 array: lattice vectors: latvec
+rank 2 array: atomic positions: pos
+list of string : atomic labels: label</p>
+<p>or better pass an atom object to this method/function</p>
+</div></blockquote>
+<blockquote>
+<div><p>POSCAR file</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe.neb.to_xyz_file">
+<span class="sig-name descname"><span class="pre">to_xyz_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'xsf'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe.neb.to_xyz_file" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>str: filename
+str: filename extension (e.g. xsf )</p>
+<p>atomic positions
+atomic labels</p>
+<p>or better pass an atom object to this method/function</p>
+</div></blockquote>
+<blockquote>
+<div><p>xyz file</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe.neb.to_xyz_files">
+<span class="sig-name descname"><span class="pre">to_xyz_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extension</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qe_neb_input</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe.neb.to_xyz_files" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>str: filename
+str: filename extension (e.g. axsf or path file from NEB calc of qe)</p>
+<p>#atomic positions
+#atomic labels
+#no of atoms
+#no of images</p>
+<p>or better pass an atom object to this method/function</p>
+</div></blockquote>
+<blockquote>
+<div><p>xyz files in for NEB calculations</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe.neb.to_xyz_plus_delta_files">
+<span class="sig-name descname"><span class="pre">to_xyz_plus_delta_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_strs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extension</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qe_neb_input</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe.neb.to_xyz_plus_delta_files" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>rank2 array: atomic positions
+list: atomic labels
+scalar: no of images</p>
+<p>str: filename
+str: filename extension (e.g. axsf or path file from NEB calc of qe)</p>
+<p>or better pass an atom object to this method/function</p>
+</div></blockquote>
+<blockquote>
+<div><p>xyz files with displaced atoms according to vibration pattern or some other displacement
+vectors for each atomic position</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe.neb.write_position_card">
+<span class="sig-name descname"><span class="pre">write_position_card</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyzfiles</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atom_fix_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe.neb.write_position_card" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>xyzfiles: list of strings containg names of the xyz files
+atom_fix_index: list of atom numbers starting from 1 to be fixed in</p>
+</div></blockquote>
+<blockquote>
+<div><p>supercard containing atomic positions for all xzy strs for NEB calculations</p>
+</div></blockquote>
+<p>NOTE: output of this method: …</p>
+<p>BEGIN_POSITIONS
+FIRST_IMAGE
+ATOMIC_POSITIONS { angstrom }
+–</p>
+<p>INTERMEDIATE_IMAGE
+ATOMIC_POSITIONS { angstrom }
+–
+INTERMEDIATE_IMAGE
+ATOMIC_POSITIONS { angstrom }
+–</p>
+<p>–
+LAST_IMAGE
+ATOMIC_POSITIONS { angstrom }
+–
+–
+END_POSITIONS</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.neb_qe0">
+<span id="esta-qebag-neb-qe0-module"></span><h2>esta.qeBag.neb_qe0 module<a class="headerlink" href="#module-esta.qeBag.neb_qe0" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe0.neb">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.qeBag.neb_qe0.</span></span><span class="sig-name descname"><span class="pre">neb</span></span><a class="headerlink" href="#esta.qeBag.neb_qe0.neb" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>python class</p>
+<p>1)
+–to generate supercard along with its contents such as</p>
+<blockquote>
+<div><p>BEGIN_POSITIONS
+… content of the supercard here …
+END_POSITIONS</p>
+<p>for details see documentation of neb.x manual
+link: <a class="reference external" href="https://www.quantum-espresso.org/Doc/INPUT_NEB.html">https://www.quantum-espresso.org/Doc/INPUT_NEB.html</a></p>
+</div></blockquote>
+<p>2)
+– to store data (atom no, no of images, atomic symbols,</p>
+<blockquote>
+<div><p>atomic positions) from <a href="#id23"><span class="problematic" id="id24">*</span></a>axsf data</p>
+</div></blockquote>
+<p>– to generate xyz files from <a href="#id25"><span class="problematic" id="id26">*</span></a>axsf file from xcrysden</p>
+<p>3)
+– to read pathx files; where x = 0, 1, 2, ….</p>
+<blockquote>
+<div><p>and then create xyz files …….</p>
+</div></blockquote>
+<p>4)
+– read xsf file and store data (atomic number, symbols, atomic positions)
+from xsf file
+– create poscar file from xsf file.</p>
+<p>more will be added according to the needs …TODO</p>
+<p>author: skumar
+email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a>
+date: July, 2020</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe0.neb.get_grouped_list">
+<span class="sig-name descname"><span class="pre">get_grouped_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">llist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe0.neb.get_grouped_list" title="Permalink to this definition"></a></dt>
+<dd><p>get same string elements of list grouped together</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe0.neb.get_neach_type">
+<span class="sig-name descname"><span class="pre">get_neach_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe0.neb.get_neach_type" title="Permalink to this definition"></a></dt>
+<dd><p>get number of list entries of each type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>list of integers for each type of atoms specifying their number</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe0.neb.get_symbol_from_atomic_number">
+<span class="sig-name descname"><span class="pre">get_symbol_from_atomic_number</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atomic_num</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe0.neb.get_symbol_from_atomic_number" title="Permalink to this definition"></a></dt>
+<dd><p>return list of atomic symbols from list of atomic numbers</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe0.neb.get_unique_list">
+<span class="sig-name descname"><span class="pre">get_unique_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe0.neb.get_unique_list" title="Permalink to this definition"></a></dt>
+<dd><p>get unique elements of list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>string for each type of atoms</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe0.neb.np">
+<span class="sig-name descname"><span class="pre">np</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;module</span> <span class="pre">'numpy'</span> <span class="pre">from</span> <span class="pre">'/home/sonu/anaconda3/envs/py3/lib/python3.6/site-packages/numpy/__init__.py'&gt;</span></em><a class="headerlink" href="#esta.qeBag.neb_qe0.neb.np" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe0.neb.read_axsf">
+<span class="sig-name descname"><span class="pre">read_axsf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">axsf_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe0.neb.read_axsf" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>str: <a href="#id27"><span class="problematic" id="id28">*</span></a>axsf file name</p>
+</div></blockquote>
+<blockquote>
+<div><p>rank 3 array: atomic positions: array: rank 3 array of shape (nimages, natoms, 3)
+list of strings: atomic labels: list/array of strings: rank 1 array of atomic labels
+scalar: no of images/number of structures
+rank 2 array: cell vectors
+rank 3 array: forces on atoms of shape (nimage, natoms, 3)</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe0.neb.read_path">
+<span class="sig-name descname"><span class="pre">read_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qe_input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe0.neb.read_path" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>str: <a href="#id29"><span class="problematic" id="id30">*</span></a>path file name
+str: qe neb input file (containing Atomic symbols); atomic symbols are not</p>
+<blockquote>
+<div><p>present in <a href="#id31"><span class="problematic" id="id32">*</span></a>path file</p>
+</div></blockquote>
+</div></blockquote>
+<blockquote>
+<div><p>rank 3 array: atomic positions: array: rank 3 array of shape (nimages, natoms, 3)
+list of strings: atomic labels: list/array of strings: rank 1 array of atomic labels
+scalar: no of images/number of structures
+rank 3 array: forces on atoms of shape (nimage, natoms, 3)
+scalar: energy</p>
+</div></blockquote>
+<dl class="simple">
+<dt>return (self.pos_path, self.label_qe_neb,</dt><dd><p>self.no_strs_path, self.force_path, self.energy_path)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe0.neb.read_xsf">
+<span class="sig-name descname"><span class="pre">read_xsf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xsf_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe0.neb.read_xsf" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>str: <a href="#id33"><span class="problematic" id="id34">*</span></a>xsf file name</p>
+</div></blockquote>
+<blockquote>
+<div><p>rank 2 array: atomic positions: array: rank 3 array of shape (natoms, 3)
+list of strings: atomic labels: list/array of strings: rank 1 array of atomic labels
+rank 2 array: cell vectors
+rank 2 array: forces on atoms of shape (natoms, 3)</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe0.neb.read_xyz">
+<span class="sig-name descname"><span class="pre">read_xyz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyzfiles</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe0.neb.read_xyz" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>filenames: list of str,  filename xyz file names</p>
+</div></blockquote>
+<blockquote>
+<div><p>atomic positions: array: rank 2 array of shape (natoms, 3)
+atomic labels: list/array of strings: rank 1 array of atomic labels</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe0.neb.to_poscar">
+<span class="sig-name descname"><span class="pre">to_poscar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">latvec</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'POSCAR'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'xsf'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe0.neb.to_poscar" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>str: filename for the output poscar file; default POSCAR
+str: extension ; redundant variable; default is xsf file
+rank 2 array: lattice vectors: latvec
+rank 2 array: atomic positions: pos
+list of string : atomic labels: label</p>
+<p>or better pass an atom object to this method/function</p>
+</div></blockquote>
+<blockquote>
+<div><p>POSCAR file</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe0.neb.to_xyz_file">
+<span class="sig-name descname"><span class="pre">to_xyz_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'xsf'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe0.neb.to_xyz_file" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>str: filename
+str: filename extension (e.g. xsf )</p>
+<p>atomic positions
+atomic labels</p>
+<p>or better pass an atom object to this method/function</p>
+</div></blockquote>
+<blockquote>
+<div><p>xyz file</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe0.neb.to_xyz_files">
+<span class="sig-name descname"><span class="pre">to_xyz_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extension</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qe_neb_input</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe0.neb.to_xyz_files" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>str: filename
+str: filename extension (e.g. axsf or path file from NEB calc of qe)</p>
+<p>#atomic positions
+#atomic labels
+#no of atoms
+#no of images</p>
+<p>or better pass an atom object to this method/function</p>
+</div></blockquote>
+<blockquote>
+<div><p>xyz files in for NEB calculations</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe0.neb.to_xyz_plus_delta_files">
+<span class="sig-name descname"><span class="pre">to_xyz_plus_delta_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_strs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extension</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qe_neb_input</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe0.neb.to_xyz_plus_delta_files" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>rank2 array: atomic positions
+list: atomic labels
+scalar: no of images</p>
+<p>str: filename
+str: filename extension (e.g. axsf or path file from NEB calc of qe)</p>
+<p>or better pass an atom object to this method/function</p>
+</div></blockquote>
+<blockquote>
+<div><p>xyz files with displaced atoms according to vibration pattern or some other displacement
+vectors for each atomic position</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe0.neb.write_position_card">
+<span class="sig-name descname"><span class="pre">write_position_card</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyzfiles</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe0.neb.write_position_card" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>list of strings containg xyz files names
+atomic postions
+atomic labels</p>
+</div></blockquote>
+<blockquote>
+<div><p>supercard containing atomic positions for all xzy strs for NEB calculations</p>
+</div></blockquote>
+<p>NOTE:</p>
+<p>BEGIN_POSITIONS
+FIRST_IMAGE
+ATOMIC_POSITIONS { angstrom }
+–</p>
+<p>INTERMEDIATE_IMAGE
+ATOMIC_POSITIONS { angstrom }
+–
+INTERMEDIATE_IMAGE
+ATOMIC_POSITIONS { angstrom }
+–</p>
+<p>–
+LAST_IMAGE
+ATOMIC_POSITIONS { angstrom }
+–
+–
+END_POSITIONS</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.neb_qe1">
+<span id="esta-qebag-neb-qe1-module"></span><h2>esta.qeBag.neb_qe1 module<a class="headerlink" href="#module-esta.qeBag.neb_qe1" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe1.neb">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.qeBag.neb_qe1.</span></span><span class="sig-name descname"><span class="pre">neb</span></span><a class="headerlink" href="#esta.qeBag.neb_qe1.neb" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>python class</p>
+<p>1)
+–to generate supercard along with its contents such as</p>
+<blockquote>
+<div><p>BEGIN_POSITIONS
+… content of the supercard here …
+END_POSITIONS</p>
+<p>for details see documentation of neb.x manual
+link: <a class="reference external" href="https://www.quantum-espresso.org/Doc/INPUT_NEB.html">https://www.quantum-espresso.org/Doc/INPUT_NEB.html</a></p>
+</div></blockquote>
+<p>2)
+– to store data (atom no, no of images, atomic symbols,</p>
+<blockquote>
+<div><p>atomic positions) from <a href="#id35"><span class="problematic" id="id36">*</span></a>axsf data</p>
+</div></blockquote>
+<p>– to generate xyz files from <a href="#id37"><span class="problematic" id="id38">*</span></a>axsf file from xcrysden</p>
+<p>3)
+– to read pathx files; where x = 0, 1, 2, ….</p>
+<blockquote>
+<div><p>and then create xyz files …….todo</p>
+</div></blockquote>
+<p>more will be added according to the needs …TODO</p>
+<p>author: skumar
+email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a>
+date: July, 2020
+Place: QCL, ICReDD, Japan</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe1.neb.np">
+<span class="sig-name descname"><span class="pre">np</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;module</span> <span class="pre">'numpy'</span> <span class="pre">from</span> <span class="pre">'/home/sonu/anaconda3/envs/py3/lib/python3.6/site-packages/numpy/__init__.py'&gt;</span></em><a class="headerlink" href="#esta.qeBag.neb_qe1.neb.np" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe1.neb.read_axsf">
+<span class="sig-name descname"><span class="pre">read_axsf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">axsf_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe1.neb.read_axsf" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>str: <a href="#id39"><span class="problematic" id="id40">*</span></a>axsf file name</p>
+</div></blockquote>
+<blockquote>
+<div><p>rank 3 array: atomic positions: array: rank 3 array of shape (nimages, natoms, 3)
+list of strings: atomic labels: list/array of strings: rank 1 array of atomic labels
+scalar: no of images/number of structures
+rank 2 array: cell vectors
+rank 3 array: forces on atoms of shape (nimage, natoms, 3)</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe1.neb.read_path">
+<span class="sig-name descname"><span class="pre">read_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qe_input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe1.neb.read_path" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>str: <a href="#id41"><span class="problematic" id="id42">*</span></a>path file name
+str: qe neb input file (containing Atomic symbols); atomic symbols are not</p>
+<blockquote>
+<div><p>present in <a href="#id43"><span class="problematic" id="id44">*</span></a>path file</p>
+</div></blockquote>
+</div></blockquote>
+<blockquote>
+<div><p>rank 3 array: atomic positions: array: rank 3 array of shape (nimages, natoms, 3)
+list of strings: atomic labels: list/array of strings: rank 1 array of atomic labels
+scalar: no of images/number of structures
+rank 3 array: forces on atoms of shape (nimage, natoms, 3)
+scalar: energy</p>
+</div></blockquote>
+<dl class="simple">
+<dt>return (self.pos_path, self.label_qe_neb,</dt><dd><p>self.no_strs_path, self.force_path, self.energy_path)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe1.neb.read_xyz">
+<span class="sig-name descname"><span class="pre">read_xyz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyzfiles</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe1.neb.read_xyz" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>filenames: list of str,  filename xyz file names</p>
+</div></blockquote>
+<blockquote>
+<div><p>atomic positions: array: rank 2 array of shape (natoms, 3)
+atomic labels: list/array of strings: rank 1 array of atomic labels</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe1.neb.to_xyz_files">
+<span class="sig-name descname"><span class="pre">to_xyz_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extension</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qe_neb_input</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe1.neb.to_xyz_files" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>str: filename
+str: filename extension (e.g. axsf or path file from NEB calc of qe)</p>
+<p>#atomic positions
+#atomic labels
+#no of atoms
+#no of images</p>
+<p>or better pass an atom object to this method/function</p>
+</div></blockquote>
+<blockquote>
+<div><p>xyz files in for NEB calculations</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe1.neb.to_xyz_plus_delta_files">
+<span class="sig-name descname"><span class="pre">to_xyz_plus_delta_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_strs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extension</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qe_neb_input</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe1.neb.to_xyz_plus_delta_files" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>rank2 array: atomic positions
+list: atomic labels
+scalar: no of images</p>
+<p>str: filename
+str: filename extension (e.g. axsf or path file from NEB calc of qe)</p>
+<p>or better pass an atom object to this method/function</p>
+</div></blockquote>
+<blockquote>
+<div><p>xyz files with displaced atoms according to vibration pattern or some other displacement
+vectors for each atomic position</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.neb_qe1.neb.write_position_card">
+<span class="sig-name descname"><span class="pre">write_position_card</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyzfiles</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.neb_qe1.neb.write_position_card" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>list of strings containg xyz files names
+atomic postions
+atomic labels</p>
+</div></blockquote>
+<blockquote>
+<div><p>supercard containing atomic positions for all xzy strs for NEB calculations</p>
+</div></blockquote>
+<p>NOTE:</p>
+<p>BEGIN_POSITIONS
+FIRST_IMAGE
+ATOMIC_POSITIONS { angstrom }
+–</p>
+<p>INTERMEDIATE_IMAGE
+ATOMIC_POSITIONS { angstrom }
+–
+INTERMEDIATE_IMAGE
+ATOMIC_POSITIONS { angstrom }
+–</p>
+<p>–
+LAST_IMAGE
+ATOMIC_POSITIONS { angstrom }
+–
+–
+END_POSITIONS</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.parse_pseudo">
+<span id="esta-qebag-parse-pseudo-module"></span><h2>esta.qeBag.parse_pseudo module<a class="headerlink" href="#module-esta.qeBag.parse_pseudo" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.parse_pseudo.parse_pseudoUPF">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.parse_pseudo.</span></span><span class="sig-name descname"><span class="pre">parse_pseudoUPF</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.parse_pseudo.parse_pseudoUPF" title="Permalink to this definition"></a></dt>
+<dd><p>read data of UPF file in xml section</p>
+<blockquote>
+<div><p>filename: name of the pseudo potential UPF file</p>
+</div></blockquote>
+<blockquote>
+<div><p>pseudo potential information of an element or set of elements
+in a chemical system</p>
+</div></blockquote>
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.pspot_core_states">
+<span id="esta-qebag-pspot-core-states-module"></span><h2>esta.qeBag.pspot_core_states module<a class="headerlink" href="#module-esta.qeBag.pspot_core_states" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.pspot_core_states.id_orb2_indx">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.pspot_core_states.</span></span><span class="sig-name descname"><span class="pre">id_orb2_indx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id_orb</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.pspot_core_states.id_orb2_indx" title="Permalink to this definition"></a></dt>
+<dd><p>change atomic orbital id name to id number</p>
+<dl class="simple">
+<dt>input:</dt><dd><p>string: e.g. S, P, D, and F</p>
+</dd>
+<dt>output:</dt><dd><p>scalar: e.g  0, 1, 2, and 3</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.pspot_core_states.read_UPF_xml">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.pspot_core_states.</span></span><span class="sig-name descname"><span class="pre">read_UPF_xml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.pspot_core_states.read_UPF_xml" title="Permalink to this definition"></a></dt>
+<dd><p>Parse pseudo core states from UPF xml; UPF version=”2.0.1”</p>
+<blockquote>
+<div><p>string: UPF file for a specific atom; e.g: Ni.pbe-n-rrkjus_psl.1.0.0.UPF</p>
+</div></blockquote>
+<blockquote>
+<div><p>string: file containing core states needed for XAS spectra</p>
+</div></blockquote>
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.rate_const_adv">
+<span id="esta-qebag-rate-const-adv-module"></span><h2>esta.qeBag.rate_const_adv module<a class="headerlink" href="#module-esta.qeBag.rate_const_adv" title="Permalink to this headline"></a></h2>
+<p>rate constant calculations</p>
+<p>for A* —&gt; B* kind of surface reaction or similar reaction</p>
+<p>rate constant  ~ r =  A * exp ( -Ea/kbT )</p>
+<dl class="simple">
+<dt>where:</dt><dd><p>A = ( kb * T/ h ) * (q_vib_TS / q_vib_A*)
+q = vib partition function = product_i (1/(1-expt(-h*nu_i / kbT))  )</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.rate_const_adv.get_rate_constant">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.rate_const_adv.</span></span><span class="sig-name descname"><span class="pre">get_rate_constant</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">q_part_is</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q_part_ts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">energy_barrier</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.rate_const_adv.get_rate_constant" title="Permalink to this definition"></a></dt>
+<dd><p>get the rate constant of elementray steps</p>
+<blockquote>
+<div><p>q_part_is: scalar, partition function for the initial state
+q_part_ts: scalar, partition function for the transition state
+energy_barrier: scalar, activation energy barrier going from initial to transition state in eV units
+temp: scalar, tempature of the reaction in K units</p>
+</div></blockquote>
+<blockquote>
+<div><p>rate_const: scalar, rate constant in s^(-1)</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.rate_const_adv.q_partition">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.rate_const_adv.</span></span><span class="sig-name descname"><span class="pre">q_partition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vib_energies_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.rate_const_adv.q_partition" title="Permalink to this definition"></a></dt>
+<dd><p>calculate the partition function based on given vib energies and temp</p>
+<blockquote>
+<div><p>vib_energies: array  of length 3*natoms
+temp: scalar , temperature in K</p>
+</div></blockquote>
+<blockquote>
+<div><p>q_partition: scalar,  parition function</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.rate_const_adv.read_freq_data">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.rate_const_adv.</span></span><span class="sig-name descname"><span class="pre">read_freq_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">freq_dft</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.rate_const_adv.read_freq_data" title="Permalink to this definition"></a></dt>
+<dd><p>read freq data from file generated using qe phonon finite diff caclulations</p>
+<blockquote>
+<div><p>filename: string, name of the file containing freq data
+freq_dft: logical, whether dft calculated freq or expt or else..</p>
+</div></blockquote>
+<blockquote>
+<div><dl class="simple">
+<dt>vib_energies: array, filtered vib freq data (below 50 cm-1 freqs</dt><dd><p>are changed to 50 cm-1 by default)</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.read_dynmat_adv">
+<span id="esta-qebag-read-dynmat-adv-module"></span><h2>esta.qeBag.read_dynmat_adv module<a class="headerlink" href="#module-esta.qeBag.read_dynmat_adv" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.read_dynmat_adv.read_dynamical_matrix_q0">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.read_dynmat_adv.</span></span><span class="sig-name descname"><span class="pre">read_dynamical_matrix_q0</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">natm_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">posfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_dynmat_adv.read_dynamical_matrix_q0" title="Permalink to this definition"></a></dt>
+<dd><p>read dyanmatrix at q=(0 0 0) point to find the
+force constant between atoms as well as corresponding distance
+between atoms</p>
+<blockquote>
+<div><dl class="simple">
+<dt>filename: string</dt><dd><p>name of the dynamical martrix file</p>
+</dd>
+<dt>natm_type: list</dt><dd><p>for no. of atoms of each types; e.g. [4, 4, 14] for
+3type of atoms</p>
+</dd>
+<dt>posfile: str</dt><dd><p>name of the poscar file, optional</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>NOTE: lattice is cubic
+see .f90 file in qe code:</p>
+<dl class="simple">
+<dt>e.g see:   SUBROUTINE write_old_dyn_mat_head(iudyn) in io_dyn_mat_old.f90</dt><dd><p>or other .f90 files ….</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.read_write">
+<span id="esta-qebag-read-write-module"></span><h2>esta.qeBag.read_write module<a class="headerlink" href="#module-esta.qeBag.read_write" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.qeBag.read_write.RWpwi">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.qeBag.read_write.</span></span><span class="sig-name descname"><span class="pre">RWpwi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">infile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write.RWpwi" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>class to read the pw input file and create poscar file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>generate poscar file after reading the pw input file</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write.RWpwi.get_grouped_list">
+<span class="sig-name descname"><span class="pre">get_grouped_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">llist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write.RWpwi.get_grouped_list" title="Permalink to this definition"></a></dt>
+<dd><p>get same string elements of list grouped together</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write.RWpwi.get_neach_type">
+<span class="sig-name descname"><span class="pre">get_neach_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write.RWpwi.get_neach_type" title="Permalink to this definition"></a></dt>
+<dd><p>get number of list entries of each type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>list of integers for each type of atoms specifying their</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write.RWpwi.get_poscar">
+<span class="sig-name descname"><span class="pre">get_poscar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write.RWpwi.get_poscar" title="Permalink to this definition"></a></dt>
+<dd><p>write cell_parameters and atomic postions, atom labels etc in
+poscar file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write.RWpwi.get_unique_list">
+<span class="sig-name descname"><span class="pre">get_unique_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write.RWpwi.get_unique_list" title="Permalink to this definition"></a></dt>
+<dd><p>get unique elements of list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>string for each type of atoms</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.qeBag.read_write.RWpwo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.qeBag.read_write.</span></span><span class="sig-name descname"><span class="pre">RWpwo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">infile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write.RWpwo" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class to read and write data file for the atomic structures</p>
+<ul class="simple">
+<li><p>read cell parmeters and/or atomic positions</p></li>
+<li><p>write this data in xyz, poscar, and qe-str format</p></li>
+</ul>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write.RWpwo.get_atm_positions">
+<span class="sig-name descname"><span class="pre">get_atm_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write.RWpwo.get_atm_positions" title="Permalink to this definition"></a></dt>
+<dd><p>find atom positions with labels
+…</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write.RWpwo.get_cell_parameters">
+<span class="sig-name descname"><span class="pre">get_cell_parameters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write.RWpwo.get_cell_parameters" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>cell vectors in angstrom or bohr</p>
+</dd>
+</dl>
+<p>what is does:</p>
+<dl class="simple">
+<dt>for ‘rlx’ calculations:</dt><dd><dl class="simple">
+<dt>search:</dt><dd><p>“lattice parameter (alat)”
+“crystal axes: (cart. coord. in units of alat)”</p>
+</dd>
+</dl>
+</dd>
+<dt>for ‘vc-relax’ calculations:</dt><dd><p>search:
+‘CELL_PARAMETERS (angstrom)’</p>
+</dd>
+</dl>
+<p>…</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write.RWpwo.get_element_label">
+<span class="sig-name descname"><span class="pre">get_element_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_atomic_number</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write.RWpwo.get_element_label" title="Permalink to this definition"></a></dt>
+<dd><p>using mendeleev for it : big database of elemental properties</p>
+<blockquote>
+<div><p>In [22]: from mendeleev import element
+In [21]: for i in [5,6,7,8]:
+…:     element(i)
+…:     print (element(i).symbol)
+…:
+B
+C
+N
+O</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write.RWpwo.get_energies_and_kpt">
+<span class="sig-name descname"><span class="pre">get_energies_and_kpt</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write.RWpwo.get_energies_and_kpt" title="Permalink to this definition"></a></dt>
+<dd><p>get the band energies at k point by reading the scf calculation
+out file</p>
+<p>NOTE: Need verbosity =’high’ in the scf input file to print the
+band energies</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write.RWpwo.get_grouped_list">
+<span class="sig-name descname"><span class="pre">get_grouped_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">llist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write.RWpwo.get_grouped_list" title="Permalink to this definition"></a></dt>
+<dd><p>get same string elements of list grouped together</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write.RWpwo.get_natoms">
+<span class="sig-name descname"><span class="pre">get_natoms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write.RWpwo.get_natoms" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write.RWpwo.get_neach_type">
+<span class="sig-name descname"><span class="pre">get_neach_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write.RWpwo.get_neach_type" title="Permalink to this definition"></a></dt>
+<dd><p>get number of list entries of each type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>list of integers for each type of atoms specifying their number</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write.RWpwo.get_poscar">
+<span class="sig-name descname"><span class="pre">get_poscar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write.RWpwo.get_poscar" title="Permalink to this definition"></a></dt>
+<dd><p>write cell_parameters and atomic postions, atom labels etc in
+poscar file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write.RWpwo.get_unique_list">
+<span class="sig-name descname"><span class="pre">get_unique_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write.RWpwo.get_unique_list" title="Permalink to this definition"></a></dt>
+<dd><p>get unique elements of list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>string for each type of atoms</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write.RWpwo.get_xyz_file">
+<span class="sig-name descname"><span class="pre">get_xyz_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write.RWpwo.get_xyz_file" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>get xyz file by reading the atomic positions and atomic labels: use method</dt><dd><ul class="simple">
+<li><p>get_atm_positions(infile)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>IMPORTANT: ordeing same elements together: not done yet .. to be done..</dt><dd></dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write.RWpwo.get_xyz_grouped_file">
+<span class="sig-name descname"><span class="pre">get_xyz_grouped_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write.RWpwo.get_xyz_grouped_file" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>get xyz file by reading the atomic positions and atomic labels: use method</dt><dd><ul class="simple">
+<li><p>get_atm_positions(infile)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+<p>NOTE: similar atoms are grouped together</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write.RWpwo.vector_prod">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">vector_prod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write.RWpwo.vector_prod" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.read_write0">
+<span id="esta-qebag-read-write0-module"></span><h2>esta.qeBag.read_write0 module<a class="headerlink" href="#module-esta.qeBag.read_write0" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.qeBag.read_write0.RWpwi">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.qeBag.read_write0.</span></span><span class="sig-name descname"><span class="pre">RWpwi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">infile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write0.RWpwi" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>class to read the pw input file and create poscar file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>generate poscar file after reading the pw input file</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write0.RWpwi.get_grouped_list">
+<span class="sig-name descname"><span class="pre">get_grouped_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">llist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write0.RWpwi.get_grouped_list" title="Permalink to this definition"></a></dt>
+<dd><p>get same string elements of list grouped together</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write0.RWpwi.get_neach_type">
+<span class="sig-name descname"><span class="pre">get_neach_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write0.RWpwi.get_neach_type" title="Permalink to this definition"></a></dt>
+<dd><p>get number of list entries of each type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>list of integers for each type of atoms specifying their</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write0.RWpwi.get_poscar">
+<span class="sig-name descname"><span class="pre">get_poscar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write0.RWpwi.get_poscar" title="Permalink to this definition"></a></dt>
+<dd><p>write cell_parameters and atomic postions, atom labels etc in
+poscar file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write0.RWpwi.get_unique_list">
+<span class="sig-name descname"><span class="pre">get_unique_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write0.RWpwi.get_unique_list" title="Permalink to this definition"></a></dt>
+<dd><p>get unique elements of list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>string for each type of atoms</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.qeBag.read_write0.RWpwo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.qeBag.read_write0.</span></span><span class="sig-name descname"><span class="pre">RWpwo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">infile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write0.RWpwo" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class to read and write data file for the atomic structures</p>
+<ul class="simple">
+<li><p>read cell parmeters and/or atomic positions</p></li>
+<li><p>write this data in xyz, poscar, and qe-str format</p></li>
+</ul>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write0.RWpwo.get_atm_positions">
+<span class="sig-name descname"><span class="pre">get_atm_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write0.RWpwo.get_atm_positions" title="Permalink to this definition"></a></dt>
+<dd><p>find atom positions with labels
+…</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write0.RWpwo.get_cell_parameters">
+<span class="sig-name descname"><span class="pre">get_cell_parameters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write0.RWpwo.get_cell_parameters" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>cell vectors in angstrom or bohr</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>what is does:</dt><dd><dl class="simple">
+<dt>search:</dt><dd><p>“lattice parameter (alat)”
+“crystal axes: (cart. coord. in units of alat)”</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>…</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write0.RWpwo.get_element_label">
+<span class="sig-name descname"><span class="pre">get_element_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_atomic_number</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write0.RWpwo.get_element_label" title="Permalink to this definition"></a></dt>
+<dd><p>using mendeleev for it : big database of elemental properties</p>
+<blockquote>
+<div><p>In [22]: from mendeleev import element
+In [21]: for i in [5,6,7,8]:
+…:     element(i)
+…:     print (element(i).symbol)
+…:
+B
+C
+N
+O</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write0.RWpwo.get_energies_and_kpt">
+<span class="sig-name descname"><span class="pre">get_energies_and_kpt</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write0.RWpwo.get_energies_and_kpt" title="Permalink to this definition"></a></dt>
+<dd><p>get the band energies at k point by reading the scf calculation
+out file</p>
+<p>NOTE: Need verbosity =’high’ in the scf input file to print the
+band energies</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write0.RWpwo.get_grouped_list">
+<span class="sig-name descname"><span class="pre">get_grouped_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">llist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write0.RWpwo.get_grouped_list" title="Permalink to this definition"></a></dt>
+<dd><p>get same string elements of list grouped together</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write0.RWpwo.get_natoms">
+<span class="sig-name descname"><span class="pre">get_natoms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write0.RWpwo.get_natoms" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write0.RWpwo.get_neach_type">
+<span class="sig-name descname"><span class="pre">get_neach_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write0.RWpwo.get_neach_type" title="Permalink to this definition"></a></dt>
+<dd><p>get number of list entries of each type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>list of integers for each type of atoms specifying their number</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write0.RWpwo.get_poscar">
+<span class="sig-name descname"><span class="pre">get_poscar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write0.RWpwo.get_poscar" title="Permalink to this definition"></a></dt>
+<dd><p>write cell_parameters and atomic postions, atom labels etc in
+poscar file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write0.RWpwo.get_unique_list">
+<span class="sig-name descname"><span class="pre">get_unique_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write0.RWpwo.get_unique_list" title="Permalink to this definition"></a></dt>
+<dd><p>get unique elements of list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>string for each type of atoms</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write0.RWpwo.get_xyz_file">
+<span class="sig-name descname"><span class="pre">get_xyz_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write0.RWpwo.get_xyz_file" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>get xyz file by reading the atomic positions and atomic labels: use method</dt><dd><ul class="simple">
+<li><p>get_atm_positions(infile)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>IMPORTANT: ordeing same elements together: not done yet .. to be done..</dt><dd></dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write0.RWpwo.get_xyz_grouped_file">
+<span class="sig-name descname"><span class="pre">get_xyz_grouped_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write0.RWpwo.get_xyz_grouped_file" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>get xyz file by reading the atomic positions and atomic labels: use method</dt><dd><ul class="simple">
+<li><p>get_atm_positions(infile)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+<p>NOTE: similar atoms are grouped together</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.read_write0.RWpwo.vector_prod">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">vector_prod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.read_write0.RWpwo.vector_prod" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.sum_pdos_atom">
+<span id="esta-qebag-sum-pdos-atom-module"></span><h2>esta.qeBag.sum_pdos_atom module<a class="headerlink" href="#module-esta.qeBag.sum_pdos_atom" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.sum_pdos_atom.sum_pdos">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.sum_pdos_atom.</span></span><span class="sig-name descname"><span class="pre">sum_pdos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.sum_pdos_atom.sum_pdos" title="Permalink to this definition"></a></dt>
+<dd><p>I have s,p (also d, but not at the moment) PDOS calculated for several
+atoms. I want to have a sum for all atoms. Separately s and p.</p>
+<p>for s we have</p>
+<p>Energy, LDOS, PDOS columns</p>
+<p>for p we have</p>
+<p>Energy, LDOS, Pz-PDOS, Px-PDOS, Py-PDOS</p>
+<dl class="simple">
+<dt>find sum for all atoms (= Energy, Sum of LDOS, Sum of Pz-PDOS,</dt><dd><p>Sum of Px-PDOS, Sum of Py-PDOS).</p>
+</dd>
+<dt><a href="#id45"><span class="problematic" id="id46">**</span></a>NOTE: in a single directory keep on one type of states of atoms (may be same or different</dt><dd><p>atoms); e.g. s, p, or d only for B atoms !!***</p>
+</dd>
+</dl>
+<p>author: skumar
+date: 18, Feb, 2021</p>
+<p>tested by Andrey Lyalin on Feb, 2021</p>
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.x_read_write">
+<span id="esta-qebag-x-read-write-module"></span><h2>esta.qeBag.x_read_write module<a class="headerlink" href="#module-esta.qeBag.x_read_write" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.qeBag.x_read_write.RWpwi">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.qeBag.x_read_write.</span></span><span class="sig-name descname"><span class="pre">RWpwi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">infile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.x_read_write.RWpwi" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>class to read the pw input file and create poscar file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>generate poscar file after reading the pw input file</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.x_read_write.RWpwi.get_grouped_list">
+<span class="sig-name descname"><span class="pre">get_grouped_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">llist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.x_read_write.RWpwi.get_grouped_list" title="Permalink to this definition"></a></dt>
+<dd><p>get same string elements of list grouped together</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.x_read_write.RWpwi.get_neach_type">
+<span class="sig-name descname"><span class="pre">get_neach_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.x_read_write.RWpwi.get_neach_type" title="Permalink to this definition"></a></dt>
+<dd><p>get number of list entries of each type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>list of integers for each type of atoms specifying their</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.x_read_write.RWpwi.get_poscar">
+<span class="sig-name descname"><span class="pre">get_poscar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.x_read_write.RWpwi.get_poscar" title="Permalink to this definition"></a></dt>
+<dd><p>write cell_parameters and atomic postions, atom labels etc in
+poscar file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.x_read_write.RWpwi.get_unique_list">
+<span class="sig-name descname"><span class="pre">get_unique_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.x_read_write.RWpwi.get_unique_list" title="Permalink to this definition"></a></dt>
+<dd><p>get unique elements of list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>string for each type of atoms</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.qeBag.x_read_write.RWpwo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.qeBag.x_read_write.</span></span><span class="sig-name descname"><span class="pre">RWpwo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">infile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.x_read_write.RWpwo" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class to read and write data file for the atomic structures</p>
+<ul class="simple">
+<li><p>read cell parmeters and/or atomic positions</p></li>
+<li><p>write this data in xyz, poscar, and qe-str format</p></li>
+</ul>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.x_read_write.RWpwo.VectorProd">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">VectorProd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.x_read_write.RWpwo.VectorProd" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.x_read_write.RWpwo.get_atm_positions">
+<span class="sig-name descname"><span class="pre">get_atm_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.x_read_write.RWpwo.get_atm_positions" title="Permalink to this definition"></a></dt>
+<dd><p>find atom positions with labels
+…</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.x_read_write.RWpwo.get_cell_parameters">
+<span class="sig-name descname"><span class="pre">get_cell_parameters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.x_read_write.RWpwo.get_cell_parameters" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>cell vectors in angstrom or bohr</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>what is does:</dt><dd><dl class="simple">
+<dt>search:</dt><dd><p>“lattice parameter (alat)”
+“crystal axes: (cart. coord. in units of alat)”</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>…</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.x_read_write.RWpwo.get_element_label">
+<span class="sig-name descname"><span class="pre">get_element_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_atomic_number</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.x_read_write.RWpwo.get_element_label" title="Permalink to this definition"></a></dt>
+<dd><p>using mendeleev for it : big database of elemental properties</p>
+<blockquote>
+<div><p>In [22]: from mendeleev import element
+In [21]: for i in [5,6,7,8]:
+…:     element(i)
+…:     print (element(i).symbol)
+…:
+B
+C
+N
+O</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.x_read_write.RWpwo.get_grouped_list">
+<span class="sig-name descname"><span class="pre">get_grouped_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">llist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.x_read_write.RWpwo.get_grouped_list" title="Permalink to this definition"></a></dt>
+<dd><p>get same string elements of list grouped together</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.x_read_write.RWpwo.get_natoms">
+<span class="sig-name descname"><span class="pre">get_natoms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.x_read_write.RWpwo.get_natoms" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.x_read_write.RWpwo.get_neach_type">
+<span class="sig-name descname"><span class="pre">get_neach_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.x_read_write.RWpwo.get_neach_type" title="Permalink to this definition"></a></dt>
+<dd><p>get number of list entries of each type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>list of integers for each type of atoms specifying their number</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.x_read_write.RWpwo.get_poscar">
+<span class="sig-name descname"><span class="pre">get_poscar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.x_read_write.RWpwo.get_poscar" title="Permalink to this definition"></a></dt>
+<dd><p>write cell_parameters and atomic postions, atom labels etc in
+poscar file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.x_read_write.RWpwo.get_unique_list">
+<span class="sig-name descname"><span class="pre">get_unique_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.x_read_write.RWpwo.get_unique_list" title="Permalink to this definition"></a></dt>
+<dd><p>get unique elements of list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>string for each type of atoms</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.x_read_write.RWpwo.get_xyz_file">
+<span class="sig-name descname"><span class="pre">get_xyz_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.x_read_write.RWpwo.get_xyz_file" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>get xyz file by reading the atomic positions and atomic labels: use method</dt><dd><ul class="simple">
+<li><p>get_atm_positions(infile)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>IMPORTANT: ordeing same elements together: not done yet .. to be done..</dt><dd></dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.qeBag.x_read_write.RWpwo.get_xyz_grouped_file">
+<span class="sig-name descname"><span class="pre">get_xyz_grouped_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.x_read_write.RWpwo.get_xyz_grouped_file" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>get xyz file by reading the atomic positions and atomic labels: use method</dt><dd><ul class="simple">
+<li><p>get_atm_positions(infile)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+<p>NOTE: similar atoms are grouped together</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.xbands_kpts_band_gap">
+<span id="esta-qebag-xbands-kpts-band-gap-module"></span><h2>esta.qeBag.xbands_kpts_band_gap module<a class="headerlink" href="#module-esta.qeBag.xbands_kpts_band_gap" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.xbands_kpts_band_gap.energies_kpts">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.xbands_kpts_band_gap.</span></span><span class="sig-name descname"><span class="pre">energies_kpts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.xbands_kpts_band_gap.energies_kpts" title="Permalink to this definition"></a></dt>
+<dd><p>finding:
+-nbands, band-energies
+-nkpts, kpt-coordinate
+-band gap for spin up channel
+-band gap for spin down channel
+-band gap between valence band(of spin up/down) and cond. band (spin up/down)
+for unpolarised/polarised qe scf.out file</p>
+<p>NOTE: use verbosity = ‘high’  to print the band energies</p>
+<dl class="simple">
+<dt>input:</dt><dd><p>name of scf.out file with verbosity high to be used in qe pw.x
+calculation</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.xml_qe">
+<span id="esta-qebag-xml-qe-module"></span><h2>esta.qeBag.xml_qe module<a class="headerlink" href="#module-esta.qeBag.xml_qe" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.xml_qe.get_poscar">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.xml_qe.</span></span><span class="sig-name descname"><span class="pre">get_poscar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">infile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.xml_qe.get_poscar" title="Permalink to this definition"></a></dt>
+<dd><p>write poscar file from xml file of qe</p>
+<p>string: infile (data-file-schema.xml)</p>
+<p>poscar file</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.xml_qe.read_qe_xml">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.xml_qe.</span></span><span class="sig-name descname"><span class="pre">read_qe_xml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.xml_qe.read_qe_xml" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>Parse data-file-schema.xml or another <a href="#id47"><span class="problematic" id="id48">*</span></a>xml file of qe version 6.4.1/6.2</p>
+<blockquote>
+<div><dl class="simple">
+<dt>string: ‘data-file-schema.xml’ or input xml file containing crystal str and electronic</dt><dd><p>str. information of calculations carrired out by qe code</p>
+</dd>
+</dl>
+</div></blockquote>
+<blockquote>
+<div><p>array: unit cell in bohr,
+array: atomic positions in bohr,
+character: atomic symbols
+array: forces ..
+… many other parameters present in the xml file ..</p>
+</div></blockquote>
+</div></blockquote>
+<p># with scipy version 1.1.0
+#bohr radius= 5.2917721067e-11 m ; less accurate
+#fac = cf.bohr2ang =0.529177210669 –&lt; – less accuaret and
+# as a result atoms pos and cell param are wrong after 6 dec     # places
+#In scipy version 1.4.1
+#bohr radiun = 5.29177210903e-11 m; is same as given
+# in nist data ; <a class="reference external" href="https://physics.nist.gov/cgi-bin/cuu/Value?bohrrada0">https://physics.nist.gov/cgi-bin/cuu/Value?bohrrada0</a>
+#Numerical value     5.291 772 109 03 x 10-11 m
+#fac = 0.529177210903 # does not work
+#fac = np.array( 0.529177210903  , dtype=np.float128)</p>
+<p>#qe 6.2 and .6.4.1 uses
+# REAL(DP), PARAMETER :: &amp;
+#     BOHR_RADIUS_SI   = 0.52917720859E-10_DP ! m</p>
+<p>author: ‘skumar’
+email: <a class="reference external" href="mailto:'sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">‘sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a>’</p>
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.xml_qe0">
+<span id="esta-qebag-xml-qe0-module"></span><h2>esta.qeBag.xml_qe0 module<a class="headerlink" href="#module-esta.qeBag.xml_qe0" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.xml_qe0.get_grouped_list">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.xml_qe0.</span></span><span class="sig-name descname"><span class="pre">get_grouped_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">llist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.xml_qe0.get_grouped_list" title="Permalink to this definition"></a></dt>
+<dd><p>get same string elements of list grouped together</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.xml_qe0.get_neach_type">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.xml_qe0.</span></span><span class="sig-name descname"><span class="pre">get_neach_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.xml_qe0.get_neach_type" title="Permalink to this definition"></a></dt>
+<dd><p>get number of list entries of each type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>list of integers for each type of atoms specifying their number</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.xml_qe0.get_poscar">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.xml_qe0.</span></span><span class="sig-name descname"><span class="pre">get_poscar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">infile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.xml_qe0.get_poscar" title="Permalink to this definition"></a></dt>
+<dd><p>write poscar file from xml file of qe</p>
+<p>string: infile (data-file-schema.xml)</p>
+<p>poscar file</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.xml_qe0.get_unique_list">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.xml_qe0.</span></span><span class="sig-name descname"><span class="pre">get_unique_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.xml_qe0.get_unique_list" title="Permalink to this definition"></a></dt>
+<dd><p>get unique elements of list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>string for each type of atoms</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.xml_qe0.read_qe_xml">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.xml_qe0.</span></span><span class="sig-name descname"><span class="pre">read_qe_xml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.xml_qe0.read_qe_xml" title="Permalink to this definition"></a></dt>
+<dd><p>Parse data-file-schema.xml file of qe version 6.4.1</p>
+<p>string: ‘data-file-schema.xml’</p>
+<p>array: unit cell in bohr,
+array: atomic positions in bohr,
+character: atomic symbols
+array: forces .. to do</p>
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag.zpe">
+<span id="esta-qebag-zpe-module"></span><h2>esta.qeBag.zpe module<a class="headerlink" href="#module-esta.qeBag.zpe" title="Permalink to this headline"></a></h2>
+<p>calculation of zero point energy in eV</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.qeBag.zpe.get_freq">
+<span class="sig-prename descclassname"><span class="pre">esta.qeBag.zpe.</span></span><span class="sig-name descname"><span class="pre">get_freq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.qeBag.zpe.get_freq" title="Permalink to this definition"></a></dt>
+<dd><p>get vibration freq from qe phonon output file in cm-1</p>
+<dl class="simple">
+<dt>input:</dt><dd><p>str, ph output file</p>
+</dd>
+<dt>output:</dt><dd><p>tuple of array and string, vibration freqs in cm-1 #and eV</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-esta.qeBag">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-esta.qeBag" title="Permalink to this headline"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2017-2021, Sonu Kumar.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

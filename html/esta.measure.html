@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>esta.measure package &mdash; EStA 2.8.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link href="_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> EStA
+            <img src="_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.8.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file3.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file3.html#ml-algorithms">ML algorithms</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="file3a.html">Cheat Sheet</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">EStA</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>esta.measure package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/esta.measure.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="esta-measure-package">
+<h1>esta.measure package<a class="headerlink" href="#esta-measure-package" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-esta.measure.atomic_units">
+<span id="esta-measure-atomic-units-module"></span><h2>esta.measure.atomic_units module<a class="headerlink" href="#module-esta.measure.atomic_units" title="Permalink to this headline"></a></h2>
+<p>In electronic structure calculations, we generally employ “atomic units” (a.u.): here
+three basic units are the fundamental constants i.e. electronic charge,
+electron mass, and hbar (reduced Planck’s constatn).</p>
+<p>Here we do the conversion between atomic units (Hartree) and SI units,
+as well as conversion between Ryd atomic units and SI units.</p>
+<p>Generally atomic units means Hartree units, atomic  Rydberg units means Rydberg units,
+and natural units means natural units.</p>
+<p>Right now conversion between atomic units and Si units supported.</p>
+<p>For details see: From: <a class="reference external" href="http://physics.nist.gov/constants">http://physics.nist.gov/constants</a>
+Also see the pdf file in zot. for details.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>how it works:</p>
+<p>This module converts SI units to atomic units i.e. Hartree units (SI to Ryd is on
+the same line)!!</p>
+<p>e.g. how to convert 0.529 angstrom to au units?
+&gt;&gt;In [7]: import esta.measure.atomic_units as atu
+&gt;&gt;In [8]: atu.ao2au <a href="#id1"><span class="problematic" id="id2">*</span></a>.529e-10
+&gt;&gt;Out[8]: 0.9996651248084494</p>
+<p>e.g. convert 82nN force to au units:
+&gt;&gt;In [16]: atu.force2au * 82e-9
+&gt;&gt;Out[16]: 0.9953000213791756</p>
+</div>
+<p>author: skumar
+email : <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
+</section>
+<section id="module-esta.measure.conversion_factors">
+<span id="esta-measure-conversion-factors-module"></span><h2>esta.measure.conversion_factors module<a class="headerlink" href="#module-esta.measure.conversion_factors" title="Permalink to this headline"></a></h2>
+<ol class="arabic simple">
+<li><p>library to get conversion factor to convert quantities from once to another</p></li>
+<li><p>get commanly use physical constants in physical and chemical sciences</p></li>
+</ol>
+<p>NOTE: ii —&gt; means –&gt; inverse</p>
+<dl>
+<dt>WARNING:  use scipy version &gt;=1.4.1</dt><dd><p>otherwise you get inaccurate constants after 6-7 decimal
+places</p>
+<blockquote>
+<div><p># with scipy version 1.1.0
+#bohr radius= 5.2917721067e-11 m ; less accurate
+#fac = cf.bohr2ang =0.529177210669 –&lt; – less accuaret and
+# as a result atoms pos and cell param are wrong after 6 dec     # places
+#In scipy version 1.4.1
+#bohr radiun = 5.29177210903e-11 m; is same as given
+# in nist data ; <a class="reference external" href="https://physics.nist.gov/cgi-bin/cuu/Value?bohrrada0">https://physics.nist.gov/cgi-bin/cuu/Value?bohrrada0</a>
+#Numerical value     5.291 772 109 03 x 10-11 m
+#fac = 0.529177210903
+# so take bohr2ang = 0.529177210903 if using lower version than required</p>
+</div></blockquote>
+</dd>
+</dl>
+<p>Author: S. Kumar,
+email:  <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.measure.conversion_factors.double">
+<span class="sig-prename descclassname"><span class="pre">esta.measure.conversion_factors.</span></span><span class="sig-name descname"><span class="pre">double</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.measure.conversion_factors.double" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-esta.measure">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-esta.measure" title="Permalink to this headline"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2017-2021, Sonu Kumar.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

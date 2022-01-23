@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>esta.spaceGroup package &mdash; EStA 2.8.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link href="_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> EStA
+            <img src="_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.8.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file3.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file3.html#ml-algorithms">ML algorithms</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="file3a.html">Cheat Sheet</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">EStA</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>esta.spaceGroup package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/esta.spaceGroup.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="esta-spacegroup-package">
+<h1>esta.spaceGroup package<a class="headerlink" href="#esta-spacegroup-package" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-esta.spaceGroup.read_cif">
+<span id="esta-spacegroup-read-cif-module"></span><h2>esta.spaceGroup.read_cif module<a class="headerlink" href="#module-esta.spaceGroup.read_cif" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.spaceGroup.read_cif.cif">
+<span class="sig-prename descclassname"><span class="pre">esta.spaceGroup.read_cif.</span></span><span class="sig-name descname"><span class="pre">cif</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inputfile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.spaceGroup.read_cif.cif" title="Permalink to this definition"></a></dt>
+<dd><p>read cif and generate all atoms through sym op. privided in the cif file as
+well as other atom and cell parameters to describe the xtal structure</p>
+</dd></dl>
+
+</section>
+<section id="module-esta.spaceGroup.transform">
+<span id="esta-spacegroup-transform-module"></span><h2>esta.spaceGroup.transform module<a class="headerlink" href="#module-esta.spaceGroup.transform" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.spaceGroup.transform.Transform">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.spaceGroup.transform.</span></span><span class="sig-name descname"><span class="pre">Transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cryst_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.spaceGroup.transform.Transform" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="simple">
+<dt>transfor class to</dt><dd><p>-create supercell from crystal lattice object
+-rotation/translation etc…
+-</p>
+</dd>
+<dt>More transformations to</dt><dd><p>-unit cell/atomic positions/reciprocal lattice/kpoints to be added</p>
+</dd>
+</dl>
+<p>author: sk
+email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.spaceGroup.transform.Transform.get_grouped_xyz">
+<span class="sig-name descname"><span class="pre">get_grouped_xyz</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.spaceGroup.transform.Transform.get_grouped_xyz" title="Permalink to this definition"></a></dt>
+<dd><p>xyz file with grouped atoms of same type</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.spaceGroup.transform.Transform.get_neach_type">
+<span class="sig-name descname"><span class="pre">get_neach_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.spaceGroup.transform.Transform.get_neach_type" title="Permalink to this definition"></a></dt>
+<dd><p>get number of list entries of each type</p>
+<blockquote>
+<div><p>list of strings of atomic labels</p>
+</div></blockquote>
+<blockquote>
+<div><p>get integer number of list entries (atomic symbols) of each type</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.spaceGroup.transform.Transform.get_sposcar">
+<span class="sig-name descname"><span class="pre">get_sposcar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.spaceGroup.transform.Transform.get_sposcar" title="Permalink to this definition"></a></dt>
+<dd><p>get poscar file with scaled dimensions: supercell of POSCAR file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.spaceGroup.transform.Transform.get_supercell">
+<span class="sig-name descname"><span class="pre">get_supercell</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scale</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.spaceGroup.transform.Transform.get_supercell" title="Permalink to this definition"></a></dt>
+<dd><ul class="simple">
+<li><p>create supercell by shifting ALL atoms in space with scaling</p></li>
+</ul>
+<p>[scale1,scale2,scale3]</p>
+<ul class="simple">
+<li><p>looping is performed along three directions of lv’s vectors</p></li>
+<li><dl class="simple">
+<dt>loops are:</dt><dd><p>i = 0,1,2 … sclae1
+j = 0,1,2 … scale2
+k = 0,1,2 … scale3</p>
+</dd>
+</dl>
+</li>
+<li><p>total atoms in supercell = atoms in unit-cell * np.product([scale1,scale2,scale3])</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.spaceGroup.transform.Transform.rot_trans">
+<span class="sig-name descname"><span class="pre">rot_trans</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp_mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lcell</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lposition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">translation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rotation_matrix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.spaceGroup.transform.Transform.rot_trans" title="Permalink to this definition"></a></dt>
+<dd><p>given input matrix (may be cell matrix or position matrix in c order)
+and rotation matrix (optional; default is unit matrix), output respective new matrix</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>inp_mat</strong> (<em>array; rank 3</em><em> or </em><em>rank N</em><em> (</em><em>no. of atoms</em><em>)</em>) – </p></li>
+<li><p><strong>lcell</strong> (<em>logical</em><em>, </em><em>indicates inp_mat is for cell</em>) – </p></li>
+<li><p><strong>lposition</strong> (<em>logical</em><em>, </em><em>indicates that inp_mat is for atomic points/positions</em>) – </p></li>
+<li><p><strong>1</strong> (<em>translation; array/vecor; rank</em>) – </p></li>
+<li><p><strong>0</strong><strong>)</strong><strong>)</strong> (<em>optional</em><em> (</em><em>default is zero vector =</em><em> (</em><em>0 0</em>) – </p></li>
+<li><p><strong>rotation_matrix</strong> (<em>array of rank3</em><em>, </em><em>optional</em><em> (</em><em>default is unit matrix</em><em>)</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>inp_mat like</p>
+</dd>
+</dl>
+<p>Note: following convention like spglib: <a class="reference external" href="https://spglib.github.io/spglib/definition.html">https://spglib.github.io/spglib/definition.html</a></p>
+<blockquote>
+<div><p>====&gt;
+Basis vectors (a,b,c)  or (a1, a2, a3)</p>
+<p>In spglib, basis vectors are represented by three column vectors (in Cartesian coordinates.
+) :</p>
+<p>a=⎛⎝⎜ax ay az⎞⎠⎟,         b=⎛⎝⎜bx by bz⎞⎠⎟,            c=⎛⎝⎜cx cy cz⎞⎠⎟,</p>
+<p>====&gt;
+atomic point x are represented as three fractional values relative to basis
+vectors as follows,</p>
+<p>x=⎛⎝⎜x1x2x3⎞⎠⎟</p>
+<p>====&gt;
+The transformation matrix P changes choice of basis vectors as follows</p>
+<blockquote>
+<div><p>(a b c) = (as bs cs) P
+where (abc) and (as bs cs) are the basis vectors of an arbitrary
+system and of a starndardized system, respectively</p>
+<p>The origin shift p gives the vector from the origin of the standardized
+system Os to the origin of the arbitrary system O
+p = O − Os</p>
+</div></blockquote>
+<p>A change of basis is described by the combination of the transformation
+matrix and the origin shift denoted by (P,p) where first the transformation
+matrix is applied and then origin shift. The points in the standardized system
+xs and arbitrary system x are related by</p>
+<p>xs = P x + p,</p>
+<p>or equivalently,</p>
+<p>x = P^-1 xs − P^-1 p</p>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-esta.spaceGroup.transform_adv">
+<span id="esta-spacegroup-transform-adv-module"></span><h2>esta.spaceGroup.transform_adv module<a class="headerlink" href="#module-esta.spaceGroup.transform_adv" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.spaceGroup.transform_adv.transform">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.spaceGroup.transform_adv.</span></span><span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cryst_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.spaceGroup.transform_adv.transform" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="simple">
+<dt>transfor class to</dt><dd><p>-create supercell from crystal lattice object
+-rotation/translation etc…
+-</p>
+</dd>
+<dt>More transformations to</dt><dd><p>-unit cell/atomic positions/reciprocal lattice/kpoints to be added</p>
+</dd>
+</dl>
+<p>author: sk
+email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.spaceGroup.transform_adv.transform.get_grouped_xyz">
+<span class="sig-name descname"><span class="pre">get_grouped_xyz</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.spaceGroup.transform_adv.transform.get_grouped_xyz" title="Permalink to this definition"></a></dt>
+<dd><p>xyz file with grouped atoms of same type</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.spaceGroup.transform_adv.transform.get_neach_type">
+<span class="sig-name descname"><span class="pre">get_neach_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.spaceGroup.transform_adv.transform.get_neach_type" title="Permalink to this definition"></a></dt>
+<dd><p>get number of list entries of each type</p>
+<blockquote>
+<div><p>list of strings of atomic labels</p>
+</div></blockquote>
+<blockquote>
+<div><p>get integer number of list entries (atomic symbols) of each type</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.spaceGroup.transform_adv.transform.get_sposcar">
+<span class="sig-name descname"><span class="pre">get_sposcar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.spaceGroup.transform_adv.transform.get_sposcar" title="Permalink to this definition"></a></dt>
+<dd><p>get poscar file with scaled dimensions: supercell of POSCAR file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.spaceGroup.transform_adv.transform.get_supercell">
+<span class="sig-name descname"><span class="pre">get_supercell</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scale</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.spaceGroup.transform_adv.transform.get_supercell" title="Permalink to this definition"></a></dt>
+<dd><ul class="simple">
+<li><p>create supercell by shifting ALL atoms in space with scaling</p></li>
+</ul>
+<p>[scale1,scale2,scale3]</p>
+<ul class="simple">
+<li><p>looping is performed along three directions of lv’s vectors</p></li>
+<li><dl class="simple">
+<dt>loops are:</dt><dd><p>i = 0,1,2 … sclae1
+j = 0,1,2 … scale2
+k = 0,1,2 … scale3</p>
+</dd>
+</dl>
+</li>
+<li><p>total atoms in supercell = atoms in unit-cell * np.product([scale1,scale2,scale3])</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.spaceGroup.transform_adv.transform.rot_trans">
+<span class="sig-name descname"><span class="pre">rot_trans</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp_mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lcell</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lposition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">translation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rotation_matrix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.spaceGroup.transform_adv.transform.rot_trans" title="Permalink to this definition"></a></dt>
+<dd><p>given input matrix (may be cell matrix or position matrix in c order)
+and rotation matrix (optional; default is unit matrix), output respective new matrix</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>inp_mat</strong> (<em>array; rank 3</em><em> or </em><em>rank N</em><em> (</em><em>no. of atoms</em><em>)</em>) – </p></li>
+<li><p><strong>lcell</strong> (<em>logical</em><em>, </em><em>indicates inp_mat is for cell</em>) – </p></li>
+<li><p><strong>lposition</strong> (<em>logical</em><em>, </em><em>indicates that inp_mat is for atomic points/positions</em>) – </p></li>
+<li><p><strong>1</strong> (<em>translation; array/vecor; rank</em>) – </p></li>
+<li><p><strong>0</strong><strong>)</strong><strong>)</strong> (<em>optional</em><em> (</em><em>default is zero vector =</em><em> (</em><em>0 0</em>) – </p></li>
+<li><p><strong>rotation_matrix</strong> (<em>array of rank3</em><em>, </em><em>optional</em><em> (</em><em>default is unit matrix</em><em>)</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>inp_mat like</p>
+</dd>
+</dl>
+<p>Note: following convention like spglib: <a class="reference external" href="https://spglib.github.io/spglib/definition.html">https://spglib.github.io/spglib/definition.html</a></p>
+<blockquote>
+<div><p>====&gt;
+Basis vectors (a,b,c)  or (a1, a2, a3)</p>
+<p>In spglib, basis vectors are represented by three column vectors (in Cartesian coordinates.
+) :</p>
+<p>a=⎛⎝⎜ax ay az⎞⎠⎟,         b=⎛⎝⎜bx by bz⎞⎠⎟,            c=⎛⎝⎜cx cy cz⎞⎠⎟,</p>
+<p>====&gt;
+atomic point x are represented as three fractional values relative to basis
+vectors as follows,</p>
+<p>x=⎛⎝⎜x1x2x3⎞⎠⎟</p>
+<p>====&gt;
+The transformation matrix P changes choice of basis vectors as follows</p>
+<blockquote>
+<div><p>(a b c) = (as bs cs) P
+where (abc) and (as bs cs) are the basis vectors of an arbitrary
+system and of a starndardized system, respectively</p>
+<p>The origin shift p gives the vector from the origin of the standardized
+system Os to the origin of the arbitrary system O
+p = O − Os</p>
+</div></blockquote>
+<p>A change of basis is described by the combination of the transformation
+matrix and the origin shift denoted by (P,p) where first the transformation
+matrix is applied and then origin shift. The points in the standardized system
+xs and arbitrary system x are related by</p>
+<p>xs = P x + p,</p>
+<p>or equivalently,</p>
+<p>x = P^-1 xs − P^-1 p</p>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-esta.spaceGroup">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-esta.spaceGroup" title="Permalink to this headline"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2017-2021, Sonu Kumar.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

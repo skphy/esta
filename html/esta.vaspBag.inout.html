@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>esta.vaspBag.inout package &mdash; EStA 2.8.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link href="_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> EStA
+            <img src="_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.8.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file3.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file3.html#ml-algorithms">ML algorithms</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">EStA2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="file4.html">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-surfreact-package">esta.surfReact package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-mlbag-package">esta.mlBag package</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="file3a.html">Cheat Sheet</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">EStA</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>esta.vaspBag.inout package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/esta.vaspBag.inout.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="esta-vaspbag-inout-package">
+<h1>esta.vaspBag.inout package<a class="headerlink" href="#esta-vaspbag-inout-package" title="Permalink to this headline"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-esta.vaspBag.inout.crystal_lattice">
+<span id="esta-vaspbag-inout-crystal-lattice-module"></span><h2>esta.vaspBag.inout.crystal_lattice module<a class="headerlink" href="#module-esta.vaspBag.inout.crystal_lattice" title="Permalink to this headline"></a></h2>
+<p>Crystal lattice class to define lattice parameters and basis
+crystal = lattice + basis (atoms or molecules )</p>
+<p>Author: Sonu Kumar</p>
+<p>Email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
+<p>Date: April, 2017, 2019, 2020</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.crystal_lattice.</span></span><span class="sig-name descname"><span class="pre">CrystalLattice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Crystal lattice class to define lattice parameters and basis
+crystal = lattice + basis (atoms or molecules )</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_all_atoms_labels">
+<span class="sig-name descname"><span class="pre">get_all_atoms_labels</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_all_atoms_labels" title="Permalink to this definition"></a></dt>
+<dd><p>by reading POSCAR, find the atomic labels of the atoms and total no of atoms</p>
+<p>input: POSCAR file in current dir.</p>
+<dl>
+<dt>output:</dt><dd><ul class="simple">
+<li><p>list of strings of atomic lebels of all atoms according to the numbering of atoms in</p></li>
+</ul>
+<p>POSCAR file
+- scalar; total number of atoms in the POSCAR file
+- list of integer numbers starting from 1 to ntotal for all atoms(e.g. 1 1 1 2 3 4 4 ..)</p>
+</dd>
+</dl>
+<p>author: sk
+email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_atm_type">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_atm_type</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_atm_type" title="Permalink to this definition"></a></dt>
+<dd><p>get symbolic representation of atoms of each type in
+the form of list</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_cell_matrix">
+<span class="sig-name descname"><span class="pre">get_cell_matrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style_format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_cell_matrix" title="Permalink to this definition"></a></dt>
+<dd><p>get lattice matrix of three cell/lattice vectors lv1, lv2, and lv3
+in c-style format or fortran stype format</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_cell_vectors">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_cell_vectors</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_cell_vectors" title="Permalink to this definition"></a></dt>
+<dd><p>geta tuple of set of three cell/lattice vectors lv1, lv2, and lv3
+in c-style format</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_dispPOSCAR">
+<span class="sig-name descname"><span class="pre">get_dispPOSCAR</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ldisp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">disp_atoms_num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_dispPOSCAR" title="Permalink to this definition"></a></dt>
+<dd><p>get displaced poscar with selective tag and atomic positions
+tagged as T T T or F F F</p>
+<dl>
+<dt>input:</dt><dd><p>logical: ldisp, True/False (displace all atoms or dont displace
+any of the atoms)</p>
+<dl class="simple">
+<dt>list: disp_atoms_num;  atm numbers which are to be displaced;</dt><dd><p>numbering starts from 1 .. to natoms ….TODO YET</p>
+</dd>
+</dl>
+</dd>
+<dt>output:</dt><dd><p>POSCAR file with selective dynamics tags</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_grouped_list">
+<span class="sig-name descname"><span class="pre">get_grouped_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">llist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_grouped_list" title="Permalink to this definition"></a></dt>
+<dd><p>get same string elements of list grouped together</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_natm_type">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_natm_type</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_natm_type" title="Permalink to this definition"></a></dt>
+<dd><p>get no. of atoms of each type in a list format</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_neach_type">
+<span class="sig-name descname"><span class="pre">get_neach_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_neach_type" title="Permalink to this definition"></a></dt>
+<dd><p>get number of list entries of each type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>list of integers for each type of atoms specifying their number</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_poscar">
+<span class="sig-name descname"><span class="pre">get_poscar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_poscar" title="Permalink to this definition"></a></dt>
+<dd><p>get poscar file variables:</p>
+<dl class="simple">
+<dt>input:</dt><dd><p>POSCAR file</p>
+</dd>
+<dt>output:</dt><dd><dl class="simple">
+<dt>if l_SelectDynamics:</dt><dd><p>return self.tau_cartesian, self.real_volume, self.LV1,
+self.LV2, self.LV3,self.atm_type, self.natm_type, self.natoms,
+self.atomFix, self.atomMove</p>
+</dd>
+<dt>else:</dt><dd><p>return self.tau_cartesian, self.real_volume, self.LV1,
+self.LV2, self.LV3,self.atm_type, self.natm_type, self.natoms</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_rVolume">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_rVolume</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_rVolume" title="Permalink to this definition"></a></dt>
+<dd><p>get real space lattice volume</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_unique_list">
+<span class="sig-name descname"><span class="pre">get_unique_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_unique_list" title="Permalink to this definition"></a></dt>
+<dd><p>get unique elements of list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>string for each type of atoms</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.is_cartesian">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_cartesian</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.is_cartesian" title="Permalink to this definition"></a></dt>
+<dd><p>check if atom positions in cartesian  coordinates</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.is_crystal">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_crystal</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.is_crystal" title="Permalink to this definition"></a></dt>
+<dd><p>check if atom positions in crytal coordinates</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.is_selective_dynamics">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_selective_dynamics</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.is_selective_dynamics" title="Permalink to this definition"></a></dt>
+<dd><p>check whether selective dynamics True or False</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.reciprocal_lattice">
+<span class="sig-name descname"><span class="pre">reciprocal_lattice</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.reciprocal_lattice" title="Permalink to this definition"></a></dt>
+<dd><p>method to calculate the reciprocal lattice vectors</p>
+<p>input: real space lattice vectors: LV1, LV2, LV3
+output: reciprocal space lattice vectors: b1, b2, b3</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>note: a factor of 2pi is included in b1, b2, and b3</p></li>
+</ul>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.to_cartesian">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">to_cartesian</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.to_cartesian" title="Permalink to this definition"></a></dt>
+<dd><p>get atomic position in cartesin cooridnates</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.to_crystal">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">to_crystal</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.to_crystal" title="Permalink to this definition"></a></dt>
+<dd><p>get atomic position in crystal cooridnates</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-esta.vaspBag.inout.diameter_or_area_nanowire">
+<span id="esta-vaspbag-inout-diameter-or-area-nanowire-module"></span><h2>esta.vaspBag.inout.diameter_or_area_nanowire module<a class="headerlink" href="#module-esta.vaspBag.inout.diameter_or_area_nanowire" title="Permalink to this headline"></a></h2>
+<p>Calculate the diametere or area/volume of a nanowire</p>
+<p>Parameters/Input: (string)  default string taken is “POSCAR”</p>
+<p>Returns/output: (float)  diameter</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.diameter_or_area_nanowire.diameter_nanowire">
+<span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.diameter_or_area_nanowire.</span></span><span class="sig-name descname"><span class="pre">diameter_nanowire</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tau_cartesian</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">periodicity_direction</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.diameter_or_area_nanowire.diameter_nanowire" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-esta.vaspBag.inout.get_labelling_atoms">
+<span id="esta-vaspbag-inout-get-labelling-atoms-module"></span><h2>esta.vaspBag.inout.get_labelling_atoms module<a class="headerlink" href="#module-esta.vaspBag.inout.get_labelling_atoms" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.get_labelling_atoms.get_all_atoms_lebels">
+<span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.get_labelling_atoms.</span></span><span class="sig-name descname"><span class="pre">get_all_atoms_lebels</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ffile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.get_labelling_atoms.get_all_atoms_lebels" title="Permalink to this definition"></a></dt>
+<dd><p>by reading POSCAR, find the atomic labels of the atoms and total no of atoms</p>
+<p>input: POSCAR file in current dir.</p>
+<dl>
+<dt>output:</dt><dd><ul class="simple">
+<li><p>list of strings of atomic lebels of all atoms according to the numbering of atoms in</p></li>
+</ul>
+<p>POSCAR file
+- integer for total number of atoms in the POSCAR file</p>
+</dd>
+</dl>
+<p>author: sk
+email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
+</dd></dl>
+
+</section>
+<section id="module-esta.vaspBag.inout.lattice">
+<span id="esta-vaspbag-inout-lattice-module"></span><h2>esta.vaspBag.inout.lattice module<a class="headerlink" href="#module-esta.vaspBag.inout.lattice" title="Permalink to this headline"></a></h2>
+<p>lattice class to define unit cell and lattice parameters</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.lattice.lattice">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.lattice.</span></span><span class="sig-name descname"><span class="pre">lattice</span></span><a class="headerlink" href="#esta.vaspBag.inout.lattice.lattice" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+</section>
+<section id="module-esta.vaspBag.inout.old_reciprocal_lattice">
+<span id="esta-vaspbag-inout-old-reciprocal-lattice-module"></span><h2>esta.vaspBag.inout.old_reciprocal_lattice module<a class="headerlink" href="#module-esta.vaspBag.inout.old_reciprocal_lattice" title="Permalink to this headline"></a></h2>
+<p>method to calculate the reciprocal lattice vectors</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.old_reciprocal_lattice.reciprocal_lattice">
+<span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.old_reciprocal_lattice.</span></span><span class="sig-name descname"><span class="pre">reciprocal_lattice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">LV1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">LV2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">LV3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.old_reciprocal_lattice.reciprocal_lattice" title="Permalink to this definition"></a></dt>
+<dd><p>input: real space lattice vectors: LV1, LV2, LV3
+output: reciprocal space lattice vectors: b1, b2, b3</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>note: a factor of 2pi is included in b1, b2, and b3</p></li>
+</ul>
+</div></blockquote>
+</dd></dl>
+
+</section>
+<section id="module-esta.vaspBag.inout.read_eigenval">
+<span id="esta-vaspbag-inout-read-eigenval-module"></span><h2>esta.vaspBag.inout.read_eigenval module<a class="headerlink" href="#module-esta.vaspBag.inout.read_eigenval" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.read_eigenval.read_eigenval">
+<span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.read_eigenval.</span></span><span class="sig-name descname"><span class="pre">read_eigenval</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.read_eigenval.read_eigenval" title="Permalink to this definition"></a></dt>
+<dd><p>read EIGENVAL file and find the band gap and other required items …</p>
+<p>format of eigenval file :
+#1             108  108    1    1
+#2              0.5831055E+02  0.1906800E-08  0.1906800E-08  0.2000000E-08  0.5000000E-15
+#3              1.000000000000000E-004
+#4              CAR
+#5              unknown system
+#6                648     13    388
+#7
+#8              0.0000000E+00  0.0000000E+00  0.0000000E+00  0.2777778E-01</p>
+<blockquote>
+<div><blockquote>
+<div><p>1      -16.615104   1.000000
+2      -16.236469   1.000000
+3      -16.236325   1.000000
+4      -16.236284   1.000000</p>
+</div></blockquote>
+</div></blockquote>
+<p>the numbers are
+1) # of ions , # of ions, the number of loops after which the averaged pair correlation
+functions and the DOS are written, ISPIN
+2) the volume of the cell (in Ã…^3) and the lattice parameters of the box (in m)
+3) T
+4) the string ‘CAR’
+5) the header
+6) # of electrons, # of k-points, #of bands
+7) the k-point and its weight</p>
+<p>NOTE:  what about magnetic systems or SOC calculations?</p>
+</dd></dl>
+
+</section>
+<section id="module-esta.vaspBag.inout.read_eigenval_file">
+<span id="esta-vaspbag-inout-read-eigenval-file-module"></span><h2>esta.vaspBag.inout.read_eigenval_file module<a class="headerlink" href="#module-esta.vaspBag.inout.read_eigenval_file" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.read_eigenval_file.read_eigenval">
+<span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.read_eigenval_file.</span></span><span class="sig-name descname"><span class="pre">read_eigenval</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.read_eigenval_file.read_eigenval" title="Permalink to this definition"></a></dt>
+<dd><blockquote>
+<div><p>read EIGENVAL file and find the band gap and other required items …</p>
+</div></blockquote>
+<p>format of eigenval file :
+#1             108  108    1    1
+#2              0.5831055E+02  0.1906800E-08  0.1906800E-08  0.2000000E-08  0.5000000E-15
+#3              1.000000000000000E-004
+#4              CAR
+#5              unknown system
+#6                648     13    388
+#7
+#8              0.0000000E+00  0.0000000E+00  0.0000000E+00  0.2777778E-01</p>
+<blockquote>
+<div><blockquote>
+<div><p>1      -16.615104   1.000000
+2      -16.236469   1.000000
+3      -16.236325   1.000000
+4      -16.236284   1.000000</p>
+</div></blockquote>
+</div></blockquote>
+<p>the numbers are
+1) # of ions , # of ions, the number of loops after which the averaged pair correlation
+functions and the DOS are written, ISPIN
+2) the volume of the cell (in Ã…^3) and the lattice parameters of the box (in m)
+3) T
+4) the string ‘CAR’
+5) the header
+6) # of electrons, # of k-points, #of bands
+7) the k-point and its weight</p>
+<p>NOTE:  what about magnetic systems or SOC calculations?</p>
+</dd></dl>
+
+</section>
+<section id="module-esta.vaspBag.inout.read_outcar">
+<span id="esta-vaspbag-inout-read-outcar-module"></span><h2>esta.vaspBag.inout.read_outcar module<a class="headerlink" href="#module-esta.vaspBag.inout.read_outcar" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.read_outcar.read_outcar">
+<span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.read_outcar.</span></span><span class="sig-name descname"><span class="pre">read_outcar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.read_outcar.read_outcar" title="Permalink to this definition"></a></dt>
+<dd><p>read outcar file</p>
+</dd></dl>
+
+</section>
+<section id="module-esta.vaspBag.inout.read_outcar_file">
+<span id="esta-vaspbag-inout-read-outcar-file-module"></span><h2>esta.vaspBag.inout.read_outcar_file module<a class="headerlink" href="#module-esta.vaspBag.inout.read_outcar_file" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.read_outcar_file.read_outcar">
+<span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.read_outcar_file.</span></span><span class="sig-name descname"><span class="pre">read_outcar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.read_outcar_file.read_outcar" title="Permalink to this definition"></a></dt>
+<dd><p>read outcar file</p>
+</dd></dl>
+
+</section>
+<section id="module-esta.vaspBag.inout.read_poscar">
+<span id="esta-vaspbag-inout-read-poscar-module"></span><h2>esta.vaspBag.inout.read_poscar module<a class="headerlink" href="#module-esta.vaspBag.inout.read_poscar" title="Permalink to this headline"></a></h2>
+<p>routine to read POSCAR file (VASP)</p>
+<p>Input: default POSCAR file is taken from current dir.</p>
+<dl class="field-list">
+<dt class="field-odd">returns</dt>
+<dd class="field-odd"><p>return tau_cartesian, real_volume, LV1, LV2, LV3, atomFix, atomMove
+else:</p>
+<blockquote>
+<div><p>return tau_cartesian, real_volume, LV1, LV2, LV3</p>
+</div></blockquote>
+</dd>
+<dt class="field-even">rtype</dt>
+<dd class="field-even"><p>if selective dynamics</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>modification done to coordinates if -ve by more than 1. unit of
+angstrom: see if there is a better way to handle it</p>
+</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.read_poscar.get_poscar">
+<span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.read_poscar.</span></span><span class="sig-name descname"><span class="pre">get_poscar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">location</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.read_poscar.get_poscar" title="Permalink to this definition"></a></dt>
+<dd><p>method to read poscar file</p>
+<p>Input: location of “POSCAR” file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><p>return tau_cartesian, real_volume, LV1, LV2, LV3, atm_type, natom_type, natoms, atomFix, atomMove
+else:</p>
+<blockquote>
+<div><p>return tau_cartesian, real_volume, LV1, LV2, LV3, atm_type, natom_type, natoms</p>
+</div></blockquote>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>if selective dynamics</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-esta.vaspBag.inout.reciprocal_lattice">
+<span id="esta-vaspbag-inout-reciprocal-lattice-module"></span><h2>esta.vaspBag.inout.reciprocal_lattice module<a class="headerlink" href="#module-esta.vaspBag.inout.reciprocal_lattice" title="Permalink to this headline"></a></h2>
+<p>method to calculate the reciprocal lattice vectors</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.reciprocal_lattice.reciprocal_lattice">
+<span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.reciprocal_lattice.</span></span><span class="sig-name descname"><span class="pre">reciprocal_lattice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">LV1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">LV2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">LV3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.reciprocal_lattice.reciprocal_lattice" title="Permalink to this definition"></a></dt>
+<dd><p>input: real space lattice vectors: LV1, LV2, LV3
+output: reciprocal space lattice vectors: b1, b2, b3</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>note: a factor of 2pi is included in b1, b2, and b3</p></li>
+</ul>
+</div></blockquote>
+</dd></dl>
+
+</section>
+<section id="esta-vaspbag-inout-shift-to-origin-module">
+<h2>esta.vaspBag.inout.shift_to_origin module<a class="headerlink" href="#esta-vaspbag-inout-shift-to-origin-module" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-esta.vaspBag.inout.xml_vasp">
+<span id="esta-vaspbag-inout-xml-vasp-module"></span><h2>esta.vaspBag.inout.xml_vasp module<a class="headerlink" href="#module-esta.vaspBag.inout.xml_vasp" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.xml_vasp.read_vasp_xml">
+<span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.xml_vasp.</span></span><span class="sig-name descname"><span class="pre">read_vasp_xml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'vasprun.xml'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.xml_vasp.read_vasp_xml" title="Permalink to this definition"></a></dt>
+<dd><p>Parse vasprun.xml file of vasp</p>
+<p>Input: string: ‘vasprun.xml’
+Returns: array: unit cell,</p>
+<blockquote>
+<div><p>array: atomic positions,
+array: forces</p>
+</div></blockquote>
+<p>Taken from ase – to be rewritten again</p>
+</dd></dl>
+
+</section>
+<section id="module-esta.vaspBag.inout.xml_vasp_ASE">
+<span id="esta-vaspbag-inout-xml-vasp-ase-module"></span><h2>esta.vaspBag.inout.xml_vasp_ASE module<a class="headerlink" href="#module-esta.vaspBag.inout.xml_vasp_ASE" title="Permalink to this headline"></a></h2>
+<p>This module contains functionality for reading and writing an ASE
+Atoms object in VASP POSCAR format.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.xml_vasp_ASE.atomtypes_outpot">
+<span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.xml_vasp_ASE.</span></span><span class="sig-name descname"><span class="pre">atomtypes_outpot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">posfname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numsyms</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.xml_vasp_ASE.atomtypes_outpot" title="Permalink to this definition"></a></dt>
+<dd><p>Try to retreive chemical symbols from OUTCAR or POTCAR</p>
+<p>If getting atomtypes from the first line in POSCAR/CONTCAR fails, it might
+be possible to find the data in OUTCAR or POTCAR, if these files exist.</p>
+<p>posfname – The filename of the POSCAR/CONTCAR file we’re trying to read</p>
+<p>numsyms – The number of symbols we must find</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.xml_vasp_ASE.get_atomtypes">
+<span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.xml_vasp_ASE.</span></span><span class="sig-name descname"><span class="pre">get_atomtypes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.xml_vasp_ASE.get_atomtypes" title="Permalink to this definition"></a></dt>
+<dd><p>Given a file name, get the atomic symbols.</p>
+<p>The function can get this information from OUTCAR and POTCAR
+format files.  The files can also be compressed with gzip or
+bzip2.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.xml_vasp_ASE.get_atomtypes_from_formula">
+<span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.xml_vasp_ASE.</span></span><span class="sig-name descname"><span class="pre">get_atomtypes_from_formula</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">formula</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.xml_vasp_ASE.get_atomtypes_from_formula" title="Permalink to this definition"></a></dt>
+<dd><p>Return atom types from chemical formula (optionally prepended
+with and underscore).</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.xml_vasp_ASE.read_vasp">
+<span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.xml_vasp_ASE.</span></span><span class="sig-name descname"><span class="pre">read_vasp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'CONTCAR'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.xml_vasp_ASE.read_vasp" title="Permalink to this definition"></a></dt>
+<dd><p>Import POSCAR/CONTCAR type file.</p>
+<p>Reads unitcell, atom positions and constraints from the POSCAR/CONTCAR
+file and tries to read atom types from POSCAR/CONTCAR header, if this fails
+the atom types are read from OUTCAR or POTCAR file.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.xml_vasp_ASE.read_vasp_out">
+<span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.xml_vasp_ASE.</span></span><span class="sig-name descname"><span class="pre">read_vasp_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'OUTCAR'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.xml_vasp_ASE.read_vasp_out" title="Permalink to this definition"></a></dt>
+<dd><p>Import OUTCAR type file.</p>
+<p>Reads unitcell, atom positions, energies, and forces from the OUTCAR file
+and attempts to read constraints (if any) from CONTCAR/POSCAR, if present.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.xml_vasp_ASE.read_vasp_xdatcar">
+<span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.xml_vasp_ASE.</span></span><span class="sig-name descname"><span class="pre">read_vasp_xdatcar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.xml_vasp_ASE.read_vasp_xdatcar" title="Permalink to this definition"></a></dt>
+<dd><p>Import XDATCAR file</p>
+<p>Reads all positions from the XDATCAR and returns a list of
+Atoms objects.  Useful for viewing optimizations runs
+from VASP5.x</p>
+<p>Constraints ARE NOT stored in the XDATCAR, and as such, Atoms
+objects retrieved from the XDATCAR will not have constraints set.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.xml_vasp_ASE.read_vasp_xml">
+<span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.xml_vasp_ASE.</span></span><span class="sig-name descname"><span class="pre">read_vasp_xml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'vasprun.xml'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.xml_vasp_ASE.read_vasp_xml" title="Permalink to this definition"></a></dt>
+<dd><p>Parse vasprun.xml file.</p>
+<p>Reads unit cell, atom positions, energies, forces, and constraints
+from vasprun.xml file</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.xml_vasp_ASE.write_vasp">
+<span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.xml_vasp_ASE.</span></span><span class="sig-name descname"><span class="pre">write_vasp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atoms</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direct</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbol_count</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">long_format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vasp5</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.xml_vasp_ASE.write_vasp" title="Permalink to this definition"></a></dt>
+<dd><p>Method to write VASP position (POSCAR/CONTCAR) files.</p>
+<p>Writes label, scalefactor, unitcell, # of various kinds of atoms,
+positions in cartesian or scaled coordinates (Direct), and constraints
+to file. Cartesian coordiantes is default and default label is the
+atomic species, e.g. ‘C N H Cu’.</p>
+</dd></dl>
+
+</section>
+<section id="module-esta.vaspBag.inout.xml_vasp_hse">
+<span id="esta-vaspbag-inout-xml-vasp-hse-module"></span><h2>esta.vaspBag.inout.xml_vasp_hse module<a class="headerlink" href="#module-esta.vaspBag.inout.xml_vasp_hse" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.vaspBag.inout.xml_vasp_hse.read_vasp_xml">
+<span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.xml_vasp_hse.</span></span><span class="sig-name descname"><span class="pre">read_vasp_xml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'vasprun.xml'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.xml_vasp_hse.read_vasp_xml" title="Permalink to this definition"></a></dt>
+<dd><p>Parse vasprun.xml file of vasp</p>
+<p>Input: string: ‘vasprun.xml’
+Returns: array: unit cell,</p>
+<blockquote>
+<div><p>array: atomic positions,
+array: forces</p>
+</div></blockquote>
+<p>Taken from ase – to be rewritten again</p>
+</dd></dl>
+
+</section>
+<section id="module-esta.vaspBag.inout">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-esta.vaspBag.inout" title="Permalink to this headline"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2017-2021, Sonu Kumar.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

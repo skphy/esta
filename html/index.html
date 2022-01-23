@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EStA documentation! &mdash; EStA 2.8.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="file1.html" />
+    <link href="_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#" class="icon icon-home"> EStA
+            <img src="_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                2.8.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file3.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file3.html#ml-algorithms">ML algorithms</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">EStA2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="file4.html">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-surfreact-package">esta.surfReact package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-mlbag-package">esta.mlBag package</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="file3a.html">Cheat Sheet</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">EStA</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li>EStA documentation!</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <a class="reference internal image-reference" href="_images/esta_logo_general1_1.png"><img alt="esta" class="align-center" src="_images/esta_logo_general1_1.png" style="width: 270.9px; height: 135.0px;" /></a>
+<section id="esta-documentation">
+<h1>EStA documentation!<a class="headerlink" href="#esta-documentation" title="Permalink to this headline"></a></h1>
+<p><strong>Electronic Structure Analyzer</strong> (<strong>EStA</strong>) aka pytware for analyzing and calculating to some extent the electronic structure of materials and molecules.</p>
+<p><strong>EStA</strong> software package is capable of analyzing, pre-processing, and post-processing data from different software packages such as vasp, quantum-espresso, gaussian, GRRM, xTB, and so on. It can automatically generate input files for vasp, quantum-esspresso, and other codes as well can do some model calculations. It is written in python3, Fotran90, and some part in C. In future, it will be able to perform calculations for predicting electronic and transport properties.</p>
+<section id="some-abilities-of-the-code">
+<h2>Some abilities of the code<a class="headerlink" href="#some-abilities-of-the-code" title="Permalink to this headline"></a></h2>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>automatic input generations for different electronic structure softwares</p></li>
+<li><p>output analysis of different file formats such xml, yaml, json, and so on</p></li>
+<li><p>vibrational and thermodynamical analysis of atomic and molecular systems</p></li>
+<li><p>transition state finding using CI-NEB approach (interfaced with quantum-espresso for the time being!!)</p></li>
+<li><p>zone centre phonon calculations based on gradient input (to be expanded to whole zone)</p></li>
+<li><p>model calculations of lattice thermal conductivity (first principles calculation is experimental)</p></li>
+<li><p>tight binding calculation of bulk materials</p></li>
+<li><p>point group detection (space group detection and other stuff carried out using spglib)</p></li>
+<li><p>lattice transformation analysis</p></li>
+<li><p>machine learning prediction of <em>important</em> physical property (more to add soon!!)</p></li>
+<li><p>easy to use unit conversion  routine; axsf, bxsf, cube files .. for visualizations etc</p></li>
+<li><p>more routines (interfacing of xTB with GRRM, minimization procedures, fortran code for calculating static dielectric constant, mode oscillator strength etc..)  are there, but to be added to esta package!!!</p></li>
+</ol>
+</div></blockquote>
+<p>Link to my website at google site: <a class="reference external" href="https://sites.google.com/view/1009ukumars">google site home page</a></p>
+</section>
+<section id="keyword-related-to-author-s-research-areas">
+<h2>Keyword related to author’s research areas<a class="headerlink" href="#keyword-related-to-author-s-research-areas" title="Permalink to this headline"></a></h2>
+<p><strong>thermoelectrics, heterogeneous catalysis, homogeneous catalysis, defects, phonons, and  machine learning</strong></p>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file3.html">Machine learning</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="file3.html#regression">1. Regression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file3.html#classification">2. Classification</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="file3.html#ml-algorithms">ML algorithms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="file3.html#gpr-gaussian-process-regression">GPR: Gaussian Process Regression</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="file3.html#linear-fitting">Linear fitting</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="file3.html#linear-regression">Linear Regression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file3.html#references">References</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">EStA2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="file4.html">esta.general package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.aadhaar">esta.general.aadhaar module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.add_const_to_dict">esta.general.add_const_to_dict module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.add_vacuum_to_unit_cell">esta.general.add_vacuum_to_unit_cell module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.affine">esta.general.affine module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#esta-general-atomic-distance-density-module">esta.general.atomic_Distance_Density module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id1">esta.general.atomic_distance_density module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#esta-general-average-module">esta.general.average module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.b">esta.general.b module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.boltzmann">esta.general.boltzmann module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#esta-general-charge-bader-module">esta.general.charge_bader module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.compare_scalar">esta.general.compare_scalar module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#esta-general-conjugate-gradient-module">esta.general.conjugate_gradient module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.conversion_factors">esta.general.conversion_factors module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.crystal_latticee">esta.general.crystal_latticee module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.direction_index2str">esta.general.direction_index2str module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.distance_matrix_PBC">esta.general.distance_matrix_PBC module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.distances_ase_esa">esta.general.distances_ase_esa module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.entropy_data">esta.general.entropy_data module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.filter_vib_freq">esta.general.filter_vib_freq module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#esta-general-finding-vacuum-region2-module">esta.general.finding_vacuum_region2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#esta-general-free-energy-ethane-module">esta.general.free_energy_ethane module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.from_pos2xyz">esta.general.from_pos2xyz module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#esta-general-get-acf-bader-module">esta.general.get_ACF_bader module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.get_com">esta.general.get_com module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.get_configs">esta.general.get_configs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.get_configs_btw2strs">esta.general.get_configs_btw2strs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.get_labelling_atoms">esta.general.get_labelling_atoms module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.get_moved_atom_n_symb">esta.general.get_moved_atom_n_symb module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#esta-general-get-poscar-from-cxyz-module">esta.general.get_poscar_from_cxyz module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.get_range_from_intervals">esta.general.get_range_from_intervals module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.get_rotation_matrix">esta.general.get_rotation_matrix module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.integration1D_over_a_cutoff">esta.general.integration1D_over_a_cutoff module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.list_grouped_and_unique">esta.general.list_grouped_and_unique module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.manipulate">esta.general.manipulate module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.metric_tensor">esta.general.metric_tensor module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.operation">esta.general.operation module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.peak_position_and_average_1D">esta.general.peak_position_and_average_1D module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.pseudo_info">esta.general.pseudo_info module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.rate_const_IS0_TS1">esta.general.rate_const_IS0_TS1 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.read_jmol">esta.general.read_jmol module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.read_xyz">esta.general.read_xyz module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.reciprocal_lattice">esta.general.reciprocal_lattice module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.reverse_array">esta.general.reverse_array module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.shift">esta.general.shift module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.shift0">esta.general.shift0 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#esta-general-shift-atom-test-old-module">esta.general.shift_atom_test_old module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.shift_poscar">esta.general.shift_poscar module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.sum_dictionaries">esta.general.sum_dictionaries module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.symbol_from_atm_number">esta.general.symbol_from_atm_number module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.thermo">esta.general.thermo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.thermo2">esta.general.thermo2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.xyz">esta.general.xyz module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.xyz_grouped">esta.general.xyz_grouped module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general.xyz_images">esta.general.xyz_images module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-qebag-package">esta.qeBag package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id4">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.23">esta.qeBag.23 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.bands_kpts_band_gap">esta.qeBag.bands_kpts_band_gap module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.bands_kpts_band_gap0">esta.qeBag.bands_kpts_band_gap0 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#esta-qebag-gen-qeinput-copy1-module">esta.qeBag.gen_qeinput-Copy1 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.gen_qeinput">esta.qeBag.gen_qeinput module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.gen_qeinput0">esta.qeBag.gen_qeinput0 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.gen_qeinput1">esta.qeBag.gen_qeinput1 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.gen_qeinput2">esta.qeBag.gen_qeinput2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.gen_qeinput_adv">esta.qeBag.gen_qeinput_adv module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.gen_qeinput_adv0">esta.qeBag.gen_qeinput_adv0 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.get_bands_kpts_band_gap_adv3">esta.qeBag.get_bands_kpts_band_gap_adv3 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.get_output_qe">esta.qeBag.get_output_qe module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.get_xyz_from_qe_rlxout">esta.qeBag.get_xyz_from_qe_rlxout module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.neb_qe">esta.qeBag.neb_qe module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.neb_qe0">esta.qeBag.neb_qe0 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.neb_qe1">esta.qeBag.neb_qe1 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.parse_pseudo">esta.qeBag.parse_pseudo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.pspot_core_states">esta.qeBag.pspot_core_states module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.rate_const_adv">esta.qeBag.rate_const_adv module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.read_dynmat_adv">esta.qeBag.read_dynmat_adv module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.read_write">esta.qeBag.read_write module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.read_write0">esta.qeBag.read_write0 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.sum_pdos_atom">esta.qeBag.sum_pdos_atom module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.x_read_write">esta.qeBag.x_read_write module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.xbands_kpts_band_gap">esta.qeBag.xbands_kpts_band_gap module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.xml_qe">esta.qeBag.xml_qe module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.xml_qe0">esta.qeBag.xml_qe0 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.zpe">esta.qeBag.zpe module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id53">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id54">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.vaspBag.inout.crystal_lattice">esta.vaspBag.inout.crystal_lattice module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.vaspBag.inout.diameter_or_area_nanowire">esta.vaspBag.inout.diameter_or_area_nanowire module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.vaspBag.inout.get_labelling_atoms">esta.vaspBag.inout.get_labelling_atoms module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.vaspBag.inout.lattice">esta.vaspBag.inout.lattice module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.vaspBag.inout.old_reciprocal_lattice">esta.vaspBag.inout.old_reciprocal_lattice module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.vaspBag.inout.read_eigenval">esta.vaspBag.inout.read_eigenval module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.vaspBag.inout.read_eigenval_file">esta.vaspBag.inout.read_eigenval_file module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.vaspBag.inout.read_outcar">esta.vaspBag.inout.read_outcar module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.vaspBag.inout.read_outcar_file">esta.vaspBag.inout.read_outcar_file module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.vaspBag.inout.read_poscar">esta.vaspBag.inout.read_poscar module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.vaspBag.inout.reciprocal_lattice">esta.vaspBag.inout.reciprocal_lattice module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#esta-vaspbag-inout-shift-to-origin-module">esta.vaspBag.inout.shift_to_origin module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.vaspBag.inout.xml_vasp">esta.vaspBag.inout.xml_vasp module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.vaspBag.inout.xml_vasp_ASE">esta.vaspBag.inout.xml_vasp_ASE module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.vaspBag.inout.xml_vasp_hse">esta.vaspBag.inout.xml_vasp_hse module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id55">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-grrmbag-package">esta.grrmBag package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id56">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.LUPINP">esta.grrmBag.LUPINP module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.com2xyz">esta.grrmBag.com2xyz module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.get_IRC_path">esta.grrmBag.get_IRC_path module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.get_IRC_path0">esta.grrmBag.get_IRC_path0 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.get_LUP">esta.grrmBag.get_LUP module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.get_LUPINP">esta.grrmBag.get_LUPINP module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.get_LUP_profile_advv">esta.grrmBag.get_LUP_profile_advv module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.get_nTS_nEQ_nPT">esta.grrmBag.get_nTS_nEQ_nPT module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.input_grrm">esta.grrmBag.input_grrm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.input_grrm_adv">esta.grrmBag.input_grrm_adv module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.input_grrm_advv">esta.grrmBag.input_grrm_advv module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.input_grrm_advv0">esta.grrmBag.input_grrm_advv0 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.output_grrm">esta.grrmBag.output_grrm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.output_grrm_ITR_adv">esta.grrmBag.output_grrm_ITR_adv module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.output_grrm_ITR_adv1">esta.grrmBag.output_grrm_ITR_adv1 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.output_grrm_ITR_adv2">esta.grrmBag.output_grrm_ITR_adv2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.output_grrm_ITR_adv3">esta.grrmBag.output_grrm_ITR_adv3 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.output_grrm_ITR_adv4">esta.grrmBag.output_grrm_ITR_adv4 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.output_grrm_ITR_adv5">esta.grrmBag.output_grrm_ITR_adv5 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.output_grrm_PT">esta.grrmBag.output_grrm_PT module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.output_grrm_RxnMap6">esta.grrmBag.output_grrm_RxnMap6 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.output_grrm_TS">esta.grrmBag.output_grrm_TS module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.output_grrm_init">esta.grrmBag.output_grrm_init module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.plot_strs_energy">esta.grrmBag.plot_strs_energy module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.search_structure2">esta.grrmBag.search_structure2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.search_structure2_mod">esta.grrmBag.search_structure2_mod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.to_location">esta.grrmBag.to_location module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.write_xyz">esta.grrmBag.write_xyz module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.write_xyz0">esta.grrmBag.write_xyz0 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.write_xyz1">esta.grrmBag.write_xyz1 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.x">esta.grrmBag.x module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id147">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-pointgroup-package">esta.pointGroup package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id148">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-phonon-package">esta.phonon package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id149">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.phonon.atm_displacements">esta.phonon.atm_displacements module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.phonon.atm_displacements_selective">esta.phonon.atm_displacements_selective module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.phonon.atm_displacements_selective_general_disp">esta.phonon.atm_displacements_selective_general_disp module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.phonon.fc_and_freq_selected_atoms">esta.phonon.fc_and_freq_selected_atoms module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.phonon.force_constant_and_frequencies_selective_subspace_">esta.phonon.force_constant_and_frequencies_selective_subspace_ module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#esta-phonon-force-constant-and-frequencies-selective-subspace-general-module">esta.phonon.force_constant_and_frequencies_selective_subspace_general module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#esta-phonon-force-constant-and-frequencies-selective-subspace-general-adv-module">esta.phonon.force_constant_and_frequencies_selective_subspace_general_adv module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.phonon.forces">esta.phonon.forces module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.phonon.forces_selective">esta.phonon.forces_selective module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#esta-phonon-sum-freq-and-zpe-module">esta.phonon.sum_freq_and_zpe module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.phonon.x_error_force_constant_and_frequencies_selective_subspace">esta.phonon.x_error_force_constant_and_frequencies_selective_subspace module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.phonon.yaml_read_band">esta.phonon.yaml_read_band module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id150">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-transitionstate-package">esta.transitionState package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id151">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.transitionState.associated_legendre">esta.transitionState.associated_legendre module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.transitionState.neb">esta.transitionState.neb module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.transitionState.optimizer">esta.transitionState.optimizer module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.transitionState.potential_2D">esta.transitionState.potential_2D module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id152">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-surfreact-package">esta.surfReact package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id153">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.surfReact.conformer">esta.surfReact.conformer module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id154">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-mlbag-package">esta.mlBag package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id155">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="file3a.html">Cheat Sheet</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="file3a.html#sheet-for-git-and-rst-documentation">Sheet for Git and rst documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file3a.html#rst-commands">rst commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="file3a.html#heading">Heading</a></li>
+<li class="toctree-l3"><a class="reference internal" href="file3a.html#inline-markup">Inline markup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="file3a.html#bulleted-list">Bulleted list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="file3a.html#numbered-list">Numbered list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="file3a.html#nested-list">Nested list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="file3a.html#hyperlink">Hyperlink</a></li>
+<li class="toctree-l3"><a class="reference internal" href="file3a.html#note">Note</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="file3a.html#git-commands">Git commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file3a.html#dealing-with-the-working-tree">Dealing with the Working Tree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file3a.html#branches">Branches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file3a.html#tags">Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file3a.html#the-history-and-logs">The History, and Logs</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="file1.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2017-2021, Sonu Kumar.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
