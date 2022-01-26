@@ -284,6 +284,14 @@ esta.general.metric\_tensor module
    :undoc-members:
    :show-inheritance:
 
+esta.general.min\_trans\_rot module
+-----------------------------------
+
+.. automodule:: esta.general.min_trans_rot
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 esta.general.operation module
 -----------------------------
 

@@ -113,6 +113,10 @@
 <li class="toctree-l1"><a class="reference internal" href="file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="file4.html#esta-surfreact-package">esta.surfReact package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="file4.html#esta-mlbag-package">esta.mlBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-plot-package">esta.plot package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-fortran-package">esta.fortran package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-kspace-package">esta.kspace package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-spacegroup-package">esta.spaceGroup package</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Additional:</span></p>
 <ul>
@@ -1282,6 +1286,52 @@ the xyzfile.</p>
 <dd class="field-odd"><p>3D array</p>
 </dd>
 </dl>
+</dd></dl>
+
+</section>
+<section id="module-esta.general.min_trans_rot">
+<span id="esta-general-min-trans-rot-module"></span><h2>esta.general.min_trans_rot module<a class="headerlink" href="#module-esta.general.min_trans_rot" title="Permalink to this headline">¶</a></h2>
+<p>this module is from ASE, freely available under the GNU LGPL license.
+For details of ASE, see <a class="reference external" href="https://wiki.fysik.dtu.dk/ase/">https://wiki.fysik.dtu.dk/ase/</a></p>
+<p>modified to adapt to the EStA calling modules.
+Note: easy to implement from scratch as the needed routines are scattered
+already in the EStA directories .. TODO!!</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.general.min_trans_rot.minimize_rotation_and_translation">
+<span class="sig-prename descclassname"><span class="pre">esta.general.min_trans_rot.</span></span><span class="sig-name descname"><span class="pre">minimize_rotation_and_translation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atoms</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.min_trans_rot.minimize_rotation_and_translation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Minimize RMSD between atoms and target.</p>
+<p>Rotate and translate atoms to best match target.  For more details, see:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Melander</span> <span class="n">et</span> <span class="n">al</span><span class="o">.</span> <span class="n">J</span><span class="o">.</span> <span class="n">Chem</span><span class="o">.</span> <span class="n">Theory</span> <span class="n">Comput</span><span class="o">.</span><span class="p">,</span> <span class="mi">2015</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span><span class="mi">1055</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.general.min_trans_rot.quaternion_to_matrix">
+<span class="sig-prename descclassname"><span class="pre">esta.general.min_trans_rot.</span></span><span class="sig-name descname"><span class="pre">quaternion_to_matrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">q</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.min_trans_rot.quaternion_to_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a rotation matrix.</p>
+<p>Computed from a unit quaternion Input as (4,) numpy array.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.general.min_trans_rot.rotation_matrix_from_points">
+<span class="sig-prename descclassname"><span class="pre">esta.general.min_trans_rot.</span></span><span class="sig-name descname"><span class="pre">rotation_matrix_from_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.min_trans_rot.rotation_matrix_from_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a rigid transformation/rotation matrix that minimizes the
+RMSD between two set of points.</p>
+<p>m0 and m1 should be (3, npoints) numpy arrays with
+coordinates as columns:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">x1</span>  <span class="n">x2</span>   <span class="n">x3</span>   <span class="o">...</span> <span class="n">xN</span>
+ <span class="n">y1</span>  <span class="n">y2</span>   <span class="n">y3</span>   <span class="o">...</span> <span class="n">yN</span>
+ <span class="n">z1</span>  <span class="n">z2</span>   <span class="n">z3</span>   <span class="o">...</span> <span class="n">zN</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The centeroids should be set to origin prior to
+computing the rotation matrix.</p>
+<p>The rotation matrix is computed using quaternion
+algebra as detailed in:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Melander</span> <span class="n">et</span> <span class="n">al</span><span class="o">.</span> <span class="n">J</span><span class="o">.</span> <span class="n">Chem</span><span class="o">.</span> <span class="n">Theory</span> <span class="n">Comput</span><span class="o">.</span><span class="p">,</span> <span class="mi">2015</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span><span class="mi">1055</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </section>
