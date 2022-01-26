@@ -1,4 +1,4 @@
-Cheat Sheet
+Reference Sheet
 ===============
 
 .. _skumar_site: https://skphy.github.io/aug20/
