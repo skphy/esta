@@ -212,6 +212,14 @@ esta.grrmBag.search\_structure2\_mod module
    :undoc-members:
    :show-inheritance:
 
+esta.grrmBag.search\_structure3 module
+--------------------------------------
+
+.. automodule:: esta.grrmBag.search_structure3
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 esta.grrmBag.to\_location module
 --------------------------------
 

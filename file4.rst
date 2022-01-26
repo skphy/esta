@@ -50,3 +50,23 @@
    called from the well known package sklearn package. 
 
 .. include:: esta.mlBag.rst
+
+.. note:: **plot package**:
+   Plot utilities for ploting data for better understanding
+
+.. include:: esta.plot.rst
+
+.. note:: **Fortran package**:
+   Fortran routines interfaced with C through f2py or c-interfaces
+
+.. include:: esta.fortran.rst
+
+.. note:: **kspace package**:
+   Fortran-python routines for k or reciprocal space in materials 
+
+.. include:: esta.kspace.rst
+
+..note:: **spaceGroup package**:
+   space group symmetry operation and space group name/symbols
+
+.. include:: esta.spaceGroup.rst
