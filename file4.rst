@@ -66,7 +66,7 @@
 
 .. include:: esta.kspace.rst
 
-..note:: **spaceGroup package**:
+.. note:: **spaceGroup package**:
    space group symmetry operation and space group name/symbols
 
 .. include:: esta.spaceGroup.rst
