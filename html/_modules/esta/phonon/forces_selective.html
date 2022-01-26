@@ -1,0 +1,683 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>esta.phonon.forces_selective &mdash; EStA 2.6.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> EStA
+          
+
+          
+            
+            <img src="../../../_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.6.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html#ml-algorithms">ML algorithms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EStA2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-surfreact-package">esta.surfReact package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-mlbag-package">esta.mlBag package</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Cheat Sheet</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">EStA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>esta.phonon.forces_selective</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for esta.phonon.forces_selective</h1><div class="highlight"><pre>
+<span></span>
+<span class="c1"># coding: utf-8</span>
+
+<span class="c1"># In[3]:</span>
+
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">- read forces fronm qe output files with + and - displacements</span>
+<span class="sd">- find force-constant matrices for +, -, and central displacements</span>
+<span class="sd">- then dynamical matrices</span>
+<span class="sd">- finally phonon frequencies</span>
+
+<span class="sd">author: sk, sonukumar.physics@gmail.com</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+
+<span class="c1"># def get_forces_dict(natoms):</span>
+<div class="viewcode-block" id="get_forces_dict"><a class="viewcode-back" href="../../../file4.html#esta.phonon.forces_selective.get_forces_dict">[docs]</a><span class="k">def</span> <span class="nf">get_forces_dict</span><span class="p">(</span><span class="n">atommove</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    get forces fron qe output files with + and - displacements and</span>
+<span class="sd">    store them in dictionary with indices indication atoms moving index,</span>
+<span class="sd">    atom shift index, and displacemet(+ or -)</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="kn">import</span> <span class="nn">esta.qe_bag.get_output_qe</span> <span class="k">as</span> <span class="nn">qeout</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;*&quot;</span><span class="o">*</span><span class="mi">32</span><span class="p">)</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;storing forces (in eV/Ang) in forces_dict: &#39;</span><span class="p">)</span>
+    
+    
+    <span class="c1">#-----------------------------------------</span>
+    <span class="n">atommove_list</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">atommove</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atommove_list:&#39;</span><span class="p">,</span> <span class="n">atommove_list</span><span class="p">)</span>
+    <span class="n">natoms</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">atommove</span><span class="p">)</span>
+    <span class="c1">#-----------------------------------------</span>
+    
+    
+    <span class="n">forces_dict</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="c1">#     for i in range(natoms):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">atommove_list</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>     <span class="c1"># atm displ: x, y, z direction</span>
+            <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span> <span class="c1"># +, - displacement</span>
+                <span class="n">lis</span><span class="o">=</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">k</span><span class="p">]</span>
+                <span class="n">string</span> <span class="o">=</span> <span class="s1">&#39;_&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">lis</span><span class="p">])</span>
+                <span class="c1">#print(&#39;&#39;.join([str(l) for l in lis]))</span>
+                <span class="n">forces</span><span class="p">,</span> <span class="n">forces_norm</span><span class="p">,</span> <span class="n">unit</span> <span class="o">=</span> <span class="n">qeout</span><span class="o">.</span><span class="n">get_forces</span><span class="p">(</span><span class="s1">&#39;position_&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">string</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;.out&#39;</span><span class="p">)</span>
+                <span class="c1">#print(forces, forces_norm)</span>
+                <span class="n">forces_dict</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">string</span><span class="p">)]</span><span class="o">=</span> <span class="n">forces</span>
+    <span class="k">return</span> <span class="n">forces_dict</span></div>
+<span class="c1"># forces_dict = get_forces_dict(natoms)</span>
+
+<div class="viewcode-block" id="get_idatm_iddir_iddispl"><a class="viewcode-back" href="../../../file4.html#esta.phonon.forces_selective.get_idatm_iddir_iddispl">[docs]</a><span class="k">def</span> <span class="nf">get_idatm_iddir_iddispl</span><span class="p">(</span><span class="n">atommove</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    get a list of &#39;idatm-iddir-iddispl&#39;</span>
+<span class="sd">        idatm: atom id</span>
+<span class="sd">        iddir : atom move direction index</span>
+<span class="sd">        iddispl: + or - shift of atoms</span>
+<span class="sd">        </span>
+<span class="sd">    atom_direction_shift ==&gt; id atom, id direction, id shift</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="c1">#-----------------------------------------</span>
+    <span class="n">atommove_list</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">atommove</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atommove_list:&#39;</span><span class="p">,</span> <span class="n">atommove_list</span><span class="p">)</span>
+    <span class="n">natoms</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">atommove</span><span class="p">)</span>
+    <span class="c1">#-----------------------------------------</span>
+    
+    
+    <span class="n">atom_direction_shift</span><span class="o">=</span><span class="p">[]</span>            
+<span class="c1">#     for i in range(natoms):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">atommove_list</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>     <span class="c1"># atm displ: x, y, z direction</span>
+            <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span> <span class="c1"># +, - displacement</span>
+                <span class="n">lis</span><span class="o">=</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">k</span><span class="p">]</span>
+                <span class="n">string</span> <span class="o">=</span> <span class="s1">&#39;_&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">lis</span><span class="p">])</span>
+                <span class="n">atom_direction_shift</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+                <span class="c1">#print(string)</span>
+                <span class="c1">#print (forces_dict[str(string)])</span>
+    <span class="k">return</span> <span class="n">atom_direction_shift</span></div>
+<span class="c1"># atom_direction_shift = get_idatm_iddir_iddispl(natoms)</span>
+<span class="c1"># print (atom_direction_shift)</span>
+
+<div class="viewcode-block" id="get_forces_minus"><a class="viewcode-back" href="../../../file4.html#esta.phonon.forces_selective.get_forces_minus">[docs]</a><span class="k">def</span> <span class="nf">get_forces_minus</span><span class="p">(</span><span class="n">natoms</span><span class="p">,</span> <span class="n">forces_dict</span><span class="p">,</span> <span class="n">atom_direction_shift</span><span class="p">):</span>
+<span class="c1"># def get_forces_minus(atommove, forces_dict, atom_direction_shift):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    extract forces from forces_dict for minus (id :0) displacement</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+<span class="c1">#     #-----------------------------------------</span>
+<span class="c1">#     atommove_list = [int(i) for i in atommove]</span>
+<span class="c1">#     print(&#39;atommove_list:&#39;, atommove_list)</span>
+<span class="c1">#     natoms = len(atommove)</span>
+<span class="c1">#     #-----------------------------------------</span>
+    
+    
+    <span class="n">force_c0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="p">,</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">force_c0</span><span class="p">))</span>
+    <span class="sd">&#39;&#39;&#39; NOTE: taking only - displacement here &#39;&#39;&#39;</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">atom_direction_shift</span><span class="p">[::</span><span class="mi">2</span><span class="p">]):</span>
+       <span class="c1">#print(&#39;atom:&#39;,idx[0], &#39;;  shift direction:&#39;, idx[1], &#39;;  delta:&#39;, idx[2])</span>
+
+        <span class="n">string</span> <span class="o">=</span> <span class="n">idx</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atom:&#39;</span><span class="p">,</span> <span class="n">string</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;;  shift direction:&#39;</span><span class="p">,</span> <span class="n">string</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;;  delta:&#39;</span><span class="p">,</span> <span class="n">string</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+
+        <span class="c1">#print(forces_dict[idx])</span>
+        <span class="c1">#print(len(forces_dict[idx]))</span>
+        <span class="c1">#force_dict[idx]/</span>
+
+        <span class="n">force_c0</span><span class="p">[</span><span class="n">i</span><span class="p">,:]</span> <span class="o">=</span> <span class="n">forces_dict</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">force_c0</span></div>
+<span class="c1"># force_c0 = get_forces_minus(natoms, forces_dict, atom_direction_shift)</span>
+<span class="c1"># print(force_c0, np.shape(force_c0))</span>
+
+
+<div class="viewcode-block" id="get_forces_plus"><a class="viewcode-back" href="../../../file4.html#esta.phonon.forces_selective.get_forces_plus">[docs]</a><span class="k">def</span> <span class="nf">get_forces_plus</span><span class="p">(</span><span class="n">natoms</span><span class="p">,</span> <span class="n">forces_dict</span><span class="p">,</span> <span class="n">atom_direction_shift</span><span class="p">):</span>
+<span class="c1"># def get_forces_plus(atommove, forces_dict, atom_direction_shift):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    extract forces from forces_dict for plus (id :1) displacement</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    <span class="c1">#     #-----------------------------------------</span>
+<span class="c1">#     atommove_list = [int(i) for i in atommove]</span>
+<span class="c1">#     print(&#39;atommove_list:&#39;, atommove_list)</span>
+<span class="c1">#     natoms = len(atommove)</span>
+<span class="c1">#     #-----------------------------------------</span>
+
+    
+    <span class="n">force_c1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="p">,</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="p">))</span>
+    <span class="c1"># print(np.shape(force_c2))</span>
+    <span class="sd">&#39;&#39;&#39; NOTE: taking only + displacement here &#39;&#39;&#39;</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">atom_direction_shift</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]):</span>
+        <span class="n">string</span> <span class="o">=</span> <span class="n">idx</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)</span>
+        <span class="c1">#print(&#39;atom:&#39;, string[0], &#39;;  shift direction:&#39;, string[1], &#39;;  delta:&#39;, string[2])</span>
+        <span class="n">force_c1</span><span class="p">[</span><span class="n">i</span><span class="p">,:]</span> <span class="o">=</span> <span class="n">forces_dict</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">force_c1</span></div>
+<span class="c1"># force_c1 = get_forces_plus(natoms, forces_dict, atom_direction_shift)</span>
+<span class="c1"># print(force_c1, np.shape(force_c1))</span>
+
+<div class="viewcode-block" id="get_forces_central"><a class="viewcode-back" href="../../../file4.html#esta.phonon.forces_selective.get_forces_central">[docs]</a><span class="k">def</span> <span class="nf">get_forces_central</span><span class="p">(</span><span class="n">force_c0</span><span class="p">,</span> <span class="n">force_c1</span><span class="p">):</span>
+    <span class="n">force_central</span> <span class="o">=</span> <span class="p">(</span><span class="n">force_c1</span><span class="o">-</span><span class="n">force_c0</span><span class="p">)</span><span class="o">/</span><span class="mf">2.</span>
+    <span class="k">return</span> <span class="n">force_central</span></div>
+<span class="c1"># force_central = get_forces_central(force_c0, force_c1)</span>
+<span class="c1"># print(force_central)</span>
+<span class="c1"># print(&#39;**force_c0 (- displ), force_c1 (+ displ), and force_central are force constant matrices**&#39;)</span>
+
+
+<div class="viewcode-block" id="get_forceconstant_matrix"><a class="viewcode-back" href="../../../file4.html#esta.phonon.forces_selective.get_forceconstant_matrix">[docs]</a><span class="k">def</span> <span class="nf">get_forceconstant_matrix</span><span class="p">(</span><span class="n">natoms</span><span class="p">,</span> <span class="n">forces</span><span class="p">,</span> <span class="n">deltax</span><span class="o">=</span><span class="mf">0.04</span><span class="p">,</span> <span class="n">sign_deltax</span><span class="o">=</span><span class="s1">&#39;plus&#39;</span><span class="p">):</span>
+    
+    <span class="n">deltax</span> <span class="o">=</span> <span class="mf">0.04</span> <span class="c1">#angstrom</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;*&quot;</span><span class="o">*</span><span class="mi">32</span><span class="p">)</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;getting force constant matrix from forces and displacement deltax&#39;</span><span class="p">)</span>
+    
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    &#39;NOTE: this is final index and order of loops&#39;</span>
+<span class="sd">    # print(force_row)</span>
+<span class="sd">     for iat in range(natoms):</span>
+<span class="sd">         for ia in range(3):</span>
+<span class="sd">             for jat in range(natoms):</span>
+<span class="sd">                 for ja in range(3):</span>
+<span class="sd">                     #print(force_row[iat,])</span>
+<span class="sd">                     print(iat, ia, jat, ja)</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;taking force_c0 or force_c1 or force_central: change according to need&#39;</span><span class="p">)</span>
+    <span class="n">fc1</span> <span class="o">=</span> <span class="n">forces</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">natoms</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">natoms</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="c1"># &quot;&quot;&quot;NOTE: this is final index and order of loops&quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">iat</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">ia</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">jat</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">ja</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+                    <span class="c1">#print(force_row[iat,])</span>
+                    <span class="c1">#print(fc1[iat, ia, jat, ja]) </span>
+                    <span class="c1"># see phon paper by Alfe; computer simiation using phon</span>
+                    <span class="k">if</span> <span class="n">sign_deltax</span> <span class="o">==</span> <span class="s1">&#39;plus&#39;</span><span class="p">:</span>
+                        <span class="n">fc1</span><span class="p">[</span><span class="n">iat</span><span class="p">,</span> <span class="n">ia</span><span class="p">,</span> <span class="n">jat</span><span class="p">,</span> <span class="n">ja</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="n">fc1</span><span class="p">[</span><span class="n">iat</span><span class="p">,</span> <span class="n">ia</span><span class="p">,</span> <span class="n">jat</span><span class="p">,</span> <span class="n">ja</span><span class="p">]</span><span class="o">/</span><span class="n">deltax</span>  
+                    <span class="k">if</span> <span class="n">sign_deltax</span> <span class="o">==</span> <span class="s1">&#39;minus&#39;</span><span class="p">:</span>
+                        <span class="n">fc1</span><span class="p">[</span><span class="n">iat</span><span class="p">,</span> <span class="n">ia</span><span class="p">,</span> <span class="n">jat</span><span class="p">,</span> <span class="n">ja</span><span class="p">]</span> <span class="o">=</span>  <span class="n">fc1</span><span class="p">[</span><span class="n">iat</span><span class="p">,</span> <span class="n">ia</span><span class="p">,</span> <span class="n">jat</span><span class="p">,</span> <span class="n">ja</span><span class="p">]</span><span class="o">/</span><span class="n">deltax</span>  
+           
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;taking transpose of force constant matrix: not taken&#39;</span><span class="p">)</span>
+    <span class="c1">#****************IMPORTANT********************</span>
+    <span class="c1"># bcz see the springer phonon theory pages ... of which</span>
+    <span class="c1"># 1st   col -&gt; fc when at1 moves along x dir</span>
+    <span class="c1"># 2nd   col -&gt; fc when at1 moves along y dir</span>
+    <span class="c1"># 3rd   col -&gt; fc when at1 moves along z dir</span>
+
+    <span class="c1"># 4th   col -&gt; fc when at2 moves along x dir</span>
+    <span class="c1"># 5th   col -&gt; fc when at2 moves along y dir</span>
+    <span class="c1"># 6th   col -&gt; fc when at2 moves along x dir</span>
+    <span class="c1"># -- and so on </span>
+    <span class="c1"># NOTE:    3 column for each atom,</span>
+    <span class="c1"># here transpose as python store column of fc matrix as row vector</span>
+    <span class="c1"># fc1=fc1.T</span>
+    <span class="c1"># print(fc1)</span>
+    <span class="c1"># NOTE NOTE: take transpose of dynamical matrix: not taken .. </span>
+    <span class="c1">#                        bcz sqaure matrix .. eigen values remain unchanges</span>
+    <span class="k">return</span> <span class="n">fc1</span></div>
+<span class="c1"># fc1 = get_forceconstant_matrix(natoms, force_central, sign_deltax=&#39;plus&#39;)</span>
+
+
+<div class="viewcode-block" id="get_symmetrized_force_constant_matrix"><a class="viewcode-back" href="../../../file4.html#esta.phonon.forces_selective.get_symmetrized_force_constant_matrix">[docs]</a><span class="k">def</span> <span class="nf">get_symmetrized_force_constant_matrix</span><span class="p">(</span><span class="n">fcMatrx</span><span class="p">,</span> <span class="n">natoms</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    symmetrize force constant matrix fc(iat, ia, jat, ja)</span>
+<span class="sd">    </span>
+<span class="sd">    return </span>
+<span class="sd">        (fc(iat, ia, jat, ja) + fc(jat, ja, iat, ia))/2</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Doing symmetrization of force-constant matrix:&#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">iat</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">ia</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">jat</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">ja</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+                        <span class="n">fcMatrx</span><span class="p">[</span><span class="n">iat</span><span class="p">,</span> <span class="n">ia</span><span class="p">,</span> <span class="n">jat</span><span class="p">,</span> <span class="n">ja</span><span class="p">]</span><span class="o">=</span><span class="p">(</span><span class="n">fcMatrx</span><span class="p">[</span><span class="n">iat</span><span class="p">,</span><span class="n">ia</span><span class="p">,</span><span class="n">jat</span><span class="p">,</span><span class="n">ja</span><span class="p">]</span><span class="o">+</span><span class="n">fcMatrx</span><span class="p">[</span><span class="n">jat</span><span class="p">,</span><span class="n">ja</span><span class="p">,</span><span class="n">iat</span><span class="p">,</span><span class="n">ia</span><span class="p">])</span><span class="o">/</span><span class="mf">2.</span>
+    <span class="k">return</span> <span class="n">fcMatrx</span></div>
+
+<div class="viewcode-block" id="write_forces"><a class="viewcode-back" href="../../../file4.html#esta.phonon.forces_selective.write_forces">[docs]</a><span class="k">def</span> <span class="nf">write_forces</span><span class="p">(</span><span class="n">force_row</span><span class="p">,</span> <span class="n">ldisp</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    write forces rows to a file </span>
+<span class="sd">    NOTE: only for - and + displacement</span>
+
+<span class="sd">    todo : sfor writing central diff force constant .. no need of ldisp tag</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    <span class="k">if</span> <span class="n">ldisp</span> <span class="o">==</span> <span class="s1">&#39;minus&#39;</span><span class="p">:</span>
+        <span class="n">flist</span><span class="o">=</span><span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">atom_direction_shift</span><span class="p">[::</span><span class="mi">2</span><span class="p">]):</span>
+            <span class="c1">#print(&#39;atom:&#39;,idx[0], &#39;;  shift direction:&#39;, idx[1], &#39;;  delta:&#39;, idx[2])</span>
+            <span class="n">flist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">forces_dict</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span>
+    <span class="k">if</span> <span class="n">ldisp</span> <span class="o">==</span> <span class="s1">&#39;plus&#39;</span><span class="p">:</span>
+        <span class="n">flist</span><span class="o">=</span><span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">atom_direction_shift</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]):</span>
+            <span class="c1">#print(&#39;atom:&#39;,idx[0], &#39;;  shift direction:&#39;, idx[1], &#39;;  delta:&#39;, idx[2])</span>
+            <span class="n">flist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">forces_dict</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span>
+    
+    <span class="c1">#force_row = force_c1</span>
+    <span class="k">for</span> <span class="n">kk</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="p">):</span>
+        <span class="n">d</span> <span class="o">=</span> <span class="n">flist</span><span class="p">[</span><span class="n">kk</span><span class="p">]</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+        <span class="n">force_row</span><span class="p">[</span><span class="n">kk</span><span class="p">]</span> <span class="o">=</span> <span class="n">d</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;writing forces to file: force_*.dat&#39;</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;force_&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">ldisp</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;.dat&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fff</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="p">):</span>
+            <span class="c1">#print([num for num in force_row[n]]) </span>
+            <span class="n">fff</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span> <span class="nb">str</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">force_row</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="p">]))</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span></div>
+            
+<span class="c1"># write_forces(force_c0, ldisp=&#39;minus&#39;) </span>
+<span class="c1"># write_forces(force_c1, ldisp=&#39;plus&#39;) </span>
+<span class="c1"># #### note sure write_forces(force_central, ldisp=&#39;central&#39;) </span>
+
+
+<div class="viewcode-block" id="get_sqrt_mass_array"><a class="viewcode-back" href="../../../file4.html#esta.phonon.forces_selective.get_sqrt_mass_array">[docs]</a><span class="k">def</span> <span class="nf">get_sqrt_mass_array</span><span class="p">(</span><span class="n">label</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    for given atomic symbols, return correspoinding masses in amu</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;sqrt mass array calculations:&#39;</span><span class="p">)</span>
+    <span class="kn">from</span> <span class="nn">mendeleev</span> <span class="kn">import</span> <span class="n">element</span>
+    <span class="n">sqrt_mass_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">label</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">iat</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">label</span><span class="p">)):</span>
+        <span class="n">sqrt_mass_array</span><span class="p">[</span><span class="n">iat</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">element</span><span class="p">(</span><span class="n">label</span><span class="p">[</span><span class="n">iat</span><span class="p">])</span><span class="o">.</span><span class="n">mass</span><span class="p">)</span>
+    <span class="c1">#print(sqrt_mass_array, len(sqrt_mass_array))    </span>
+    <span class="k">return</span> <span class="n">sqrt_mass_array</span></div>
+
+
+
+<span class="c1">#def get_dynamical_matrix(natoms, label, forceconstant):</span>
+<div class="viewcode-block" id="get_dynamical_matrix"><a class="viewcode-back" href="../../../file4.html#esta.phonon.forces_selective.get_dynamical_matrix">[docs]</a><span class="k">def</span> <span class="nf">get_dynamical_matrix</span><span class="p">(</span><span class="n">natoms</span><span class="p">,</span> <span class="n">sqrt_mass_array</span><span class="p">,</span> <span class="n">forceconstant</span><span class="p">):</span>
+    
+    
+    
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    getting dynamical matrix from force constant matrix at q=0 point</span>
+
+<span class="sd">    NOTE: for q=0 </span>
+
+<span class="sd">           1. dynmat = fc matric/ sqrt(mass1)/ sqrt(mass2)</span>
+
+<span class="sd">           2. dynmat in q space = dynmat in R space; see equation 7 in </span>
+<span class="sd">                   paper of Ab initio calculation of phonon dispersions in semiconductors</span>
+<span class="sd">                   prb. Paolo Giannozzi et al. 1991</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+<span class="c1">#     from mendeleev import element</span>
+<span class="c1">#     import esta.general.get_labelling_atoms as get_label</span>
+<span class="c1">#     label, _ = get_label.get_all_atoms_lebels(posfile)</span>
+
+    <span class="c1"># def get_dynamical_matrix(natoms, )</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;*&quot;</span><span class="o">*</span><span class="mi">32</span><span class="p">)</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;getting dynamical matrix from force constant matrix&#39;</span><span class="p">)</span>
+    <span class="n">dynmat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">natoms</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">natoms</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">iat</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+    <span class="c1">#for iat in range(10):</span>
+        <span class="k">for</span> <span class="n">ia</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">jat</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+            <span class="c1">#for jat in range(10):</span>
+                <span class="k">for</span> <span class="n">ja</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+                    
+                    <span class="c1">#IMPORTANT: CALLING mendeleev in this subroutine for masses of each </span>
+                    <span class="c1">#           element will take along long time to calculate the </span>
+                    <span class="c1">#           dynamical matrix ... infact it seems imposible on laptop</span>
+                    <span class="c1">#           so, part mass array in stead of label array for elements</span>
+                    
+                    <span class="c1">#m1= np.sqrt(element(label[iat]).mass)</span>
+                    <span class="c1">#m2= np.sqrt(element(label[jat]).mass)</span>
+                    <span class="c1">#m= np.sqrt( element(label[iat]).mass * element(label[jat]).mass )</span>
+                    
+                    <span class="n">m1</span><span class="o">=</span><span class="n">sqrt_mass_array</span><span class="p">[</span><span class="n">iat</span><span class="p">]</span>
+                    <span class="n">m2</span><span class="o">=</span><span class="n">sqrt_mass_array</span><span class="p">[</span><span class="n">jat</span><span class="p">]</span>
+                    <span class="n">dynmat</span><span class="p">[</span><span class="n">iat</span><span class="p">,</span> <span class="n">ia</span><span class="p">,</span> <span class="n">jat</span><span class="p">,</span> <span class="n">ja</span><span class="p">]</span> <span class="o">=</span> <span class="n">forceconstant</span><span class="p">[</span><span class="n">iat</span><span class="p">,</span> <span class="n">ia</span><span class="p">,</span> <span class="n">jat</span><span class="p">,</span> <span class="n">ja</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="n">m1</span><span class="o">*</span><span class="n">m2</span><span class="p">)</span> 
+    <span class="c1">#print(dynmat)</span>
+    <span class="k">return</span> <span class="n">dynmat</span></div>
+<span class="c1"># dynmat = get_dynamical_matrix(natoms, fc1)</span>
+
+<div class="viewcode-block" id="reshape_dyn"><a class="viewcode-back" href="../../../file4.html#esta.phonon.forces_selective.reshape_dyn">[docs]</a><span class="k">def</span> <span class="nf">reshape_dyn</span><span class="p">(</span><span class="n">dynmatrix</span><span class="p">,</span> <span class="n">natoms</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;dynamical matrix info:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;shape:&#39;</span><span class="p">)</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">dynmatrix</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;dynamical matrix elements:&quot;</span><span class="p">)</span>
+    <span class="c1">#print(dynmat)</span>
+    <span class="c1">#print(dynmat.flatten())</span>
+    <span class="n">dyn</span> <span class="o">=</span> <span class="n">dynmatrix</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="p">,</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;after reshaping:&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">dyn</span><span class="p">))</span>
+    <span class="c1">#print(dyn)</span>
+    <span class="k">return</span> <span class="n">dyn</span></div>
+<span class="c1"># dyn = reshape_dyn(dynmat, natoms)</span>
+
+<div class="viewcode-block" id="get_eigen"><a class="viewcode-back" href="../../../file4.html#esta.phonon.forces_selective.get_eigen">[docs]</a><span class="k">def</span> <span class="nf">get_eigen</span><span class="p">(</span><span class="n">dynamatical_matrix</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    dynamical matrix is hermitian matrix .. try taking it Hermitian matrix</span>
+<span class="sd">    instead of general matrix</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="kn">import</span> <span class="nn">esta.measure.conversion_factors</span> <span class="k">as</span> <span class="nn">cf</span>
+    
+    <span class="n">e</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">dynamatical_matrix</span><span class="p">)</span>
+<span class="c1">#     e, v = np.linalg.eigh(dynamatical_matrix)</span>
+    <span class="c1">#print (np.sort(e))</span>
+    <span class="n">w2</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">real</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+    <span class="c1"># print(w2)</span>
+    
+    <span class="n">w</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">w2</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">w2</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">w2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span> 
+            <span class="n">w</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">w2</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">w</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span>  <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">w2</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>        
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;*&quot;</span><span class="o">*</span><span class="mi">32</span><span class="p">)</span>        
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;phonons at Gamma point: cm^-1&#39;</span><span class="p">)</span>
+    
+    <span class="n">fac</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">cf</span><span class="o">.</span><span class="n">ev2joule</span><span class="o">/</span><span class="n">cf</span><span class="o">.</span><span class="n">amu2kg</span><span class="p">)</span><span class="o">/</span> <span class="n">cf</span><span class="o">.</span><span class="n">angstrom</span> <span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+    <span class="n">fac2</span><span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="n">cf</span><span class="o">.</span><span class="n">cmii2sii</span> <span class="o">*</span> <span class="n">fac</span>  
+    
+    <span class="n">freq</span><span class="o">=</span><span class="n">w</span><span class="o">*</span><span class="n">fac2</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">: </span><span class="si">{:6.4f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">*</span><span class="n">k</span><span class="p">)</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">freq</span><span class="p">)))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;*&quot;</span><span class="o">*</span><span class="mi">32</span><span class="p">)</span> </div>
+<span class="c1"># get_eigen(dyn)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+
+    <span class="kn">import</span> <span class="nn">esta.vasp_bag.inout.crystal_lattice</span> <span class="k">as</span> <span class="nn">clattice</span>
+
+    <span class="n">posfile</span><span class="o">=</span><span class="s1">&#39;POSCAR&#39;</span>
+    <span class="n">clatt</span> <span class="o">=</span> <span class="n">clattice</span><span class="o">.</span><span class="n">CrystalLattice</span><span class="p">(</span><span class="n">posfile</span><span class="p">,</span><span class="s1">&#39;./&#39;</span><span class="p">)</span>
+    <span class="c1">#positions, vol, lv1, lv2, lv3, atmsymbol, natmtyp, natoms = clatt.get_poscar()</span>
+    <span class="n">positions</span><span class="p">,</span> <span class="n">vol</span><span class="p">,</span> <span class="n">lv1</span><span class="p">,</span> <span class="n">lv2</span><span class="p">,</span> <span class="n">lv3</span><span class="p">,</span> <span class="n">atmsymbol</span><span class="p">,</span> <span class="n">natmtyp</span><span class="p">,</span> <span class="n">natoms</span><span class="p">,</span> <span class="n">atomfix</span><span class="p">,</span> <span class="n">atommove</span> <span class="o">=</span> <span class="n">clatt</span><span class="o">.</span><span class="n">get_poscar</span><span class="p">()</span>    
+    <span class="nb">print</span><span class="p">(</span><span class="n">atomfix</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">atomfix</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">atommove</span><span class="p">)</span>
+
+    <span class="kn">import</span> <span class="nn">esta.general.get_labelling_atoms</span> <span class="k">as</span> <span class="nn">get_label</span>
+    <span class="n">label</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">get_label</span><span class="o">.</span><span class="n">get_all_atoms_lebels</span><span class="p">(</span><span class="n">posfile</span><span class="p">)</span>
+    
+    
+    
+    <span class="c1">#-------------------------------------------------</span>
+    <span class="c1"># making atom index starting with respect to zero</span>
+    <span class="c1"># atommove is an array of all atoms numbering/index which are moving</span>
+    <span class="n">atommove</span> <span class="o">=</span> <span class="n">atommove</span><span class="o">-</span><span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;moving atoms:&#39;</span><span class="p">,</span> <span class="n">atommove</span><span class="p">)</span>
+    <span class="c1">#-------------------------------------------------</span>
+    
+    <span class="c1">#position_&#39;+str(string)+&#39;.in.out&#39; file should be in the current dir for the following</span>
+<span class="c1">#     forces_dict = get_forces_dict(natoms)</span>
+    <span class="n">forces_dict</span> <span class="o">=</span> <span class="n">get_forces_dict</span><span class="p">(</span><span class="n">atommove</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;forces_dict:&#39;</span><span class="p">)</span>
+    <span class="c1">#print(forces_dict)</span>
+    
+<span class="c1">#     atom_direction_shift = get_idatm_iddir_iddispl(natoms)            </span>
+    <span class="n">atom_direction_shift</span> <span class="o">=</span> <span class="n">get_idatm_iddir_iddispl</span><span class="p">(</span><span class="n">atommove</span><span class="p">)</span>        
+    <span class="nb">print</span> <span class="p">(</span><span class="n">atom_direction_shift</span><span class="p">)</span>
+
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;**force_c0 (- displ), force_c1 (+ displ), and force_central are force matrices**&#39;</span><span class="p">)</span>    
+    
+    <span class="c1">#forces for - displacement</span>
+    <span class="n">force_c0</span> <span class="o">=</span> <span class="n">get_forces_minus</span><span class="p">(</span><span class="n">natoms</span><span class="p">,</span> <span class="n">forces_dict</span><span class="p">,</span> <span class="n">atom_direction_shift</span><span class="p">)</span>
+<span class="c1">#     force_c0 = get_forces_minus(atommove, forces_dict, atom_direction_shift)</span>
+    <span class="c1">#print(force_c0, np.shape(force_c0))</span>
+<span class="c1">#     print(&#39;sk1&#39;)</span>
+<span class="c1">#     for i in range(len(force_c0)):</span>
+<span class="c1">#         print(force_c0[i,:]) </span>
+    
+<span class="c1">#     #forces for + displacement</span>
+    <span class="n">force_c1</span> <span class="o">=</span> <span class="n">get_forces_plus</span><span class="p">(</span><span class="n">natoms</span><span class="p">,</span> <span class="n">forces_dict</span><span class="p">,</span> <span class="n">atom_direction_shift</span><span class="p">)</span>
+<span class="c1">#     force_c1 = get_forces_plus(atommove, forces_dict, atom_direction_shift)</span>
+    <span class="c1">#print(force_c1)</span>
+<span class="c1">#     print(&#39;sk2&#39;)</span>
+<span class="c1">#     for i in range(len(force_c1)):</span>
+<span class="c1">#         print(force_c1[i,:]) </span>
+    
+<span class="c1">#     #forces for central difference displacement     </span>
+    <span class="n">force_central</span> <span class="o">=</span> <span class="n">get_forces_central</span><span class="p">(</span><span class="n">force_c0</span><span class="p">,</span> <span class="n">force_c1</span><span class="p">)</span>
+<span class="c1">#     #print(force_central)</span>
+    <span class="c1">#print(np.shape(force_central))</span>
+<span class="c1">#     print(&#39;sk3&#39;)</span>
+<span class="c1">#     for i in range(len(force_central)):</span>
+<span class="c1">#         print(force_central[i,:]) </span>
+
+<span class="c1"># #     write_forces(force_c0, ldisp=&#39;minus&#39;) </span>
+<span class="c1"># #     write_forces(force_c1, ldisp=&#39;plus&#39;) </span>
+
+    <span class="n">fc1</span> <span class="o">=</span> <span class="n">get_forceconstant_matrix</span><span class="p">(</span><span class="n">natoms</span><span class="p">,</span> <span class="n">force_c0</span><span class="p">,</span> <span class="n">sign_deltax</span><span class="o">=</span><span class="s1">&#39;plus&#39;</span><span class="p">)</span>
+<span class="c1">#     fc1 = get_forceconstant_matrix(natoms, force_c1, sign_deltax=&#39;plus&#39;)</span>
+<span class="c1">#     fc1 = get_forceconstant_matrix(natoms, force_central, sign_deltax=&#39;plus&#39;)</span>
+<span class="c1">#     #print(&#39;force-constant matrix: &#39;)</span>
+<span class="c1">#     #print(fc1)</span>
+<span class="c1">#     print(&#39;sk4&#39;)</span>
+<span class="c1">#     for iat in range(natoms):</span>
+<span class="c1">#         for ia in range(3):</span>
+<span class="c1">#             for jat in range(natoms):</span>
+<span class="c1">#                        print( fc1[iat, ia, jat, :])</span>
+    
+    <span class="c1"># symmeterization of force constant matrix</span>
+    <span class="n">fc1_symm</span> <span class="o">=</span> <span class="n">get_symmetrized_force_constant_matrix</span><span class="p">(</span><span class="n">fc1</span><span class="p">,</span> <span class="n">natoms</span><span class="p">)</span>
+    <span class="c1">#</span>
+    <span class="n">sqrt_mass_array</span> <span class="o">=</span> <span class="n">get_sqrt_mass_array</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
+    
+    
+<span class="c1">#     dynmat = get_dynamical_matrix(natoms, label, fc1)</span>
+    <span class="n">dynmat</span> <span class="o">=</span> <span class="n">get_dynamical_matrix</span><span class="p">(</span><span class="n">natoms</span><span class="p">,</span> <span class="n">sqrt_mass_array</span><span class="p">,</span> <span class="n">fc1_symm</span><span class="p">)</span>
+    <span class="c1">#print(&#39;sk&#39;)</span>
+    <span class="c1">#print(dynmat)</span>
+    <span class="n">dyn</span> <span class="o">=</span> <span class="n">reshape_dyn</span><span class="p">(</span><span class="n">dynmat</span><span class="p">,</span> <span class="n">natoms</span><span class="p">)</span>
+
+<span class="c1">#     print(&#39;sk5&#39;)</span>
+<span class="c1">#     for iat in range(natoms):</span>
+<span class="c1">#         for ia in range(3):</span>
+<span class="c1">#             for jat in range(natoms):</span>
+<span class="c1">#                        print( dynmat[iat, ia, jat, :])</span>
+    
+    <span class="n">get_eigen</span><span class="p">(</span><span class="n">dyn</span><span class="p">)</span>
+
+
+<span class="c1"># In[ ]:</span>
+
+
+
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Sonu Kumar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

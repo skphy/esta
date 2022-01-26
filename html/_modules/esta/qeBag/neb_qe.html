@@ -1,0 +1,1260 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>esta.qeBag.neb_qe &mdash; EStA 2.6.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> EStA
+          
+
+          
+            
+            <img src="../../../_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.6.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html#ml-algorithms">ML algorithms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EStA2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-surfreact-package">esta.surfReact package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-mlbag-package">esta.mlBag package</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Cheat Sheet</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">EStA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>esta.qeBag.neb_qe</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for esta.qeBag.neb_qe</h1><div class="highlight"><pre>
+<span></span><span class="ch">#!/usr/bin/env python</span>
+<span class="c1"># coding: utf-8</span>
+
+<span class="c1"># In[ ]:</span>
+
+
+<div class="viewcode-block" id="neb"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.neb_qe.neb">[docs]</a><span class="k">class</span> <span class="nc">neb</span><span class="p">():</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    python class</span>
+<span class="sd">    </span>
+<span class="sd">    1)</span>
+<span class="sd">    --to generate supercard along with its contents such as </span>
+<span class="sd">      BEGIN_POSITIONS</span>
+<span class="sd">      ... content of the supercard here ...</span>
+<span class="sd">      END_POSITIONS</span>
+<span class="sd">      </span>
+<span class="sd">      for details see documentation of neb.x manual</span>
+<span class="sd">      link: https://www.quantum-espresso.org/Doc/INPUT_NEB.html</span>
+<span class="sd">      </span>
+<span class="sd">    2)</span>
+<span class="sd">    -- to store data (atom no, no of images, atomic symbols, </span>
+<span class="sd">        atomic positions) from *axsf data </span>
+<span class="sd">    -- to generate xyz files from *axsf file from xcrysden</span>
+
+<span class="sd">    3) </span>
+<span class="sd">    -- to read pathx files; where x = 0, 1, 2, .... </span>
+<span class="sd">       and then create xyz files .......</span>
+<span class="sd">       </span>
+<span class="sd">    4)</span>
+<span class="sd">    -- read xsf file and store data (atomic number, symbols, atomic positions) </span>
+<span class="sd">    from xsf file</span>
+<span class="sd">    -- create poscar file from xsf file.</span>
+<span class="sd">    </span>
+
+
+<span class="sd">    more will be added according to the needs ...TODO</span>
+
+
+<span class="sd">    author: skumar</span>
+<span class="sd">    email: sonukumar.physics@gmail.com</span>
+<span class="sd">    date: July, 2020</span>
+<span class="sd">    </span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+    <span class="c1">#import esta</span>
+    <span class="c1">#import esta.measure.conversion_factors as cf</span>
+    
+    <span class="n">__author</span> <span class="o">=</span> <span class="s1">&#39;skumar&#39;</span>
+    <span class="n">__email</span>  <span class="o">=</span> <span class="s1">&#39;sonukumar.physics@gmail.com/sonukumar@icredd.hokudai.ac.jp&#39;</span>
+    <span class="n">__place</span>  <span class="o">=</span> <span class="s1">&#39;QCL, Japan&#39;</span>
+    
+<span class="c1">#     def __init__(self, xyzfiles):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        xyzfiles are list of xyz files</span>
+<span class="sd">        Note: array the files in proper order so as to </span>
+<span class="sd">        have a well defined path fo NEB calculations</span>
+<span class="sd">        </span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Class  [ neb ]  for doing things related to NEB results and so on!!&#39;</span><span class="p">)</span>
+        <span class="c1">#self.xyzfiles = xyzfiles</span>
+        <span class="c1">#print(&#39;xyzfiles names: {}&#39;.format(self.xyzfiles))</span>
+
+<span class="c1">#     def read_xyz(self):</span>
+<div class="viewcode-block" id="neb.read_xyz"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.neb_qe.neb.read_xyz">[docs]</a>    <span class="k">def</span> <span class="nf">read_xyz</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xyzfiles</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        input: </span>
+<span class="sd">        ------</span>
+<span class="sd">            filenames: list of str,  filename xyz file names</span>
+<span class="sd">        </span>
+<span class="sd">        output:</span>
+<span class="sd">        ------</span>
+<span class="sd">            atomic positions: array: rank 2 array of shape (natoms, 3)</span>
+<span class="sd">            atomic labels: list/array of strings: rank 1 array of atomic labels</span>
+<span class="sd">            </span>
+<span class="sd">        &quot;&quot;&quot;</span>    
+        <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+        <span class="kn">import</span> <span class="nn">sys</span>
+        
+        <span class="c1">#list of filename = [&#39;a.xyz&#39;, &#39;b.xyz&#39;, &#39;c.xyz&#39;] ...</span>
+<span class="c1">#         filenames = self.xyzfiles</span>
+        <span class="n">filenames</span> <span class="o">=</span> <span class="n">xyzfiles</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;filenames </span><span class="si">{}</span><span class="s1">:&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">filenames</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;getting no of atoms by reading first xyz file:&#39;</span><span class="p">)</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filenames</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">natoms</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">())</span>
+            <span class="c1">#print(&#39;no of atoms: {}&#39;.format(natoms))</span>
+
+        <span class="n">no_strs</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">filenames</span><span class="p">))</span>
+        <span class="n">pos_all</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="o">*</span><span class="n">no_strs</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">no_strs</span><span class="p">,</span> <span class="n">natoms</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+        <span class="n">label_all</span> <span class="o">=</span><span class="p">[]</span>
+        <span class="n">lpos</span> <span class="o">=</span> <span class="kc">False</span>
+        
+        <span class="k">for</span> <span class="n">jj</span><span class="p">,</span> <span class="n">str_id</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">filenames</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;reading file </span><span class="si">{}</span><span class="s1"> ... &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">str_id</span><span class="p">))</span>
+            
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">str_id</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">natoms</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">())</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no of atoms: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">natoms</span><span class="p">))</span>
+                <span class="n">skipline</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+
+                <span class="c1">#lpos = False</span>
+                <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span> <span class="o">==</span> <span class="n">natoms</span><span class="p">:</span>
+                    <span class="n">lpos</span> <span class="o">=</span> <span class="kc">True</span>
+                    <span class="n">pos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">natoms</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+                    <span class="c1">#print(&#39;continuing reading atoms locations ..&#39;)</span>
+                    <span class="n">label</span> <span class="o">=</span> <span class="p">[]</span>
+                    <span class="k">for</span> <span class="n">iat</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                        <span class="n">pos</span><span class="p">[</span><span class="n">iat</span><span class="p">:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())[</span><span class="mi">1</span><span class="p">])</span>
+                        <span class="n">pos</span><span class="p">[</span><span class="n">iat</span><span class="p">:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())[</span><span class="mi">2</span><span class="p">])</span>
+                        <span class="n">pos</span><span class="p">[</span><span class="n">iat</span><span class="p">:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())[</span><span class="mi">3</span><span class="p">])</span>
+                        <span class="n">label</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span>
+                <span class="k">else</span><span class="p">:</span>   
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;NOT all atomic positions present .. exiting!!&#39;</span><span class="p">)</span>
+                    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+
+                <span class="k">for</span> <span class="n">iat</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                    <span class="n">pos_all</span><span class="p">[</span><span class="n">jj</span><span class="p">,</span> <span class="n">iat</span><span class="p">:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">pos</span><span class="p">[</span><span class="n">iat</span><span class="p">:,</span><span class="mi">0</span><span class="p">]</span>
+                    <span class="n">pos_all</span><span class="p">[</span><span class="n">jj</span><span class="p">,</span> <span class="n">iat</span><span class="p">:,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">pos</span><span class="p">[</span><span class="n">iat</span><span class="p">:,</span><span class="mi">1</span><span class="p">]</span>
+                    <span class="n">pos_all</span><span class="p">[</span><span class="n">jj</span><span class="p">,</span> <span class="n">iat</span><span class="p">:,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">pos</span><span class="p">[</span><span class="n">iat</span><span class="p">:,</span><span class="mi">2</span><span class="p">]</span>
+                    <span class="n">label_all</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>  
+        <span class="k">if</span> <span class="n">lpos</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">pos_all</span> <span class="o">=</span> <span class="n">pos_all</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">label_all</span> <span class="o">=</span> <span class="n">label_all</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">no_strs</span> <span class="o">=</span> <span class="n">no_strs</span>
+            <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pos_all</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">label_all</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">no_strs</span><span class="p">,</span>  <span class="s2">&quot;atm corrdinates in Angstrom&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span></div>
+        
+<div class="viewcode-block" id="neb.read_axsf"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.neb_qe.neb.read_axsf">[docs]</a>    <span class="k">def</span> <span class="nf">read_axsf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">axsf_file</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        </span>
+<span class="sd">        input: </span>
+<span class="sd">        ------</span>
+<span class="sd">            str: *axsf file name</span>
+<span class="sd">        </span>
+<span class="sd">        output:</span>
+<span class="sd">        ------</span>
+<span class="sd">            rank 3 array: atomic positions: array: rank 3 array of shape (nimages, natoms, 3)</span>
+<span class="sd">            list of strings: atomic labels: list/array of strings: rank 1 array of atomic labels</span>
+<span class="sd">            scalar: no of images/number of structures</span>
+<span class="sd">            rank 2 array: cell vectors</span>
+<span class="sd">            rank 3 array: forces on atoms of shape (nimage, natoms, 3)</span>
+<span class="sd">            </span>
+<span class="sd">        &quot;&quot;&quot;</span>    
+        <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+        <span class="kn">import</span> <span class="nn">sys</span>
+        
+        <span class="n">filename</span> <span class="o">=</span> <span class="n">axsf_file</span> <span class="c1">#self.xyzfiles</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;filename: </span><span class="si">{}</span><span class="s1">:&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">filename</span><span class="p">))</span>
+        
+        <span class="n">latvec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">no_strs</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">())</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># no. of images/no. of structures</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no of images: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">no_strs</span><span class="p">))</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>  <span class="c1">#CRYSTAL</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>  <span class="c1">#PRIMVEC</span>
+            <span class="n">latvec</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span> <span class="o">=</span> <span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">())</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+            <span class="n">latvec</span><span class="p">[</span><span class="mi">1</span><span class="p">,:]</span> <span class="o">=</span> <span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">())</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+            <span class="n">latvec</span><span class="p">[</span><span class="mi">2</span><span class="p">,:]</span> <span class="o">=</span> <span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">())</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+            <span class="c1">#print(&#39;latvec:\n {}&#39;.format(latvec))</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span> <span class="c1"># PRIMCOORD</span>
+            <span class="n">natoms</span> <span class="o">=</span> <span class="nb">int</span> <span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no of atoms: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">natoms</span><span class="p">))</span>
+
+        <span class="n">pos_all</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="o">*</span><span class="n">no_strs</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">no_strs</span><span class="p">,</span> <span class="n">natoms</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+        <span class="n">force_all</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="o">*</span><span class="n">no_strs</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">no_strs</span><span class="p">,</span> <span class="n">natoms</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+        <span class="n">label_all</span> <span class="o">=</span><span class="p">[]</span>
+        <span class="n">lpos</span> <span class="o">=</span> <span class="kc">False</span>
+        
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">counter_image</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">iline</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="s1">&#39;PRIMCOORD&#39;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">iline</span><span class="p">]:</span>
+                    <span class="n">counter_image</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">iline</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">])</span>
+                    <span class="c1">#icount = int(lines[iline].split()[1])-1</span>
+                    <span class="c1">#print(&#39;icount testing: ---sk&#39;)</span>
+                    <span class="n">icount</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">iline</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># ok --sk tested</span>
+                    <span class="n">lpos</span> <span class="o">=</span> <span class="kc">True</span>
+
+                    <span class="n">label</span> <span class="o">=</span> <span class="p">[]</span>                    
+                    <span class="k">for</span> <span class="n">iat</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                        <span class="c1"># atomic positions in ang in xcrysedn axsf file july 2020</span>
+                        <span class="n">pos_all</span><span class="p">[</span><span class="n">icount</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">iat</span><span class="p">:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">iline</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())[</span><span class="mi">1</span><span class="p">])</span>
+                        <span class="n">pos_all</span><span class="p">[</span><span class="n">icount</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">iat</span><span class="p">:,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">iline</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())[</span><span class="mi">2</span><span class="p">])</span>
+                        <span class="n">pos_all</span><span class="p">[</span><span class="n">icount</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">iat</span><span class="p">:,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">iline</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())[</span><span class="mi">3</span><span class="p">])</span>
+                        <span class="c1"># atomic forces in ryd/bohr in xcrysden axsf file July 2020</span>
+                        <span class="n">force_all</span><span class="p">[</span><span class="n">icount</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">iat</span><span class="p">:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">iline</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())[</span><span class="mi">4</span><span class="p">])</span>
+                        <span class="n">force_all</span><span class="p">[</span><span class="n">icount</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">iat</span><span class="p">:,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">iline</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())[</span><span class="mi">5</span><span class="p">])</span>
+                        <span class="n">force_all</span><span class="p">[</span><span class="n">icount</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">iat</span><span class="p">:,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">iline</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())[</span><span class="mi">6</span><span class="p">])</span>
+                        <span class="c1"># atomic symbols for one set of atomic system</span>
+                        <span class="n">label</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">iline</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span>
+                    <span class="c1"># group atomic symbols of all atomic systems</span>
+                    <span class="n">label_all</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;image list: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">counter_image</span><span class="p">))</span>
+                    
+            <span class="n">lprint</span><span class="o">=</span><span class="kc">False</span>
+            <span class="k">if</span> <span class="n">lprint</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no. of images:</span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">no_strs</span><span class="p">))</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no. of atoms:</span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">natoms</span><span class="p">))</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;latvec:</span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">latvec</span><span class="p">))</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atomic labels all: </span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">label_all</span><span class="p">))</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atomic positions all: </span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pos_all</span><span class="p">))</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atomic forces all: </span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">force_all</span><span class="p">))</span>
+                
+            <span class="k">if</span> <span class="n">lpos</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">pos_axsf</span> <span class="o">=</span> <span class="n">pos_all</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">force_axsf</span> <span class="o">=</span> <span class="n">force_all</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">label_axsf</span> <span class="o">=</span> <span class="n">label_all</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">no_strs_axsf</span> <span class="o">=</span> <span class="n">no_strs</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">latvec</span> <span class="o">=</span> <span class="n">latvec</span>
+                <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pos_axsf</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">label_axsf</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">no_strs_axsf</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">force_axsf</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">latvec</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">None</span></div>
+                <span class="c1"># better raiseError here .. TODO ..</span>
+
+                
+                
+
+                
+                
+
+                
+<div class="viewcode-block" id="neb.read_xsf"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.neb_qe.neb.read_xsf">[docs]</a>    <span class="k">def</span> <span class="nf">read_xsf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xsf_file</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        </span>
+<span class="sd">        input: </span>
+<span class="sd">        ------</span>
+<span class="sd">            str: *xsf file name</span>
+<span class="sd">        </span>
+<span class="sd">        output:</span>
+<span class="sd">        ------</span>
+<span class="sd">            rank 2 array: atomic positions: array: rank 3 array of shape (natoms, 3)</span>
+<span class="sd">            list of strings: atomic labels: list/array of strings: rank 1 array of atomic labels</span>
+<span class="sd">            rank 2 array: cell vectors</span>
+<span class="sd">            rank 2 array: forces on atoms of shape (natoms, 3)</span>
+<span class="sd">            </span>
+<span class="sd">        &quot;&quot;&quot;</span>    
+        <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+        <span class="kn">import</span> <span class="nn">sys</span>
+        
+        <span class="n">filename</span> <span class="o">=</span> <span class="n">xsf_file</span> <span class="c1">#self.xyzfiles</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;filename: </span><span class="si">{}</span><span class="s1">:&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">filename</span><span class="p">))</span>
+        
+        <span class="n">latvec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+        <span class="n">latvec_</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">latvec</span><span class="p">)</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>  <span class="c1">#INFO</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>  <span class="c1">#nunit 1 1 1</span>
+            
+            <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>  <span class="c1"># unit   cell</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>  <span class="c1">#celltype   convcell</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>  <span class="c1">#shape   parapipedal</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>  <span class="c1">#END_INFO</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>  <span class="c1">#DIM-GROUP</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>  <span class="c1">#3           1</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>  <span class="c1"># PRIMVEC</span>
+            
+            <span class="n">latvec</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span> <span class="o">=</span> <span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">())</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+            <span class="n">latvec</span><span class="p">[</span><span class="mi">1</span><span class="p">,:]</span> <span class="o">=</span> <span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">())</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+            <span class="n">latvec</span><span class="p">[</span><span class="mi">2</span><span class="p">,:]</span> <span class="o">=</span> <span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">())</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;PRIMVEC latvec:</span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">latvec</span><span class="p">))</span>
+            
+            <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span> <span class="c1"># CONVVEC</span>
+            <span class="n">latvec_</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span> <span class="o">=</span> <span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">())</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+            <span class="n">latvec_</span><span class="p">[</span><span class="mi">1</span><span class="p">,:]</span> <span class="o">=</span> <span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">())</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+            <span class="n">latvec_</span><span class="p">[</span><span class="mi">2</span><span class="p">,:]</span> <span class="o">=</span> <span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">())</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+            <span class="c1">#print(&#39;CONVEC latvec:\n {}&#39;.format(latvec_))</span>
+            
+            <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span> <span class="c1"># PRIMCOORD</span>
+            <span class="n">natoms</span> <span class="o">=</span> <span class="nb">int</span> <span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span> <span class="c1"># 132 1 &lt;-- ntoms x?</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no of atoms: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">natoms</span><span class="p">))</span>
+            
+        <span class="n">pos_all</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">natoms</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+        <span class="n">force_all</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">natoms</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+        <span class="n">atomic_num_all</span> <span class="o">=</span><span class="p">[]</span>
+        <span class="n">lpos</span> <span class="o">=</span> <span class="kc">False</span>
+        
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">iline</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="s1">&#39;PRIMCOORD&#39;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">iline</span><span class="p">]:</span>
+                    <span class="n">lpos</span> <span class="o">=</span> <span class="kc">True</span>
+                    <span class="k">for</span> <span class="n">iat</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                        <span class="c1"># atomic positions in ang in xcrysedn xsf file sept 2020</span>
+                        <span class="n">pos_all</span><span class="p">[</span> <span class="n">iat</span><span class="p">:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">iline</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())[</span><span class="mi">1</span><span class="p">])</span>
+                        <span class="n">pos_all</span><span class="p">[</span> <span class="n">iat</span><span class="p">:,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">iline</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())[</span><span class="mi">2</span><span class="p">])</span>
+                        <span class="n">pos_all</span><span class="p">[</span> <span class="n">iat</span><span class="p">:,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">iline</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())[</span><span class="mi">3</span><span class="p">])</span>
+                        <span class="c1"># atomic forces in ryd/bohr in xcrysden xsf file sept 2020</span>
+                        <span class="n">force_all</span><span class="p">[</span><span class="n">iat</span><span class="p">:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">iline</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())[</span><span class="mi">4</span><span class="p">])</span>
+                        <span class="n">force_all</span><span class="p">[</span><span class="n">iat</span><span class="p">:,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">iline</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())[</span><span class="mi">5</span><span class="p">])</span>
+                        <span class="n">force_all</span><span class="p">[</span><span class="n">iat</span><span class="p">:,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">iline</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())[</span><span class="mi">6</span><span class="p">])</span>
+                        <span class="n">atomic_num_all</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">iline</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span>
+                    
+            <span class="n">lprint</span><span class="o">=</span><span class="kc">False</span>
+            <span class="k">if</span> <span class="n">lprint</span><span class="p">:</span>
+                <span class="c1">#print(&#39;no. of images:\n {}&#39;.format(no_strs))</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no. of atoms:</span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">natoms</span><span class="p">))</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;latvec:</span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">latvec</span><span class="p">))</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atomic labels all: </span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">atomic_num_all</span><span class="p">))</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atomic positions all: </span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pos_all</span><span class="p">))</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atomic forces all: </span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">force_all</span><span class="p">))</span>
+                
+            <span class="k">if</span> <span class="n">lpos</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">pos_xsf</span> <span class="o">=</span> <span class="n">pos_all</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">force_xsf</span> <span class="o">=</span> <span class="n">force_all</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">atomic_num_xsf</span> <span class="o">=</span> <span class="n">atomic_num_all</span>
+                <span class="c1">#self.no_strs_axsf = no_strs</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">latvec</span> <span class="o">=</span> <span class="n">latvec</span>
+                <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pos_xsf</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">atomic_num_xsf</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">force_xsf</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">latvec</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">None</span></div>
+                <span class="c1"># better raiseError here .. TODO ..</span>
+                
+                
+                
+                
+<div class="viewcode-block" id="neb.read_path"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.neb_qe.neb.read_path">[docs]</a>    <span class="k">def</span> <span class="nf">read_path</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path_file</span><span class="p">,</span> <span class="n">qe_input</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        </span>
+<span class="sd">        input: </span>
+<span class="sd">        ------</span>
+<span class="sd">            str: *path file name</span>
+<span class="sd">            str: qe neb input file (containing Atomic symbols); atomic symbols are not</span>
+<span class="sd">                present in *path file</span>
+<span class="sd">        </span>
+<span class="sd">        output:</span>
+<span class="sd">        ------</span>
+<span class="sd">            rank 3 array: atomic positions: array: rank 3 array of shape (nimages, natoms, 3)</span>
+<span class="sd">            list of strings: atomic labels: list/array of strings: rank 1 array of atomic labels</span>
+<span class="sd">            scalar: no of images/number of structures</span>
+<span class="sd">            rank 3 array: forces on atoms of shape (nimage, natoms, 3)</span>
+<span class="sd">            scalar: energy </span>
+
+<span class="sd">        return (self.pos_path, self.label_qe_neb, </span>
+<span class="sd">                self.no_strs_path, self.force_path, self.energy_path)</span>
+
+
+<span class="sd">        &quot;&quot;&quot;</span>    
+        <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+        <span class="kn">import</span> <span class="nn">sys</span>
+        <span class="kn">import</span> <span class="nn">esta.measure.conversion_factors</span> <span class="k">as</span> <span class="nn">cf</span>
+        
+        
+        <span class="c1">#filename = path_file #self.xyzfiles</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;path file name: </span><span class="si">{}</span><span class="s1">:&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">path_file</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;qe file name: </span><span class="si">{}</span><span class="s1">:&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">qe_input</span><span class="p">))</span>
+        
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_file</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>  <span class="c1"># RESTART INFORMATION</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>  <span class="c1"># scalar</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>  <span class="c1"># scalar</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>  <span class="c1"># scalar</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>  <span class="c1"># NUMBER OF IMAGES</span>
+            <span class="n">no_strs</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">())</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span> <span class="c1"># no. of images/no. of structures</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no of images: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">no_strs</span><span class="p">))</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>  <span class="c1">#ENERGIES, POSITIONS AND GRADIENTS</span>
+            <span class="n">image_line</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+            <span class="c1">#print(&#39;image_line {}&#39;.format(image_line.strip()))</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>  <span class="c1"># scalar =&gt; energy of atomic str in eV; check with qe output</span>
+
+            <span class="n">icount</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="o">&gt;</span> <span class="mi">3</span> <span class="p">:</span>
+                <span class="n">icount</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">natoms</span> <span class="o">=</span> <span class="n">icount</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no. of atoms: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">natoms</span><span class="p">))</span>
+            
+        <span class="n">pos_all</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="o">*</span><span class="n">no_strs</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">no_strs</span><span class="p">,</span> <span class="n">natoms</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+        <span class="n">force_all</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="o">*</span><span class="n">no_strs</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">no_strs</span><span class="p">,</span> <span class="n">natoms</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="c1"># &#39;&#39;&#39;</span>
+
+<span class="c1">#     Problem: here I am trying to read the data for all atomic structur images </span>
+<span class="c1">#     from the path file, but last line in while loop is somehow giving energy instead of image </span>
+<span class="c1">#     number; </span>
+<span class="c1">#     don&#39;t know how to read the 2nd, 3rd,...so on images correctly ..... TODO sk!!</span>
+<span class="c1">#      -- seems that readline() in while loop is going to next line and when control comes out</span>
+<span class="c1">#         of the loop, the next line goes to energy line instead of image line..</span>
+    
+<span class="c1">#         with open(path_file, &#39;r&#39;) as f:</span>
+<span class="c1">#             f.readline()  # RESTART INFORMATION</span>
+<span class="c1">#             f.readline()  # scalar</span>
+<span class="c1">#             f.readline()  # scalar</span>
+<span class="c1">#             f.readline()  # scalar</span>
+<span class="c1">#             f.readline()  # NUMBER OF IMAGES</span>
+<span class="c1">#             no_strs = int((f.readline()).split()[0]) # no. of images/no. of structures</span>
+<span class="c1">#             #print(&#39;no of images: {}&#39;.format(no_strs))</span>
+<span class="c1">#             f.readline()  #ENERGIES, POSITIONS AND GRADIENTS</span>
+            
+<span class="c1">#             energy = []</span>
+<span class="c1">#             for st_id in range(no_strs):</span>
+<span class="c1">#                 image_line = f.readline()</span>
+<span class="c1">#                 print(&#39;image_line: {}&#39;.format(image_line.strip()))</span>
+<span class="c1">#                 #energy.append(f.readline())  # scalar =&gt; energy of atomic str in eV; check with qe output</span>
+<span class="c1">#                 print(&#39;energy: {}&#39;.format(energy))</span>
+<span class="c1">#                 iat_count = 0</span>
+<span class="c1">#                 pos1_loc = f.readline()  # location of atom position; 1st one</span>
+<span class="c1">#                 while len(pos1_loc.split()) &gt; 3 :</span>
+<span class="c1">#                     #print(&#39;length: {}&#39;.format(len(pos1_loc.split())))</span>
+<span class="c1">#                     #atomic positions in angstrom </span>
+<span class="c1">#                     pos_all[st_id, iat_count, 0] = float((pos1_loc.split())[0]) </span>
+<span class="c1">#                     pos_all[st_id, iat_count, 1] = float((pos1_loc.split())[1]) </span>
+<span class="c1">#                     pos_all[st_id, iat_count, 2] = float((pos1_loc.split())[2]) </span>
+<span class="c1">#                     # atomic forces in ryd/bohr in path file July 2020</span>
+<span class="c1">#                     force_all[st_id, iat_count, 0] = float((pos1_loc.split())[3]) </span>
+<span class="c1">#                     force_all[st_id, iat_count, 1] = float((pos1_loc.split())[4]) </span>
+<span class="c1">#                     force_all[st_id, iat_count, 2] = float((pos1_loc.split())[5]) </span>
+
+<span class="c1">#                     pos1_loc = f.readline()  # go to next atomic location </span>
+<span class="c1">#                     iat_count += 1           # increment the atomic pos counter</span>
+                    
+<span class="c1"># &#39;&#39;&#39;    </span>
+    
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path_file</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">counter_image</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">energy</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+            <span class="c1"># first time loop over the whole file --important</span>
+            <span class="k">for</span> <span class="n">iline</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="s1">&#39;ENERGIES, POSITIONS AND GRADIENTS&#39;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">iline</span><span class="p">]:</span>
+                    <span class="k">for</span> <span class="n">iiline</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">iline</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span><span class="o">-</span><span class="n">iline</span><span class="p">):</span>  <span class="c1"># second time loop over while file--important</span>
+                        <span class="k">if</span> <span class="s1">&#39;Image:&#39;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">iiline</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">iiline</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
+                            <span class="n">counter_image</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">iiline</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">])</span> <span class="c1">#from 1 to no. of images</span>
+                            <span class="c1">#print(&#39;counter images: {}&#39;.format(counter_image))</span>
+                            <span class="n">icount</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">iiline</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">])</span><span class="o">-</span><span class="mi">1</span>  <span class="c1"># image counting from 0</span>
+                            <span class="n">energy</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">iiline</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span>
+                            <span class="c1">#print(&#39;energy: {}&#39;.format(energy))</span>
+                            <span class="n">lpos</span> <span class="o">=</span> <span class="kc">True</span>
+
+                            <span class="k">for</span> <span class="n">iat</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                                <span class="c1"># atomic positions in ang in path file july 2020</span>
+                                <span class="n">pos_all</span><span class="p">[</span><span class="n">icount</span><span class="p">,</span> <span class="n">iat</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">iiline</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())[</span><span class="mi">0</span><span class="p">])</span>
+                                <span class="n">pos_all</span><span class="p">[</span><span class="n">icount</span><span class="p">,</span> <span class="n">iat</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">iiline</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())[</span><span class="mi">1</span><span class="p">])</span>
+                                <span class="n">pos_all</span><span class="p">[</span><span class="n">icount</span><span class="p">,</span> <span class="n">iat</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">iiline</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())[</span><span class="mi">2</span><span class="p">])</span>
+                                <span class="c1"># atomic forces in ryd/bohr in path file July 2020</span>
+                                <span class="n">force_all</span><span class="p">[</span><span class="n">icount</span><span class="p">,</span> <span class="n">iat</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">iiline</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())[</span><span class="mi">3</span><span class="p">])</span>
+                                <span class="n">force_all</span><span class="p">[</span><span class="n">icount</span><span class="p">,</span> <span class="n">iat</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">iiline</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())[</span><span class="mi">4</span><span class="p">])</span>
+                                <span class="n">force_all</span><span class="p">[</span><span class="n">icount</span><span class="p">,</span> <span class="n">iat</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">iiline</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">iat</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())[</span><span class="mi">5</span><span class="p">])</span>
+        <span class="n">lprint</span><span class="o">=</span><span class="kc">False</span>
+        <span class="k">if</span> <span class="n">lprint</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;image list: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">counter_image</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no. of atoms:</span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">natoms</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atomic positions all (angstom/bohr?):</span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pos_all</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;forces all (ryd/bohr?):</span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">force_all</span><span class="p">))</span>
+        <span class="c1">#opne qe neb file </span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">qe_input</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">qe_lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+
+            <span class="n">label_all</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">iline</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">qe_lines</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="s1">&#39;ATOMIC_POSITIONS&#39;</span> <span class="ow">in</span> <span class="n">qe_lines</span><span class="p">[</span><span class="n">iline</span><span class="p">]:</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;found ATOMIC_POSITIONS tag in qe NEB input!&#39;</span><span class="p">)</span>
+                    <span class="n">label</span> <span class="o">=</span> <span class="p">[]</span>
+                    <span class="k">for</span> <span class="n">iat</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                        <span class="n">label</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">qe_lines</span><span class="p">[</span><span class="n">iline</span><span class="o">+</span><span class="n">iat</span><span class="o">+</span><span class="mi">1</span><span class="p">])[</span><span class="mi">0</span><span class="p">])</span>
+                    <span class="n">label_all</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">lprint</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atomic labels all: </span><span class="si">{}</span><span class="s1">, no. of labels in a str: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">label_all</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">label_all</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span>
+                    
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;read_path: multiplying position with factor cf.bohr2ang = 0.52917721&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pos_path</span> <span class="o">=</span> <span class="n">pos_all</span> <span class="o">*</span> <span class="n">cf</span><span class="o">.</span><span class="n">bohr2ang</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">force_path</span> <span class="o">=</span> <span class="n">force_all</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">label_qe_neb</span> <span class="o">=</span> <span class="n">label_all</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">no_strs_path</span> <span class="o">=</span> <span class="n">no_strs</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">energy_path</span> <span class="o">=</span> <span class="n">energy</span>
+        <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pos_path</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">label_qe_neb</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">no_strs_path</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">force_path</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">energy_path</span><span class="p">)</span></div>
+
+
+    <span class="c1">#def write_position_card(self):        </span>
+<div class="viewcode-block" id="neb.write_position_card"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.neb_qe.neb.write_position_card">[docs]</a>    <span class="k">def</span> <span class="nf">write_position_card</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xyzfiles</span><span class="p">,</span> <span class="n">atom_fix_index</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        input:</span>
+<span class="sd">        ------</span>
+<span class="sd">            xyzfiles: list of strings containg names of the xyz files </span>
+<span class="sd">            atom_fix_index: list of atom numbers starting from 1 to be fixed in</span>
+<span class="sd">            </span>
+<span class="sd">        output:</span>
+<span class="sd">        ------</span>
+<span class="sd">            supercard containing atomic positions for all xzy strs for NEB calculations</span>
+<span class="sd">        </span>
+<span class="sd">        </span>
+<span class="sd">        </span>
+<span class="sd">        NOTE: output of this method: ...</span>
+<span class="sd">        </span>
+<span class="sd">        BEGIN_POSITIONS</span>
+<span class="sd">        FIRST_IMAGE</span>
+<span class="sd">        ATOMIC_POSITIONS { angstrom }</span>
+<span class="sd">        --</span>
+
+<span class="sd">        INTERMEDIATE_IMAGE</span>
+<span class="sd">        ATOMIC_POSITIONS { angstrom }</span>
+<span class="sd">        --</span>
+<span class="sd">        INTERMEDIATE_IMAGE</span>
+<span class="sd">        ATOMIC_POSITIONS { angstrom }</span>
+<span class="sd">        --</span>
+
+
+<span class="sd">        --</span>
+<span class="sd">        LAST_IMAGE</span>
+<span class="sd">        ATOMIC_POSITIONS { angstrom }</span>
+<span class="sd">        --</span>
+<span class="sd">        --</span>
+<span class="sd">        END_POSITIONS       </span>
+<span class="sd">        </span>
+<span class="sd">        </span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+        <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+        <span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+          
+<span class="c1">#         pos = self.read_xyz()[0]</span>
+<span class="c1">#         label = self.read_xyz()[1]</span>
+<span class="c1">#         no_strs = self.read_xyz()[2]</span>
+        <span class="n">pos</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">read_xyz</span><span class="p">(</span><span class="n">xyzfiles</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">read_xyz</span><span class="p">(</span><span class="n">xyzfiles</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">no_strs</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">read_xyz</span><span class="p">(</span><span class="n">xyzfiles</span><span class="p">)[</span><span class="mi">2</span><span class="p">]</span>
+                
+        <span class="k">if</span> <span class="n">atom_fix_index</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atoms indices to be fixed in the qe input: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">atom_fix_index</span><span class="p">))</span>
+            <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">atom_fix_index</span><span class="p">):</span>
+                <span class="n">atom_fix_index</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span><span class="o">-</span><span class="mi">1</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atoms indices starting from 0: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">atom_fix_index</span><span class="p">))</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;prefix based on the name of first xyz file&#39;</span><span class="p">)</span>
+        <span class="c1">#prefix = self.xyzfiles[0].split(&#39;.&#39;)[:-1][0]</span>
+        <span class="n">prefix</span> <span class="o">=</span> <span class="n">xyzfiles</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)[:</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">genfile</span> <span class="o">=</span>  <span class="nb">str</span><span class="p">(</span><span class="n">prefix</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;_NEB_POSITION_CARD&#39;</span>
+        
+        <span class="n">natoms</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">pos</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; .. inside write_position_card ..&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no of atoms : </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">natoms</span><span class="p">))</span>
+             
+            
+        <span class="n">zeros3</span> <span class="o">=</span> <span class="s1">&#39; 0 0 0 &#39;</span>
+        <span class="n">ones3</span> <span class="o">=</span> <span class="s1">&#39; 1 1 1 &#39;</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">genfile</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;BEGIN_POSITIONS&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">nstr</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">no_strs</span><span class="p">):</span>
+                
+                <span class="k">if</span> <span class="n">nstr</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;str no is: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nstr</span><span class="p">))</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;FIRST_IMAGE&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;ATOMIC_POSITIONS { angstrom }&#39;</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">atom_fix_index</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>                    
+                        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                            <span class="k">if</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">atom_fix_index</span><span class="p">:</span>
+                                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">+</span><span class="nb">str</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="n">label</span><span class="p">[</span><span class="n">nstr</span><span class="p">][</span><span class="n">j</span><span class="p">],</span><span class="mi">3</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pos</span><span class="p">[</span><span class="n">nstr</span><span class="p">,</span><span class="n">j</span><span class="p">]]))</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">zeros3</span><span class="p">))</span>     
+                            <span class="k">else</span><span class="p">:</span> 
+                                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">+</span><span class="nb">str</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="n">label</span><span class="p">[</span><span class="n">nstr</span><span class="p">][</span><span class="n">j</span><span class="p">],</span><span class="mi">3</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pos</span><span class="p">[</span><span class="n">nstr</span><span class="p">,</span><span class="n">j</span><span class="p">]])))</span>
+                    <span class="k">else</span><span class="p">:</span> <span class="c1"># when atom_fix_index is not present</span>
+                        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">+</span><span class="nb">str</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="n">label</span><span class="p">[</span><span class="n">nstr</span><span class="p">][</span><span class="n">j</span><span class="p">],</span><span class="mi">3</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pos</span><span class="p">[</span><span class="n">nstr</span><span class="p">,</span><span class="n">j</span><span class="p">]])))</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+                    
+                <span class="k">if</span> <span class="n">nstr</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">nstr</span> <span class="o">&lt;</span> <span class="n">no_strs</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;str no is: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nstr</span><span class="p">))</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;INTERMEDIATE_IMAGE&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;ATOMIC_POSITIONS { angstrom }&#39;</span><span class="p">)</span>
+                    
+                    <span class="k">if</span> <span class="n">atom_fix_index</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>                    
+                        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                            <span class="k">if</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">atom_fix_index</span><span class="p">:</span>
+                                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">+</span><span class="nb">str</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="n">label</span><span class="p">[</span><span class="n">nstr</span><span class="p">][</span><span class="n">j</span><span class="p">],</span><span class="mi">3</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pos</span><span class="p">[</span><span class="n">nstr</span><span class="p">,</span><span class="n">j</span><span class="p">]]))</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">zeros3</span><span class="p">))</span>     
+                            <span class="k">else</span><span class="p">:</span> 
+                                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">+</span><span class="nb">str</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="n">label</span><span class="p">[</span><span class="n">nstr</span><span class="p">][</span><span class="n">j</span><span class="p">],</span><span class="mi">3</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pos</span><span class="p">[</span><span class="n">nstr</span><span class="p">,</span><span class="n">j</span><span class="p">]])))</span>
+                    <span class="k">else</span><span class="p">:</span> <span class="c1"># when atom_fix_index is not present</span>
+                        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">+</span><span class="nb">str</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="n">label</span><span class="p">[</span><span class="n">nstr</span><span class="p">][</span><span class="n">j</span><span class="p">],</span><span class="mi">3</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pos</span><span class="p">[</span><span class="n">nstr</span><span class="p">,</span><span class="n">j</span><span class="p">]])))</span>
+                    
+                    <span class="c1">#for j in range(natoms):</span>
+                    <span class="c1">#    f.write(&quot;\n&quot;+str.ljust(label[nstr][j],3)+&quot;  &quot;+str(&quot;  &quot;.join([&quot;{0:16.9f}&quot;.format(i) for i in pos[nstr,j]])))</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+                <span class="k">if</span> <span class="n">nstr</span> <span class="o">==</span> <span class="n">no_strs</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;str no is: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nstr</span><span class="p">))</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;LAST_IMAGE&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;ATOMIC_POSITIONS { angstrom }&#39;</span><span class="p">)</span>
+                    
+                    <span class="k">if</span> <span class="n">atom_fix_index</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>                    
+                        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                            <span class="k">if</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">atom_fix_index</span><span class="p">:</span>
+                                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">+</span><span class="nb">str</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="n">label</span><span class="p">[</span><span class="n">nstr</span><span class="p">][</span><span class="n">j</span><span class="p">],</span><span class="mi">3</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pos</span><span class="p">[</span><span class="n">nstr</span><span class="p">,</span><span class="n">j</span><span class="p">]]))</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">zeros3</span><span class="p">))</span>     
+                            <span class="k">else</span><span class="p">:</span> 
+                                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">+</span><span class="nb">str</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="n">label</span><span class="p">[</span><span class="n">nstr</span><span class="p">][</span><span class="n">j</span><span class="p">],</span><span class="mi">3</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pos</span><span class="p">[</span><span class="n">nstr</span><span class="p">,</span><span class="n">j</span><span class="p">]])))</span>
+                    <span class="k">else</span><span class="p">:</span> <span class="c1"># when atom_fix_index is not present</span>
+                        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">+</span><span class="nb">str</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="n">label</span><span class="p">[</span><span class="n">nstr</span><span class="p">][</span><span class="n">j</span><span class="p">],</span><span class="mi">3</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pos</span><span class="p">[</span><span class="n">nstr</span><span class="p">,</span><span class="n">j</span><span class="p">]])))</span>
+                    
+                    <span class="c1">#for j in range(natoms):</span>
+                    <span class="c1">#    f.write(&quot;\n&quot;+str.ljust(label[nstr][j],3)+&quot;  &quot;+str(&quot;  &quot;.join([&quot;{0:16.9f}&quot;.format(i) for i in pos[nstr,j]])))</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;END_POSITIONS&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;writing supercard for neb input file for QE code !!!&#39;</span><span class="p">)</span></div>
+
+        
+<div class="viewcode-block" id="neb.to_xyz_files"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.neb_qe.neb.to_xyz_files">[docs]</a>    <span class="k">def</span> <span class="nf">to_xyz_files</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">extension</span><span class="p">,</span> <span class="n">qe_neb_input</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        input:</span>
+<span class="sd">        ------</span>
+<span class="sd">            str: filename</span>
+<span class="sd">            str: filename extension (e.g. axsf or path file from NEB calc of qe)</span>
+<span class="sd">            </span>
+<span class="sd">            #atomic positions</span>
+<span class="sd">            #atomic labels</span>
+<span class="sd">            #no of atoms</span>
+<span class="sd">            #no of images</span>
+<span class="sd">            </span>
+<span class="sd">            or better pass an atom object to this method/function</span>
+<span class="sd">            </span>
+<span class="sd">        output:</span>
+<span class="sd">        ------</span>
+<span class="sd">            xyz files in for NEB calculations</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        
+        <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+        <span class="kn">import</span> <span class="nn">sys</span>
+        <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+        <span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">extension</span> <span class="o">==</span> <span class="s1">&#39;axsf&#39;</span><span class="p">:</span>
+            <span class="c1">#pos = self.read_axsf(filename)[0]</span>
+            <span class="c1">#label = self.read_axsf(filename)[1]</span>
+            <span class="c1">#no_strs = self.read_axsf(filename)[2]</span>
+            <span class="n">pos</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">no_strs</span><span class="p">,</span> <span class="n">_</span> <span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">read_axsf</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+            <span class="c1">#label = self.read_axsf(filename)[1]</span>
+            <span class="n">natoms</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">pos</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;NOTE: axsf atomic coord units differnt from path file&#39;</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">extension</span> <span class="o">==</span> <span class="s1">&#39;path&#39;</span><span class="p">:</span>
+            <span class="c1">#pos = self.read_path(filename, qe_neb_input)[0]</span>
+            <span class="c1">#label = self.read_path(filename, qe_neb_input)[1]</span>
+            <span class="c1">#no_strs = self.read_path(filename, qe_neb_input)[2]</span>
+            <span class="n">pos</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">no_strs</span><span class="p">,</span> <span class="n">_</span> <span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">read_path</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">qe_neb_input</span><span class="p">)</span>
+            <span class="n">natoms</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">pos</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="c1">#print(label[0], len(label[0]))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;NOTE: axsf atomic coord units differnt from path file&#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;extension: </span><span class="si">{}</span><span class="s1"> not implemented!!&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">extension</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+                  
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;prefix based on the counting index of no. of images&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no of atoms : </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">natoms</span><span class="p">))</span>
+
+        <span class="c1">#test</span>
+        <span class="c1">#print(&#39;test:: no. of images: {}&#39;.format(no_strs))</span>
+        <span class="c1">#print(&#39;test:: labels: {}, {}&#39;.format(label, len(label)))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;test:: images from atoms labels: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">label</span><span class="p">)))</span>
+
+        <span class="k">for</span> <span class="n">nstr</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">no_strs</span><span class="p">):</span> <span class="c1"># nstr - counter on number of structures</span>
+            <span class="n">genfile</span> <span class="o">=</span>  <span class="nb">str</span><span class="p">(</span><span class="n">nstr</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;_&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">extension</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;.xyz&#39;</span>
+            <span class="c1">#print(&#39;test:: nstr: {}&#39;.format(nstr))</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">genfile</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">natoms</span><span class="p">))</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">xyz file created on &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; using esta&#39;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;str no is: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nstr</span><span class="p">))</span>
+                <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">+</span><span class="nb">str</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="n">label</span><span class="p">[</span><span class="n">nstr</span><span class="p">][</span><span class="n">j</span><span class="p">],</span><span class="mi">3</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pos</span><span class="p">[</span><span class="n">nstr</span><span class="p">,</span><span class="n">j</span><span class="p">]])))</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">extension</span> <span class="o">==</span> <span class="s1">&#39;axsf&#39;</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;writing xyz files from &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">extension</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; for neb input file for QE code done!!!&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">extension</span> <span class="o">==</span> <span class="s1">&#39;path&#39;</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;writing xyz files from &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">extension</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; for neb input file for QE code done!!!&#39;</span><span class="p">)</span></div>
+
+            
+            
+            
+
+            
+            
+            
+            
+            
+<div class="viewcode-block" id="neb.to_xyz_plus_delta_files"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.neb_qe.neb.to_xyz_plus_delta_files">[docs]</a>    <span class="k">def</span> <span class="nf">to_xyz_plus_delta_files</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">no_strs</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">extension</span><span class="p">,</span> <span class="n">qe_neb_input</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        input:</span>
+<span class="sd">        ------</span>
+<span class="sd">            rank2 array: atomic positions</span>
+<span class="sd">            list: atomic labels</span>
+<span class="sd">            scalar: no of images</span>
+<span class="sd">            </span>
+<span class="sd">            str: filename</span>
+<span class="sd">            str: filename extension (e.g. axsf or path file from NEB calc of qe)</span>
+<span class="sd">            </span>
+<span class="sd">            </span>
+<span class="sd">            or better pass an atom object to this method/function</span>
+<span class="sd">            </span>
+<span class="sd">        output:</span>
+<span class="sd">        ------</span>
+<span class="sd">            xyz files with displaced atoms according to vibration pattern or some other displacement</span>
+<span class="sd">            vectors for each atomic position</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        
+        <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+        <span class="kn">import</span> <span class="nn">sys</span>
+        <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+        <span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">extension</span> <span class="o">==</span> <span class="s1">&#39;axsf&#39;</span><span class="p">:</span>
+            <span class="c1">#pos, label, no_strs, _ , _ = self.read_axsf(filename)</span>
+            <span class="n">natoms</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">pos</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;NOTE: axsf atomic coord units might be in ang unit with displacement in ang also&#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;extension: </span><span class="si">{}</span><span class="s1"> not implemented!!&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">extension</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+                  
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;prefix based on the counting index of no. of images&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no of atoms : </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">natoms</span><span class="p">))</span>
+
+        <span class="c1">#test</span>
+        <span class="c1">#print(&#39;test:: no. of images: {}&#39;.format(no_strs))</span>
+        <span class="c1">#print(&#39;test:: labels: {}, {}&#39;.format(label, len(label)))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;test:: images from atoms labels: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">label</span><span class="p">)))</span>
+
+        <span class="k">for</span> <span class="n">nstr</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">no_strs</span><span class="p">):</span> <span class="c1"># nstr - counter on number of structures</span>
+            <span class="n">genfile</span> <span class="o">=</span>  <span class="nb">str</span><span class="p">(</span><span class="n">nstr</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;_&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">extension</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;.xyz&#39;</span>
+            <span class="c1">#print(&#39;test:: nstr: {}&#39;.format(nstr))</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">genfile</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">natoms</span><span class="p">))</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">xyz file created on &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; using esta&#39;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;str no is: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nstr</span><span class="p">))</span>
+                <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">+</span><span class="nb">str</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="n">label</span><span class="p">[</span><span class="n">nstr</span><span class="p">][</span><span class="n">j</span><span class="p">],</span><span class="mi">3</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pos</span><span class="p">[</span><span class="n">nstr</span><span class="p">,</span><span class="n">j</span><span class="p">]])))</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">extension</span> <span class="o">==</span> <span class="s1">&#39;axsf&#39;</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;writing xyz files from &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">extension</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; for displace atoms for QE code done!!!&#39;</span><span class="p">)</span></div>
+
+
+            
+            
+<span class="c1">#     def to_xyz_file(self, filename, extension, qe_neb_input = None):</span>
+<div class="viewcode-block" id="neb.to_xyz_file"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.neb_qe.neb.to_xyz_file">[docs]</a>    <span class="k">def</span> <span class="nf">to_xyz_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">extension</span><span class="o">=</span><span class="s1">&#39;xsf&#39;</span><span class="p">):</span>        
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        input:</span>
+<span class="sd">        ------</span>
+<span class="sd">            str: filename</span>
+<span class="sd">            str: filename extension (e.g. xsf )</span>
+<span class="sd">            </span>
+<span class="sd">            atomic positions</span>
+<span class="sd">            atomic labels</span>
+<span class="sd">            </span>
+<span class="sd">            or better pass an atom object to this method/function</span>
+<span class="sd">            </span>
+<span class="sd">        output:</span>
+<span class="sd">        ------</span>
+<span class="sd">            xyz file</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        
+        <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+        <span class="kn">import</span> <span class="nn">sys</span>
+        <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+        <span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">filename</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">out_filename</span> <span class="o">=</span> <span class="s1">&#39;xsf2xyz.xyz&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;xsf file name is </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">filename</span><span class="p">))</span>
+            <span class="n">out_filename</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">filename</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="s1">&#39;.xyz&#39;</span>
+            
+        <span class="k">if</span> <span class="n">extension</span> <span class="o">==</span> <span class="s1">&#39;xsf&#39;</span><span class="p">:</span>
+            <span class="n">natoms</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">pos</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;NOTE: xsf atomic coord units might be differnt from angstrom !! &#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;extension: </span><span class="si">{}</span><span class="s1"> not implemented!!&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">extension</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+                  
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no of atoms : </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">natoms</span><span class="p">))</span>
+
+        <span class="n">genfile</span> <span class="o">=</span> <span class="n">out_filename</span>
+        <span class="k">if</span> <span class="n">extension</span> <span class="o">==</span> <span class="s1">&#39;xsf&#39;</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;writing xyz files from &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">extension</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; .. done !!!&#39;</span><span class="p">)</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">genfile</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">natoms</span><span class="p">))</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">xyz file from xsf created on &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; using esta&#39;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">+</span><span class="nb">str</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="n">label</span><span class="p">[</span><span class="n">j</span><span class="p">],</span><span class="mi">3</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pos</span><span class="p">[</span><span class="n">j</span><span class="p">]])))</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span></div>
+            
+            
+<div class="viewcode-block" id="neb.to_poscar"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.neb_qe.neb.to_poscar">[docs]</a>    <span class="k">def</span> <span class="nf">to_poscar</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">latvec</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;POSCAR&#39;</span><span class="p">,</span> <span class="n">extension</span><span class="o">=</span><span class="s1">&#39;xsf&#39;</span><span class="p">):</span>        
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        input:</span>
+<span class="sd">        ------</span>
+<span class="sd">            str: filename for the output poscar file; default POSCAR</span>
+<span class="sd">            str: extension ; redundant variable; default is xsf file</span>
+<span class="sd">            rank 2 array: lattice vectors: latvec</span>
+<span class="sd">            rank 2 array: atomic positions: pos</span>
+<span class="sd">            list of string : atomic labels: label</span>
+<span class="sd">            </span>
+<span class="sd">            or better pass an atom object to this method/function</span>
+<span class="sd">            </span>
+<span class="sd">        output:</span>
+<span class="sd">        ------</span>
+<span class="sd">            POSCAR file</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        
+        <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+        <span class="kn">import</span> <span class="nn">sys</span>
+        <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+        <span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+        
+        
+        <span class="n">uniqe_atomic_label</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_unique_list</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
+<span class="c1">#         uniqe_atomic_label = self.get_grouped_list(label)</span>
+        <span class="n">neach_atom</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_neach_type</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
+        
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;WARNING: grouping of atomic symbols is done if same symbols is scatted at more &#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  than 1 place.. but atomic positions not grouped &#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Note: to group same atoms pos scattered at more than1 place .. see qe_read_write.py files&#39;</span><span class="p">)</span>
+        
+        
+        <span class="k">if</span> <span class="n">extension</span> <span class="o">==</span> <span class="s1">&#39;xsf&#39;</span><span class="p">:</span>
+            <span class="n">natoms</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">pos</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;NOTE: xsf atomic coord are read in and will be written to poscar file&#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;extension: </span><span class="si">{}</span><span class="s1"> not implemented!!&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">extension</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no of atoms : </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">natoms</span><span class="p">))</span>
+
+        <span class="n">genfile</span> <span class="o">=</span> <span class="n">filename</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">genfile</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;POSCAR created on &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; using esta&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;1.000&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">latvec</span><span class="p">[</span><span class="n">j</span><span class="p">]]))</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span> <span class="nb">str</span><span class="p">(</span><span class="s2">&quot;    &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">uniqe_atomic_label</span><span class="p">))</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span> <span class="nb">str</span><span class="p">(</span><span class="s2">&quot;   &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">neach_atom</span><span class="p">])</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">))</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;Cartesian&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pos</span><span class="p">)):</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span> <span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pos</span><span class="p">[</span><span class="n">j</span><span class="p">]]))</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">extension</span> <span class="o">==</span> <span class="s1">&#39;xsf&#39;</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;writing POSCAR from &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">extension</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; data done!!!&#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;poscar file is not generated!!&#39;</span><span class="p">)</span>
+            
+        <span class="n">lprint</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">if</span> <span class="n">lprint</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atomic labels: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">uniqe_atomic_label</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;natoms each: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">neach_atom</span><span class="p">))</span></div>
+        
+        
+        
+<span class="c1">#================================following same as used in reading writing qe in/out files------------------        </span>
+        
+<div class="viewcode-block" id="neb.get_symbol_from_atomic_number"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.neb_qe.neb.get_symbol_from_atomic_number">[docs]</a>    <span class="k">def</span> <span class="nf">get_symbol_from_atomic_number</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">atomic_num</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        return list of atomic symbols from list of atomic numbers</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="kn">from</span> <span class="nn">mendeleev</span> <span class="kn">import</span> <span class="n">element</span>
+        <span class="c1">#ele_obj = element([1,2])</span>
+        
+        <span class="n">atomic_num_int</span> <span class="o">=</span> <span class="p">[</span> <span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">atomic_num</span><span class="p">]</span>
+        
+        <span class="n">ele_obj</span> <span class="o">=</span> <span class="n">element</span><span class="p">(</span><span class="n">atomic_num_int</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atomic number list is: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">atomic_num_int</span><span class="p">))</span>
+            
+        <span class="n">atomic_label</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ele_obj</span><span class="p">:</span>
+            <span class="c1">#print(i.symbol)</span>
+            <span class="n">atomic_label</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="o">.</span><span class="n">symbol</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atomic labels are : </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">atomic_label</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">atomic_label</span>       </div>
+                
+
+        
+<div class="viewcode-block" id="neb.get_unique_list"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.neb_qe.neb.get_unique_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_unique_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp</span><span class="p">):</span>
+            <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">            get unique elements of list</span>
+
+<span class="sd">            return:</span>
+<span class="sd">                    string for each type of atoms </span>
+
+<span class="sd">            &#39;&#39;&#39;</span>
+            <span class="n">ulist</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">inp</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">x</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ulist</span><span class="p">:</span>
+                    <span class="n">ulist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">ulist</span></div>
+        
+<div class="viewcode-block" id="neb.get_grouped_list"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.neb_qe.neb.get_grouped_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_grouped_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">llist</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get same string elements of list grouped together</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+
+
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_unique_list</span><span class="p">(</span><span class="n">llist</span><span class="p">)</span>
+        <span class="n">grouped_list</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">idx</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">res</span><span class="p">)):</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">llist</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="n">res</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">llist</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
+                    <span class="n">idx</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">idx</span><span class="p">:</span>
+            <span class="n">grouped_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">llist</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+        <span class="k">return</span><span class="p">(</span><span class="n">grouped_list</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="neb.get_neach_type"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.neb_qe.neb.get_neach_type">[docs]</a>    <span class="k">def</span> <span class="nf">get_neach_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get number of list entries of each type</span>
+
+<span class="sd">        return:</span>
+
+<span class="sd">              list of integers for each type of atoms specifying their number</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">glist</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_grouped_list</span><span class="p">(</span><span class="n">inp</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">ulist</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_unique_list</span><span class="p">(</span><span class="n">inp</span><span class="p">)</span>
+        <span class="c1">#print(ulist)</span>
+
+        <span class="n">neach</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ulist</span><span class="p">:</span>
+            <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">glist</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">j</span><span class="p">:</span>
+                    <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">neach</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+        <span class="c1">#print (neach)</span>
+        <span class="k">return</span> <span class="n">neach</span></div></div>
+    
+<span class="c1">#============================================================================------------------        </span>
+        
+            
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    run as module</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+    <span class="kn">import</span> <span class="nn">glob</span>
+
+    <span class="c1">#old version </span>
+    
+<span class="c1">#     xyz_file_list =  [&#39;1.xyz&#39;, &#39;2.xyz&#39;, &#39;3.xyz&#39;,</span>
+<span class="c1">#                       &#39;4.xyz&#39;, &#39;5.xyz&#39;, &#39;6.xyz&#39;,</span>
+<span class="c1">#                       &#39;7.xyz&#39;]    </span>
+<span class="c1">#     print(&#39;xyz files are:&#39;, format(xyz_file_list))</span>
+<span class="c1">#     print(&#39;--------&#39;*10)</span>
+<span class="c1">#     qeobj = neb(xyz_file_list)</span>
+<span class="c1">#     #qeobj.write_position_card()</span>
+<span class="c1">#     qeobj.read_axsf(&#39;NEB_0-1_INCAR.axsf&#39;)</span>
+
+<span class="c1">#     # new version 1</span>
+<span class="c1">#     print(&#39;\n&#39;)</span>
+<span class="c1">#     xyz_file_list =  [&#39;1.xyz&#39;, &#39;2.xyz&#39;, &#39;3.xyz&#39;,</span>
+<span class="c1">#                       &#39;4.xyz&#39;, &#39;5.xyz&#39;, &#39;6.xyz&#39;,</span>
+<span class="c1">#                       &#39;7.xyz&#39;]    </span>
+<span class="c1">#     print(&#39;xyz files are:&#39;, format(xyz_file_list))</span>
+<span class="c1">#     print(&#39;--------&#39;*10)</span>
+<span class="c1">#     axsf_file = &#39;isoNEB_0-1_INCARn.axsf&#39;</span>
+<span class="c1">#     path_file = &#39;isoNEB_0-1_INCARn.path141&#39;</span>
+<span class="c1">#     qe_file = &#39;isoNEBn_0-1_INCARn.in&#39; # may be NEB or qe scf file</span>
+<span class="c1">#     qeobj = neb()</span>
+    
+<span class="c1">#     print(&#39;\n&#39;)</span>
+<span class="c1">#     qeobj.write_position_card(xyz_file_list)  </span>
+<span class="c1">#     print(&#39;\n&#39;)</span>
+<span class="c1">#     qeobj.read_axsf(axsf_file)</span>
+<span class="c1">#     qeobj.to_xyz_files(axsf_file, &#39;axsf&#39;)</span>
+<span class="c1">#     #qeobj.read_path(path_file, qe_file )</span>
+<span class="c1">#     qeobj.to_xyz_files(path_file, &#39;path&#39;, qe_file)</span>
+
+    
+    <span class="c1"># new version 2 for reading xsf file</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;--------&#39;</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+    <span class="n">xsf_file</span> <span class="o">=</span> <span class="s1">&#39;0.xsf&#39;</span>
+    <span class="n">qeobj</span> <span class="o">=</span> <span class="n">neb</span><span class="p">()</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">pos_xsf</span><span class="p">,</span> <span class="n">atomic_number_xsf</span><span class="p">,</span> <span class="n">force_xsf</span><span class="p">,</span> <span class="n">latvec</span> <span class="o">=</span> <span class="n">qeobj</span><span class="o">.</span><span class="n">read_xsf</span><span class="p">(</span><span class="n">xsf_file</span><span class="p">)</span>
+    
+    <span class="n">atomic_label</span> <span class="o">=</span> <span class="n">qeobj</span><span class="o">.</span><span class="n">get_symbol_from_atomic_number</span><span class="p">(</span><span class="n">atomic_number_xsf</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;positions are: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pos_xsf</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atomic numbers are: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">atomic_number_xsf</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;forces are: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">force_xsf</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;latvectors are: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">latvec</span><span class="p">))</span>
+    <span class="n">qeobj</span><span class="o">.</span><span class="n">to_poscar</span><span class="p">(</span><span class="n">latvec</span><span class="p">,</span> <span class="n">pos_xsf</span><span class="p">,</span> <span class="n">atomic_label</span><span class="p">)</span>
+    
+    <span class="n">xsf_file</span> <span class="o">=</span> <span class="s2">&quot;0.xsf&quot;</span>
+    <span class="n">qeobj</span><span class="o">.</span><span class="n">to_xyz_file</span><span class="p">(</span><span class="n">pos_xsf</span><span class="p">,</span> <span class="n">atomic_label</span><span class="p">,</span> <span class="n">xsf_file</span><span class="p">)</span>
+
+
+<span class="c1"># In[19]:</span>
+
+
+<span class="c1"># from mendeleev import element</span>
+<span class="c1"># ele_obj = element([1,2])</span>
+
+<span class="c1"># atomic_label = []</span>
+<span class="c1"># for i in ele_obj:</span>
+<span class="c1">#     #print(i.symbol)</span>
+<span class="c1">#     atomic_label.append(i.symbol)</span>
+<span class="c1"># print(atomic_label)</span>
+
+
+<span class="c1"># In[26]:</span>
+
+
+<span class="c1"># from mendeleev import element</span>
+<span class="c1"># #ele_obj = element([1,2])</span>
+<span class="c1"># atomic_num_str = [&#39;1&#39;,&#39;2&#39;]</span>
+<span class="c1"># atomic_num = [int(i) for i in atomic_num_str]</span>
+<span class="c1"># ele_obj = element(atomic_num)</span>
+<span class="c1"># print(&#39;atomic number list is: {}&#39;.format(atomic_num))</span>
+
+<span class="c1"># atomic_label = []</span>
+<span class="c1"># for i in ele_obj:</span>
+<span class="c1">#     #print(i.symbol)</span>
+<span class="c1">#     atomic_label.append(i.symbol)</span>
+<span class="c1"># print(&#39;atomic labels are : {}&#39;.format(atomic_label))</span>
+<span class="c1"># # return atomic_label       </span>
+
+
+<span class="c1"># In[ ]:</span>
+
+
+
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Sonu Kumar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

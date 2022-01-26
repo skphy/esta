@@ -1,0 +1,366 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>esta.gaussianBag.input_gaussian_TODO &mdash; EStA 2.6.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> EStA
+          
+
+          
+            
+            <img src="../../../_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.6.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html#ml-algorithms">ML algorithms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EStA2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-surfreact-package">esta.surfReact package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-mlbag-package">esta.mlBag package</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Cheat Sheet</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">EStA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>esta.gaussianBag.input_gaussian_TODO</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for esta.gaussianBag.input_gaussian_TODO</h1><div class="highlight"><pre>
+<span></span>
+<span class="c1"># coding: utf-8</span>
+
+<span class="c1"># In[ ]:</span>
+
+
+<div class="viewcode-block" id="get_str_and_float"><a class="viewcode-back" href="../../../esta.gaussianBag.html#esta.gaussianBag.input_gaussian_TODO.get_str_and_float">[docs]</a><span class="k">def</span> <span class="nf">get_str_and_float</span><span class="p">(</span><span class="n">sf</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    input:</span>
+<span class="sd">    -----  </span>
+<span class="sd">        list of strings </span>
+<span class="sd">    </span>
+<span class="sd">    output:</span>
+<span class="sd">    -----</span>
+<span class="sd">        list of stings and floats; is it not intersting ..ha ha ..sk!</span>
+<span class="sd">    </span>
+<span class="sd">    example: </span>
+<span class="sd">    o_list = [&#39;sdata&#39;, &#39;218&#39;, &#39;167&#39;, &#39;-0.0001&#39;]</span>
+<span class="sd">    t_list = [get_list_of_string_and_float(v) for v in o_list]</span>
+<span class="sd">    print(t_list)</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">sf</span><span class="p">)</span>
+    <span class="k">except</span> <span class="p">(</span><span class="ne">ValueError</span><span class="p">,</span> <span class="ne">TypeError</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">sf</span></div>
+
+
+<div class="viewcode-block" id="get_atomic_positions"><a class="viewcode-back" href="../../../esta.gaussianBag.html#esta.gaussianBag.input_gaussian_TODO.get_atomic_positions">[docs]</a><span class="k">def</span> <span class="nf">get_atomic_positions</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    get atomic positiions and atomic labels from  gaussian com file </span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="kn">import</span> <span class="nn">sys</span>
+    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+    
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">lines</span><span class="o">=</span><span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+        <span class="n">lpos</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="c1">#print(lines)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+            <span class="n">natoms</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">str_vals</span> <span class="o">=</span> <span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">str_vals</span><span class="p">)</span>
+            
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">str_vals</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+                <span class="n">c1</span> <span class="o">=</span> <span class="n">get_str_and_float</span><span class="p">(</span><span class="n">str_vals</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                <span class="n">c2</span> <span class="o">=</span> <span class="n">get_str_and_float</span><span class="p">(</span><span class="n">str_vals</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+                <span class="n">c3</span> <span class="o">=</span> <span class="n">get_str_and_float</span><span class="p">(</span><span class="n">str_vals</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+                <span class="n">c4</span> <span class="o">=</span> <span class="n">get_str_and_float</span><span class="p">(</span><span class="n">str_vals</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+            
+            <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">str_vals</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">c1</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">c2</span><span class="p">,</span> <span class="nb">float</span><span class="p">):</span>
+                <span class="n">lpos</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="c1">#                 natoms=0</span>
+
+                <span class="c1">#print(lines[i+natoms+1])</span>
+                <span class="n">natoms</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="c1">#print(lpos)</span>
+                <span class="c1">#print(natoms)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;in while&#39;</span><span class="p">)</span></div>
+        
+<span class="c1">#             sys.exit()</span>
+<span class="c1">#             print(&#39;no of atoms are: {}&#39;.format(natoms))</span>
+
+<span class="c1">#             pos = np.zeros(natoms*3).reshape(natoms,3)</span>
+<span class="c1">#             iat=0</span>
+<span class="c1">#             label = []</span>
+<span class="c1">#             while len((lines[i+iat+1]).split()) == 4:</span>
+<span class="c1">#                 pos[iat:,0] = float((lines[i+iat+1].split())[1])</span>
+<span class="c1">#                 pos[iat:,1] = float((lines[i+iat+1].split())[2])</span>
+<span class="c1">#                 pos[iat:,2] = float((lines[i+iat+1].split())[3])</span>
+<span class="c1">#                 label.append(lines[i+iat+1].split()[0])</span>
+<span class="c1">#                 iat += 1</span>
+<span class="c1">#                     #print(iat)</span>
+<span class="c1">#                 #print(pos)</span>
+<span class="c1">#                 #print(label)</span>
+<span class="c1">#         if lpos:</span>
+<span class="c1">#             return (pos, label, &quot;atm corrdinates in Angstrom&quot;)</span>
+<span class="c1">#         else:</span>
+<span class="c1">#             print(&#39;\n------------------------------------&#39;)</span>
+<span class="c1">#             print(&quot;Serious error reading in GRRM file ...&quot;)</span>
+<span class="c1">#             print(&#39;------------------------------------\n&#39;)</span>
+<span class="c1">#             return None</span>
+
+<span class="c1"># def get_xyz_file(filename):    </span>
+<span class="c1">#     &#39;&#39;&#39;</span>
+<span class="c1">#     get xyz file by reading the atomic positions and atomic labels: </span>
+
+<span class="c1">#     return:</span>
+<span class="c1">#             `outfile`: write data in xyz file specified by name `outfile`</span>
+
+<span class="c1">#     &#39;&#39;&#39;</span>
+<span class="c1">#     prefix = (self.filename.split(&#39;.&#39;))[0]</span>
+<span class="c1">#     outfile = prefix+&#39;.xyz&#39;    </span>
+
+<span class="c1">#     from datetime import date</span>
+<span class="c1">#     today = date.today()</span>
+
+<span class="c1">#     pos, label = self.get_atomic_positions()[0], self.get_atomic_positions()[1]</span>
+
+<span class="c1">#     with open(outfile, &#39;w&#39;) as f:</span>
+<span class="c1">#         f.write(str(len(pos)))</span>
+<span class="c1">#         f.write(&#39;\nxyz file created from gaussian output on &#39;+str(today)+&#39; using esta&#39;)</span>
+<span class="c1">#         for j in range(len(pos)):</span>
+<span class="c1">#             f.write(&quot;\n&quot;+str(label[j])+&quot;\t&quot;+str(&quot;\t&quot;.join(map(str, pos[j]))))</span>
+<span class="c1">#     print(&#39;writing data in xyz format&#39;)</span>
+
+    
+    
+<span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    
+    <span class="kn">import</span> <span class="nn">sys</span>
+    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+    <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;reactants3_1.com&#39;</span>
+<span class="c1">#     get_xyz(filename)</span>
+    <span class="n">get_atomic_positions</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+
+
+<span class="c1"># In[11]:</span>
+
+
+<span class="n">ll</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;10.255&#39;</span><span class="p">,</span> <span class="s1">&#39;-0.225455&#39;</span><span class="p">,</span> <span class="s1">&#39;12.454887&#39;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">ll</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ll</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    
+<span class="c1"># [float(i) for i in ll]    </span>
+
+
+<div class="viewcode-block" id="get_list_of_string_and_float"><a class="viewcode-back" href="../../../esta.gaussianBag.html#esta.gaussianBag.input_gaussian_TODO.get_list_of_string_and_float">[docs]</a><span class="k">def</span> <span class="nf">get_list_of_string_and_float</span><span class="p">(</span><span class="n">sf</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">sf</span><span class="p">)</span>
+    <span class="k">except</span> <span class="p">(</span><span class="ne">ValueError</span><span class="p">,</span> <span class="ne">TypeError</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">sf</span></div>
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Sonu Kumar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

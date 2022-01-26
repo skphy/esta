@@ -1,0 +1,451 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>esta.vaspBag.band_gap &mdash; EStA 2.6.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> EStA
+          
+
+          
+            
+            <img src="../../../_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.6.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html#ml-algorithms">ML algorithms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EStA2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-surfreact-package">esta.surfReact package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-mlbag-package">esta.mlBag package</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Cheat Sheet</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">EStA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>esta.vaspBag.band_gap</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for esta.vaspBag.band_gap</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Finding of:</span>
+
+<span class="sd">      band gap from the OUTCAR file or EIGENVAL file</span>
+<span class="sd">      VBM or HOMO</span>
+<span class="sd">      CBM or LUMO</span>
+<span class="sd">      Fermi energy</span>
+<span class="sd">      no. of kpts</span>
+<span class="sd">      no. of bands</span>
+<span class="sd">      no. of electrons</span>
+<span class="sd">      spin polarised calculation or not?</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">    </span>
+<span class="sd">    **band gap nature: the kpoints corresponding to VBM and CBm are found</span>
+
+
+<span class="sd">      WARNING: dealing with metallic cases -- experimental</span>
+<span class="sd">               Magnetic systems/SOC---todo</span>
+
+<span class="sd">	author: skumar</span>
+<span class="sd">	email: sonukumar.physics@gmail.com</span>
+<span class="sd">&#39;&#39;&#39;</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">subprocess</span>
+<span class="c1">#import time</span>
+    
+    
+<div class="viewcode-block" id="find_VBMin_CBMax"><a class="viewcode-back" href="../../../esta.vaspBag.html#esta.vaspBag.band_gap.find_VBMin_CBMax">[docs]</a><span class="k">def</span> <span class="nf">find_VBMin_CBMax</span><span class="p">(</span><span class="n">ispin</span><span class="p">,</span> <span class="n">nkpts</span><span class="p">,</span> <span class="n">nbands</span><span class="p">,</span> <span class="n">nelectron</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    find high occupied level = VBMax</span>
+<span class="sd">    and</span>
+<span class="sd">    find lowest unoccupied level = CBMin</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">fileout2</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;output_data.dat&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">)</span> 
+    
+    <span class="n">occupied_level_energy</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">unoccupied_level_energy</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="n">olevel_energy</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">nelectron</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">nkpts</span><span class="p">))</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">nelectron</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span> <span class="n">nkpts</span><span class="p">)</span>
+    <span class="c1">#print &#39;shape of olevel_energy:&#39;, np.shape(olevel_energy)</span>
+    <span class="n">ulevel_energy</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">nbands</span><span class="o">-</span><span class="n">nelectron</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="n">nkpts</span><span class="p">))</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">nbands</span><span class="o">-</span><span class="n">nelectron</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span> <span class="n">nkpts</span><span class="p">)</span>
+    <span class="c1">#print &#39;shape of ulevel_energy:&#39;, np.shape(ulevel_energy)</span>
+    
+    <span class="n">max_olevel_energy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">nkpts</span><span class="p">)</span>
+    <span class="n">min_ulevel_energy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">nkpts</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">kp</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nkpts</span><span class="o">*</span><span class="n">ispin</span><span class="p">):</span>
+        <span class="n">fileout2</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+        <span class="c1">#xk0, xk1, xk2 = fileout2.readline().split()</span>
+        <span class="c1">#xk = [xk0, xk1, xk2]</span>
+        
+        <span class="k">for</span> <span class="n">iband</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nbands</span><span class="p">):</span>
+            <span class="n">unit</span> <span class="o">=</span> <span class="n">fileout2</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+            <span class="n">energy_level</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">unit</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+            <span class="n">occupation</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">unit</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+            
+            <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">occupation</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">or</span> <span class="nb">int</span><span class="p">(</span><span class="n">occupation</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">iband</span> <span class="o">&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="n">nelectron</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+                    <span class="sd">&#39;&#39;&#39; note: band number starts from 0 .... ... nbands &#39;&#39;&#39;</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;     occupation wrong ... max occupied no of bands must be equal to&#39;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">nelectron</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;     ... this band is found to be occupied:&#39;</span><span class="p">,</span> <span class="n">iband</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;     ... exiting&#39;</span><span class="p">)</span>
+                    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+                <span class="c1">#print &#39;iband:&#39;, iband</span>
+                <span class="n">occupied_level_energy</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">energy_level</span><span class="p">)</span>   
+                <span class="n">olevel_energy</span><span class="p">[</span><span class="n">iband</span><span class="p">,</span><span class="n">kp</span><span class="p">]</span> <span class="o">=</span> <span class="n">energy_level</span>
+                <span class="c1">#print &#39;occ=1/2&#39;, iband</span>
+            <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">occupation</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> 
+                <span class="n">unoccupied_level_energy</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">energy_level</span><span class="p">)</span>
+                <span class="n">ulevel_energy</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">iband</span><span class="o">-</span><span class="n">nelectron</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span> <span class="n">kp</span><span class="p">]</span> <span class="o">=</span> <span class="n">energy_level</span>
+                <span class="c1">#print &#39;occ=0&#39;, iband</span>
+            <span class="c1">#if int(occupation) != 0 and int(occupation) != 1 and int(occupation) != 2: </span>
+            <span class="c1">#    print &#39;    occupation wrong: &#39;, occupation</span>
+            <span class="c1">#    print &#39;    ... exiting&#39;</span>
+            <span class="c1">#    sys.exit()</span>
+            <span class="k">if</span> <span class="nb">divmod</span><span class="p">(</span><span class="n">occupation</span><span class="p">,</span> <span class="mi">2</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mf">1e-2</span> <span class="ow">and</span> <span class="nb">int</span><span class="p">(</span><span class="n">occupation</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;    fractional occupation found:&#39;</span><span class="p">,</span> <span class="n">occupation</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;    .. may be your system is metallic&#39;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;    .. exiting&#39;</span><span class="p">)</span>
+                <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+            <span class="k">if</span> <span class="nb">divmod</span><span class="p">(</span><span class="n">occupation</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mf">1e-2</span> <span class="ow">and</span> <span class="nb">int</span><span class="p">(</span><span class="n">occupation</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;    fractional occupation found:&#39;</span><span class="p">,</span> <span class="n">occupation</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;    .. may be your system is metallic&#39;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;    .. exiting&#39;</span><span class="p">)</span>
+                <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">occupation</span> <span class="o">&lt;</span> <span class="mf">1.0</span> <span class="ow">and</span> <span class="n">occupation</span> <span class="o">&gt;</span> <span class="mf">1e-2</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;    fractional occupation found:&#39;</span><span class="p">,</span> <span class="n">occupation</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;    .. may be your system is metallic&#39;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;    .. exiting&#39;</span><span class="p">)</span>
+                <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+               
+        <span class="n">max_olevel_energy</span><span class="p">[</span><span class="n">kp</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">olevel_energy</span><span class="p">[:,</span><span class="n">kp</span><span class="p">])</span>
+        <span class="n">min_ulevel_energy</span><span class="p">[</span><span class="n">kp</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">ulevel_energy</span><span class="p">[:,</span><span class="n">kp</span><span class="p">])</span>
+    
+    <span class="c1">#testing</span>
+    <span class="c1">#print &#39;max-olevel energ--&#39;</span>
+    <span class="c1">#print max_olevel_energy, np.sort(max_olevel_energy)[-1], np.argsort(max_olevel_energy)[-1]</span>
+    <span class="c1">#print &#39;min-ulevel energ--&#39;</span>
+    <span class="c1">#print min_ulevel_energy, (np.sort(min_ulevel_energy))[0], (np.argsort(min_ulevel_energy))[0]               </span>
+    
+    
+    <span class="k">for</span> <span class="n">kp</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nkpts</span><span class="o">*</span><span class="n">ispin</span><span class="p">):</span>
+        <span class="n">xk</span> <span class="o">=</span> <span class="n">fileout2</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+        <span class="n">xk0</span><span class="p">,</span> <span class="n">xk1</span><span class="p">,</span> <span class="n">xk2</span> <span class="o">=</span> <span class="n">xk</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+        <span class="c1">#xk0, xk1, xk2 = fileout2.readline().split()</span>
+        <span class="c1">#xk0, xk1, xk2 = fileout2.readline().split(&quot; &quot;)</span>
+        <span class="c1">#xk0 = fileout2.readline().split()[0]</span>
+        <span class="c1">#xk1 = fileout2.readline().split()[1]</span>
+        <span class="c1">#xk2 = fileout2.readline().split()[2]</span>
+        <span class="n">xk</span> <span class="o">=</span> <span class="p">[</span><span class="n">xk0</span><span class="p">,</span> <span class="n">xk1</span><span class="p">,</span> <span class="n">xk2</span><span class="p">]</span>
+        <span class="c1">#testing</span>
+        <span class="c1">#print &#39;kpt coorsinates:&#39;</span>
+        <span class="c1">#print xk</span>
+        <span class="k">if</span> <span class="n">kp</span> <span class="o">==</span> <span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">max_olevel_energy</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]):</span>
+            <span class="c1">#testing</span>
+            <span class="c1">#print &#39;kpt fr vbmax is:&#39;, kp</span>
+            <span class="c1">#print &#39;kpt is:&#39;, xk</span>
+            <span class="n">kpt_vbmax</span> <span class="o">=</span> <span class="n">xk</span>
+        <span class="k">if</span> <span class="n">kp</span> <span class="o">==</span> <span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">min_ulevel_energy</span><span class="p">)[</span><span class="mi">0</span><span class="p">]):</span>
+            <span class="c1">#testing</span>
+            <span class="c1">#print &#39;kpt fr cbmin is:&#39;, kp</span>
+            <span class="c1">#print &#39;kpt is:&#39;, xk</span>
+            <span class="n">kpt_cbmin</span> <span class="o">=</span> <span class="n">xk</span>
+        <span class="k">for</span> <span class="n">iband</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nbands</span><span class="p">):</span>
+            <span class="n">fileout2</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span> <span class="c1">#.split()</span>
+                            
+    <span class="n">VBMax</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">max_olevel_energy</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">CBMin</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">min_ulevel_energy</span><span class="p">))[</span><span class="mi">0</span><span class="p">]</span>
+    
+    <span class="c1">#testing --</span>
+    <span class="c1">#print &#39;kpt indx fr vbmax is:&#39;, np.argsort(max_olevel_energy)[-1]</span>
+    <span class="c1">#print &#39;kpt indx fr cbmin is:&#39;, (np.argsort(min_ulevel_energy))[0]</span>
+    <span class="c1">#print CBMin-VBMax        </span>
+
+    <span class="n">fileout2</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">VBMax</span><span class="p">,</span> <span class="n">CBMin</span><span class="p">,</span> <span class="n">kpt_vbmax</span><span class="p">,</span> <span class="n">kpt_cbmin</span></div>
+
+<div class="viewcode-block" id="get_bandgap_from_outcar"><a class="viewcode-back" href="../../../esta.vaspBag.html#esta.vaspBag.band_gap.get_bandgap_from_outcar">[docs]</a><span class="k">def</span> <span class="nf">get_bandgap_from_outcar</span><span class="p">():</span>
+<span class="c1">#     import time</span>
+    <span class="kn">import</span> <span class="nn">esta</span>
+    <span class="kn">from</span> <span class="nn">esta.vasp_bag.inout</span> <span class="kn">import</span> <span class="n">read_outcar</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;    reading and processing OUTCAR file&#39;</span><span class="p">)</span>
+    <span class="n">FermiEnrgy</span><span class="p">,</span> <span class="n">ispin</span><span class="p">,</span> <span class="n">nkpts</span><span class="p">,</span> <span class="n">nbands</span><span class="p">,</span> <span class="n">nelectron</span> <span class="o">=</span> <span class="n">read_outcar</span><span class="o">.</span><span class="n">read_outcar</span><span class="p">()</span>
+    <span class="c1">#wait time of  10 secs so that output_data.dat storing is complete    </span>
+<span class="c1">#     time.sleep(10)</span>
+    <span class="n">VBMax</span><span class="p">,</span> <span class="n">CBMin</span><span class="p">,</span> <span class="n">kpt_vbmax</span><span class="p">,</span> <span class="n">kpt_cbmin</span> <span class="o">=</span> <span class="n">find_VBMin_CBMax</span><span class="p">(</span><span class="n">ispin</span><span class="p">,</span> <span class="n">nkpts</span><span class="p">,</span> <span class="n">nbands</span><span class="p">,</span> <span class="n">nelectron</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;    Fermi Energy: </span><span class="si">%.4f</span><span class="s2"> eV&quot;</span><span class="o">%</span><span class="n">FermiEnrgy</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;    CBm (Conduction band min): </span><span class="si">%.4f</span><span class="s2"> eV at kpt: (</span><span class="si">%.4f</span><span class="s2"> </span><span class="si">%.4f</span><span class="s2"> </span><span class="si">%.4f</span><span class="s2">) &quot;</span> <span class="o">%</span><span class="p">(</span><span class="n">CBMin</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">kpt_cbmin</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">float</span><span class="p">(</span><span class="n">kpt_cbmin</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="nb">float</span><span class="p">(</span><span class="n">kpt_cbmin</span><span class="p">[</span><span class="mi">2</span><span class="p">])))</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;    VBM (valence band Max): </span><span class="si">%.4f</span><span class="s2"> eV at kpt: (</span><span class="si">%.4f</span><span class="s2"> </span><span class="si">%.4f</span><span class="s2"> </span><span class="si">%.4f</span><span class="s2">) &quot;</span>  <span class="o">%</span><span class="p">(</span><span class="n">VBMax</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">kpt_vbmax</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">float</span><span class="p">(</span><span class="n">kpt_vbmax</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="nb">float</span><span class="p">(</span><span class="n">kpt_vbmax</span><span class="p">[</span><span class="mi">2</span><span class="p">])))</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;    Band gap: </span><span class="si">%.4f</span><span class="s2"> eV&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">CBMin</span> <span class="o">-</span> <span class="n">VBMax</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span></div>
+    
+
+    
+<div class="viewcode-block" id="get_bandgap_from_eigenval"><a class="viewcode-back" href="../../../esta.vaspBag.html#esta.vaspBag.band_gap.get_bandgap_from_eigenval">[docs]</a><span class="k">def</span> <span class="nf">get_bandgap_from_eigenval</span><span class="p">():</span> 
+    <span class="kn">import</span> <span class="nn">esta</span>
+    <span class="c1">#from esta.vasp_bag.inout import read_eigenval_file</span>
+    <span class="kn">from</span> <span class="nn">esta.vasp_bag.inout</span> <span class="kn">import</span> <span class="n">read_eigenval</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;    reading and processing EIGENVAL file&#39;</span><span class="p">)</span>
+    <span class="c1">#FermiEnrgy, ispin, nkpts, nbands, nelectron = read_outcar()</span>
+    <span class="n">VBMax</span><span class="p">,</span> <span class="n">CBMin</span><span class="p">,</span> <span class="n">kpt_vbmax</span><span class="p">,</span> <span class="n">kpt_cbmin</span> <span class="o">=</span> <span class="n">read_eigenval</span><span class="o">.</span><span class="n">read_eigenval</span><span class="p">()</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;    CBm (Conduction band min): </span><span class="si">%.4f</span><span class="s2"> eV at kpt: (</span><span class="si">%.4f</span><span class="s2"> </span><span class="si">%.4f</span><span class="s2"> </span><span class="si">%.4f</span><span class="s2">) &quot;</span> <span class="o">%</span><span class="p">(</span><span class="n">CBMin</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">kpt_cbmin</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">float</span><span class="p">(</span><span class="n">kpt_cbmin</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="nb">float</span><span class="p">(</span><span class="n">kpt_cbmin</span><span class="p">[</span><span class="mi">2</span><span class="p">])))</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;    VBM (valence band Max): </span><span class="si">%.4f</span><span class="s2"> eV at kpt: (</span><span class="si">%.4f</span><span class="s2"> </span><span class="si">%.4f</span><span class="s2"> </span><span class="si">%.4f</span><span class="s2">) &quot;</span> <span class="o">%</span><span class="p">(</span><span class="n">VBMax</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">kpt_vbmax</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">float</span><span class="p">(</span><span class="n">kpt_vbmax</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="nb">float</span><span class="p">(</span><span class="n">kpt_vbmax</span><span class="p">[</span><span class="mi">2</span><span class="p">])))</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;    Band gap: </span><span class="si">%.4f</span><span class="s2"> eV&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">CBMin</span> <span class="o">-</span> <span class="n">VBMax</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span></div>
+    
+    
+<span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    
+<span class="c1">#     sys.path.insert(0,&#39;/home/sonu/ipython_exercises/vasp_bag/inout/&#39;)</span>
+<span class="c1">#     import esta</span>
+<span class="c1">#     from esta.vasp_bag.inout import read_outcar</span>
+<span class="c1">#     from esta.vasp_bag.inout import read_eigenval_file</span>
+
+    <span class="c1"># from io.read_outcar_file import read_outcar</span>
+<span class="c1">#     from read_outcar import read_outcar</span>
+    <span class="c1"># read_outcar function returns---&gt;    return FermiEnrgy, ispin, nkpts, nbands, nelectron</span>
+
+    <span class="c1"># from io.read_eigenval_file import read_eigenval</span>
+<span class="c1">#     from read_eigenval_file import read_eigenval</span>
+    <span class="c1"># read_eigenval function returns---&gt;    return VBMax, CBMin, kpt_vbmax, kpt_cbmin</span>
+
+<span class="c1">#     print &#39;&#39;</span>
+<span class="c1">#     print &#39;    which file to read: EIGENVAL or OUTCAR ?&#39;</span>
+<span class="c1">#     print &#39;    For EIGENVAL ----&gt; enter E&#39;</span>
+<span class="c1">#     print &#39;    For OUTCAR   ----&gt; enter O&#39;</span>
+<span class="c1">#     print &#39;&#39;</span>
+<span class="c1">#     whichFile = &#39;E&#39;</span>
+    
+<span class="c1">#     if whichFile == &#39;E&#39;:</span>
+<span class="c1">#         print &#39;    reading and processing EIGENVAL file&#39;</span>
+<span class="c1">#         #FermiEnrgy, ispin, nkpts, nbands, nelectron = read_outcar()</span>
+<span class="c1">#         VBMax, CBMin, kpt_vbmax, kpt_cbmin = read_eigenval_file.read_eigenval()</span>
+
+<span class="c1">#     if whichFile == &#39;O&#39;:</span>
+<span class="c1">#         print &#39;    reading and processing OUTCAR file&#39;</span>
+
+<span class="c1">#         FermiEnrgy, ispin, nkpts, nbands, nelectron = read_outcar.read_outcar()</span>
+<span class="c1">#         VBMax, CBMin, kpt_vbmax, kpt_cbmin = find_VBMin_CBMax()</span>
+
+<span class="c1">#     print &#39;&#39;</span>
+<span class="c1"># #     if whichFile == &#39;O&#39;:</span>
+<span class="c1">#         print &quot;    Fermi Energy: %.4f eV&quot;%FermiEnrgy</span>
+<span class="c1">#     print &quot;    CBm (Conduction band min): %.4f eV at kpt: (%.4f %.4f %.4f) &quot;        %(CBMin, float(kpt_cbmin[0]), float(kpt_cbmin[1]), float(kpt_cbmin[2])) </span>
+<span class="c1">#     print &quot;    VBM (valence band Max): %.4f eV at kpt: (%.4f %.4f %.4f) &quot;        %(VBMax, float(kpt_vbmax[0]), float(kpt_vbmax[1]), float(kpt_vbmax[2])) </span>
+<span class="c1">#     print &quot;    Band gap: %.4f eV&quot;%(CBMin - VBMax)</span>
+<span class="c1">#     print &#39;&#39;</span>
+
+    <span class="n">get_bandgap_from_eigenval</span><span class="p">()</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;    ---------------------&quot;</span><span class="p">)</span>
+    <span class="n">get_bandgap_from_outcar</span><span class="p">()</span>
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Sonu Kumar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

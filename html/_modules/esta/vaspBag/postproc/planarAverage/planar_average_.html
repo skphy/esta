@@ -1,0 +1,386 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>esta.vaspBag.postproc.planarAverage.planar_average_ &mdash; EStA 2.6.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+        <script src="../../../../../_static/jquery.js"></script>
+        <script src="../../../../../_static/underscore.js"></script>
+        <script src="../../../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../../index.html" class="icon icon-home"> EStA
+          
+
+          
+            
+            <img src="../../../../../_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.6.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file3.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file3.html#ml-algorithms">ML algorithms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EStA2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file4.html">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file4.html#esta-surfreact-package">esta.surfReact package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file4.html#esta-mlbag-package">esta.mlBag package</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file3a.html">Cheat Sheet</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">EStA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../../../index.html">Module code</a> &raquo;</li>
+        
+      <li>esta.vaspBag.postproc.planarAverage.planar_average_</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for esta.vaspBag.postproc.planarAverage.planar_average_</h1><div class="highlight"><pre>
+<span></span>
+<span class="c1"># coding: utf-8</span>
+
+<span class="c1"># In[ ]:</span>
+
+
+<span class="c1"># %load planar_average_.py</span>
+
+
+<span class="c1"># In[1]:</span>
+
+
+<span class="sd">&#39;&#39;&#39; </span>
+<span class="sd">Planar average of 3D function</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="c1"># import numpy as np</span>
+<span class="c1"># import os</span>
+<span class="c1"># import sys</span>
+<span class="c1"># from matplotlib import pyplot as plt</span>
+
+<span class="c1"># import grid_data_reading as grid_data</span>
+<span class="c1">#from grid_data_reading_ import grid_data_read</span>
+<span class="c1"># import input_data # input file</span>
+<span class="c1">#grid_data_read()</span>
+
+<div class="viewcode-block" id="planar_average_3D"><a class="viewcode-back" href="../../../../../esta.vaspBag.postproc.planarAverage.html#esta.vaspBag.postproc.planarAverage.planar_average_.planar_average_3D">[docs]</a><span class="k">def</span> <span class="nf">planar_average_3D</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">data_array</span><span class="p">,</span> <span class="n">A1</span><span class="p">,</span> <span class="n">A2</span><span class="p">,</span> <span class="n">A3</span><span class="p">,</span> <span class="n">indx_direction</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Args: </span>
+<span class="sd">        filename: from which to read chargefile/potfile/or 3D function</span>
+<span class="sd">        data_array: input 3D data </span>
+<span class="sd">        A1,A2,A3: input lattice vectors</span>
+<span class="sd">    </span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+    <span class="kn">import</span> <span class="nn">os</span>
+    <span class="kn">import</span> <span class="nn">sys</span>
+    <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+    <span class="c1">#def index_direction(indx_direction):</span>
+         <span class="c1">#file_location_with_name = file_location_with_name</span>
+         <span class="c1">#indx_direction = indx_direction</span>
+    <span class="c1">#     return indx_direction</span>
+
+    <span class="k">def</span> <span class="nf">planar_average</span><span class="p">(</span><span class="n">func3D</span><span class="p">,</span> <span class="n">nx</span><span class="p">,</span> <span class="n">ny</span><span class="p">,</span> <span class="n">nz</span><span class="p">,</span> <span class="n">direction</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        planar average along direction given by the direction string</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Planar averaring along direction:&#39;</span><span class="p">,</span> <span class="n">direction</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">direction</span> <span class="o">==</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Planar averaring along x direction:&#39;</span><span class="p">)</span>
+            <span class="n">_func3D_av</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">nx</span><span class="p">)</span> 
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nx</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ny</span><span class="p">):</span>
+                    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nz</span><span class="p">):</span>
+                        <span class="n">_func3D_av</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="n">func3D</span><span class="p">[</span><span class="n">k</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">i</span><span class="p">]</span>
+                <span class="n">_func3D_av</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">_func3D_av</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="n">ny</span><span class="o">*</span><span class="n">nz</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">direction</span> <span class="o">==</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Planar averaring along y direction:&#39;</span><span class="p">)</span>
+            <span class="n">_func3D_av</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">ny</span><span class="p">)</span>  
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ny</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nx</span><span class="p">):</span>
+                    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nz</span><span class="p">):</span>
+                        <span class="n">_func3D_av</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">+=</span> <span class="n">func3D</span><span class="p">[</span><span class="n">k</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">i</span><span class="p">]</span>
+                <span class="n">_func3D_av</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">_func3D_av</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="n">nz</span><span class="o">*</span><span class="n">nx</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">direction</span> <span class="o">==</span> <span class="s1">&#39;z&#39;</span><span class="p">:</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Planar averaring along z direction:&#39;</span><span class="p">)</span>
+            <span class="n">_func3D_av</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">nz</span><span class="p">)</span>                    
+            <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nz</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nx</span><span class="p">):</span>
+                    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ny</span><span class="p">):</span>
+                        <span class="n">_func3D_av</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">+=</span> <span class="n">func3D</span><span class="p">[</span><span class="n">k</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">i</span><span class="p">]</span>
+                <span class="n">_func3D_av</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">_func3D_av</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="n">nx</span><span class="o">*</span><span class="n">ny</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">_func3D_av</span>
+
+    <span class="c1"># note here the indices are shifted as LOCPOT file ...is read like this .. same for CHGCAR/CHG file</span>
+    <span class="c1">#func3D = grid_data.data_array   #(z,y,x) type data over the (nz,ny,nx) 3Dgrid in LOCPOT, CHG etc files</span>
+    <span class="n">func3D</span> <span class="o">=</span> <span class="n">data_array</span>   <span class="c1">#(z,y,x) type data over the (nz,ny,nx) 3Dgrid in LOCPOT, CHG etc files</span>
+
+
+    <span class="c1"># func3D = np.swapaxes(func3D,0,2)  # swaping x and z axis</span>
+
+
+
+    <span class="c1">#func3D = np.array([np.sin(x**2)+np.exp(-x**2) + x**2/np.cos(x)**2 +x for x in range(2500)])</span>
+    <span class="c1">#func3D = func3D.reshape(50,50,1)</span>
+    <span class="c1">#test example------------------------------------</span>
+    <span class="c1"># func3D = (np.zeros(3*2*2)).reshape(3,2,2)</span>
+    <span class="c1"># func3D = np.array([[[ 1. , 2.],</span>
+    <span class="c1">#                     [ 2.,  3.]],</span>
+    <span class="c1">#                    [[ 4.,  9.],</span>
+    <span class="c1">#                     [ 1.4, 1.]],</span>
+    <span class="c1">#                    [[ 6.,  5.],</span>
+    <span class="c1">#                     [ 1,   3.]] ])</span>
+    <span class="c1">#------------------------------------------------</span>
+    <span class="c1"># print func3D</span>
+    <span class="c1"># print &#39;shape of 3D array after swaping axes:&#39;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;shape of array:---see&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">func3D</span><span class="p">))</span>
+
+    <span class="n">nz</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">nx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">func3D</span><span class="p">)</span>  <span class="c1"># note carefully </span>
+    <span class="c1"># specify the direction ---can be &#39;x&#39;, &#39;y&#39;, &#39;z&#39;</span>
+    <span class="c1"># indx_direction =&#39;y&#39;</span>
+    <span class="c1">#indx_direction = input_data.indx_direction</span>
+    <span class="c1">#indx_direction = index_direction</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;planar avearge direction:&#39;</span><span class="p">,</span> <span class="n">indx_direction</span><span class="p">)</span>
+    <span class="n">plAv</span> <span class="o">=</span> <span class="n">planar_average</span><span class="p">(</span><span class="n">func3D</span><span class="p">,</span> <span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">nz</span><span class="p">,</span> <span class="n">indx_direction</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;planar average is:&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">plAv</span><span class="p">)</span>
+
+
+    <span class="k">if</span> <span class="n">indx_direction</span> <span class="o">==</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;stepszie:&#39;</span><span class="p">)</span>
+        <span class="c1">#stepSize = np.linalg.norm(grid_data.A1)/nx  </span>
+        <span class="n">stepSize</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">A1</span><span class="p">)</span><span class="o">/</span><span class="n">nx</span>  
+        <span class="nb">print</span><span class="p">(</span><span class="n">stepSize</span><span class="p">,</span> <span class="s1">&#39;A^-1&#39;</span><span class="p">)</span>
+        <span class="c1">#stepSize = 1.</span>
+        <span class="n">ndiv</span> <span class="o">=</span> <span class="n">nx</span>
+    <span class="k">if</span> <span class="n">indx_direction</span> <span class="o">==</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;stepszie:&#39;</span><span class="p">)</span>
+        <span class="c1">#stepSize = np.linalg.norm(grid_data.A2)/ny  </span>
+        <span class="n">stepSize</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">A2</span><span class="p">)</span><span class="o">/</span><span class="n">ny</span>  
+        <span class="nb">print</span><span class="p">(</span><span class="n">stepSize</span><span class="p">,</span> <span class="s1">&#39;A^-1&#39;</span><span class="p">)</span>
+        <span class="c1">#stepSize = 1.</span>
+        <span class="n">ndiv</span> <span class="o">=</span> <span class="n">ny</span>
+    <span class="k">if</span> <span class="n">indx_direction</span> <span class="o">==</span> <span class="s1">&#39;z&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;stepszie:&#39;</span><span class="p">)</span>
+        <span class="c1">#stepSize = np.linalg.norm(grid_data.A3)/nz  </span>
+        <span class="n">stepSize</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">A3</span><span class="p">)</span><span class="o">/</span><span class="n">nz</span>  
+        <span class="nb">print</span><span class="p">(</span><span class="n">stepSize</span><span class="p">,</span> <span class="s1">&#39;A^-1&#39;</span><span class="p">)</span>
+        <span class="c1">#stepSize = 1.</span>
+        <span class="n">ndiv</span> <span class="o">=</span> <span class="n">nz</span>
+
+    <span class="n">x0</span> <span class="o">=</span> <span class="mf">0.</span>  <span class="c1"># assumoing that we start from origin</span>
+    <span class="n">length</span> <span class="o">=</span> <span class="n">x0</span> <span class="o">+</span> <span class="n">ndiv</span><span class="o">*</span><span class="n">stepSize</span>
+
+    <span class="n">xdata</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">ndiv</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ndiv</span><span class="p">):</span>
+        <span class="n">xdata</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">x0</span> <span class="o">+</span> <span class="n">i</span><span class="o">*</span><span class="n">stepSize</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x axis data:&#39;</span><span class="p">)</span>    
+    <span class="nb">print</span><span class="p">(</span><span class="n">xdata</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">xdata</span><span class="p">))</span>
+
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xdata</span><span class="p">,</span><span class="n">plAv</span><span class="p">,</span><span class="s1">&#39;--go&#39;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">2</span> <span class="p">)</span>
+    <span class="c1">#plt.plot(xdata,plAv,&#39;-g&#39;, markersize=3 )</span>
+    <span class="c1">#if grid_data.filename ==&#39;CHGCAR&#39;:</span>
+    <span class="k">if</span> <span class="n">filename</span> <span class="o">==</span><span class="s1">&#39;CHGCAR&#39;</span><span class="p">:</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">savetxt</span><span class="p">(</span><span class="s1">&#39;planar_av_rho_&#39;</span><span class="o">+</span><span class="n">indx_direction</span><span class="o">+</span><span class="s1">&#39;.dat&#39;</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">([</span><span class="n">xdata</span><span class="p">,</span><span class="n">plAv</span><span class="p">]))</span>
+    <span class="c1">#if grid_data.filename ==&#39;LOCPOT&#39;:</span>
+    <span class="k">if</span> <span class="n">filename</span> <span class="o">==</span><span class="s1">&#39;LOCPOT&#39;</span><span class="p">:</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">savetxt</span><span class="p">(</span><span class="s1">&#39;planar_av_pot_&#39;</span><span class="o">+</span><span class="n">indx_direction</span><span class="o">+</span><span class="s1">&#39;.dat&#39;</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">([</span><span class="n">xdata</span><span class="p">,</span><span class="n">plAv</span><span class="p">]))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span></div>
+
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Sonu Kumar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

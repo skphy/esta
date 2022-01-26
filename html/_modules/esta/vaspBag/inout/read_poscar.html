@@ -1,0 +1,452 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>esta.vaspBag.inout.read_poscar &mdash; EStA 2.6.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> EStA
+          
+
+          
+            
+            <img src="../../../../_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.6.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file3.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file3.html#ml-algorithms">ML algorithms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EStA2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-surfreact-package">esta.surfReact package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-mlbag-package">esta.mlBag package</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file3a.html">Cheat Sheet</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">EStA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../../index.html">Module code</a> &raquo;</li>
+        
+      <li>esta.vaspBag.inout.read_poscar</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for esta.vaspBag.inout.read_poscar</h1><div class="highlight"><pre>
+<span></span><span class="c1">#-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-</span>
+<span class="c1">#</span>
+<span class="c1"># This file is part of esta (electronic structure analyser) code</span>
+<span class="c1"># based on python, fortran, and c codes</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1"># author: skumar</span>
+<span class="c1"># email : sonukumar.physics@gmail.com</span>
+<span class="c1"># date  : april, 2017</span>
+<span class="c1">#       :        2019</span>
+<span class="c1">#-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-</span>
+<span class="c1">#</span>
+
+<span class="c1"># coding: utf-8</span>
+
+<span class="c1"># In[7]:</span>
+
+
+<span class="c1">#!/usr/bin/env python2.7</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">routine to read POSCAR file (VASP)</span>
+
+<span class="sd">Input: default POSCAR file is taken from current dir.</span>
+
+<span class="sd">Returns:</span>
+<span class="sd">     if selective dynamics:</span>
+<span class="sd">         return tau_cartesian, real_volume, LV1, LV2, LV3, atomFix, atomMove</span>
+<span class="sd">     else:</span>
+<span class="sd">         return tau_cartesian, real_volume, LV1, LV2, LV3</span>
+
+<span class="sd">Note:</span>
+<span class="sd">        modification done to coordinates if -ve by more than 1. unit of </span>
+<span class="sd">        angstrom: see if there is a better way to handle it     </span>
+<span class="sd">&#39;&#39;&#39;</span>
+
+<span class="c1"># import copy</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<div class="viewcode-block" id="get_poscar"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.read_poscar.get_poscar">[docs]</a><span class="k">def</span> <span class="nf">get_poscar</span><span class="p">(</span><span class="n">location</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    method to read poscar file</span>
+<span class="sd">    </span>
+<span class="sd">    Input: location of &quot;POSCAR&quot; file</span>
+<span class="sd">    </span>
+<span class="sd">    returns:</span>
+<span class="sd">     if selective dynamics:        </span>
+<span class="sd">        return tau_cartesian, real_volume, LV1, LV2, LV3, atm_type, natom_type, natoms, atomFix, atomMove</span>
+<span class="sd">     else: </span>
+<span class="sd">        return tau_cartesian, real_volume, LV1, LV2, LV3, atm_type, natom_type, natoms</span>
+<span class="sd">         </span>
+<span class="sd">    &#39;&#39;&#39;</span>
+<span class="c1">#     print(&quot; &quot;)</span>
+<span class="c1">#     print( &quot;-------------------------------------------------&quot;)</span>
+    <span class="nb">print</span><span class="p">((</span> <span class="s2">&quot;importing poscar file from locatioin:&quot;</span><span class="p">,</span> <span class="n">location</span><span class="p">))</span>
+<span class="c1">#     print( &quot;-------------------------------------------------&quot;)</span>
+
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">location</span> <span class="o">+</span> <span class="s1">&#39;POSCAR&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+
+        <span class="n">LV1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+        <span class="n">LV2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+        <span class="n">LV3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+
+            <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">lines</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span>
+                <span class="n">_data</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+                <span class="n">LV1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                <span class="n">LV1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+                <span class="n">LV1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+
+            <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">lines</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span>
+                <span class="n">_data</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+                <span class="n">LV2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                <span class="n">LV2</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+                <span class="n">LV2</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+
+            <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">lines</span><span class="p">[</span><span class="mi">4</span><span class="p">]:</span>
+                <span class="n">_data</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+                <span class="n">LV3</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                <span class="n">LV3</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+                <span class="n">LV3</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+
+            <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">lines</span><span class="p">[</span><span class="mi">5</span><span class="p">]:</span>
+                <span class="n">atm_type</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+                <span class="n">no_of_type</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">atm_type</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">((</span> <span class="s2">&quot;no_of_type --&gt; types of atoms:&quot;</span><span class="p">,</span> <span class="n">no_of_type</span><span class="p">))</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">atm_type</span><span class="p">)):</span>
+                    <span class="nb">print</span><span class="p">((</span> <span class="s1">&#39;atm_type --&gt; atom type&#39;</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">atm_type</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+            <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">lines</span><span class="p">[</span><span class="mi">6</span><span class="p">]:</span>
+                <span class="n">_data</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+                <span class="c1"># print len(data)</span>
+                <span class="n">natom_type</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">no_of_type</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+                <span class="n">natoms</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">_data</span><span class="p">)):</span>
+                    <span class="c1">#print _data[k], type(int(_data[k]))</span>
+                    <span class="n">natom_type</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
+                    <span class="n">natoms</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">_data</span><span class="p">)):</span>
+        <span class="nb">print</span><span class="p">((</span> <span class="s2">&quot;natom_type --&gt; no of atoms of type&quot;</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">natom_type</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+
+    <span class="c1"># Selective dynamics</span>
+    <span class="n">l_SelectDynamics</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="c1">#Note: better strip the lines[7]--todo</span>
+    <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="mi">7</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;s&#39;</span> <span class="ow">or</span> <span class="nb">str</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="mi">7</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;S&#39;</span><span class="p">:</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Selective dynamics&quot;</span><span class="p">)</span>
+        <span class="n">l_SelectDynamics</span> <span class="o">=</span> <span class="kc">True</span>
+        
+        <span class="n">coord_type</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span> 
+        <span class="nb">print</span><span class="p">((</span><span class="s1">&#39;Cartesian/Fractional?:&#39;</span><span class="p">,</span> <span class="n">coord_type</span><span class="p">))</span>
+
+        <span class="n">tau</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="p">))</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">natoms</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>  
+        <span class="n">lFT</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1">#np.zeros_like(tau)</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">location</span> <span class="o">+</span> <span class="s1">&#39;POSCAR&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span> 
+            <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">lines</span><span class="p">[</span><span class="mi">9</span><span class="p">]:</span>
+                    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                        <span class="n">_data</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">9</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+                        <span class="n">tau</span><span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                        <span class="n">tau</span><span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+                        <span class="n">tau</span><span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+                        <span class="c1">#print _data[3:], type(_data[3:3])</span>
+                        <span class="n">lFT</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">6</span><span class="p">])</span>  <span class="c1"># last index excluded                        </span>
+            <span class="k">if</span> <span class="n">natoms</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">lFT</span><span class="p">):</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;number of atoms fixed must be equal to no of atoms in POSCAR&quot;</span><span class="p">)</span>
+
+            <span class="n">atomFix</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">atomMove</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">counter</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lFT</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;F&#39;</span> <span class="ow">or</span> <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;f&#39;</span> <span class="ow">or</span>  <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;F&#39;</span> <span class="ow">or</span> <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;f&#39;</span>  <span class="ow">or</span> <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;F&#39;</span> <span class="ow">or</span> <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;f&#39;</span><span class="p">:</span>
+                    <span class="c1">#print(&quot;Fixed atoms&quot;)</span>
+                    <span class="n">atomFix</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+                <span class="k">elif</span> <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;T&#39;</span> <span class="ow">or</span> <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;t&#39;</span> <span class="ow">or</span>  <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;T&#39;</span> <span class="ow">or</span> <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;t&#39;</span>  <span class="ow">or</span> <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;T&#39;</span> <span class="ow">or</span> <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;t&#39;</span><span class="p">:</span>
+                    <span class="c1">#print(&quot;Atoms to be Moved&quot;)</span>
+                    <span class="n">atomMove</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="n">atomFix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">atomFix</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span>
+        <span class="n">atomMove</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">atomMove</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span>
+        
+    <span class="k">elif</span> <span class="nb">str</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="mi">7</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;d&#39;</span> <span class="ow">or</span> <span class="nb">str</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="mi">7</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;D&#39;</span> <span class="ow">or</span> <span class="nb">str</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="mi">7</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;C&#39;</span> <span class="ow">or</span> <span class="nb">str</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="mi">7</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span>
+        <span class="n">coord_type</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span> 
+        <span class="nb">print</span><span class="p">((</span><span class="s1">&#39;Cartesian/Fractional?:&#39;</span><span class="p">,</span> <span class="n">coord_type</span><span class="p">))</span>
+        
+        <span class="n">tau</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="p">))</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">natoms</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>    
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">location</span> <span class="o">+</span> <span class="s1">&#39;POSCAR&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span> 
+            <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">lines</span><span class="p">[</span><span class="mi">8</span><span class="p">]:</span>
+                    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                        <span class="n">_data</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">8</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+                        <span class="n">tau</span><span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                        <span class="n">tau</span><span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+                        <span class="n">tau</span><span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="c1">#     print (&#39;lattice vectors (Angstrom): LV1, LV2, LV3&#39;)</span>
+<span class="c1">#     print (LV1)</span>
+<span class="c1">#     print (LV2)</span>
+<span class="c1">#     print (LV3)</span>
+    <span class="n">real_volume</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">LV1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">cross</span><span class="p">(</span><span class="n">LV2</span><span class="p">,</span><span class="n">LV3</span><span class="p">))</span>
+<span class="c1">#     print (&#39;lattice vectors (Bohr): Lv1, Lv2, Lv3&#39;)</span>
+    <span class="n">Lv1</span> <span class="o">=</span> <span class="n">LV1</span><span class="o">/</span><span class="mf">0.529177249</span> 
+    <span class="n">Lv2</span> <span class="o">=</span> <span class="n">LV2</span><span class="o">/</span><span class="mf">0.529177249</span> 
+    <span class="n">Lv3</span> <span class="o">=</span> <span class="n">LV3</span><span class="o">/</span><span class="mf">0.529177249</span> 
+
+    <span class="nb">print</span><span class="p">((</span><span class="s1">&#39;total no of atoms:&#39;</span><span class="p">,</span><span class="n">natoms</span><span class="p">))</span>
+<span class="c1">#     print (&#39;Cartesian/Fractional?:&#39;, coord_type)</span>
+    <span class="c1"># see if better assigment can be done</span>
+    <span class="n">atms_position</span> <span class="o">=</span> <span class="n">tau</span>
+
+    <span class="c1"># _Cell Matrix: (C style or Python style)</span>
+    <span class="n">_Cell_Matri</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">LV1</span><span class="p">,</span><span class="n">LV2</span><span class="p">,</span><span class="n">LV3</span><span class="p">])</span>
+    <span class="n">Cell_Matrix</span> <span class="o">=</span> <span class="n">_Cell_Matri</span><span class="o">.</span><span class="n">T</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Cell Matrix: (Fortran style)&#39;</span><span class="p">)</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="n">Cell_Matrix</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">coord_type</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;Direct&#39;</span> <span class="ow">or</span> <span class="n">coord_type</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;direct&#39;</span><span class="p">:</span>  
+       <span class="c1">#print (&#39;Coordinates type is DIRECT&#39;)</span>
+       <span class="n">tau_cartesian</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tau</span><span class="p">)</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tau</span><span class="p">),</span><span class="mi">3</span><span class="p">)</span>
+       <span class="c1"># print tau_cartesian, np.shape(tau_cartesian)</span>
+       <span class="c1">#print (&quot;Conversion of coordinates from direct to cartesian type:&quot;)</span>
+       <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tau</span><span class="p">)):</span>
+           <span class="c1">#     print i, tau[i]</span>
+           <span class="n">tau_cartesian</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">Cell_Matrix</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">tau</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>  <span class="c1">#Matric * vector multiplication</span>
+    <span class="k">else</span><span class="p">:</span>
+       <span class="n">tau_cartesian</span> <span class="o">=</span> <span class="n">tau</span>
+
+    <span class="n">is_negative</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tau</span><span class="p">)):</span>
+       <span class="k">if</span> <span class="n">tau_cartesian</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mf">0.</span> <span class="ow">or</span> <span class="n">tau_cartesian</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mf">0.</span> <span class="ow">or</span> <span class="n">tau_cartesian</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mf">0.</span> <span class="p">:</span>
+           <span class="nb">print</span><span class="p">((</span><span class="s2">&quot;WARNING: -ve coordinates ..&quot;</span><span class="p">,</span> <span class="n">tau_cartesian</span><span class="p">[</span><span class="n">i</span><span class="p">,:]))</span>
+           <span class="n">is_negative</span> <span class="o">=</span> <span class="kc">True</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>      
+    <span class="n">inv_Cell_Matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">Cell_Matrix</span><span class="p">)</span>
+
+    <span class="n">tau_direct</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tau</span><span class="p">)</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tau</span><span class="p">),</span><span class="mi">3</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">coord_type</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;Cartesian&#39;</span> <span class="ow">or</span> <span class="n">coord_type</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;cartesian&#39;</span><span class="p">:</span>  
+    <span class="c1">#     print &#39;Converting coordinates from Cartesian to direct:&#39;</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tau</span><span class="p">)):</span>
+            <span class="c1">#print inv_Cell_Matrix.dot(tau[i,:])</span>
+            <span class="n">tau_direct</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">inv_Cell_Matrix</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">tau</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>  <span class="c1">#Matric * vector multiplication</span>
+    <span class="c1">#         print i, &#39;{:08.6f} {:08.6f} {:08.6f}&#39;.format(float(tau_direct[i][0]),float(tau_direct[i][1]),float(tau_direct[i][2]))</span>
+    <span class="c1"># #         print i, &#39;{:08.6f} {:08.6f} {:08.6f}&#39;.format(float(tau_direct[i,0]),float(tau_direct[i,1]),float(tau_direct[i,2]))</span>
+
+    <span class="c1"># added 19Jan2019</span>
+    <span class="k">if</span> <span class="n">l_SelectDynamics</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">tau_cartesian</span><span class="p">,</span> <span class="n">real_volume</span><span class="p">,</span> <span class="n">LV1</span><span class="p">,</span> <span class="n">LV2</span><span class="p">,</span> <span class="n">LV3</span><span class="p">,</span> <span class="n">atm_type</span><span class="p">,</span> <span class="n">natom_type</span><span class="p">,</span> <span class="n">natoms</span><span class="p">,</span> <span class="n">atomFix</span><span class="p">,</span> <span class="n">atomMove</span>
+    <span class="k">else</span><span class="p">:</span> 
+        <span class="k">return</span> <span class="n">tau_cartesian</span><span class="p">,</span> <span class="n">real_volume</span><span class="p">,</span> <span class="n">LV1</span><span class="p">,</span> <span class="n">LV2</span><span class="p">,</span> <span class="n">LV3</span><span class="p">,</span> <span class="n">atm_type</span><span class="p">,</span> <span class="n">natom_type</span><span class="p">,</span> <span class="n">natoms</span></div>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">location</span><span class="o">=</span><span class="s1">&#39;./&#39;</span>
+    <span class="n">out</span> <span class="o">=</span> <span class="n">get_poscar</span><span class="p">(</span><span class="n">location</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">((</span><span class="s2">&quot;volume real space cell (ang^3): </span><span class="si">{:0.4f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">out</span><span class="p">[</span><span class="mi">1</span><span class="p">])))</span>
+
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">out</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">8</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">((</span><span class="s1">&#39;Fixed atoms:&#39;</span><span class="p">,</span><span class="n">out</span><span class="p">[</span><span class="mi">5</span><span class="p">]))</span>
+        <span class="nb">print</span><span class="p">((</span><span class="s1">&#39;Moved atoms:&#39;</span><span class="p">,</span><span class="n">out</span><span class="p">[</span><span class="mi">6</span><span class="p">]))</span>
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Sonu Kumar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

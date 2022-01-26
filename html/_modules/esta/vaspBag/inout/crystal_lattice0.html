@@ -1,0 +1,781 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>esta.vaspBag.inout.crystal_lattice0 &mdash; EStA 2.6.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> EStA
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.6.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file2.html">Details of EStA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file3.html">ML algorithms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file3a.html">Git Cheat Sheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html">List of EStA packages information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-general-package">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">EStA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../../index.html">Module code</a> &raquo;</li>
+        
+      <li>esta.vaspBag.inout.crystal_lattice0</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for esta.vaspBag.inout.crystal_lattice0</h1><div class="highlight"><pre>
+<span></span>
+<span class="c1"># coding: utf-8</span>
+
+<span class="c1"># In[6]:</span>
+
+
+<span class="c1">#-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-</span>
+<span class="c1">#</span>
+<span class="c1"># This file is part of esta (electronic structure analyser) code</span>
+<span class="c1"># based on python, fortran, and c codes</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1"># author: skumar</span>
+<span class="c1"># email : sonukumar.physics@gmail.com</span>
+<span class="c1"># date  : april, 2017</span>
+<span class="c1">#       :        2019</span>
+<span class="c1">#-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-</span>
+<span class="c1">#</span>
+
+<span class="c1"># coding: utf-8</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Crystal lattice class to define lattice parameters and basis</span>
+<span class="sd">    crystal = lattice + basis (atoms or molecules )</span>
+
+<span class="sd">    Author: Sonu Kumar</span>
+<span class="sd">    Email: sonukumar.physics@gmail.com</span>
+<span class="sd">    Date: April, 2017, 2019, 2020</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<div class="viewcode-block" id="CrystalLattice"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.crystal_lattice0.CrystalLattice">[docs]</a><span class="k">class</span> <span class="nc">CrystalLattice</span><span class="p">:</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Crystal lattice class to define lattice parameters and basis</span>
+<span class="sd">    crystal = lattice + basis (atoms or molecules )</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">location</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Info: calling CrystalLattice class ..&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="n">filename</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">location</span> <span class="o">=</span> <span class="n">location</span> 
+        
+        <span class="c1">#NOTE: call get_poscar method here </span>
+        <span class="c1">#and then </span>
+        <span class="c1">#write like </span>
+        <span class="c1">#self.natoms = natoms</span>
+        <span class="c1">#self.tau_cartesian = tau_cartesian</span>
+        <span class="c1"># and so on ..test this ..so that u dont have to instantiate the get_poscar method </span>
+        <span class="c1"># every time you want to access the poscar variables bcz self.variables with have them .. test sk!</span>
+        
+        <span class="c1"># OR just set some default values for the natoms, tau_cartesian etc variables ..</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tau_cartestain</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">real_volume</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">LV1</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">LV2</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">LV3</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">atm_type</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">natom_type</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">natoms</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="c1"># self.no_of_types = 0 &lt;--- this is new variable --add to return in method call</span>
+            
+        <span class="c1"># 25dec2020</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">l_SelectDynamics</span> <span class="o">=</span> <span class="kc">False</span>
+        
+<div class="viewcode-block" id="CrystalLattice.get_poscar"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.crystal_lattice0.CrystalLattice.get_poscar">[docs]</a>    <span class="k">def</span> <span class="nf">get_poscar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get poscar file variables:</span>
+<span class="sd">        </span>
+<span class="sd">        input: </span>
+<span class="sd">            POSCAR file</span>
+<span class="sd">            </span>
+<span class="sd">        output:</span>
+<span class="sd">            if l_SelectDynamics:</span>
+<span class="sd">                return self.tau_cartesian, self.real_volume, self.LV1,</span>
+<span class="sd">                self.LV2, self.LV3,self.atm_type, self.natom_type, self.natoms,</span>
+<span class="sd">                self.atomFix, self.atomMove</span>
+<span class="sd">            else: </span>
+<span class="sd">                return self.tau_cartesian, self.real_volume, self.LV1,</span>
+<span class="sd">                self.LV2, self.LV3,self.atm_type, self.natom_type, self.natoms</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">location</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">location</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">filename</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span> <span class="s2">&quot; importing poscar file: </span><span class="si">{}</span><span class="s2"> from locatioin: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">,</span> <span class="n">location</span><span class="p">))</span>
+
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">location</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>   
+            <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+            <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+
+            <span class="n">LV1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+            <span class="n">LV2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+            <span class="n">LV3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">lines</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span>
+                    <span class="n">_data</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+                    <span class="n">LV1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                    <span class="n">LV1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+                    <span class="n">LV1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">lines</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span>
+                    <span class="n">_data</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+                    <span class="n">LV2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                    <span class="n">LV2</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+                    <span class="n">LV2</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">lines</span><span class="p">[</span><span class="mi">4</span><span class="p">]:</span>
+                    <span class="n">_data</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+                    <span class="n">LV3</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                    <span class="n">LV3</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+                    <span class="n">LV3</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">lines</span><span class="p">[</span><span class="mi">5</span><span class="p">]:</span>
+                    <span class="n">atm_type</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+                    <span class="n">no_of_type</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">atm_type</span><span class="p">)</span>
+                    <span class="c1">#print(( &quot;no_of_type --&gt; types of atoms:&quot;, no_of_type))</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;no_of_type --&gt; types of atoms: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">no_of_type</span><span class="p">))</span>                    
+                    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">atm_type</span><span class="p">)):</span>
+                        <span class="c1">#print(( &#39;atm_type --&gt; atom type&#39;,i,&#39;:&#39;, atm_type[i]))</span>
+                        <span class="c1">#print(&#39;atm_type --&gt; atom type {}: {}&#39;.format(i, atm_type[i]))</span>
+                        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atm_type --&gt; atom type </span><span class="si">{}</span><span class="s1">: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">atm_type</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">lines</span><span class="p">[</span><span class="mi">6</span><span class="p">]:</span>
+                    <span class="n">_data</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+                    <span class="c1"># print len(data)</span>
+                    <span class="n">natom_type</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">no_of_type</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+                    <span class="n">natoms</span> <span class="o">=</span> <span class="mi">0</span>
+                    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">_data</span><span class="p">)):</span>
+                        <span class="c1">#print _data[k], type(int(_data[k]))</span>
+                        <span class="n">natom_type</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
+                        <span class="n">natoms</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">_data</span><span class="p">)):</span>
+            <span class="c1">#print(( &quot;natom_type --&gt; no of atoms of type&quot;,i,&#39;:&#39;, natom_type[i]))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;natom_type --&gt; no of atoms of type </span><span class="si">{}</span><span class="s2"> : </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">natom_type</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+
+        <span class="n">l_SelectDynamics</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="mi">7</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;s&#39;</span> <span class="ow">or</span> <span class="nb">str</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="mi">7</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;S&#39;</span><span class="p">:</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Selective dynamics: True&quot;</span><span class="p">)</span>
+            <span class="n">l_SelectDynamics</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="n">coord_type</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span> 
+            <span class="c1">#print((&#39;Cartesian/Fractional?:&#39;, coord_type))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Coordinate type (Cartesian or Fractional/Direct): </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">coord_type</span><span class="p">))</span>
+            <span class="n">tau</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="p">))</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">natoms</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>  
+            <span class="n">lFT</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1">#np.zeros_like(tau)</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">location</span> <span class="o">+</span> <span class="n">filename</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span> 
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span> 
+                <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">lines</span><span class="p">[</span><span class="mi">9</span><span class="p">]:</span>
+                        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                            <span class="n">_data</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">9</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+                            <span class="n">tau</span><span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                            <span class="n">tau</span><span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+                            <span class="n">tau</span><span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+                            <span class="n">lFT</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">6</span><span class="p">])</span>  <span class="c1"># last index excluded                        </span>
+                <span class="k">if</span> <span class="n">natoms</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">lFT</span><span class="p">):</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;number of atoms fixes must be equal to no of atoms in POSCAR&quot;</span><span class="p">)</span>
+
+                <span class="n">atomFix</span> <span class="o">=</span> <span class="p">[]</span>
+                <span class="n">atomMove</span> <span class="o">=</span> <span class="p">[]</span>
+                <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">counter</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lFT</span><span class="p">):</span>
+                    <span class="k">if</span> <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;F&#39;</span> <span class="ow">or</span> <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;f&#39;</span> <span class="ow">or</span>  <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;F&#39;</span> <span class="ow">or</span> <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;f&#39;</span> <span class="ow">or</span> <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;F&#39;</span> <span class="ow">or</span> <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;f&#39;</span><span class="p">:</span>
+                        <span class="n">atomFix</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+                    <span class="k">elif</span> <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;T&#39;</span> <span class="ow">or</span> <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;t&#39;</span> <span class="ow">or</span>  <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;T&#39;</span> <span class="ow">or</span> <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;t&#39;</span>  <span class="ow">or</span> <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;T&#39;</span> <span class="ow">or</span> <span class="n">lFT</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;t&#39;</span><span class="p">:</span>
+                        <span class="n">atomMove</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+            <span class="n">atomFix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">atomFix</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span>
+            <span class="n">atomMove</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">atomMove</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span>
+
+        <span class="k">elif</span> <span class="nb">str</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="mi">7</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;d&#39;</span> <span class="ow">or</span> <span class="nb">str</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="mi">7</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;D&#39;</span> <span class="ow">or</span> <span class="nb">str</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="mi">7</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;C&#39;</span> <span class="ow">or</span> <span class="nb">str</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="mi">7</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span>
+            <span class="c1">#print(&quot;No Selective dynamics&quot;)   </span>
+            <span class="n">coord_type</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span> 
+            <span class="c1">#print((&#39;Cartesian/Fractional?:&#39;, coord_type))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Coordinate type (Cartesian or Fractional/Direct): </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">coord_type</span><span class="p">))</span>
+
+            <span class="n">tau</span> <span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="p">))</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">natoms</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>    
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">location</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>                
+                <span class="c1">#print(&quot; &quot;) </span>
+                <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">lines</span><span class="p">[</span><span class="mi">8</span><span class="p">]:</span>
+                        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                            <span class="n">_data</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">8</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+                            <span class="n">tau</span><span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                            <span class="n">tau</span><span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+                            <span class="n">tau</span><span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">_data</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;lattice vectors (Angstrom): LV1, LV2, LV3&#39;</span><span class="p">)</span>
+        <span class="c1">#print (LV1)</span>
+        <span class="c1">#print (LV2)</span>
+        <span class="c1">#print (LV3)</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;  </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">LV1</span><span class="p">])))</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;  </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">LV2</span><span class="p">])))</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;  </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">LV3</span><span class="p">])))</span>
+
+        <span class="n">real_volume</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">LV1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">cross</span><span class="p">(</span><span class="n">LV2</span><span class="p">,</span><span class="n">LV3</span><span class="p">))</span>
+
+        <span class="c1">#print (&#39;lattice vectors (Bohr): Lv1, Lv2, Lv3&#39;)</span>
+        <span class="n">Lv1</span> <span class="o">=</span> <span class="n">LV1</span><span class="o">/</span><span class="mf">0.529177249</span> 
+        <span class="n">Lv2</span> <span class="o">=</span> <span class="n">LV2</span><span class="o">/</span><span class="mf">0.529177249</span> 
+        <span class="n">Lv3</span> <span class="o">=</span> <span class="n">LV3</span><span class="o">/</span><span class="mf">0.529177249</span> 
+        <span class="c1">#print (Lv1) #, type(LV1)</span>
+        <span class="c1">#print (Lv2)</span>
+        <span class="c1">#print (Lv3)</span>
+
+         <span class="c1"># see if better assigment can be done</span>
+        <span class="n">atms_position</span> <span class="o">=</span> <span class="n">tau</span>
+        <span class="c1"># _Cell Matrix: (C style or Python style)</span>
+        <span class="n">_Cell_Matri</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">LV1</span><span class="p">,</span><span class="n">LV2</span><span class="p">,</span><span class="n">LV3</span><span class="p">])</span>
+        <span class="n">Cell_Matrix</span> <span class="o">=</span> <span class="n">_Cell_Matri</span><span class="o">.</span><span class="n">T</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Cell Matrix (in Fortran style): &#39;</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;   (transpose of matrix of LV1, LV2, LV3)&#39;</span><span class="p">)</span>
+        
+        <span class="k">for</span> <span class="n">ll</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Cell_Matrix</span><span class="p">)):</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;  </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">Cell_Matrix</span><span class="p">[</span><span class="n">ll</span><span class="p">]])))</span>
+            
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; </span><span class="se">\n</span><span class="s1">total no of atoms: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">natoms</span><span class="p">))</span>
+
+
+        <span class="k">if</span> <span class="n">coord_type</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;Direct&#39;</span> <span class="ow">or</span> <span class="n">coord_type</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;direct&#39;</span><span class="p">:</span>  
+           <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Coordinates type is DIRECT&#39;</span><span class="p">)</span>
+           <span class="n">tau_cartesian</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tau</span><span class="p">)</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tau</span><span class="p">),</span><span class="mi">3</span><span class="p">)</span>
+           <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Conversion of coordinates from direct to cartesian type:&quot;</span><span class="p">)</span>
+           <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tau</span><span class="p">)):</span>
+               <span class="n">tau_cartesian</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">Cell_Matrix</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">tau</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>  <span class="c1">#Matric * vector multiplication</span>
+        <span class="k">else</span><span class="p">:</span>
+           <span class="n">tau_cartesian</span> <span class="o">=</span> <span class="n">tau</span>
+
+        <span class="n">is_negative</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tau</span><span class="p">)):</span>
+           <span class="k">if</span> <span class="n">tau_cartesian</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mf">0.</span> <span class="ow">or</span> <span class="n">tau_cartesian</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mf">0.</span> <span class="ow">or</span> <span class="n">tau_cartesian</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mf">0.</span> <span class="p">:</span>
+               <span class="c1">#Note: -ve coordinates are possible for oblique lattices; e.g. hexagonal or similars</span>
+               <span class="nb">print</span><span class="p">((</span><span class="s2">&quot;WARNING: -ve coordinates ..&quot;</span><span class="p">,</span> <span class="n">tau_cartesian</span><span class="p">[</span><span class="n">i</span><span class="p">,:]))</span>
+               <span class="n">is_negative</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>      
+        <span class="c1"># print &quot;Inverse of Cell Matrix:&quot;</span>
+        <span class="n">inv_Cell_Matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">Cell_Matrix</span><span class="p">)</span>
+
+        <span class="n">tau_direct</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tau</span><span class="p">)</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tau</span><span class="p">),</span><span class="mi">3</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">coord_type</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;Cartesian&#39;</span> <span class="ow">or</span> <span class="n">coord_type</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;cartesian&#39;</span><span class="p">:</span>  
+            <span class="c1">#print &#39;Converting coordinates from Cartesian to direct:&#39;</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tau</span><span class="p">)):</span>
+                <span class="c1">#print inv_Cell_Matrix.dot(tau[i,:])</span>
+                <span class="n">tau_direct</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">inv_Cell_Matrix</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">tau</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>  <span class="c1">#Matric * vector multiplication</span>
+        <span class="c1">#         print i, &#39;{:08.6f} {:08.6f} {:08.6f}&#39;.format(float(tau_direct[i][0]),float(tau_direct[i][1]),float(tau_direct[i][2]))</span>
+        <span class="c1">#         print i, &#39;{:08.6f} {:08.6f} {:08.6f}&#39;.format(float(tau_direct[i,0]),float(tau_direct[i,1]),float(tau_direct[i,2]))</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">tau_cartesian</span> <span class="o">=</span> <span class="n">tau_cartesian</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">real_volume</span> <span class="o">=</span> <span class="n">real_volume</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">LV1</span> <span class="o">=</span> <span class="n">LV1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">LV2</span> <span class="o">=</span> <span class="n">LV2</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">LV3</span> <span class="o">=</span> <span class="n">LV3</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">atm_type</span> <span class="o">=</span> <span class="n">atm_type</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">natom_type</span> <span class="o">=</span> <span class="n">natom_type</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">natoms</span> <span class="o">=</span> <span class="n">natoms</span>
+        
+        <span class="k">if</span> <span class="n">l_SelectDynamics</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">atomFix</span> <span class="o">=</span> <span class="n">atomFix</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">atomMove</span> <span class="o">=</span> <span class="n">atomMove</span>
+            
+<span class="c1">#         # added 19Jan2019</span>
+        <span class="k">if</span> <span class="n">l_SelectDynamics</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tau_cartesian</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">real_volume</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">LV1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">LV2</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">LV3</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">atm_type</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">natom_type</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">natoms</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">atomFix</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">atomMove</span>
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tau_cartesian</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">real_volume</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">LV1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">LV2</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">LV3</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">atm_type</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">natom_type</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">natoms</span></div>
+
+<div class="viewcode-block" id="CrystalLattice.reciprocal_lattice"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.crystal_lattice0.CrystalLattice.reciprocal_lattice">[docs]</a>    <span class="k">def</span> <span class="nf">reciprocal_lattice</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        method to calculate the reciprocal lattice vectors        </span>
+
+<span class="sd">        input: real space lattice vectors: LV1, LV2, LV3</span>
+<span class="sd">        output: reciprocal space lattice vectors: b1, b2, b3 </span>
+<span class="sd">                - note: a factor of 2pi is included in b1, b2, and b3</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+        <span class="n">LV1</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">LV1</span>
+        <span class="n">LV2</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">LV2</span>
+        <span class="n">LV3</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">LV3</span>
+        <span class="n">real_volume</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">LV1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">cross</span><span class="p">(</span><span class="n">LV2</span><span class="p">,</span><span class="n">LV3</span><span class="p">))</span>
+        <span class="n">b1</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cross</span><span class="p">(</span><span class="n">LV2</span><span class="p">,</span> <span class="n">LV3</span><span class="p">)</span><span class="o">/</span> <span class="n">real_volume</span>
+        <span class="n">b2</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cross</span><span class="p">(</span><span class="n">LV3</span><span class="p">,</span> <span class="n">LV1</span><span class="p">)</span><span class="o">/</span> <span class="n">real_volume</span>
+        <span class="n">b3</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cross</span><span class="p">(</span><span class="n">LV1</span><span class="p">,</span> <span class="n">LV2</span><span class="p">)</span><span class="o">/</span> <span class="n">real_volume</span>
+        
+        <span class="k">return</span> <span class="n">b1</span><span class="p">,</span> <span class="n">b2</span><span class="p">,</span> <span class="n">b3</span></div>
+
+   
+
+<div class="viewcode-block" id="CrystalLattice.get_all_atoms_labels"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.crystal_lattice0.CrystalLattice.get_all_atoms_labels">[docs]</a>    <span class="k">def</span> <span class="nf">get_all_atoms_labels</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        by reading POSCAR, find the atomic labels of the atoms and total no of atoms</span>
+<span class="sd">        </span>
+<span class="sd">        Parameters: </span>
+<span class="sd">        ===========</span>
+<span class="sd">        </span>
+<span class="sd">        input: POSCAR file in current dir.</span>
+<span class="sd">        </span>
+<span class="sd">        output: </span>
+<span class="sd">            - list of strings of atomic lebels of all atoms according to the numbering of atoms in </span>
+<span class="sd">            POSCAR file</span>
+<span class="sd">            - scalar; total number of atoms in the POSCAR file</span>
+<span class="sd">            - list of integer numbers starting from 1 to ntotal for all atoms(e.g. 1 1 1 2 3 4 4 ..)</span>
+<span class="sd">            </span>
+<span class="sd">        </span>
+<span class="sd">        author: sk</span>
+<span class="sd">        email: sonukumar.physics@gmail.com</span>
+<span class="sd">            </span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+        <span class="c1">#import esta</span>
+        <span class="c1">#from  esta.vasp_bag.inout.crystal_lattice import CrystalLattice</span>
+    
+        <span class="c1">#output = CrystalLattice(filename = ffile, location = &quot;./&quot;)</span>
+        <span class="c1">#output.get_poscar()</span>
+        <span class="c1">#self.atm_type = atm_type</span>
+        <span class="c1">#self.natom_type = natom_type</span>
+        
+        <span class="c1">#Note here: another method call in classs using self variable</span>
+        <span class="c1">#           then variable in that method are called through self; also</span>
+        <span class="c1">#           those variable in that method are prefixed with self</span>
+        <span class="n">attt</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_poscar</span><span class="p">()</span>
+        <span class="n">ty</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">atm_type</span>
+        <span class="n">nty</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">natom_type</span>
+        <span class="c1">#ty = attt[5]</span>
+        <span class="c1">#nty = attt[6]</span>
+        <span class="c1">#print(&quot;888&quot;*20)</span>
+        <span class="c1">#print(&#39;ty:&#39;, ty)</span>
+        <span class="c1">#print(&#39;nty:&#39;, nty)</span>
+
+        <span class="n">listt</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nty</span><span class="p">)):</span>
+            <span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="n">ty</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span><span class="o">*</span><span class="n">nty</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="n">listt</span> <span class="o">+=</span><span class="n">l</span>
+        
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;WARNING: note the ordering of numbers done alphabatically&#39;</span><span class="p">)</span>
+        <span class="c1"># a dict that maps all unique strings to integers:</span>
+        <span class="n">dictt</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">([(</span><span class="n">y</span><span class="p">,</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">listt</span><span class="p">)))])</span>
+        
+        <span class="c1"># no alphabetical sorting </span>
+        <span class="c1">#dictt = dict([(y,x+1) for x,y in enumerate((set(listt)))])</span>
+        <span class="c1"># Map each string in the original list to its respective integer:</span>
+        
+        <span class="n">list_num</span> <span class="o">=</span> <span class="p">[</span><span class="n">dictt</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">listt</span><span class="p">]</span>
+        <span class="n">total_atoms</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">listt</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> 
+        
+        <span class="k">return</span> <span class="n">listt</span><span class="p">,</span> <span class="n">total_atoms</span><span class="p">,</span> <span class="n">list_num</span></div>
+
+    
+    
+<span class="c1">#--------TAKEN FROM read_write.py  from qeBag -------------------------</span>
+<div class="viewcode-block" id="CrystalLattice.get_unique_list"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.crystal_lattice0.CrystalLattice.get_unique_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_unique_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp</span><span class="p">):</span>
+            <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">            get unique elements of list</span>
+
+<span class="sd">            return:</span>
+<span class="sd">                    string for each type of atoms </span>
+
+<span class="sd">            &#39;&#39;&#39;</span>
+            <span class="n">ulist</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">inp</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">x</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ulist</span><span class="p">:</span>
+                    <span class="n">ulist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">ulist</span></div>
+
+<div class="viewcode-block" id="CrystalLattice.get_grouped_list"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.crystal_lattice0.CrystalLattice.get_grouped_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_grouped_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">llist</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get same string elements of list grouped together</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_unique_list</span><span class="p">(</span><span class="n">llist</span><span class="p">)</span>
+        <span class="n">grouped_list</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">idx</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">res</span><span class="p">)):</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">llist</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="n">res</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">llist</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
+                    <span class="n">idx</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">idx</span><span class="p">:</span>
+            <span class="n">grouped_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">llist</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+        <span class="k">return</span><span class="p">(</span><span class="n">grouped_list</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CrystalLattice.get_neach_type"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.crystal_lattice0.CrystalLattice.get_neach_type">[docs]</a>    <span class="k">def</span> <span class="nf">get_neach_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get number of list entries of each type</span>
+
+<span class="sd">        return:</span>
+
+<span class="sd">              list of integers for each type of atoms specifying their number</span>
+<span class="sd">        &#39;&#39;&#39;</span>    
+        <span class="n">glist</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_grouped_list</span><span class="p">(</span><span class="n">inp</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">ulist</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_unique_list</span><span class="p">(</span><span class="n">inp</span><span class="p">)</span>
+        <span class="c1">#print(ulist)</span>
+
+        <span class="n">neach</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ulist</span><span class="p">:</span>
+            <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">glist</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">j</span><span class="p">:</span>
+                    <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">neach</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+        <span class="c1">#print (neach)</span>
+        <span class="k">return</span><span class="p">(</span><span class="n">neach</span><span class="p">)</span></div>
+
+<span class="c1">#--------TAKEN FROM read_write.py  from qeBag ---------------end----------</span>
+    
+    
+    
+<div class="viewcode-block" id="CrystalLattice.get_dispPOSCAR"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.crystal_lattice0.CrystalLattice.get_dispPOSCAR">[docs]</a>    <span class="k">def</span> <span class="nf">get_dispPOSCAR</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ldisp</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">disp_atoms_num</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get displaced poscar with selective tag and atomic positions </span>
+<span class="sd">        tagged as T T T or F F F</span>
+<span class="sd">        </span>
+<span class="sd">        input:</span>
+<span class="sd">            logical: ldisp, True/False (displace all atoms or dont displace any of the atoms)</span>
+<span class="sd">            </span>
+<span class="sd">            list: disp_atoms_num;  atm numbers which are to be displaced; </span>
+<span class="sd">                    numbering starts from 1 .. to natoms ....TODO YET</span>
+<span class="sd">        </span>
+<span class="sd">        output:</span>
+<span class="sd">            POSCAR file with selective dynamics tags</span>
+<span class="sd">            </span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        
+        <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+        <span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;inside disp_POSCAR method!!&#39;</span><span class="p">)</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_poscar</span><span class="p">()</span>
+        
+        <span class="n">pos</span> <span class="o">=</span> <span class="n">val</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">volume</span> <span class="o">=</span> <span class="n">val</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> 
+        <span class="n">lv1</span> <span class="o">=</span> <span class="n">val</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+        <span class="n">lv2</span> <span class="o">=</span> <span class="n">val</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+        <span class="n">lv3</span> <span class="o">=</span> <span class="n">val</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> 
+        <span class="n">atm_type</span> <span class="o">=</span> <span class="n">val</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span>
+        <span class="n">natom_type</span> <span class="o">=</span> <span class="n">val</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
+        <span class="n">natoms</span> <span class="o">=</span> <span class="n">val</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span>
+
+
+
+        <span class="n">outfile</span> <span class="o">=</span> <span class="s1">&#39;disp_&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">)</span> <span class="c1">#+&quot;_POSCAR&quot;</span>
+
+<span class="c1">#         print(len(val))</span>
+<span class="c1">#         print(len(val[0])) #self.tau_cartestain))</span>
+<span class="c1">#         print(len(pos))</span>
+<span class="c1">#         print(len(self.atm_type), self.atm_type)</span>
+<span class="c1">#         #import sys</span>
+<span class="c1">#         #sys.exit()</span>
+        
+        <span class="n">label</span><span class="p">,</span> <span class="n">natoms</span><span class="p">,</span> <span class="n">ll_number</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_all_atoms_labels</span><span class="p">()</span>
+
+        <span class="n">atom_label</span><span class="p">,</span> <span class="n">atm_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_grouped_list</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
+        <span class="c1">#print(atom_label, atm_id)</span>
+
+<span class="c1">#         new_position = np.zeros_like(pos)</span>
+        <span class="n">new_position</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">pos</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pos</span><span class="p">)):</span>
+            <span class="n">new_position</span><span class="p">[</span><span class="n">i</span><span class="p">,:]</span> <span class="o">=</span> <span class="n">pos</span><span class="p">[</span><span class="n">atm_id</span><span class="p">[</span><span class="n">i</span><span class="p">],:]</span>
+
+        <span class="n">atomic_label</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_unique_list</span><span class="p">(</span><span class="n">atom_label</span><span class="p">)</span>
+        <span class="n">neach_atom</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_neach_type</span><span class="p">(</span><span class="n">atom_label</span><span class="p">)</span>
+        <span class="n">cell_parameter</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">lv1</span><span class="p">,</span> <span class="n">lv2</span><span class="p">,</span> <span class="n">lv3</span><span class="p">])</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;writing data in poscar file format with selective dynamics tag!!&#39;</span><span class="p">)</span>
+        
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">outfile</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="c1">#np.set_printoptions(precision=7)</span>
+            <span class="c1">#np.set_printoptions(suppress=True)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;poscar file on &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; using pytware aka esta&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;1.000&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>               
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">cell_parameter</span><span class="p">[</span><span class="n">j</span><span class="p">]]))</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span> <span class="nb">str</span><span class="p">(</span><span class="s2">&quot;    &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">atomic_label</span><span class="p">))</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span> 
+
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span> <span class="nb">str</span><span class="p">(</span><span class="s2">&quot;   &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">neach_atom</span><span class="p">])</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">))</span> 
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;Selective&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;Cartesian&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">new_position</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="n">ldisp</span> <span class="o">==</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">ldisp</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span> <span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">new_position</span><span class="p">[</span><span class="n">j</span><span class="p">]]))</span><span class="o">+</span><span class="s1">&#39; T T T&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>  <span class="c1"># Fix all atoms</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span> <span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">new_position</span><span class="p">[</span><span class="n">j</span><span class="p">]]))</span><span class="o">+</span><span class="s1">&#39; F F F&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span></div></div>
+    
+    
+    
+    
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">       testing the class by instantiating it ..</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">classobj</span> <span class="o">=</span> <span class="n">CrystalLattice</span><span class="p">(</span><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;POSCAR&#39;</span><span class="p">,</span> <span class="n">location</span> <span class="o">=</span> <span class="s1">&#39;./&#39;</span><span class="p">)</span>
+    <span class="n">out</span> <span class="o">=</span> <span class="n">classobj</span><span class="o">.</span><span class="n">get_poscar</span><span class="p">()</span>
+    
+    <span class="n">rlatt</span> <span class="o">=</span> <span class="n">classobj</span><span class="o">.</span><span class="n">reciprocal_lattice</span><span class="p">()</span>
+<span class="c1">#     from esta.vasp_bag.inout import reciprocal_lattice</span>
+<span class="c1">#     rlatt = rlattobj.reciprocal_lattice()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;reciprocal lattice vectors:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rlatt</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rlatt</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rlatt</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">calling get_all_atoms_labels</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">label</span><span class="p">,</span> <span class="n">natom</span><span class="p">,</span> <span class="n">number_atoms</span> <span class="o">=</span> <span class="n">classobj</span><span class="o">.</span><span class="n">get_all_atoms_labels</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">natom</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">number_atoms</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;testing ... 1&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">classobj</span><span class="o">.</span><span class="n">tau_cartesian</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">classobj</span><span class="o">.</span><span class="n">LV1</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">classobj</span><span class="o">.</span><span class="n">LV2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">classobj</span><span class="o">.</span><span class="n">LV3</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">classobj</span><span class="o">.</span><span class="n">real_volume</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">classobj</span><span class="o">.</span><span class="n">atm_type</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">classobj</span><span class="o">.</span><span class="n">natom_type</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">classobj</span><span class="o">.</span><span class="n">natoms</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;testing ... 2&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">classobj</span><span class="o">.</span><span class="n">reciprocal_lattice</span><span class="p">())</span>
+
+    
+    
+    <span class="n">classobj</span><span class="o">.</span><span class="n">get_dispPOSCAR</span><span class="p">()</span> <span class="c1">#(filename=&#39;POSCAR&#39;)</span>
+
+<span class="c1">#====================NOTES==================================</span>
+<span class="c1"># &#39;&#39;&#39;</span>
+<span class="c1"># WELL tested following class ...</span>
+<span class="c1"># &#39;&#39;&#39;</span>
+<span class="c1"># &#39;&#39;&#39;</span>
+<span class="c1"># class test1():</span>
+<span class="c1">#     def __init__(self, a, b_array):</span>
+<span class="c1">#         self.a = a</span>
+<span class="c1">#         self.b_array = b_array</span>
+<span class="c1">#         self.result = None</span>
+        
+<span class="c1">#     def product_mat_vec(self, matA):</span>
+<span class="c1">#         import numpy as np</span>
+<span class="c1">#         result = np.dot(matA, self.b_array)</span>
+<span class="c1">#         #print(result)</span>
+<span class="c1">#         self.result = result</span>
+        
+<span class="c1"># import numpy as np</span>
+<span class="c1"># b = np.array([1, 2, 3.])</span>
+<span class="c1"># cobj = test1(2, b)</span>
+<span class="c1"># print(cobj.b_array)</span>
+<span class="c1"># print(cobj.result)</span>
+
+<span class="c1"># m = np.array([[1, 0, 0],</span>
+<span class="c1">#               [0, 1, 1],</span>
+<span class="c1">#               [0, 2, 1]])</span>
+
+<span class="c1"># cobj.product_mat_vec(m)</span>
+
+<span class="c1"># print(cobj.result)</span>
+<span class="c1"># &#39;&#39;&#39;</span>
+<span class="c1">#====================NOTES==================================</span>
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Sonu Kumar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

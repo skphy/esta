@@ -1,0 +1,690 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>esta.spaceGroup.transform_adv &mdash; EStA 2.6.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> EStA
+          
+
+          
+            
+            <img src="../../../_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.6.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html#ml-algorithms">ML algorithms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EStA2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-surfreact-package">esta.surfReact package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-mlbag-package">esta.mlBag package</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Cheat Sheet</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">EStA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>esta.spaceGroup.transform_adv</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for esta.spaceGroup.transform_adv</h1><div class="highlight"><pre>
+<span></span><span class="ch">#!/usr/bin/env python</span>
+<span class="c1"># coding: utf-8</span>
+
+<span class="c1"># In[6]:</span>
+
+
+<div class="viewcode-block" id="transform"><a class="viewcode-back" href="../../../esta.spaceGroup.html#esta.spaceGroup.transform_adv.transform">[docs]</a><span class="k">class</span> <span class="nc">transform</span><span class="p">:</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    transfor class to</span>
+<span class="sd">        -create supercell from crystal lattice object</span>
+<span class="sd">        -rotation/translation etc...</span>
+<span class="sd">        -</span>
+<span class="sd">        </span>
+<span class="sd">    More transformations to </span>
+<span class="sd">        -unit cell/atomic positions/reciprocal lattice/kpoints to be added</span>
+<span class="sd">        </span>
+<span class="sd">    author: sk</span>
+<span class="sd">    email: sonukumar.physics@gmail.com</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cryst_obj</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        cryst_obj is  </span>
+<span class="sd">        crystal_lattice.CrystalLattice(&#39;POSCAR&#39;, &#39;./&#39;) object from inout </span>
+<span class="sd">        of vasp_bag</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;inside class transform !!&#39;</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;NOTE: presently supporting normal poscar file; poscar with selective dynamics to TODO!!&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cryst_obj</span> <span class="o">=</span> <span class="n">cryst_obj</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">positions</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">volume</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">lv1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">lv2</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">lv3</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">typ</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">ntype</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">natoms</span>  <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cryst_obj</span><span class="o">.</span><span class="n">get_poscar</span><span class="p">()</span> 
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">label</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">no_of_atoms</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_list</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cryst_obj</span><span class="o">.</span><span class="n">get_all_atoms_labels</span><span class="p">()</span>
+    
+    
+<div class="viewcode-block" id="transform.get_supercell"><a class="viewcode-back" href="../../../esta.spaceGroup.html#esta.spaceGroup.transform_adv.transform.get_supercell">[docs]</a>    <span class="k">def</span> <span class="nf">get_supercell</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">scale</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        - create supercell by shifting ALL atoms in space with scaling </span>
+<span class="sd">        [scale1,scale2,scale3]</span>
+<span class="sd">        </span>
+<span class="sd">        - looping is performed along three directions of lv&#39;s vectors</span>
+<span class="sd">        </span>
+<span class="sd">        - loops are:</span>
+<span class="sd">            i = 0,1,2 ... sclae1</span>
+<span class="sd">            j = 0,1,2 ... scale2 </span>
+<span class="sd">            k = 0,1,2 ... scale3</span>
+<span class="sd">        </span>
+<span class="sd">        - total atoms in supercell = atoms in unit-cell * np.product([scale1,scale2,scale3])</span>
+<span class="sd">        </span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+        <span class="c1">#print (&#39;creating supercell from input/unit cell&#39;)</span>
+        
+        <span class="n">scell</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+        <span class="n">scell</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span> <span class="o">=</span> <span class="n">scale</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">lv1</span>  
+        <span class="n">scell</span><span class="p">[</span><span class="mi">1</span><span class="p">,:]</span> <span class="o">=</span> <span class="n">scale</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">lv2</span>  
+        <span class="n">scell</span><span class="p">[</span><span class="mi">2</span><span class="p">,:]</span> <span class="o">=</span> <span class="n">scale</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">lv3</span>  
+        <span class="c1">#print(self.lv1, self.lv2, self.lv3)</span>
+        <span class="c1">#print(scell)</span>
+        
+        <span class="n">spositions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">product</span><span class="p">(</span><span class="n">scale</span><span class="p">)</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">natoms</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+        <span class="n">isat</span><span class="o">=</span><span class="mi">0</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">scale</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">scale</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+                <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">scale</span><span class="p">[</span><span class="mi">2</span><span class="p">]):</span>
+                    <span class="c1">#shift ALL atoms in the unit cell</span>
+                    <span class="k">for</span> <span class="n">iat</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">natoms</span><span class="p">):</span>
+                        <span class="c1"># Be careful:</span>
+                        <span class="c1"># e.g. for 2 atom unit cell: atm1 and atm2 in supercell </span>
+                        <span class="c1">#      after 2x2x1 scaling will be</span>
+                        
+                        <span class="c1"># 0 0 0 cell of supercell</span>
+                        <span class="c1"># atom1  generated from atm1 --&gt; same as atm1 </span>
+                        <span class="c1"># atom2  generated from atm2 --&gt; same as atm2</span>
+
+                        <span class="c1"># 0 1 0 cell of supercell</span>
+                        <span class="c1"># atom3   generated from atm1 </span>
+                        <span class="c1"># atom4   generated from atm2 </span>
+
+                        <span class="c1"># 1 0 0 cell of supercell</span>
+                        <span class="c1"># atom5   generated from atm1 </span>
+                        <span class="c1"># atom6   generated from atm2 </span>
+
+                        <span class="c1"># 1 1 0 cell of supercell</span>
+                        <span class="c1"># atom7   generated from atm1 </span>
+                        <span class="c1"># atom8   generated from atm2</span>
+                        <span class="n">spositions</span><span class="p">[</span><span class="n">isat</span><span class="p">,:]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">positions</span><span class="p">[</span><span class="n">iat</span><span class="p">,:]</span><span class="o">+</span><span class="n">i</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">lv1</span><span class="o">+</span><span class="n">j</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">lv2</span><span class="o">+</span><span class="n">k</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">lv3</span>
+                        <span class="c1">#print(self.label[iat])</span>
+                        <span class="n">isat</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">spositions</span> <span class="o">=</span> <span class="n">spositions</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">scell</span> <span class="o">=</span> <span class="n">scell</span>
+        
+        
+        <span class="c1">#regroup atomic positions and labels</span>
+        <span class="c1"># - atoms of same type are grouped together</span>
+        <span class="n">slabel</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">label</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">product</span><span class="p">(</span><span class="n">scale</span><span class="p">)</span>
+        <span class="n">satom_label</span><span class="p">,</span> <span class="n">satm_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_grouped_list</span><span class="p">(</span><span class="n">slabel</span><span class="p">)</span>
+
+        <span class="n">new_spositions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">spositions</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">spositions</span><span class="p">)):</span>
+            <span class="n">new_spositions</span><span class="p">[</span><span class="n">i</span><span class="p">,:]</span> <span class="o">=</span> <span class="n">spositions</span><span class="p">[</span><span class="n">satm_id</span><span class="p">[</span><span class="n">i</span><span class="p">],:]</span>
+            
+        <span class="c1">#--------------</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">new_spositions</span> <span class="o">=</span> <span class="n">new_spositions</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">satom_label</span> <span class="o">=</span> <span class="n">satom_label</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">scale</span> <span class="o">=</span> <span class="n">scale</span>
+        <span class="c1">#---------------</span>
+        
+        <span class="c1">#ungrouped supercell atomic positions and labels: spositions and slabel</span>
+        <span class="c1">#return spositions, scell, slabel</span>
+        <span class="c1">#grouped supercell atomic positions and labels: new_spositions and satom_label</span>
+        <span class="k">return</span> <span class="n">new_spositions</span><span class="p">,</span> <span class="n">scell</span><span class="p">,</span> <span class="n">satom_label</span></div>
+    
+    
+    <span class="k">def</span> <span class="nf">_get_unique_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp</span><span class="p">):</span>
+            <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">            get unique elements of list</span>
+
+<span class="sd">            input: string: atomic labels </span>
+<span class="sd">            -----</span>
+<span class="sd">            </span>
+<span class="sd">            returns: string: uqique atomic labels for each type of atoms </span>
+<span class="sd">            -------</span>
+
+<span class="sd">            &#39;&#39;&#39;</span>
+            <span class="n">ulist</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">inp</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">x</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ulist</span><span class="p">:</span>
+                    <span class="n">ulist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">ulist</span>
+
+    <span class="k">def</span> <span class="nf">_get_grouped_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">llist</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get same string elements of list grouped together</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="k">def</span> <span class="nf">_get_unique_list</span><span class="p">(</span><span class="n">inp</span><span class="p">):</span>
+            <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">            get unique elements of list</span>
+
+<span class="sd">            return:</span>
+<span class="sd">                    string for each type of atoms </span>
+<span class="sd">            &#39;&#39;&#39;</span>
+            <span class="n">ulist</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">inp</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">x</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ulist</span><span class="p">:</span>
+                    <span class="n">ulist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">ulist</span>
+
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_unique_list</span><span class="p">(</span><span class="n">llist</span><span class="p">)</span>
+        <span class="n">grouped_list</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">idx</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">res</span><span class="p">)):</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">llist</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="n">res</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">llist</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
+                    <span class="n">idx</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">idx</span><span class="p">:</span>
+            <span class="n">grouped_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">llist</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+        <span class="k">return</span><span class="p">(</span><span class="n">grouped_list</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span>
+
+<div class="viewcode-block" id="transform.get_neach_type"><a class="viewcode-back" href="../../../esta.spaceGroup.html#esta.spaceGroup.transform_adv.transform.get_neach_type">[docs]</a>    <span class="k">def</span> <span class="nf">get_neach_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get number of list entries of each type</span>
+
+
+<span class="sd">        input:</span>
+<span class="sd">        -----</span>
+<span class="sd">             list of strings of atomic labels</span>
+<span class="sd">        </span>
+<span class="sd">        returns:</span>
+<span class="sd">        -------</span>
+<span class="sd">            get integer number of list entries (atomic symbols) of each type</span>
+<span class="sd">        </span>
+<span class="sd">        &#39;&#39;&#39;</span>    
+        <span class="n">glist</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_grouped_list</span><span class="p">(</span><span class="n">inp</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">ulist</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_unique_list</span><span class="p">(</span><span class="n">inp</span><span class="p">)</span>
+        <span class="c1">#print(ulist)</span>
+
+        <span class="n">neach</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ulist</span><span class="p">:</span>
+            <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">glist</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">j</span><span class="p">:</span>
+                    <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">neach</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+        <span class="c1">#print (neach)</span>
+        <span class="k">return</span><span class="p">(</span><span class="n">neach</span><span class="p">)</span></div>
+    
+<div class="viewcode-block" id="transform.get_grouped_xyz"><a class="viewcode-back" href="../../../esta.spaceGroup.html#esta.spaceGroup.transform_adv.transform.get_grouped_xyz">[docs]</a>    <span class="k">def</span> <span class="nf">get_grouped_xyz</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        xyz file with grouped atoms of same type</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+        <span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+        
+        <span class="n">prefix</span> <span class="o">=</span><span class="s1">&#39;s&#39;</span>
+        <span class="c1">#print(&#39;##&#39;*10)        </span>
+        <span class="c1">#--either way following works----------------------------------------</span>
+        <span class="c1">#print(self.scale)</span>
+        <span class="c1">#new_spositions, scell, satom_label = self.get_supercell(self.scale)</span>
+        <span class="c1">#OR</span>
+        <span class="n">new_spositions</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">new_spositions</span>
+        <span class="n">satom_label</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">satom_label</span>
+        <span class="c1">#--------------------------------------------------------------------</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;writing data in xyz format with grouping of similar atoms&#39;</span><span class="p">)</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">prefix</span><span class="o">+</span><span class="s1">&#39;poscar.xyz&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">new_spositions</span><span class="p">)))</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> g-xyz supercell file created by sk on &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; using esta</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">new_spositions</span><span class="p">)):</span>
+                <span class="c1">#f.write(&quot;\n&quot;+str(satom_label[j])+&quot;\t&quot;+str(&quot;\t&quot;.join(map(str, new_spositions[j]))))</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">satom_label</span><span class="p">[</span><span class="n">j</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">new_spositions</span><span class="p">[</span><span class="n">j</span><span class="p">]]))</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="transform.get_sposcar"><a class="viewcode-back" href="../../../esta.spaceGroup.html#esta.spaceGroup.transform_adv.transform.get_sposcar">[docs]</a>    <span class="k">def</span> <span class="nf">get_sposcar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get poscar file with scaled dimensions: supercell of POSCAR file</span>
+<span class="sd">        </span>
+<span class="sd">        input: instantiate the transform class, rest is done itself</span>
+<span class="sd">        ------</span>
+<span class="sd">        </span>
+<span class="sd">        output: SPOSCAR file</span>
+<span class="sd">        ------</span>
+<span class="sd">        </span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        
+        <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+        <span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+        
+        <span class="n">prefix</span> <span class="o">=</span><span class="s1">&#39;S&#39;</span>
+        <span class="n">outfile</span> <span class="o">=</span> <span class="n">prefix</span><span class="o">+</span><span class="s1">&#39;POSCAR&#39;</span>
+        
+        <span class="n">new_spositions</span><span class="p">,</span> <span class="n">scell</span><span class="p">,</span> <span class="n">satom_label</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_supercell</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">scale</span><span class="p">)</span>        
+        <span class="n">neach_atom</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_neach_type</span><span class="p">(</span><span class="n">satom_label</span><span class="p">)</span>
+        <span class="n">atom_label</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_unique_list</span><span class="p">(</span><span class="n">satom_label</span><span class="p">)</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;***CRITICAL WARNING*** ..... atomic positions grouped ..&#39;</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;                        ... by calling _get_grouped_list method .. need to test it sk!! &#39;</span><span class="p">)</span>
+        <span class="n">atom_label_gp</span><span class="p">,</span> <span class="n">idx_gp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_grouped_list</span><span class="p">(</span><span class="n">satom_label</span><span class="p">)</span>
+        
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;writing data in sposcar file format&#39;</span><span class="p">)</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">outfile</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;sposcar file created by sk on &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; using esta&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;1.000&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>               
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">scell</span><span class="p">[</span><span class="n">j</span><span class="p">]]))</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span> <span class="nb">str</span><span class="p">(</span><span class="s2">&quot;    &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">atom_label</span><span class="p">))</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span> 
+
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span> <span class="nb">str</span><span class="p">(</span><span class="s2">&quot;   &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">neach_atom</span><span class="p">])</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">))</span> 
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;Cartesian&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+            <span class="c1">#groupig of identical atoms not done</span>
+            <span class="c1">#for j in range(len(new_spositions)):</span>
+            <span class="c1">#    f.write(&quot; &quot;+str(&quot; &quot;.join([&quot;{0:16.9f}&quot;.format(i) for i in new_spositions[j]]))+&#39;\n&#39;)</span>
+        
+            <span class="c1">#grouping of idential atoms done by calling _get_grouped_list as above line 233 somewhere</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">idx_gp</span><span class="p">:</span> <span class="c1">#range(len(new_spositions)):</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">new_spositions</span><span class="p">[</span> <span class="nb">int</span><span class="p">(</span><span class="n">j</span><span class="p">)</span> <span class="p">]]))</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+        
+        
+<div class="viewcode-block" id="transform.rot_trans"><a class="viewcode-back" href="../../../esta.spaceGroup.html#esta.spaceGroup.transform_adv.transform.rot_trans">[docs]</a>    <span class="k">def</span> <span class="nf">rot_trans</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp_mat</span><span class="p">,</span> <span class="n">lcell</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">lposition</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">translation</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">rotation_matrix</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>        
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        given input matrix (may be cell matrix or position matrix in c order) </span>
+<span class="sd">        and rotation matrix (optional; default is unit matrix), output respective new matrix</span>
+<span class="sd">        </span>
+<span class="sd">        </span>
+<span class="sd">        parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">            inp_mat: array; rank 3 or rank N (no. of atoms)</span>
+<span class="sd">            </span>
+<span class="sd">            lcell: logical, indicates inp_mat is for cell </span>
+<span class="sd">            </span>
+<span class="sd">            lposition: logical, indicates that inp_mat is for atomic points/positions</span>
+<span class="sd">            </span>
+<span class="sd">            translation; array/vecor; rank 1, optional (default is zero vector = (0 0 0))</span>
+<span class="sd">            </span>
+<span class="sd">            rotation_matrix: array of rank3, optional (default is unit matrix)</span>
+<span class="sd">            </span>
+<span class="sd">        returns</span>
+<span class="sd">        -------</span>
+<span class="sd">            inp_mat like</span>
+<span class="sd">        </span>
+<span class="sd">        </span>
+<span class="sd">        Note: following convention like spglib: https://spglib.github.io/spglib/definition.html</span>
+<span class="sd">            </span>
+<span class="sd">            </span>
+<span class="sd">            ====&gt; </span>
+<span class="sd">            Basis vectors (a,b,c)  or (a1, a2, a3) </span>
+<span class="sd">            </span>
+<span class="sd">            In spglib, basis vectors are represented by three column vectors (in Cartesian coordinates.</span>
+<span class="sd">            ) :</span>
+
+<span class="sd">            a=⎛⎝⎜ax ay az⎞⎠⎟,         b=⎛⎝⎜bx by bz⎞⎠⎟,            c=⎛⎝⎜cx cy cz⎞⎠⎟,</span>
+<span class="sd">            </span>
+<span class="sd">            ====&gt;</span>
+<span class="sd">            atomic point x are represented as three fractional values relative to basis </span>
+<span class="sd">            vectors as follows,</span>
+<span class="sd">            </span>
+<span class="sd">            x=⎛⎝⎜x1x2x3⎞⎠⎟</span>
+<span class="sd">            </span>
+<span class="sd">            </span>
+<span class="sd">            ====&gt;</span>
+<span class="sd">            The transformation matrix P changes choice of basis vectors as follows</span>
+<span class="sd">             (a b c) = (as bs cs) P</span>
+<span class="sd">             where (abc) and (as bs cs) are the basis vectors of an arbitrary </span>
+<span class="sd">             system and of a starndardized system, respectively</span>
+<span class="sd">             </span>
+<span class="sd">             The origin shift p gives the vector from the origin of the standardized </span>
+<span class="sd">             system Os to the origin of the arbitrary system O</span>
+<span class="sd">             p = O − Os</span>
+<span class="sd">        </span>
+<span class="sd">        </span>
+<span class="sd">            A change of basis is described by the combination of the transformation</span>
+<span class="sd">            matrix and the origin shift denoted by (P,p) where first the transformation </span>
+<span class="sd">            matrix is applied and then origin shift. The points in the standardized system</span>
+<span class="sd">            xs and arbitrary system x are related by </span>
+<span class="sd">            </span>
+<span class="sd">            xs = P x + p,</span>
+<span class="sd">            </span>
+<span class="sd">            or equivalently, </span>
+<span class="sd">            </span>
+<span class="sd">            x = P^-1 xs − P^-1 p</span>
+<span class="sd">        </span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+        
+        <span class="k">if</span> <span class="n">lcell</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;applying rotation on unit cell&#39;</span><span class="p">)</span>
+        
+            <span class="c1"># inp_mat (3x3) and rotation_matrix are input in C format; =&gt; transpose ?? verify it</span>
+            <span class="k">return</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">inp_mat</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">rotation_matrix</span><span class="o">.</span><span class="n">T</span><span class="p">)</span> <span class="p">)</span>  <span class="c1">#.T</span>
+
+<span class="c1"># verification of above rotated cell matrix ; </span>
+<span class="c1">#             import numpy as np</span>
+<span class="c1">#             import esta.vaspBag.inout.crystal_lattice as clatt</span>
+<span class="c1">#             import esta.general.operation as operation</span>
+<span class="c1">#             import esta.general.get_rotation_matrix as rotmat</span>
+
+<span class="c1">#             lattice = np.array( [ [1,0,0],</span>
+<span class="c1">#                                   [0,1,0],</span>
+<span class="c1">#                                   [0,0,1]</span>
+<span class="c1">#                                 ])</span>
+
+<span class="c1">#             rot_matix = rotmat.rotation_matrix(axis = [0,0,1], theta_degree= -30. ) #330.)</span>
+
+
+<span class="c1">#             ncell = obj.rot_trans(lattice, lcell=True, rotation_matrix= rot_matix)</span>
+<span class="c1">#             print(&#39;new cell:\n {}&#39;.format(ncell))        </span>
+        
+        
+        
+        <span class="k">if</span> <span class="n">lposition</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;applying rotation and translation on atomic positions&#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">translation</span><span class="o">.</span><span class="n">any</span><span class="p">()</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">translation</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+            <span class="c1">#if rotation_matrix == None:</span>
+            <span class="c1">#    rotation_matrix = np.eye(3)</span>
+                
+            <span class="n">nat</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">inp_mat</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no. of atoms are </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nat</span><span class="p">))</span>
+            <span class="n">inv</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">rotation_matrix</span><span class="o">.</span><span class="n">T</span><span class="p">)</span> <span class="c1"># T taken</span>
+            
+            <span class="n">out_mat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">inp_mat</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nat</span><span class="p">):</span>
+                <span class="n">out_mat</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">inv</span><span class="p">,</span> <span class="n">inp_mat</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">inv</span><span class="p">,</span> <span class="n">translation</span><span class="p">)</span> <span class="c1"># inp_mat[i] is just vect so no need to take T; i think!!</span>
+            
+            <span class="k">return</span> <span class="n">out_mat</span></div></div>
+            <span class="c1">#             return np.matmul(inp_mat.T, rotation_matrix)</span>
+        
+        
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+    <span class="kn">import</span> <span class="nn">esta.vaspBag.inout.crystal_lattice</span> <span class="k">as</span> <span class="nn">clatt</span>
+    <span class="kn">import</span> <span class="nn">esta.general.get_rotation_matrix</span> <span class="k">as</span> <span class="nn">rotmat</span>
+    
+    <span class="c1">#pos_obj = clatt.CrystalLattice(&#39;POSCAR&#39;, &#39;./&#39;)</span>
+    <span class="c1">#pos_obj = clatt.CrystalLattice(&#39;o2act_POSCAR&#39;)</span>
+    <span class="n">pos_obj</span> <span class="o">=</span> <span class="n">clatt</span><span class="o">.</span><span class="n">CrystalLattice</span><span class="p">(</span><span class="s1">&#39;o2act_nPOSCAR&#39;</span><span class="p">)</span>
+    <span class="n">obj</span> <span class="o">=</span> <span class="n">transform</span><span class="p">(</span><span class="n">pos_obj</span><span class="p">)</span>
+    <span class="n">natoms</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">natoms</span>
+    <span class="n">vol</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">volume</span>
+    <span class="n">pos</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">positions</span>
+    <span class="n">lattice</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">obj</span><span class="o">.</span><span class="n">lv1</span><span class="p">,</span> 
+                        <span class="n">obj</span><span class="o">.</span><span class="n">lv2</span><span class="p">,</span>
+                        <span class="n">obj</span><span class="o">.</span><span class="n">lv3</span><span class="p">])</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;**supercell***&#39;</span><span class="o">*</span><span class="mi">5</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;unit-cell:&#39;</span><span class="p">)</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="n">lattice</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atomic pos:&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">pos</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;calling supercell method:&#39;</span><span class="p">)</span>
+    <span class="n">spos</span><span class="p">,</span> <span class="n">scell</span><span class="p">,</span> <span class="n">slabel</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">get_supercell</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;supercell atoms:&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">spos</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;supercell lattice vectors:&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">scell</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no of atoms in supercell:&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">spos</span><span class="p">))</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">typ</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">ntype</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">label</span><span class="p">)</span>
+    <span class="c1">#supercell</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;spos:&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">spos</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;scell:&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">scell</span><span class="p">)</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;slabel:&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">slabel</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;get sposcar:&#39;</span><span class="p">)</span>
+    <span class="n">obj</span><span class="o">.</span><span class="n">get_sposcar</span><span class="p">()</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;get sposcar.xyz:&#39;</span><span class="p">)</span>
+    <span class="n">obj</span><span class="o">.</span><span class="n">get_grouped_xyz</span><span class="p">()</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;+++++++++++&#39;</span><span class="p">)</span>
+    <span class="n">ncell</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">rot_trans</span><span class="p">(</span><span class="n">lattice</span><span class="p">,</span> <span class="n">lcell</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">rotation_matrix</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+                                                                 <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+                                                                 <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">1.5</span><span class="p">]]))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;new cell: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ncell</span><span class="p">))</span>
+
+    
+    <span class="n">rot_matix</span> <span class="o">=</span> <span class="n">rotmat</span><span class="o">.</span><span class="n">rotation_matrix</span><span class="p">(</span><span class="n">axis</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">theta_degree</span><span class="o">=</span><span class="mf">330.</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;rot_matix&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">rot_matix</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;mat det: &#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">rot_matix</span><span class="p">))</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;+++++++++++&#39;</span><span class="p">)</span>
+<span class="c1">#     npos = obj.rot_trans(pos[0:4], lposition=True, rotation_matrix=np.array([[1,0,0],</span>
+<span class="c1">#                                                                  [0,1,0],</span>
+<span class="c1">#                                                                  [0,0,1.0]]), </span>
+<span class="c1">#                                                      translation=np.array ([0.,0,0]))</span>
+
+
+    <span class="n">npos</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">rot_trans</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">],</span> <span class="n">lposition</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">rotation_matrix</span><span class="o">=</span><span class="n">rot_matix</span><span class="p">,</span> 
+                                                     <span class="n">translation</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span> <span class="p">([</span><span class="mf">0.</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]))</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;new pos: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">npos</span><span class="p">))</span>
+
+
+<span class="c1">#numbers = [23.23, 0.123334987, 1, 4.223, 9887.2, -1.3323]</span>
+<span class="c1">#for x in numbers:</span>
+<span class="c1">#    print(&quot;{:10.4f}&quot;.format(x))</span>
+
+
+<span class="c1"># In[7]:</span>
+
+
+
+
+
+<span class="c1"># In[ ]:</span>
+
+
+
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Sonu Kumar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,451 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>esta.grrmBag.plot_strs_energy &mdash; EStA 2.6.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> EStA
+          
+
+          
+            
+            <img src="../../../_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.6.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html#ml-algorithms">ML algorithms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EStA2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-surfreact-package">esta.surfReact package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-mlbag-package">esta.mlBag package</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Cheat Sheet</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">EStA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>esta.grrmBag.plot_strs_energy</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for esta.grrmBag.plot_strs_energy</h1><div class="highlight"><pre>
+<span></span>
+<span class="c1"># coding: utf-8</span>
+
+<span class="c1"># In[ ]:</span>
+
+
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="c1">#from pandas.compat import StringIO</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">glob</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+
+<div class="viewcode-block" id="process_data"><a class="viewcode-back" href="../../../file4.html#esta.grrmBag.plot_strs_energy.process_data">[docs]</a><span class="k">def</span> <span class="nf">process_data</span><span class="p">():</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    - process data0.dat and EQlist.dat files for plotting </span>
+<span class="sd">    - generate plot of str vs energy in the `e.pdf`</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;data0.dat&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+        <span class="c1">#print(lines)</span>
+        <span class="n">str_number</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">iline</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+            <span class="c1">#print (iline.strip())</span>
+            <span class="n">str_number</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">iline</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">str_number</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="nb">int</span><span class="p">(</span><span class="n">str_number</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">str_number</span><span class="p">))])</span>        
+    <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;str_number: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">str_number</span><span class="p">))</span>
+
+
+
+
+
+
+    <span class="c1">#=====================================================================</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;EQlist.dat&#39;</span><span class="p">,</span> <span class="n">delim_whitespace</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span>
+
+    <span class="c1">#-------------------------------------</span>
+    <span class="n">index</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">index</span>
+    <span class="n">columns</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span>
+    <span class="n">values</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">values</span>
+    <span class="c1">#print(&#39;index: {}&#39;.format(index))</span>
+    <span class="c1">#print(&#39;columns: {}&#39;.format(columns))</span>
+    <span class="c1"># print(&#39;values: {}&#39;.format(values))</span>
+    <span class="c1">#-------------------------------------</span>
+
+
+
+    <span class="n">xx</span> <span class="o">=</span> <span class="n">values</span><span class="p">[</span><span class="mi">1</span><span class="p">:,</span><span class="mi">1</span><span class="p">]</span>
+    <span class="c1"># yy = values[1:,3]</span>
+    <span class="n">yy</span> <span class="o">=</span> <span class="n">values</span><span class="p">[</span><span class="mi">1</span><span class="p">:,</span><span class="mi">5</span><span class="p">]</span>
+
+
+
+    <span class="n">xx_</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">yy_</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">xx</span><span class="p">:</span>
+    <span class="c1">#     xx_.append(float(i))</span>
+        <span class="n">xx_</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">yy</span><span class="p">:</span>
+        <span class="n">yy_</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">j</span><span class="p">))</span>
+
+    <span class="n">xx_</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">xx_</span><span class="p">)</span>    
+    <span class="n">yy_</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">yy_</span><span class="p">)</span>    
+    <span class="c1">#print(&#39;xx_: {}&#39;.format(xx_))</span>
+    <span class="c1">#print(&#39;yy_: {}&#39;.format(yy_))</span>
+    <span class="c1">#print(type(xx_), type(yy_))</span>
+
+    <span class="c1"># sys.exit()</span>
+
+
+    <span class="c1"># yy = np.array ([values[1:,5] [i] for i in range(len(values[1:,5]))])</span>
+    <span class="c1"># yy = values[1:,3]</span>
+    <span class="c1"># print(yy, type(yy))</span>
+    <span class="c1"># yy_min = np.array(yy).min()</span>
+    <span class="c1"># yy_indx_min = np.argmin(np.array(yy))</span>
+    <span class="c1"># print(&#39;min energy of a str is: {}&#39;.format(yy_min))</span>
+    <span class="c1"># print(&#39;indx of min energy str is: {}&#39;.format(yy_indx_min))</span>
+    <span class="c1"># yy_ = yy - yy_min</span>
+
+    <span class="n">yy_min</span> <span class="o">=</span> <span class="n">yy_</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+    <span class="n">yy_indx_min</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">yy_</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;min energy of a str is: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">yy_min</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;indx of min energy str is: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">yy_indx_min</span><span class="p">))</span>
+    
+    <span class="c1">#-----------------here changes ------------------------------</span>
+    <span class="c1">#yyy = yy_ - yy_min  # this one commented</span>
+    
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;script name: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;argument: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;script name: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no other argument given&#39;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;reference energy (kJ/mol): </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+        <span class="n">ref_energy</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">yyy</span> <span class="o">=</span> <span class="n">yy_</span> <span class="o">-</span> <span class="n">ref_energy</span>
+
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;reference energy (kJ/mol): </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">yy_min</span><span class="p">))</span>
+        <span class="n">yyy</span> <span class="o">=</span> <span class="n">yy_</span> <span class="o">-</span> <span class="n">yy_min</span>
+    <span class="c1">#------------------------------------------------------------</span>
+    
+    
+    
+    
+    <span class="c1">#print(&#39;energies wrt to min {}&#39;.format(yyy))</span>
+
+    <span class="c1">#print(&#39;strs: {}&#39;.format(xx_))</span>
+    <span class="c1"># sys.exit()</span>
+    <span class="c1">#=====================================================================</span>
+
+
+    <span class="c1"># # change xx and yy to list </span>
+    <span class="c1"># xx = xx.tolist()</span>
+    <span class="c1"># # print(&#39;xx : &#39;,  xx, type(xx))</span>
+    <span class="c1"># #----------------------------------------------------------------</span>
+    <span class="c1"># # getting the index of required structure from list of all strs</span>
+    <span class="c1"># print(&#39;jj, j, k&#39;)</span>
+    <span class="c1"># indx = []</span>
+    <span class="c1"># for jj, j in enumerate(xx):</span>
+    <span class="c1">#     for k in str_number:</span>
+    <span class="c1">#         if j == k:</span>
+    <span class="c1">#             print(jj, j, k)</span>
+    <span class="c1">#             indx.append(jj)</span>
+    <span class="c1"># print(&#39;indx: {}&#39;.format(indx))</span>
+    <span class="c1"># # print(&#39;str_number: {}&#39;.format(str_number))</span>
+    <span class="c1"># print(&#39;str from indx: {}&#39;.format([xx[i] for i in indx]))</span>
+    <span class="c1"># xx = [xx[i] for i in indx]</span>
+    <span class="c1"># #---------------------------------------------------------------- </span>
+
+
+    <span class="c1"># change xx and yy to list </span>
+    <span class="c1"># xx = xx.tolist()</span>
+    <span class="c1"># print(&#39;xx : &#39;,  xx, type(xx))</span>
+    <span class="c1">#----------------------------------------------------------------</span>
+    <span class="c1"># getting the index of required structure from list of all strs</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;jj, j, k&#39;</span><span class="p">)</span>
+    <span class="n">indx</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">jj</span><span class="p">,</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">xx_</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">str_number</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">j</span> <span class="o">==</span> <span class="n">k</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="n">jj</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
+                <span class="n">indx</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">jj</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;indx: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">indx</span><span class="p">))</span>
+    <span class="c1"># print(&#39;str_number: {}&#39;.format(str_number))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;str from indx: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">([</span><span class="n">xx_</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">indx</span><span class="p">]))</span>
+    <span class="n">xxx</span> <span class="o">=</span> <span class="p">[</span><span class="n">xx_</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">indx</span><span class="p">]</span>
+    <span class="c1">#----------------------------------------------------------------    </span>
+
+    <span class="c1"># sys.exit()</span>
+    <span class="c1">#--------------------------------------------------------------------------!!</span>
+    <span class="c1">#--------------------------------------------------------------------------!!</span>
+    <span class="c1"># yyy = yy.tolist()</span>
+    <span class="c1"># # change yy to float (without it each value is string type)</span>
+    <span class="c1"># yy = []</span>
+    <span class="c1"># for i in yyy:</span>
+    <span class="c1">#     val =float(i)</span>
+    <span class="c1">#     yy.append(val)</span>
+    <span class="c1">#------------------------------------------------------------------------</span>
+    <span class="c1"># take energies of strs using the `indx` i.e required constrained strs only</span>
+    <span class="n">yyy</span> <span class="o">=</span> <span class="p">[</span><span class="n">yyy</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">indx</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;yyy specific to indx: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">yyy</span><span class="p">))</span>
+    <span class="c1">#---------------------------------------------------------------------------!!</span>
+    <span class="c1">#---------------------------------------------------------------------------!!</span>
+
+
+    <span class="c1"># In[95]:</span>
+
+
+    <span class="kn">from</span> <span class="nn">pandas</span> <span class="kn">import</span> <span class="n">DataFrame</span>
+    <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+    <span class="n">x_label</span> <span class="o">=</span> <span class="s1">&#39;sid&#39;</span>
+    <span class="n">y_label</span> <span class="o">=</span> <span class="s1">&#39;E (kJ/mol)&#39;</span>
+
+    <span class="n">Data</span> <span class="o">=</span> <span class="p">{</span><span class="n">x_label</span><span class="p">:</span> <span class="n">xxx</span><span class="p">,</span>
+            <span class="n">y_label</span><span class="p">:</span> <span class="n">yyy</span>
+           <span class="p">}</span>
+
+    <span class="n">df</span> <span class="o">=</span> <span class="n">DataFrame</span><span class="p">(</span><span class="n">Data</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="n">x_label</span><span class="p">,</span> <span class="n">y_label</span><span class="p">])</span>
+    <span class="c1"># df.plot(x =&#39;sid&#39;, y=&#39;Energy&#39;, kind = &#39;bar&#39;)</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">x_label</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">y_label</span><span class="p">,</span> <span class="n">kind</span> <span class="o">=</span> <span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;darkblue&#39;</span><span class="p">)</span>
+    <span class="c1"># plt.xticks(rotation=90)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">xxx</span><span class="p">)</span> <span class="o">&gt;=</span><span class="mi">30</span><span class="p">:</span>
+    <span class="c1">#tick label font</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">70</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span> <span class="c1"># for less than 40:</span>
+    <span class="c1">#tick label font</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">70</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+    <span class="c1"># plt.xticks(fontsize=6)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">)</span> <span class="c1">#color=&#39;r&#39;, linestyle=&#39;--&#39;, linewidth=2)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+    <span class="c1"># plt.tick_params(axis=&#39;x&#39;, labelsize=6)</span>
+    <span class="c1"># plt.tick_params(axis=&#39;y&#39;, labelsize=6)</span>
+
+    <span class="c1">#plt.rcParams[&#39;xtick.labelsize&#39;]=10</span>
+    <span class="c1">#plt.rcParams[&#39;ytick.labelsize&#39;]=10</span>
+
+    <span class="c1"># plt.rcParams.update({&#39;font.size&#39;:4})</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+    <span class="c1">#plt.savefig(&#39;e.pdf&#39;, dpi=300)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;e.png&#39;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span></div>
+    <span class="c1"># plt.show()</span>
+
+<div class="viewcode-block" id="data_exist"><a class="viewcode-back" href="../../../file4.html#esta.grrmBag.plot_strs_energy.data_exist">[docs]</a><span class="k">def</span> <span class="nf">data_exist</span><span class="p">():</span>
+    
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s2">&quot;data0.dat&quot;</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;data0.dat not found!!&#39;</span><span class="p">)</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s2">&quot;EQlist.dat&quot;</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;EQlist.dat not found!!&#39;</span><span class="p">)</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span></div>
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Sonu Kumar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

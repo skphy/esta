@@ -1,0 +1,379 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>esta.plot.plot2D &mdash; EStA 2.6.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> EStA
+          
+
+          
+            
+            <img src="../../../_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.6.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html#ml-algorithms">ML algorithms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EStA2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-surfreact-package">esta.surfReact package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-mlbag-package">esta.mlBag package</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Cheat Sheet</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">EStA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>esta.plot.plot2D</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for esta.plot.plot2D</h1><div class="highlight"><pre>
+<span></span>
+<span class="c1"># coding: utf-8</span>
+
+<span class="c1"># In[1]:</span>
+
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">minimize</span><span class="p">,</span> <span class="n">rosen</span><span class="p">,</span> <span class="n">rosen_der</span>
+
+
+<span class="c1"># In[2]:</span>
+
+
+<span class="c1"># for i in range(len(xpos)):</span>
+<span class="c1">#     for j in range(len(xpos)):</span>
+<span class="c1">#         for k in range(len(xpos)):</span>
+<span class="c1">#             print(i,j,k)</span>
+
+
+<span class="c1"># In[3]:</span>
+
+
+<span class="n">xpos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span><span class="mf">1.1</span><span class="p">,</span><span class="mi">500</span><span class="p">)</span>
+<span class="n">ypos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.8</span><span class="p">,</span><span class="mf">1.1</span><span class="p">,</span><span class="mi">500</span><span class="p">)</span>
+
+<div class="viewcode-block" id="rosenbrock_2D"><a class="viewcode-back" href="../../../esta.plot.html#esta.plot.plot2D.rosenbrock_2D">[docs]</a><span class="k">def</span> <span class="nf">rosenbrock_2D</span><span class="p">(</span><span class="n">xpos</span><span class="p">,</span><span class="n">ypos</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Rosenbrock function in 2D </span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">fun_2D</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">xpos</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">ypos</span><span class="p">)))</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">xpos</span><span class="p">)):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">ypos</span><span class="p">)):</span>
+            <span class="c1">#print (i, j, xpos[i], ypos[j], 100.0*(ypos[j] - xpos[i]**2.0)**2.0 + (1 - xpos[i])**2.0)</span>
+            <span class="n">fun_2D</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mf">100.0</span><span class="o">*</span><span class="p">(</span><span class="n">ypos</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">-</span> <span class="n">xpos</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mf">2.0</span><span class="p">)</span><span class="o">**</span><span class="mf">2.0</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">xpos</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">**</span><span class="mf">2.0</span>
+    <span class="k">return</span> <span class="n">fun_2D</span></div>
+
+<span class="n">fun_2D</span> <span class="o">=</span> <span class="n">rosenbrock_2D</span><span class="p">(</span><span class="n">xpos</span><span class="p">,</span> <span class="n">ypos</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">fun_2D</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">fun_2D</span><span class="p">))</span>  
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;values of rosenbrock function:&#39;</span><span class="p">)</span>
+<span class="c1">#print(fun_2D, np.shape(fun_2D))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">fun_2D</span><span class="p">))</span>
+<span class="n">ind</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unravel_index</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">fun_2D</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="kc">None</span><span class="p">),</span> <span class="n">fun_2D</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ind</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">fun_2D</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fun_2D</span><span class="p">[</span><span class="n">ind</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;=====================&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">xpos</span><span class="p">[</span><span class="n">ind</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ypos</span><span class="p">[</span><span class="n">ind</span><span class="p">[</span><span class="mi">1</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;=====================&#39;</span><span class="p">)</span>
+
+
+<span class="c1"># In[4]:</span>
+
+
+<span class="c1"># This import registers the 3D projection, but is otherwise unused.</span>
+<div class="viewcode-block" id="surface_plot"><a class="viewcode-back" href="../../../esta.plot.html#esta.plot.plot2D.surface_plot">[docs]</a><span class="k">def</span> <span class="nf">surface_plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">fxy</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    surface plot of a function in 2D</span>
+<span class="sd">    </span>
+<span class="sd">    input:</span>
+<span class="sd">        x: 1D array</span>
+<span class="sd">        y: 1D array</span>
+<span class="sd">        fxy: 2D array over a 2D grid defined by x and y</span>
+<span class="sd">    output:</span>
+<span class="sd">        surface plot </span>
+<span class="sd">        save jpg file</span>
+<span class="sd">        </span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span>  <span class="c1"># noqa: F401 unused import</span>
+
+    <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+    <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">cm</span>
+    <span class="kn">from</span> <span class="nn">matplotlib.ticker</span> <span class="kn">import</span> <span class="n">LinearLocator</span><span class="p">,</span> <span class="n">FormatStrFormatter</span>
+    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+    <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">gca</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Make data.</span>
+<span class="c1">#     x = np.arange(-5, 5, 0.25)</span>
+<span class="c1">#     y = np.arange(-5, 5, 0.25)</span>
+    <span class="n">X</span><span class="p">,</span> <span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="c1">#     R = np.sqrt(X**2 + Y**2)</span>
+<span class="c1">#     Z = np.sin(R)</span>
+    <span class="n">Z</span> <span class="o">=</span> <span class="n">fxy</span>
+
+    <span class="c1"># Plot the surface.</span>
+    <span class="n">surf</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot_surface</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Z</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">cm</span><span class="o">.</span><span class="n">coolwarm</span><span class="p">,</span>
+                           <span class="n">linewidth</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">antialiased</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="c1"># Customize the z axis.</span>
+    <span class="c1">#ax.set_zlim(-1.01, 1.01)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">zaxis</span><span class="o">.</span><span class="n">set_major_locator</span><span class="p">(</span><span class="n">LinearLocator</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">zaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">FormatStrFormatter</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%.02f</span><span class="s1">&#39;</span><span class="p">))</span>
+
+    <span class="c1"># Add a color bar which maps values to colors.</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">surf</span><span class="p">,</span> <span class="n">shrink</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;plot_surface.jpg&#39;</span><span class="p">,</span><span class="n">dpi</span> <span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;jpg&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span></div>
+
+<span class="n">surface_plot</span><span class="p">(</span><span class="n">xpos</span><span class="p">,</span> <span class="n">ypos</span><span class="p">,</span> <span class="n">fun_2D</span><span class="p">)</span>
+
+
+<span class="c1"># In[5]:</span>
+
+
+<div class="viewcode-block" id="contour_plot"><a class="viewcode-back" href="../../../esta.plot.html#esta.plot.plot2D.contour_plot">[docs]</a><span class="k">def</span> <span class="nf">contour_plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">fxy</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;    input:</span>
+<span class="sd">            x: 1D array</span>
+<span class="sd">            y: 1D array</span>
+<span class="sd">            fxy: 2D array over a 2D grid defined by x and y</span>
+<span class="sd">        output:</span>
+<span class="sd">            surface plot </span>
+<span class="sd">            save jpg file</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+    <span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">ma</span>
+    <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">ticker</span><span class="p">,</span> <span class="n">cm</span>    
+
+    <span class="n">X</span><span class="p">,</span> <span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+    <span class="n">Z</span> <span class="o">=</span> <span class="n">fxy</span>
+    <span class="c1"># Automatic selection of levels works; setting the</span>
+    <span class="c1"># log locator tells contourf to use a log scale:</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+    <span class="n">cs</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">contourf</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Z</span><span class="p">,</span> <span class="n">locator</span><span class="o">=</span><span class="n">ticker</span><span class="o">.</span><span class="n">LogLocator</span><span class="p">(),</span> <span class="n">cmap</span><span class="o">=</span><span class="n">cm</span><span class="o">.</span><span class="n">PuBu_r</span><span class="p">)</span>
+
+    <span class="c1"># Alternatively, you can manually set the levels</span>
+    <span class="c1"># and the norm:</span>
+    <span class="c1"># lev_exp = np.arange(np.floor(np.log10(z.min())-1),</span>
+    <span class="c1">#                    np.ceil(np.log10(z.max())+1))</span>
+    <span class="c1"># levs = np.power(10, lev_exp)</span>
+    <span class="c1"># cs = ax.contourf(X, Y, z, levs, norm=colors.LogNorm())</span>
+
+    <span class="n">cbar</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">cs</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;plot_contour.jpg&#39;</span><span class="p">,</span><span class="n">dpi</span> <span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;jpg&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span></div>
+<span class="n">contour_plot</span><span class="p">(</span><span class="n">xpos</span><span class="p">,</span><span class="n">ypos</span><span class="p">,</span><span class="n">fun_2D</span><span class="p">)</span>
+
+
+<span class="c1"># In[ ]:</span>
+
+
+
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Sonu Kumar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,441 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>esta.plot.free_energy_2 &mdash; EStA 2.6.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> EStA
+          
+
+          
+            
+            <img src="../../../_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.6.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html#ml-algorithms">ML algorithms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EStA2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-surfreact-package">esta.surfReact package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-mlbag-package">esta.mlBag package</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Cheat Sheet</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">EStA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>esta.plot.free_energy_2</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for esta.plot.free_energy_2</h1><div class="highlight"><pre>
+<span></span>
+<span class="c1"># coding: utf-8</span>
+
+<span class="c1"># In[2]:</span>
+
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">np</span><span class="o">.</span><span class="n">set_printoptions</span><span class="p">(</span><span class="n">precision</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+
+<div class="viewcode-block" id="GibbsFreeEnergy"><a class="viewcode-back" href="../../../esta.plot.html#esta.plot.free_energy_2.GibbsFreeEnergy">[docs]</a><span class="k">class</span> <span class="nc">GibbsFreeEnergy</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    A class to calculate the Gibbs free enegy </span>
+<span class="sd">    G = E -TS + E_ZPE</span>
+<span class="sd">    </span>
+<span class="sd">    TODO: </span>
+<span class="sd">    </span>
+<span class="sd">    - Temp and pressure dependence free energy formula and </span>
+<span class="sd">     its implementation.</span>
+<span class="sd">    - ZPE calculations</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">Edft</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">temp</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Edft</span> <span class="o">=</span> <span class="n">Edft</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">S</span> <span class="o">=</span> <span class="n">S</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span>
+        
+    
+<div class="viewcode-block" id="GibbsFreeEnergy.get_free_energy"><a class="viewcode-back" href="../../../esta.plot.html#esta.plot.free_energy_2.GibbsFreeEnergy.get_free_energy">[docs]</a>    <span class="k">def</span> <span class="nf">get_free_energy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1">#, Edft, S, temp):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Units::  Edft : eV</span>
+<span class="sd">                    S : eV/K</span>
+<span class="sd">                 temp : K</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">Edft</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">Edft</span>
+        <span class="n">S</span>    <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">S</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">temp</span>
+
+        <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;free_energy&#39;</span><span class="p">:</span> <span class="n">Edft</span> <span class="o">-</span> <span class="n">temp</span><span class="o">*</span><span class="n">S</span><span class="p">,</span> <span class="s1">&#39;units&#39;</span><span class="p">:</span> <span class="s1">&#39;eV&#39;</span><span class="p">}</span></div></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    
+    <span class="n">np</span><span class="o">.</span><span class="n">set_printoptions</span><span class="p">(</span><span class="n">precision</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">GibbsFreeEnergy</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+    <span class="n">a</span><span class="o">.</span><span class="n">get_free_energy</span><span class="p">()</span>
+    
+
+
+<span class="c1"># In[6]:</span>
+
+
+<span class="c1"># intial set up energy (BN with O and H; C8H10 moleculate at inf distance)</span>
+<span class="c1"># Edft=-34689.26651097966, S=0.003736, temp=298.15)</span>
+<span class="c1">#</span>
+<span class="c1"># conf AB06</span>
+<span class="c1"># Edft=-34692.274981681387082, S=0., temp=298.15)</span>
+<span class="c1">#</span>
+<span class="c1"># conf AB07 (c8h8 still there)</span>
+<span class="c1"># Edft=-34690.430818158910167, S=0.0035767, temp=298.15)</span>
+
+<span class="c1"># conf AB07 (with c8h8 at inf distance)</span>
+<span class="c1"># Edft=-34690.246033527765, S=0.0035767, temp=298.15)</span>
+
+
+
+<span class="n">temp_list</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">298.15</span><span class="p">,</span> <span class="mf">470.</span><span class="p">,</span><span class="mf">500.0</span><span class="p">,</span> 
+             <span class="mf">550.</span><span class="p">,</span><span class="mi">570</span><span class="p">,</span> <span class="mi">575</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="mf">700.</span><span class="p">,</span> <span class="mf">750.0</span><span class="p">,</span> 
+             <span class="mf">765.</span><span class="p">,</span>  <span class="mi">800</span><span class="p">,</span> <span class="mf">900.</span><span class="p">,</span> <span class="mf">1000.</span><span class="p">,</span> 
+             <span class="mi">1100</span> <span class="p">]</span>
+
+<span class="n">temp_energy_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">temp_list</span><span class="p">),</span><span class="mi">4</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">temp</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">temp_list</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;***&#39;</span><span class="o">*</span><span class="mi">20</span><span class="p">)</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;temp (K):&#39;</span><span class="p">,</span> <span class="n">temp</span><span class="p">)</span>    
+    <span class="n">parameters_Nx3</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mf">34689.26651097966</span><span class="p">,</span>     <span class="mf">0.003736</span><span class="p">,</span>   <span class="n">temp</span><span class="p">],</span> 
+                               <span class="p">[</span><span class="o">-</span><span class="mf">34692.274981681387082</span><span class="p">,</span> <span class="mf">0.0</span> <span class="p">,</span>       <span class="n">temp</span><span class="p">],</span> 
+                               <span class="p">[</span><span class="o">-</span><span class="mf">34690.246033527765</span><span class="p">,</span>    <span class="mf">0.0035767</span><span class="p">,</span>  <span class="n">temp</span><span class="p">]])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">parameters_Nx3</span><span class="p">)</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">parameters_Nx3</span><span class="p">))</span>
+    
+    <span class="n">en_out</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">parameters_Nx3</span><span class="p">)):</span>
+        <span class="n">ene</span> <span class="o">=</span> <span class="n">GibbsFreeEnergy</span><span class="p">(</span><span class="n">parameters_Nx3</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+                              <span class="n">parameters_Nx3</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span>
+                              <span class="n">parameters_Nx3</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">])</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">ene</span><span class="o">.</span><span class="n">get_free_energy</span><span class="p">()</span>
+        <span class="n">e</span> <span class="o">=</span> <span class="n">output</span><span class="p">[</span><span class="s1">&#39;free_energy&#39;</span><span class="p">]</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="n">e</span><span class="p">)</span>
+        <span class="n">en_out</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+        
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;relative free energy wrt to first energy&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">([</span><span class="n">en_out</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">en_out</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">en_out</span><span class="p">))])</span>
+    
+    
+    <span class="c1">#temp_energy_array[k,0:4] = np.array([temp, en_out[0], en_out[1], en_out[2]])</span>
+    <span class="n">e0</span> <span class="o">=</span> <span class="n">en_out</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="n">en_out</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">e1</span> <span class="o">=</span> <span class="n">en_out</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">en_out</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">e2</span> <span class="o">=</span> <span class="n">en_out</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">-</span><span class="n">en_out</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    
+<span class="c1">#     temp_energy_array[k,0:4] = np.array([temp, en_out[0], en_out[1], en_out[2]])</span>
+    <span class="n">temp_energy_array</span><span class="p">[</span><span class="n">k</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">temp</span><span class="p">,</span> <span class="n">e0</span><span class="p">,</span> <span class="n">e1</span><span class="p">,</span> <span class="n">e2</span><span class="p">])</span>
+    <span class="c1">#print (temp_energy_array)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;***&#39;</span><span class="o">*</span><span class="mi">20</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    
+    
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Final result:T, FreeEnr1, FreeEnr2, FreeEnr3&#39;</span><span class="p">)</span>
+<span class="c1"># print (&quot;{}&quot;.format(temp_energy_array))</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">temp_energy_array</span><span class="p">)):</span>
+    <span class="n">np</span><span class="o">.</span><span class="n">set_printoptions</span><span class="p">(</span><span class="n">suppress</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="n">temp_energy_array</span><span class="p">[</span><span class="n">i</span><span class="p">,:])</span>
+
+<span class="c1"># #     with open(&#39;relative_free_energy_vs_temp.out&#39;, &#39;w&#39;) as f:</span>
+<span class="c1"># #         f.write(str(temp),)</span>
+
+
+<span class="c1"># In[4]:</span>
+
+
+<span class="c1"># import numpy as np</span>
+<span class="c1"># import pylab as pl</span>
+<span class="c1"># from matplotlib import collections  as mc</span>
+
+<span class="c1"># lines = [[(0, 1), (1, 1)], [(2, 3), (3, 3)], [(1, 2), (1, 3)]]</span>
+<span class="c1"># c = np.array([(1, 0, 0, 1), (0, 1, 0, 1), (0, 0, 1, 1)])</span>
+
+<span class="c1"># lc = mc.LineCollection(lines, colors=c, linewidths=2)</span>
+<span class="c1"># fig, ax = pl.subplots()</span>
+<span class="c1"># ax.add_collection(lc)</span>
+<span class="c1"># ax.autoscale()</span>
+<span class="c1"># ax.margins(0.1)</span>
+<span class="c1"># plt.savefig(&#39;del.png&#39;)</span>
+<span class="c1"># plt.show()</span>
+
+
+<span class="c1"># In[5]:</span>
+
+
+<span class="c1"># table = [ [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;D&#39;], [&#39;E&#39;,&#39;F&#39;,&#39;G&#39;,&#39;H&#39;], [&#39;I&#39;,&#39;J&#39;,&#39;K&#39;,&#39;L&#39;] ]</span>
+<span class="c1"># print(table)</span>
+<span class="c1"># for row in zip(*table): </span>
+<span class="c1"># #     print(row)</span>
+<span class="c1">#     print(&quot;   &quot;.join(row))</span>
+
+
+<span class="c1"># In[6]:</span>
+
+
+<span class="c1"># a=1/0.9 </span>
+<span class="c1"># a*.1</span>
+
+
+<span class="c1"># In[7]:</span>
+
+
+<span class="c1"># </span>
+
+
+<span class="c1"># In[8]:</span>
+
+
+<span class="c1"># # importing matplotlib </span>
+<span class="c1"># #import matplotlib.pyplot </span>
+
+<span class="c1"># # importing pandas as pd </span>
+<span class="c1"># import pandas as pd </span>
+
+<span class="c1"># # importing numpy as np </span>
+<span class="c1"># import numpy as np </span>
+
+<span class="c1"># # creating a dataframe </span>
+<span class="c1"># df = pd.DataFrame((np.linspace(-1,1,30).reshape(10,3)), columns =[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]) </span>
+
+<span class="c1"># print(df) </span>
+
+<span class="c1"># df.plot.barh()</span>
+<span class="c1"># plt.show()</span>
+
+
+<span class="c1"># In[9]:</span>
+
+
+<span class="c1"># import pandas as pd</span>
+<span class="c1"># import matplotlib.pyplot as plt</span>
+<span class="c1"># from collections import OrderedDict </span>
+
+<span class="c1"># line_segments_by_X = [(1,2), (3,4)]</span>
+
+<span class="c1"># data = {&quot;X&quot;: list(x for x in range(5)),</span>
+<span class="c1">#         &quot;V0&quot;: list(x for x in range(10, 15)),</span>
+<span class="c1">#         &quot;V1&quot;: list(x for x in range(20, 25))}</span>
+<span class="c1"># df = pd.DataFrame(data, columns=[&quot;X&quot;, &quot;V0&quot;, &quot;V1&quot;])</span>
+
+<span class="c1"># fig, ax = plt.subplots(1, 1)</span>
+
+<span class="c1"># for segment in line_segments_by_X:</span>
+<span class="c1">#     # Bool of values in segment</span>
+<span class="c1">#     bool = (df[&#39;X&#39;] &gt;= segment[0]) &amp; (df[&#39;X&#39;] &lt;= segment[1])</span>
+<span class="c1">#     # Use bool to plot the lines in this segment</span>
+<span class="c1">#     ax.plot(df[&#39;X&#39;][bool], df[&#39;V0&#39;][bool], c=&#39;C0&#39;, label=&#39;V0&#39;)</span>
+<span class="c1">#     ax.plot(df[&#39;X&#39;][bool], df[&#39;V1&#39;][bool], c=&#39;C1&#39;, label=&#39;V1&#39;)</span>
+    
+<span class="c1"># handles, labels = ax.get_legend_handles_labels()</span>
+<span class="c1"># by_label = OrderedDict(zip(labels, handles))</span>
+<span class="c1"># ax.legend(by_label.values(), by_label.keys())</span>
+
+<span class="c1"># ax.set_xlabel(&#39;x&#39;)    </span>
+
+<span class="c1"># # df.plot.bar()</span>
+<span class="c1"># plt.show()</span>
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Sonu Kumar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

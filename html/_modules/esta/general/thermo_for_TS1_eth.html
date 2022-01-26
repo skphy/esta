@@ -1,0 +1,1276 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>esta.general.thermo_for_TS1_eth &mdash; EStA 2.6.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> EStA
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.6.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file2.html">Details of EStA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html">ML algorithms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Git Cheat Sheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">List of EStA packages information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-general-package">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">EStA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>esta.general.thermo_for_TS1_eth</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for esta.general.thermo_for_TS1_eth</h1><div class="highlight"><pre>
+<span></span>
+<span class="c1"># coding: utf-8</span>
+
+<span class="c1"># In[6]:</span>
+
+
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">this is thermo class for calculating the </span>
+<span class="sd">energy contribution coming from the translational, rotational , vibrational</span>
+<span class="sd">and electronic degrees of freedom towards entropy, internal energy, and</span>
+<span class="sd">specific heat </span>
+
+<span class="sd">In Nutshell: need three components</span>
+<span class="sd">1) enthalpy component H = E + PV</span>
+<span class="sd">2) entropy components  S </span>
+<span class="sd">3) free energy components  G = H -TS = E + PV - TS</span>
+
+<span class="sd">Model under which the thermodynamical quantities can be calculed:</span>
+
+<span class="sd">1. Ideal gas approximation</span>
+<span class="sd">2. Harmonic approx</span>
+<span class="sd">3. Hindered rotor and vibrator</span>
+<span class="sd">4. crystalline materials case</span>
+
+<span class="sd">NOTE:</span>
+<span class="sd">-----</span>
+<span class="sd">    for thery: </span>
+<span class="sd">    </span>
+<span class="sd">    see gaussian thermo pdf file, </span>
+<span class="sd">    </span>
+<span class="sd">    or chapter 10: essential of compuational chemisty, </span>
+<span class="sd">    </span>
+<span class="sd">    or html file in the present folder</span>
+<span class="sd">    </span>
+<span class="sd">    or &#39;A Note on Thermochemistry&#39; by openmopac manual</span>
+<span class="sd">    </span>
+<span class="sd">    or Introduction to computational chemistry by Jensen chapter 14.5</span>
+<span class="sd">    </span>
+
+<span class="sd">author: sk</span>
+<span class="sd">email: sonukumar.physics@gmail.com</span>
+<span class="sd">date: oct 2020</span>
+<span class="sd">&#39;&#39;&#39;</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">from</span> <span class="nn">esta.measure</span> <span class="kn">import</span> <span class="n">conversion_factors</span> <span class="k">as</span> <span class="n">cf</span>
+
+
+
+
+<div class="viewcode-block" id="ThermoDyn"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo_for_TS1_eth.ThermoDyn">[docs]</a><span class="k">class</span> <span class="nc">ThermoDyn</span><span class="p">:</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    thermodyn class to find energies (eV or other units) for </span>
+<span class="sd">    entropy, internal energy, and specific heat with respect to</span>
+<span class="sd">    translational, rotational, vibrational, and electronic degrees of freedom</span>
+<span class="sd">    </span>
+<span class="sd">    Note: all energies are in eV  or SI units</span>
+<span class="sd">    </span>
+<span class="sd">    for thery: see gaussian thermo pdf file, or chapter 10: essential of compuational </span>
+<span class="sd">    chemisty, or html file in the present folder</span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">     &#39;&#39;&#39;</span>
+
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">E_dft</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> 
+                 <span class="n">vib_freq</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> 
+                 <span class="n">E_zpe</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> 
+                 <span class="n">S_vib</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> 
+                 <span class="n">E_vib</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> 
+                 <span class="n">temp</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">type_molecule</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">spin</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">symbols</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> 
+                 <span class="n">pos</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">symmetry_number</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                 <span class="n">pressure</span> <span class="o">=</span> <span class="kc">None</span>
+                <span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        input: </span>
+<span class="sd">        ------</span>
+<span class="sd">            E_dft = dft energy =  electronic energy = E_ele  in eV</span>
+<span class="sd">            vib_freq = array of vibrational freq in eV </span>
+<span class="sd">            E_zpe = zero point energy in eV</span>
+<span class="sd">            S_vib = vibrational entropy in eV/K</span>
+<span class="sd">            E_vib = internal (thermal) energy  energy contribution </span>
+<span class="sd">                due to vibrational motion in eV -- note when multipying exp factors etc...sk</span>
+<span class="sd">            temp = temp in Kelvin</span>
+<span class="sd">            type_molecule - linear or non-linear</span>
+<span class="sd">        </span>
+<span class="sd">        output:</span>
+<span class="sd">        ------</span>
+<span class="sd">            see methods of this class</span>
+<span class="sd">            </span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="o">*</span><span class="mi">40</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;****** inside ThermoDyn class: ******&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="o">*</span><span class="mi">40</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="n">E_dft</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;need E_dft as input&#39;</span><span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="bp">self</span><span class="o">.</span><span class="n">E_dft</span><span class="o">=</span> <span class="n">E_dft</span>
+
+        <span class="k">if</span> <span class="n">vib_freq</span><span class="o">.</span><span class="n">any</span><span class="p">()</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;need vib_freq as input&#39;</span><span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span> <span class="o">=</span> <span class="n">vib_freq</span>
+            
+        <span class="c1">#if E_zpe != None:</span>
+        <span class="c1">#    self.E_zpe = E_zpe</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">E_zpe</span> <span class="o">=</span> <span class="n">E_zpe</span>
+        
+        <span class="k">if</span> <span class="n">S_vib</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">S_vib</span> <span class="o">=</span> <span class="n">S_vib</span>
+        
+        <span class="k">if</span> <span class="n">E_vib</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">E_vib</span> <span class="o">=</span> <span class="n">E_vib</span>
+        
+        <span class="k">if</span> <span class="n">temp</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;need temp as input&#39;</span><span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="bp">self</span><span class="o">.</span><span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span>
+            
+        <span class="bp">self</span><span class="o">.</span><span class="n">type_molecule</span> <span class="o">=</span> <span class="n">type_molecule</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">spin</span> <span class="o">=</span> <span class="n">spin</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">symbols</span> <span class="o">=</span> <span class="n">symbols</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pos</span> <span class="o">=</span> <span class="n">pos</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">symmetry_number</span> <span class="o">=</span> <span class="n">symmetry_number</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pressure</span> <span class="o">=</span> <span class="n">pressure</span>
+    
+    
+        <span class="c1">#       </span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;xxxxxx typemolecue: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">type_molecule</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">spin</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pos</span><span class="p">)</span>
+            
+<div class="viewcode-block" id="ThermoDyn.get_zpe"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo_for_TS1_eth.ThermoDyn.get_zpe">[docs]</a>    <span class="k">def</span> <span class="nf">get_zpe</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get quantum mechanical zpe energy in eV</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        
+        <span class="c1">#if isinstance(self.E_zpe, float):</span>
+        <span class="c1">#    print(&#39;NOTE: zero point energy given as input, not computed from vib freqs.&#39;)</span>
+        <span class="c1">#else:  # may be None type</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">E_zpe</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;NOTE: calculating zero point energy from vib freq input data.&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">E_zpe</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">)</span><span class="o">/</span><span class="mf">2.</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">E_zpe</span><span class="p">,</span> <span class="nb">float</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;NOTE: zero point energy given as input, not computed from vib freqs.&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;E_zpe: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">E_zpe</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;zero point energy not defined or calculated!!&#39;</span><span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+            <span class="c1">#pass</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">E_zpe</span></div>
+    
+<div class="viewcode-block" id="ThermoDyn.get_S_vib"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo_for_TS1_eth.ThermoDyn.get_S_vib">[docs]</a>    <span class="k">def</span> <span class="nf">get_S_vib</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get S_vib, vibrational entropy in eV/K</span>
+<span class="sd">        </span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        
+        <span class="n">kb</span><span class="o">=</span> <span class="n">cf</span><span class="o">.</span><span class="n">kb</span>
+        <span class="c1">#N_A = cf.N_A</span>
+        <span class="n">kb_eV</span> <span class="o">=</span> <span class="n">cf</span><span class="o">.</span><span class="n">kb</span> <span class="o">*</span> <span class="mi">1</span><span class="o">/</span><span class="n">cf</span><span class="o">.</span><span class="n">ev2joule</span>
+        <span class="c1">#h = cf.h</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;kb: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">kb</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;kb_eV: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">kb_eV</span><span class="p">))</span>
+        <span class="c1">#print(&#39;h: {}&#39;.format(h))</span>
+
+<span class="c1">#         testing</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;self.vib_freq len: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">)))</span>
+        
+        <span class="n">_fac</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span> <span class="o">*</span> <span class="n">cf</span><span class="o">.</span><span class="n">ev2joule</span> <span class="o">/</span><span class="p">(</span><span class="n">kb</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="p">)</span> 
+        <span class="c1">## because freq in eV --changing to joule or you can use convert kb joule/K to kb_eV eV/k</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;_fac: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">_fac</span><span class="p">))</span>
+              
+        
+        
+        <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">)):</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">[</span><span class="n">ii</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Warning: freq zero or -ve: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">[</span><span class="n">ii</span><span class="p">]))</span>
+            
+        <span class="n">S_vib</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">type_molecule</span> <span class="o">==</span> <span class="s1">&#39;linear&#39;</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">)):</span> <span class="c1">#3N-5; here starting from 0 </span>
+                <span class="n">j</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">5</span>
+                <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">j</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">)):</span> <span class="c1"># last index exluded in range</span>
+                    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">0.</span><span class="p">:</span>
+                        <span class="n">S_vib</span>  <span class="o">+=</span>   <span class="p">(</span><span class="n">_fac</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">/</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">_fac</span><span class="p">[</span><span class="n">k</span><span class="p">])</span> <span class="o">-</span> <span class="mf">1.</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mf">1.</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">_fac</span><span class="p">[</span><span class="n">k</span><span class="p">])))</span>
+                        <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">S_vib</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span> <span class="c1"># for non linear molecular --default case</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">)):</span> <span class="c1">#3N-6; here starting from 0 </span>
+                <span class="n">j</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">6</span>
+                <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">j</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">)):</span> <span class="c1"># last index exluded in range</span>
+                    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">0.</span><span class="p">:</span>
+                        <span class="n">S_vib</span>  <span class="o">+=</span>  <span class="p">(</span><span class="n">_fac</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">/</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">_fac</span><span class="p">[</span><span class="n">k</span><span class="p">])</span> <span class="o">-</span> <span class="mf">1.</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mf">1.</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">_fac</span><span class="p">[</span><span class="n">k</span><span class="p">])))</span>
+                        <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">S_vib</span><span class="p">)</span>
+                        
+        <span class="c1">#NOTE: IMPORTANT: K_B units should be in eV/K so that S is in eV/K S_vib is dimensionless                         </span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">S_vib</span> <span class="o">=</span> <span class="n">S_vib</span> <span class="o">*</span><span class="n">kb_eV</span> 
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">S_vib</span><span class="p">,</span> <span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">S_vib</span>  <span class="c1"># eV/K , eV</span></div>
+    
+    
+    
+<div class="viewcode-block" id="ThermoDyn.get_E_vib"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo_for_TS1_eth.ThermoDyn.get_E_vib">[docs]</a>    <span class="k">def</span> <span class="nf">get_E_vib</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get vibration contribution to internal energy: </span>
+<span class="sd">        </span>
+<span class="sd">        it contains vibtaration heat capacity contains 3N−6 degrees of freedom for nonlinear molecules </span>
+<span class="sd">        and 3N−5 degrees of freedom for linear molecules (where N is the number of atoms)</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        
+        <span class="n">kb</span><span class="o">=</span> <span class="n">cf</span><span class="o">.</span><span class="n">kb</span>
+        <span class="n">h</span> <span class="o">=</span> <span class="n">cf</span><span class="o">.</span><span class="n">h</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;kb: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">kb</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;h: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">h</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;here freq in eV so change to joule so that denom matches in units (Joule)&#39;</span><span class="p">)</span>
+        <span class="n">_fac</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="o">*</span><span class="n">cf</span><span class="o">.</span><span class="n">ev2joule</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">kb</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="p">)</span> 
+        
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;_fac: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">_fac</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;vib_freq: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">))</span>
+        
+        <span class="c1">#this way if freq are zero then divide by zero error comes</span>
+        <span class="c1">#self.E_vib = np.sum (self.vib_freq/(np.exp(_fac) - 1.))</span>
+        
+        <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">)):</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">[</span><span class="n">ii</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Warning: freq zero or -ve: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">[</span><span class="n">ii</span><span class="p">]))</span>
+            
+        <span class="n">E_vib</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">type_molecule</span> <span class="o">==</span> <span class="s1">&#39;linear&#39;</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">)):</span> <span class="c1">#3N-5; here starting from 0 </span>
+                <span class="n">j</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">5</span>
+                <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">j</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">)):</span> <span class="c1"># last index exluded in range</span>
+                    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">0.</span><span class="p">:</span>
+                            <span class="n">E_vib</span>  <span class="o">+=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">_fac</span><span class="p">[</span><span class="n">k</span><span class="p">])</span> <span class="o">-</span> <span class="mf">1.</span><span class="p">))</span> 
+                            <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">E_vib</span><span class="p">)</span>
+
+        <span class="k">else</span><span class="p">:</span> <span class="c1"># for non linear molecular --default case</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">)):</span> <span class="c1">#3N-6; here starting from 0 </span>
+                <span class="n">j</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">6</span>
+                <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">j</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">)):</span> <span class="c1"># last index exluded in range</span>
+                    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">0.</span><span class="p">:</span>
+                            <span class="n">E_vib</span>  <span class="o">+=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">_fac</span><span class="p">[</span><span class="n">k</span><span class="p">])</span> <span class="o">-</span> <span class="mf">1.</span><span class="p">))</span> 
+                            <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">E_vib</span><span class="p">)</span>
+            
+        <span class="bp">self</span><span class="o">.</span><span class="n">E_vib</span> <span class="o">=</span> <span class="n">E_vib</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">E_vib</span>  <span class="c1"># eV</span></div>
+    
+    
+    
+<div class="viewcode-block" id="ThermoDyn.get_moment_inertia"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo_for_TS1_eth.ThermoDyn.get_moment_inertia">[docs]</a>    <span class="k">def</span> <span class="nf">get_moment_inertia</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get moment of inertia of the molecule or other possible system</span>
+<span class="sd">        </span>
+<span class="sd">        formula: see A note on thermochemistry or else ..................</span>
+<span class="sd">        </span>
+<span class="sd">        - from A note on thermochemisty:</span>
+<span class="sd">        </span>
+<span class="sd">        IA = Σimi(RAi)2, where i runs over all atoms in the system, mi </span>
+<span class="sd">        is the mass of the atom in amu, and RAi is the distance from the </span>
+<span class="sd">        axis of rotation, A, to atom i in Ångstroms.</span>
+<span class="sd">        </span>
+<span class="sd">        The axes of rotation are calculated as follows: </span>
+
+<span class="sd">        First, a 3 by 3 matrix, t,  is constructed, with the elements of t being:</span>
+
+<span class="sd">        t1,1 =  Y2 +  Z2 = Σimi(yi2 + zi2)</span>
+<span class="sd">        t1,2 =  -X.Y = -Σimixiyi</span>
+<span class="sd">        t2,2 =  X2 +  Z2 = Σimi(xi2 + zi2)</span>
+<span class="sd">        t1,3 =  -X.Z = -Σimixizi</span>
+<span class="sd">        t2,3 =  -Y.Z = -Σimiyizi</span>
+<span class="sd">        t3,3 =  X2 +  Y2 = Σimi(xi2 + yi2)</span>
+
+<span class="sd">        where mi is the mass of the atom in amu, and xi, yi, </span>
+<span class="sd">        and zi, are the Cartesian coordinates of the atoms, in Ångstroms.  </span>
+<span class="sd">        Then t is diagonalized. The resulting eigenvalues, (amu Ångstrom2), are </span>
+<span class="sd">        divided by N.A2, where N=Avogardo&#39;s number and A = number of Ångstroms in a </span>
+<span class="sd">        centimeter, to give the moments of inertia in g.cm2.  Because a useful unit </span>
+<span class="sd">        is 10-40.g.cm2, the moments of inertia are multiplied by 1040 before being printed.  </span>
+<span class="sd">        The eigenvectors associated with the eigenvalues are the axes of rotation, A, B, and C. </span>
+
+<span class="sd">        Useful conversion factors</span>
+<span class="sd">         1 g cm2  = 1.660540x10-40  (amu Ångstrom2)</span>
+<span class="sd">        Rotational constants in cm-1:  A = hN1016/(8π2c)/(amu Ångstrom2)</span>
+<span class="sd">        A (in MHz) = 5.053791x105/(amu Ångstrom2) </span>
+<span class="sd">        A (in cm-1) =  5.053791x105/c(amu Ångstrom2)  = 16.85763/(amu Ångstrom2)  </span>
+<span class="sd">        </span>
+<span class="sd">        </span>
+<span class="sd">        </span>
+<span class="sd">        input:</span>
+<span class="sd">        ------</span>
+<span class="sd">            array: cartesian coordinates of rank 2;  [:,:]</span>
+<span class="sd">            list: atomic symbols (need to calculate the Molecular mass or total mass)</span>
+<span class="sd">            </span>
+<span class="sd">        output:</span>
+<span class="sd">        ------</span>
+<span class="sd">            vector:  moment of inertia about axis of rotation A, B, and C; </span>
+<span class="sd">            array: array of rank2, principle axis of rotations, A, B, and C </span>
+<span class="sd">                about which moment of inertia is calculated</span>
+<span class="sd">                </span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+        <span class="kn">import</span> <span class="nn">sys</span>
+        <span class="kn">from</span> <span class="nn">mendeleev</span> <span class="kn">import</span> <span class="n">element</span>
+        <span class="c1"># get COM: Center of Mass</span>
+        <span class="kn">import</span> <span class="nn">esta.general.get_com</span> <span class="k">as</span> <span class="nn">get_com</span>
+            
+        <span class="c1">#testing</span>
+        <span class="c1">#print(self.pos)</span>
+        <span class="c1">#print(self.symbols)</span>
+        <span class="c1">#sys.exit()</span>
+        
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pos</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">symbols</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;len of pos not same as that of atomic symbols!&#39;</span><span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+        
+        
+        <span class="n">natoms</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pos</span> <span class="p">)</span>
+        
+        <span class="n">mass_list</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">isym</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">symbols</span><span class="p">:</span>
+            <span class="n">mass_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">element</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">isym</span><span class="p">))</span><span class="o">.</span><span class="n">mass</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atomic mass in amu: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">mass_list</span><span class="p">))</span>
+        <span class="c1">#self.mass_list = mass_list</span>
+        
+        
+        <span class="c1"># t matrix calculation </span>
+        <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+        <span class="c1">#----</span>
+        <span class="c1"># diagonal elements</span>
+        
+        <span class="c1">#t[0,0] = ( pos[:,1]**2 + pos[:,2]**2 )        # Y^2+Z^2</span>
+        
+
+        <span class="n">com</span> <span class="o">=</span> <span class="n">get_com</span><span class="o">.</span><span class="n">com</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pos</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">symbols</span><span class="p">)</span>
+        <span class="c1">#print(&#39;****** com: {}&#39;.format(com))</span>
+        
+        <span class="c1"># shift atomic positions wrt to center of mass</span>
+        <span class="n">pos</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pos</span> <span class="o">-</span> <span class="n">com</span> <span class="c1"># x,y,z - x0,y0,z0 for all atoms</span>
+        <span class="c1">#print(&#39;pos after shifting wrt com: {}&#39;.format(pos))</span>
+        
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+            <span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>  <span class="o">+=</span> <span class="n">mass_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span> <span class="n">pos</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">pos</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="p">)</span>  <span class="c1"># amu Ang^2</span>
+            <span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>  <span class="o">+=</span> <span class="n">mass_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span> <span class="n">pos</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">pos</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="p">)</span>  <span class="c1"># amu Ang^2</span>
+            <span class="n">t</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>  <span class="o">+=</span> <span class="n">mass_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span> <span class="n">pos</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">pos</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="p">)</span>  <span class="c1"># amu Ang^2</span>
+            <span class="c1">#-----</span>
+            <span class="c1"># off diagonall elements</span>
+            <span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>  <span class="o">+=</span> <span class="n">mass_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span> <span class="n">pos</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">pos</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># amu Ang^2</span>
+            <span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>  <span class="o">+=</span> <span class="n">mass_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span> <span class="n">pos</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">pos</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># amu Ang^2</span>
+            <span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>  <span class="o">+=</span> <span class="n">mass_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span> <span class="n">pos</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">pos</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># amu Ang^2</span>
+            <span class="c1">#-----</span>
+            <span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span> <span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">t</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span> <span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+            <span class="n">t</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span> <span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+
+        <span class="n">kgm2</span> <span class="o">=</span> <span class="n">cf</span><span class="o">.</span><span class="n">amu2kg</span> <span class="o">*</span> <span class="n">cf</span><span class="o">.</span><span class="n">angstrom</span><span class="o">**</span><span class="mi">2</span>
+        <span class="n">gcm2</span> <span class="o">=</span> <span class="n">kgm2</span> <span class="o">*</span> <span class="mf">1e3</span> <span class="o">*</span> <span class="mf">1e4</span>  <span class="c1"># m2 = 100^2 cm2</span>
+        
+        <span class="n">lprint</span> <span class="o">=</span> <span class="kc">False</span> <span class="c1">#False</span>
+        <span class="k">if</span> <span class="n">lprint</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;kgm2 and gcm2: </span><span class="si">{}</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">kgm2</span><span class="p">,</span> <span class="n">gcm2</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;t matrix (amu Ang2): </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;t matrix (10^-47 Kg m2): </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">t</span> <span class="o">*</span> <span class="n">kgm2</span> <span class="o">*</span> <span class="mf">1e47</span> <span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;t matrix (10^-40 g cm2): </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">t</span> <span class="o">*</span> <span class="n">gcm2</span> <span class="o">*</span> <span class="mf">1e40</span> <span class="p">))</span>
+                
+        <span class="n">eig</span><span class="p">,</span> <span class="n">vec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eigh</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+        <span class="c1">#print(eig,vec)</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;eig ...possible MI are: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">eig</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;taking this a MI: I_A, I_B, and I_C&#39;</span><span class="p">)</span>
+        
+        <span class="p">[</span><span class="n">axis_A</span><span class="p">,</span> <span class="n">axis_B</span><span class="p">,</span> <span class="n">axis_C</span><span class="p">]</span>  <span class="o">=</span> <span class="n">vec</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;axis of rotation A: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">axis_A</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;axis of rotation B: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">axis_B</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;axis of rotation C: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">axis_C</span><span class="p">))</span>
+        <span class="c1">#print(np.shape(vec))</span>
+        
+        <span class="c1">#print(pos[0])</span>
+        <span class="c1">#print ( np.linalg.norm( pos[0]- axis_A ))</span>
+        
+        <span class="n">I_A</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="n">I_B</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="n">I_C</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+            <span class="n">I_A</span>  <span class="o">+=</span> <span class="n">mass_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span> <span class="n">pos</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span> <span class="n">axis_A</span> <span class="p">))</span><span class="o">**</span><span class="mi">2</span>  <span class="c1"># amu Ang^2</span>
+            <span class="n">I_B</span>  <span class="o">+=</span> <span class="n">mass_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span> <span class="n">pos</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span> <span class="n">axis_B</span> <span class="p">))</span><span class="o">**</span><span class="mi">2</span>  <span class="c1"># amu Ang^2</span>
+            <span class="n">I_C</span>  <span class="o">+=</span> <span class="n">mass_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span> <span class="n">pos</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span> <span class="n">axis_C</span> <span class="p">))</span><span class="o">**</span><span class="mi">2</span>  <span class="c1"># amu Ang^2</span>
+
+            <span class="c1">#I_A  += mass_list[i] * ( np.linalg.norm( pos[i]- axis_A ))**2  # amu Ang^2</span>
+            <span class="c1">#I_B  += mass_list[i] * ( np.linalg.norm( pos[i]- axis_A ))**2  # amu Ang^2</span>
+            <span class="c1">#I_C  += mass_list[i] * ( np.linalg.norm( pos[i]- axis_A ))**2  # amu Ang^2</span>
+        
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;I_A, I_B, I_C (amu Ang^2): </span><span class="si">{0:0.3f}</span><span class="s1"> </span><span class="si">{1:0.3f}</span><span class="s1"> </span><span class="si">{2:0.3f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span> <span class="n">I_A</span><span class="p">,</span> <span class="n">I_B</span><span class="p">,</span> <span class="n">I_C</span> <span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;I_A, I_B, I_C (10^-40 g cm^2): </span><span class="si">{0:0.3f}</span><span class="s1"> </span><span class="si">{1:0.3f}</span><span class="s1"> </span><span class="si">{2:0.3f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span> <span class="n">I_A</span> <span class="o">*</span><span class="n">gcm2</span><span class="o">*</span><span class="mf">1e40</span><span class="p">,</span> <span class="n">I_B</span> <span class="o">*</span><span class="n">gcm2</span><span class="o">*</span><span class="mf">1e40</span><span class="p">,</span> <span class="n">I_C</span><span class="o">*</span><span class="n">gcm2</span><span class="o">*</span><span class="mf">1e40</span> <span class="p">))</span>
+        
+        <span class="c1">#</span>
+        <span class="c1">#return I_A, I_B, I_C, mass_list  #in amu*Ang^2, amu*Ang^2, amu*Ang^2, amu</span>
+        
+        <span class="c1">#sk</span>
+        <span class="k">return</span> <span class="n">eig</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">eig</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">eig</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">mass_list</span> <span class="c1"># in amu*Ang^2, amu*Ang^2, amu*Ang^2, amu</span></div></div>
+     
+    
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">np</span><span class="o">.</span><span class="n">set_printoptions</span><span class="p">(</span><span class="n">precision</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">T</span><span class="o">=</span><span class="mf">298.15</span>  
+<span class="c1">#     vib_freq = np.array([3049.060670,</span>
+<span class="c1">#               3040.796863,</span>
+<span class="c1">#               3001.661338,</span>
+<span class="c1">#               2997.961647,</span>
+<span class="c1">#               2866.153162,</span>
+<span class="c1">#               2750.855460,</span>
+<span class="c1">#               1436.792655,</span>
+<span class="c1">#               1431.413595,</span>
+<span class="c1">#               1415.952186,</span>
+<span class="c1">#               1395.726300,</span>
+<span class="c1">#               1358.412432,</span>
+<span class="c1">#               1335.922737,</span>
+<span class="c1">#               1167.009954,</span>
+<span class="c1">#               1142.126116,</span>
+<span class="c1">#               1013.918680,</span>
+<span class="c1">#               803.400098,</span>
+<span class="c1">#               783.026031,</span>
+<span class="c1">#               310.448278,</span>
+<span class="c1">#               136.112935,</span>
+<span class="c1">#               112.939853,</span>
+<span class="c1">#               103.926392,</span>
+<span class="c1">#               77.262869,</span>
+<span class="c1">#               60.278004,</span>
+<span class="c1">#               25.825447])*cf.cmii2ryd*cf.ryd2ev  # convert to eV from cm-1</span>
+    
+    
+    <span class="n">vib_freq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.00000000e+00</span><span class="p">,</span> 
+                      <span class="mf">0.00000000e+00</span><span class="p">,</span> 
+                      <span class="mf">2.84677655e-15</span><span class="p">,</span>
+                      <span class="mf">2.12950528e-03</span><span class="p">,</span>
+                      <span class="mf">2.12950528e-03</span><span class="p">,</span>
+                      <span class="mf">1.52624825e-01</span><span class="p">])</span>  <span class="c1"># in eV</span>
+    <span class="c1">#thermo = ThermoDyn(E_dft=-100, vib_freq=vib_freq, temp=T, type_molecule=&#39;linear&#39;)    </span>
+    <span class="n">thermo</span> <span class="o">=</span> <span class="n">ThermoDyn</span><span class="p">(</span><span class="n">E_dft</span><span class="o">=-</span><span class="mi">100</span><span class="p">,</span> <span class="n">vib_freq</span><span class="o">=</span><span class="n">vib_freq</span><span class="p">,</span> <span class="n">E_zpe</span> <span class="o">=</span> <span class="mf">10.</span><span class="p">,</span> <span class="n">temp</span><span class="o">=</span><span class="n">T</span><span class="p">,</span> <span class="n">type_molecule</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">)</span>    
+    
+<span class="c1">#=============================================</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="o">*</span><span class="mi">40</span><span class="p">)</span>
+    <span class="n">zpe</span> <span class="o">=</span> <span class="n">thermo</span><span class="o">.</span><span class="n">get_zpe</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;zpe (eV) :</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">zpe</span><span class="p">))</span>
+    
+    
+<span class="c1">#=============================================    </span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="o">*</span><span class="mi">40</span><span class="p">)</span>
+    <span class="n">S_vib</span><span class="p">,</span> <span class="n">minus_TS_vib</span> <span class="o">=</span> <span class="n">thermo</span><span class="o">.</span><span class="n">get_S_vib</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;S_vib: (eV/K) </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">S_vib</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;-T*S_vib (eV): </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">minus_TS_vib</span><span class="p">))</span>
+
+<span class="c1">#=============================================</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="o">*</span><span class="mi">40</span><span class="p">)</span>
+    <span class="n">E_vib</span> <span class="o">=</span> <span class="n">thermo</span><span class="o">.</span><span class="n">get_E_vib</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;E_vib (eV):  </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">E_vib</span><span class="p">))</span>
+
+
+
+<span class="c1"># In[11]:</span>
+
+
+<div class="viewcode-block" id="ThermoIdealGas"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo_for_TS1_eth.ThermoIdealGas">[docs]</a><span class="k">class</span> <span class="nc">ThermoIdealGas</span><span class="p">(</span><span class="n">ThermoDyn</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    calculate thermodynamic quantities within the ideal gas approximation</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">thermo_obj</span><span class="p">):</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;inside IdealGasApprox ...&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
+        
+        <span class="c1"># calling ThermoDyn class to access varibales   </span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">E_dft</span>    <span class="o">=</span> <span class="n">thermo_obj</span><span class="o">.</span><span class="n">E_dft</span>    <span class="c1"># eV</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span> <span class="o">=</span> <span class="n">thermo_obj</span><span class="o">.</span><span class="n">vib_freq</span> <span class="c1"># eV</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">E_zpe</span>    <span class="o">=</span> <span class="n">thermo_obj</span><span class="o">.</span><span class="n">get_zpe</span><span class="p">()</span>  <span class="c1"># eV</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">S_vib</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">thermo_obj</span><span class="o">.</span><span class="n">get_S_vib</span><span class="p">()</span> <span class="c1"># eV/K</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">E_vib</span>    <span class="o">=</span> <span class="n">thermo_obj</span><span class="o">.</span><span class="n">get_E_vib</span><span class="p">()</span> <span class="c1"># eV</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">temp</span>     <span class="o">=</span> <span class="n">thermo_obj</span><span class="o">.</span><span class="n">temp</span>  <span class="c1"># K</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">type_molecule</span> <span class="o">=</span> <span class="n">thermo_obj</span><span class="o">.</span><span class="n">type_molecule</span> <span class="c1"># linear/nonlinear</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">spin</span> <span class="o">=</span> <span class="n">thermo_obj</span><span class="o">.</span><span class="n">spin</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">symbols</span> <span class="o">=</span> <span class="n">thermo_obj</span><span class="o">.</span><span class="n">symbols</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pos</span> <span class="o">=</span> <span class="n">thermo_obj</span><span class="o">.</span><span class="n">pos</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">symmetry_number</span> <span class="o">=</span> <span class="n">thermo_obj</span><span class="o">.</span><span class="n">symmetry_number</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pressure</span> <span class="o">=</span> <span class="n">thermo_obj</span><span class="o">.</span><span class="n">pressure</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">I_A</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">I_B</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">I_C</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">mass_list</span> <span class="o">=</span> <span class="n">thermo_obj</span><span class="o">.</span><span class="n">get_moment_inertia</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">natoms</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">)</span><span class="o">/</span><span class="mi">3</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no of atoms: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">natoms</span><span class="p">))</span>
+        
+<span class="c1">#         self.mass_list = thermo_obj.get_moment_inertia()</span>
+        
+        
+<div class="viewcode-block" id="ThermoIdealGas.get_enthalpy"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo_for_TS1_eth.ThermoIdealGas.get_enthalpy">[docs]</a>    <span class="k">def</span> <span class="nf">get_enthalpy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        calculate enthapy (H) for ideal gas; H (P,T) = H (T); pressure dependence is not there</span>
+<span class="sd">        H(P,T) = E + PV = E_electronic (E_DFT) + E_zpe + integrate over T (specific heat capacity at const P)</span>
+<span class="sd">        </span>
+<span class="sd">        H(T) = Eelec + EZPE + ∫ C_P dT; integral from 0--&gt;T</span>
+<span class="sd">        </span>
+<span class="sd">        Cp = kB + CV,trans + CV,rot + CV,vib + CV,elec</span>
+<span class="sd">        </span>
+<span class="sd">        </span>
+<span class="sd">        ∫CV,vib dT = ∑  ϵi/exp ( ϵi/kBT−1) ; for linear mol = 3N-5 and 3N-6 nonlinear vibrations</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        
+        <span class="kn">import</span> <span class="nn">sys</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;kb: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span> <span class="n">cf</span><span class="o">.</span><span class="n">kb</span> <span class="p">))</span>
+        <span class="n">kb_eV</span> <span class="o">=</span> <span class="n">cf</span><span class="o">.</span><span class="n">kb</span> <span class="o">/</span> <span class="n">cf</span><span class="o">.</span><span class="n">ev2joule</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;kb_eV: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span> <span class="n">kb_eV</span> <span class="p">))</span>
+        
+        
+        <span class="n">H</span> <span class="o">=</span> <span class="mf">0.</span> <span class="c1"># eV</span>
+        
+        <span class="c1">#test </span>
+        <span class="c1">#print (&#39;dft energy (eV): {}&#39;.format(self.E_dft))</span>
+        <span class="c1">#print (&#39;zpe energy (eV): {}&#39;.format(self.E_zpe))</span>
+        
+        <span class="n">H</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">E_dft</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">E_zpe</span> 
+        
+        <span class="n">Cp</span> <span class="o">=</span> <span class="mf">0.</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Cp (eV/K): </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Cp</span><span class="p">))</span>
+        
+        <span class="c1"># Cv translational for three dimension gas</span>
+        <span class="n">Cv_trans</span> <span class="o">=</span> <span class="mi">3</span><span class="o">/</span><span class="mf">2.</span> <span class="o">*</span> <span class="n">kb_eV</span>  <span class="c1"># eV/K</span>
+        
+        <span class="c1"># Cv rotational</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">type_molecule</span> <span class="o">==</span> <span class="s1">&#39;linear&#39;</span><span class="p">:</span>
+            <span class="n">Cv_rot</span> <span class="o">=</span> <span class="n">kb_eV</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">type_molecule</span> <span class="o">==</span> <span class="s1">&#39;non-linear&#39;</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">type_molecule</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">Cv_rot</span> <span class="o">=</span> <span class="mi">3</span><span class="o">/</span><span class="mf">2.</span> <span class="o">*</span> <span class="n">kb_eV</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">natoms</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">Cv_rot</span> <span class="o">=</span> <span class="mf">0.</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;WARNING: no of atoms = 1&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">())</span>
+            
+        <span class="c1"># Cv electronic --  taken zero</span>
+        <span class="n">Ce</span> <span class="o">=</span> <span class="mf">0.</span>
+        
+        
+        <span class="c1"># summing contributions</span>
+        <span class="n">Cp</span> <span class="o">+=</span> <span class="n">kb_eV</span> <span class="o">+</span> <span class="n">Cv_trans</span> <span class="o">+</span> <span class="n">Cv_rot</span> <span class="o">+</span> <span class="n">Ce</span>  <span class="c1"># eV/K</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Cp (eV/K): </span><span class="si">{0:0.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Cp</span><span class="p">))</span>
+        <span class="c1">#H += Cp * T  # eV</span>
+        <span class="n">H</span> <span class="o">+=</span> <span class="n">Cp</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">temp</span>  <span class="c1"># eV</span>
+        
+        
+        <span class="c1"># Cvib *T  = H_vib for linear and non-linear molecules 3N-5 and 3N-6</span>
+        <span class="n">E_vib</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">E_vib</span>  <span class="c1"># calculated in ThermoDyn class; just calling from there</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;kb_eV (eV/K): </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">kb_eV</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Cv_trans (eV/K): </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Cv_trans</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Cv_rot (eV/K): </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Cv_rot</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Ce (eV/K): </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Ce</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Cvib (eV/K): </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">E_vib</span><span class="o">/</span><span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="p">))</span>
+        
+        
+        
+        <span class="c1">#final sum H</span>
+        <span class="n">H</span> <span class="o">+=</span>  <span class="n">E_vib</span>  <span class="c1"># eV</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;H(T) (eV): </span><span class="si">{0:10.6f}</span><span class="s1"> &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">H</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
+
+        <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;---------Enthalpy calculation results at T = &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;K-----------&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*+&#39;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;e_dft/E_e-ion (eV)   : </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">E_dft</span><span class="p">))</span>        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;zpe (eV)             : </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">E_zpe</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;kb_eV (eV)           : </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">kb_eV</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Cv_trans (eV)        : </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Cv_trans</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Cv_rot (eV)          : </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Cv_rot</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Ce (eV)              : </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">Ce</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Cvib (eV)            : </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">E_vib</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;H(T) (eV)            : </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">H</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*+&#39;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;----------------------------------------------------------------&#39;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">H</span> <span class="o">=</span> <span class="n">H</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">H</span>  <span class="c1"># eV</span></div>
+        
+        
+<div class="viewcode-block" id="ThermoIdealGas.get_entropy"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo_for_TS1_eth.ThermoIdealGas.get_entropy">[docs]</a>    <span class="k">def</span> <span class="nf">get_entropy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">S_trans</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">S_rot</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        calculate entropy S(T,P) = S(T,P∘) − kB ln P/P∘</span>
+<span class="sd">        </span>
+<span class="sd">                                 = S_trans + S_rot + S_elec + S_vib − kB ln (P/P_o)</span>
+<span class="sd">        print(&#39;Entropy components at T = 298.15 K and P = 101325.0 Pa:&#39;)</span>
+<span class="sd">        </span>
+<span class="sd">        1 Pa = 1 N / m2</span>
+<span class="sd">        </span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">kb_eV</span> <span class="o">=</span> <span class="n">cf</span><span class="o">.</span><span class="n">kb</span> <span class="o">/</span> <span class="n">cf</span><span class="o">.</span><span class="n">ev2joule</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;get_entropy method: &#39;</span><span class="p">)</span>
+        
+        <span class="n">S</span> <span class="o">=</span> <span class="mf">0.</span> <span class="c1">#eV/K or J/K</span>
+        
+        
+        <span class="k">if</span> <span class="n">S_trans</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="c1"># Entropy contribution from translation </span>
+            <span class="n">t_term1</span> <span class="o">=</span> <span class="p">(</span> <span class="mf">2.</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mass_list</span><span class="p">)</span> <span class="o">*</span> <span class="n">cf</span><span class="o">.</span><span class="n">amu2kg</span> <span class="o">*</span> <span class="n">cf</span><span class="o">.</span><span class="n">kb</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">temp</span> <span class="o">/</span> <span class="n">cf</span><span class="o">.</span><span class="n">h</span><span class="o">**</span><span class="mi">2</span> <span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mf">2.</span><span class="p">)</span> <span class="c1"># (Kg J/(Js)^2)^3/2</span>
+            <span class="n">t_term2</span> <span class="o">=</span> <span class="p">(</span><span class="n">cf</span><span class="o">.</span><span class="n">kb</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="p">)</span><span class="o">/</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pressure</span> <span class="o">*</span> <span class="n">cf</span><span class="o">.</span><span class="n">atm2pascal</span><span class="p">)</span>  <span class="c1"># J / Nm-2 ; 1Pascal = 1 N/m2 ; input press in atm</span>
+            <span class="c1">#S_trans = ( np.log( (term1 * term2)) + 5/2.) * kb # J/K</span>
+            <span class="n">S_trans</span> <span class="o">=</span>  <span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span> <span class="p">(</span><span class="n">t_term1</span> <span class="o">*</span> <span class="n">t_term2</span><span class="p">))</span> <span class="o">+</span> <span class="mi">5</span><span class="o">/</span><span class="mf">2.</span><span class="p">)</span> <span class="o">*</span> <span class="n">kb_eV</span> <span class="c1"># eV/K</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">S_trans</span> <span class="o">=</span> <span class="mi">5</span><span class="o">/</span><span class="mf">2.</span> <span class="o">*</span><span class="n">kb_eV</span>  <span class="c1"># only this part .. MI part removed</span>
+        
+        
+        
+        
+        <span class="k">if</span> <span class="n">S_rot</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="c1"># Entropy contribution from rotation</span>
+            <span class="n">MI</span> <span class="o">=</span> <span class="p">((</span> <span class="bp">self</span><span class="o">.</span><span class="n">I_A</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">I_B</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">I_C</span> <span class="p">)</span> <span class="o">/</span> <span class="mf">3.</span><span class="p">)</span> <span class="o">*</span> <span class="n">cf</span><span class="o">.</span><span class="n">amu2kg</span> <span class="o">*</span> <span class="n">cf</span><span class="o">.</span><span class="n">angstrom</span><span class="o">**</span><span class="mi">2</span>  <span class="c1"># amu*Ang^2 --&gt; kg m^2</span>
+            
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">type_molecule</span> <span class="o">==</span> <span class="s1">&#39;linear&#39;</span><span class="p">:</span>
+                <span class="n">r_term1</span> <span class="o">=</span> <span class="p">(</span> <span class="mi">8</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span> <span class="n">MI</span> <span class="o">*</span> <span class="n">cf</span><span class="o">.</span><span class="n">kb</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">temp</span> <span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">symmetry_number</span> <span class="o">*</span> <span class="n">cf</span><span class="o">.</span><span class="n">h</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+                <span class="c1"># log term is dimensionless ; all units inside log term are in SI system</span>
+                <span class="n">S_rot</span> <span class="o">=</span> <span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span> <span class="n">r_term1</span> <span class="p">)</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">)</span> <span class="o">*</span> <span class="n">kb_eV</span> <span class="c1"># eV/K</span>
+
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">type_molecule</span> <span class="o">==</span> <span class="s1">&#39;non-linear&#39;</span><span class="p">:</span>
+                <span class="n">r_term2</span> <span class="o">=</span> <span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">I_A</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">I_B</span> <span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">I_C</span><span class="p">))</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">symmetry_number</span>
+                <span class="n">r_term3</span> <span class="o">=</span> <span class="p">(</span> <span class="mf">8.</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">cf</span><span class="o">.</span><span class="n">kb</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">temp</span> <span class="o">/</span> <span class="n">cf</span><span class="o">.</span><span class="n">h</span><span class="o">**</span><span class="mi">2</span> <span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span> 
+                <span class="n">S_rot</span> <span class="o">=</span> <span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span> <span class="n">r_term2</span> <span class="o">*</span> <span class="n">r_term3</span><span class="p">)</span> <span class="o">+</span> <span class="mi">3</span><span class="o">/</span><span class="mf">2.</span> <span class="p">)</span> <span class="o">*</span> <span class="n">kb_eV</span> <span class="c1"># eV/K</span>
+
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">natoms</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">S_rot</span> <span class="o">=</span> <span class="mf">0.</span> 
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">S_rot</span> <span class="o">=</span> <span class="mf">0.</span>
+            
+        
+        <span class="c1"># Entropy contribution from vibration</span>
+        <span class="n">S_vib</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">S_vib</span> <span class="c1"># eV/K</span>
+        
+        
+        <span class="c1"># Entropy contribution from electronic</span>
+        <span class="n">S_ele</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span> <span class="p">(</span> <span class="mf">2.</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">spin</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="n">kb_eV</span>  <span class="c1"># eV/K</span>
+        
+        <span class="c1"># Entropy -Kb ln(P/P0)  -- input press is taken in atm units</span>
+        <span class="n">standard_pressure</span> <span class="o">=</span> <span class="mf">101325.0</span> <span class="c1"># Pa ; 101325 Pa = 1 atm</span>
+        <span class="n">S_press</span> <span class="o">=</span> <span class="o">-</span> <span class="n">kb_eV</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pressure</span> <span class="o">*</span> <span class="n">cf</span><span class="o">.</span><span class="n">atm2pascal</span> <span class="o">/</span> <span class="n">standard_pressure</span> <span class="p">)</span>
+        
+        <span class="c1"># summing the total entropy </span>
+        <span class="n">S</span> <span class="o">+=</span> <span class="n">S_trans</span> <span class="o">+</span> <span class="n">S_rot</span> <span class="o">+</span> <span class="n">S_vib</span> <span class="o">+</span> <span class="n">S_ele</span> <span class="o">+</span> <span class="n">S_press</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Entropy calculation results:  ---------------------------------&#39;</span><span class="p">)</span>
+        <span class="c1">#print (&#39;---------S(T = &#39;+str(self.temp)+K &#39;, P =&#39;+ str(self.pressure)+&#39; Pa)&#39;)</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;---------S(T = &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;K , P =&#39;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pressure</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; atm)&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*+&#39;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;TS_trans (eV)        : </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">S_trans</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;TS_rot (eV)          : </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">S_rot</span> <span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;TS_vib (eV)          : </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">S_vib</span> <span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;TS_ele (eV)          : </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">S_ele</span> <span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;TS_press (eV)        : </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">S_press</span> <span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Total: TS(P, T) (eV) : </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span> <span class="n">S</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*+&#39;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;----------------------------------------------------------------&#39;</span><span class="p">)</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">S</span> <span class="o">=</span> <span class="n">S</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">S</span>  <span class="c1"># ev/K</span></div>
+        
+<div class="viewcode-block" id="ThermoIdealGas.get_Gibbs_free_energy"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo_for_TS1_eth.ThermoIdealGas.get_Gibbs_free_energy">[docs]</a>    <span class="k">def</span> <span class="nf">get_Gibbs_free_energy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        G(T,P ) = H(T) − TS (T,P)  + E_DFT</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+        
+        <span class="n">G</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">H</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">temp</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">S</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*+&#39;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;---------G(T = &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;K , P =&#39;</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pressure</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; atm)&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Gibbs free energy (eV): </span><span class="si">{0:0.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">G</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*+&#39;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Thermodynamics in the ideal gas approx done!!! &#39;</span><span class="p">)</span>
+        
+        <span class="k">return</span> <span class="n">G</span> <span class="c1"># eV</span></div></div>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">np</span><span class="o">.</span><span class="n">set_printoptions</span><span class="p">(</span><span class="n">precision</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">vib_freq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.00000000e+00</span><span class="p">,</span> 
+                      <span class="mf">0.00000000e+00</span><span class="p">,</span> 
+                      <span class="mf">2.84677655e-15</span><span class="p">,</span>
+                      <span class="mf">2.12950528e-03</span><span class="p">,</span>
+                      <span class="mf">2.12950528e-03</span><span class="p">,</span>
+                      <span class="mf">1.52624825e-01</span><span class="p">])</span>  <span class="c1"># in eV</span>
+    <span class="c1">#T=298.15</span>
+    <span class="n">T</span><span class="o">=</span><span class="mf">398.15</span>
+    <span class="n">spin</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">symbols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;N&#39;</span><span class="p">,</span> <span class="s1">&#39;N&#39;</span><span class="p">]</span>
+    <span class="n">pos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[[</span> <span class="mf">0.</span><span class="p">,</span>         <span class="mf">0.</span><span class="p">,</span>          <span class="mf">0.49908681</span><span class="p">],</span>
+<span class="c1">#                      [ 0.,         0.,          0.99817362]])</span>
+                     <span class="p">[</span> <span class="mf">0.</span><span class="p">,</span>         <span class="mf">0.</span><span class="p">,</span>          <span class="o">-</span><span class="mf">0.49908681</span><span class="p">]])</span>
+                     
+    <span class="c1"># symmetry number from point group symmetry (formulate the table); also see c/fortran code </span>
+    <span class="c1"># for find the point group </span>
+    <span class="n">symmetry_number</span> <span class="o">=</span> <span class="mi">2</span> <span class="c1"># default</span>
+    <span class="n">pressure</span> <span class="o">=</span><span class="mf">1.</span> <span class="c1"># in atm # 101325.0 Pascal =  1 atm </span>
+<span class="c1">#     thermo = ThermoDyn(E_dft=0.263000000, # eV</span>
+<span class="c1">#                        vib_freq=vib_freq, </span>
+<span class="c1">#                        temp=T, </span>
+<span class="c1">#                        type_molecule=&#39;linear&#39;,</span>
+<span class="c1">#                        spin= spin, </span>
+<span class="c1">#                        symbols = symbols, </span>
+<span class="c1">#                        pos = pos, </span>
+<span class="c1">#                        symmetry_number = symmetry_number, </span>
+<span class="c1">#                        pressure = pressure)    </span>
+
+    <span class="n">thermo</span> <span class="o">=</span> <span class="n">ThermoDyn</span><span class="p">(</span><span class="n">E_dft</span><span class="o">=</span><span class="mf">0.263000000</span><span class="p">,</span> <span class="c1"># eV</span>
+                       <span class="n">vib_freq</span><span class="o">=</span><span class="n">vib_freq</span><span class="p">,</span> 
+                       <span class="n">E_zpe</span> <span class="o">=</span> <span class="mf">0.099</span><span class="p">,</span>
+                       <span class="n">temp</span><span class="o">=</span><span class="n">T</span><span class="p">,</span> 
+                       <span class="n">type_molecule</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">,</span>
+                       <span class="n">spin</span><span class="o">=</span> <span class="n">spin</span><span class="p">,</span> 
+                       <span class="n">symbols</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">,</span> 
+                       <span class="n">pos</span> <span class="o">=</span> <span class="n">pos</span><span class="p">,</span> 
+                       <span class="n">symmetry_number</span> <span class="o">=</span> <span class="n">symmetry_number</span><span class="p">,</span> 
+                       <span class="n">pressure</span> <span class="o">=</span> <span class="n">pressure</span><span class="p">)</span>    
+   
+    <span class="n">thermoideal_obj</span> <span class="o">=</span> <span class="n">ThermoIdealGas</span><span class="p">(</span><span class="n">thermo</span><span class="p">)</span>
+    <span class="n">thermoideal_obj</span><span class="o">.</span><span class="n">get_enthalpy</span><span class="p">()</span>   
+    <span class="c1">#thermo.get_moment_inertia()</span>
+    <span class="n">thermoideal_obj</span><span class="o">.</span><span class="n">get_entropy</span><span class="p">()</span>
+    <span class="n">thermoideal_obj</span><span class="o">.</span><span class="n">get_Gibbs_free_energy</span><span class="p">()</span>
+
+    
+
+
+<span class="c1"># In[3]:</span>
+
+
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">esta.measure.conversion_factors</span> <span class="k">as</span> <span class="nn">cf</span>
+
+<div class="viewcode-block" id="ThermoHarmonic"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo_for_TS1_eth.ThermoHarmonic">[docs]</a><span class="k">class</span> <span class="nc">ThermoHarmonic</span><span class="p">:</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Harmonic thermodynamics</span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    input: </span>
+<span class="sd">    ------</span>
+<span class="sd">        E_dft: float</span>
+<span class="sd">        vib_freq: array </span>
+<span class="sd">        temp: float</span>
+<span class="sd">    </span>
+<span class="sd">    output: </span>
+<span class="sd">    ------</span>
+<span class="sd">        see respecitve methods in the class</span>
+
+
+
+
+<span class="sd">    NOTE: </span>
+<span class="sd">    ------</span>
+<span class="sd">    </span>
+<span class="sd">    Harmonic limit: taken from ASE website: </span>
+<span class="sd">    The conversion of electronic structure calculation information into </span>
+<span class="sd">    thermodynamic properties is less established for adsorbates. However, </span>
+<span class="sd">    the simplest approach often taken is to treat all 3N</span>
+<span class="sd">    degrees of freedom of the adsorbate harmonically since the adsorbate often </span>
+<span class="sd">    has no real translational or rotational degrees of freedom. </span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    U(T) = E_\text{elec} + E_\text{ZPE} + </span>
+<span class="sd">            \sum_i^\text{harm DOF} \frac{\epsilon_i}{e^{\epsilon_i / k_\text{B} T} - 1 }</span>
+<span class="sd">            </span>
+<span class="sd">    S = k_\text{B} \sum_i^\text{harm DOF}</span>
+<span class="sd">        \left[ \frac{\epsilon_i}{k_\text{B}T\left(e^{\epsilon_i/k_\text{B}T}-1\right)} - </span>
+<span class="sd">            \ln \left( 1 - e^{-\epsilon_i/k_\text{B}T} \right)\right]            </span>
+<span class="sd">    </span>
+<span class="sd">    i.e. </span>
+<span class="sd">    U(T)=Eelec+EZPE+∑iharm DOF ϵi eϵi/kBT−1</span>
+<span class="sd">    </span>
+<span class="sd">    S=kB ∑iharm DOF[ϵi kBT(e ϵi/kBT−1)−ln(1−e−ϵi/kBT)]</span>
+
+
+<span class="sd">   </span>
+
+<span class="sd">    </span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">E_dft</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">vib_freq</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">temp</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+
+        
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span> <span class="o">=</span> <span class="n">vib_freq</span>
+        
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="o">.</span><span class="n">any</span><span class="p">()</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;vib freq must be present!!&#39;</span><span class="p">)</span>
+            <span class="c1">#sys.exit()</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;vib freq must be present!!&#39;</span><span class="p">)</span>
+            
+        <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">iscomplex</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="o">.</span><span class="n">any</span><span class="p">()):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;vibration frequencies are imaganiary ..stoping&#39;</span><span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+        
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">)</span> 
+        <span class="bp">self</span><span class="o">.</span><span class="n">E_dft</span> <span class="o">=</span> <span class="n">E_dft</span>   
+        <span class="bp">self</span><span class="o">.</span><span class="n">E_zpe</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_zpe</span><span class="p">()</span>
+
+<span class="c1">#         test:</span>
+<span class="c1">#         v = &#39;1.&#39;</span>
+<span class="c1">#         if isinstance(v, float):</span>
+<span class="c1">#             print(v)</span>
+<span class="c1">#         else: </span>
+<span class="c1">#             print(&#39;v not defined..&#39;)</span>
+<span class="c1">#             raise ValueError(&#39;v should be float&#39;)</span>
+
+<div class="viewcode-block" id="ThermoHarmonic.get_zpe"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_zpe">[docs]</a>    <span class="k">def</span> <span class="nf">get_zpe</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the zero-point vibrational energy eV.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">E_zpe</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">)</span><span class="o">/</span><span class="mf">2.</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">E_zpe</span></div>
+        
+    
+<div class="viewcode-block" id="ThermoHarmonic.get_E_vib"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_E_vib">[docs]</a>    <span class="k">def</span> <span class="nf">get_E_vib</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        find the  in internal energy part due to vibrations from</span>
+<span class="sd">        0K to a given temperature in eV </span>
+<span class="sd">        </span>
+<span class="sd">        get vibration contribution to internal energy: </span>
+
+
+<span class="sd">        all DOF are considered within the harmonic approximation</span>
+<span class="sd">        </span>
+<span class="sd">        output:</span>
+<span class="sd">        -------</span>
+<span class="sd">              vib energy contri in eV.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+    
+        <span class="n">kb</span><span class="o">=</span> <span class="n">cf</span><span class="o">.</span><span class="n">kb</span>
+        <span class="c1">#h = cf.h</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;kb: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">kb</span><span class="p">))</span>
+        <span class="c1">#print(&#39;h: {}&#39;.format(h))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;here freq in eV so change to joule so that denom matches in units (Joule)&#39;</span><span class="p">)</span>
+        <span class="n">_fac</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="o">*</span><span class="n">cf</span><span class="o">.</span><span class="n">ev2joule</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">kb</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="p">)</span> 
+        
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;_fac: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">_fac</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;vib_freq: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">))</span>
+        
+        
+        <span class="n">E_vib</span> <span class="o">=</span> <span class="mf">0.</span>
+
+        <span class="n">E_vib</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">E_dft</span>  <span class="c1"># adding E_dft if available other wise we have correction to DFT enegy in stead</span>
+        
+        <span class="c1">#this following way if freq are zero then divide by zero error comes</span>
+        <span class="c1">#self.E_vib = np.sum (self.vib_freq/(np.exp(_fac) - 1.))</span>
+        
+        <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">)):</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">[</span><span class="n">ii</span><span class="p">]</span><span class="o">.</span><span class="n">any</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Warning: freq -ve or zero: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">[</span><span class="n">ii</span><span class="p">]))</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;freq -ve or zero .... check input vib frequencies!!&#39;</span><span class="p">)</span>
+            
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">)):</span> <span class="c1">#all 3N DOF in harmonic apprximation</span>
+            <span class="n">E_vib</span>  <span class="o">+=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">_fac</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">-</span> <span class="mf">1.</span><span class="p">))</span> 
+            <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">E_vib</span><span class="p">)</span>
+
+            
+        <span class="bp">self</span><span class="o">.</span><span class="n">E_vib</span> <span class="o">=</span> <span class="n">E_vib</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">E_vib</span>  <span class="c1"># eV</span></div>
+    
+    
+    
+<div class="viewcode-block" id="ThermoHarmonic.get_S_vib"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_S_vib">[docs]</a>    <span class="k">def</span> <span class="nf">get_S_vib</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get S_vib, vibrational entropy in eV/K</span>
+<span class="sd">        </span>
+<span class="sd">        find the entropy due to vibrations for vibrations (3N DOF)</span>
+<span class="sd">        given in eV </span>
+<span class="sd">        </span>
+<span class="sd">        output:</span>
+<span class="sd">        -------</span>
+<span class="sd">              entropy and entropy energy in eV/K  and ev/k, respectively.</span>
+
+<span class="sd">        </span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        
+        <span class="n">kb</span><span class="o">=</span> <span class="n">cf</span><span class="o">.</span><span class="n">kb</span>
+        <span class="c1">#N_A = cf.N_A</span>
+        <span class="n">kb_eV</span> <span class="o">=</span> <span class="n">cf</span><span class="o">.</span><span class="n">kb</span> <span class="o">*</span> <span class="mi">1</span><span class="o">/</span><span class="n">cf</span><span class="o">.</span><span class="n">ev2joule</span>
+        <span class="c1">#h = cf.h</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;kb: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">kb</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;kb_eV: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">kb_eV</span><span class="p">))</span>
+        <span class="c1">#print(&#39;h: {}&#39;.format(h))</span>
+
+        
+        <span class="n">_fac</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span> <span class="o">*</span> <span class="n">cf</span><span class="o">.</span><span class="n">ev2joule</span> <span class="o">/</span><span class="p">(</span><span class="n">kb</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="p">)</span> 
+        <span class="c1">## because freq in eV --changing to joule or you can use convert kb joule/K to kb_eV eV/k</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;_fac: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">_fac</span><span class="p">))</span>
+              
+
+        <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">)):</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">[</span><span class="n">ii</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Warning: freq -ve or zero: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">[</span><span class="n">ii</span><span class="p">]))</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;freq -ve or zero .... check input vib frequencies!!&#39;</span><span class="p">)</span>
+                
+                
+        <span class="n">S_vib</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vib_freq</span><span class="p">)):</span> <span class="c1">#3N DOF  </span>
+                <span class="n">S_vib</span>  <span class="o">+=</span>   <span class="p">(</span><span class="n">_fac</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">/</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">_fac</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">-</span> <span class="mf">1.</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mf">1.</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">_fac</span><span class="p">[</span><span class="n">i</span><span class="p">])))</span>
+                <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">S_vib</span><span class="p">)</span>
+                        
+        <span class="c1">#NOTE: IMPORTANT: K_B units should be in eV/K so that S is in eV/K ; S_vib here is dimensionless                         </span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">S_vib</span> <span class="o">=</span> <span class="n">S_vib</span> <span class="o">*</span><span class="n">kb_eV</span> 
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">S_vib</span><span class="p">,</span> <span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">S_vib</span>  <span class="c1"># eV/K , eV</span></div>
+    
+    
+    
+<div class="viewcode-block" id="ThermoHarmonic.get_internal_energy"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_internal_energy">[docs]</a>    <span class="k">def</span> <span class="nf">get_internal_energy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        find internal energy, in eV, in the harmonic approximation taking all DOF (3N)</span>
+<span class="sd">        at a given temperature (K).</span>
+<span class="sd">        </span>
+<span class="sd">        </span>
+<span class="sd">        E(T) = U(T) = Eelec+EZPE+∑iharm DOF ϵi eϵi/kBT−1</span>
+<span class="sd">        </span>
+<span class="sd">        output:</span>
+<span class="sd">        -------</span>
+<span class="sd">            internal energy contribution at given T in eV</span>
+<span class="sd">            </span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+
+        <span class="n">E_internal</span> <span class="o">=</span> <span class="mf">0.</span>
+
+        <span class="n">E_internal</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">E_dft</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">E_zpe</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">E_vib</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">E_internal</span> <span class="o">=</span> <span class="n">E_internal</span>
+        
+        <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;---Internal energy at T = &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;K---------------------&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*+&#39;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;e_dft/E_e-ion (eV)                    : </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">E_dft</span><span class="p">))</span>        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;zpe (eV)                              : </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">E_zpe</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;E_vib (T);vib cont. to inter enegy(eV): </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">E_vib</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;-T*S_vib (eV); vib cont to entropy(eV): </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">temp</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">S_vib</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;E_internal(T)=E(T) or U(T) (eV)       : </span><span class="si">{0:10.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">E_internal</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*+&#39;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;-------------------------------------------------------------------&#39;</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">E_internal</span></div>
+    
+    
+    
+<div class="viewcode-block" id="ThermoHarmonic.get_Helmholtz_free_energy"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo_for_TS1_eth.ThermoHarmonic.get_Helmholtz_free_energy">[docs]</a>    <span class="k">def</span> <span class="nf">get_Helmholtz_free_energy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        G(T ) = H(T) − TS (T)        #  + E_DFT   # P depenedence negligble; PV term may be...</span>
+<span class="sd">        </span>
+<span class="sd">        F(T) = U(T)−TS(T) -- Helmholtz free energy</span>
+<span class="sd">        </span>
+<span class="sd">        assuming PV term to be negligible, we have G(T) ~ F(T)</span>
+<span class="sd">        </span>
+<span class="sd">        NOTE: if we assumes that the pV term in H=U+pV is negligible, then the </span>
+<span class="sd">        Helmholtz free energy can be used to approximate the Gibbs free energy, as G=F+pV.</span>
+<span class="sd">        </span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+        
+        <span class="n">F</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">E_internal</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">temp</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">S_vib</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*+&#39;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;---------F(T = &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">temp</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;K&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Helmholtz free energy (eV): </span><span class="si">{0:0.6f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">F</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*+&#39;</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Thermodynamics in the Harmonic approximation done (all DOF considered)!!! &#39;</span><span class="p">)</span>
+        
+        <span class="k">return</span> <span class="n">F</span> <span class="c1"># eV</span></div></div>
+
+    
+<div class="viewcode-block" id="ThermoHindredRotVib"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo_for_TS1_eth.ThermoHindredRotVib">[docs]</a><span class="k">class</span> <span class="nc">ThermoHindredRotVib</span><span class="p">:</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Hinder vibrational and rotation oscillator thermodynamics</span>
+<span class="sd">    &#39;&#39;&#39;</span></div>
+    
+    
+<div class="viewcode-block" id="ThermoLattice"><a class="viewcode-back" href="../../../file4.html#esta.general.thermo_for_TS1_eth.ThermoLattice">[docs]</a><span class="k">class</span> <span class="nc">ThermoLattice</span><span class="p">:</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Atomic lattice thermodynamics </span>
+<span class="sd">    &#39;&#39;&#39;</span></div>
+    
+    
+    
+<span class="c1"># a= 101325.0</span>
+<span class="c1"># # a * cf.pascal2atm</span>
+<span class="c1"># kb_eV = cf.kb / cf.ev2joule</span>
+<span class="c1"># print (np.log(1. / float(a * cf.pascal2atm ))  * kb_eV)</span>
+<span class="c1"># print (np.log(a/ cf.atm2pascal))</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">esta.measure.conversion_factors</span> <span class="k">as</span> <span class="nn">cf</span>
+    <span class="kn">import</span> <span class="nn">esta.general.filter_vib_freq</span> <span class="k">as</span> <span class="nn">ff</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;testing thermoharmonic  case:&#39;</span><span class="p">)</span>
+    <span class="n">np</span><span class="o">.</span><span class="n">set_printoptions</span><span class="p">(</span><span class="n">precision</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+    
+<span class="c1">#     vib_freq = np.array([0.00000000e+00, </span>
+<span class="c1">#                       0.00000000e+00, </span>
+<span class="c1">#                       2.84677655e-5,</span>
+<span class="c1">#                       2.12950528e-03,</span>
+<span class="c1">#                       2.12950528e-03,</span>
+<span class="c1">#                       1.52624825e-01])  # in eV</span>
+    
+    
+    
+    
+    <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="s1">&#39;freq.dat&#39;</span><span class="p">)</span>
+    <span class="n">vib_freq</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">cf</span><span class="o">.</span><span class="n">cmii2har</span> <span class="o">*</span> <span class="n">cf</span><span class="o">.</span><span class="n">har2ev</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;vib_freq in ev: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">vib_freq</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;shape of vib freq data before filtering: </span><span class="si">{}</span><span class="s1"> &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">vib_freq</span><span class="p">)))</span>
+<span class="c1">#     sys.exit()</span>
+    
+    
+<span class="c1">#     T=298.15</span>
+<span class="c1">#     T=398.15</span>
+    <span class="n">T</span><span class="o">=</span><span class="mf">598.15</span>
+    
+    
+<span class="c1">#     vib_freq = ff.filter_vib_freq(vib_freq, freq_val = 0.0000123)</span>
+    <span class="n">vib_freq</span> <span class="o">=</span> <span class="n">ff</span><span class="o">.</span><span class="n">filter_vib_freq</span><span class="p">(</span><span class="n">vib_freq</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;filtered vib frequencies (eV): </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">vib_freq</span><span class="p">))</span>
+
+    <span class="n">thermohar_obj</span> <span class="o">=</span> <span class="n">ThermoHarmonic</span><span class="p">(</span><span class="n">E_dft</span><span class="o">=</span><span class="mf">0.00000000</span><span class="p">,</span> <span class="c1"># eV</span>
+                       <span class="n">vib_freq</span><span class="o">=</span><span class="n">vib_freq</span><span class="p">,</span> 
+                       <span class="n">temp</span><span class="o">=</span><span class="n">T</span> 
+                      <span class="p">)</span>    
+   
+    <span class="n">thermohar_obj</span><span class="o">.</span><span class="n">get_E_vib</span><span class="p">()</span>
+    <span class="n">thermohar_obj</span><span class="o">.</span><span class="n">get_S_vib</span><span class="p">()</span>
+    <span class="n">thermohar_obj</span><span class="o">.</span><span class="n">get_internal_energy</span><span class="p">()</span>
+    <span class="n">thermohar_obj</span><span class="o">.</span><span class="n">get_Helmholtz_free_energy</span><span class="p">()</span>
+
+    
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Sonu Kumar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

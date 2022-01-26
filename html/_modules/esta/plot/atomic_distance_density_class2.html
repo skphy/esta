@@ -1,0 +1,425 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>esta.plot.atomic_distance_density_class2 &mdash; EStA 2.6.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> EStA
+          
+
+          
+            
+            <img src="../../../_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.6.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html#ml-algorithms">ML algorithms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EStA2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-surfreact-package">esta.surfReact package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-mlbag-package">esta.mlBag package</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Cheat Sheet</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">EStA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>esta.plot.atomic_distance_density_class2</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for esta.plot.atomic_distance_density_class2</h1><div class="highlight"><pre>
+<span></span>
+<span class="c1"># coding: utf-8</span>
+
+<span class="c1"># In[31]:</span>
+
+
+<span class="c1"># %load atomic_distance_density_class1.py</span>
+
+<div class="viewcode-block" id="atom_distance_density"><a class="viewcode-back" href="../../../esta.plot.html#esta.plot.atomic_distance_density_class2.atom_distance_density">[docs]</a><span class="k">class</span> <span class="nc">atom_distance_density</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    script to calculate the atomic distance density </span>
+<span class="sd">    for a specific bond of atoms in the POSCAR file</span>
+
+<span class="sd">    A Gaussian distribution function is used for the delta function:</span>
+<span class="sd">    ----------------------------------------------------------------</span>
+
+<span class="sd">    The probability density for the Gaussian distribution is</span>
+
+<span class="sd">    p(x) = \frac{1}{\sqrt{ 2 \pi \sigma^2 }} e^{ - \frac{ (x - \mu)^2 } {2 \sigma^2} },</span>
+
+<span class="sd">    where \mu is the mean and \sigma the standard deviation. </span>
+<span class="sd">    The square of the standard deviation, \sigma^2, is called the variance.</span>
+
+<span class="sd">    The function has its peak at the mean, and its “spread” increases with </span>
+<span class="sd">    the standard deviation (the function reaches 0.607 times its maximum </span>
+<span class="sd">    at x + \sigma and x - \sigma [2]). This implies that numpy.random.normal </span>
+<span class="sd">    is more likely to return samples lying close to the mean, rather than </span>
+<span class="sd">    those far away.</span>
+
+
+<span class="sd">    Parameters/Inputs</span>
+<span class="sd">    -----------------</span>
+<span class="sd">    x : ? </span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    `atomic distance density` array  and distance</span>
+<span class="sd">    array are returned.</span>
+
+
+<span class="sd">#     See Also</span>
+<span class="sd">#     --------</span>
+<span class="sd">#     add other related things here.</span>
+
+<span class="sd">#     Notes</span>
+<span class="sd">#     -----</span>
+
+<span class="sd">#     Examples</span>
+<span class="sd">#     --------</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Inside atomic distance density class&quot;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="atom_distance_density.distance_array"><a class="viewcode-back" href="../../../esta.plot.html#esta.plot.atomic_distance_density_class2.atom_distance_density.distance_array">[docs]</a>    <span class="k">def</span> <span class="nf">distance_array</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">natom_type</span><span class="p">,</span><span class="n">tau_cartesian</span><span class="p">):</span>
+        <span class="n">_distance</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natom_type</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">natom_type</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="nb">range</span><span class="p">(</span><span class="n">natom_type</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+                <span class="n">_distance</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">tau_cartesian</span><span class="p">[</span><span class="n">i</span><span class="p">,:]</span><span class="o">-</span><span class="n">tau_cartesian</span><span class="p">[</span><span class="n">j</span><span class="p">,:]))</span>
+
+        <span class="n">_distance</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">_distance</span><span class="p">)</span>
+    <span class="c1">#     print _distance</span>
+        <span class="n">_distance</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">_distance</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">_distance</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">_distance</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="atom_distance_density.remove_duplicate"><a class="viewcode-back" href="../../../esta.plot.html#esta.plot.atomic_distance_density_class2.atom_distance_density.remove_duplicate">[docs]</a>    <span class="k">def</span> <span class="nf">remove_duplicate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">list_entries</span><span class="p">):</span> 
+        <span class="c1"># order preserving</span>
+        <span class="n">_distint</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">list_entries</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">e</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">_distint</span><span class="p">:</span>
+                <span class="n">_distint</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">_distint</span></div>
+
+<div class="viewcode-block" id="atom_distance_density.gaussian_distribution"><a class="viewcode-back" href="../../../esta.plot.html#esta.plot.atomic_distance_density_class2.atom_distance_density.gaussian_distribution">[docs]</a>    <span class="k">def</span> <span class="nf">gaussian_distribution</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">sigma</span><span class="p">):</span>
+        <span class="k">return</span> <span class="mf">1.</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mf">2.</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">sigma</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="p">(</span><span class="n">x0</span><span class="o">-</span><span class="n">x</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">sigma</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span></div>
+
+    
+<div class="viewcode-block" id="atom_distance_density.dos"><a class="viewcode-back" href="../../../esta.plot.html#esta.plot.atomic_distance_density_class2.atom_distance_density.dos">[docs]</a>    <span class="k">def</span> <span class="nf">dos</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">array_distribution</span><span class="p">,</span> <span class="n">sigma</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Now calculation of atomic distance density</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">dgrid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">500</span><span class="p">)</span>
+        <span class="n">d</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">around</span><span class="p">(</span><span class="n">array_distribution</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="n">inp</span> <span class="o">=</span> <span class="n">d</span>
+        <span class="n">addos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">dgrid</span><span class="p">)</span>
+        <span class="c1">#bulk</span>
+        <span class="c1">#sigma=0.03</span>
+<span class="c1">#         sigma=0.01</span>
+        <span class="c1">#nanowire</span>
+        <span class="c1">#sigma=0.1 </span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">dgrid</span><span class="p">)):</span>
+            <span class="nb">sum</span><span class="o">=</span><span class="mf">0.</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">inp</span><span class="p">)):</span>
+                <span class="c1"># instead call gaussian function .. </span>
+                <span class="c1">#sum += adden_object.gaussian_distribution(dgrid[i], inp[j], sigma)</span>
+                <span class="c1">#old one</span>
+                <span class="nb">sum</span> <span class="o">+=</span> <span class="mf">1.</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">sigma</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="p">(</span><span class="n">dgrid</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">inp</span><span class="p">[</span><span class="n">j</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="mf">2.</span><span class="o">*</span><span class="n">sigma</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>  
+            <span class="n">addos</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">sum</span>
+        <span class="n">addos</span> <span class="o">=</span> <span class="n">addos</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">addos</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">addos</span><span class="p">,</span> <span class="n">dgrid</span></div></div>
+
+    
+    
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    for testing purpose and others</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+       
+    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+    <span class="kn">import</span> <span class="nn">sys</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;/home/sonu/ipython_exercises/vasp_bag/&#39;</span><span class="p">)</span>
+    <span class="kn">from</span> <span class="nn">inout</span> <span class="kn">import</span> <span class="n">read_poscar</span>
+    <span class="c1"># read_poscar=read_poscar1</span>
+
+    <span class="n">natom_type</span><span class="o">=</span><span class="n">read_poscar</span><span class="o">.</span><span class="n">natom_type</span>
+    <span class="n">tau_cartesian</span> <span class="o">=</span> <span class="n">read_poscar</span><span class="o">.</span><span class="n">tau_cartesian</span>
+    
+<span class="c1">#     instantiate the class </span>
+    <span class="n">adden_object</span> <span class="o">=</span> <span class="n">atom_distance_density</span><span class="p">()</span>
+
+    <span class="c1"># calling function distance</span>
+    <span class="n">distance</span><span class="p">,</span> <span class="n">dim</span> <span class="o">=</span> <span class="n">adden_object</span><span class="o">.</span><span class="n">distance_array</span><span class="p">(</span><span class="n">natom_type</span><span class="p">,</span><span class="n">tau_cartesian</span><span class="p">)</span>
+
+    <span class="c1">#-------------------</span>
+    <span class="c1">#bulk</span>
+<span class="c1">#    sigma=0.01</span>
+    <span class="c1">#nanowire</span>
+    <span class="n">sigma</span><span class="o">=</span><span class="mf">0.1</span> 
+    <span class="c1">#------------------</span>
+    
+    <span class="c1">#Calling the dos method</span>
+    <span class="n">addos</span><span class="p">,</span> <span class="n">dgrid</span> <span class="o">=</span> <span class="n">adden_object</span><span class="o">.</span><span class="n">dos</span><span class="p">(</span><span class="n">distance</span><span class="p">,</span><span class="n">sigma</span><span class="p">)</span>
+
+<span class="c1">#    np.savetxt(&#39;addos_bulk.dat&#39;, np.column_stack([dgrid, addos]))</span>
+<span class="c1">#    np.savetxt(&#39;addos_v18o48h24.dat&#39;, np.column_stack([dgrid, addos]))</span>
+    <span class="n">np</span><span class="o">.</span><span class="n">savetxt</span><span class="p">(</span><span class="s1">&#39;addos_v18o36h24.dat&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">column_stack</span><span class="p">([</span><span class="n">dgrid</span><span class="p">,</span> <span class="n">addos</span><span class="p">]))</span>
+<span class="c1">#    np.savetxt(&#39;addos_v18o32h24.dat&#39;, np.column_stack([dgrid, addos]))</span>
+<span class="c1">#    !cat addos.dat</span>
+
+    
+    
+<span class="c1">#---basics --------------------</span>
+
+
+<span class="c1"># class aclas():</span>
+<span class="c1">#     def __init__(self):</span>
+<span class="c1"># #     def __init__(self,x,y):</span>
+<span class="c1">#         print &quot;const ...&quot;</span>
+<span class="c1"># #         self.x = x</span>
+<span class="c1"># #         self.y = y</span>
+<span class="c1">#     def declare(self, a, b):</span>
+<span class="c1"># #         return self.x, self.y, a, b</span>
+<span class="c1">#         return a, b  </span>
+
+<span class="c1">#     def fetch(self, ar, sigma):</span>
+<span class="c1">#         return ar/sigma</span>
+
+<span class="c1"># # var = aclas(1,3)   </span>
+<span class="c1"># var = aclas()                 </span>
+<span class="c1"># # x.declare(2,3)</span>
+<span class="c1"># print var.declare(3,2)</span>
+
+<span class="c1"># print var.fetch(1,2.)</span>
+
+<span class="c1"># var.fetch(var.declare(1,2)[0],2.)</span>
+
+
+
+<span class="c1"># In[30]:</span>
+
+
+<span class="c1">#&quot;&quot;&quot;</span>
+<span class="c1">#A decorator usually replaces a function with a different one</span>
+<span class="c1">#&quot;&quot;&quot;</span>
+<span class="c1">#def deco1(f):</span>
+<span class="c1">#    print (&quot;running..deco1 &quot;)</span>
+<span class="c1">#</span>
+<span class="c1">#def deco(func):</span>
+<span class="c1">#    def inner():</span>
+<span class="c1">#        print(&#39;running inner()&#39;)</span>
+<span class="c1">#    return inner</span>
+<span class="c1">#</span>
+<span class="c1">#@deco</span>
+<span class="c1">#def target():</span>
+<span class="c1">#    print(&#39;running target()&#39;)</span>
+<span class="c1">#    </span>
+<span class="c1">#    </span>
+<span class="c1">#target()</span>
+<span class="c1">## print a</span>
+<span class="c1">#target</span>
+<span class="c1">#</span>
+<span class="c1">#@deco1</span>
+<span class="c1">#def target():</span>
+<span class="c1">#    print(&#39;running target()&#39;)</span>
+<span class="c1">#</span>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Sonu Kumar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

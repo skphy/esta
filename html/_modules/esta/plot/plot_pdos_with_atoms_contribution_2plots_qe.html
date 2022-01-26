@@ -1,0 +1,779 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>esta.plot.plot_pdos_with_atoms_contribution_2plots_qe &mdash; EStA 2.6.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> EStA
+          
+
+          
+            
+            <img src="../../../_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.6.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html#ml-algorithms">ML algorithms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EStA2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-surfreact-package">esta.surfReact package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-mlbag-package">esta.mlBag package</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Cheat Sheet</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">EStA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>esta.plot.plot_pdos_with_atoms_contribution_2plots_qe</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for esta.plot.plot_pdos_with_atoms_contribution_2plots_qe</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<div class="viewcode-block" id="get_pdos_files"><a class="viewcode-back" href="../../../esta.plot.html#esta.plot.plot_pdos_with_atoms_contribution_2plots_qe.get_pdos_files">[docs]</a><span class="k">def</span> <span class="nf">get_pdos_files</span><span class="p">(</span><span class="n">atm_info</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    </span>
+<span class="sd">    extract files based on the atomic number of atoms</span>
+<span class="sd">    </span>
+<span class="sd">    input: </span>
+<span class="sd">    ------</span>
+<span class="sd">        atm_info: list of integers for atoms whose pdos is needed with all s,p,d...charaters</span>
+<span class="sd">    </span>
+<span class="sd">    output:</span>
+<span class="sd">    ------</span>
+<span class="sd">        fileslist: list of all files whose pdos is needed</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="kn">import</span> <span class="nn">glob</span>
+    <span class="c1">#atm_info=[128, 129]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atom info: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">atm_info</span><span class="p">))</span>
+    <span class="n">fileslist</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">iat</span> <span class="ow">in</span> <span class="n">atm_info</span><span class="p">:</span>
+        <span class="n">fl</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*atm#&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">iat</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;(&#39;</span><span class="o">+</span><span class="s1">&#39;*&#39;</span><span class="p">)</span>
+        <span class="c1">#print(fl)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">fl</span><span class="p">:</span>
+            <span class="n">fileslist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="c1">#print(fileslist)</span>
+    <span class="k">return</span> <span class="n">fileslist</span></div>
+
+
+<div class="viewcode-block" id="get_range_int_from_intervals"><a class="viewcode-back" href="../../../esta.plot.html#esta.plot.plot_pdos_with_atoms_contribution_2plots_qe.get_range_int_from_intervals">[docs]</a><span class="k">def</span> <span class="nf">get_range_int_from_intervals</span><span class="p">(</span><span class="n">list_of_intervals</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    get range of integers from intervals (in the form of strings)</span>
+<span class="sd">    </span>
+<span class="sd">    input:</span>
+<span class="sd">    ------</span>
+<span class="sd">        list of intervals: e.g. [&#39;1&#39;,&#39;2-4&#39;,&#39;6-10&#39;] </span>
+<span class="sd">        note that elements of list are strings</span>
+<span class="sd">        </span>
+<span class="sd">    output:</span>
+<span class="sd">    ------</span>
+<span class="sd">        range of intervals: e.g. [1, 2, 3, 4, 6, 7, 8, 9, 10]</span>
+<span class="sd">        note that elements are integers</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="c1">#listt = [&#39;1&#39;,&#39;2-4&#39;,&#39;6-10&#39;]</span>
+    <span class="n">ele</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">list_of_intervals</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">))</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="n">val</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)</span>
+            <span class="n">val_ini</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">val</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+            <span class="n">val_fin</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">val</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+            <span class="c1">#print(val_ini, val_fin)</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">val_ini</span> <span class="p">,</span> <span class="n">val_fin</span><span class="o">+</span><span class="mi">1</span> <span class="p">):</span>
+               <span class="n">ele</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">j</span><span class="p">)</span> 
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="n">ele</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">elem</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">e</span><span class="p">)</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">ele</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">elem</span></div>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="c1">#print(&#39;...&#39;)</span>
+    <span class="c1">#listt = [&#39;1&#39;,&#39;2-4&#39;,&#39;6-10&#39;]</span>
+    <span class="c1">#print(&#39;input intervals: {}&#39;.format(listt))</span>
+    <span class="c1">#rangee = get_range_int_from_intervals(listt)</span>
+    <span class="c1">#print(&#39;range is: {}&#39;.format(rangee))</span>
+    
+    <span class="c1">#----</span>
+    <span class="n">files_req</span> <span class="o">=</span> <span class="n">get_pdos_files</span><span class="p">(</span><span class="n">get_range_int_from_intervals</span><span class="p">([</span><span class="s1">&#39;122-129&#39;</span><span class="p">]))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;needed files are</span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">files_req</span><span class="p">))</span>
+
+
+<span class="c1"># In[4]:</span>
+
+
+<div class="viewcode-block" id="checkEqual_list"><a class="viewcode-back" href="../../../esta.plot.html#esta.plot.plot_pdos_with_atoms_contribution_2plots_qe.checkEqual_list">[docs]</a><span class="k">def</span> <span class="nf">checkEqual_list</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    comparing all the elements of list and return logical variable</span>
+<span class="sd">    whether they are same or different</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="k">return</span> <span class="n">lst</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="o">==</span> <span class="n">lst</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span></div>
+
+
+
+<div class="viewcode-block" id="process_colums"><a class="viewcode-back" href="../../../esta.plot.html#esta.plot.plot_pdos_with_atoms_contribution_2plots_qe.process_colums">[docs]</a><span class="k">def</span> <span class="nf">process_colums</span><span class="p">(</span><span class="n">filelist</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    - summing the 2nd, and 3rd columns of the following multiple files and </span>
+<span class="sd">      create new file with 0th column (from one file), 1st summed and 2nd summed </span>
+<span class="sd">      columns from all files</span>
+<span class="sd">      </span>
+<span class="sd">    input:</span>
+<span class="sd">    ------</span>
+<span class="sd">        filelist: list of all files whose columns hve to be processed</span>
+<span class="sd">        </span>
+<span class="sd">    output:</span>
+<span class="sd">    ------</span>
+<span class="sd">         sum_data_file: file with resultant columns,</span>
+<span class="sd">         data_array: array[:,:,0:3] data with processed columns</span>
+<span class="sd">        </span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="kn">import</span> <span class="nn">sys</span>
+    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1">#     filelist=[&#39;alk.pdos_atm#128(C)_wfc#2(p)&#39;, \</span>
+<span class="c1">#               &#39;alk.pdos_atm#129(C)_wfc#2(p)&#39;, \</span>
+<span class="c1">#               &#39;alk.pdos_atm#129(C)_wfc#2(p)&#39; ]</span>
+    <span class="c1"># filelist=[&#39;d1.dat&#39;, &#39;d2.dat&#39;, &#39;d3.dat&#39; ]</span>
+
+    <span class="n">rows</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">ifile</span> <span class="ow">in</span> <span class="n">filelist</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">ifile</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f1</span><span class="p">:</span>
+            <span class="n">lines</span> <span class="o">=</span> <span class="n">f1</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+            <span class="n">rows</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">lines</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no. of rows in all files: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">rows</span><span class="p">))</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">checkEqual_list</span><span class="p">(</span><span class="n">rows</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">result</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no. of rows are consitent in all the files.&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no. of rows are not consitent in all the files.&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;exiting ..&#39;</span><span class="p">)</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+
+    <span class="n">columns</span> <span class="o">=</span> <span class="mi">3</span>                   <span class="c1"># 3 columns; energy, ldos_up, ldos_dwn</span>
+    <span class="n">total_files</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">filelist</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span> <span class="c1"># 1 more file for adding dos </span>
+    <span class="n">nrows</span> <span class="o">=</span> <span class="n">rows</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span>             <span class="c1"># 1 less as 1st line is comment line</span>
+    <span class="n">data_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span> <span class="n">total_files</span><span class="p">,</span> <span class="n">nrows</span><span class="p">,</span> <span class="n">columns</span><span class="p">))</span> 
+    <span class="c1"># print(np.shape(data_array))</span>
+
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">ifile</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">filelist</span><span class="p">):</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">ifile</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f1</span><span class="p">:</span>
+            <span class="n">lines</span> <span class="o">=</span> <span class="n">f1</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+            <span class="n">content</span> <span class="o">=</span> <span class="p">[</span> <span class="n">x</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">lines</span> <span class="p">]</span>
+            <span class="k">for</span> <span class="n">icon</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">content</span><span class="p">)):</span>
+                <span class="c1">#print(&#39;icon: &#39;, icon)</span>
+                <span class="k">if</span> <span class="n">icon</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># icon = 0 is comment line</span>
+                    <span class="n">data_array</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">icon</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">content</span><span class="p">[</span><span class="n">icon</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span>
+                    <span class="n">data_array</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">icon</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">content</span><span class="p">[</span><span class="n">icon</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">])</span>
+                    <span class="n">data_array</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">icon</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">content</span><span class="p">[</span><span class="n">icon</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">2</span><span class="p">])</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;data stored in the data_array from all files&#39;</span><span class="p">)</span>                
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;data_array: data_array[0,0:10,0:1]&#39;</span><span class="p">)</span>                    
+    <span class="c1">#print(data_array[:,:,:])                               </span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">data_array</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>                               
+    <span class="c1"># sys.exit()    </span>
+
+    <span class="c1"># adding dos columns i.e 2nd and 3rd columns of the input files                    </span>
+    <span class="n">array_sum</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">data_array</span><span class="p">[:,:,</span><span class="mi">1</span><span class="p">:],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">data_array</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_array</span><span class="p">[</span><span class="mi">0</span><span class="p">,:,</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">data_array</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,:,</span><span class="mi">1</span><span class="p">:]</span> <span class="o">=</span> <span class="n">array_sum</span>
+    <span class="n">data_sum</span> <span class="o">=</span> <span class="n">data_array</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,:,:]</span>
+
+
+    <span class="c1"># # sum_data_file = filelist[0].split(&quot;.&quot;)[0]</span>
+    <span class="c1"># # alk.pdos_atm#102(N)_wfc#1(s)</span>
+    <span class="c1"># # print(filelist[0].split(&quot;#&quot;)[1].split(&quot;(&quot;)[0]) </span>
+    <span class="c1"># atm=&#39;A&#39;+str(filelist[0].split(&quot;#&quot;)[1].split(&quot;(&quot;)[0])</span>
+    <span class="c1"># # print(filelist[0].split(&quot;#&quot;)[2].split(&quot;(&quot;)[0])</span>
+    <span class="c1"># orb = &#39;-S&#39;+str(filelist[0].split(&quot;#&quot;)[2].split(&quot;(&quot;)[0])</span>
+    <span class="c1"># sum_data_file = str(atm)+str(orb)+&#39;_sum.dat&#39;</span>
+
+    <span class="n">namefile</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">ifile</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">filelist</span><span class="p">)):</span>
+        <span class="n">atm</span> <span class="o">=</span> <span class="s1">&#39;A&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">filelist</span><span class="p">[</span><span class="n">ifile</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;(&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">orb</span> <span class="o">=</span> <span class="s1">&#39;-S&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">filelist</span><span class="p">[</span><span class="n">ifile</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">)[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;(&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">namefile</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">atm</span><span class="p">)</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">orb</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;_&#39;</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;namefile: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">namefile</span><span class="p">))</span>
+    <span class="n">sum_data_fil</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">namefile</span><span class="p">)</span>
+    <span class="n">sum_data_file</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">sum_data_fil</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;sum.dat&#39;</span>
+    <span class="n">np</span><span class="o">.</span><span class="n">savetxt</span><span class="p">(</span><span class="n">sum_data_file</span><span class="p">,</span> <span class="n">data_sum</span><span class="p">)</span>
+
+    <span class="c1"># sys.exit()</span>
+
+    <span class="n">ltest</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">if</span> <span class="n">ltest</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;--summed data ------&#39;</span><span class="p">)</span>
+        <span class="n">array_sum</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">data_array</span><span class="p">[:,:,</span><span class="mi">1</span><span class="p">:],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">array_sum</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">])</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;--initial data --&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">data_array</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">:])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">data_array</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">:])</span>
+        <span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">data_array</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">:])</span>
+
+        <span class="c1">#------</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;result final data&#39;</span><span class="p">)</span>
+        <span class="n">data_array</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">data_array</span><span class="p">[</span><span class="mi">0</span><span class="p">,:,</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">data_array</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,:,</span><span class="mi">1</span><span class="p">:]</span> <span class="o">=</span> <span class="n">array_sum</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">data_array</span><span class="p">[:,</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">,:])</span>
+    
+    <span class="k">return</span> <span class="n">sum_data_file</span><span class="p">,</span> <span class="n">data_array</span></div>
+    
+
+
+    
+<div class="viewcode-block" id="get_plots1"><a class="viewcode-back" href="../../../esta.plot.html#esta.plot.plot_pdos_with_atoms_contribution_2plots_qe.get_plots1">[docs]</a><span class="k">def</span> <span class="nf">get_plots1</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">fileout</span><span class="p">,</span> <span class="n">llabel</span><span class="p">,</span> <span class="n">refenergy</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lspin</span> <span class="o">=</span> <span class="kc">False</span><span class="p">):</span>
+
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    plot data in the form of single or multiple plots</span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    NOTE:</span>
+<span class="sd">    </span>
+<span class="sd">     for multiple plots: try following</span>
+
+<span class="sd">            fig, (ax1, ax2, ax3) = plt.subplots(3, 1, sharex=True)</span>
+
+<span class="sd">            ax1.fill_between(x, 0, y1, facecolor=&#39;yellow&#39;, alpha=0.5))</span>
+<span class="sd">            ax1.set_ylabel(&#39;between y1 and 0&#39;)</span>
+
+<span class="sd">            ax2.fill_between(x, y1, 1)</span>
+<span class="sd">            ax2.set_ylabel(&#39;between y1 and 1&#39;)</span>
+
+<span class="sd">            ax3.fill_between(x, y1, y2)</span>
+<span class="sd">            ax3.set_ylabel(&#39;between y1 and y2&#39;)</span>
+<span class="sd">            ax3.set_xlabel(&#39;x&#39;)</span>
+
+<span class="sd">    </span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    <span class="kn">import</span> <span class="nn">re</span>
+    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+    <span class="kn">import</span> <span class="nn">matplotlib</span>
+    <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+    
+    <span class="c1"># %matplotlib qt4agg</span>
+    <span class="c1"># %matplotlib nbagg </span>
+    
+    <span class="kn">from</span> <span class="nn">matplotlib.ticker</span> <span class="kn">import</span> <span class="n">FormatStrFormatter</span>
+    <span class="kn">import</span> <span class="nn">matplotlib.ticker</span> <span class="k">as</span> <span class="nn">tick</span>
+
+    
+    <span class="k">if</span> <span class="n">refenergy</span><span class="o">==</span><span class="kc">None</span><span class="p">:</span>
+        <span class="n">refenergy</span> <span class="o">=</span> <span class="mf">0.0</span>
+    
+    <span class="n">fille1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">fille1</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="n">refenergy</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">fille1</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
+    <span class="c1"># removing -ve part in the pdos; making it to be zero</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mf">0.01</span><span class="p">:</span>
+            <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0</span>
+    
+    <span class="k">if</span> <span class="n">lspin</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;plotting both spin up and down channels&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; spin down in -ve y axis with +ve parts removed (same for upper plot)&#39;</span><span class="p">)</span>
+<span class="c1">#         y_1 = fille1[:,2]</span>
+<span class="c1">#         y_1 = y_1 * -1</span>
+<span class="c1">#         plt.plot(x,y_1, &#39;black&#39;, lw = 2)</span>
+<span class="c1">#         plt.show()</span>
+
+    <span class="c1">#changing y to -y and removing + part (making it 0)</span>
+    <span class="n">y_1</span> <span class="o">=</span> <span class="n">fille1</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="o">-</span><span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y_1</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">y_1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mf">0.01</span><span class="p">:</span>
+            <span class="n">y_1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0</span>
+            
+        
+    <span class="c1">#plt.xlim(np.amin(x)  - 0.2*np.amax(x), np.amax(x) + 0.2*np.amax(x))</span>
+    <span class="c1">#plt.ylim(np.amin(y)  - 0.0*np.amax(y), np.amax(y) + 0.2*np.amax(y))</span>
+    
+
+    
+    
+    <span class="c1">#----------------------</span>
+    <span class="c1">#plt.ylim(-np.max(y), np.max(y))</span>
+    <span class="c1">#plt.xlim(-6,8,2)</span>
+    <span class="c1">#plt.ylim(-5, 5)</span>
+    <span class="c1">#plt.xticks(range(-6, 8, 2))</span>
+    
+    
+    <span class="c1">#plt.xlim(-12,8,2)</span>
+    <span class="c1">#plt.ylim(-10, 10)</span>
+    <span class="c1">#plt.xticks(range(-12, 8, 2))</span>
+    
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">60</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+
+    <span class="c1">#----------------------</span>
+    
+    
+    
+    
+    
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;E$_F$ (eV)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;partial dos (arb. units)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+    
+    
+    <span class="c1">#plt.ylabel(&#39;DOS (states/eV)&#39;, fontsize=20)</span>
+    <span class="c1"># plt.xlabel(&#39;E$_F$ (eV)&#39;, fontsize=25)</span>
+    <span class="c1"># plt.ylabel(&#39;E$^{form}$ (eV)&#39;, fontsize=25)</span>
+    <span class="c1">#plt.title(&#39;S-rich condition&#39;, fontsize =25 )</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s1">&#39;major&#39;</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s1">&#39;minor&#39;</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+    <span class="c1">#plt.axvline(x = 0., color=&#39;k&#39;, linestyle = &#39;--&#39;)</span>
+    
+    <span class="c1">#plt.fill_between use</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">y</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="c1">#plt.grid(True)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">llabel</span><span class="p">)</span>
+    <span class="c1">#plt.plot(x,y, &#39;black&#39;,lw = 2, label=&#39;Ni-d&#39; )</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span> <span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">lw</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">llabel</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y_1</span><span class="p">,</span> <span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">lw</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper right&#39;</span><span class="p">)</span>
+    
+    
+    
+    
+    
+    <span class="c1">#prefic for the output file derived from input &quot;filename&quot;   </span>
+    <span class="c1">#strr=re.findall(&#39;\d?\d?\w+\.&#39;, filename)</span>
+    <span class="n">strr</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">llabel</span><span class="o">+</span><span class="s2">&quot;_&quot;</span><span class="p">)</span>
+    
+    <span class="c1">#plt.show()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">strr</span><span class="o">+</span><span class="n">fileout</span><span class="o">+</span><span class="s1">&#39;.eps&#39;</span><span class="p">,</span><span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;eps&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">strr</span><span class="o">+</span><span class="n">fileout</span><span class="o">+</span><span class="s1">&#39;.pdf&#39;</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">,</span><span class="nb">format</span> <span class="o">=</span><span class="s1">&#39;pdf&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">strr</span><span class="o">+</span><span class="n">fileout</span><span class="o">+</span><span class="s1">&#39;.png&#39;</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">,</span><span class="nb">format</span> <span class="o">=</span><span class="s1">&#39;png&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">strr</span><span class="o">+</span><span class="n">fileout</span><span class="o">+</span><span class="s1">&#39;.svg&#39;</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">,</span><span class="nb">format</span> <span class="o">=</span><span class="s1">&#39;svg&#39;</span><span class="p">)</span>
+
+<span class="c1">#     plt.savefig(strr[0]+fileout+&#39;.eps&#39;,bbox_inches=&#39;tight&#39;, format=&#39;eps&#39;)</span>
+<span class="c1">#     plt.savefig(strr[0]+fileout+&#39;.pdf&#39;, bbox_inches=&#39;tight&#39;,format =&#39;pdf&#39;)</span>
+<span class="c1">#     plt.savefig(strr[0]+fileout+&#39;.png&#39;, bbox_inches=&#39;tight&#39;,format =&#39;png&#39;)</span>
+<span class="c1">#     plt.savefig(strr[0]+fileout+&#39;.svg&#39;, bbox_inches=&#39;tight&#39;,format =&#39;svg&#39;)</span>
+<span class="c1">#     plt.savefig(&#39;plot_final1.png&#39;,bbox_inches=&#39;tight&#39;, format=&#39;png&#39;)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span></div>
+
+<span class="k">def</span> <span class="nf">get_fermi</span><span class="p">(</span><span class="n">filein</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filein</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">ff</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ff</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s1">&#39;Fermi&#39;</span> <span class="ow">in</span> <span class="n">i</span><span class="p">:</span>
+                <span class="n">ss</span> <span class="o">=</span> <span class="n">i</span>
+                <span class="n">fermi</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="n">ss</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">4</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">fermi</span>
+
+<span class="k">def</span> <span class="nf">get_fermi_from_dos</span><span class="p">(</span><span class="n">filedos</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filedos</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">ff</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+        <span class="n">fermi</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="n">ff</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">9</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">fermi</span>
+
+    
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    
+    <span class="n">outputfile</span><span class="o">=</span><span class="s1">&#39;out&#39;</span>  <span class="c1">#eps and pdf are added by default</span>
+    <span class="n">refenergy</span><span class="o">=</span> <span class="n">get_fermi_from_dos</span><span class="p">(</span><span class="s1">&#39;alk.dos&#39;</span><span class="p">)</span>
+    <span class="c1">#llabel= ilabel[j]</span>
+    <span class="n">llabel</span><span class="o">=</span> <span class="s1">&#39;sum&#39;</span> <span class="c1">#sum_data_file.split(&quot;.&quot;)[0]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">llabel</span><span class="p">)</span>
+
+    <span class="n">sum_data_file</span><span class="p">,</span> <span class="n">_</span>  <span class="o">=</span> <span class="n">process_colums</span><span class="p">(</span><span class="n">files_req</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;sum_data_file: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sum_data_file</span><span class="p">))</span>
+    <span class="c1">#sum_data_file = &#39;A122-S1_A123-S1_A124-S1_A125-S1_A126-S1_A127-S1_A128-S1_A128-S2_A129-S1_A129-S2_sum.dat&#39;</span>
+    <span class="c1">#get_plots1(sum_data_file, outputfile, llabel, refenergy, lspin=True)</span>
+
+
+<span class="c1"># In[10]:</span>
+
+
+<div class="viewcode-block" id="get_plots"><a class="viewcode-back" href="../../../esta.plot.html#esta.plot.plot_pdos_with_atoms_contribution_2plots_qe.get_plots">[docs]</a><span class="k">def</span> <span class="nf">get_plots</span><span class="p">(</span><span class="n">fileout</span><span class="p">,</span> <span class="n">llabel</span><span class="p">,</span> <span class="n">fil</span><span class="p">,</span> <span class="n">refenergy</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lspin</span> <span class="o">=</span> <span class="kc">False</span><span class="p">):</span>
+
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    plot data in the form of single or multiple plots</span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    NOTE:</span>
+<span class="sd">    </span>
+<span class="sd">     for multiple plots: try following</span>
+
+<span class="sd">            fig, (ax1, ax2, ax3) = plt.subplots(3, 1, sharex=True)</span>
+
+<span class="sd">            ax1.fill_between(x, 0, y1, facecolor=&#39;yellow&#39;, alpha=0.5))</span>
+<span class="sd">            ax1.set_ylabel(&#39;between y1 and 0&#39;)</span>
+
+<span class="sd">            ax2.fill_between(x, y1, 1)</span>
+<span class="sd">            ax2.set_ylabel(&#39;between y1 and 1&#39;)</span>
+
+<span class="sd">            ax3.fill_between(x, y1, y2)</span>
+<span class="sd">            ax3.set_ylabel(&#39;between y1 and y2&#39;)</span>
+<span class="sd">            ax3.set_xlabel(&#39;x&#39;)</span>
+
+<span class="sd">    </span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    <span class="kn">import</span> <span class="nn">re</span>
+    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+    <span class="kn">import</span> <span class="nn">matplotlib</span>
+    <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+        
+    <span class="kn">from</span> <span class="nn">matplotlib.ticker</span> <span class="kn">import</span> <span class="n">FormatStrFormatter</span>
+    <span class="kn">import</span> <span class="nn">matplotlib.ticker</span> <span class="k">as</span> <span class="nn">tick</span>
+
+    
+    <span class="k">if</span> <span class="n">refenergy</span><span class="o">==</span><span class="kc">None</span><span class="p">:</span>
+        <span class="n">refenergy</span> <span class="o">=</span> <span class="mf">0.0</span>
+    
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;files are: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">fil</span><span class="p">))</span>
+    <span class="n">color</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="s1">&#39;darkred&#39;</span><span class="p">,</span><span class="s1">&#39;peachpuff&#39;</span><span class="p">]</span>
+    <span class="c1">#fille1 = np.loadtxt(filename)</span>
+    <span class="k">for</span> <span class="n">jj</span><span class="p">,</span> <span class="n">ifile</span> <span class="ow">in</span>  <span class="nb">enumerate</span><span class="p">(</span><span class="n">fil</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;files are: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ifile</span><span class="p">))</span>
+        <span class="n">fille1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="n">ifile</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">fille1</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="n">refenergy</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">fille1</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
+        <span class="c1"># removing -ve part in the pdos; making it to be zero</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">)):</span>
+            <span class="k">if</span> <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mf">0.01</span><span class="p">:</span>
+                <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0</span>
+
+        <span class="k">if</span> <span class="n">lspin</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;plotting both spin up and down channels&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; spin down in -ve y axis with +ve parts removed (same for upper plot)&#39;</span><span class="p">)</span>
+    <span class="c1">#         y_1 = fille1[:,2]</span>
+    <span class="c1">#         y_1 = y_1 * -1</span>
+    <span class="c1">#         plt.plot(x,y_1, &#39;black&#39;, lw = 2)</span>
+    <span class="c1">#         plt.show()</span>
+
+        <span class="c1">#changing y to -y and removing + part (making it 0)</span>
+        <span class="n">y_1</span> <span class="o">=</span> <span class="n">fille1</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="o">-</span><span class="mi">1</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y_1</span><span class="p">)):</span>
+            <span class="k">if</span> <span class="n">y_1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mf">0.01</span><span class="p">:</span>
+                <span class="n">y_1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0</span>
+            
+
+        <span class="c1">#plt.xlim(np.amin(x)  - 0.2*np.amax(x), np.amax(x) + 0.2*np.amax(x))</span>
+        <span class="c1">#plt.ylim(np.amin(y)  - 0.0*np.amax(y), np.amax(y) + 0.2*np.amax(y))</span>
+
+
+
+
+        <span class="c1">#----------------------</span>
+        <span class="c1">#plt.ylim(-np.max(y), np.max(y))</span>
+        <span class="c1">#plt.xlim(-6,8,2)</span>
+        <span class="c1">#plt.ylim(-5, 5)</span>
+        <span class="c1">#plt.xticks(range(-6, 8, 2))</span>
+
+
+        <span class="c1">#plt.xlim(-12,8,2)</span>
+        <span class="c1">#plt.ylim(-10, 10)</span>
+        <span class="c1">#plt.xticks(range(-12, 8, 2))</span>
+
+        <span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">12</span><span class="p">,</span><span class="mi">4</span> <span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">60</span><span class="p">,</span> <span class="mi">60</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+
+        <span class="c1">#----------------------</span>
+
+
+
+
+
+        <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;E-E$_F$ (eV)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;projected dos (a. u.)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+
+
+        <span class="c1">#plt.ylabel(&#39;DOS (states/eV)&#39;, fontsize=20)</span>
+        <span class="c1"># plt.xlabel(&#39;E$_F$ (eV)&#39;, fontsize=25)</span>
+        <span class="c1"># plt.ylabel(&#39;E$^{form}$ (eV)&#39;, fontsize=25)</span>
+        <span class="c1">#plt.title(&#39;S-rich condition&#39;, fontsize =25 )</span>
+
+        <span class="n">plt</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s1">&#39;major&#39;</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s1">&#39;minor&#39;</span><span class="p">,</span> <span class="n">labelsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+        <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+        <span class="c1">#plt.axvline(x = 0., color=&#39;k&#39;, linestyle = &#39;--&#39;)</span>
+
+        <span class="c1">#plt.fill_between use</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">y</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+        <span class="c1">#plt.grid(True)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">llabel</span><span class="p">)</span>
+        <span class="c1">#plt.plot(x,y, &#39;black&#39;,lw = 2, label=&#39;Ni-d&#39; )</span>
+
+        <span class="c1">#plt.plot(x,y, &#39;black&#39;,lw = 2, label=llabel[jj])</span>
+        <span class="c1">#plt.plot(x,y_1, &#39;black&#39;, lw = 2)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="p">[</span><span class="n">jj</span><span class="p">],</span> <span class="n">lw</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">llabel</span><span class="p">[</span><span class="n">jj</span><span class="p">])</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y_1</span><span class="p">,</span> <span class="n">color</span><span class="p">[</span><span class="n">jj</span><span class="p">],</span> <span class="n">lw</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span>
+
+        <span class="c1">#plt.legend(loc=&#39;upper right&#39;)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper right&#39;</span><span class="p">)</span>
+
+
+        <span class="c1">#prefic for the output file derived from input &quot;filename&quot;   </span>
+        <span class="c1">#strr=re.findall(&#39;\d?\d?\w+\.&#39;, filename)</span>
+        <span class="n">strr</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">llabel</span><span class="p">[</span><span class="n">jj</span><span class="p">]</span><span class="o">+</span><span class="s2">&quot;_&quot;</span><span class="p">)</span>
+
+        <span class="c1">#plt.show()</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">strr</span><span class="o">+</span><span class="n">fileout</span><span class="o">+</span><span class="s1">&#39;.eps&#39;</span><span class="p">,</span><span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;eps&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">strr</span><span class="o">+</span><span class="n">fileout</span><span class="o">+</span><span class="s1">&#39;.pdf&#39;</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">,</span><span class="nb">format</span> <span class="o">=</span><span class="s1">&#39;pdf&#39;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">strr</span><span class="o">+</span><span class="n">fileout</span><span class="o">+</span><span class="s1">&#39;.png&#39;</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">,</span><span class="nb">format</span> <span class="o">=</span><span class="s1">&#39;png&#39;</span><span class="p">)</span>
+        <span class="c1">#plt.savefig(strr+fileout+&#39;.svg&#39;, bbox_inches=&#39;tight&#39;,format =&#39;svg&#39;)</span>
+
+    
+    <span class="n">strr_new</span> <span class="o">=</span> <span class="s2">&quot;_&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">llabel</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;strr_new is: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">strr_new</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">strr_new</span><span class="p">)</span><span class="o">+</span><span class="n">fileout</span><span class="o">+</span><span class="s1">&#39;.eps&#39;</span><span class="p">,</span><span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;eps&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">strr_new</span><span class="p">)</span><span class="o">+</span><span class="n">fileout</span><span class="o">+</span><span class="s1">&#39;.pdf&#39;</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">,</span><span class="nb">format</span> <span class="o">=</span><span class="s1">&#39;pdf&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">strr_new</span><span class="p">)</span><span class="o">+</span><span class="n">fileout</span><span class="o">+</span><span class="s1">&#39;.png&#39;</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">,</span><span class="nb">format</span> <span class="o">=</span><span class="s1">&#39;png&#39;</span><span class="p">)</span>
+    <span class="c1">#plt.savefig(&#39;&#39;.join(strr)+fileout+&#39;.svg&#39;, bbox_inches=&#39;tight&#39;,format =&#39;svg&#39;)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="get_fermi"><a class="viewcode-back" href="../../../esta.plot.html#esta.plot.plot_pdos_with_atoms_contribution_2plots_qe.get_fermi">[docs]</a><span class="k">def</span> <span class="nf">get_fermi</span><span class="p">(</span><span class="n">filein</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filein</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">ff</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ff</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s1">&#39;Fermi&#39;</span> <span class="ow">in</span> <span class="n">i</span><span class="p">:</span>
+                <span class="n">ss</span> <span class="o">=</span> <span class="n">i</span>
+                <span class="n">fermi</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="n">ss</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">4</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">fermi</span></div>
+
+<div class="viewcode-block" id="get_fermi_from_dos"><a class="viewcode-back" href="../../../esta.plot.html#esta.plot.plot_pdos_with_atoms_contribution_2plots_qe.get_fermi_from_dos">[docs]</a><span class="k">def</span> <span class="nf">get_fermi_from_dos</span><span class="p">(</span><span class="n">filedos</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filedos</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">ff</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+        <span class="n">fermi</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="n">ff</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">9</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">fermi</span></div>
+
+    
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span><span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="c1">#sku</span>
+    <span class="n">ilabel</span> <span class="o">=</span><span class="p">[</span><span class="s1">&#39;total&#39;</span><span class="p">,</span> <span class="s1">&#39;C_H&#39;</span><span class="p">]</span> 
+    <span class="n">files_req</span> <span class="o">=</span> <span class="n">get_pdos_files</span><span class="p">(</span><span class="n">get_range_int_from_intervals</span><span class="p">([</span><span class="s1">&#39;122-135&#39;</span><span class="p">]))</span>
+
+    <span class="c1">#ilabel =[&#39;total&#39;, &#39;O&#39;] </span>
+    <span class="c1">#files_req = get_pdos_files(get_range_int_from_intervals([&#39;105&#39;,&#39;110&#39;]))</span>
+
+    <span class="c1">#ilabel =[&#39;total&#39;, &#39;C_H_O&#39;] </span>
+    <span class="c1">#files_req = get_pdos_files(get_range_int_from_intervals([&#39;105&#39;,&#39;110&#39;,&#39;122-135&#39;]))</span>
+
+
+
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;needed files are</span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">files_req</span><span class="p">))</span>
+    <span class="n">sum_data_file</span><span class="p">,</span> <span class="n">_</span>  <span class="o">=</span> <span class="n">process_colums</span><span class="p">(</span><span class="n">files_req</span><span class="p">)</span>
+    
+    <span class="c1">#fflist=[&#39;alk.pdos_tot&#39;,&#39;A122-S1_A123-S1_A124-S1_A125-S1_A126-S1_A127-S1_A128-S1_A128-S2_A129-S1_A129-S2_sum.dat&#39;]</span>
+    <span class="n">fflist</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;alk.pdos_tot&#39;</span><span class="p">,</span> <span class="n">sum_data_file</span><span class="p">]</span>
+    
+        
+    <span class="n">outputfile</span><span class="o">=</span><span class="s1">&#39;out&#39;</span>  <span class="c1">#eps and pdf are added by default</span>
+    <span class="n">refenergy</span><span class="o">=</span> <span class="n">get_fermi_from_dos</span><span class="p">(</span><span class="s1">&#39;alk.dos&#39;</span><span class="p">)</span>
+    <span class="n">llabel</span><span class="o">=</span> <span class="n">ilabel</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">llabel</span><span class="p">)</span>
+    <span class="n">get_plots</span><span class="p">(</span><span class="n">outputfile</span><span class="p">,</span> <span class="n">llabel</span><span class="p">,</span> <span class="n">fflist</span><span class="p">,</span> <span class="n">refenergy</span><span class="p">,</span> <span class="n">lspin</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Sonu Kumar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

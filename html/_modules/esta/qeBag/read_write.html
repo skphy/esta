@@ -1,0 +1,1057 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>esta.qeBag.read_write &mdash; EStA 2.6.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> EStA
+          
+
+          
+            
+            <img src="../../../_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.6.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html#ml-algorithms">ML algorithms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EStA2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-surfreact-package">esta.surfReact package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-mlbag-package">esta.mlBag package</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Cheat Sheet</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">EStA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>esta.qeBag.read_write</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for esta.qeBag.read_write</h1><div class="highlight"><pre>
+<span></span>
+<span class="c1"># coding: utf-8</span>
+
+<span class="c1"># In[1]:</span>
+
+
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1"># This file is part of esta (electronic structure analyser) code</span>
+<span class="c1"># </span>
+<span class="c1">#</span>
+
+<span class="c1"># copyright skumar</span>
+<span class="c1"># email: sonukumar.physics@gmail.com</span>
+<span class="c1">#</span>
+<span class="c1"># </span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">np</span><span class="o">.</span><span class="n">set_printoptions</span><span class="p">(</span><span class="n">suppress</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<div class="viewcode-block" id="RWpwo"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write.RWpwo">[docs]</a><span class="k">class</span> <span class="nc">RWpwo</span><span class="p">:</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Class to read and write data file for the atomic structures</span>
+
+<span class="sd">    - read cell parmeters and/or atomic positions</span>
+<span class="sd">    - write this data in xyz, poscar, and qe-str format</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    class to output the cell parameters and/or atomic positions in </span>
+<span class="sd">    different file formats: xyz, poscar, qe-cell_paramerere+atomic_positions</span>
+<span class="sd">    </span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">infile</span><span class="p">,</span> <span class="n">outfile</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">calling RWpwo class&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">infile</span> <span class="o">=</span> <span class="n">infile</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">outfile</span> <span class="o">=</span> <span class="n">outfile</span>
+
+    <span class="c1">#def __repr__(self):</span>
+    <span class="c1">#    print(&quot;inside __repr__ method&quot;)</span>
+    <span class="c1">#    #return None</span>
+    
+    <span class="c1">#def __str__(self):</span>
+    <span class="c1">#    print(&#39; inside __str__ method&#39;)</span>
+    
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">vector_prod</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+        <span class="c1">#import numpy as np</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;callind static method vector_prod&#39;</span><span class="p">)</span>
+        <span class="k">return</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+    
+<div class="viewcode-block" id="RWpwo.vector_prod"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write.RWpwo.vector_prod">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">vector_prod</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;calling class method vector_ptod&#39;</span><span class="p">)</span>
+        <span class="k">return</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">b</span><span class="p">))</span></div>
+    
+<div class="viewcode-block" id="RWpwo.get_natoms"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write.RWpwo.get_natoms">[docs]</a>    <span class="k">def</span> <span class="nf">get_natoms</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">infile</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">infile</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">infile</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">ff</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ff</span><span class="p">:</span>
+                <span class="k">if</span> <span class="s1">&#39;number of atoms/cell      =&#39;</span> <span class="ow">in</span> <span class="n">i</span><span class="p">:</span>
+                    <span class="n">ss</span> <span class="o">=</span> <span class="n">i</span>
+                    <span class="n">natoms</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">ss</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">4</span><span class="p">])</span>
+            <span class="k">return</span> <span class="p">(</span><span class="n">natoms</span><span class="p">,</span> <span class="s2">&quot;None&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="RWpwo.get_atm_positions"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write.RWpwo.get_atm_positions">[docs]</a>    <span class="k">def</span> <span class="nf">get_atm_positions</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        find atom positions with labels</span>
+<span class="sd">        ...</span>
+
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">infile</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">infile</span>
+
+        <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+    <span class="c1">#     natoms = self.get_natoms(infile)[0]</span>
+        <span class="n">natoms</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_natoms</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">infile</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+
+            <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+            <span class="n">pos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">natoms</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+            <span class="n">lpos</span> <span class="o">=</span> <span class="kc">False</span>
+
+            <span class="c1">#print(&#39;last occurance of ATOMIC_POSITIONS/Forces&#39;)</span>
+            <span class="c1">#print(&#39;     in pwo file is taken for position variable ...this is wrong&#39;)</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="s1">&#39;ATOMIC_POSITIONS (angstrom)&#39;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                    <span class="n">lpos</span> <span class="o">=</span> <span class="kc">True</span>
+                    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                        <span class="n">pos</span><span class="p">[</span><span class="n">j</span><span class="p">:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">])</span>
+                        <span class="n">pos</span><span class="p">[</span><span class="n">j</span><span class="p">:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">2</span><span class="p">])</span>
+                        <span class="n">pos</span><span class="p">[</span><span class="n">j</span><span class="p">:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">3</span><span class="p">])</span>
+
+            <span class="n">pos_indx</span><span class="o">=</span> <span class="p">[]</span>
+            <span class="n">label</span> <span class="o">=</span><span class="p">[]</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="s1">&#39;ATOMIC_POSITIONS (angstrom)&#39;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
+                    <span class="n">pos_indx</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+            <span class="n">last_indx</span> <span class="o">=</span> <span class="n">pos_indx</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+            <span class="n">pos_</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">natoms</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">last_indx</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">last_indx</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">natoms</span><span class="p">):</span>
+                <span class="n">label</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">]))</span>
+                <span class="n">k</span> <span class="o">=</span> <span class="n">j</span><span class="o">-</span> <span class="p">(</span><span class="n">last_indx</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+                <span class="n">pos_</span><span class="p">[</span><span class="n">k</span><span class="p">:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">])</span>
+                <span class="n">pos_</span><span class="p">[</span><span class="n">k</span><span class="p">:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">2</span><span class="p">])</span>
+                <span class="n">pos_</span><span class="p">[</span><span class="n">k</span><span class="p">:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">3</span><span class="p">])</span>
+            <span class="c1">#print(&#39;**&#39;*10,k+1, &#39;=no of atoms&#39;)</span>
+
+            <span class="k">if</span> <span class="n">lpos</span><span class="p">:</span>
+                <span class="c1">#print(&#39; &#39;)</span>
+                <span class="c1">#print(len(label))</span>
+                <span class="c1">#print (label)</span>
+
+                <span class="c1"># Note pos variable is replaces by atomic positions many time</span>
+                <span class="c1">#  depending upon the search critea (ATOMIC_POSITIONS); pos_ is updated</span>
+                <span class="c1"># only once ..due to the new implementation...good sk!!</span>
+                <span class="c1"># NOTE: try this way to other search conditions ..good luck</span>
+
+                <span class="c1">#return (pos, pos_, label, &quot;Angstrom&quot;)</span>
+                <span class="k">return</span> <span class="p">(</span><span class="n">pos_</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="s2">&quot;Angstrom&quot;</span><span class="p">)</span>
+
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">------------------------------------&#39;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Serious error in file ..............&quot;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ATOMIC_POSITIONS block not present&quot;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;------------------------------------</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+                <span class="k">return</span> <span class="kc">None</span>  </div>
+
+
+<div class="viewcode-block" id="RWpwo.get_cell_parameters"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write.RWpwo.get_cell_parameters">[docs]</a>    <span class="k">def</span> <span class="nf">get_cell_parameters</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+
+<span class="sd">        return:</span>
+<span class="sd">            cell vectors in angstrom or bohr</span>
+
+<span class="sd">        what is does:</span>
+<span class="sd">        </span>
+<span class="sd">        for &#39;rlx&#39; calculations:</span>
+<span class="sd">            search:</span>
+<span class="sd">              &quot;lattice parameter (alat)&quot;</span>
+<span class="sd">              &quot;crystal axes: (cart. coord. in units of alat)&quot;                    </span>
+
+<span class="sd">        for &#39;vc-relax&#39; calculations:</span>
+<span class="sd">            search:</span>
+<span class="sd">            &#39;CELL_PARAMETERS (angstrom)&#39;</span>
+<span class="sd">        ...</span>
+
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">infile</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">infile</span>
+
+        <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+        <span class="c1">#import esta.general.conversion_factors as cf</span>
+        <span class="kn">import</span> <span class="nn">esta.measure.conversion_factors</span> <span class="k">as</span> <span class="nn">cf</span>
+
+        <span class="c1">#natoms = get_natoms(infile)[0]</span>
+
+
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">infile</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+
+            <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+
+            
+            <span class="c1">#---------------</span>
+            <span class="n">lv_vcrlx</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="n">lp</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="n">lv</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="n">lvec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+            <span class="c1">#---------------</span>
+<span class="c1">#             try:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;looking for vc-relax CELL_PARAMETERS (angstrom) .. &#39;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="s2">&quot;CELL_PARAMETERS (angstrom)&quot;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                    <span class="n">lv_vcrlx</span> <span class="o">=</span> <span class="kc">True</span>
+                    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">):</span>
+                        <span class="n">lvec</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span>
+                        <span class="n">lvec</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">])</span>
+                        <span class="n">lvec</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">2</span><span class="p">])</span>
+                        <span class="c1">#print(&#39;lvec[j-1,0]&#39;, lvec[j-1:,0])</span>
+            <span class="k">if</span> <span class="n">lv_vcrlx</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;looking for vc-relax CELL_PARAMETERS (angstrom) .. found&#39;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;looking for vc-relax CELL_PARAMETERS (angstrom) .. not found&#39;</span><span class="p">)</span>
+            
+<span class="c1">#             except IOError:</span>
+<span class="c1">#             except:</span>
+        
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">lv_vcrlx</span><span class="p">:</span>
+                
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;lv_vcrlx:&#39;</span><span class="p">,</span> <span class="n">lv_vcrlx</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;=&gt; CELL_PARAMETERS (angstrom) not found&#39;</span><span class="p">)</span>  
+                
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;looking for lattice parameter (alat)&#39;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; and &#39;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;crystal axes: (cart. coord. in units of alat)&#39;</span><span class="p">)</span>
+                
+                
+                
+                <span class="c1">#lp = False</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+                    <span class="k">if</span> <span class="s2">&quot;lattice parameter (alat)&quot;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                        <span class="n">lp</span> <span class="o">=</span> <span class="kc">True</span>
+                        <span class="n">alat</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">4</span><span class="p">])</span>  <span class="c1"># in bohr unit</span>
+                        <span class="c1">#print(alat)</span>
+
+                <span class="n">lvec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+                <span class="c1">#lv = False                   </span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+                    <span class="k">if</span> <span class="s2">&quot;crystal axes: (cart. coord. in units of alat)&quot;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                        <span class="n">lv</span> <span class="o">=</span> <span class="kc">True</span>
+                        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">):</span>
+                            <span class="n">lvec</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">3</span><span class="p">])</span>
+                            <span class="n">lvec</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">4</span><span class="p">])</span>
+                            <span class="n">lvec</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">5</span><span class="p">])</span>
+                            <span class="c1">#print(&#39;lvec:&#39;,j-1)</span>
+                            <span class="c1">#print(lvec[j-1])</span>
+                                            
+            <span class="k">if</span> <span class="n">lv_vcrlx</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">(</span><span class="n">lvec</span><span class="p">,</span> <span class="s2">&quot;Angstrom&quot;</span><span class="p">)</span>
+            
+            <span class="k">if</span> <span class="n">lp</span> <span class="o">&amp;</span> <span class="n">lv</span><span class="p">:</span>
+                <span class="c1">#for ii in range(len(lvec)):</span>
+                <span class="c1">#    lvec[ii] = lvec[ii]*alat* cf.bohr2ang</span>
+
+                <span class="n">lvec</span> <span class="o">=</span> <span class="n">lvec</span><span class="o">*</span><span class="n">alat</span><span class="o">*</span> <span class="n">cf</span><span class="o">.</span><span class="n">bohr2ang</span>    
+                <span class="k">return</span> <span class="p">(</span><span class="n">lvec</span><span class="p">,</span> <span class="s2">&quot;Angstrom&quot;</span><span class="p">)</span>
+
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">------------------------------------&#39;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Serious error in file ..............&quot;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;either or both alat and lattice vector block not present&quot;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; .. or CELL_PARAMETER not present &#39;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;------------------------------------</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+                <span class="k">return</span> <span class="kc">None</span>  </div>
+
+            
+            
+<div class="viewcode-block" id="RWpwo.get_energies_and_kpt"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write.RWpwo.get_energies_and_kpt">[docs]</a>    <span class="k">def</span> <span class="nf">get_energies_and_kpt</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get the band energies at k point by reading the scf calculation </span>
+<span class="sd">        out file</span>
+<span class="sd">        </span>
+<span class="sd">        NOTE: Need verbosity =&#39;high&#39; in the scf input file to print the </span>
+<span class="sd">        band energies </span>
+<span class="sd">        &#39;&#39;&#39;</span></div>
+            
+            
+            
+    <span class="c1"># def get_xyz_file(outfile):</span>
+<div class="viewcode-block" id="RWpwo.get_xyz_file"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write.RWpwo.get_xyz_file">[docs]</a>    <span class="k">def</span> <span class="nf">get_xyz_file</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>    
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get xyz file by reading the atomic positions and atomic labels: use method</span>
+<span class="sd">            - get_atm_positions(infile)</span>
+
+<span class="sd">        return:</span>
+<span class="sd">                `outfile`: write data in xyz file specified by name `outfile`</span>
+
+
+<span class="sd">        IMPORTANT: ordeing same elements together: not done yet .. to be done..</span>
+<span class="sd">                   .. so for the time being open the file with Avogadro and save again </span>
+<span class="sd">                      as xyz file</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="n">prefix</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">infile</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">))[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">outfile</span> <span class="o">=</span> <span class="n">prefix</span><span class="o">+</span><span class="s1">&#39;.xyz&#39;</span>    
+
+        <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+        <span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+
+        <span class="c1">#pos, label = self.get_atm_positions(infile)[0], self.get_atm_positions(infile)[1]</span>
+        <span class="n">pos</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_atm_positions</span><span class="p">()[</span><span class="mi">0</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_atm_positions</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="c1">#print(len(pos),len(label))</span>
+
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">outfile</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pos</span><span class="p">)))</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">xyz file created by sk on &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; using esta&#39;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pos</span><span class="p">)):</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">label</span><span class="p">[</span><span class="n">j</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">pos</span><span class="p">[</span><span class="n">j</span><span class="p">]))))</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;writing data in xyz format&#39;</span><span class="p">)</span></div>
+        <span class="c1">#print(&quot;IMPORTANT: ordeing same elements together: not done yet .. to be done..&quot;)</span>
+        <span class="c1">#print(&quot;           .. so for the time being open the file with Avogadro and save again&quot;) </span>
+        <span class="c1">#print(&quot;              as xyz file&quot;)</span>
+
+
+<div class="viewcode-block" id="RWpwo.get_xyz_grouped_file"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write.RWpwo.get_xyz_grouped_file">[docs]</a>    <span class="k">def</span>  <span class="nf">get_xyz_grouped_file</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>    
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get xyz file by reading the atomic positions and atomic labels: use method</span>
+<span class="sd">            - get_atm_positions(infile)</span>
+
+<span class="sd">        return:</span>
+<span class="sd">                `outfile`: write data in xyz file specified by name `outfile`</span>
+
+<span class="sd">        NOTE: similar atoms are grouped together</span>
+
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="n">prefix</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">infile</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">))[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">outfile</span> <span class="o">=</span> <span class="n">prefix</span><span class="o">+</span><span class="s1">&#39;_g.xyz&#39;</span>
+
+
+        <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+        <span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+
+        <span class="n">pos</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_atm_positions</span><span class="p">()[</span><span class="mi">0</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_atm_positions</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
+
+
+        <span class="n">atom_label</span><span class="p">,</span> <span class="n">atm_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_grouped_list</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
+        <span class="c1">#print(atom_label, atm_id)</span>
+
+        <span class="n">new_position</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">pos</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pos</span><span class="p">)):</span>
+            <span class="n">new_position</span><span class="p">[</span><span class="n">i</span><span class="p">,:]</span> <span class="o">=</span> <span class="n">pos</span><span class="p">[</span><span class="n">atm_id</span><span class="p">[</span><span class="n">i</span><span class="p">],:]</span>
+            <span class="c1">#print(atom_label[i], new_position[i,:])</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;writing data in xyz format with grouping of similar atoms&#39;</span><span class="p">)</span>   
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">outfile</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pos</span><span class="p">)))</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> g-xyz file created by sk on &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; using esta&#39;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pos</span><span class="p">)):</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">atom_label</span><span class="p">[</span><span class="n">j</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">new_position</span><span class="p">[</span><span class="n">j</span><span class="p">]))))</span></div>
+
+        <span class="c1">#return(new_position, atom_label)</span>
+
+
+<div class="viewcode-block" id="RWpwo.get_poscar"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write.RWpwo.get_poscar">[docs]</a>    <span class="k">def</span> <span class="nf">get_poscar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        write cell_parameters and atomic postions, atom labels etc in </span>
+<span class="sd">        poscar file</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="n">infile</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">infile</span>
+
+        <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+        <span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+
+        <span class="n">prefix</span> <span class="o">=</span> <span class="p">(</span><span class="n">infile</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">))[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">outfile</span> <span class="o">=</span> <span class="n">prefix</span><span class="o">+</span><span class="s1">&#39;_POSCAR&#39;</span>
+
+
+        <span class="n">cell_parameter</span><span class="p">,</span> <span class="n">unit</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_cell_parameters</span><span class="p">()</span>
+
+        <span class="c1">#np.set_printoptions(precision=7)</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">set_printoptions</span><span class="p">(</span><span class="n">suppress</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+
+        <span class="n">pos</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_atm_positions</span><span class="p">()[</span><span class="mi">0</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_atm_positions</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
+
+
+        <span class="n">atom_label</span><span class="p">,</span> <span class="n">atm_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_grouped_list</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
+        <span class="c1">#print(atom_label, atm_id)</span>
+
+        <span class="n">new_position</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">pos</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pos</span><span class="p">)):</span>
+            <span class="n">new_position</span><span class="p">[</span><span class="n">i</span><span class="p">,:]</span> <span class="o">=</span> <span class="n">pos</span><span class="p">[</span><span class="n">atm_id</span><span class="p">[</span><span class="n">i</span><span class="p">],:]</span>
+
+        <span class="n">atomic_label</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_unique_list</span><span class="p">(</span><span class="n">atom_label</span><span class="p">)</span>
+
+        <span class="n">neach_atom</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_neach_type</span><span class="p">(</span><span class="n">atom_label</span><span class="p">)</span>
+
+
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;writing data in poscar file format&#39;</span><span class="p">)</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">outfile</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="c1">#np.set_printoptions(precision=7)</span>
+            <span class="c1">#np.set_printoptions(suppress=True)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;poscar file created by sk on &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; using esta&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;1.000&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>               
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">cell_parameter</span><span class="p">[</span><span class="n">j</span><span class="p">]]))</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span> <span class="nb">str</span><span class="p">(</span><span class="s2">&quot;    &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">atomic_label</span><span class="p">))</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span> 
+
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span> <span class="nb">str</span><span class="p">(</span><span class="s2">&quot;   &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">neach_atom</span><span class="p">])</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">))</span> 
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;Cartesian&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">new_position</span><span class="p">)):</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span> <span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">new_position</span><span class="p">[</span><span class="n">j</span><span class="p">]]))</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="RWpwo.get_element_label"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write.RWpwo.get_element_label">[docs]</a>    <span class="k">def</span> <span class="nf">get_element_label</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_atomic_number</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        using mendeleev for it : big database of elemental properties</span>
+
+
+<span class="sd">            In [22]: from mendeleev import element </span>
+<span class="sd">            In [21]: for i in [5,6,7,8]: </span>
+<span class="sd">            ...:     element(i) </span>
+<span class="sd">            ...:     print (element(i).symbol) </span>
+<span class="sd">            ...:                                                                                                                            </span>
+<span class="sd">            B</span>
+<span class="sd">            C</span>
+<span class="sd">            N</span>
+<span class="sd">            O</span>
+
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="kn">import</span> <span class="nn">mendeleev</span>
+        <span class="kn">from</span> <span class="nn">mendeleev</span> <span class="kn">import</span> <span class="n">element</span>
+        <span class="n">label</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">input_atomic_number</span><span class="p">:</span>
+            <span class="c1">#label.append(element(i).name)</span>
+            <span class="n">label</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">element</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">.</span><span class="n">symbol</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">label</span></div>
+
+<div class="viewcode-block" id="RWpwo.get_unique_list"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write.RWpwo.get_unique_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_unique_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp</span><span class="p">):</span>
+            <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">            get unique elements of list</span>
+
+<span class="sd">            return:</span>
+<span class="sd">                    string for each type of atoms </span>
+
+<span class="sd">            &#39;&#39;&#39;</span>
+            <span class="n">ulist</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">inp</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">x</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ulist</span><span class="p">:</span>
+                    <span class="n">ulist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">ulist</span></div>
+
+<div class="viewcode-block" id="RWpwo.get_grouped_list"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write.RWpwo.get_grouped_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_grouped_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">llist</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get same string elements of list grouped together</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+
+        <span class="k">def</span> <span class="nf">get_unique_list</span><span class="p">(</span><span class="n">inp</span><span class="p">):</span>
+            <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">            get unique elements of list</span>
+
+<span class="sd">            return:</span>
+<span class="sd">                    string for each type of atoms </span>
+<span class="sd">            &#39;&#39;&#39;</span>
+            <span class="n">ulist</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">inp</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">x</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ulist</span><span class="p">:</span>
+                    <span class="n">ulist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">ulist</span>
+
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_unique_list</span><span class="p">(</span><span class="n">llist</span><span class="p">)</span>
+        <span class="n">grouped_list</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">idx</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">res</span><span class="p">)):</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">llist</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="n">res</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">llist</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
+                    <span class="n">idx</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">idx</span><span class="p">:</span>
+            <span class="n">grouped_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">llist</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+        <span class="k">return</span><span class="p">(</span><span class="n">grouped_list</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="RWpwo.get_neach_type"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write.RWpwo.get_neach_type">[docs]</a>    <span class="k">def</span> <span class="nf">get_neach_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inp</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get number of list entries of each type</span>
+
+<span class="sd">        return:</span>
+
+<span class="sd">              list of integers for each type of atoms specifying their number</span>
+<span class="sd">        &#39;&#39;&#39;</span>    
+        <span class="n">glist</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_grouped_list</span><span class="p">(</span><span class="n">inp</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">ulist</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_unique_list</span><span class="p">(</span><span class="n">inp</span><span class="p">)</span>
+        <span class="c1">#print(ulist)</span>
+
+        <span class="n">neach</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ulist</span><span class="p">:</span>
+            <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">glist</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">j</span><span class="p">:</span>
+                    <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">neach</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+        <span class="c1">#print (neach)</span>
+        <span class="k">return</span><span class="p">(</span><span class="n">neach</span><span class="p">)</span></div></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span><span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    read the differecne btn normal instance, classs and  static method</span>
+
+<span class="sd">    https://stackoverflow.com/questions/136097/what-is-the-difference-between-staticmethod-and-classmethod</span>
+
+<span class="sd">    https://realpython.com/instance-class-and-static-methods-demystified/</span>
+
+<span class="sd">    https://stackoverflow.com/questions/12179271/meaning-of-classmethod-and-staticmethod-for-beginner</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1">#     a=np.array([1,3,2.])</span>
+<span class="c1">#     b=np.array([1,3,2.])</span>
+    <span class="c1">#print(RW.VectorProd(a,b))</span>
+
+    <span class="c1">#print (obj.VectorProd(a,b))</span>
+
+    <span class="c1">#print(RW.VectorProd(a,b))    </span>
+
+
+    <span class="n">llist</span><span class="o">=</span><span class="p">[</span>
+    <span class="s1">&#39;AB12_INCAR_0.out&#39;</span>
+    <span class="p">]</span>
+
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">infile</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">llist</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="o">*</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;processing file:&#39;</span><span class="p">,</span> <span class="n">infile</span><span class="p">)</span>
+        <span class="n">obj</span><span class="o">=</span><span class="n">RWpwo</span><span class="p">(</span><span class="n">infile</span><span class="p">)</span>
+        <span class="n">obj</span><span class="o">.</span><span class="n">get_poscar</span><span class="p">()</span>
+        <span class="n">obj</span><span class="o">.</span><span class="n">get_xyz_file</span><span class="p">()</span>
+        <span class="n">obj</span><span class="o">.</span><span class="n">get_xyz_grouped_file</span><span class="p">()</span>              
+<span class="c1">#        print(pos)</span>
+<span class="c1">#         print((&#39;forces: {}&#39;.format(forces[0])))</span>
+<span class="c1">#         print((&#39;forces_norm, units: {}&#39;.format(forces[1:])))</span>
+<span class="c1">#         print((&#39;Max and min of force on atoms&#39;, np.max(forces[1]), np.min(forces[1])))</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">llist</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;...done&#39;</span><span class="p">)</span>
+
+
+<span class="c1"># In[6]:</span>
+
+
+<div class="viewcode-block" id="RWpwi"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write.RWpwi">[docs]</a><span class="k">class</span> <span class="nc">RWpwi</span><span class="p">:</span>
+    
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    class to read the pw input file and create poscar file</span>
+<span class="sd">    </span>
+<span class="sd">    return:</span>
+<span class="sd">        generate poscar file after reading the pw input file</span>
+<span class="sd">    </span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">infile</span><span class="p">,</span> <span class="n">outfile</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">calling RWpwi class&#39;</span> <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">infile</span> <span class="o">=</span> <span class="n">infile</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">outfile</span> <span class="o">=</span> <span class="n">outfile</span>    
+        
+<div class="viewcode-block" id="RWpwi.get_unique_list"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write.RWpwi.get_unique_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_unique_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">inp</span><span class="p">):</span>
+
+            <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">            get unique elements of list</span>
+
+<span class="sd">            return:</span>
+<span class="sd">                    string for each type of atoms </span>
+
+<span class="sd">            &#39;&#39;&#39;</span>
+            
+            <span class="c1">#inp = self.inp</span>
+            
+            <span class="n">ulist</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">inp</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">x</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ulist</span><span class="p">:</span>
+                    <span class="n">ulist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">ulist</span></div>
+
+<div class="viewcode-block" id="RWpwi.get_grouped_list"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write.RWpwi.get_grouped_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_grouped_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">llist</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get same string elements of list grouped together</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="c1">#llist = self.llist</span>
+
+        <span class="k">def</span> <span class="nf">get_unique_list</span><span class="p">(</span><span class="n">inp</span><span class="p">):</span>
+            <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">            get unique elements of list</span>
+
+<span class="sd">            return:</span>
+<span class="sd">                    string for each type of atoms </span>
+<span class="sd">            &#39;&#39;&#39;</span>
+            <span class="n">ulist</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">inp</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">x</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ulist</span><span class="p">:</span>
+                    <span class="n">ulist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">ulist</span>
+
+        <span class="n">res</span> <span class="o">=</span> <span class="n">get_unique_list</span><span class="p">(</span><span class="n">llist</span><span class="p">)</span>
+        <span class="n">grouped_list</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">idx</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">res</span><span class="p">)):</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">llist</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="n">res</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">llist</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
+                    <span class="n">idx</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">idx</span><span class="p">:</span>
+            <span class="n">grouped_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">llist</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+        <span class="k">return</span><span class="p">(</span><span class="n">grouped_list</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="RWpwi.get_neach_type"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write.RWpwi.get_neach_type">[docs]</a>    <span class="k">def</span> <span class="nf">get_neach_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">inp</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get number of list entries of each type</span>
+
+<span class="sd">        return:</span>
+
+<span class="sd">              list of integers for each type of atoms specifying their </span>
+<span class="sd">              </span>
+<span class="sd">        &#39;&#39;&#39;</span>    
+        <span class="n">glist</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_grouped_list</span><span class="p">(</span><span class="n">inp</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">ulist</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_unique_list</span><span class="p">(</span><span class="n">inp</span><span class="p">)</span>
+        <span class="c1">#print(ulist)</span>
+
+        <span class="n">neach</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ulist</span><span class="p">:</span>
+            <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">glist</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">j</span><span class="p">:</span>
+                    <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">neach</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+        <span class="c1">#print (neach)</span>
+        <span class="k">return</span><span class="p">(</span><span class="n">neach</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="RWpwi.get_poscar"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.read_write.RWpwi.get_poscar">[docs]</a>    <span class="k">def</span> <span class="nf">get_poscar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        write cell_parameters and atomic postions, atom labels etc in </span>
+<span class="sd">        poscar file</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+        <span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+        <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+        <span class="kn">import</span> <span class="nn">re</span>
+        
+        <span class="n">infile</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">infile</span>
+
+        <span class="c1">#prefix = (infile.split(&#39;_&#39;))[0]</span>
+        <span class="n">prefix</span> <span class="o">=</span> <span class="p">(</span><span class="n">infile</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">))[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">outfile</span> <span class="o">=</span> <span class="s1">&#39;i&#39;</span><span class="o">+</span><span class="n">prefix</span><span class="o">+</span><span class="s1">&#39;_POSCAR&#39;</span>
+
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">infile</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>    
+            <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+
+            <span class="n">lv</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>    
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="s2">&quot;nat&quot;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                    <span class="n">nat</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>  <span class="c1"># in bohr unit</span>
+                    <span class="n">natom</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="nb">str</span><span class="p">(</span><span class="n">nat</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">))</span> <span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                    <span class="c1">#print(natom, len(natom))</span>
+                 
+                <span class="c1">#match cell --&gt; mcell</span>
+                <span class="n">mcell1</span><span class="o">=</span><span class="s2">&quot;CELL_PARAMETERS </span><span class="si">{Angstrom}</span><span class="s2">&quot;</span>
+                <span class="n">mcell2</span><span class="o">=</span><span class="s2">&quot;CELL_PARAMETERS {Angstrom }&quot;</span>
+                <span class="n">mcell3</span><span class="o">=</span><span class="s2">&quot;CELL_PARAMETERS { Angstrom }&quot;</span>
+                <span class="n">mcell4</span><span class="o">=</span><span class="s2">&quot;CELL_PARAMETERS { angstrom}&quot;</span>
+                <span class="n">mcell5</span><span class="o">=</span><span class="s2">&quot;CELL_PARAMETERS {angstrom }&quot;</span>
+                <span class="n">mcell6</span><span class="o">=</span><span class="s2">&quot;CELL_PARAMETERS { angstrom }&quot;</span>
+                <span class="n">mcell7</span><span class="o">=</span><span class="s2">&quot;CELL_PARAMETERS </span><span class="si">{angstrom}</span><span class="s2">&quot;</span>
+                <span class="c1">#if &quot;CELL_PARAMETERS {Angstrom}&quot; in lines[i]:</span>
+                <span class="k">if</span> <span class="n">mcell1</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>                   <span class="ow">or</span> <span class="n">mcell2</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>                    <span class="ow">or</span> <span class="n">mcell3</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>                    <span class="ow">or</span> <span class="n">mcell4</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>                    <span class="ow">or</span> <span class="n">mcell5</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>                    <span class="ow">or</span> <span class="n">mcell6</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>                    <span class="ow">or</span> <span class="n">mcell7</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">):</span>
+                    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+                        <span class="n">lv</span><span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">])</span>
+                        <span class="n">lv</span><span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">])</span>
+                        <span class="n">lv</span><span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">2</span><span class="p">])</span>
+                        
+        <span class="n">lfound_atomic_positions</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">infile</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>  
+            <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+<span class="c1">#                 print(&quot;&quot;)</span>
+<span class="c1">#                 print(lines[i])</span>
+                <span class="c1">#match atomic post --&gt; mat</span>
+                <span class="n">mat1</span><span class="o">=</span><span class="s2">&quot;ATOMIC_POSITIONS { angstrom }&quot;</span> 
+                <span class="n">mat2</span><span class="o">=</span><span class="s2">&quot;ATOMIC_POSITIONS {Angstrom }&quot;</span>   
+                <span class="n">mat3</span><span class="o">=</span><span class="s2">&quot;ATOMIC_POSITIONS { Angstrom }&quot;</span>   
+                <span class="n">mat4</span><span class="o">=</span><span class="s2">&quot;ATOMIC_POSITIONS { angstrom}&quot;</span>   
+                <span class="n">mat5</span><span class="o">=</span><span class="s2">&quot;ATOMIC_POSITIONS {angstrom }&quot;</span>   
+                <span class="n">mat6</span><span class="o">=</span><span class="s2">&quot;ATOMIC_POSITIONS </span><span class="si">{angstrom}</span><span class="s2">&quot;</span>   
+                    
+<span class="c1">#                 mat1=&quot;ATOMIC_POSITIONS { angstrom }\n&quot; </span>
+<span class="c1">#                 mat2=&quot;ATOMIC_POSITIONS {Angstrom }\n&quot;   </span>
+<span class="c1">#                 mat3=&quot;ATOMIC_POSITIONS { Angstrom }\n&quot;   </span>
+<span class="c1">#                 mat4=&quot;ATOMIC_POSITIONS { angstrom}\n&quot;   </span>
+<span class="c1">#                 mat5=&quot;ATOMIC_POSITIONS {angstrom }\n&quot;   </span>
+<span class="c1">#                 mat6=&quot;ATOMIC_POSITIONS {angstrom}\n&quot;   </span>
+
+
+<span class="c1">#                 if &quot;ATOMIC_POSITIONS { Angstrom }&quot; in lines[i]:</span>
+<span class="c1">#                 if mat1 in lines[i]\</span>
+<span class="c1">#                     or mat2 in lines[i] \</span>
+<span class="c1">#                     or mat3 in lines[i] \</span>
+<span class="c1">#                     or mat4 in lines[i] \</span>
+<span class="c1">#                     or mat5 in lines[i] \</span>
+<span class="c1">#                     or mat6 in lines[i]:</span>
+<span class="c1">#                     label = []</span>
+<span class="c1">#                     pos= (np.zeros(natom*3)).reshape(natom,3)</span>
+<span class="c1">#                     for j in range(natom):</span>
+<span class="c1">#                         label.append((lines[i+j+1].split()[0]))</span>
+<span class="c1">#                         pos[j:,0] = float(lines[i+j+1].split()[1])</span>
+<span class="c1">#                         pos[j:,1] = float(lines[i+j+1].split()[2])</span>
+<span class="c1">#                         pos[j:,2] = float(lines[i+j+1].split()[3])</span>
+
+                <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">mat1</span><span class="p">,</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">))</span>                    <span class="ow">or</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">mat2</span><span class="p">,</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">))</span>                    <span class="ow">or</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">mat3</span><span class="p">,</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">))</span>                    <span class="ow">or</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">mat4</span><span class="p">,</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">))</span>                    <span class="ow">or</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">mat5</span><span class="p">,</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">))</span>                    <span class="ow">or</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">mat6</span><span class="p">,</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)):</span>
+                    <span class="n">lfound_atomic_positions</span> <span class="o">=</span> <span class="kc">True</span>
+                    <span class="n">label</span> <span class="o">=</span> <span class="p">[]</span>
+                    <span class="n">pos</span><span class="o">=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">natom</span><span class="o">*</span><span class="mi">3</span><span class="p">))</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">natom</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+                    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natom</span><span class="p">):</span>
+                        <span class="n">label</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">]))</span>
+                        <span class="n">pos</span><span class="p">[</span><span class="n">j</span><span class="p">:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">])</span>
+                        <span class="n">pos</span><span class="p">[</span><span class="n">j</span><span class="p">:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">2</span><span class="p">])</span>
+                        <span class="n">pos</span><span class="p">[</span><span class="n">j</span><span class="p">:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">3</span><span class="p">])</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;File: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">infile</span><span class="p">))</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;ATOMIC_POSITIONS block in Angstrom present ...&#39;</span><span class="p">)</span>
+
+                        
+                        
+<span class="c1">#         with open(infile) as f:  </span>
+<span class="c1">#             lines = f.readlines()</span>
+<span class="c1">#             for i in range(len(lines)):</span>
+<span class="c1">#                 if re.search(mat1, lines[i].strip(&quot;\n&quot;))\</span>
+<span class="c1">#                     or re.search(mat2, lines[i].strip(&quot;\n&quot;))\</span>
+<span class="c1">#                     or re.search(mat3, lines[i].strip(&quot;\n&quot;))\</span>
+<span class="c1">#                     or re.search(mat4, lines[i].strip(&quot;\n&quot;))\</span>
+<span class="c1">#                     or re.search(mat5, lines[i].strip(&quot;\n&quot;))\</span>
+<span class="c1">#                     or re.search(mat6, lines[i].strip(&quot;\n&quot;)):</span>
+<span class="c1">#                     print(&#39;ATOMIC_POSITIONS in Angstrom not present ...&#39;)</span>
+<span class="c1">#                     print(&#39;  .. ATOMIC_POSITIONS must be in Angstrom&#39;)</span>
+<span class="c1">#                     print(&#39;  .. exiting&#39;)</span>
+<span class="c1">#                     import sys</span>
+<span class="c1">#                     sys.exit()</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">lfound_atomic_positions</span><span class="p">:</span>
+            <span class="c1">#print(&quot;&quot;)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;File: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">infile</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;ATOMIC_POSITIONS in Angstrom not present ...&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  .. ATOMIC_POSITIONS must be in Angstrom&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  .. exiting&#39;</span><span class="p">)</span>
+            <span class="kn">import</span> <span class="nn">sys</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+
+
+        <span class="n">atom_label</span><span class="p">,</span> <span class="n">atm_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_grouped_list</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
+        <span class="n">new_position</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">pos</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pos</span><span class="p">)):</span>
+            <span class="n">new_position</span><span class="p">[</span><span class="n">i</span><span class="p">,:]</span> <span class="o">=</span> <span class="n">pos</span><span class="p">[</span><span class="n">atm_id</span><span class="p">[</span><span class="n">i</span><span class="p">],:]</span>
+
+        <span class="n">atomic_label</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_unique_list</span><span class="p">(</span><span class="n">atom_label</span><span class="p">)</span>
+        <span class="n">neach_atom</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_neach_type</span><span class="p">(</span><span class="n">atom_label</span><span class="p">)</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;writing data in poscar file format&#39;</span><span class="p">)</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">outfile</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="c1">#np.set_printoptions(precision=7)</span>
+            <span class="c1">#np.set_printoptions(suppress=True)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;poscar file created by sk on &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; using esta&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;1.000&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>               
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;   &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;   &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.10f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lv</span><span class="p">[</span><span class="n">j</span><span class="p">]]))</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span> <span class="nb">str</span><span class="p">(</span><span class="s2">&quot;    &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">atomic_label</span><span class="p">))</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span> 
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span> <span class="nb">str</span><span class="p">(</span><span class="s2">&quot;   &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">neach_atom</span><span class="p">])</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">))</span> 
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;Cartesian&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">new_position</span><span class="p">)):</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;   &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;   &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.10f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">new_position</span><span class="p">[</span><span class="n">j</span><span class="p">]]))</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span></div></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    
+        <span class="n">llist</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="s1">&#39;AB12_INCAR.in&#39;</span><span class="p">,</span>
+                 <span class="s1">&#39;qe_scf.in&#39;</span>
+
+                <span class="p">]</span>
+
+        <span class="n">i</span><span class="o">=</span><span class="mi">0</span>
+        <span class="k">for</span> <span class="n">infile</span> <span class="ow">in</span> <span class="n">llist</span><span class="p">:</span>   
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*&#39;</span><span class="o">*</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;processing file:&#39;</span><span class="p">,</span> <span class="n">infile</span><span class="p">)</span>
+
+            <span class="n">rwobj</span> <span class="o">=</span> <span class="n">RWpwi</span><span class="p">(</span><span class="n">infile</span><span class="p">)</span>       
+            <span class="n">rwobj</span><span class="o">.</span><span class="n">get_poscar</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">llist</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;...done&#39;</span><span class="p">)</span>
+
+
+<span class="c1"># In[3]:</span>
+
+
+<span class="c1"># # s=12</span>
+<span class="c1"># try: </span>
+<span class="c1">#     print(s)</span>
+<span class="c1"># except:</span>
+<span class="c1">#     print(&#39;s is what?&#39;)</span>
+
+
+<span class="c1"># In[4]:</span>
+
+
+<span class="c1"># line=&quot;{ angstrom }&quot;</span>
+
+<span class="c1"># if mat1 in line or mat2 in line:</span>
+<span class="c1">#     print(line)</span>
+<span class="c1"># else:</span>
+<span class="c1">#     print(&#39;match not found&#39;)</span>
+
+
+<span class="c1"># In[5]:</span>
+
+
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">FOR TESTING ONLY;</span>
+
+
+
+
+<span class="sd">mat1 = &quot;ATOMIC_POSITIONS { angstrom }\n&quot;</span>
+<span class="sd">mat2= &#39;ATOMIC_POSITIONS { angstrom}\n&#39;</span>
+
+<span class="sd">with open(&#39;X.in&#39;) as f:</span>
+<span class="sd">    #print(f.readlines())</span>
+<span class="sd">    lines = f.readlines()</span>
+<span class="sd">    for i in lines:</span>
+<span class="sd">        if mat1 in i or mat2 in i:</span>
+<span class="sd">            print(&#39;match found!!&#39;)</span>
+<span class="sd">            print(i)</span>
+<span class="sd">            </span>
+<span class="sd">####--------other way to do above</span>
+<span class="sd">import re</span>
+<span class="sd"># if re.search(mat1,&quot;A cat and a rat can&#39;t be friends.&quot;):</span>
+<span class="sd"># ...     print(&quot;Some kind of cat has been found :-)&quot;)</span>
+<span class="sd">mat12= &quot;ATOMIC_POSITIONS { angstrom }&quot;</span>
+<span class="sd">mat22=&#39;ATOMIC_POSITIONS { angstrom}&#39;</span>
+
+<span class="sd">with open(&#39;X.in&#39;) as f:</span>
+<span class="sd">    #print(f.readlines())</span>
+<span class="sd">    lines = f.readlines()</span>
+<span class="sd">    for i in lines:</span>
+<span class="sd">        if re.search(mat12, i) or re.search(mat22, i): # in i or mat2 in i:</span>
+<span class="sd">            print(&#39;match found!!&#39;)</span>
+<span class="sd">            print(i)</span>
+
+
+<span class="sd">&#39;&#39;&#39;</span>
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Sonu Kumar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,728 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>esta.transitionState.neb &mdash; EStA 2.6.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> EStA
+          
+
+          
+            
+            <img src="../../../_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.6.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html#ml-algorithms">ML algorithms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EStA2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-surfreact-package">esta.surfReact package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-mlbag-package">esta.mlBag package</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Cheat Sheet</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">EStA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>esta.transitionState.neb</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for esta.transitionState.neb</h1><div class="highlight"><pre>
+<span></span><span class="ch">#!/usr/bin/env python</span>
+<span class="c1"># coding: utf-8</span>
+
+<span class="c1"># In[46]:</span>
+
+
+<span class="sd">&quot;&quot;&quot;finding the transition state using Neb class given initial and </span>
+<span class="sd">final atomic structures using </span>
+
+<span class="sd">1. normal NEB. </span>
+<span class="sd">2. Climbing NEB.</span>
+<span class="sd">3. Automatic NEB methods  .. to be done.</span>
+
+<span class="sd">__author__ = &#39;sk&#39;</span>
+
+<span class="sd">__email__ = &#39;sonukumar.physics@gmail.com&#39;</span>
+
+<span class="sd">__date__ = &#39;Nov, 2017&#39;</span>
+
+<span class="sd">.. note::</span>
+<span class="sd">   We take N+1 images in the elastic band. The end point images are</span>
+<span class="sd">   input relaxed structures (reactant and product as an example). The </span>
+<span class="sd">   N-1 images are created or feed and after that these images are </span>
+<span class="sd">   optimized to get converged elastic band.</span>
+<span class="sd">   i.e. </span>
+<span class="sd">   0  1  2  3 ... i ... N ---&gt; N+1 images; 0 and N images are fixed</span>
+
+<span class="sd">.. _link: http://aip.scitation.org/doi/10.1063/1.1323224</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<span class="n">__author__</span> <span class="o">=</span> <span class="s1">&#39;sk&#39;</span>
+<span class="n">__email__</span> <span class="o">=</span> <span class="s1">&#39;sonukumar.physics@gmail.com&#39;</span>
+
+
+<div class="viewcode-block" id="Neb"><a class="viewcode-back" href="../../../file4.html#esta.transitionState.neb.Neb">[docs]</a><span class="k">class</span> <span class="nc">Neb</span><span class="p">:</span> 
+    <span class="sd">&quot;&quot;&quot;class Neb: calculate the nedged force on all the images in the elastic band</span>
+<span class="sd">                </span>
+<span class="sd">    nedged force = (true force/dft force )_perpendicular componet + (spring </span>
+<span class="sd">        force)_parallel component    </span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="c1">#import numpy as np</span>
+    <span class="c1">#import sys</span>
+    <span class="c1">#import os</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">position</span><span class="p">,</span> <span class="n">force</span><span class="p">,</span> <span class="n">energy</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        position : array</span>
+<span class="sd">           array of rank 3 or shape (n_images, natoms, 3) specifying </span>
+<span class="sd">           atomic positions of all images;</span>
+<span class="sd">           NOTE: position variable for all the images =&gt; position contains all the images </span>
+<span class="sd">           present in the elastic band!!!</span>
+
+<span class="sd">        force : array</span>
+<span class="sd">           array of rank 3 or shape (n_images, natoms, 3) specifying </span>
+<span class="sd">           atomic forces on all images</span>
+
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        force_nedged: array</span>
+<span class="sd">            array of rank 3 or shape (n_images, natoms, 3) specifying nedged forces on </span>
+<span class="sd">            all images</span>
+<span class="sd">                            </span>
+<span class="sd">                            </span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;inside [Neb class] of neb.py&#39;</span><span class="p">)</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="n">position</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">force</span> <span class="o">=</span> <span class="n">force</span>
+        <span class="k">if</span> <span class="n">energy</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;WARNING: NEB calculation must have energies also for better analysis!!&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">energy</span> <span class="o">=</span> <span class="n">energy</span>
+    
+        <span class="c1">#if self.position.ndim != self.force.ndim:</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="o">.</span><span class="n">shape</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">force</span><span class="o">.</span><span class="n">shape</span><span class="p">:</span>   
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atomic position and force shape not same ... exiting!!&#39;</span><span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+        
+
+    <span class="c1">#def get_tangent(self, energies=None):</span>
+<div class="viewcode-block" id="Neb.get_tangent"><a class="viewcode-back" href="../../../file4.html#esta.transitionState.neb.Neb.get_tangent">[docs]</a>    <span class="k">def</span> <span class="nf">get_tangent</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="c1">#, energy=None):</span>
+        <span class="sd">&quot;&quot;&quot;get an estimate of the tangent at each image along the elastic band</span>
+<span class="sd">        </span>
+<span class="sd">        .. note::</span>
+<span class="sd">        </span>
+<span class="sd">           Two ways to estimation:</span>
+
+<span class="sd">           1) Graeme Henkelman, et al. OURNAL OF CHEMICAL PHYSICS VOLUME 113, </span>
+<span class="sd">           NUMBER 22 8 DECEMBER 2000  </span>
+
+<span class="sd">           2) Graeme Henkelman and H Jonsson , JOURNAL OF CHEMICAL PHYSICS VOLUME </span>
+<span class="sd">           113, NUMBER 22 8 DECEMBER 2000; </span>
+<span class="sd">           note: improved estimate needs energy of each image present in position variable</span>
+<span class="sd">            </span>
+<span class="sd">            </span>
+<span class="sd">            </span>
+<span class="sd">        parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        energy: array</span>
+<span class="sd">            array of energies (DFT or some other energy calculator) of length </span>
+<span class="sd">            equal to the number of images in the elastic band </span>
+<span class="sd">            (also need position and force ---&gt; from self.position, self.force)</span>
+<span class="sd">            </span>
+<span class="sd">        returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        tangent: array               </span>
+<span class="sd">            array of rank 3 with shape (n_images, natoms, 3); tangent array at each inbetween </span>
+<span class="sd">            images to get perpendicular and parallel component of true/dft forces and spring forces</span>
+<span class="sd">            Note: first and last tangents are kept zero and never used!!</span>
+<span class="sd">        &quot;&quot;&quot;</span>        
+        
+        <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+        <span class="kn">import</span> <span class="nn">sys</span>
+        
+        <span class="n">energy</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">energy</span>
+        
+        <span class="c1">#NOTE: take the shape of tangent same as that of position or force</span>
+        <span class="c1"># # first and last tangents are kept zero and never used!!</span>
+        <span class="c1">#ang = np.zeros(( np.size(self.position, axis=0), np.shape(self.position)[1], np.shape(self.position)[2] ))</span>
+        <span class="n">tang</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;shape of the tangent: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">tang</span><span class="p">)))</span>
+        
+        <span class="c1">#if energis is None:</span>
+        <span class="k">if</span> <span class="n">energy</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*** USING rough ESTIMATE OF THE TANGENT ***&#39;</span><span class="p">)</span>
+            
+            <span class="c1"># tangent at images 1 ... N-1 with corresponding position</span>
+            <span class="c1">#tang = np.zeros(( np.size(self.position, axis=0)-2, np.shape(self.position)[1], np.shape(self.position)[2] ))</span>
+            <span class="c1">#print(&#39;tangent shape: {}&#39;.format(np.shape(tang)))</span>
+
+            
+            <span class="c1">#NOTE: take the shape of tangent same as that of position or force</span>
+            <span class="c1">#tang = np.zeros(( np.size(self.position, axis=0), np.shape(self.position)[1], np.shape(self.position)[2] ))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;all tangents shape: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">tang</span><span class="p">)))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Excluding end tangents; tangent shape: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">tang</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])))</span>
+            
+            
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">tang</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>  <span class="c1"># first and last tangents are kept zero and never used!!</span>
+                <span class="c1"># i-th tangent for i-1, i, and i+1 positions</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;tangent estimate for image: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+                <span class="n">RiRiminus1</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">[</span><span class="n">i</span><span class="p">,</span>  <span class="p">:,:]</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">,:,:]</span>  
+                <span class="n">Riplus1Ri</span>  <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,:,:]</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">[</span><span class="n">i</span><span class="p">,</span>  <span class="p">:,:]</span>  
+                <span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">,:,:]</span> <span class="o">=</span> <span class="n">RiRiminus1</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">RiRiminus1</span><span class="p">)</span> <span class="o">+</span> <span class="n">Riplus1Ri</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">Riplus1Ri</span><span class="p">)</span>
+                <span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                
+                
+            <span class="n">lprint</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="k">if</span> <span class="n">lprint</span><span class="p">:</span> 
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">tang</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;tangent </span><span class="si">{}</span><span class="s2">: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;norm of unit tangent </span><span class="si">{}</span><span class="s1">: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span> <span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">)))</span>
+            
+            
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*** USING IMPROVED ESTIMATE OF THE TANGENT ***&#39;</span><span class="p">)</span>
+        
+            <span class="c1"># pos and energies of images 1 ... N-1</span>
+            
+            
+            <span class="c1">#NOTE: take the shape of tangent same as that of position or force, and ignoring the end point</span>
+            <span class="c1">#      tangents</span>
+            <span class="c1">#--</span>
+            <span class="c1"># There are four options for determining the local tangent with improved guess</span>
+            <span class="c1">#</span>
+            <span class="c1">#case 1; Ei+1 &gt; Ei &gt; Ei-1</span>
+            <span class="c1">#case 2; Ei+1 &lt; Ei &lt; Ei-1</span>
+            <span class="c1">#case 3; Ei+1 &gt; Ei-1   }</span>
+            <span class="c1">#case 4; Ei+1 &lt; Ei-1   } for 3 and 4 case: Ei is either high or lower than neighbouring images</span>
+            
+            <span class="c1">#NOTE NOTE NOTE-</span>
+            <span class="c1"># carefull about the copy command; for safety use np.zeros ...NOTE</span>
+            <span class="n">tang_plus</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">tang</span><span class="p">)</span>  <span class="c1"># energy: i+1 &gt; i &gt; i-1</span>
+            <span class="n">tang_minus</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">tang</span><span class="p">)</span> <span class="c1"># energy: i+1 &lt; i &lt; i-1</span>
+            <span class="c1">#</span>
+<span class="c1">#             delta_Emax = np.zeros_like(energies) # first and last values Must not be used!!</span>
+<span class="c1">#             delta_Emin = np.zeros_like(energies)</span>
+            <span class="n">delta_Emax</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">energy</span><span class="p">)</span> <span class="c1"># first and last values Must not be used!!</span>
+            <span class="n">delta_Emin</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">energy</span><span class="p">)</span>
+            
+            
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">tang</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>  <span class="c1"># first and last tangents are kept zero and never used!!</span>
+                <span class="c1"># i-th tangent for i-1, i, and i+1 positions or images</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;tangent estimate for image: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+                
+                
+                <span class="c1">#Ri = self.position[i,  :,:] </span>
+                <span class="c1">#Riplus1  = self.position[i+1,:,:] </span>
+                <span class="c1">#Riminus1  = self.position[i-1,:,:]                 </span>
+                
+                <span class="n">tang_plus</span><span class="p">[</span><span class="n">i</span><span class="p">,:,:]</span> <span class="o">=</span>  <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,:,:]</span>  <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">[</span><span class="n">i</span><span class="p">,</span>  <span class="p">:,:]</span> <span class="p">)</span>                
+                <span class="n">tang_minus</span><span class="p">[</span><span class="n">i</span><span class="p">,:,:]</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">[</span><span class="n">i</span><span class="p">,</span>  <span class="p">:,:]</span>  <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">,:,:]</span> <span class="p">)</span>
+
+                
+                
+                <span class="c1">#if (energies[i+1] &gt; energies[i] and energies[i] &gt; energies[i-1]):</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="ow">and</span> <span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]):</span>                    
+<span class="c1">#                     Ri = self.position[i,  :,:] </span>
+<span class="c1">#                     Riplus1  = self.position[i+1,:,:] </span>
+<span class="c1"># #                     tang_plus[i,:,:] = (Riplus1 - Ri )</span>
+<span class="c1"># #                     tang_plus[i] = tang_plus[i]/np.linalg.norm(tang_plus[i])</span>
+<span class="c1">#                     tang[i,:,:] = (Riplus1 - Ri )</span>
+                    <span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:]</span> <span class="o">=</span> <span class="n">tang_plus</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:</span> <span class="p">,</span> <span class="p">:]</span>
+                    <span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;case 1 - image : : </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+
+                <span class="c1">#elif (energies[i+1] &lt; energies[i] and energies[i] &lt; energies[i-1]):</span>
+                <span class="k">elif</span> <span class="p">(</span><span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="ow">and</span> <span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]):</span>                    
+<span class="c1">#                     Ri = self.position[i,  :,:] </span>
+<span class="c1">#                     Riminus1  = self.position[i-1,:,:] </span>
+<span class="c1"># #                     tang_minus[i,:,:] = (Ri - Riminus1)</span>
+<span class="c1"># #                     tang_minus[i] = tang_minus[i]/np.linalg.norm(tang_minus[i])</span>
+<span class="c1">#                     tang[i,:,:] = (Ri - Riminus1)</span>
+                    <span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">tang_minus</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:]</span>
+                    <span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;case 2 - image : : </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+            
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;inside case 3 and case 4&#39;</span><span class="p">)</span>
+<span class="c1">#                     delta_Emax = </span>
+<span class="c1">#                     delta_Emin = </span>
+                    
+<span class="c1">#                     en_cond1 = (energies[i] &lt; energies[i+1] and energies[i] &lt; energies[i-1])</span>
+<span class="c1">#                     en_cond2 = (energies[i] &gt; energies[i+1] and energies[i] &gt; energies[i-1])</span>
+                    <span class="n">en_cond1</span> <span class="o">=</span> <span class="p">(</span><span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="ow">and</span> <span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+                    <span class="n">en_cond2</span> <span class="o">=</span> <span class="p">(</span><span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="ow">and</span> <span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+            
+                    <span class="k">if</span> <span class="n">en_cond1</span> <span class="ow">or</span> <span class="n">en_cond2</span><span class="p">:</span>
+                        <span class="c1"># if either of the 2 conditions satisfied; get delta_Emax/min estimate</span>
+<span class="c1">#                         delta_iplus1i = np.abs(energies[i+1] - energies[i])</span>
+<span class="c1">#                         delta_iminus1i = np.abs(energies[i-1] - energies[i])</span>
+                        <span class="n">delta_iplus1i</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                        <span class="n">delta_iminus1i</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                        
+                        <span class="n">delta_Emax</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">maximum</span><span class="p">(</span><span class="n">delta_iplus1i</span><span class="p">,</span> <span class="n">delta_iminus1i</span><span class="p">)</span>
+                        <span class="n">delta_Emin</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">minimum</span><span class="p">(</span><span class="n">delta_iplus1i</span><span class="p">,</span> <span class="n">delta_iminus1i</span><span class="p">)</span>
+
+                        
+<span class="c1">#                         if energies[i+1] &gt; energies[i-1]:</span>
+                        <span class="k">if</span> <span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+                            <span class="c1">#tan...</span>
+                            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;case3 - image : </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+                            <span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:</span> <span class="p">,:]</span> <span class="o">=</span> <span class="n">tang_plus</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">delta_Emax</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">tang_minus</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">delta_Emin</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> 
+                            <span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                        <span class="c1">#elif energies[i+1] &lt; energies[i-1]:</span>
+                        <span class="k">elif</span> <span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">energy</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>                            
+                            <span class="c1">#tang ...</span>
+                            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;case4 - image : : </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+                            <span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:</span> <span class="p">,:]</span> <span class="o">=</span> <span class="n">tang_plus</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">delta_Emin</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">tang_minus</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">delta_Emax</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> 
+                            <span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                        <span class="k">else</span><span class="p">:</span> 
+                            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;something serious wrong in the energy conditions!!!&#39;</span><span class="p">)</span>
+                            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+                                                        
+<span class="c1">#             lprint = False</span>
+<span class="c1">#             if lprint: </span>
+<span class="c1">#                 for i in range(1, np.shape(tang)[0]-1):</span>
+<span class="c1">#                     print(&quot;tangent {}: {}&quot;.format(i, tang[i]))</span>
+<span class="c1">#                     print(&quot;unit tangent {}: {}&quot;.format(i, tang[i]/np.linalg.norm(tang[i]))</span>
+<span class="c1">#                     print(&#39;norm of unit tangent {}: {}&#39;.format(i, np.linalg.norm( tang[i]/np.linalg.norm(tang[i]) )))</span>
+
+            <span class="n">lprint</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="k">if</span> <span class="n">lprint</span><span class="p">:</span> 
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">tang</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;tangent </span><span class="si">{}</span><span class="s2">: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;norm of unit tangent </span><span class="si">{}</span><span class="s1">: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span> <span class="n">tang</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">)))</span>
+                          
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*** *** ******************************      ***&#39;</span><span class="p">)</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">tang</span> <span class="o">=</span> <span class="n">tang</span>        
+        <span class="k">return</span> <span class="n">tang</span> <span class="c1">#unit tangent at each in between images               </span></div>
+    
+<div class="viewcode-block" id="Neb.get_spring_force_parallel"><a class="viewcode-back" href="../../../file4.html#esta.transitionState.neb.Neb.get_spring_force_parallel">[docs]</a>    <span class="k">def</span> <span class="nf">get_spring_force_parallel</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">spring_constant</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;get the spring force parallel to the tangent, given the self.atomic positions and </span>
+<span class="sd">        spring_constant (optional)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;//INSIDE get_spring_force_parallel//&#39;</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="n">spring_constant</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">spring_constant</span> <span class="o">=</span> <span class="mf">5.0</span> <span class="c1"># units eV/A^2; if energy in eV and atomic position in Ang unit</span>
+        
+        <span class="c1"># spring force on end points is kept zero!!</span>
+        <span class="n">spring_force</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">)</span>
+        <span class="n">npos_set</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+        
+        
+        <span class="n">tangent</span> <span class="o">=</span>  <span class="bp">self</span><span class="o">.</span><span class="n">get_tangent</span><span class="p">()</span>
+        
+        <span class="n">lprint1</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="n">lprint</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">npos_set</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">lprint1</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;pos set: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;position: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">,:]))</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;spring force: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">spring_force</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">,:]))</span>
+            
+            <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">npos_set</span><span class="o">-</span><span class="mi">2</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;***** i: </span><span class="si">{}</span><span class="s1"> &#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+                
+                <span class="c1">#R{i+1} - Ri </span>
+                <span class="n">Rip1Ri</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">)</span>
+                <span class="n">Rip1Ri</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">Rip1Ri</span><span class="p">)</span> <span class="p">)</span> 
+                <span class="c1"># Ri - R{i-1}</span>
+                <span class="n">RiRim1</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">position</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="p">)</span>
+                <span class="n">RiRim1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span> <span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span> <span class="n">RiRim1</span><span class="p">))</span>
+                
+<span class="c1">#                 spring_force[i,:,:] = spring_constant * ( Rip1Ri - RiRim1 ) * self.tang[i,:,:]</span>
+                <span class="n">spring_force</span><span class="p">[</span><span class="n">i</span><span class="p">,:,:]</span> <span class="o">=</span> <span class="n">spring_constant</span> <span class="o">*</span> <span class="p">(</span> <span class="n">Rip1Ri</span> <span class="o">-</span> <span class="n">RiRim1</span> <span class="p">)</span> <span class="o">*</span> <span class="n">tangent</span><span class="p">[</span><span class="n">i</span><span class="p">,:,:]</span>
+                
+            <span class="k">if</span> <span class="n">lprint</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;! spring force: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">spring_force</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">,:]))</span>
+        
+        <span class="k">return</span> <span class="n">spring_force</span></div>
+
+<div class="viewcode-block" id="Neb.get_force_perpen"><a class="viewcode-back" href="../../../file4.html#esta.transitionState.neb.Neb.get_force_perpen">[docs]</a>    <span class="k">def</span> <span class="nf">get_force_perpen</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;get the perpendicular force acting on each image excluding end points;</span>
+<span class="sd">        </span>
+<span class="sd">        .. note::</span>
+<span class="sd">           force_perpendicular = force_dft  - dot_product (force_dft , tangent_vector) tangent_vector</span>
+<span class="sd">            </span>
+<span class="sd">           force_dft is force obtained from dft or some model calculation!</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;//INSIDE get_force_perpen//&#39;</span><span class="p">)</span>
+
+        <span class="n">force</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">force</span>
+        <span class="n">tangent</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_tangent</span><span class="p">()</span>
+        
+        
+        <span class="n">force_perpen</span> <span class="o">=</span> <span class="n">force</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ravel</span><span class="p">(</span><span class="n">force</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">ravel</span><span class="p">(</span><span class="n">tangent</span><span class="p">))</span> <span class="o">*</span> <span class="n">tangent</span>
+        
+        <span class="c1">#Note: check the force on the end point images .. in case of error ..use loop on images except </span>
+        <span class="c1">#       end point images!!</span>
+            
+        <span class="k">return</span> <span class="n">force_perpen</span></div>
+    
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">get_nudged_force</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;//INSIDE get_nudged_force//&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_spring_force_parallel</span><span class="p">()</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_force_perpen</span><span class="p">()</span>
+    
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">get_force_ci</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;get force on the climbing image</span>
+
+<span class="sd">        .. note::</span>
+<span class="sd">           force_ci = force_dft  - 2*  dot_product (force_dft_vector , tangent_vector) tangent_vector</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;//INSIDE get_force_ci_image//&quot;</span><span class="p">)</span> 
+        <span class="n">lprint</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">if</span> <span class="n">lprint</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;force_ci should be called after NEB iterations - &#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;   when forces on images are below some theshold&#39;</span><span class="p">)</span>
+            
+        <span class="n">force</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">force</span>
+        <span class="n">tangent</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_tangent</span><span class="p">()</span>
+        
+        <span class="n">force_ci</span> <span class="o">=</span> <span class="n">force</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ravel</span><span class="p">(</span><span class="n">force</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">ravel</span><span class="p">(</span><span class="n">tangent</span><span class="p">))</span> <span class="o">*</span> <span class="n">tangent</span>            
+        <span class="k">return</span> <span class="n">force_ci</span></div>
+    
+    
+    
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+
+    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+    <span class="kn">import</span> <span class="nn">sys</span>
+    <span class="kn">import</span> <span class="nn">copy</span>
+    
+    <span class="kn">import</span> <span class="nn">esta.general.aadhaar</span> <span class="k">as</span> <span class="nn">aadhaar</span>
+    <span class="c1">#import esta.general.read_xyz as read_xyz</span>
+    <span class="kn">import</span> <span class="nn">esta.general.xyz</span> <span class="k">as</span> <span class="nn">xyz</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;testing Neb class&#39;</span><span class="p">)</span>
+    
+    <span class="n">aadd</span> <span class="o">=</span> <span class="n">aadhaar</span><span class="o">.</span><span class="n">Aadhaar</span><span class="p">()</span>
+    <span class="n">xyz_obj</span> <span class="o">=</span> <span class="n">xyz</span><span class="o">.</span><span class="n">Xyz</span><span class="p">()</span>
+    <span class="n">pos</span><span class="p">,</span> <span class="n">symb</span> <span class="o">=</span> <span class="n">xyz_obj</span><span class="o">.</span><span class="n">read_xyz</span><span class="p">(</span><span class="s1">&#39;NEB_ach3oh_oh_face_part.xyz&#39;</span><span class="p">)</span>
+<span class="c1">#     pos1, symb,natoms, _ = aadd.read_xyz(&#39;Na3N_prim.xyz&#39;)</span>
+<span class="c1">#     force1 = np.zeros_like(pos)</span>
+<span class="c1">#     pos =  np.array([pos1 for i in range(5) ] )  # 5 images; must not be less than 5 including end images</span>
+<span class="c1">#     force = copy.copy(pos)</span>
+<span class="c1">#     print(np.shape(pos), np.shape(force))</span>
+    
+    <span class="n">force</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">pos</span><span class="p">)</span>
+        
+    <span class="n">neb_obj0</span> <span class="o">=</span> <span class="n">Neb</span><span class="p">(</span><span class="n">pos</span><span class="p">,</span> <span class="n">force</span><span class="p">)</span>
+
+    
+    <span class="n">energy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+        <span class="o">-</span><span class="mf">4.</span><span class="p">,</span> 
+        <span class="o">-</span><span class="mf">5.00688282</span><span class="p">,</span> 
+        <span class="o">-</span><span class="mf">4.38543676</span><span class="p">,</span> 
+        <span class="o">-</span><span class="mf">2.35143868</span><span class="p">,</span> 
+        <span class="o">-</span><span class="mf">0.67083962</span>
+    <span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">energy</span><span class="p">)</span>
+    
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;--------with energy input as well:--------------/n&quot;</span><span class="p">)</span>
+    <span class="n">neb_obj</span> <span class="o">=</span> <span class="n">Neb</span><span class="p">(</span><span class="n">pos</span><span class="p">,</span> <span class="n">force</span><span class="p">,</span> <span class="n">energy</span><span class="p">)</span>
+    
+    <span class="c1">#neb_obj.get_tangent()</span>
+    <span class="n">neb_obj</span><span class="o">.</span><span class="n">get_tangent</span><span class="p">()</span>
+<span class="c1">#     neb_obj.get_tangent(energy)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;!!!=========force_spring ***&#39;</span><span class="o">*</span><span class="mi">4</span><span class="p">)</span>
+    <span class="n">f_spring</span>  <span class="o">=</span> <span class="n">neb_obj</span><span class="o">.</span><span class="n">get_spring_force_parallel</span><span class="p">()</span>      
+    <span class="nb">print</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">f_spring</span><span class="p">),</span> <span class="n">f_spring</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,:])</span>
+    
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;!!!=========force_perpendicular ***&#39;</span><span class="o">*</span><span class="mi">4</span><span class="p">)</span>
+    <span class="n">f_per</span>  <span class="o">=</span> <span class="n">neb_obj</span><span class="o">.</span><span class="n">get_force_perpen</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">f_per</span><span class="p">),</span> <span class="n">f_per</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,:])</span>
+    
+    
+    <span class="n">nudged_force</span> <span class="o">=</span> <span class="n">neb_obj</span><span class="o">.</span><span class="n">get_nudged_force</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;shape nudged force: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">nudged_force</span><span class="p">)))</span>
+    <span class="n">force_ci</span> <span class="o">=</span> <span class="n">neb_obj</span><span class="o">.</span><span class="n">get_force_ci</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;shape ci force, and force_ci[0:2, 0:2,:]&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">force_ci</span><span class="p">),</span> <span class="n">force_ci</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,:])</span>
+
+<span class="c1">#</span>
+<span class="c1">## In[45]:</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1">## c1 = (2&gt;1)</span>
+<span class="c1">## c2 = (4&gt;3)</span>
+<span class="c1">## if c1 and c2:</span>
+<span class="c1">##     print (&#39;hahah&#39;)</span>
+<span class="c1">## else: </span>
+<span class="c1">##     print(&#39;condition not true&#39;)</span>
+<span class="c1">#    </span>
+<span class="c1">## ene = np.array([i for i in range(10)])</span>
+<span class="c1">#</span>
+<span class="c1">## del_ene = np.zeros_like(ene[1:-1])</span>
+<span class="c1">#</span>
+<span class="c1">## print(np.shape(ene), np.shape(del_ene))</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1">## In[35]:</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1">#import numpy as np</span>
+<span class="c1">#import sys</span>
+<span class="c1">#import copy</span>
+<span class="c1">#</span>
+<span class="c1">#import esta.general.aadhaar as aadhaar</span>
+<span class="c1">##import esta.general.read_xyz as read_xyz</span>
+<span class="c1">#import esta.general.xyz as xyz</span>
+<span class="c1">#print(&#39;testing Neb class&#39;)</span>
+<span class="c1">#</span>
+<span class="c1">#aadd = aadhaar.Aadhaar()</span>
+<span class="c1">#xyz_obj = xyz.Xyz()</span>
+<span class="c1">#pos, symb = xyz_obj.read_xyz(&#39;NEB_ach3oh_oh_face_part.xyz&#39;)</span>
+<span class="c1">##     pos1, symb,natoms, _ = aadd.read_xyz(&#39;Na3N_prim.xyz&#39;)</span>
+<span class="c1">##     force1 = np.zeros_like(pos)</span>
+<span class="c1">##     pos =  np.array([pos1 for i in range(5) ] )  # 5 images; must not be less than 5 including end images</span>
+<span class="c1">##     force = copy.copy(pos)</span>
+<span class="c1">##     print(np.shape(pos), np.shape(force))</span>
+<span class="c1">#</span>
+<span class="c1">#force = copy.copy(pos)</span>
+<span class="c1">#</span>
+<span class="c1">#neb_obj0 = Neb(pos, force)</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1">#energy = np.array([-4.   ,      -5.00688282 , -4.38543676 , -2.35143868, -0.67083962])</span>
+<span class="c1">#</span>
+<span class="c1">#print(np.shape(pos))</span>
+<span class="c1">#pos1 = pos[0,0, :]</span>
+<span class="c1">#tan = neb_obj0.get_tangent()</span>
+<span class="c1">#tan1 = neb_obj0.get_tangent() [0, 0, :]  # (energy)</span>
+<span class="c1">## print(pos[0:3,0:2,:])</span>
+<span class="c1">#print(pos1)</span>
+<span class="c1">#print(&#39;tan1:&#39;)</span>
+<span class="c1">#print(tan1)</span>
+<span class="c1">#print(np.shape(pos1), np.shape(tan1))</span>
+<span class="c1">## print(np.dot(pos1, tan1))</span>
+<span class="c1">#print(np.ravel(pos1), np.ravel(tan1))</span>
+<span class="c1">#print( np.dot(np.ravel(pos1), np.ravel(tan1)))</span>
+<span class="c1">#print( np.dot(np.ravel(pos), np.ravel(tan)))</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1">## In[ ]:</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1">## In[ ]:</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Sonu Kumar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

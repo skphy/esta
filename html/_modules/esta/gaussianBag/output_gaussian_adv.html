@@ -1,0 +1,838 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>esta.gaussianBag.output_gaussian_adv &mdash; EStA 2.6.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> EStA
+          
+
+          
+            
+            <img src="../../../_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.6.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html#ml-algorithms">ML algorithms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EStA2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-surfreact-package">esta.surfReact package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-mlbag-package">esta.mlBag package</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Cheat Sheet</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">EStA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>esta.gaussianBag.output_gaussian_adv</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for esta.gaussianBag.output_gaussian_adv</h1><div class="highlight"><pre>
+<span></span><span class="ch">#!/usr/bin/env python</span>
+<span class="c1"># coding: utf-8</span>
+
+<span class="c1"># In[7]:</span>
+
+
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">gauss class to handle for the gaussian16 output file</span>
+
+<span class="sd">date:   Nov, 2019</span>
+<span class="sd">        Dec, 2019</span>
+<span class="sd">        Dec, 2020</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="n">__author__</span> <span class="o">=</span> <span class="s1">&#39;sk&#39;</span>
+<span class="n">__email__</span>  <span class="o">=</span>  <span class="s1">&#39;sonukumar.physics@gmail.com&#39;</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<div class="viewcode-block" id="gauss"><a class="viewcode-back" href="../../../esta.gaussianBag.html#esta.gaussianBag.output_gaussian_adv.gauss">[docs]</a><span class="k">class</span> <span class="nc">gauss</span><span class="p">():</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    gauss class for the  gaussian16 output file</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">filename</span> <span class="o">=</span> <span class="n">filename</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;inside gauss class!!&#39;</span><span class="p">)</span>
+    
+<div class="viewcode-block" id="gauss.get_atomic_positions"><a class="viewcode-back" href="../../../esta.gaussianBag.html#esta.gaussianBag.output_gaussian_adv.gauss.get_atomic_positions">[docs]</a>    <span class="k">def</span> <span class="nf">get_atomic_positions</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get xyz from log file/output file of gaussian</span>
+<span class="sd">        </span>
+<span class="sd">        Note: all the atomic positions are stored in pos_all array; you can use it </span>
+<span class="sd">        as well</span>
+<span class="sd">        </span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">filename</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+                <span class="k">if</span> <span class="s2">&quot; NAtoms=&quot;</span> <span class="ow">in</span> <span class="n">i</span><span class="p">:</span>
+                    <span class="n">natoms</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">])</span>
+                    
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+
+            <span class="c1">#pos = np.zeros(natoms*3).reshape(natoms,3)</span>
+            <span class="n">lpos</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="n">ncoord</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="s2">&quot;Coordinates (Angstroms)&quot;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                    <span class="n">lpos</span> <span class="o">=</span> <span class="kc">True</span>
+                    <span class="n">ncoord</span> <span class="o">=</span> <span class="n">ncoord</span> <span class="o">+</span><span class="mi">1</span>
+                    <span class="c1"># following works also for extracting atm positions</span>
+                    <span class="c1">#for j in range(natoms):</span>
+                    <span class="c1">#    pos[j:,0] = float(lines[i+3+j].split()[3])</span>
+                    <span class="c1">#    pos[j:,1] = float(lines[i+3+j].split()[4])</span>
+                    <span class="c1">#    pos[j:,2] = float(lines[i+3+j].split()[5])</span>
+            <span class="c1">#print(pos)</span>
+
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;no of atoms: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">natoms</span><span class="p">))</span>     
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;no of atomic configuations are: </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ncoord</span><span class="p">))</span>
+
+            <span class="n">pos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">natoms</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+            <span class="n">pos_all</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="o">*</span><span class="n">ncoord</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">ncoord</span><span class="p">,</span> <span class="n">natoms</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> 
+            <span class="n">icoord</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="s2">&quot;Coordinates (Angstroms)&quot;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                    <span class="c1">#lpos = True</span>
+                    <span class="c1">#ncoord = ncoord +1</span>
+                    <span class="c1"># following works also for extracting atm positions</span>
+                    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                        <span class="n">pos</span><span class="p">[</span><span class="n">j</span><span class="p">:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">3</span><span class="p">])</span>
+                        <span class="n">pos</span><span class="p">[</span><span class="n">j</span><span class="p">:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">4</span><span class="p">])</span>
+                        <span class="n">pos</span><span class="p">[</span><span class="n">j</span><span class="p">:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">5</span><span class="p">])</span>
+                    
+                        <span class="n">pos_all</span><span class="p">[</span><span class="n">icoord</span><span class="p">,</span> <span class="n">j</span><span class="p">:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">pos</span><span class="p">[</span><span class="n">j</span><span class="p">:,</span><span class="mi">0</span><span class="p">]</span>
+                        <span class="n">pos_all</span><span class="p">[</span><span class="n">icoord</span><span class="p">,</span> <span class="n">j</span><span class="p">:,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">pos</span><span class="p">[</span><span class="n">j</span><span class="p">:,</span><span class="mi">1</span><span class="p">]</span>
+                        <span class="n">pos_all</span><span class="p">[</span><span class="n">icoord</span><span class="p">,</span> <span class="n">j</span><span class="p">:,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">pos</span><span class="p">[</span><span class="n">j</span><span class="p">:,</span><span class="mi">2</span><span class="p">]</span>
+                    <span class="n">icoord</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="c1">#print(&#39;uncomment the follwonig line to print all atomic positions&#39;)</span>
+            <span class="c1">#print(&#39;shape pos_all:&#39;, np.shape(pos_all))    </span>
+            <span class="c1">#print(pos_all)</span>
+                    
+            <span class="n">pos_indx</span><span class="o">=</span> <span class="p">[]</span>
+            <span class="n">atomic_num</span> <span class="o">=</span><span class="p">[]</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="s1">&#39;Coordinates (Angstroms)&#39;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
+                    <span class="n">pos_indx</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+            <span class="n">last_indx</span> <span class="o">=</span> <span class="n">pos_indx</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+            <span class="n">pos_</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">natoms</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">last_indx</span><span class="o">+</span><span class="mi">3</span><span class="p">,</span> <span class="n">last_indx</span><span class="o">+</span><span class="mi">3</span><span class="o">+</span><span class="n">natoms</span><span class="p">):</span>
+                <span class="n">atomic_num</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">]))</span>
+                <span class="n">k</span> <span class="o">=</span> <span class="n">j</span><span class="o">-</span> <span class="p">(</span><span class="n">last_indx</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span>
+                <span class="n">pos_</span><span class="p">[</span><span class="n">k</span><span class="p">:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">3</span><span class="p">])</span>
+                <span class="n">pos_</span><span class="p">[</span><span class="n">k</span><span class="p">:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">4</span><span class="p">])</span>
+                <span class="n">pos_</span><span class="p">[</span><span class="n">k</span><span class="p">:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">5</span><span class="p">])</span>
+            <span class="c1">#print(&#39;**&#39;*10,k+1, &#39;=no of atoms&#39;)</span>
+            <span class="c1">#print(&#39;**&#39;*10, atomic_num)</span>
+                    
+            <span class="c1">#print(&#39;extracting/printing the latest configuration: {}&#39;.format(ncoord))</span>
+            <span class="c1">#print(pos_)</span>
+
+            <span class="k">if</span> <span class="n">lpos</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">(</span><span class="n">pos_</span><span class="p">,</span> <span class="n">atomic_num</span><span class="p">,</span> <span class="s2">&quot;atm corrdinates in Angstrom&quot;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">------------------------------------&#39;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Serious error in file ..............&quot;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ATOMIC_POSITIONS block not present&quot;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;------------------------------------</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+                <span class="k">return</span> <span class="kc">None</span></div>
+
+<div class="viewcode-block" id="gauss.get_all_atomic_positions"><a class="viewcode-back" href="../../../esta.gaussianBag.html#esta.gaussianBag.output_gaussian_adv.gauss.get_all_atomic_positions">[docs]</a>    <span class="k">def</span> <span class="nf">get_all_atomic_positions</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get all xyz from log file/output file of gaussian</span>
+<span class="sd">                </span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">filename</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+                
+                <span class="n">lfound_NAtoms</span> <span class="o">=</span> <span class="kc">False</span>
+                <span class="k">if</span> <span class="s2">&quot; NAtoms=&quot;</span> <span class="ow">in</span> <span class="n">i</span><span class="p">:</span>
+                    <span class="n">lfound_NAtoms</span> <span class="o">=</span> <span class="kc">True</span>
+                    <span class="n">natoms</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">])</span>
+                    
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+            <span class="n">lpos</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="n">ncoord</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="s2">&quot;Coordinates (Angstroms)&quot;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                    <span class="n">lpos</span> <span class="o">=</span> <span class="kc">True</span>
+                    <span class="n">ncoord</span> <span class="o">=</span> <span class="n">ncoord</span> <span class="o">+</span><span class="mi">1</span>
+            
+            <span class="c1">#print(&quot;no of atoms: {}&quot;.format(natoms))     </span>
+            <span class="c1">#print(&quot;no of atomic configuations are: {0}&quot;.format(ncoord))            </span>
+            <span class="k">if</span> <span class="n">lfound_NAtoms</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;no of atoms: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">natoms</span><span class="p">))</span>     
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;no of atomic configuations are: </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ncoord</span><span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span> 
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="n">natoms</span> <span class="o">=</span> <span class="nb">int</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_natoms_dummy</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="p">)</span>  <span class="c1"># taking first elements as all others has to be equal--&lt; check on it!!</span>
+                <span class="k">except</span><span class="p">:</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;NAtoms string not present in the gaussian log file .. check the log file!!&quot;</span><span class="p">)</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;...exiting.&#39;</span><span class="p">)</span>
+                    <span class="kn">import</span> <span class="nn">sys</span>
+                    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+
+            <span class="n">pos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">natoms</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+            <span class="n">pos_all</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="o">*</span><span class="n">ncoord</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">ncoord</span><span class="p">,</span> <span class="n">natoms</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> 
+            <span class="n">icoord</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="s2">&quot;Coordinates (Angstroms)&quot;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                        <span class="n">pos</span><span class="p">[</span><span class="n">j</span><span class="p">:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">3</span><span class="p">])</span>
+                        <span class="n">pos</span><span class="p">[</span><span class="n">j</span><span class="p">:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">4</span><span class="p">])</span>
+                        <span class="n">pos</span><span class="p">[</span><span class="n">j</span><span class="p">:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">5</span><span class="p">])</span>
+                    
+                        <span class="n">pos_all</span><span class="p">[</span><span class="n">icoord</span><span class="p">,</span> <span class="n">j</span><span class="p">:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">pos</span><span class="p">[</span><span class="n">j</span><span class="p">:,</span><span class="mi">0</span><span class="p">]</span>
+                        <span class="n">pos_all</span><span class="p">[</span><span class="n">icoord</span><span class="p">,</span> <span class="n">j</span><span class="p">:,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">pos</span><span class="p">[</span><span class="n">j</span><span class="p">:,</span><span class="mi">1</span><span class="p">]</span>
+                        <span class="n">pos_all</span><span class="p">[</span><span class="n">icoord</span><span class="p">,</span> <span class="n">j</span><span class="p">:,</span> <span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">pos</span><span class="p">[</span><span class="n">j</span><span class="p">:,</span><span class="mi">2</span><span class="p">]</span>
+                    <span class="n">icoord</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="c1">#print(&#39;uncomment the follwonig line to print all atomic positions&#39;)</span>
+            <span class="c1">#print(&#39;shape pos_all:&#39;, np.shape(pos_all))    </span>
+            <span class="c1">#print(pos_all)</span>
+                    
+            <span class="n">pos_indx</span><span class="o">=</span> <span class="p">[]</span>
+            <span class="n">atomic_num</span> <span class="o">=</span><span class="p">[]</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="s1">&#39;Coordinates (Angstroms)&#39;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span>
+                    <span class="n">pos_indx</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+            <span class="n">last_indx</span> <span class="o">=</span> <span class="n">pos_indx</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+            <span class="c1">#pos_ = np.zeros(natoms*3).reshape(natoms,3)</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">last_indx</span><span class="o">+</span><span class="mi">3</span><span class="p">,</span> <span class="n">last_indx</span><span class="o">+</span><span class="mi">3</span><span class="o">+</span><span class="n">natoms</span><span class="p">):</span>
+                <span class="n">atomic_num</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">]))</span>
+                <span class="c1">#k = j- (last_indx+3)</span>
+                <span class="c1">#pos_[k:,0] = float(lines[j].split()[3])</span>
+                <span class="c1">#pos_[k:,1] = float(lines[j].split()[4])</span>
+                <span class="c1">#pos_[k:,2] = float(lines[j].split()[5])</span>
+            <span class="c1">#print(&#39;**&#39;*10,k+1, &#39;=no of atoms&#39;)</span>
+            <span class="c1">#print(&#39;**&#39;*10, atomic_num)</span>
+                    
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;extracting/printing the all configuration: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ncoord</span><span class="p">))</span>
+            <span class="c1">#print(pos_)</span>
+
+            <span class="k">if</span> <span class="n">lpos</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">(</span><span class="n">pos_all</span><span class="p">,</span> <span class="n">atomic_num</span><span class="p">,</span> <span class="s2">&quot;all atm coordinates in Angstrom&quot;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">------------------------------------&#39;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Serious error in file ..............&quot;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ATOMIC_POSITIONS block not present&quot;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;------------------------------------</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+                <span class="k">return</span> <span class="kc">None</span></div>
+
+<div class="viewcode-block" id="gauss.get_xyz_file"><a class="viewcode-back" href="../../../esta.gaussianBag.html#esta.gaussianBag.output_gaussian_adv.gauss.get_xyz_file">[docs]</a>    <span class="k">def</span> <span class="nf">get_xyz_file</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>    
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get xyz file by reading the atomic positions and atomic numbers: </span>
+
+<span class="sd">        return:</span>
+<span class="sd">                `outfile`: write data in xyz file specified by name `outfile`</span>
+
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">prefix</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">))[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">outfile</span> <span class="o">=</span> <span class="n">prefix</span><span class="o">+</span><span class="s1">&#39;.xyz&#39;</span>    
+
+        <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="kn">from</span> <span class="nn">mendeleev</span> <span class="kn">import</span> <span class="n">element</span>
+            <span class="c1">#from mendeleev import element</span>
+            <span class="c1">#a=element(8).symbol</span>
+            <span class="c1">#print(a)</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;WARNING: can not import mendelev&#39;</span><span class="p">)</span>
+
+        <span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+
+        <span class="n">pos</span><span class="p">,</span> <span class="n">atomic_number</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_atomic_positions</span><span class="p">()[</span><span class="mi">0</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_atomic_positions</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="c1">#print(len(pos),len(atomic_number))</span>
+        <span class="c1">#print(atomic_number, type(atomic_number[0]))</span>
+
+        <span class="n">label</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">atomic_number</span><span class="p">)):</span>
+            <span class="n">label</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">element</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">atomic_number</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span><span class="o">.</span><span class="n">symbol</span><span class="p">)</span>
+        <span class="c1">#print(label)</span>
+        
+        <span class="c1">#import sys</span>
+        <span class="c1">#sys.exit()</span>
+        
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">outfile</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pos</span><span class="p">)))</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">xyz file created from gaussian output on &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; using esta&#39;</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pos</span><span class="p">)):</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">label</span><span class="p">[</span><span class="n">j</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">pos</span><span class="p">[</span><span class="n">j</span><span class="p">]))))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;writing data in xyz format&#39;</span><span class="p">)</span></div>
+            
+<div class="viewcode-block" id="gauss.get_all_xyz_file"><a class="viewcode-back" href="../../../esta.gaussianBag.html#esta.gaussianBag.output_gaussian_adv.gauss.get_all_xyz_file">[docs]</a>    <span class="k">def</span> <span class="nf">get_all_xyz_file</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>    
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get all xyz file by reading the atomic positions and atomic numbers: </span>
+
+<span class="sd">        return:</span>
+<span class="sd">                `outfile`: write data in xyz file specified by name `outfile`</span>
+
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">prefix</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">))[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="c1">#outfile = prefix+&#39;.xyz&#39;    </span>
+
+        <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="kn">from</span> <span class="nn">mendeleev</span> <span class="kn">import</span> <span class="n">element</span>
+            <span class="c1">#from mendeleev import element</span>
+            <span class="c1">#a=element(8).symbol</span>
+            <span class="c1">#print(a)</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;WARNING: can not import mendelev&#39;</span><span class="p">)</span>
+
+        <span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+
+        <span class="n">pos</span><span class="p">,</span> <span class="n">atomic_number</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_all_atomic_positions</span><span class="p">()[</span><span class="mi">0</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_all_atomic_positions</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="c1">#print(len(pos),len(atomic_number))</span>
+        <span class="c1">#print(atomic_number, type(atomic_number[0]))</span>
+
+        <span class="n">label</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">atomic_number</span><span class="p">)):</span>
+            <span class="n">label</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">element</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">atomic_number</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span><span class="o">.</span><span class="n">symbol</span><span class="p">)</span>
+        <span class="c1">#print(label)</span>
+        
+        <span class="c1">#import sys</span>
+        <span class="c1">#sys.exit()</span>
+        
+        <span class="k">for</span> <span class="n">ipos</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">pos</span><span class="p">)[</span><span class="mi">0</span><span class="p">]):</span>
+            <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">            loop over all atomic postions; ipos</span>
+<span class="sd">            &#39;&#39;&#39;</span>
+<span class="c1">#             if ipos &lt; 10:</span>
+<span class="c1">#                 outfile = prefix+&quot;_&quot;+str(0)+str(ipos)+&#39;.xyz&#39;    </span>
+<span class="c1">#             else:</span>
+<span class="c1">#                 outfile = prefix+&quot;_&quot;+str(ipos)+&#39;.xyz&#39;   </span>
+                
+<span class="c1">#             if ipos &lt; 10:</span>
+<span class="c1">#                 outfile = prefix+&quot;_&quot;+str(00)+str(ipos)+&#39;.xyz&#39;    </span>
+<span class="c1">#             if ipos &gt;= 10 and ipos &lt; 100:</span>
+<span class="c1">#                 outfile = prefix+&quot;_&quot;+str(0)+str(ipos)+&#39;.xyz&#39;    </span>
+<span class="c1">#             else:</span>
+<span class="c1">#                 outfile = prefix+&quot;_&quot;+str(ipos)+&#39;.xyz&#39;    </span>
+            
+            <span class="c1">#print(type(ipos))</span>
+            <span class="k">if</span> <span class="n">ipos</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+                <span class="n">outfile</span> <span class="o">=</span> <span class="n">prefix</span><span class="o">+</span><span class="s2">&quot;_&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">ipos</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;.xyz&#39;</span>    
+            <span class="k">elif</span> <span class="n">ipos</span> <span class="o">&gt;=</span> <span class="mi">10</span> <span class="ow">and</span> <span class="n">ipos</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+                <span class="n">outfile</span> <span class="o">=</span> <span class="n">prefix</span><span class="o">+</span><span class="s2">&quot;_&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">ipos</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;.xyz&#39;</span>    
+            <span class="k">elif</span> <span class="n">ipos</span> <span class="o">&gt;=</span> <span class="mi">100</span> <span class="ow">and</span> <span class="n">ipos</span> <span class="o">&lt;</span> <span class="mi">1000</span><span class="p">:</span>
+                <span class="n">outfile</span> <span class="o">=</span> <span class="n">prefix</span><span class="o">+</span><span class="s2">&quot;_&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">ipos</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;.xyz&#39;</span>    
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">outfile</span> <span class="o">=</span> <span class="n">prefix</span><span class="o">+</span><span class="s2">&quot;_&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">ipos</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;.xyz&#39;</span>    
+            
+            
+
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">outfile</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="n">ipos</span><span class="p">])))</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">xyz file created from gaussian output on &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; using esta&#39;</span><span class="p">)</span>
+                <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">pos</span><span class="p">)[</span><span class="mi">1</span><span class="p">]):</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">label</span><span class="p">[</span><span class="n">j</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">pos</span><span class="p">[</span><span class="n">ipos</span><span class="p">][</span><span class="n">j</span><span class="p">]))))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;writing all data in xyz format&#39;</span><span class="p">)</span></div>
+        
+        
+        
+<div class="viewcode-block" id="gauss.get_all_xyz_in_a_file"><a class="viewcode-back" href="../../../esta.gaussianBag.html#esta.gaussianBag.output_gaussian_adv.gauss.get_all_xyz_in_a_file">[docs]</a>    <span class="k">def</span> <span class="nf">get_all_xyz_in_a_file</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">comment</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>    
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get all xyz file by reading the atomic positions and atomic labels: </span>
+
+<span class="sd">        return:</span>
+<span class="sd">                `outfile`: write data in a single xyz file specified by name `outfile`</span>
+<span class="sd">                         here outfile  =  prefix+&quot;_&quot;+&#39;all_&#39;+&#39;.xyz&#39; </span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="kn">from</span> <span class="nn">mendeleev</span> <span class="kn">import</span> <span class="n">element</span>
+            <span class="c1">#from mendeleev import element</span>
+            <span class="c1">#a=element(8).symbol</span>
+            <span class="c1">#print(a)</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;WARNING: can not import mendeleev&#39;</span><span class="p">)</span>
+
+        
+
+        <span class="n">prefix</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">))[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+
+        <span class="c1">#pos, label = self.get_all_atomic_positions_from_EQ_list()[0], self.get_all_atomic_positions_from_EQ_list()[1]</span>
+        <span class="n">pos</span><span class="p">,</span> <span class="n">atomic_number</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_all_atomic_positions</span><span class="p">()[</span><span class="mi">0</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_all_atomic_positions</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
+        
+        <span class="n">label</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">atomic_number</span><span class="p">)):</span>
+            <span class="n">label</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">element</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">atomic_number</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span><span class="o">.</span><span class="n">symbol</span><span class="p">)</span>
+        
+
+        
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;File&#39;</span><span class="o">+</span><span class="s1">&#39;-xyz-&#39;</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>
+        <span class="n">outfile</span> <span class="o">=</span> <span class="n">prefix</span><span class="o">+</span><span class="s2">&quot;_&quot;</span><span class="o">+</span><span class="s1">&#39;all&#39;</span><span class="o">+</span><span class="s1">&#39;.xyz&#39;</span>    
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">outfile</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">ipos</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">pos</span><span class="p">)[</span><span class="mi">0</span><span class="p">]):</span>
+                <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">                loop over all atomic postions; ipos</span>
+<span class="sd">                &#39;&#39;&#39;</span>
+
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="n">ipos</span><span class="p">])))</span>
+                
+                <span class="k">if</span> <span class="n">comment</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">xyz file created from grrm EQ_list.log on &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; using esta&#39;</span><span class="p">)</span>
+                <span class="k">elif</span> <span class="n">comment</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">xyz file created from grrm EQ_list.log on &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; using esta&#39;</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>  <span class="c1"># Comment == False</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span> <span class="c1"># leave the comment line blank as some GUI software doesnt view xyz file</span>
+                
+                <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">pos</span><span class="p">)[</span><span class="mi">1</span><span class="p">]):</span>
+                    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">+</span><span class="nb">str</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="n">label</span><span class="p">[</span><span class="n">j</span><span class="p">],</span><span class="mi">3</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;  &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:16.9f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pos</span><span class="p">[</span><span class="n">ipos</span><span class="p">][</span><span class="n">j</span><span class="p">]])))</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;writing all data (atomic structures:</span><span class="si">{}</span><span class="s1">) in xyz format in a single file&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">pos</span><span class="p">)[</span><span class="mi">0</span><span class="p">]))</span>    </div>
+        
+        
+<div class="viewcode-block" id="gauss.get_energies"><a class="viewcode-back" href="../../../esta.gaussianBag.html#esta.gaussianBag.output_gaussian_adv.gauss.get_energies">[docs]</a>    <span class="k">def</span> <span class="nf">get_energies</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        get the energies from the gaussian log/output file</span>
+<span class="sd">       </span>
+<span class="sd">       </span>
+<span class="sd">        For example: </span>
+<span class="sd">            </span>
+<span class="sd">         Zero-point correction=                           0.018555 (Hartree/Particle)</span>
+<span class="sd">         Thermal correction to Energy=                    0.018650</span>
+<span class="sd">         Thermal correction to Enthalpy=                  0.018681</span>
+<span class="sd">         Thermal correction to Gibbs Free Energy=         0.017917</span>
+<span class="sd">         Sum of electronic and zero-point Energies=          -2538.604330</span>
+<span class="sd">         Sum of electronic and thermal Energies=             -2538.604235</span>
+<span class="sd">         Sum of electronic and thermal Enthalpies=           -2538.604203</span>
+<span class="sd">         Sum of electronic and thermal Free Energies=        -2538.604968</span>
+
+<span class="sd">         SCF Done:  E(UB3P86) =  -2538.62288479     A.U.</span>
+<span class="sd">         </span>
+<span class="sd">         and so on ..</span>
+
+<span class="sd">        &#39;&#39;&#39;</span>
+        
+        <span class="c1">#import time</span>
+        
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+            <span class="n">scfdone</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="n">nenergy</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">energies</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">lthermochem</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="n">elec_and_zpe</span> <span class="o">=</span><span class="p">[]</span>
+            
+            <span class="c1">#time_start = time.time()</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="s2">&quot;SCF Done: &quot;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                    <span class="n">scfdone</span> <span class="o">=</span> <span class="kc">True</span>
+                    <span class="n">nenergy</span> <span class="o">+=</span> <span class="mi">1</span>
+                    <span class="n">energies</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">4</span><span class="p">])</span>
+                <span class="k">if</span> <span class="s1">&#39;Thermochemistry&#39;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;zero point energy and free energies are available&#39;</span><span class="p">)</span>
+                    <span class="n">lthermochem</span> <span class="o">=</span> <span class="kc">True</span>       
+            <span class="k">if</span> <span class="n">lthermochem</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+                    <span class="k">if</span> <span class="s1">&#39;Sum of electronic and zero-point Energies=&#39;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                        <span class="n">elec_and_zpe</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">6</span><span class="p">]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">elec_and_zpe</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="c1">#print(&#39;Thermochemistry:&#39;, lthermochem)</span>
+            <span class="c1">#time_end = time.time()</span>
+            <span class="c1">#print(&#39;time taken: {}&#39;.format(time_end-time_start))</span>
+
+<span class="c1">#             time1_start = time.time()</span>
+<span class="c1">#             for i in range(0, len(lines)):</span>
+<span class="c1">#                 if &quot;SCF Done: &quot; in lines[i]:</span>
+<span class="c1">#                     scfdone = True</span>
+<span class="c1">#                     nenergy += 1</span>
+<span class="c1">#                     energies.append(lines[i].split()[4])</span>
+<span class="c1">#             for i in range(0, len(lines)):</span>
+<span class="c1">#                 if &#39;Thermochemistry&#39; in lines[i]:</span>
+<span class="c1">#                     print(&#39;zero point energy and free energies are available&#39;)</span>
+<span class="c1">#                     lthermochem = True</span>
+<span class="c1">#             if lthermochem:</span>
+<span class="c1">#                 for i in range(len(lines)):</span>
+<span class="c1">#                     if &#39;Sum of electronic and zero-point Energies=&#39; in lines[i]:</span>
+<span class="c1">#                         elec_and_zpe = lines[i].split()[6]</span>
+
+<span class="c1">#             print(&#39;Thermochemistry:&#39;, lthermochem)</span>
+<span class="c1">#             time1_end = time.time()</span>
+<span class="c1">#             print(&#39;time1 taken: {}&#39;.format(time1_end-time1_start))</span>
+            
+            <span class="n">linfo</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="k">if</span> <span class="n">linfo</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;thermochemistry: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">lthermochem</span><span class="p">))</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;no of SCF done energies in the file </span><span class="si">{}</span><span class="s2">: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">,</span> <span class="n">nenergy</span><span class="p">))</span>     
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;final SCF done energy or required energy (Hartree): </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">energies</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
+            
+<span class="c1">#         if lthermochem:</span>
+<span class="c1">#             return lthermochem, energies[-1], elec_and_zpe</span>
+<span class="c1">#         else: </span>
+<span class="c1">#             return lthermochem, energies[-1]</span>
+
+        <span class="k">return</span> <span class="n">energies</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">elec_and_zpe</span></div>
+
+    
+<div class="viewcode-block" id="gauss.get_forces"><a class="viewcode-back" href="../../../esta.gaussianBag.html#esta.gaussianBag.output_gaussian_adv.gauss.get_forces">[docs]</a>    <span class="k">def</span> <span class="nf">get_forces</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        find the forces on all atoms </span>
+<span class="sd">        max and min of all forces on atoms</span>
+<span class="sd">        </span>
+<span class="sd">        parameters: </span>
+<span class="sd">                self.filename: str</span>
+<span class="sd">                 name of the gaussian log file</span>
+
+<span class="sd">        &#39;&#39;&#39;</span>
+    
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+            <span class="n">scfdone</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="n">optdone</span> <span class="o">=</span> <span class="kc">False</span>
+            
+            <span class="n">nenergy</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">energies</span> <span class="o">=</span> <span class="p">[]</span>
+
+            <span class="n">count_forces</span> <span class="o">=</span> <span class="mi">0</span>
+            
+            <span class="c1">#lthermochem = False</span>
+            <span class="c1">#elec_and_zpe =[]</span>
+            
+            <span class="c1">#time_start = time.time()</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+                
+                <span class="k">if</span> <span class="s2">&quot;SCF Done: &quot;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                    <span class="n">scfdone</span> <span class="o">=</span> <span class="kc">True</span>
+                    <span class="n">nenergy</span> <span class="o">+=</span> <span class="mi">1</span>
+                    <span class="n">energies</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">4</span><span class="p">])</span>
+                    
+                <span class="k">if</span> <span class="s2">&quot;Forces (Hartrees/Bohr)&quot;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span> 
+                    <span class="c1"># reading all matches, but store only final forces</span>
+                    <span class="n">count_forces</span> <span class="o">+=</span> <span class="mi">1</span>
+                    
+                    
+                <span class="k">if</span> <span class="s1">&#39;Optimization completed&#39;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                    <span class="c1">#print(&#39;opt done !!&#39;)</span>
+                    <span class="n">optdone</span> <span class="o">=</span> <span class="kc">True</span>       
+                
+                <span class="k">if</span> <span class="s2">&quot; NAtoms=&quot;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                    <span class="n">natoms</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">])</span>
+                
+            <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;+===+&#39;</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>    
+            <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;natoms: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">natoms</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;scf done: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">scfdone</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no. of scf cycles: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nenergy</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no. of force cycles: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">count_forces</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;opt completed: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">optdone</span><span class="p">))</span>
+            <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;+===+&#39;</span><span class="o">*</span><span class="mi">10</span><span class="p">)</span>    
+
+            
+            <span class="k">if</span> <span class="n">optdone</span><span class="p">:</span>
+                <span class="n">forces</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">natoms</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+                <span class="n">count_forces_dummy</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+                    <span class="c1">#count_forces_dummy = 0</span>
+                    <span class="k">if</span> <span class="s2">&quot;Forces (Hartrees/Bohr)&quot;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span> 
+                        <span class="c1"># reading all matches, but store only final forces</span>
+                        <span class="n">count_forces_dummy</span> <span class="o">+=</span> <span class="mi">1</span>
+                        <span class="c1">#print(&#39;no. of force cycles: {}&#39;.format(count_forces))</span>
+                        
+                        <span class="k">if</span> <span class="n">count_forces_dummy</span> <span class="o">==</span> <span class="n">count_forces</span><span class="p">:</span>
+                            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                                <span class="n">forces</span> <span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">2</span><span class="p">]</span>
+                                <span class="n">forces</span> <span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">3</span><span class="p">]</span>
+                                <span class="n">forces</span> <span class="p">[</span><span class="n">j</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">4</span><span class="p">]</span>
+                            
+                    <span class="k">if</span> <span class="s2">&quot;Cartesian Forces:&quot;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                        <span class="n">forces_max_rms</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+                        <span class="n">forces_max</span> <span class="o">=</span> <span class="nb">float</span> <span class="p">(</span><span class="n">forces_max_rms</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+                        <span class="n">forces_rms</span> <span class="o">=</span> <span class="nb">float</span> <span class="p">(</span><span class="n">forces_max_rms</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+                        
+
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;count_forces_dummy: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">count_forces_dummy</span><span class="p">))</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;count_forces: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">count_forces</span><span class="p">))</span>
+                
+        <span class="k">if</span> <span class="n">optdone</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">forces_max</span><span class="p">,</span> <span class="n">forces_rms</span><span class="p">,</span> <span class="n">forces</span>  <span class="c1"># units forces Hartee/Bohr</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span></div>
+    
+    
+    <span class="c1">#def get_natoms_dirtyway(self):</span>
+<div class="viewcode-block" id="gauss.get_natoms_dummy"><a class="viewcode-back" href="../../../esta.gaussianBag.html#esta.gaussianBag.output_gaussian_adv.gauss.get_natoms_dummy">[docs]</a>    <span class="k">def</span> <span class="nf">get_natoms_dummy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>        
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        get natoms if &quot;NAtoms&quot; string is not present in the  gaussian log file</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+    
+            <span class="n">icoord_list</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">icoord</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="s2">&quot;Coordinates (Angstroms)&quot;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="o">+</span><span class="n">icoord</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+                        <span class="n">icoord</span> <span class="o">+=</span> <span class="mi">1</span>
+                    <span class="n">icoord_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">icoord</span><span class="p">)</span>
+            <span class="c1">#print(&#39;Atoms list: {}&#39;.format(icoord_list))</span>
+
+        <span class="k">return</span> <span class="n">icoord_list</span></div></div>
+    
+    
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="c1">#print(&#39;extracting xyz file from gaussian output file:&#39;)</span>
+    <span class="c1">#gaussobj = gauss(&#39;gauss.log&#39;)</span>
+    <span class="c1">#gaussobj.get_xyz_file()</span>
+    <span class="c1">#gaussobj.get_all_xyz_file()</span>
+
+<span class="c1">#     gaussobj = gauss(&#39;gauss1.log&#39;)</span>
+<span class="c1">#     energies = gaussobj.get_energies()</span>
+<span class="c1">#     print(energies)</span>
+
+    <span class="kn">import</span> <span class="nn">glob</span>
+    <span class="n">filenames_info</span> <span class="o">=</span> <span class="s1">&#39;*.log&#39;</span>
+    <span class="n">listt</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="n">filenames_info</span><span class="p">)</span>
+
+    <span class="c1">#listt = [&#39;gauss1.log&#39;,</span>
+    <span class="c1">#         &#39;gauss2.log&#39;,</span>
+    <span class="c1">#         &#39;gauss3.log&#39;,</span>
+    <span class="c1">#        ]</span>
+    
+    <span class="n">energies_all</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">listt</span><span class="p">),</span> <span class="mi">2</span><span class="p">))</span>
+    
+    <span class="n">filelist</span><span class="o">=</span><span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">listt</span><span class="p">):</span>
+        <span class="n">gaussobj</span> <span class="o">=</span> <span class="n">gauss</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span>
+        <span class="n">energies</span> <span class="o">=</span> <span class="n">gaussobj</span><span class="o">.</span><span class="n">get_energies</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;processing file:&#39;</span><span class="p">,</span> <span class="n">ii</span><span class="p">)</span>
+        <span class="n">energies_all</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">energies</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">energies_all</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">energies</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">filelist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ii</span><span class="p">)</span>
+        
+        
+        <span class="n">forces</span> <span class="o">=</span> <span class="n">gaussobj</span><span class="o">.</span><span class="n">get_forces</span><span class="p">()</span>
+        
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;energies.dat&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">ff</span><span class="p">:</span>
+        <span class="n">ff</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;# filename&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\t\t\t</span><span class="s1">&#39;</span><span class="o">+</span><span class="s1">&#39;scf-energy&#39;</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="o">+</span><span class="s1">&#39;scf-energy_plus_zpe </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">filelist</span><span class="p">)):</span>
+            <span class="n">ff</span><span class="o">.</span><span class="n">write</span><span class="p">(</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">filelist</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">))[</span><span class="mi">0</span><span class="p">:</span><span class="mi">30</span><span class="p">]</span><span class="o">+</span><span class="s1">&#39;  &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="s1">&#39;  &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span><span class="n">energies_all</span><span class="p">[</span><span class="n">i</span><span class="p">])))</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    
+    
+
+
+<span class="c1"># In[21]:</span>
+
+
+<span class="c1"># val =&quot; ---------------------------------------------------------------------&quot;</span>
+<span class="c1"># a = val.split(&quot; &quot;)[1]</span>
+<span class="c1"># print(a, len(a))</span>
+<span class="c1"># print(type(a))</span>
+
+
+<span class="c1"># In[ ]:</span>
+
+
+
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Sonu Kumar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,444 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>esta.qeBag.get_output_qe &mdash; EStA 2.6.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> EStA
+          
+
+          
+            
+            <img src="../../../_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.6.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3.html#ml-algorithms">ML algorithms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EStA2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-surfreact-package">esta.surfReact package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../file4.html#esta-mlbag-package">esta.mlBag package</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../file3a.html">Cheat Sheet</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">EStA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>esta.qeBag.get_output_qe</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for esta.qeBag.get_output_qe</h1><div class="highlight"><pre>
+<span></span><span class="c1"># coding: utf-8</span>
+
+<span class="c1">#-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1"># This file is part of esta (electronic structure analyser) cum espundit code</span>
+<span class="c1"># based on python, fortran, and c codes</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1"># author: skumar</span>
+<span class="c1"># email : sonukumar.physics@gmail.com</span>
+<span class="c1"># date  : april, 2017</span>
+<span class="c1">#       :        2019</span>
+<span class="c1">#-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-</span>
+
+<span class="c1"># coding: utf-8</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<div class="viewcode-block" id="qe_warning"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.get_output_qe.qe_warning">[docs]</a><span class="k">def</span> <span class="nf">qe_warning</span><span class="p">():</span>
+
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    read output file of qe code and find:</span>
+<span class="sd">    - no of atoms</span>
+<span class="sd">    - forces on each atom; average force on each atom</span>
+<span class="sd">    - pressure </span>
+<span class="sd">    - total energy (last one in the file)</span>
+<span class="sd">    - Fermi energy (last one) </span>
+
+<span class="sd">    Author: sk, sonukumar.physics@gmail.com</span>
+<span class="sd">    Date: August, 2019</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    more to add such as:</span>
+
+<span class="sd">         bravais-lattice index     =            0</span>
+<span class="sd">         lattice parameter (alat)  =      38.0204  a.u.</span>
+<span class="sd">         unit-cell volume          =   85221.1369 (a.u.)^3</span>
+<span class="sd">         number of atoms/cell      =          120</span>
+<span class="sd">         number of atomic types    =            4</span>
+<span class="sd">         number of electrons       =       464.00</span>
+<span class="sd">         number of Kohn-Sham states=          278</span>
+<span class="sd">         kinetic-energy cutoff     =      60.0000  Ry</span>
+<span class="sd">         charge density cutoff     =     400.0000  Ry</span>
+<span class="sd">         convergence threshold     =      1.0E-08</span>
+<span class="sd">         mixing beta               =       0.5000</span>
+<span class="sd">         number of iterations used =            8  local-TF  mixing</span>
+<span class="sd">         Exchange-correlation      = SLA PW PBX PBC ( 1  4  3  4 0 0)</span>
+<span class="sd">         nstep                     =          100</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+
+
+    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+    <span class="c1"># import re</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;*****************************If processing output file from qe:**************************&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;WARNING: LATTICE VECTORS OF QE OUTPUT FILE ARE LESS PRECISE SO USE THOSE IN QE INPUT FILE&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="kc">None</span></div>
+
+<div class="viewcode-block" id="get_fermi"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.get_output_qe.get_fermi">[docs]</a><span class="k">def</span> <span class="nf">get_fermi</span><span class="p">(</span><span class="n">infile</span><span class="p">,</span> <span class="n">lspin</span> <span class="o">=</span> <span class="kc">False</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">infile</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">ff</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+        <span class="n">lfound</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ff</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s1">&#39;Fermi&#39;</span> <span class="ow">in</span> <span class="n">i</span><span class="p">:</span>
+                <span class="n">lfound</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="n">ss</span> <span class="o">=</span> <span class="n">i</span>
+                <span class="c1">#print(&#39;Fermi:&#39;, ss)</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">lspin</span><span class="p">:</span>
+                    <span class="n">fermi</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="n">ss</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">4</span><span class="p">])</span>
+                    <span class="c1">#print(&#39;Fermi&#39;, fermi)</span>
+                <span class="k">if</span> <span class="n">lspin</span><span class="p">:</span>
+                    <span class="c1">#print(ss.split())</span>
+                    <span class="n">fermi_up</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">ss</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">6</span><span class="p">])</span>
+                    <span class="n">fermi_down</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">ss</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">7</span><span class="p">])</span>
+                    <span class="n">fermi</span> <span class="o">=</span> <span class="p">[</span><span class="n">fermi_up</span><span class="p">,</span> <span class="n">fermi_down</span><span class="p">]</span>
+                    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;fermi list&#39;</span><span class="p">,</span> <span class="n">fermi</span><span class="p">)</span>
+            <span class="c1">#else: </span>
+            <span class="c1">#    #print(&#39;Fermi keyword not present&#39;)</span>
+            <span class="c1">#    return None</span>
+    <span class="k">if</span> <span class="n">lfound</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">fermi</span><span class="p">,</span> <span class="s2">&quot;eV&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span> 
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Fermi level not found in the qe out file&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span></div>
+
+<div class="viewcode-block" id="get_fermi2"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.get_output_qe.get_fermi2">[docs]</a><span class="k">def</span> <span class="nf">get_fermi2</span><span class="p">(</span><span class="n">infile</span><span class="p">):</span>
+    <span class="n">lasthit</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">infile</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s1">&#39;Fermi&#39;</span> <span class="ow">in</span> <span class="n">line</span><span class="p">:</span>
+                <span class="n">lasthit</span> <span class="o">=</span> <span class="n">line</span>
+            <span class="k">if</span> <span class="n">lasthit</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="c1">#print(&#39;Fermi keyword not present&#39;)                </span>
+                <span class="k">pass</span>
+                <span class="c1">#print lasthit</span>
+        <span class="k">if</span> <span class="n">lasthit</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Fermi keyword not present&#39;</span><span class="p">)</span>
+        <span class="n">fermi</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float</span><span class="p">(</span><span class="n">lasthit</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">4</span><span class="p">])</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">fermi</span><span class="p">,</span><span class="s1">&#39;eV&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="get_total_energy"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.get_output_qe.get_total_energy">[docs]</a><span class="k">def</span> <span class="nf">get_total_energy</span><span class="p">(</span><span class="n">infile</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">infile</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">ff</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ff</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s1">&#39;!    total energy&#39;</span> <span class="ow">in</span> <span class="n">i</span><span class="p">:</span>
+                <span class="n">ss</span> <span class="o">=</span> <span class="n">i</span>
+                <span class="n">total_energy</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="n">ss</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">4</span><span class="p">])</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">total_energy</span><span class="p">,</span> <span class="s2">&quot;Ryd&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="get_pressure"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.get_output_qe.get_pressure">[docs]</a><span class="k">def</span> <span class="nf">get_pressure</span><span class="p">(</span><span class="n">infile</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">infile</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">ff</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ff</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s1">&#39;P=&#39;</span> <span class="ow">in</span> <span class="n">i</span><span class="p">:</span>
+                <span class="n">ss</span> <span class="o">=</span> <span class="n">i</span>
+                <span class="c1">#press=float(ss.split()[5])</span>
+                <span class="n">press</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="n">ss</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;=&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">press</span><span class="p">,</span> <span class="s2">&quot;Kbar&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="get_natoms"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.get_output_qe.get_natoms">[docs]</a><span class="k">def</span> <span class="nf">get_natoms</span><span class="p">(</span><span class="n">infile</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">infile</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">ff</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ff</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s1">&#39;number of atoms/cell      =&#39;</span> <span class="ow">in</span> <span class="n">i</span><span class="p">:</span>
+                <span class="n">ss</span> <span class="o">=</span> <span class="n">i</span>
+                <span class="n">natoms</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">ss</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">4</span><span class="p">])</span>
+        <span class="k">return</span> <span class="p">(</span><span class="n">natoms</span><span class="p">,</span> <span class="s2">&quot;None&quot;</span><span class="p">)</span></div>
+
+    
+<div class="viewcode-block" id="get_forces"><a class="viewcode-back" href="../../../file4.html#esta.qeBag.get_output_qe.get_forces">[docs]</a><span class="k">def</span> <span class="nf">get_forces</span><span class="p">(</span><span class="n">infile</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    find Forces acting on atoms (cartesian axes, Ry/au):</span>
+<span class="sd">    and print forces in eV/Ang</span>
+<span class="sd">    </span>
+<span class="sd">    force values...</span>
+<span class="sd">    ...</span>
+<span class="sd">    ...</span>
+<span class="sd">    ...</span>
+<span class="sd">    ...</span>
+<span class="sd">    ...</span>
+<span class="sd">    </span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+    <span class="c1">#print(&#39;\n------------------------------------------------&#39;)</span>
+    <span class="c1">#import esta.general.conversion_factors as cf</span>
+    <span class="kn">import</span> <span class="nn">esta.measure.conversion_factors</span> <span class="k">as</span> <span class="nn">cf</span>
+    <span class="c1">#from esta.general import conversion_factors </span>
+    <span class="c1">#import esta.general.conversion_factors as cf</span>
+    <span class="c1">#print cf.ryd2ev/cf.bohr2ang</span>
+    <span class="c1">#print(&#39;------------------------------------------------\n&#39;)</span>
+    
+    <span class="n">natoms</span><span class="p">,</span> <span class="n">dummy</span> <span class="o">=</span> <span class="n">get_natoms</span><span class="p">(</span><span class="n">infile</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">infile</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                    
+        <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+        <span class="n">force</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">natoms</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">natoms</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+        <span class="n">force_norm</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">natoms</span><span class="p">)</span>
+        
+        <span class="n">lforce</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">)):</span>
+            <span class="k">if</span> <span class="s1">&#39;Forces acting on atoms (cartesian axes, Ry/au):&#39;</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+                <span class="n">lforce</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">natoms</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+                    <span class="n">force</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="o">-</span><span class="mi">3</span><span class="p">])</span>
+                    <span class="n">force</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
+                    <span class="n">force</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+                    
+        <span class="k">if</span> <span class="n">lforce</span><span class="p">:</span>
+            <span class="n">force</span> <span class="o">=</span> <span class="n">force</span> <span class="o">*</span> <span class="n">cf</span><span class="o">.</span><span class="n">ryd2ev</span><span class="o">/</span><span class="n">cf</span><span class="o">.</span><span class="n">bohr2ang</span>
+            <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">natoms</span><span class="p">):</span>
+                <span class="n">force_norm</span><span class="p">[</span><span class="n">ii</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">force</span><span class="p">[</span><span class="n">ii</span><span class="p">,:])</span>
+                <span class="c1">#print(force)</span>
+                <span class="c1">#print(np.shape(force))</span>
+            <span class="k">return</span> <span class="p">(</span><span class="n">force</span><span class="p">,</span> <span class="n">force_norm</span><span class="p">,</span> <span class="s2">&quot;eV/Ang&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">------------------------------------&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Serious error in file ..............&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Forces block not present in the file&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;------------------------------------</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">None</span>     </div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span><span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+
+    <span class="n">qe_warning</span><span class="p">()</span>
+    
+    <span class="n">llist</span><span class="o">=</span><span class="p">[</span>
+    <span class="s1">&#39;cf1_INCAR.out&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;cf2_INCAR.out&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;cf3_INCAR.out&#39;</span><span class="p">,</span>
+    <span class="p">]</span>
+    <span class="k">for</span> <span class="n">infile</span> <span class="ow">in</span> <span class="n">llist</span><span class="p">:</span>
+
+        <span class="n">refenergy</span><span class="o">=</span> <span class="n">get_fermi</span><span class="p">(</span><span class="n">infile</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">((</span><span class="s1">&#39;Fermi energy&#39;</span><span class="p">,</span> <span class="n">refenergy</span><span class="p">))</span>
+        <span class="c1">#a=get_fermi2(infile)</span>
+        <span class="c1">#print((&#39;Fermi energy&#39;, a))</span>
+        
+        <span class="n">ene</span><span class="o">=</span><span class="n">get_total_energy</span><span class="p">(</span><span class="n">infile</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">((</span><span class="s1">&#39;Total energy&#39;</span><span class="p">,</span> <span class="n">ene</span><span class="p">))</span>
+       
+        <span class="n">press</span><span class="o">=</span><span class="n">get_pressure</span><span class="p">(</span><span class="n">infile</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">((</span><span class="s1">&#39;Pressure&#39;</span><span class="p">,</span> <span class="n">press</span><span class="p">))</span>
+        <span class="n">natoms</span><span class="o">=</span><span class="n">get_natoms</span><span class="p">(</span><span class="n">infile</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">((</span><span class="s1">&#39;natoms:&#39;</span><span class="p">,</span> <span class="n">natoms</span><span class="p">))</span>
+        
+        <span class="c1">#infile=&#39;test1.out&#39;</span>
+        <span class="n">forces</span> <span class="o">=</span> <span class="n">get_forces</span><span class="p">(</span><span class="n">infile</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">((</span><span class="s1">&#39;forces: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">forces</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span>
+        <span class="nb">print</span><span class="p">((</span><span class="s1">&#39;forces_norm, units: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">forces</span><span class="p">[</span><span class="mi">1</span><span class="p">:])))</span>
+        <span class="nb">print</span><span class="p">((</span><span class="s1">&#39;Max and min of force on atoms&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">forces</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">forces</span><span class="p">[</span><span class="mi">1</span><span class="p">])))</span>
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Sonu Kumar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

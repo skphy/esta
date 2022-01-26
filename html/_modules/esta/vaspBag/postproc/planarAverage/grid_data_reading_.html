@@ -1,0 +1,425 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>esta.vaspBag.postproc.planarAverage.grid_data_reading_ &mdash; EStA 2.6.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+        <script src="../../../../../_static/jquery.js"></script>
+        <script src="../../../../../_static/underscore.js"></script>
+        <script src="../../../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../../index.html" class="icon icon-home"> EStA
+          
+
+          
+            
+            <img src="../../../../../_static/esta_logo2.6.0_cropped.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.6.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">EStA1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file2.html">EStA subfolders</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file3.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file3.html#ml-algorithms">ML algorithms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EStA2:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file4.html">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file4.html#esta-surfreact-package">esta.surfReact package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file4.html#esta-mlbag-package">esta.mlBag package</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../file3a.html">Cheat Sheet</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">EStA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../../../index.html">Module code</a> &raquo;</li>
+        
+      <li>esta.vaspBag.postproc.planarAverage.grid_data_reading_</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for esta.vaspBag.postproc.planarAverage.grid_data_reading_</h1><div class="highlight"><pre>
+<span></span>
+<span class="c1"># coding: utf-8</span>
+
+<span class="c1"># In[ ]:</span>
+
+
+<span class="c1"># %load grid_data_reading_.py</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+    <span class="c1"># import input_data   #sk</span>
+<div class="viewcode-block" id="grid_data_read"><a class="viewcode-back" href="../../../../../esta.vaspBag.postproc.planarAverage.html#esta.vaspBag.postproc.planarAverage.grid_data_reading_.grid_data_read">[docs]</a><span class="k">def</span> <span class="nf">grid_data_read</span><span class="p">(</span><span class="n">file_location_with_name</span><span class="p">):</span>
+    
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    data reading over a 3D/2D/1D grid in the format</span>
+<span class="sd">    of CHGCAR/CHG file of vasp</span>
+
+<span class="sd">    See the CHG/CHGCAR file in the current directory</span>
+
+<span class="sd">    FORMAT: example of BiCuTeo------------------------------------------------------------------</span>
+
+<span class="sd">    BiCuTeO</span>
+<span class="sd">       1.00000000000000</span>
+<span class="sd">         4.057950    0.000000    0.000000</span>
+<span class="sd">         0.000000    4.057950    0.000000</span>
+<span class="sd">         0.000000    0.000000    9.661035</span>
+<span class="sd">       Bi   Cu   Te   O</span>
+<span class="sd">         2     2     2     2</span>
+<span class="sd">    Direct</span>
+<span class="sd">      0.250000  0.250000  0.126886</span>
+<span class="sd">      0.750000  0.750000  0.873114</span>
+<span class="sd">      0.750000  0.250000  0.500000</span>
+<span class="sd">      0.250000  0.750000  0.500000</span>
+<span class="sd">      0.250000  0.250000  0.679141</span>
+<span class="sd">      0.750000  0.750000  0.320859</span>
+<span class="sd">      0.750000  0.250000  0.000000</span>
+<span class="sd">      0.250000  0.750000  0.000000</span>
+
+<span class="sd">       56   56  140</span>
+<span class="sd">     0.18889588828E+02 0.19217555305E+02 0.20196742255E+02 0.21814902925E+02 0.24044802646E+02</span>
+<span class="sd">     0.26841815535E+02 0.30131018674E+02 0.33805578097E+02 0.37709638956E+02 0.41646119069E+02</span>
+<span class="sd">     0.45387137320E+02 0.48665992089E+02 0.51228125474E+02 0.52861127779E+02 0.53422658702E+02</span>
+<span class="sd">     0.52861133231E+02 0.51228136024E+02 0.48666007074E+02 0.45387155865E+02 0.41646140190E+02</span>
+<span class="sd">    -----</span>
+<span class="sd">    ---</span>
+<span class="sd">    ------------------------------------------------------------------------------------------</span>
+
+
+
+<span class="sd">    date: May 2018</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="nb">print</span><span class="p">()</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;------------------------------------------------------------------&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Reading input file .....in the format of LOCPOT, CHGCAR/CHG file of VASP&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;  -- other formats for reading such as QE, SIESTA ... to do&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;------------------------------------------------------------------&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+
+
+    <span class="c1">#file_location_with_name =&#39;../LOCPOT&#39;</span>
+    <span class="c1">#file_location_with_name =&#39;/home/sonu/ipython_exercises/planar_average_of_3D-function/planar_average/TiS2_test/CHGCAR&#39;</span>
+<span class="c1">#     path, filename = os.path.split(input_data.file_location_with_name)  #sk</span>
+    <span class="n">path</span><span class="p">,</span> <span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">file_location_with_name</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;file name is&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;file location is&#39;</span><span class="p">,</span> <span class="n">path</span><span class="p">)</span>
+
+    <span class="c1">#TiS2 bulk</span>
+    <span class="c1">#with open(&#39;/home/sonu/ipython_exercises/planar_average_of_3D-function/planar_average/TiS2_test/CHGCAR&#39;) as f:</span>
+    <span class="c1">#with open(&#39;/home/sonu/ipython_exercises/planar_average_of_3D-function/planar_average/TiS2_test/LOCPOT&#39;) as f:</span>
+    <span class="c1"># ZrS2 bulk</span>
+<span class="c1">#     with open(input_data.file_location_with_name) as f:  #sk</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_location_with_name</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>  
+    <span class="c1">#with open(&#39;data3D&#39;) as f:</span>
+    <span class="c1">#C3N bulk</span>
+    <span class="c1">#with open(&#39;/home/sonu/ipython_exercises/planar_average_of_3D-function/planar_average/C3N_test/CHGCAR&#39;) as f:</span>
+        <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+    <span class="c1">#     print lines</span>
+    <span class="c1"># for i, line in enumerate(lines):</span>
+    <span class="c1">#     if i &lt;=20:</span>
+    <span class="c1">#         print i, line</span>
+
+    <span class="n">A1</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">]),</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">2</span><span class="p">])]</span> 
+    <span class="n">A2</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">]),</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">2</span><span class="p">])]</span> 
+    <span class="n">A3</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">]),</span> <span class="nb">float</span><span class="p">((</span><span class="n">lines</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">2</span><span class="p">])]</span> 
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Lattice vectors:&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">A1</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">A2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">A3</span><span class="p">)</span>
+
+    <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">A1</span><span class="p">,</span><span class="n">A2</span><span class="p">,</span><span class="n">A3</span><span class="p">])</span>                                                            
+    <span class="n">Vol</span><span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">det</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>  
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;volume of unit cell:&#39;</span><span class="p">,</span> <span class="n">Vol</span><span class="p">,</span> <span class="s1">&#39;Ang^-3&#39;</span><span class="p">)</span>
+    <span class="c1">#sys.exit()                                                                            </span>
+
+    <span class="n">typ_atom</span> <span class="o">=</span> <span class="p">[</span><span class="n">tyatm</span> <span class="k">for</span> <span class="n">tyatm</span> <span class="ow">in</span>  <span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atoms types are:&#39;</span><span class="p">,</span> <span class="n">typ_atom</span><span class="p">)</span> <span class="c1"># type(typ_atom)</span>
+    <span class="c1"># for i in typ_atom:</span>
+    <span class="c1">#     print i</span>
+
+    <span class="n">natom</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">natm</span><span class="p">)</span> <span class="k">for</span> <span class="n">natm</span> <span class="ow">in</span>  <span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="mi">6</span><span class="p">])</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="k">if</span> <span class="n">natm</span> <span class="o">!=</span> <span class="s2">&quot; &quot;</span> <span class="ow">and</span> <span class="n">natm</span> <span class="o">!=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;no. of atoms of each type:&#39;</span><span class="p">,</span> <span class="n">natom</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;total no of atoms:&#39;</span><span class="p">,</span> <span class="nb">sum</span><span class="p">(</span><span class="n">natom</span><span class="p">))</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;data dimensions:&#39;</span><span class="p">)</span>
+    <span class="c1"># sys.exit()</span>
+
+    <span class="n">lines2skip</span> <span class="o">=</span> <span class="mi">8</span><span class="o">+</span><span class="nb">sum</span><span class="p">(</span><span class="n">natom</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="o">-</span><span class="mi">1</span>
+
+    <span class="n">zz</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">z</span><span class="p">)</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">lines2skip</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="k">if</span> <span class="n">z</span> <span class="o">!=</span> <span class="s1">&#39; &#39;</span><span class="ow">and</span> <span class="n">z</span> <span class="o">!=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">]</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">zz</span><span class="p">))</span>
+
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">zz</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="n">ln</span> <span class="o">=</span> <span class="n">zz</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">zz</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">zz</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">zz</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">ln</span> <span class="o">=</span> <span class="n">zz</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">zz</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">zz</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">ln</span> <span class="o">=</span> <span class="n">zz</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Grid is:&#39;</span><span class="p">,</span> <span class="n">zz</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;grid points are:&#39;</span><span class="p">,</span> <span class="n">ln</span><span class="p">)</span>
+    <span class="c1"># sys.exit()</span>
+
+    <span class="n">quotient</span> <span class="o">=</span> <span class="nb">divmod</span><span class="p">(</span><span class="n">ln</span><span class="p">,</span> <span class="mi">5</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">remainder</span> <span class="o">=</span> <span class="nb">divmod</span><span class="p">(</span><span class="n">ln</span><span class="p">,</span><span class="mi">5</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;quotient:&#39;</span><span class="p">,</span> <span class="n">quotient</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;remainder:&#39;</span><span class="p">,</span> <span class="n">remainder</span><span class="p">)</span>
+
+    <span class="c1"># sys.exit()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;------------------------&#39;</span><span class="p">)</span>
+    <span class="n">data_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">test</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">if</span> <span class="n">remainder</span> <span class="o">==</span> <span class="mf">0.</span><span class="p">:</span>
+        <span class="n">dataGridLines</span> <span class="o">=</span> <span class="n">quotient</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;lines are exactly&#39;</span><span class="p">,</span> <span class="n">quotient</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">remainder</span> <span class="o">!=</span> <span class="mf">0.</span><span class="p">:</span>
+        <span class="n">dataGridLines</span> <span class="o">=</span> <span class="n">quotient</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;lines are more than &#39;</span><span class="p">,</span> <span class="n">quotient</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">dataGridLines</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">test</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">lines2skip</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="nb">type</span><span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">lines2skip</span><span class="o">+</span><span class="mi">1</span><span class="p">]),</span> <span class="p">[</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">lines2skip</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="k">if</span> <span class="n">k</span> <span class="o">!=</span> <span class="s1">&#39; &#39;</span> <span class="ow">and</span> <span class="n">k</span> <span class="o">!=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">])</span>
+        <span class="c1">#a = [float(k) for k in (lines[i+1+lines2skip+1]).split() if k != &#39; &#39; and k != &#39;\n&#39;]</span>
+        <span class="c1">#a = [np.longdouble(k) for k in (lines[i+1+lines2skip+1]).split() if k != &#39; &#39; and k != &#39;\n&#39;]</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">float128</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">+</span><span class="n">lines2skip</span><span class="o">+</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="k">if</span> <span class="n">k</span> <span class="o">!=</span> <span class="s1">&#39; &#39;</span> <span class="ow">and</span> <span class="n">k</span> <span class="o">!=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">]</span>
+        <span class="n">data_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+    <span class="c1"># print data_list</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;data shape:&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">data_list</span><span class="p">))</span>
+    <span class="c1"># for i in data_list:</span>
+    <span class="c1">#     print i, type(i)</span>
+
+    <span class="nb">print</span><span class="p">()</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;data shape stored in the array:&#39;</span><span class="p">)</span>
+    <span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">data_list</span><span class="p">)</span>    
+    <span class="c1"># print arr  </span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span>
+    <span class="c1"># sys.exit()</span>
+
+    <span class="n">data_arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
+    <span class="c1"># print data_arr, np.shape(data_arr), len(data_arr)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">final shape of data stored:&#39;</span><span class="p">)</span>
+
+    <span class="c1">#data_array = data_arr.reshape(zz[0], zz[1], zz[2])</span>
+    <span class="c1">#Note here: vasp read data over 3D grid as: first x axis, then y and finally z axis--therefore </span>
+    <span class="c1"># i reshape array as (z,y,x) ...very important ..******</span>
+    <span class="n">data_array</span> <span class="o">=</span> <span class="n">data_arr</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">zz</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">zz</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">zz</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">data_array</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> data is: &#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;... commented..if you want to see it .. then uncomment</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="c1">#print data_array</span>
+
+    <span class="c1">#print &#39;*****   uncomment following--divide by volume--if CHGCAR file-- *****&#39;</span>
+    <span class="k">if</span> <span class="n">filename</span> <span class="o">==</span> <span class="s1">&#39;CHGCAR&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;processing CHGCAR file ...&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39; --dividing data_array by volume:&#39;</span><span class="p">)</span>
+        <span class="n">data_array</span> <span class="o">=</span> <span class="n">data_array</span><span class="o">/</span><span class="n">Vol</span>
+
+        <span class="c1">#print &#39;xx-&#39;</span>
+        <span class="c1">#print data_array</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Testing: integral of charge density over the volume = No of electrons&#39;</span><span class="p">)</span>
+        <span class="n">Nelect</span> <span class="o">=</span> <span class="mf">0.</span>
+        <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">zz</span><span class="p">[</span><span class="mi">2</span><span class="p">]):</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">zz</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">zz</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+                    <span class="n">Nelect</span> <span class="o">+=</span> <span class="n">data_array</span><span class="p">[</span><span class="n">k</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">i</span><span class="p">]</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;No. of electrons are:&#39;</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">Nelect</span><span class="o">*</span><span class="n">Vol</span><span class="o">/</span><span class="p">(</span><span class="n">zz</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">zz</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">zz</span><span class="p">[</span><span class="mi">2</span><span class="p">]))),</span><span class="s1">&#39;, &#39;</span> <span class="s1">&#39;error:&#39;</span><span class="p">,</span>                       <span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">Nelect</span><span class="o">*</span><span class="n">Vol</span><span class="o">/</span><span class="p">(</span><span class="n">zz</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">zz</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">zz</span><span class="p">[</span><span class="mi">2</span><span class="p">])))</span> <span class="o">-</span><span class="p">(</span><span class="n">Nelect</span><span class="o">*</span><span class="n">Vol</span><span class="o">/</span><span class="p">(</span><span class="n">zz</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">zz</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">zz</span><span class="p">[</span><span class="mi">2</span><span class="p">])))</span>
+    
+    <span class="k">return</span> <span class="n">data_array</span><span class="p">,</span> <span class="n">A1</span><span class="p">,</span> <span class="n">A2</span><span class="p">,</span> <span class="n">A3</span></div>
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Sonu Kumar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,361 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>esta.vaspBag.inout.bending_nanoribbon &mdash; EStA 2.6.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> EStA
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.6.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file1.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file2.html">Details of EStA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file3.html">ML algorithms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file3a.html">Git Cheat Sheet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html">List of EStA packages information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-general-package">esta.general package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-qebag-package">esta.qeBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-grrmbag-package">esta.grrmBag package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-pointgroup-package">esta.pointGroup package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-phonon-package">esta.phonon package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../file4.html#esta-transitionstate-package">esta.transitionState package</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">EStA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../../index.html">Module code</a> &raquo;</li>
+        
+      <li>esta.vaspBag.inout.bending_nanoribbon</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for esta.vaspBag.inout.bending_nanoribbon</h1><div class="highlight"><pre>
+<span></span><span class="c1">#-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-</span>
+<span class="c1">#</span>
+<span class="c1"># This file is part of esta (electronic structure analyser) code</span>
+<span class="c1"># based on python, fortran, and c codes</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="c1"># author: skumar</span>
+<span class="c1"># email : sonukumar.physics@gmail.com</span>
+<span class="c1"># date  : april, 2017</span>
+<span class="c1">#       :        2019</span>
+<span class="c1">#-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-</span>
+<span class="c1">#</span>
+
+<span class="c1"># coding: utf-8</span>
+
+<span class="c1"># In[5]:</span>
+
+
+<span class="c1"># %load bending_nanoribbon.py</span>
+
+
+<div class="viewcode-block" id="get_bent_structure"><a class="viewcode-back" href="../../../../file4.html#esta.vaspBag.inout.bending_nanoribbon.get_bent_structure">[docs]</a><span class="k">def</span> <span class="nf">get_bent_structure</span><span class="p">(</span><span class="n">angle_degree</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    </span>
+<span class="sd">    input: </span>
+<span class="sd">    ------</span>
+<span class="sd">            scalar: angle_degree</span>
+<span class="sd">            </span>
+<span class="sd">            input file name must be &#39;POSCAR&#39;</span>
+<span class="sd">    </span>
+<span class="sd">    output:</span>
+<span class="sd">    -------</span>
+<span class="sd">            string: filename containg data for bent str in POSCAR format</span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    read related information etc from other folder ..for bending</span>
+
+<span class="sd">    Date: 2018</span>
+<span class="sd">    Author: sonu</span>
+<span class="sd">    Email: sonukumar.physics@gmail.com</span>
+
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+    <span class="kn">import</span> <span class="nn">sys</span>
+    <span class="kn">import</span> <span class="nn">esta</span>
+    
+    <span class="kn">from</span> <span class="nn">esta.vasp_bag.inout</span> <span class="kn">import</span> <span class="n">read_poscar</span>
+
+    <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+    <span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+    
+    <span class="c1"># sys.path.append(&#39;../../&#39;) # directory containg vasp_bag folder</span>
+<span class="c1">#     sys.path.insert(0,&#39;/home/sonu/ipython_exercises/vasp_bag&#39;)</span>
+    <span class="c1">#import vasp_bag</span>
+<span class="c1">#     from inout import read_poscar</span>
+    
+    <span class="n">out</span><span class="o">=</span><span class="n">read_poscar</span><span class="o">.</span><span class="n">get_poscar</span><span class="p">(</span><span class="s2">&quot;./&quot;</span><span class="p">)</span>
+<span class="c1">#     sys.exit()</span>
+
+    <span class="c1"># input coordinates must be in cartesian basis</span>
+    <span class="c1"># print np.shape(read_poscar.tau)</span>
+
+<span class="c1">#     in_coord = read_poscar.tau</span>
+    <span class="c1">#out return tau_cartesian, real_volume, LV1, LV2, LV3</span>
+    <span class="n">in_coord</span> <span class="o">=</span> <span class="n">out</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1">#sk</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;input coordinates shape:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">in_coord</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">in_coord</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]))</span>
+<span class="c1">#     print read_poscar.LV1[0]</span>
+
+
+    <span class="c1">#lattice constant along x direction; direction which will be bended .. </span>
+    <span class="c1"># print read_poscar.LV1[0]</span>
+<span class="c1">#     length_to_bend = read_poscar.LV1[0]</span>
+    <span class="n">length_to_bend</span> <span class="o">=</span> <span class="n">out</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>  <span class="c1">#sk</span>
+    
+    <span class="c1"># length_to_bend = np.max(in_coord[:,0])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;length to bend (ang): </span><span class="si">{0:6.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">length_to_bend</span><span class="p">))</span>
+
+    <span class="n">angle_in_degree</span> <span class="o">=</span> <span class="n">angle_degree</span>
+    <span class="n">theta</span> <span class="o">=</span> <span class="n">angle_in_degree</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mf">180.</span>
+
+    <span class="k">if</span> <span class="n">theta</span> <span class="o">==</span> <span class="nb">int</span><span class="p">(</span><span class="mf">0.</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;bending by zerp degree not possible.&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">())</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;bending angle in radian: </span><span class="si">{0:6.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">theta</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;bending angle in degree: </span><span class="si">{0:6.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">angle_in_degree</span><span class="p">))</span>
+
+    <span class="c1"># radius of circle/arc</span>
+    <span class="c1"># radius = length_to_bend/2./np.pi</span>
+    <span class="n">radius</span> <span class="o">=</span> <span class="n">length_to_bend</span><span class="o">/</span><span class="n">theta</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;radius (ang): </span><span class="si">{0:6.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">radius</span><span class="p">))</span>
+
+
+
+    <span class="c1"># transformed coordinates</span>
+    <span class="n">t_coord</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">in_coord</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">in_coord</span><span class="p">)):</span>
+        <span class="c1">## *Note: xy plane becomes xz plane; so I did transformation so that plane </span>
+        <span class="c1">#         does not change*    ----need to recheck again --</span>
+        <span class="c1">#</span>
+        <span class="c1"># Note: bending takes place in x-y plane and arc protrudes in z direction -- procedure for folding</span>
+        <span class="c1"># Note: xz or ac plane remains same ---checked</span>
+        <span class="c1"># </span>
+        <span class="n">t_coord</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">radius</span> <span class="o">+</span> <span class="n">in_coord</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="o">*</span><span class="n">in_coord</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="n">length_to_bend</span><span class="p">)</span>
+        <span class="n">t_coord</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">radius</span> <span class="o">+</span> <span class="n">in_coord</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="o">*</span><span class="n">in_coord</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="n">length_to_bend</span><span class="p">)</span>
+        <span class="n">t_coord</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">in_coord</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+
+    
+    <span class="n">lcoord</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">if</span> <span class="n">lcoord</span><span class="p">:</span>
+        <span class="c1"># np.savetxt(&#39;coord.dat&#39;, np.array([t_coord[:,0], t_coord[:,1], t_coord[:,2]]).T)  </span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Generating coord.dat file ...&quot;</span><span class="p">)</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">savetxt</span><span class="p">(</span><span class="s1">&#39;coord.dat&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">t_coord</span><span class="p">))</span>    
+       
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Generating  &#39;</span><span class="o">+</span><span class="s1">&#39;degree_&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">angle_in_degree</span><span class="p">))</span><span class="o">+</span><span class="s1">&#39;_bentPOSCAR ..&#39;</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;degree_&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">angle_in_degree</span><span class="p">))</span><span class="o">+</span><span class="s1">&#39;_bentPOSCAR&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;# poscar created by &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">angle_in_degree</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; deg-bend on &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">today</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39; using esta</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;1</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span> <span class="s1">&#39; </span><span class="se">\t</span><span class="s1"> &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">out</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span> <span class="s1">&#39; </span><span class="se">\t</span><span class="s1"> &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">out</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span> <span class="s1">&#39; </span><span class="se">\t</span><span class="s1"> &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">out</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span> <span class="s1">&#39; </span><span class="se">\t</span><span class="s1"> &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span><span class="n">out</span><span class="p">[</span><span class="mi">5</span><span class="p">]))</span>   <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span> <span class="s1">&#39; </span><span class="se">\t</span><span class="s1"> &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span><span class="n">out</span><span class="p">[</span><span class="mi">6</span><span class="p">]))</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        
+        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Cartesian</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">out</span><span class="p">[</span><span class="mi">7</span><span class="p">]):</span>
+            <span class="c1">#f.write(&quot; \t&quot;.join(map(str, t_coord[i,:])) + &quot;\n&quot;)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{0:18.12f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span>  <span class="n">t_coord</span><span class="p">[</span><span class="n">i</span><span class="p">,:]</span> <span class="p">]))</span><span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>            </div>
+
+<span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    calling bending method ..</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">angle_degree</span><span class="o">=</span><span class="mf">60.</span>
+    <span class="n">get_bent_structure</span><span class="p">(</span><span class="n">angle_degree</span><span class="p">)</span>
+
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2017-2021, Sonu Kumar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
