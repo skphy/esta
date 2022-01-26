@@ -71,7 +71,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   EStA1:
  </span>
@@ -93,7 +93,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   EStA2:
  </span>
@@ -105,7 +105,31 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  qeBag:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="file_qeBag.html">
+   esta.qeBag package
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  grrmBag:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="file_grrmBag.html">
+   esta.grrmBag package
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Additional:
  </span>
@@ -113,7 +137,7 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="file3a.html">
-   Cheat Sheet
+   Reference Sheet
   </a>
  </li>
 </ul>
@@ -400,7 +424,7 @@ crystal = lattice + basis (atoms or molecules )</p>
 <p>Date: April, 2017, 2019, 2020</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.crystal_lattice.</span></span><span class="sig-name descname"><span class="pre">CrystalLattice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.crystal_lattice.</span></span><span class="sig-name descname"><span class="pre">CrystalLattice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Crystal lattice class to define lattice parameters and basis
 crystal = lattice + basis (atoms or molecules )</p>
@@ -424,7 +448,7 @@ email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52
 
 <dl class="py property">
 <dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_atm_type">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">get_atm_type</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_atm_type" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_atm_type</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_atm_type" title="Permalink to this definition">¶</a></dt>
 <dd><p>get symbolic representation of atoms of each type in
 the form of list</p>
 </dd></dl>
@@ -438,7 +462,7 @@ in c-style format or fortran stype format</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_cell_vectors">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">get_cell_vectors</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_cell_vectors" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_cell_vectors</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_cell_vectors" title="Permalink to this definition">¶</a></dt>
 <dd><p>geta tuple of set of three cell/lattice vectors lv1, lv2, and lv3
 in c-style format</p>
 </dd></dl>
@@ -469,7 +493,7 @@ any of the atoms)</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_natm_type">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">get_natm_type</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_natm_type" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_natm_type</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_natm_type" title="Permalink to this definition">¶</a></dt>
 <dd><p>get no. of atoms of each type in a list format</p>
 </dd></dl>
 
@@ -506,7 +530,7 @@ self.LV2, self.LV3,self.atm_type, self.natm_type, self.natoms</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_rVolume">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">get_rVolume</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_rVolume" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_rVolume</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.get_rVolume" title="Permalink to this definition">¶</a></dt>
 <dd><p>get real space lattice volume</p>
 </dd></dl>
 
@@ -523,19 +547,19 @@ self.LV2, self.LV3,self.atm_type, self.natm_type, self.natoms</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.is_cartesian">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">is_cartesian</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.is_cartesian" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_cartesian</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.is_cartesian" title="Permalink to this definition">¶</a></dt>
 <dd><p>check if atom positions in cartesian  coordinates</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.is_crystal">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">is_crystal</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.is_crystal" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_crystal</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.is_crystal" title="Permalink to this definition">¶</a></dt>
 <dd><p>check if atom positions in crytal coordinates</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.is_selective_dynamics">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">is_selective_dynamics</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.is_selective_dynamics" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_selective_dynamics</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.is_selective_dynamics" title="Permalink to this definition">¶</a></dt>
 <dd><p>check whether selective dynamics True or False</p>
 </dd></dl>
 
@@ -554,13 +578,13 @@ output: reciprocal space lattice vectors: b1, b2, b3</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.to_cartesian">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">to_cartesian</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.to_cartesian" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">to_cartesian</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.to_cartesian" title="Permalink to this definition">¶</a></dt>
 <dd><p>get atomic position in cartesin cooridnates</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="esta.vaspBag.inout.crystal_lattice.CrystalLattice.to_crystal">
-<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">to_crystal</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.to_crystal" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">to_crystal</span></span><a class="headerlink" href="#esta.vaspBag.inout.crystal_lattice.CrystalLattice.to_crystal" title="Permalink to this definition">¶</a></dt>
 <dd><p>get atomic position in crystal cooridnates</p>
 </dd></dl>
 
@@ -603,7 +627,7 @@ email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52
 <p>lattice class to define unit cell and lattice parameters</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.vaspBag.inout.lattice.lattice">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.lattice.</span></span><span class="sig-name descname"><span class="pre">lattice</span></span><a class="headerlink" href="#esta.vaspBag.inout.lattice.lattice" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.vaspBag.inout.lattice.</span></span><span class="sig-name descname"><span class="pre">lattice</span></span><a class="headerlink" href="#esta.vaspBag.inout.lattice.lattice" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 </dd></dl>
 

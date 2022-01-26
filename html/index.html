@@ -72,7 +72,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   EStA1:
  </span>
@@ -94,7 +94,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   EStA2:
  </span>
@@ -106,7 +106,31 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  qeBag:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="file_qeBag.html">
+   esta.qeBag package
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  grrmBag:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="file_grrmBag.html">
+   esta.grrmBag package
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Additional:
  </span>
@@ -114,7 +138,7 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="file3a.html">
-   Cheat Sheet
+   Reference Sheet
   </a>
  </li>
 </ul>
@@ -194,8 +218,8 @@
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#some-abilities-of-the-code">
-     Some abilities of the code
+    <a class="reference internal nav-link" href="#some-abilities-of-the-esta">
+     Some abilities of the EStA
     </a>
    </li>
    <li class="toc-h2 nav-item toc-entry">
@@ -238,8 +262,8 @@
   </a>
   <ul class="visible nav section-nav flex-column">
    <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#some-abilities-of-the-code">
-     Some abilities of the code
+    <a class="reference internal nav-link" href="#some-abilities-of-the-esta">
+     Some abilities of the EStA
     </a>
    </li>
    <li class="toc-h2 nav-item toc-entry">
@@ -270,8 +294,8 @@
 <h1>EStA documentation!<a class="headerlink" href="#esta-documentation" title="Permalink to this headline">¶</a></h1>
 <p><strong>Electronic Structure Analyzer</strong> (<strong>EStA</strong>) aka pytware for analyzing and calculating to some extent the electronic structure of materials and molecules.</p>
 <p><strong>EStA</strong> software package is capable of analyzing, pre-processing, and post-processing data from different software packages such as vasp, quantum-espresso, gaussian, GRRM, xTB, and so on. It can automatically generate input files for vasp, quantum-esspresso, and other codes as well can do some model calculations. It is written in python3, Fotran90, and some part in C. In future, it will be able to perform calculations for predicting electronic and transport properties.</p>
-<div class="section" id="some-abilities-of-the-code">
-<h2>Some abilities of the code<a class="headerlink" href="#some-abilities-of-the-code" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="some-abilities-of-the-esta">
+<h2>Some abilities of the EStA<a class="headerlink" href="#some-abilities-of-the-esta" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ol class="arabic simple">
 <li><p>automatic input generations for different electronic structure softwares</p></li>
@@ -294,7 +318,7 @@
 <h2>Keyword related to author’s research areas<a class="headerlink" href="#keyword-related-to-author-s-research-areas" title="Permalink to this headline">¶</a></h2>
 <p><strong>thermoelectrics, heterogeneous catalysis, homogeneous catalysis, defects, phonons, and  machine learning</strong></p>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">EStA1:</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">EStA1:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="file1.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="file2.html">EStA subfolders</a></li>
@@ -315,7 +339,7 @@
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">EStA2:</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">EStA2:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="file4.html">esta.general package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#submodules">Submodules</a></li>
@@ -377,41 +401,8 @@
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.general">Module contents</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-qebag-package">esta.qeBag package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#id4">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.23">esta.qeBag.23 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.bands_kpts_band_gap">esta.qeBag.bands_kpts_band_gap module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.bands_kpts_band_gap0">esta.qeBag.bands_kpts_band_gap0 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#esta-qebag-gen-qeinput-copy1-module">esta.qeBag.gen_qeinput-Copy1 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.gen_qeinput">esta.qeBag.gen_qeinput module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.gen_qeinput0">esta.qeBag.gen_qeinput0 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.gen_qeinput1">esta.qeBag.gen_qeinput1 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.gen_qeinput2">esta.qeBag.gen_qeinput2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.gen_qeinput_adv">esta.qeBag.gen_qeinput_adv module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.gen_qeinput_adv0">esta.qeBag.gen_qeinput_adv0 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.get_bands_kpts_band_gap_adv3">esta.qeBag.get_bands_kpts_band_gap_adv3 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.get_output_qe">esta.qeBag.get_output_qe module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.get_xyz_from_qe_rlxout">esta.qeBag.get_xyz_from_qe_rlxout module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.neb_qe">esta.qeBag.neb_qe module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.neb_qe0">esta.qeBag.neb_qe0 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.neb_qe1">esta.qeBag.neb_qe1 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.parse_pseudo">esta.qeBag.parse_pseudo module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.pspot_core_states">esta.qeBag.pspot_core_states module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.rate_const_adv">esta.qeBag.rate_const_adv module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.read_dynmat_adv">esta.qeBag.read_dynmat_adv module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.read_write">esta.qeBag.read_write module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.read_write0">esta.qeBag.read_write0 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.sum_pdos_atom">esta.qeBag.sum_pdos_atom module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.x_read_write">esta.qeBag.x_read_write module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.xbands_kpts_band_gap">esta.qeBag.xbands_kpts_band_gap module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.xml_qe">esta.qeBag.xml_qe module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.xml_qe0">esta.qeBag.xml_qe0 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.qeBag.zpe">esta.qeBag.zpe module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#id53">Module contents</a></li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal" href="file4.html#esta-vaspbag-inout-package">esta.vaspBag.inout package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#id54">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id4">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.vaspBag.inout.crystal_lattice">esta.vaspBag.inout.crystal_lattice module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.vaspBag.inout.diameter_or_area_nanowire">esta.vaspBag.inout.diameter_or_area_nanowire module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.vaspBag.inout.get_labelling_atoms">esta.vaspBag.inout.get_labelling_atoms module</a></li>
@@ -427,52 +418,15 @@
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.vaspBag.inout.xml_vasp">esta.vaspBag.inout.xml_vasp module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.vaspBag.inout.xml_vasp_ASE">esta.vaspBag.inout.xml_vasp_ASE module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.vaspBag.inout.xml_vasp_hse">esta.vaspBag.inout.xml_vasp_hse module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#id55">Module contents</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="file4.html#esta-grrmbag-package">esta.grrmBag package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#id56">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.LUPINP">esta.grrmBag.LUPINP module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.com2xyz">esta.grrmBag.com2xyz module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.get_IRC_path">esta.grrmBag.get_IRC_path module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.get_IRC_path0">esta.grrmBag.get_IRC_path0 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.get_LUP">esta.grrmBag.get_LUP module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.get_LUPINP">esta.grrmBag.get_LUPINP module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.get_LUP_profile_advv">esta.grrmBag.get_LUP_profile_advv module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.get_nTS_nEQ_nPT">esta.grrmBag.get_nTS_nEQ_nPT module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.input_grrm">esta.grrmBag.input_grrm module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.input_grrm_adv">esta.grrmBag.input_grrm_adv module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.input_grrm_advv">esta.grrmBag.input_grrm_advv module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.input_grrm_advv0">esta.grrmBag.input_grrm_advv0 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.output_grrm">esta.grrmBag.output_grrm module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.output_grrm_ITR_adv">esta.grrmBag.output_grrm_ITR_adv module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.output_grrm_ITR_adv1">esta.grrmBag.output_grrm_ITR_adv1 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.output_grrm_ITR_adv2">esta.grrmBag.output_grrm_ITR_adv2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.output_grrm_ITR_adv3">esta.grrmBag.output_grrm_ITR_adv3 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.output_grrm_ITR_adv4">esta.grrmBag.output_grrm_ITR_adv4 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.output_grrm_ITR_adv5">esta.grrmBag.output_grrm_ITR_adv5 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.output_grrm_PT">esta.grrmBag.output_grrm_PT module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.output_grrm_RxnMap6">esta.grrmBag.output_grrm_RxnMap6 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.output_grrm_TS">esta.grrmBag.output_grrm_TS module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.output_grrm_init">esta.grrmBag.output_grrm_init module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.plot_strs_energy">esta.grrmBag.plot_strs_energy module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.search_structure2">esta.grrmBag.search_structure2 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.search_structure2_mod">esta.grrmBag.search_structure2_mod module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.search_structure3">esta.grrmBag.search_structure3 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.to_location">esta.grrmBag.to_location module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.write_xyz">esta.grrmBag.write_xyz module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.write_xyz0">esta.grrmBag.write_xyz0 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.write_xyz1">esta.grrmBag.write_xyz1 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.grrmBag.x">esta.grrmBag.x module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#id151">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id5">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="file4.html#esta-pointgroup-package">esta.pointGroup package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#id152">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id6">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="file4.html#esta-phonon-package">esta.phonon package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#id153">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id7">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.phonon.atm_displacements">esta.phonon.atm_displacements module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.phonon.atm_displacements_selective">esta.phonon.atm_displacements_selective module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.phonon.atm_displacements_selective_general_disp">esta.phonon.atm_displacements_selective_general_disp module</a></li>
@@ -485,30 +439,30 @@
 <li class="toctree-l2"><a class="reference internal" href="file4.html#esta-phonon-sum-freq-and-zpe-module">esta.phonon.sum_freq_and_zpe module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.phonon.x_error_force_constant_and_frequencies_selective_subspace">esta.phonon.x_error_force_constant_and_frequencies_selective_subspace module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.phonon.yaml_read_band">esta.phonon.yaml_read_band module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#id154">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id8">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="file4.html#esta-transitionstate-package">esta.transitionState package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#id155">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id9">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.transitionState.associated_legendre">esta.transitionState.associated_legendre module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.transitionState.neb">esta.transitionState.neb module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.transitionState.optimizer">esta.transitionState.optimizer module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.transitionState.potential_2D">esta.transitionState.potential_2D module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#id156">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id10">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="file4.html#esta-surfreact-package">esta.surfReact package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#id157">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id11">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.surfReact.conformer">esta.surfReact.conformer module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#id158">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id12">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="file4.html#esta-mlbag-package">esta.mlBag package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#id159">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id13">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="file4.html#esta-plot-package">esta.plot package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#id160">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id14">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#esta-plot-atomic-distance-density-module">esta.plot.atomic_Distance_Density module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.plot.atomic_distance_density_class2">esta.plot.atomic_distance_density_class2 module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.plot.broken_axis_plot__most_done_only_axis_allignmnet_left">esta.plot.broken_axis_plot__most_done_only_axis_allignmnet_left module</a></li>
@@ -528,33 +482,113 @@
 <li class="toctree-l3"><a class="reference internal" href="file4.html#rendering-math-equations-using-tex">Rendering math equations using TeX</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#id163">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id17">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="file4.html#esta-fortran-package">esta.fortran package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#id164">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id18">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="file4.html#esta-kspace-package">esta.kspace package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#id165">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id19">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.kspace.kgrid">esta.kspace.kgrid module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#id166">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id20">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="file4.html#esta-spacegroup-package">esta.spaceGroup package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#id167">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id21">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.spaceGroup.read_cif">esta.spaceGroup.read_cif module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.spaceGroup.transform">esta.spaceGroup.transform module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file4.html#module-esta.spaceGroup.transform_adv">esta.spaceGroup.transform_adv module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="file4.html#id168">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file4.html#id22">Module contents</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Additional:</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">qeBag:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="file3a.html">Cheat Sheet</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="file_qeBag.html">esta.qeBag package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag.23">esta.qeBag.23 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag.bands_kpts_band_gap">esta.qeBag.bands_kpts_band_gap module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag.bands_kpts_band_gap0">esta.qeBag.bands_kpts_band_gap0 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#esta-qebag-gen-qeinput-copy1-module">esta.qeBag.gen_qeinput-Copy1 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag.gen_qeinput">esta.qeBag.gen_qeinput module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#esta-qebag-gen-qeinput0-module">esta.qeBag.gen_qeinput0 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#esta-qebag-gen-qeinput1-module">esta.qeBag.gen_qeinput1 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag.gen_qeinput2">esta.qeBag.gen_qeinput2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag.gen_qeinput_adv">esta.qeBag.gen_qeinput_adv module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag.gen_qeinput_adv0">esta.qeBag.gen_qeinput_adv0 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag.get_bands_kpts_band_gap_adv3">esta.qeBag.get_bands_kpts_band_gap_adv3 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag.get_output_qe">esta.qeBag.get_output_qe module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag.get_xyz_from_qe_rlxout">esta.qeBag.get_xyz_from_qe_rlxout module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag.neb_qe">esta.qeBag.neb_qe module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#esta-qebag-neb-qe0-module">esta.qeBag.neb_qe0 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag.neb_qe1">esta.qeBag.neb_qe1 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag.parse_pseudo">esta.qeBag.parse_pseudo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag.pspot_core_states">esta.qeBag.pspot_core_states module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag.rate_const_adv">esta.qeBag.rate_const_adv module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag.read_dynmat_adv">esta.qeBag.read_dynmat_adv module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag.read_write">esta.qeBag.read_write module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag.read_write0">esta.qeBag.read_write0 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag.sum_pdos_atom">esta.qeBag.sum_pdos_atom module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#esta-qebag-x-read-write-module">esta.qeBag.x_read_write module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag.xbands_kpts_band_gap">esta.qeBag.xbands_kpts_band_gap module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag.xml_qe">esta.qeBag.xml_qe module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#esta-qebag-xml-qe0-module">esta.qeBag.xml_qe0 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag.zpe">esta.qeBag.zpe module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_qeBag.html#module-esta.qeBag">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">grrmBag:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="file_grrmBag.html">esta.grrmBag package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.LUPINP">esta.grrmBag.LUPINP module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.com2xyz">esta.grrmBag.com2xyz module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.get_IRC_path">esta.grrmBag.get_IRC_path module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.get_IRC_path0">esta.grrmBag.get_IRC_path0 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.get_LUP">esta.grrmBag.get_LUP module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.get_LUPINP">esta.grrmBag.get_LUPINP module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.get_LUP_profile_advv">esta.grrmBag.get_LUP_profile_advv module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.get_nTS_nEQ_nPT">esta.grrmBag.get_nTS_nEQ_nPT module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.input_grrm">esta.grrmBag.input_grrm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#esta-grrmbag-input-grrm-adv-module">esta.grrmBag.input_grrm_adv module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.input_grrm_advv">esta.grrmBag.input_grrm_advv module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#esta-grrmbag-input-grrm-advv0-module">esta.grrmBag.input_grrm_advv0 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.output_grrm">esta.grrmBag.output_grrm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.output_grrm_ITR_adv">esta.grrmBag.output_grrm_ITR_adv module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.output_grrm_ITR_adv1">esta.grrmBag.output_grrm_ITR_adv1 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.output_grrm_ITR_adv2">esta.grrmBag.output_grrm_ITR_adv2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.output_grrm_ITR_adv3">esta.grrmBag.output_grrm_ITR_adv3 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.output_grrm_ITR_adv4">esta.grrmBag.output_grrm_ITR_adv4 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.output_grrm_ITR_adv5">esta.grrmBag.output_grrm_ITR_adv5 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.output_grrm_PT">esta.grrmBag.output_grrm_PT module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.output_grrm_RxnMap6">esta.grrmBag.output_grrm_RxnMap6 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.output_grrm_TS">esta.grrmBag.output_grrm_TS module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.output_grrm_init">esta.grrmBag.output_grrm_init module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.plot_strs_energy">esta.grrmBag.plot_strs_energy module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.search_structure2">esta.grrmBag.search_structure2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.search_structure2_mod">esta.grrmBag.search_structure2_mod module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.search_structure3">esta.grrmBag.search_structure3 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.to_location">esta.grrmBag.to_location module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.write_xyz">esta.grrmBag.write_xyz module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.write_xyz0">esta.grrmBag.write_xyz0 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.write_xyz1">esta.grrmBag.write_xyz1 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag.x">esta.grrmBag.x module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_grrmBag.html#module-esta.grrmBag">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Additional:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="file3a.html">Reference Sheet</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="file3a.html#sheet-for-git-and-rst-documentation">Sheet for Git and rst documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="file3a.html#rst-commands">rst commands</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="file3a.html#heading">Heading</a></li>

@@ -71,7 +71,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   EStA1:
  </span>
@@ -93,7 +93,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   EStA2:
  </span>
@@ -105,7 +105,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Additional:
  </span>
@@ -113,7 +113,7 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="file3a.html">
-   Cheat Sheet
+   Reference Sheet
   </a>
  </li>
 </ul>
@@ -285,7 +285,7 @@ well as other atom and cell parameters to describe the xtal structure</p>
 <span id="esta-spacegroup-transform-module"></span><h2>esta.spaceGroup.transform module<a class="headerlink" href="#module-esta.spaceGroup.transform" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.spaceGroup.transform.Transform">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.spaceGroup.transform.</span></span><span class="sig-name descname"><span class="pre">Transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cryst_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.spaceGroup.transform.Transform" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.spaceGroup.transform.</span></span><span class="sig-name descname"><span class="pre">Transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cryst_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.spaceGroup.transform.Transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="simple">
 <dt>transfor class to</dt><dd><p>-create supercell from crystal lattice object
@@ -352,16 +352,13 @@ and rotation matrix (optional; default is unit matrix), output respective new ma
 <li><p><strong>inp_mat</strong> (<em>array; rank 3</em><em> or </em><em>rank N</em><em> (</em><em>no. of atoms</em><em>)</em>) – </p></li>
 <li><p><strong>lcell</strong> (<em>logical</em><em>, </em><em>indicates inp_mat is for cell</em>) – </p></li>
 <li><p><strong>lposition</strong> (<em>logical</em><em>, </em><em>indicates that inp_mat is for atomic points/positions</em>) – </p></li>
-<li><p><strong>array/vecor; rank 1</strong> (<em>translation;</em>) – </p></li>
-<li><p><strong>(</strong><strong>default is zero vector =</strong><strong> (</strong><strong>0 0 0</strong><strong>)</strong><strong>)</strong> (<em>optional</em>) – </p></li>
+<li><p><strong>1</strong> (<em>translation; array/vecor; rank</em>) – </p></li>
+<li><p><strong>0</strong><strong>)</strong><strong>)</strong> (<em>optional</em><em> (</em><em>default is zero vector =</em><em> (</em><em>0 0</em>) – </p></li>
 <li><p><strong>rotation_matrix</strong> (<em>array of rank3</em><em>, </em><em>optional</em><em> (</em><em>default is unit matrix</em><em>)</em>) – </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p></p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>inp_mat like</p>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>inp_mat like</p>
 </dd>
 </dl>
 <p>Note: following convention like spglib: <a class="reference external" href="https://spglib.github.io/spglib/definition.html">https://spglib.github.io/spglib/definition.html</a></p>
@@ -402,7 +399,7 @@ xs and arbitrary system x are related by</p>
 <span id="esta-spacegroup-transform-adv-module"></span><h2>esta.spaceGroup.transform_adv module<a class="headerlink" href="#module-esta.spaceGroup.transform_adv" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.spaceGroup.transform_adv.transform">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.spaceGroup.transform_adv.</span></span><span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cryst_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.spaceGroup.transform_adv.transform" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.spaceGroup.transform_adv.</span></span><span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cryst_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.spaceGroup.transform_adv.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="simple">
 <dt>transfor class to</dt><dd><p>-create supercell from crystal lattice object
@@ -469,16 +466,13 @@ and rotation matrix (optional; default is unit matrix), output respective new ma
 <li><p><strong>inp_mat</strong> (<em>array; rank 3</em><em> or </em><em>rank N</em><em> (</em><em>no. of atoms</em><em>)</em>) – </p></li>
 <li><p><strong>lcell</strong> (<em>logical</em><em>, </em><em>indicates inp_mat is for cell</em>) – </p></li>
 <li><p><strong>lposition</strong> (<em>logical</em><em>, </em><em>indicates that inp_mat is for atomic points/positions</em>) – </p></li>
-<li><p><strong>array/vecor; rank 1</strong> (<em>translation;</em>) – </p></li>
-<li><p><strong>(</strong><strong>default is zero vector =</strong><strong> (</strong><strong>0 0 0</strong><strong>)</strong><strong>)</strong> (<em>optional</em>) – </p></li>
+<li><p><strong>1</strong> (<em>translation; array/vecor; rank</em>) – </p></li>
+<li><p><strong>0</strong><strong>)</strong><strong>)</strong> (<em>optional</em><em> (</em><em>default is zero vector =</em><em> (</em><em>0 0</em>) – </p></li>
 <li><p><strong>rotation_matrix</strong> (<em>array of rank3</em><em>, </em><em>optional</em><em> (</em><em>default is unit matrix</em><em>)</em>) – </p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p></p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>inp_mat like</p>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>inp_mat like</p>
 </dd>
 </dl>
 <p>Note: following convention like spglib: <a class="reference external" href="https://spglib.github.io/spglib/definition.html">https://spglib.github.io/spglib/definition.html</a></p>

@@ -71,7 +71,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   EStA1:
  </span>
@@ -93,7 +93,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   EStA2:
  </span>
@@ -105,7 +105,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Additional:
  </span>
@@ -113,7 +113,7 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="file3a.html">
-   Cheat Sheet
+   Reference Sheet
   </a>
  </li>
 </ul>
@@ -304,7 +304,7 @@ print(t_list)</p>
 <span id="esta-gaussianbag-input-grrm-module"></span><h2>esta.gaussianBag.input_grrm module<a class="headerlink" href="#module-esta.gaussianBag.input_grrm" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.gaussianBag.input_grrm.GenerateCom">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.gaussianBag.input_grrm.</span></span><span class="sig-name descname"><span class="pre">GenerateCom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyzfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">charge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multiplicity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cal_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.gaussianBag.input_grrm.GenerateCom" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.gaussianBag.input_grrm.</span></span><span class="sig-name descname"><span class="pre">GenerateCom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyzfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">charge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multiplicity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cal_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.gaussianBag.input_grrm.GenerateCom" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.gaussianBag.input_grrm.GenerateCom.flags_grrm">
@@ -326,7 +326,7 @@ DownDC=12</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="esta.gaussianBag.input_grrm.GenerateCom.np">
-<span class="sig-name descname"><span class="pre">np</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;module</span> <span class="pre">'numpy'</span> <span class="pre">from</span> <span class="pre">'/home/sonu/anaconda3/envs/py3/lib/python3.8/site-packages/numpy/__init__.py'&gt;</span></em><a class="headerlink" href="#esta.gaussianBag.input_grrm.GenerateCom.np" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">np</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;module</span> <span class="pre">'numpy'</span> <span class="pre">from</span> <span class="pre">'/home/sonu/anaconda3/envs/py3/lib/python3.6/site-packages/numpy/__init__.py'&gt;</span></em><a class="headerlink" href="#esta.gaussianBag.input_grrm.GenerateCom.np" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -392,14 +392,9 @@ _________________ –&gt; all of these variable read form 1xyz file ..by</p>
 <div class="section" id="module-esta.gaussianBag.output_gaussian_adv">
 <span id="esta-gaussianbag-output-gaussian-adv-module"></span><h2>esta.gaussianBag.output_gaussian_adv module<a class="headerlink" href="#module-esta.gaussianBag.output_gaussian_adv" title="Permalink to this headline">¶</a></h2>
 <p>gauss class to handle for the gaussian16 output file</p>
-<dl class="simple">
-<dt>date:   Nov, 2019</dt><dd><p>Dec, 2019
-Dec, 2020</p>
-</dd>
-</dl>
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.gaussianBag.output_gaussian_adv.gauss">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.gaussianBag.output_gaussian_adv.</span></span><span class="sig-name descname"><span class="pre">gauss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.gaussianBag.output_gaussian_adv.gauss" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.gaussianBag.output_gaussian_adv.</span></span><span class="sig-name descname"><span class="pre">gauss</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.gaussianBag.output_gaussian_adv.gauss" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>gauss class for the  gaussian16 output file</p>
 <dl class="py method">

@@ -71,7 +71,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   EStA1:
  </span>
@@ -93,7 +93,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   EStA2:
  </span>
@@ -105,7 +105,31 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  qeBag:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="file_qeBag.html">
+   esta.qeBag package
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  grrmBag:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="file_grrmBag.html">
+   esta.grrmBag package
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Additional:
  </span>
@@ -113,7 +137,7 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="file3a.html">
-   Cheat Sheet
+   Reference Sheet
   </a>
  </li>
 </ul>
@@ -422,7 +446,7 @@
 <span id="esta-plot-atomic-distance-density-class2-module"></span><h2>esta.plot.atomic_distance_density_class2 module<a class="headerlink" href="#module-esta.plot.atomic_distance_density_class2" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.plot.atomic_distance_density_class2.atom_distance_density">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.plot.atomic_distance_density_class2.</span></span><span class="sig-name descname"><span class="pre">atom_distance_density</span></span><a class="headerlink" href="#esta.plot.atomic_distance_density_class2.atom_distance_density" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.plot.atomic_distance_density_class2.</span></span><span class="sig-name descname"><span class="pre">atom_distance_density</span></span><a class="headerlink" href="#esta.plot.atomic_distance_density_class2.atom_distance_density" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <blockquote>
 <div><p>script to calculate the atomic distance density
@@ -508,7 +532,7 @@ y_lim4 = [0   ,0.22] –&gt; range of y aixs for main part of the data</p>
 <span id="esta-plot-free-energy-2-module"></span><h2>esta.plot.free_energy_2 module<a class="headerlink" href="#module-esta.plot.free_energy_2" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.plot.free_energy_2.GibbsFreeEnergy">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.plot.free_energy_2.</span></span><span class="sig-name descname"><span class="pre">GibbsFreeEnergy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Edft</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">S</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.plot.free_energy_2.GibbsFreeEnergy" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.plot.free_energy_2.</span></span><span class="sig-name descname"><span class="pre">GibbsFreeEnergy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Edft</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">S</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.plot.free_energy_2.GibbsFreeEnergy" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>A class to calculate the Gibbs free enegy
 G = E -TS + E_ZPE</p>
@@ -786,11 +810,8 @@ marker, linestyle and color are optional</p></li>
 <li><p><strong>fileout</strong> (<em>str</em><em>, </em><em>optional</em>) – name of the output file</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p></p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>fileout.png file as output</p>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>fileout.png file as output</p>
 </dd>
 </dl>
 </dd></dl>

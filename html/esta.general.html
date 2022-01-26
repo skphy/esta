@@ -71,7 +71,7 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   EStA1:
  </span>
@@ -93,7 +93,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   EStA2:
  </span>
@@ -105,7 +105,31 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  qeBag:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="file_qeBag.html">
+   esta.qeBag package
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  grrmBag:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="file_grrmBag.html">
+   esta.grrmBag package
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Additional:
  </span>
@@ -113,7 +137,7 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="file3a.html">
-   Cheat Sheet
+   Reference Sheet
   </a>
  </li>
 </ul>
@@ -802,7 +826,7 @@ be done using vaspBag crystal_latticee class</p>
 or xyz file with frozen and notfrozen atoms</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.aadhaar.Aadhaar">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.aadhaar.</span></span><span class="sig-name descname"><span class="pre">Aadhaar</span></span><a class="headerlink" href="#esta.general.aadhaar.Aadhaar" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.general.aadhaar.</span></span><span class="sig-name descname"><span class="pre">Aadhaar</span></span><a class="headerlink" href="#esta.general.aadhaar.Aadhaar" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>aadhaar class for atomic structure related information handling.</p>
 <dl class="py method">
@@ -966,7 +990,7 @@ LV2, and LV3</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="esta.general.affine.change_of_basis">
-<span class="sig-prename descclassname"><span class="pre">esta.general.affine.</span></span><span class="sig-name descname"><span class="pre">change_of_basis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">basis1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basis2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(array([1.,</span> <span class="pre">0.,</span> <span class="pre">0.]),</span> <span class="pre">array([0.,</span> <span class="pre">1.,</span> <span class="pre">0.]),</span> <span class="pre">array([0.,</span> <span class="pre">0.,</span> <span class="pre">1.]))</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.affine.change_of_basis" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">esta.general.affine.</span></span><span class="sig-name descname"><span class="pre">change_of_basis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">basis1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basis2</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(array([1.0,</span> <span class="pre">0.0,</span> <span class="pre">0.0]),</span> <span class="pre">array([0.0,</span> <span class="pre">1.0,</span> <span class="pre">0.0]),</span> <span class="pre">array([0.0,</span> <span class="pre">0.0,</span> <span class="pre">1.0]))</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.affine.change_of_basis" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the matrix that goes from one basis to the other.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1252,7 +1276,6 @@ Default values is room temp = 298 K</p></li>
 </ol>
 <p>NOTE: ii —&gt; means –&gt; inverse</p>
 <p>Author: S. Kumar,
-date:   2019
 email:  <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
 <dl class="py function">
 <dt class="sig sig-object py" id="esta.general.conversion_factors.double">
@@ -1270,7 +1293,7 @@ crystal = lattice + basis (atoms or molecules )</p>
 <p>adapted from —-&gt; vaspBag/crystal_lattice.py</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.crystal_latticee.CrystalLattice">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.crystal_latticee.</span></span><span class="sig-name descname"><span class="pre">CrystalLattice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.crystal_latticee.CrystalLattice" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.general.crystal_latticee.</span></span><span class="sig-name descname"><span class="pre">CrystalLattice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.crystal_latticee.CrystalLattice" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Crystal lattice class to define lattice parameters and basis
 crystal = lattice + basis (atoms or molecules )</p>
@@ -1322,7 +1345,7 @@ self.LV2, self.LV3,self.atm_type, self.natom_type, self.natoms</p></li>
 <dd><p>method to calculate the reciprocal lattice vectors</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>space lattice vectors</strong> (<em>real</em>) – </p>
+<dd class="field-odd"><p><strong>vectors</strong> (<em>real space lattice</em>) – </p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p><strong>reciprocal space lattice vectors</strong></p>
@@ -1698,13 +1721,13 @@ float; electron_all; electron count over all x range</p>
 email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.manipulate.AtomicStructure">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.manipulate.</span></span><span class="sig-name descname"><span class="pre">AtomicStructure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">kwarg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.manipulate.AtomicStructure" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.general.manipulate.</span></span><span class="sig-name descname"><span class="pre">AtomicStructure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">kwarg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.manipulate.AtomicStructure" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.manipulate.Manipulate">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.manipulate.</span></span><span class="sig-name descname"><span class="pre">Manipulate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atomic_positions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atomic_labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.manipulate.Manipulate" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.general.manipulate.</span></span><span class="sig-name descname"><span class="pre">Manipulate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atomic_positions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atomic_labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.manipulate.Manipulate" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>class to mainipulateatoms present in xyz file or poscar type files</p>
 <div class="admonition note">
@@ -1801,8 +1824,8 @@ in xyz PAth file</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>or target_atoms</strong> (<em>target_index</em>) – array of ints for indexing atoms to be inverted ; numbering starts from 1</p></li>
-<li><p><strong>or reference_atoms</strong> (<em>reference_index</em>) – <dl class="simple">
+<li><p><strong>target_atoms</strong> (<em>target_index or</em>) – array of ints for indexing atoms to be inverted ; numbering starts from 1</p></li>
+<li><p><strong>reference_atoms</strong> (<em>reference_index or</em>) – <dl class="simple">
 <dt>1D array of intergers of atoms  wrt which invertion has to</dt><dd><p>be done</p>
 </dd>
 </dl>
@@ -1937,7 +1960,7 @@ algebra as detailed in:</p>
 <span id="esta-general-operation-module"></span><h2>esta.general.operation module<a class="headerlink" href="#module-esta.general.operation" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.operation.transform">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.operation.</span></span><span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cryst_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.operation.transform" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.general.operation.</span></span><span class="sig-name descname"><span class="pre">transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cryst_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.operation.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="simple">
 <dt>transfor class to</dt><dd><ul class="simple">
@@ -2190,8 +2213,7 @@ output: reciprocal space lattice vectors: b1, b2, b3</p>
 <li><p>shift atoms in xyz file to origin</p></li>
 <li><p>to get CM see thermo class – already implemented</p></li>
 </ul>
-<p>author: skumar
-date: Jan, 2018</p>
+<p>author: skumar</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="esta.general.shift.centroid">
 <span class="sig-prename descclassname"><span class="pre">esta.general.shift.</span></span><span class="sig-name descname"><span class="pre">centroid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.shift.centroid" title="Permalink to this definition">¶</a></dt>
@@ -2225,7 +2247,6 @@ print (centroid(A))</p>
 <p>method/function to shift atoms:
 - shift atoms in xyz file along a direction
 - shift atoms in xyz file to origin</p>
-<p>Date: Jan, 2018</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="esta.general.shift0.centroid">
 <span class="sig-prename descclassname"><span class="pre">esta.general.shift0.</span></span><span class="sig-name descname"><span class="pre">centroid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.shift0.centroid" title="Permalink to this definition">¶</a></dt>
@@ -2328,7 +2349,7 @@ towards entropy, internal energy, andspecific heat</p>
 <p>author: sk, email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoDyn">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo.</span></span><span class="sig-name descname"><span class="pre">ThermoDyn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">E_dft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vib_freq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">E_zpe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">S_vib</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">E_vib</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_molecule</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symmetry_number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pressure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.thermo.ThermoDyn" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo.</span></span><span class="sig-name descname"><span class="pre">ThermoDyn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">E_dft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vib_freq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">E_zpe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">S_vib</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">E_vib</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_molecule</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symmetry_number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pressure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.thermo.ThermoDyn" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>thermodyn class to find energies (eV or other units) for
 entropy, internal energy, and specific heat with respect to
@@ -2410,7 +2431,7 @@ about which moment of inertia is calculated</p></li>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoHarmonic">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo.</span></span><span class="sig-name descname"><span class="pre">ThermoHarmonic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">E_dft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vib_freq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.thermo.ThermoHarmonic" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo.</span></span><span class="sig-name descname"><span class="pre">ThermoHarmonic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">E_dft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vib_freq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.thermo.ThermoHarmonic" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <blockquote>
 <div><p>Harmonic thermodynamics</p>
@@ -2492,14 +2513,14 @@ at a given temperature (K).</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoHindredRotVib">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo.</span></span><span class="sig-name descname"><span class="pre">ThermoHindredRotVib</span></span><a class="headerlink" href="#esta.general.thermo.ThermoHindredRotVib" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo.</span></span><span class="sig-name descname"><span class="pre">ThermoHindredRotVib</span></span><a class="headerlink" href="#esta.general.thermo.ThermoHindredRotVib" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Hinder vibrational and rotation oscillator thermodynamics</p>
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoIdealGas">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo.</span></span><span class="sig-name descname"><span class="pre">ThermoIdealGas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">thermo_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.thermo.ThermoIdealGas" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo.</span></span><span class="sig-name descname"><span class="pre">ThermoIdealGas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">thermo_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.thermo.ThermoIdealGas" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="file4.html#esta.general.thermo.ThermoDyn" title="esta.general.thermo.ThermoDyn"><code class="xref py py-class docutils literal notranslate"><span class="pre">esta.general.thermo.ThermoDyn</span></code></a></p>
 <p>calculate thermodynamic quantities within the ideal gas approximation</p>
 <dl class="py method">
@@ -2536,7 +2557,7 @@ at const P)</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.thermo.ThermoLattice">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo.</span></span><span class="sig-name descname"><span class="pre">ThermoLattice</span></span><a class="headerlink" href="#esta.general.thermo.ThermoLattice" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo.</span></span><span class="sig-name descname"><span class="pre">ThermoLattice</span></span><a class="headerlink" href="#esta.general.thermo.ThermoLattice" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Atomic lattice thermodynamics</p>
 </dd></dl>
@@ -2568,7 +2589,7 @@ towards entropy, internal energy, andspecific heat</p>
 <p>author: sk, email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.thermo2.ThermoDyn">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo2.</span></span><span class="sig-name descname"><span class="pre">ThermoDyn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">E_dft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vib_freq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">E_zpe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">S_vib</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">E_vib</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_molecule</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symmetry_number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pressure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.thermo2.ThermoDyn" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo2.</span></span><span class="sig-name descname"><span class="pre">ThermoDyn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">E_dft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vib_freq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">E_zpe</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">S_vib</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">E_vib</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_molecule</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbols</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symmetry_number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pressure</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.thermo2.ThermoDyn" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>thermodyn class to find energies (eV or other units) for
 entropy, internal energy, and specific heat with respect to
@@ -2650,7 +2671,7 @@ about which moment of inertia is calculated</p></li>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.thermo2.ThermoHarmonic">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo2.</span></span><span class="sig-name descname"><span class="pre">ThermoHarmonic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">E_dft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vib_freq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.thermo2.ThermoHarmonic" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo2.</span></span><span class="sig-name descname"><span class="pre">ThermoHarmonic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">E_dft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vib_freq</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.thermo2.ThermoHarmonic" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <blockquote>
 <div><p>Harmonic thermodynamics</p>
@@ -2732,14 +2753,14 @@ at a given temperature (K).</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.thermo2.ThermoHindredRotVib">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo2.</span></span><span class="sig-name descname"><span class="pre">ThermoHindredRotVib</span></span><a class="headerlink" href="#esta.general.thermo2.ThermoHindredRotVib" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo2.</span></span><span class="sig-name descname"><span class="pre">ThermoHindredRotVib</span></span><a class="headerlink" href="#esta.general.thermo2.ThermoHindredRotVib" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Hinder vibrational and rotation oscillator thermodynamics</p>
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.thermo2.ThermoIdealGas">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo2.</span></span><span class="sig-name descname"><span class="pre">ThermoIdealGas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">thermo_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.thermo2.ThermoIdealGas" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo2.</span></span><span class="sig-name descname"><span class="pre">ThermoIdealGas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">thermo_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.thermo2.ThermoIdealGas" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="file4.html#esta.general.thermo2.ThermoDyn" title="esta.general.thermo2.ThermoDyn"><code class="xref py py-class docutils literal notranslate"><span class="pre">esta.general.thermo2.ThermoDyn</span></code></a></p>
 <p>calculate thermodynamic quantities within the ideal gas approximation</p>
 <dl class="py method">
@@ -2776,7 +2797,7 @@ at const P)</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.thermo2.ThermoLattice">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo2.</span></span><span class="sig-name descname"><span class="pre">ThermoLattice</span></span><a class="headerlink" href="#esta.general.thermo2.ThermoLattice" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.general.thermo2.</span></span><span class="sig-name descname"><span class="pre">ThermoLattice</span></span><a class="headerlink" href="#esta.general.thermo2.ThermoLattice" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Atomic lattice thermodynamics</p>
 </dd></dl>
@@ -2787,7 +2808,7 @@ at const P)</p>
 <p>Xyz class to handle data related to xyz file/files</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.xyz.Xyz">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.xyz.</span></span><span class="sig-name descname"><span class="pre">Xyz</span></span><a class="headerlink" href="#esta.general.xyz.Xyz" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.general.xyz.</span></span><span class="sig-name descname"><span class="pre">Xyz</span></span><a class="headerlink" href="#esta.general.xyz.Xyz" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Xyz class to read and write files containing data for one or more
 atomic structures in xyz format</p>
@@ -2834,7 +2855,7 @@ positions and atomic lables</p>
 <span id="esta-general-xyz-grouped-module"></span><h2>esta.general.xyz_grouped module<a class="headerlink" href="#module-esta.general.xyz_grouped" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.xyz_grouped.RWpwi">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.xyz_grouped.</span></span><span class="sig-name descname"><span class="pre">RWpwi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">infile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.xyz_grouped.RWpwi" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.general.xyz_grouped.</span></span><span class="sig-name descname"><span class="pre">RWpwi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">infile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.xyz_grouped.RWpwi" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>class to read the pw input file and create poscar file</p>
 <dl class="field-list simple">
@@ -2881,7 +2902,7 @@ poscar file</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="esta.general.xyz_grouped.RWpwo">
-<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">esta.general.xyz_grouped.</span></span><span class="sig-name descname"><span class="pre">RWpwo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">infile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.xyz_grouped.RWpwo" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.general.xyz_grouped.</span></span><span class="sig-name descname"><span class="pre">RWpwo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">infile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.xyz_grouped.RWpwo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Class to read and write data file for the atomic structures</p>
 <ul class="simple">
@@ -3028,7 +3049,7 @@ poscar file</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="esta.general.xyz_grouped.RWpwo.vector_prod">
-<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">vector_prod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.xyz_grouped.RWpwo.vector_prod" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">vector_prod</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.general.xyz_grouped.RWpwo.vector_prod" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>

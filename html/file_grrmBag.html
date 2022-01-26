@@ -1,0 +1,2622 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>esta.grrmBag package &#8212; EStA 2.8.0 documentation</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Reference Sheet" href="file3a.html" />
+    <link rel="prev" title="esta.qeBag package" href="file_qeBag.html" />
+    <link href="_static/style.css" rel="stylesheet" type="text/css">
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/esta_logo2.6.0_cropped.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">EStA 2.8.0 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  EStA1:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="file1.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="file2.html">
+   EStA subfolders
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="file3.html">
+   Machine learning
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  EStA2:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="file4.html">
+   esta.general package
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  qeBag:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="file_qeBag.html">
+   esta.qeBag package
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  grrmBag:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   esta.grrmBag package
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Additional:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="file3a.html">
+   Reference Sheet
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Toggle navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/file_grrmBag.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submodules">
+   Submodules
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.LUPINP">
+   esta.grrmBag.LUPINP module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.com2xyz">
+   esta.grrmBag.com2xyz module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.get_IRC_path">
+   esta.grrmBag.get_IRC_path module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.get_IRC_path0">
+   esta.grrmBag.get_IRC_path0 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.get_LUP">
+   esta.grrmBag.get_LUP module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.get_LUPINP">
+   esta.grrmBag.get_LUPINP module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.get_LUP_profile_advv">
+   esta.grrmBag.get_LUP_profile_advv module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.get_nTS_nEQ_nPT">
+   esta.grrmBag.get_nTS_nEQ_nPT module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.input_grrm">
+   esta.grrmBag.input_grrm module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#esta-grrmbag-input-grrm-adv-module">
+   esta.grrmBag.input_grrm_adv module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.input_grrm_advv">
+   esta.grrmBag.input_grrm_advv module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#esta-grrmbag-input-grrm-advv0-module">
+   esta.grrmBag.input_grrm_advv0 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.output_grrm">
+   esta.grrmBag.output_grrm module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.output_grrm_ITR_adv">
+   esta.grrmBag.output_grrm_ITR_adv module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.output_grrm_ITR_adv1">
+   esta.grrmBag.output_grrm_ITR_adv1 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.output_grrm_ITR_adv2">
+   esta.grrmBag.output_grrm_ITR_adv2 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.output_grrm_ITR_adv3">
+   esta.grrmBag.output_grrm_ITR_adv3 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.output_grrm_ITR_adv4">
+   esta.grrmBag.output_grrm_ITR_adv4 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.output_grrm_ITR_adv5">
+   esta.grrmBag.output_grrm_ITR_adv5 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.output_grrm_PT">
+   esta.grrmBag.output_grrm_PT module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.output_grrm_RxnMap6">
+   esta.grrmBag.output_grrm_RxnMap6 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.output_grrm_TS">
+   esta.grrmBag.output_grrm_TS module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.output_grrm_init">
+   esta.grrmBag.output_grrm_init module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.plot_strs_energy">
+   esta.grrmBag.plot_strs_energy module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.search_structure2">
+   esta.grrmBag.search_structure2 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.search_structure2_mod">
+   esta.grrmBag.search_structure2_mod module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.search_structure3">
+   esta.grrmBag.search_structure3 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.to_location">
+   esta.grrmBag.to_location module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.write_xyz">
+   esta.grrmBag.write_xyz module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.write_xyz0">
+   esta.grrmBag.write_xyz0 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.write_xyz1">
+   esta.grrmBag.write_xyz1 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.x">
+   esta.grrmBag.x module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag">
+   Module contents
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>esta.grrmBag package</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submodules">
+   Submodules
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.LUPINP">
+   esta.grrmBag.LUPINP module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.com2xyz">
+   esta.grrmBag.com2xyz module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.get_IRC_path">
+   esta.grrmBag.get_IRC_path module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.get_IRC_path0">
+   esta.grrmBag.get_IRC_path0 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.get_LUP">
+   esta.grrmBag.get_LUP module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.get_LUPINP">
+   esta.grrmBag.get_LUPINP module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.get_LUP_profile_advv">
+   esta.grrmBag.get_LUP_profile_advv module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.get_nTS_nEQ_nPT">
+   esta.grrmBag.get_nTS_nEQ_nPT module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.input_grrm">
+   esta.grrmBag.input_grrm module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#esta-grrmbag-input-grrm-adv-module">
+   esta.grrmBag.input_grrm_adv module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.input_grrm_advv">
+   esta.grrmBag.input_grrm_advv module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#esta-grrmbag-input-grrm-advv0-module">
+   esta.grrmBag.input_grrm_advv0 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.output_grrm">
+   esta.grrmBag.output_grrm module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.output_grrm_ITR_adv">
+   esta.grrmBag.output_grrm_ITR_adv module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.output_grrm_ITR_adv1">
+   esta.grrmBag.output_grrm_ITR_adv1 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.output_grrm_ITR_adv2">
+   esta.grrmBag.output_grrm_ITR_adv2 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.output_grrm_ITR_adv3">
+   esta.grrmBag.output_grrm_ITR_adv3 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.output_grrm_ITR_adv4">
+   esta.grrmBag.output_grrm_ITR_adv4 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.output_grrm_ITR_adv5">
+   esta.grrmBag.output_grrm_ITR_adv5 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.output_grrm_PT">
+   esta.grrmBag.output_grrm_PT module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.output_grrm_RxnMap6">
+   esta.grrmBag.output_grrm_RxnMap6 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.output_grrm_TS">
+   esta.grrmBag.output_grrm_TS module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.output_grrm_init">
+   esta.grrmBag.output_grrm_init module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.plot_strs_energy">
+   esta.grrmBag.plot_strs_energy module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.search_structure2">
+   esta.grrmBag.search_structure2 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.search_structure2_mod">
+   esta.grrmBag.search_structure2_mod module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.search_structure3">
+   esta.grrmBag.search_structure3 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.to_location">
+   esta.grrmBag.to_location module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.write_xyz">
+   esta.grrmBag.write_xyz module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.write_xyz0">
+   esta.grrmBag.write_xyz0 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.write_xyz1">
+   esta.grrmBag.write_xyz1 module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag.x">
+   esta.grrmBag.x module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.grrmBag">
+   Module contents
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>GRRM package</strong>:
+This package does processing of the GRRM sofware output files</p>
+</div>
+<div class="section" id="esta-grrmbag-package">
+<h1>esta.grrmBag package<a class="headerlink" href="#esta-grrmbag-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-esta.grrmBag.LUPINP">
+<span id="esta-grrmbag-lupinp-module"></span><h2>esta.grrmBag.LUPINP module<a class="headerlink" href="#module-esta.grrmBag.LUPINP" title="Permalink to this headline">¶</a></h2>
+<p>get xxx_LUPINP.log file from pos and label variables data</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.LUPINP.get_LUPINP">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.LUPINP.</span></span><span class="sig-name descname"><span class="pre">get_LUPINP</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atm_pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_outfile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.LUPINP.get_LUPINP" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>get xxx_LUPINP.log file from pos and label variables data</p>
+<dl class="simple">
+<dt>input:</dt><dd><p>atm_pos: array of shape (no_of_atomic_strs, natoms, 3 )
+label: list of shape (no_of_atomic_sts, natoms)
+name_outfile: prefic of name of the output file, optional</p>
+</dd>
+<dt>output:</dt><dd><dl class="simple">
+<dt>output “name_outfile”+’_LUPINP.log’ file to be used as an initial path</dt><dd><p>for the LUP calculation</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+<p>—exampe of XXX_LUPINP.log file:                    ————</p>
+<p># NODE 0:
+O          5.490527361273         -7.301039647118         -6.111826190422
+H          5.733518415093         -6.371725434573         -5.886303868739
+H          5.483149357281         -6.641347567148         -3.750888719682</p>
+<p># NODE 1:
+O          5.539350619528         -7.324436803847         -6.035948874142
+H          5.785226928656         -6.401397049756         -5.821165568507
+H          5.502797674893         -6.666317168224         -3.712799145260</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.com2xyz">
+<span id="esta-grrmbag-com2xyz-module"></span><h2>esta.grrmBag.com2xyz module<a class="headerlink" href="#module-esta.grrmBag.com2xyz" title="Permalink to this headline">¶</a></h2>
+<p>get xyz file from <a href="#id1"><span class="problematic" id="id2">*</span></a>com file of the GRRM or gaussian input file</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.com2xyz.get_coord">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.com2xyz.</span></span><span class="sig-name descname"><span class="pre">get_coord</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.com2xyz.get_coord" title="Permalink to this definition">¶</a></dt>
+<dd><p>get coord and atomic labesls from com file of gaussian or GRRM17</p>
+<blockquote>
+<div><p>input filename</p>
+</div></blockquote>
+<blockquote>
+<div><p>scalar; no of atoms
+list;  for atomic labels
+array; for atomic positions</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.com2xyz.get_coord_grrm_kin">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.com2xyz.</span></span><span class="sig-name descname"><span class="pre">get_coord_grrm_kin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.com2xyz.get_coord_grrm_kin" title="Permalink to this definition">¶</a></dt>
+<dd><p>get coord and atomic labesls from com file of  GRRM17 com file
+with kinetic options</p>
+<blockquote>
+<div><p>input filename</p>
+</div></blockquote>
+<blockquote>
+<div><p>scalar; no of atoms
+list;  for atomic labels
+array; for atomic positions</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.com2xyz.get_xyz_file">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.com2xyz.</span></span><span class="sig-name descname"><span class="pre">get_xyz_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filetype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.com2xyz.get_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz file from com file</p>
+<blockquote>
+<div><p>label: string list or string array
+pos: array of shape (natoms, 3)
+infile: input file name</p>
+</div></blockquote>
+<blockquote>
+<div><p>xyz file in the present dir; name of file derived from input file</p>
+</div></blockquote>
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.get_IRC_path">
+<span id="esta-grrmbag-get-irc-path-module"></span><h2>esta.grrmBag.get_IRC_path module<a class="headerlink" href="#module-esta.grrmBag.get_IRC_path" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.get_IRC_path.get_EQ_IRC">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.get_IRC_path.</span></span><span class="sig-name descname"><span class="pre">get_EQ_IRC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">natoms</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.get_IRC_path.get_EQ_IRC" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the eq structures from the IRC calculations</p>
+<blockquote>
+<div><p>filename: str, name of the IRC log file</p>
+</div></blockquote>
+<blockquote>
+<div><p>position: array of shape (2, natoms, 3) ; 2 for two EQ strs
+label: list of atomic symbols of shape (2, natoms); 2 for eq strs</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.get_IRC_path.get_EQ_TS_IRC">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.get_IRC_path.</span></span><span class="sig-name descname"><span class="pre">get_EQ_TS_IRC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">natoms</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.get_IRC_path.get_EQ_TS_IRC" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the EQ and TS structures from the IRC calculations</p>
+<blockquote>
+<div><p>filename: str, name of the IRC log file</p>
+</div></blockquote>
+<blockquote>
+<div><p>position: array of shape (3, natoms, 3) ; 3 for two EQ and 1 TS strs
+label: list of atomic symbols of shape (3, natoms); 3 for 2 eq strs and 1 TS strs</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.get_IRC_path.get_free_energy">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.get_IRC_path.</span></span><span class="sig-name descname"><span class="pre">get_free_energy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.get_IRC_path.get_free_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>get free energy of all Geometry strs in Hartree from grrm log file
+of IRC calculations</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.get_IRC_path.get_irc_path">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.get_IRC_path.</span></span><span class="sig-name descname"><span class="pre">get_irc_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_direction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.get_IRC_path.get_irc_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>read log file or any other file containing IRC path information:</p>
+<blockquote>
+<div><p>string; filename
+string;optinal, path_direction can be forward or reversed</p>
+<blockquote>
+<div><p>default is forward direction</p>
+</div></blockquote>
+</div></blockquote>
+<blockquote>
+<div><blockquote>
+<div><p>plot the path in png file named filename.png</p>
+</div></blockquote>
+<dl>
+<dt>Reading starts from  following …………..</dt><dd><p>Energy profile along IRC
+Length (A amu1/2)       Energy (Hartree)
+-61.2536469474         -140.1040646722</p>
+<p>30.6359900582         -140.0788979553
+30.8934801390         -140.0788985106</p>
+<p>Reverse
+Length (A amu1/2)       Energy (Hartree)
+-30.8934801390         -140.0788985106
+-30.6359900582         -140.0788979553
+..
+..
+60.7900934845         -140.1040632542
+61.2536469474         -140.1040646722</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.get_IRC_path.get_natoms_IRC">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.get_IRC_path.</span></span><span class="sig-name descname"><span class="pre">get_natoms_IRC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#esta.grrmBag.get_IRC_path.get_natoms_IRC" title="Permalink to this definition">¶</a></dt>
+<dd><p>get no. of atoms present in a strs in IRC log file</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.get_IRC_path0">
+<span id="esta-grrmbag-get-irc-path0-module"></span><h2>esta.grrmBag.get_IRC_path0 module<a class="headerlink" href="#module-esta.grrmBag.get_IRC_path0" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.get_IRC_path0.get_EQ_IRC">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.get_IRC_path0.</span></span><span class="sig-name descname"><span class="pre">get_EQ_IRC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">natoms</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.get_IRC_path0.get_EQ_IRC" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the eq structures from the IRC calculations</p>
+<blockquote>
+<div><p>filename: str, name of the IRC log file</p>
+</div></blockquote>
+<blockquote>
+<div><p>position: array of shape (2, natoms, 3) ; 2 for two EQ strs
+label: list of atomic symbols of shape (2, natoms); 2 for eq strs</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.get_IRC_path0.get_EQ_TS_IRC">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.get_IRC_path0.</span></span><span class="sig-name descname"><span class="pre">get_EQ_TS_IRC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">natoms</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.get_IRC_path0.get_EQ_TS_IRC" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the EQ and TS structures from the IRC calculations</p>
+<blockquote>
+<div><p>filename: str, name of the IRC log file</p>
+</div></blockquote>
+<blockquote>
+<div><p>position: array of shape (3, natoms, 3) ; 3 for two EQ and 1 TS strs
+label: list of atomic symbols of shape (3, natoms); 3 for 2 eq strs and 1 TS strs</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.get_IRC_path0.get_free_energy">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.get_IRC_path0.</span></span><span class="sig-name descname"><span class="pre">get_free_energy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.get_IRC_path0.get_free_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>get free energy of all Geometry strs in Hartree from grrm log file
+of IRC calculations</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.get_IRC_path0.get_irc_path">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.get_IRC_path0.</span></span><span class="sig-name descname"><span class="pre">get_irc_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_direction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.get_IRC_path0.get_irc_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>read log file or any other file containing IRC path information:</p>
+<blockquote>
+<div><p>string; filename
+string;optinal, path_direction can be forward or reversed</p>
+<blockquote>
+<div><p>default is forward direction</p>
+</div></blockquote>
+</div></blockquote>
+<blockquote>
+<div><blockquote>
+<div><p>plot the path in png file named filename.png</p>
+</div></blockquote>
+<dl>
+<dt>Reading starts from  following …………..</dt><dd><p>Energy profile along IRC
+Length (A amu1/2)       Energy (Hartree)
+-61.2536469474         -140.1040646722</p>
+<p>30.6359900582         -140.0788979553
+30.8934801390         -140.0788985106</p>
+<p>Reverse
+Length (A amu1/2)       Energy (Hartree)
+-30.8934801390         -140.0788985106
+-30.6359900582         -140.0788979553
+..
+..
+60.7900934845         -140.1040632542
+61.2536469474         -140.1040646722</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.get_IRC_path0.get_natoms_IRC">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.get_IRC_path0.</span></span><span class="sig-name descname"><span class="pre">get_natoms_IRC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#esta.grrmBag.get_IRC_path0.get_natoms_IRC" title="Permalink to this definition">¶</a></dt>
+<dd><p>get no. of atoms present in a strs in IRC log file</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.get_LUP">
+<span id="esta-grrmbag-get-lup-module"></span><h2>esta.grrmBag.get_LUP module<a class="headerlink" href="#module-esta.grrmBag.get_LUP" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.get_LUP.get_lup_inp">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.get_LUP.</span></span><span class="sig-name descname"><span class="pre">get_lup_inp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.get_LUP.get_lup_inp" title="Permalink to this definition">¶</a></dt>
+<dd><p>read XXX_LUPINP.log file for getting the Path (xyz strs)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> (<em>str</em>) – filename, name of xxx_LUPINP.log file</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>position_all</strong> (<em>array</em>) – array of atomic positions</p></li>
+<li><p><strong>atom_symbol</strong> (<em>string</em>) – strings representing atomic symbols</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.get_LUP.get_lup_out">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.get_LUP.</span></span><span class="sig-name descname"><span class="pre">get_lup_out</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.get_LUP.get_lup_out" title="Permalink to this definition">¶</a></dt>
+<dd><p>read XXX_LUPIOUTt.log file for getting the Path (xyz strs)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> (<em>str</em>) – filename, name of xxx_LUPINP.log file</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>position_all</strong> (<em>array</em>) – array of atomic positions</p></li>
+<li><p><strong>atom_symbol</strong> (<em>string</em>) – strings representing atomic symbols</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.get_LUPINP">
+<span id="esta-grrmbag-get-lupinp-module"></span><h2>esta.grrmBag.get_LUPINP module<a class="headerlink" href="#module-esta.grrmBag.get_LUPINP" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.get_LUPINP.get_lup_inp">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.get_LUPINP.</span></span><span class="sig-name descname"><span class="pre">get_lup_inp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lenergy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.get_LUPINP.get_lup_inp" title="Permalink to this definition">¶</a></dt>
+<dd><p>read XXX_LUPINP.log file for getting the Path (xyz strs)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>string</em>) – filename, name of xxx_LUPINP.log file</p></li>
+<li><p><strong>lenergy</strong> (<em>logical</em><em>, </em><em>optional</em>) – lenergy, whether energy to be extracted from the input filename</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>create xyz file containing all xyz strs with energy information in the comment if lenergy is true ..</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.get_LUP_profile_advv">
+<span id="esta-grrmbag-get-lup-profile-advv-module"></span><h2>esta.grrmBag.get_LUP_profile_advv module<a class="headerlink" href="#module-esta.grrmBag.get_LUP_profile_advv" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.get_LUP_profile_advv.get_lup_profile">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.get_LUP_profile_advv.</span></span><span class="sig-name descname"><span class="pre">get_lup_profile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">natoms</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.get_LUP_profile_advv.get_lup_profile" title="Permalink to this definition">¶</a></dt>
+<dd><p>extract the LUP path</p>
+<ul class="simple">
+<li><p>from DS-AFIR calculated log file of GRRM … xxx.log file</p></li>
+<li><p>finally plot the LUP profile</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.get_LUP_profile_advv.get_lup_profile2">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.get_LUP_profile_advv.</span></span><span class="sig-name descname"><span class="pre">get_lup_profile2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.get_LUP_profile_advv.get_lup_profile2" title="Permalink to this definition">¶</a></dt>
+<dd><p>extract the LUP path</p>
+<ul class="simple">
+<li><p>from - from xxx__LUPOUTt.log file</p></li>
+</ul>
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.get_nTS_nEQ_nPT">
+<span id="esta-grrmbag-get-nts-neq-npt-module"></span><h2>esta.grrmBag.get_nTS_nEQ_nPT module<a class="headerlink" href="#module-esta.grrmBag.get_nTS_nEQ_nPT" title="Permalink to this headline">¶</a></h2>
+<p>get number of EQ, TS, and PT structures from logs of GRRM output</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.get_nTS_nEQ_nPT.get_nEQ">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.get_nTS_nEQ_nPT.</span></span><span class="sig-name descname"><span class="pre">get_nEQ</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.get_nTS_nEQ_nPT.get_nEQ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.get_nTS_nEQ_nPT.get_nPT">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.get_nTS_nEQ_nPT.</span></span><span class="sig-name descname"><span class="pre">get_nPT</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.get_nTS_nEQ_nPT.get_nPT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.get_nTS_nEQ_nPT.get_nTS">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.get_nTS_nEQ_nPT.</span></span><span class="sig-name descname"><span class="pre">get_nTS</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.get_nTS_nEQ_nPT.get_nTS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.input_grrm">
+<span id="esta-grrmbag-input-grrm-module"></span><h2>esta.grrmBag.input_grrm module<a class="headerlink" href="#module-esta.grrmBag.input_grrm" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.grrmBag.input_grrm.GenerateCom">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.grrmBag.input_grrm.</span></span><span class="sig-name descname"><span class="pre">GenerateCom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyzfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">charge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multiplicity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cal_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.input_grrm.GenerateCom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.input_grrm.GenerateCom.flags_grrm">
+<span class="sig-name descname"><span class="pre">flags_grrm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.input_grrm.GenerateCom.flags_grrm" title="Permalink to this definition">¶</a></dt>
+<dd><p>other options in GRRM code for calculation types
+e.g:</p>
+<p>Options
+sublink=/home/kumarsonu/bin/<a href="#id93"><span class="problematic" id="id94">link_excode_allv3.1_</span></a>.py
+Add Interaction
+Fragm.1=56,57,58,1
+Fragm.2=59-62
+1 2
+Gamma=200.0
+END
+NOFC
+KeepIntFiles
+DownDC=12</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="esta.grrmBag.input_grrm.GenerateCom.np">
+<span class="sig-name descname"><span class="pre">np</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;module</span> <span class="pre">'numpy'</span> <span class="pre">from</span> <span class="pre">'/home/sonu/anaconda3/envs/py3/lib/python3.6/site-packages/numpy/__init__.py'&gt;</span></em><a class="headerlink" href="#esta.grrmBag.input_grrm.GenerateCom.np" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.input_grrm.GenerateCom.read_xyz">
+<span class="sig-name descname"><span class="pre">read_xyz</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.input_grrm.GenerateCom.read_xyz" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>filename, str, filename xyz file name</p>
+</div></blockquote>
+<blockquote>
+<div><p>atomic positions: array: rank 2 array of shape (natoms, 3)
+atomic labels: list/array of strings: rank 1 array of atomic labels
+no of atoms: scalar</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.input_grrm.GenerateCom.read_xyz2">
+<span class="sig-name descname"><span class="pre">read_xyz2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyz2file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.input_grrm.GenerateCom.read_xyz2" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>filename, str, filename xyz file name</p>
+</div></blockquote>
+<blockquote>
+<div><p>atomic positions: array: rank 2 array of shape (natoms, 3)
+atomic labels: list/array of strings: rank 1 array of atomic labels
+no of atoms: scalar</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.input_grrm.GenerateCom.write_com">
+<span class="sig-name descname"><span class="pre">write_com</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.input_grrm.GenerateCom.write_com" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>atomic postions
+atomic labels
+no of atoms</p>
+</div></blockquote>
+<blockquote>
+<div><p>com file containing info of atomic structure</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.input_grrm.GenerateCom.write_com_2xyz">
+<span class="sig-name descname"><span class="pre">write_com_2xyz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyz2file</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.input_grrm.GenerateCom.write_com_2xyz" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>atomic postions
+atomic labels
+no of atoms
+_________________ –&gt; all of these variable read form 1xyz file ..by</p>
+<blockquote>
+<div><p>calling self.read_xyz()</p>
+</div></blockquote>
+<p>str: xyz file name —2nd xyz filename correspinding to product of rxn</p>
+</div></blockquote>
+<blockquote>
+<div><p>com file containing info of atomic structure info of two atomic systems</p>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="esta-grrmbag-input-grrm-adv-module">
+<h2>esta.grrmBag.input_grrm_adv module<a class="headerlink" href="#esta-grrmbag-input-grrm-adv-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-esta.grrmBag.input_grrm_advv">
+<span id="esta-grrmbag-input-grrm-advv-module"></span><h2>esta.grrmBag.input_grrm_advv module<a class="headerlink" href="#module-esta.grrmBag.input_grrm_advv" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.grrmBag.input_grrm_advv.GenerateCom">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.grrmBag.input_grrm_advv.</span></span><span class="sig-name descname"><span class="pre">GenerateCom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyzfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">charge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multiplicity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cal_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.input_grrm_advv.GenerateCom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>python class to generate input files (<a href="#id3"><span class="problematic" id="id4">*</span></a>.com file) for different type of
+calculations for GRRM using:</p>
+<ul class="simple">
+<li><p>non-supported</p></li>
+<li><p>orca</p></li>
+<li><p>gaussian</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Different types of calculation are carried out by the</p>
+<p>GRRM software given below:</p>
+<blockquote>
+<div><p>calculaiton type                          …. status of Implementation</p>
+</div></blockquote>
+<ol class="arabic">
+<li><ul class="simple">
+<li><p>Normal mode analysis (FREQ)</p></li>
+<li><p>Minimum point optimization (MIN)          ……DONE</p></li>
+<li><p>Saddle-point optimization (SADDLE)</p></li>
+<li><p>IRC following (IRC)</p></li>
+<li><p>LUP path optimization (LUP)               …. ongoing</p></li>
+</ul>
+<dl class="simple">
+<dt>– to do</dt><dd><p>Crossing point (MECI or MESX) optimization ….  will not be done
+Crossing point (MECI or MESX) estimation   ….     will not be done
+External atoms (microiterations)
+Frozen atoms                               …. DONE</p>
+</dd>
+</dl>
+</li>
+<li><p>MIN-AFIR calculations                      …  DONE
+AFIR calculations                          …  DONE
+DS-AFIR calculations                       …  DONE</p>
+<p>Refinement calculations                    ….. TODO</p>
+</li>
+</ol>
+</div>
+<p>author: skumar
+email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.input_grrm_advv.GenerateCom.flags_grrm">
+<span class="sig-name descname"><span class="pre">flags_grrm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.input_grrm_advv.GenerateCom.flags_grrm" title="Permalink to this definition">¶</a></dt>
+<dd><p>options in GRRM code for calculation types</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Options
+sublink=/home/kumarsonu/bin/<a href="#id95"><span class="problematic" id="id96">link_excode_allv3.1_</span></a>.py
+Add Interaction
+Fragm.1=56,57,58,1
+Fragm.2=59-62
+1 2
+Gamma=200.0
+END
+NOFC
+KeepIntFiles
+DownDC=12</p>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.input_grrm_advv.GenerateCom.read_xyz">
+<span class="sig-name descname"><span class="pre">read_xyz</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.input_grrm_advv.GenerateCom.read_xyz" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> (<em>str</em>) – xyz file name</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>atomic positions</strong> (<em>array</em>) – rank 2 array of shape (natoms, 3)</p></li>
+<li><p><strong>atomic labels</strong> (<em>list/array of strings</em>) – rank 1 array of atomic labels</p></li>
+<li><p><strong>strings</strong> (<em>string</em>) – string mentioning the units of coordinates</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.input_grrm_advv.GenerateCom.read_xyz2">
+<span class="sig-name descname"><span class="pre">read_xyz2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyz2file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.input_grrm_advv.GenerateCom.read_xyz2" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> – </p></li>
+<li><p><strong>str</strong> – </p></li>
+<li><p><strong>name</strong> (<em>filename xyz file</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>atomic positions</strong> (<em>array: rank 2 array of shape (natoms, 3)</em>)</p></li>
+<li><p><strong>atomic labels</strong> (<em>list/array of strings: rank 1 array of atomic labels</em>)</p></li>
+<li><p><strong>no of atoms</strong> (<em>scalar</em>)</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.input_grrm_advv.GenerateCom.write_com">
+<span class="sig-name descname"><span class="pre">write_com</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interface</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.input_grrm_advv.GenerateCom.write_com" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>atomic postions
+atomic labels
+no of atoms
+kwargs containing GRRM related parameters</p>
+</div></blockquote>
+<blockquote>
+<div><p>input com GRRM file containing info of atomic structure as well
+as other GRRM parameteres</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.input_grrm_advv.GenerateCom.write_com_2xyz">
+<span class="sig-name descname"><span class="pre">write_com_2xyz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyz2file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interface</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.input_grrm_advv.GenerateCom.write_com_2xyz" title="Permalink to this definition">¶</a></dt>
+<dd><p>xyz files of products read from command line arguments ….mainly used
+for creating DS-AFIR input file …</p>
+<blockquote>
+<div><p>atomic postions
+atomic labels
+no of atoms
+_________________ –&gt; all of these variable read form 1xyz file ..by</p>
+<blockquote>
+<div><p>calling self.read_xyz()</p>
+</div></blockquote>
+<p>str: xyz file name —2nd xyz filename correspinding to product of rxn</p>
+</div></blockquote>
+<blockquote>
+<div><p>com file containing info of atomic structure info of two atomic systems</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.input_grrm_advv.GenerateCom.write_inp">
+<span class="sig-name descname"><span class="pre">write_inp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyzfile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">charge</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multiplicity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ncores</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">memory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interface</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.input_grrm_advv.GenerateCom.write_inp" title="Permalink to this definition">¶</a></dt>
+<dd><p>generate input file for ORCA like below:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>prefix</strong> (<em>string</em>) – name of inp file with .inp extension</p></li>
+<li><p><strong>charge</strong> (<em>sclar</em>) – chare on ths system</p></li>
+<li><p><strong>multiplicity</strong> (<em>integer</em>) – spin multiplicity (2S+1); for a single electron: S =1/2</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>file</strong> – inp file for orca containg charge and multiplicity options</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>string</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>! XTB2 NoUseSym &#64;job</p>
+<ul class="simple">
+<li><p>xyz  0 1</p></li>
+</ul>
+<p>&#64;geometry
+*</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="esta-grrmbag-input-grrm-advv0-module">
+<h2>esta.grrmBag.input_grrm_advv0 module<a class="headerlink" href="#esta-grrmbag-input-grrm-advv0-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-esta.grrmBag.output_grrm">
+<span id="esta-grrmbag-output-grrm-module"></span><h2>esta.grrmBag.output_grrm module<a class="headerlink" href="#module-esta.grrmBag.output_grrm" title="Permalink to this headline">¶</a></h2>
+<p>grrm class to extract the xyz file/files from the GRRM17 log file</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm.grrm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.grrmBag.output_grrm.</span></span><span class="sig-name descname"><span class="pre">grrm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm.grrm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>gauss class to extract the xyz file/files from the GRRM17 log file</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm.grrm.get_all_atomic_positions_from_EQ_list">
+<span class="sig-name descname"><span class="pre">get_all_atomic_positions_from_EQ_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm.grrm.get_all_atomic_positions_from_EQ_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id5"><span class="problematic" id="id6">*</span></a>_EQ_list.log” file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm.grrm.get_all_xyz_file">
+<span class="sig-name descname"><span class="pre">get_all_xyz_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm.grrm.get_all_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm.grrm.get_all_xyz_in_a_file">
+<span class="sig-name descname"><span class="pre">get_all_xyz_in_a_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm.grrm.get_all_xyz_in_a_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id97"><span class="problematic" id="id98">all_</span></a>’+’.xyz’</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm.grrm.get_atomic_positions">
+<span class="sig-name descname"><span class="pre">get_atomic_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm.grrm.get_atomic_positions" title="Permalink to this definition">¶</a></dt>
+<dd><p>get atomic positiions and atomic labels from  <a href="#id7"><span class="problematic" id="id8">*</span></a>_P[0-nproc].log  file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm.grrm.get_energy">
+<span class="sig-name descname"><span class="pre">get_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm.grrm.get_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>get Energy from <a href="#id9"><span class="problematic" id="id10">*</span></a>_EQ_list.log file of all EQ structures</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm.grrm.get_xyz_file">
+<span class="sig-name descname"><span class="pre">get_xyz_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm.grrm.get_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.output_grrm_ITR_adv">
+<span id="esta-grrmbag-output-grrm-itr-adv-module"></span><h2>esta.grrmBag.output_grrm_ITR_adv module<a class="headerlink" href="#module-esta.grrmBag.output_grrm_ITR_adv" title="Permalink to this headline">¶</a></h2>
+<p>grrm class to extract the xyz file/files from the GRRM17 ITR.log file</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv.grrm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.grrmBag.output_grrm_ITR_adv.</span></span><span class="sig-name descname"><span class="pre">grrm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv.grrm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>gauss class to extract the xyz file/files from the GRRM17 log file</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv.grrm.get_all_atomic_positions_from_ITR_list">
+<span class="sig-name descname"><span class="pre">get_all_atomic_positions_from_ITR_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv.grrm.get_all_atomic_positions_from_ITR_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id11"><span class="problematic" id="id12">*</span></a>_ITR_list.log” file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv.grrm.get_all_xyz_file">
+<span class="sig-name descname"><span class="pre">get_all_xyz_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv.grrm.get_all_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv.grrm.get_all_xyz_in_a_file">
+<span class="sig-name descname"><span class="pre">get_all_xyz_in_a_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv.grrm.get_all_xyz_in_a_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id99"><span class="problematic" id="id100">all_</span></a>’+’.xyz’</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv.grrm.get_atomic_positions">
+<span class="sig-name descname"><span class="pre">get_atomic_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv.grrm.get_atomic_positions" title="Permalink to this definition">¶</a></dt>
+<dd><p>not called in case of ITR list.log ……….</p>
+<p>get atomic positiions and atomic labels from  <a href="#id13"><span class="problematic" id="id14">*</span></a>_P[0-nproc].log  file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv.grrm.get_energy">
+<span class="sig-name descname"><span class="pre">get_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv.grrm.get_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>get Energy from <a href="#id15"><span class="problematic" id="id16">*</span></a>_ITR_list.log file of all TS structures</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv.grrm.get_xyz_file">
+<span class="sig-name descname"><span class="pre">get_xyz_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv.grrm.get_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.output_grrm_ITR_adv1">
+<span id="esta-grrmbag-output-grrm-itr-adv1-module"></span><h2>esta.grrmBag.output_grrm_ITR_adv1 module<a class="headerlink" href="#module-esta.grrmBag.output_grrm_ITR_adv1" title="Permalink to this headline">¶</a></h2>
+<p>grrm class to process the GRRM Ilog file.
+Basically process the log file containg ITR keywords (used for min,
+opt etc in GRRM)</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv1.grrm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.grrmBag.output_grrm_ITR_adv1.</span></span><span class="sig-name descname"><span class="pre">grrm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv1.grrm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>extract the xyz files and energies from the log file</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv1.grrm.get_all_atomic_positions_from_ITR_list">
+<span class="sig-name descname"><span class="pre">get_all_atomic_positions_from_ITR_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv1.grrm.get_all_atomic_positions_from_ITR_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id17"><span class="problematic" id="id18">*</span></a>_ITR_list.log” file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv1.grrm.get_all_xyz_file">
+<span class="sig-name descname"><span class="pre">get_all_xyz_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv1.grrm.get_all_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file by reading the atomic positions and atomic labels:</p>
+<blockquote>
+<div><p>outfile : write data in xyz file specified by name <cite>outfile</cite></p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv1.grrm.get_all_xyz_in_a_file">
+<span class="sig-name descname"><span class="pre">get_all_xyz_in_a_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv1.grrm.get_all_xyz_in_a_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id101"><span class="problematic" id="id102">all_</span></a>’+’.xyz’</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv1.grrm.get_atomic_positions">
+<span class="sig-name descname"><span class="pre">get_atomic_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv1.grrm.get_atomic_positions" title="Permalink to this definition">¶</a></dt>
+<dd><p>not called in case of ITR list.log ……….</p>
+<p>get atomic positiions and atomic labels from  <a href="#id19"><span class="problematic" id="id20">*</span></a>_P[0-nproc].log  file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv1.grrm.get_energy">
+<span class="sig-name descname"><span class="pre">get_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv1.grrm.get_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>get Energy from <a href="#id21"><span class="problematic" id="id22">*</span></a>_ITR_list.log file of all TS structures</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv1.grrm.get_xyz_file">
+<span class="sig-name descname"><span class="pre">get_xyz_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv1.grrm.get_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.output_grrm_ITR_adv2">
+<span id="esta-grrmbag-output-grrm-itr-adv2-module"></span><h2>esta.grrmBag.output_grrm_ITR_adv2 module<a class="headerlink" href="#module-esta.grrmBag.output_grrm_ITR_adv2" title="Permalink to this headline">¶</a></h2>
+<p>grrm class to process the GRRM Ilog file.
+Basically process the log file containg ITR keywords (used for min,
+opt etc in GRRM)</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv2.grrm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.grrmBag.output_grrm_ITR_adv2.</span></span><span class="sig-name descname"><span class="pre">grrm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv2.grrm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>extract the xyz files and energies from the log file</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv2.grrm.get_all_atomic_positions_from_ITR_list">
+<span class="sig-name descname"><span class="pre">get_all_atomic_positions_from_ITR_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv2.grrm.get_all_atomic_positions_from_ITR_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id23"><span class="problematic" id="id24">*</span></a>_ITR_list.log” file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv2.grrm.get_all_xyz_file">
+<span class="sig-name descname"><span class="pre">get_all_xyz_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv2.grrm.get_all_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file by reading the atomic positions and atomic labels:</p>
+<blockquote>
+<div><p>outfile : write data in xyz file specified by name <cite>outfile</cite></p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv2.grrm.get_all_xyz_in_a_file">
+<span class="sig-name descname"><span class="pre">get_all_xyz_in_a_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv2.grrm.get_all_xyz_in_a_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id103"><span class="problematic" id="id104">all_</span></a>’+’.xyz’</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv2.grrm.get_atomic_positions">
+<span class="sig-name descname"><span class="pre">get_atomic_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv2.grrm.get_atomic_positions" title="Permalink to this definition">¶</a></dt>
+<dd><p>not called in case of ITR list.log ……….</p>
+<p>get atomic positiions and atomic labels from  <a href="#id25"><span class="problematic" id="id26">*</span></a>_P[0-nproc].log  file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv2.grrm.get_bare_energy">
+<span class="sig-name descname"><span class="pre">get_bare_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv2.grrm.get_bare_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>get Bare Energy from log file of MIN-AFIR calculations</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv2.grrm.get_energy">
+<span class="sig-name descname"><span class="pre">get_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv2.grrm.get_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>get Energy from <a href="#id27"><span class="problematic" id="id28">*</span></a>_ITR_list.log file of all TS structures</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv2.grrm.get_xyz_file">
+<span class="sig-name descname"><span class="pre">get_xyz_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv2.grrm.get_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.output_grrm_ITR_adv3">
+<span id="esta-grrmbag-output-grrm-itr-adv3-module"></span><h2>esta.grrmBag.output_grrm_ITR_adv3 module<a class="headerlink" href="#module-esta.grrmBag.output_grrm_ITR_adv3" title="Permalink to this headline">¶</a></h2>
+<p>grrm class to process the GRRM log file. Basically process the log
+file containg ITR keywords (used for min, opt etc in GRRM)</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv3.grrm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.grrmBag.output_grrm_ITR_adv3.</span></span><span class="sig-name descname"><span class="pre">grrm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv3.grrm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>extract the xyz files and energies from the log file</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv3.grrm.get_all_atomic_positions_from_ITR_list">
+<span class="sig-name descname"><span class="pre">get_all_atomic_positions_from_ITR_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv3.grrm.get_all_atomic_positions_from_ITR_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id29"><span class="problematic" id="id30">*</span></a>_ITR_list.log” file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv3.grrm.get_all_xyz_file">
+<span class="sig-name descname"><span class="pre">get_all_xyz_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv3.grrm.get_all_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file by reading the atomic positions and atomic labels:</p>
+<blockquote>
+<div><p>outfile : write data in xyz file specified by name <cite>outfile</cite></p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv3.grrm.get_all_xyz_in_a_file">
+<span class="sig-name descname"><span class="pre">get_all_xyz_in_a_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_afir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reverse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv3.grrm.get_all_xyz_in_a_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id105"><span class="problematic" id="id106">all_</span></a>’+’.xyz’</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv3.grrm.get_atomic_positions">
+<span class="sig-name descname"><span class="pre">get_atomic_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv3.grrm.get_atomic_positions" title="Permalink to this definition">¶</a></dt>
+<dd><p>not called in case of ITR list.log ……….</p>
+<p>get atomic positiions and atomic labels from  <a href="#id31"><span class="problematic" id="id32">*</span></a>_P[0-nproc].log  file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv3.grrm.get_bare_energy">
+<span class="sig-name descname"><span class="pre">get_bare_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv3.grrm.get_bare_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>get Bare Energy from log file of MIN-AFIR calculations</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv3.grrm.get_energy">
+<span class="sig-name descname"><span class="pre">get_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv3.grrm.get_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>get Energy from <a href="#id33"><span class="problematic" id="id34">*</span></a>_ITR_list.log file of all TS structures</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv3.grrm.get_xyz_file">
+<span class="sig-name descname"><span class="pre">get_xyz_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv3.grrm.get_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.output_grrm_ITR_adv4">
+<span id="esta-grrmbag-output-grrm-itr-adv4-module"></span><h2>esta.grrmBag.output_grrm_ITR_adv4 module<a class="headerlink" href="#module-esta.grrmBag.output_grrm_ITR_adv4" title="Permalink to this headline">¶</a></h2>
+<p>grrm class to process the GRRM log file. Basically process the log
+file containg ITR keywords (used for min, opt etc in GRRM)</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv4.grrm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.grrmBag.output_grrm_ITR_adv4.</span></span><span class="sig-name descname"><span class="pre">grrm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv4.grrm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>extract the xyz files and energies from the log file</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv4.grrm.get_all_atomic_positions_from_ITR_list">
+<span class="sig-name descname"><span class="pre">get_all_atomic_positions_from_ITR_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv4.grrm.get_all_atomic_positions_from_ITR_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id35"><span class="problematic" id="id36">*</span></a>_ITR_list.log” file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv4.grrm.get_all_xyz_file">
+<span class="sig-name descname"><span class="pre">get_all_xyz_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv4.grrm.get_all_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file by reading the atomic positions and atomic labels:</p>
+<blockquote>
+<div><p>outfile : write data in xyz file specified by name <cite>outfile</cite></p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv4.grrm.get_all_xyz_in_a_file">
+<span class="sig-name descname"><span class="pre">get_all_xyz_in_a_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_afir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reverse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv4.grrm.get_all_xyz_in_a_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id107"><span class="problematic" id="id108">all_</span></a>’+’.xyz’</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv4.grrm.get_atomic_positions">
+<span class="sig-name descname"><span class="pre">get_atomic_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv4.grrm.get_atomic_positions" title="Permalink to this definition">¶</a></dt>
+<dd><p>not called in case of ITR list.log ……….</p>
+<p>get atomic positiions and atomic labels from  <a href="#id37"><span class="problematic" id="id38">*</span></a>_P[0-nproc].log  file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv4.grrm.get_bare_energy">
+<span class="sig-name descname"><span class="pre">get_bare_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv4.grrm.get_bare_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>get Bare Energy from log file of MIN-AFIR calculations</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv4.grrm.get_energy">
+<span class="sig-name descname"><span class="pre">get_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv4.grrm.get_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>get Energy from <a href="#id39"><span class="problematic" id="id40">*</span></a>_ITR_list.log file of all TS structures</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv4.grrm.get_xyz_file">
+<span class="sig-name descname"><span class="pre">get_xyz_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv4.grrm.get_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.output_grrm_ITR_adv5">
+<span id="esta-grrmbag-output-grrm-itr-adv5-module"></span><h2>esta.grrmBag.output_grrm_ITR_adv5 module<a class="headerlink" href="#module-esta.grrmBag.output_grrm_ITR_adv5" title="Permalink to this headline">¶</a></h2>
+<p>grrm class to process the GRRM log file. Basically process the log
+file containg ITR keywords (used for min, opt etc in GRRM)</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv5.grrm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.grrmBag.output_grrm_ITR_adv5.</span></span><span class="sig-name descname"><span class="pre">grrm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv5.grrm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>extract the xyz files and energies from the log file</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv5.grrm.get_all_atomic_positions_from_ITR_list">
+<span class="sig-name descname"><span class="pre">get_all_atomic_positions_from_ITR_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv5.grrm.get_all_atomic_positions_from_ITR_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id41"><span class="problematic" id="id42">*</span></a>_ITR_list.log” file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv5.grrm.get_all_xyz_file">
+<span class="sig-name descname"><span class="pre">get_all_xyz_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv5.grrm.get_all_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file by reading the atomic positions and atomic labels:</p>
+<blockquote>
+<div><p>outfile : write data in xyz file specified by name <cite>outfile</cite></p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv5.grrm.get_all_xyz_in_a_file">
+<span class="sig-name descname"><span class="pre">get_all_xyz_in_a_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_afir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reverse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv5.grrm.get_all_xyz_in_a_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id109"><span class="problematic" id="id110">all_</span></a>’+’.xyz’</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv5.grrm.get_atomic_positions">
+<span class="sig-name descname"><span class="pre">get_atomic_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv5.grrm.get_atomic_positions" title="Permalink to this definition">¶</a></dt>
+<dd><p>not called in case of ITR list.log ……….</p>
+<p>get atomic positiions and atomic labels from  <a href="#id43"><span class="problematic" id="id44">*</span></a>_P[0-nproc].log  file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv5.grrm.get_bare_energy">
+<span class="sig-name descname"><span class="pre">get_bare_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv5.grrm.get_bare_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>get Bare Energy from log file of MIN-AFIR calculations</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv5.grrm.get_energy">
+<span class="sig-name descname"><span class="pre">get_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv5.grrm.get_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>get Energy from <a href="#id45"><span class="problematic" id="id46">*</span></a>_ITR_list.log file of all TS structures</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_ITR_adv5.grrm.get_xyz_file">
+<span class="sig-name descname"><span class="pre">get_xyz_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_ITR_adv5.grrm.get_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.output_grrm_PT">
+<span id="esta-grrmbag-output-grrm-pt-module"></span><h2>esta.grrmBag.output_grrm_PT module<a class="headerlink" href="#module-esta.grrmBag.output_grrm_PT" title="Permalink to this headline">¶</a></h2>
+<p>grrm class to extract the xyz file/files from the GRRM17 PT.log file</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_PT.grrm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.grrmBag.output_grrm_PT.</span></span><span class="sig-name descname"><span class="pre">grrm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_PT.grrm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>gauss class to extract the xyz file/files from the GRRM17 log file</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_PT.grrm.get_all_atomic_positions_from_PT_list">
+<span class="sig-name descname"><span class="pre">get_all_atomic_positions_from_PT_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_PT.grrm.get_all_atomic_positions_from_PT_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id47"><span class="problematic" id="id48">*</span></a>_PT_list.log” file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_PT.grrm.get_all_xyz_file">
+<span class="sig-name descname"><span class="pre">get_all_xyz_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_PT.grrm.get_all_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_PT.grrm.get_all_xyz_in_a_file">
+<span class="sig-name descname"><span class="pre">get_all_xyz_in_a_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_PT.grrm.get_all_xyz_in_a_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id111"><span class="problematic" id="id112">all_</span></a>’+’.xyz’</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_PT.grrm.get_atomic_positions">
+<span class="sig-name descname"><span class="pre">get_atomic_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_PT.grrm.get_atomic_positions" title="Permalink to this definition">¶</a></dt>
+<dd><p>not called in case of PT list.log ……….</p>
+<p>get atomic positiions and atomic labels from  <a href="#id49"><span class="problematic" id="id50">*</span></a>_P[0-nproc].log  file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_PT.grrm.get_energy">
+<span class="sig-name descname"><span class="pre">get_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_PT.grrm.get_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>get Energy from <a href="#id51"><span class="problematic" id="id52">*</span></a>_PT_list.log file of all PT structures</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_PT.grrm.get_xyz_file">
+<span class="sig-name descname"><span class="pre">get_xyz_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_PT.grrm.get_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.output_grrm_RxnMap6">
+<span id="esta-grrmbag-output-grrm-rxnmap6-module"></span><h2>esta.grrmBag.output_grrm_RxnMap6 module<a class="headerlink" href="#module-esta.grrmBag.output_grrm_RxnMap6" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_RxnMap6.grrm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.grrmBag.output_grrm_RxnMap6.</span></span><span class="sig-name descname"><span class="pre">grrm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">comfile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_RxnMap6.grrm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>gauss class to extract the xyz file/files from the GRRM17 log file</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_RxnMap6.grrm.get_all_atomic_positions">
+<span class="sig-name descname"><span class="pre">get_all_atomic_positions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logfile_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_RxnMap6.grrm.get_all_atomic_positions" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id53"><span class="problematic" id="id54">*</span></a>_TS_list.log” file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_RxnMap6.grrm.get_all_xyz_file">
+<span class="sig-name descname"><span class="pre">get_all_xyz_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logfile_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_RxnMap6.grrm.get_all_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_RxnMap6.grrm.get_atomic_positions">
+<span class="sig-name descname"><span class="pre">get_atomic_positions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logfile_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_RxnMap6.grrm.get_atomic_positions" title="Permalink to this definition">¶</a></dt>
+<dd><p>not called in case of TS list.log ……….</p>
+<p>get atomic positiions and atomic labels from  <a href="#id55"><span class="problematic" id="id56">*</span></a>_P[0-nproc].log  file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_RxnMap6.grrm.get_connection">
+<span class="sig-name descname"><span class="pre">get_connection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logfile_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_RxnMap6.grrm.get_connection" title="Permalink to this definition">¶</a></dt>
+<dd><p>find which TS stats is connected to which EQ states</p>
+<blockquote>
+<div><p>str: filename</p>
+</div></blockquote>
+<blockquote>
+<div><p>dictionary of TS and connections: {‘TS’: TS_list, ‘Connection’: connection}</p>
+</div></blockquote>
+<p>e.g:</p>
+<p>search the following is <a href="#id57"><span class="problematic" id="id58">*</span></a>TS_list.log file:</p>
+<p># Geometry of TS 0, SYMMETRY = C1
+CONNECTION : 4 - 5</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_RxnMap6.grrm.get_energy">
+<span class="sig-name descname"><span class="pre">get_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_RxnMap6.grrm.get_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>get Energy from <a href="#id59"><span class="problematic" id="id60">*</span></a>_TS_list.log file of all TS structures</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_RxnMap6.grrm.get_energy_general">
+<span class="sig-name descname"><span class="pre">get_energy_general</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">com_file_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">which_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'EQ'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_RxnMap6.grrm.get_energy_general" title="Permalink to this definition">¶</a></dt>
+<dd><p>get Energy of all TS/PT/EQ states from comfile_TS/PT/EQ _list.log file</p>
+<blockquote>
+<div><p>str: com file name with .com extension
+str: choose which states energies to get; EQ/TS/PT</p>
+</div></blockquote>
+<blockquote>
+<div><p>list: energies list of EQ/TS/PT structures</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_RxnMap6.grrm.get_map">
+<span class="sig-name descname"><span class="pre">get_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ts_connection</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layout_is</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'neato'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_RxnMap6.grrm.get_map" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>list: eq_id
+list: connection</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_RxnMap6.grrm.get_map2">
+<span class="sig-name descname"><span class="pre">get_map2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ts_connection</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_RxnMap6.grrm.get_map2" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>list: eq_id
+list: connection</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_RxnMap6.grrm.get_xyz_file">
+<span class="sig-name descname"><span class="pre">get_xyz_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logfile_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_RxnMap6.grrm.get_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.output_grrm_TS">
+<span id="esta-grrmbag-output-grrm-ts-module"></span><h2>esta.grrmBag.output_grrm_TS module<a class="headerlink" href="#module-esta.grrmBag.output_grrm_TS" title="Permalink to this headline">¶</a></h2>
+<p>grrm class to extract the xyz file/files from the GRRM17 TS.log file</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_TS.grrm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.grrmBag.output_grrm_TS.</span></span><span class="sig-name descname"><span class="pre">grrm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_TS.grrm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>gauss class to extract the xyz file/files from the GRRM17 log file</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_TS.grrm.get_all_atomic_positions_from_TS_list">
+<span class="sig-name descname"><span class="pre">get_all_atomic_positions_from_TS_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_TS.grrm.get_all_atomic_positions_from_TS_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id61"><span class="problematic" id="id62">*</span></a>_TS_list.log” file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_TS.grrm.get_all_xyz_file">
+<span class="sig-name descname"><span class="pre">get_all_xyz_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_TS.grrm.get_all_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_TS.grrm.get_all_xyz_in_a_file">
+<span class="sig-name descname"><span class="pre">get_all_xyz_in_a_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_TS.grrm.get_all_xyz_in_a_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id113"><span class="problematic" id="id114">all_</span></a>’+’.xyz’</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_TS.grrm.get_atomic_positions">
+<span class="sig-name descname"><span class="pre">get_atomic_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_TS.grrm.get_atomic_positions" title="Permalink to this definition">¶</a></dt>
+<dd><p>not called in case of TS list.log ……….</p>
+<p>get atomic positiions and atomic labels from  <a href="#id63"><span class="problematic" id="id64">*</span></a>_P[0-nproc].log  file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_TS.grrm.get_energy">
+<span class="sig-name descname"><span class="pre">get_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_TS.grrm.get_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>get Energy from <a href="#id65"><span class="problematic" id="id66">*</span></a>_TS_list.log file of all TS structures</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_TS.grrm.get_xyz_file">
+<span class="sig-name descname"><span class="pre">get_xyz_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_TS.grrm.get_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.output_grrm_init">
+<span id="esta-grrmbag-output-grrm-init-module"></span><h2>esta.grrmBag.output_grrm_init module<a class="headerlink" href="#module-esta.grrmBag.output_grrm_init" title="Permalink to this headline">¶</a></h2>
+<p>grrm class to extract the xyz file/files from the GRRM17 log file</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_init.grrm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.grrmBag.output_grrm_init.</span></span><span class="sig-name descname"><span class="pre">grrm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_init.grrm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>gauss class to extract the xyz file/files from the GRRM17 log file</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_init.grrm.get_all_atomic_positions_from_EQ_list">
+<span class="sig-name descname"><span class="pre">get_all_atomic_positions_from_EQ_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_init.grrm.get_all_atomic_positions_from_EQ_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id67"><span class="problematic" id="id68">*</span></a>_EQ_list.log” file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_init.grrm.get_all_xyz_file">
+<span class="sig-name descname"><span class="pre">get_all_xyz_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_init.grrm.get_all_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_init.grrm.get_atomic_positions">
+<span class="sig-name descname"><span class="pre">get_atomic_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_init.grrm.get_atomic_positions" title="Permalink to this definition">¶</a></dt>
+<dd><p>get atomic positiions and atomic labels from  <a href="#id69"><span class="problematic" id="id70">*</span></a>_P[0-nproc].log  file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_init.grrm.get_energy">
+<span class="sig-name descname"><span class="pre">get_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_init.grrm.get_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>get Energy from <a href="#id71"><span class="problematic" id="id72">*</span></a>_EQ_list.log file of all EQ structures</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.output_grrm_init.grrm.get_xyz_file">
+<span class="sig-name descname"><span class="pre">get_xyz_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.output_grrm_init.grrm.get_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.plot_strs_energy">
+<span id="esta-grrmbag-plot-strs-energy-module"></span><h2>esta.grrmBag.plot_strs_energy module<a class="headerlink" href="#module-esta.grrmBag.plot_strs_energy" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.plot_strs_energy.data_exist">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.plot_strs_energy.</span></span><span class="sig-name descname"><span class="pre">data_exist</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.plot_strs_energy.data_exist" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.plot_strs_energy.process_data">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.plot_strs_energy.</span></span><span class="sig-name descname"><span class="pre">process_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.plot_strs_energy.process_data" title="Permalink to this definition">¶</a></dt>
+<dd><ul class="simple">
+<li><p>process data0.dat and EQlist.dat files for plotting</p></li>
+<li><p>generate plot of str vs energy in the <cite>e.pdf</cite></p></li>
+</ul>
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.search_structure2">
+<span id="esta-grrmbag-search-structure2-module"></span><h2>esta.grrmBag.search_structure2 module<a class="headerlink" href="#module-esta.grrmBag.search_structure2" title="Permalink to this headline">¶</a></h2>
+<p>to get all the possible atomic structures with some constrainds from
+a list of xyz strs</p>
+<p>author: skumar
+email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com/sonukumar&#46;icredd&#46;hokudai&#46;ac&#46;jp">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com/sonukumar<span>&#46;</span>icredd<span>&#46;</span>hokudai<span>&#46;</span>ac<span>&#46;</span>jp</a>
+date: July 2020
+place: QCL, ICReDD, Japan</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.grrmBag.search_structure2.strInfo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.grrmBag.search_structure2.</span></span><span class="sig-name descname"><span class="pre">strInfo</span></span><a class="headerlink" href="#esta.grrmBag.search_structure2.strInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>class to just print the str information etc ; it takes as input information of
+strs from struct class.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.search_structure2.strInfo.get_str_info">
+<span class="sig-name descname"><span class="pre">get_str_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filenames</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atoms_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist_criteria</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atoms_info_unwanted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist_criteria_unwanted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.search_structure2.strInfo.get_str_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>get information of all possible atomic strs with
+input constraints</p>
+<blockquote>
+<div><blockquote>
+<div><p>filenames: list of all xyz files
+atoms_info: list of  index of pair of atoms  (atoms numbering starting from</p>
+<blockquote>
+<div><p>1; like the vesta reads and assigns the atom numbers)</p>
+</div></blockquote>
+<p>dist_criteria: list of distances for each pair of atoms</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>atoms_info_unwanted:  strs with following dist criteria are not needed</p></li>
+<li><dl class="simple">
+<dt>dist_criteria_unwanted: strs with this critea are not needed</dt><dd><p>((unwanted means dist = or &gt; is needed )</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+<blockquote>
+<div><p>3 output files named:
+1) “data.dat”    :  all strs with distances between atom pairs
+2) “dat0.dat”    :  contain possible  xyz str with given distance constrains
+3) “str_id_info” :  contained id of xyz files; can be used to view the atomic</p>
+<blockquote>
+<div><p>strs using vesta or other visualization tool</p>
+</div></blockquote>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.grrmBag.search_structure2.struct">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.grrmBag.search_structure2.</span></span><span class="sig-name descname"><span class="pre">struct</span></span><a class="headerlink" href="#esta.grrmBag.search_structure2.struct" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>struct class for getting the possible strs with some contraints on
+atoms locations</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.search_structure2.struct.get_str">
+<span class="sig-name descname"><span class="pre">get_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyzfile_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyz_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atoms_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atoms_list_unwanted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold_unwanted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwarg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.search_structure2.struct.get_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz files with constrains mentioned …..</p>
+<blockquote>
+<div><p>xyzobj: xyz data object
+atoms_list: a list of atleast 2 atoms; e.g. [1,10], or [[1,4], [6,8]]
+x lfind:
+threshold: list of scalars depending on list of atoms, scalars are</p>
+<blockquote>
+<div><p>distance between atoms in angstrom; if one value given then
+all atoms pairs have same threshold</p>
+</div></blockquote>
+<p>atoms_list_unwanted: same as atoms_list, but these are not wanted in search sts
+threshold_unwanted:  same as threshold, but atoms with these distances or more</p>
+<blockquote>
+<div><p>are needed in the final xyz str</p>
+</div></blockquote>
+<p><a href="#id73"><span class="problematic" id="id74">**</span></a><a href="#id75"><span class="problematic" id="id76">*</span></a>kwarg: other keyword arguments</p>
+</div></blockquote>
+<blockquote>
+<div><p>only xyz files with specific constrains</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.search_structure2.struct.read_xyz">
+<span class="sig-name descname"><span class="pre">read_xyz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyzfile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.search_structure2.struct.read_xyz" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>filename, str, filename xyz file name</p>
+</div></blockquote>
+<blockquote>
+<div><p>atomic positions: array: rank 2 array of shape (natoms, 3)
+atomic labels: list/array of strings: rank 1 array of atomic
+labels no of atoms: scalar</p>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.search_structure2_mod">
+<span id="esta-grrmbag-search-structure2-mod-module"></span><h2>esta.grrmBag.search_structure2_mod module<a class="headerlink" href="#module-esta.grrmBag.search_structure2_mod" title="Permalink to this headline">¶</a></h2>
+<p>to get all the possible atomic structures with some constrainds from
+a list of xyz strs</p>
+<p>author: skumar
+email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com/sonukumar&#46;icredd&#46;hokudai&#46;ac&#46;jp">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com/sonukumar<span>&#46;</span>icredd<span>&#46;</span>hokudai<span>&#46;</span>ac<span>&#46;</span>jp</a>
+date: July 2020
+place: QCL, ICReDD, Japan</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.grrmBag.search_structure2_mod.strInfo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.grrmBag.search_structure2_mod.</span></span><span class="sig-name descname"><span class="pre">strInfo</span></span><a class="headerlink" href="#esta.grrmBag.search_structure2_mod.strInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>class to just print the str information etc ; it takes as input information of
+strs from struct class.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.search_structure2_mod.strInfo.get_str_info">
+<span class="sig-name descname"><span class="pre">get_str_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filenames</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atoms_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist_criteria</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atoms_info_unwanted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist_criteria_unwanted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.search_structure2_mod.strInfo.get_str_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>get information of all possible atomic strs with
+input constraints</p>
+<blockquote>
+<div><blockquote>
+<div><p>filenames: list of all xyz files
+atoms_info: list of  index of pair of atoms  (atoms numbering starting from</p>
+<blockquote>
+<div><p>1; like the vesta reads and assigns the atom numbers)</p>
+</div></blockquote>
+<p>dist_criteria: list of distances for each pair of atoms</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>atoms_info_unwanted:  strs with following dist criteria are not needed</p></li>
+<li><dl class="simple">
+<dt>dist_criteria_unwanted: strs with this critea are not needed</dt><dd><p>((unwanted means dist = or &gt; is needed )</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+<blockquote>
+<div><p>3 output files named:
+1) “data.dat”    :  all strs with distances between atom pairs
+2) “dat0.dat”    :  contain possible  xyz str with given distance constrains
+3) “str_id_info” :  contained id of xyz files; can be used to view the atomic</p>
+<blockquote>
+<div><p>strs using vesta or other visualization tool</p>
+</div></blockquote>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.grrmBag.search_structure2_mod.struct">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.grrmBag.search_structure2_mod.</span></span><span class="sig-name descname"><span class="pre">struct</span></span><a class="headerlink" href="#esta.grrmBag.search_structure2_mod.struct" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>struct class for getting the possible strs with some contraints on
+atoms locations</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.search_structure2_mod.struct.get_str">
+<span class="sig-name descname"><span class="pre">get_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyzfile_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyz_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atoms_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atoms_list_unwanted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold_unwanted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwarg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.search_structure2_mod.struct.get_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz files with constrains mentioned …..</p>
+<blockquote>
+<div><p>xyzobj: xyz data object
+atoms_list: a list of atleast 2 atoms; e.g. [1,10], or [[1,4], [6,8]]
+x lfind:
+threshold: list of scalars depending on list of atoms, scalars are</p>
+<blockquote>
+<div><p>distance between atoms in angstrom; if one value given then
+all atoms pairs have same threshold</p>
+</div></blockquote>
+<p>atoms_list_unwanted: same as atoms_list, but these are not wanted in search sts
+threshold_unwanted:  same as threshold, but atoms with these distances or more</p>
+<blockquote>
+<div><p>are needed in the final xyz str</p>
+</div></blockquote>
+<p><a href="#id77"><span class="problematic" id="id78">**</span></a><a href="#id79"><span class="problematic" id="id80">*</span></a>kwarg: other keyword arguments</p>
+</div></blockquote>
+<blockquote>
+<div><p>only xyz files with specific constrains</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.search_structure2_mod.struct.read_xyz">
+<span class="sig-name descname"><span class="pre">read_xyz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyzfile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.search_structure2_mod.struct.read_xyz" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>filename, str, filename xyz file name</p>
+</div></blockquote>
+<blockquote>
+<div><p>atomic positions: array: rank 2 array of shape (natoms, 3)
+atomic labels: list/array of strings: rank 1 array of atomic
+labels no of atoms: scalar</p>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.search_structure3">
+<span id="esta-grrmbag-search-structure3-module"></span><h2>esta.grrmBag.search_structure3 module<a class="headerlink" href="#module-esta.grrmBag.search_structure3" title="Permalink to this headline">¶</a></h2>
+<p>to get all the possible atomic structures with some constrainds from
+a list of xyz strs</p>
+<p>author: skumar
+email: <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com/sonukumar&#46;icredd&#46;hokudai&#46;ac&#46;jp">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com/sonukumar<span>&#46;</span>icredd<span>&#46;</span>hokudai<span>&#46;</span>ac<span>&#46;</span>jp</a>
+date: July 2020
+place: QCL, ICReDD, Japan</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.grrmBag.search_structure3.strInfo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.grrmBag.search_structure3.</span></span><span class="sig-name descname"><span class="pre">strInfo</span></span><a class="headerlink" href="#esta.grrmBag.search_structure3.strInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>class to just print the str information etc.
+Iit takes as input information of strs from struct class.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.search_structure3.strInfo.get_str_info">
+<span class="sig-name descname"><span class="pre">get_str_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filenames</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atoms_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist_criteria</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atoms_info_unwanted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist_criteria_unwanted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.search_structure3.strInfo.get_str_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>get information of all possible atomic strs with
+input constraints</p>
+<blockquote>
+<div><blockquote>
+<div><p>filenames: list of all xyz files
+atoms_info: list of  index of pair of atoms  (atoms numbering starting from</p>
+<blockquote>
+<div><p>1; like the vesta reads and assigns the atom numbers)</p>
+</div></blockquote>
+<p>dist_criteria: list of distances for each pair of atoms</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>atoms_info_unwanted:  strs with following dist criteria are not needed</p></li>
+<li><dl class="simple">
+<dt>dist_criteria_unwanted: strs with this critea are not needed</dt><dd><p>((unwanted means dist = or &gt; is needed )</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+<blockquote>
+<div><p>3 output files named:
+1) “data.dat”    :  all strs with distances between atom pairs
+2) “dat0.dat”    :  contain possible  xyz str with given distance constrains
+3) “str_id_info” :  contained id of xyz files; can be used to view the atomic</p>
+<blockquote>
+<div><p>strs using vesta or other visualization tool</p>
+</div></blockquote>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.search_structure3.strInfo.get_str_info1">
+<span class="sig-name descname"><span class="pre">get_str_info1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atoms_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist_criteria</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atoms_info_unwanted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dist_criteria_unwanted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.search_structure3.strInfo.get_str_info1" title="Permalink to this definition">¶</a></dt>
+<dd><p>get information of all possible atomic strs with
+input constraints</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>str</em>) – file containing all the xyz files</p></li>
+<li><p><strong>atoms_info</strong> (<em>list</em>) – list of  index of pair of atoms  (atoms numbering starting from
+1; like the vesta reads and assigns the atom numbers)</p></li>
+<li><p><strong>dist_criteria</strong> (<em>list</em>) – list of distances for each pair of atoms</p></li>
+<li><p><strong>atoms_info_unwanted</strong> (<em>strs</em>) – strs with following dist criteria are not needed</p></li>
+<li><p><strong>dist_criteria_unwanted</strong> (<em>strs</em>) – strs with this critea are not needed
+((unwanted means dist = or &gt; is needed )</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>data.dat    :  all strs with distances between atom pairs
+dat0.dat    :  contain possible  xyz str with given distance constrains
+str_id_info :  contained id of xyz files; can be used to view the atomic</p>
+<blockquote>
+<div><p>strs using vesta or other visualization tool</p>
+</div></blockquote>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>3 output files</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.grrmBag.search_structure3.struct">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.grrmBag.search_structure3.</span></span><span class="sig-name descname"><span class="pre">struct</span></span><a class="headerlink" href="#esta.grrmBag.search_structure3.struct" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>struct class for getting the possible strs with some contraints on
+atoms locations</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.search_structure3.struct.get_str">
+<span class="sig-name descname"><span class="pre">get_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyzfile_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyz_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atoms_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atoms_list_unwanted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold_unwanted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwarg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.search_structure3.struct.get_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz files with constrains mentioned …..</p>
+<blockquote>
+<div><p>xyzobj: xyz data object
+atoms_list: a list of atleast 2 atoms; e.g. [1,10], or [[1,4], [6,8]]
+x lfind:
+threshold: list of scalars depending on list of atoms, scalars are</p>
+<blockquote>
+<div><p>distance between atoms in angstrom; if one value given then
+all atoms pairs have same threshold</p>
+</div></blockquote>
+<p>atoms_list_unwanted: same as atoms_list, but these are not wanted in search sts
+threshold_unwanted:  same as threshold, but atoms with these distances or more</p>
+<blockquote>
+<div><p>are needed in the final xyz str</p>
+</div></blockquote>
+<p><a href="#id81"><span class="problematic" id="id82">**</span></a><a href="#id83"><span class="problematic" id="id84">*</span></a>kwarg: other keyword arguments</p>
+</div></blockquote>
+<blockquote>
+<div><p>only xyz files with specific constrains</p>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.search_structure3.struct.read_xyz">
+<span class="sig-name descname"><span class="pre">read_xyz</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xyzfile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.search_structure3.struct.read_xyz" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>filename, str, filename xyz file name</p>
+</div></blockquote>
+<blockquote>
+<div><p>atomic positions: array: rank 2 array of shape (natoms, 3)
+atomic labels: list/array of strings: rank 1 array of atomic
+labels no of atoms: scalar</p>
+</div></blockquote>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.to_location">
+<span id="esta-grrmbag-to-location-module"></span><h2>esta.grrmBag.to_location module<a class="headerlink" href="#module-esta.grrmBag.to_location" title="Permalink to this headline">¶</a></h2>
+<p>mv all data files of spectic extensions to newly created directory</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.to_location.move_to_location">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.to_location.</span></span><span class="sig-name descname"><span class="pre">move_to_location</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_ext</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loc</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.to_location.move_to_location" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>str: file_ext, eg. xyz
+str: loc, e.g. ‘xyz_TS’</p>
+</div></blockquote>
+<blockquote>
+<div><p>move all files with file_ext to loc</p>
+</div></blockquote>
+<p>mv filenames = <a href="#id85"><span class="problematic" id="id86">*</span></a>xyz to another location (loc);</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.write_xyz">
+<span id="esta-grrmbag-write-xyz-module"></span><h2>esta.grrmBag.write_xyz module<a class="headerlink" href="#module-esta.grrmBag.write_xyz" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.write_xyz.get_all_xyz_file">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.write_xyz.</span></span><span class="sig-name descname"><span class="pre">get_all_xyz_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix_ofile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.write_xyz.get_all_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file given atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>prefix_ofile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.write_xyz.get_all_xyz_in_a_file">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.write_xyz.</span></span><span class="sig-name descname"><span class="pre">get_all_xyz_in_a_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">energy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix_ofile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reverse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.write_xyz.get_all_xyz_in_a_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz files in a single file …</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pos</strong> (<em>rank 2 array</em>) – arry of atomic positions, shape(natoms, 3)</p></li>
+<li><p><strong>label</strong> (<em>list of strings</em>) – list of string containing atomic symbols</p></li>
+<li><p><strong>energy</strong> (<em>array</em>) – array of energies of all atomic strs</p></li>
+<li><p><strong>prefix_ofile</strong> (<em>(</em><em>optional</em><em>) </em><em>string</em>) – string for prefixing the name of the output file</p></li>
+<li><p><strong>comment</strong> (<em>(</em><em>optional</em><em>) </em><em>logical</em>) – logical (True/False) for adding commnet in commnet line of the xyz file</p></li>
+<li><p><strong>reverse</strong> (<em>(</em><em>optional</em><em>) </em><em>logical</em>) – logical for printing the path in reverse order</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>outfile</strong> – write data in a single xyz file specified by name <cite>outfile</cite>
+here outfile  =  prefix+”_”+’<a href="#id115"><span class="problematic" id="id116">all_</span></a>’+’.xyz’</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.write_xyz0">
+<span id="esta-grrmbag-write-xyz0-module"></span><h2>esta.grrmBag.write_xyz0 module<a class="headerlink" href="#module-esta.grrmBag.write_xyz0" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.write_xyz0.get_all_xyz_file">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.write_xyz0.</span></span><span class="sig-name descname"><span class="pre">get_all_xyz_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix_ofile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.write_xyz0.get_all_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file given atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>prefix_ofile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.write_xyz0.get_all_xyz_in_a_file">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.write_xyz0.</span></span><span class="sig-name descname"><span class="pre">get_all_xyz_in_a_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix_ofile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.write_xyz0.get_all_xyz_in_a_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz files in a single file …</p>
+<blockquote>
+<div><p>pos: rank 2 array of atomic positions, shape(natoms, 3)
+label: list of strings containing atomic symbols
+prefix_ofile: (optional) string for prefixing the name of the output file
+comment: (optional) logical (True/False) for adding commnet in commnet line of the xyz file</p>
+</div></blockquote>
+<blockquote>
+<div><dl class="simple">
+<dt><cite>outfile</cite>: write data in a single xyz file specified by name <cite>outfile</cite></dt><dd><p>here outfile  =  prefix+”_”+’<a href="#id117"><span class="problematic" id="id118">all_</span></a>’+’.xyz’</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.write_xyz1">
+<span id="esta-grrmbag-write-xyz1-module"></span><h2>esta.grrmBag.write_xyz1 module<a class="headerlink" href="#module-esta.grrmBag.write_xyz1" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.write_xyz1.get_all_xyz_file">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.write_xyz1.</span></span><span class="sig-name descname"><span class="pre">get_all_xyz_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix_ofile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.write_xyz1.get_all_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file given atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>prefix_ofile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.grrmBag.write_xyz1.get_all_xyz_in_a_file">
+<span class="sig-prename descclassname"><span class="pre">esta.grrmBag.write_xyz1.</span></span><span class="sig-name descname"><span class="pre">get_all_xyz_in_a_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">energy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix_ofile</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.write_xyz1.get_all_xyz_in_a_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz files in a single file …</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pos</strong> (<em>rank 2 array</em>) – arry of atomic positions, shape(natoms, 3)</p></li>
+<li><p><strong>label</strong> (<em>list of strings</em>) – list of string containing atomic symbols</p></li>
+<li><p><strong>energy</strong> (<em>array</em>) – array of energies of all atomic strs</p></li>
+<li><p><strong>prefix_ofile</strong> (<em>(</em><em>optional</em><em>) </em><em>string</em>) – string for prefixing the name of the output file</p></li>
+<li><p><strong>comment</strong> (<em>(</em><em>optional</em><em>) </em><em>logical</em>) – logical (True/False) for adding commnet in commnet line of the xyz file</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>outfile</strong> – write data in a single xyz file specified by name <cite>outfile</cite>
+here outfile  =  prefix+”_”+’<a href="#id119"><span class="problematic" id="id120">all_</span></a>’+’.xyz’</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag.x">
+<span id="esta-grrmbag-x-module"></span><h2>esta.grrmBag.x module<a class="headerlink" href="#module-esta.grrmBag.x" title="Permalink to this headline">¶</a></h2>
+<p>grrm class to extract the xyz file/files from the GRRM17 log file</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="esta.grrmBag.x.grrm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">esta.grrmBag.x.</span></span><span class="sig-name descname"><span class="pre">grrm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.x.grrm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>gauss class to extract the xyz file/files from the GRRM17 log file</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.x.grrm.get_all_atomic_positions_from_EQ_list">
+<span class="sig-name descname"><span class="pre">get_all_atomic_positions_from_EQ_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.x.grrm.get_all_atomic_positions_from_EQ_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz files: atomic positions and atomic labels from “<a href="#id87"><span class="problematic" id="id88">*</span></a>_EQ_list.log” file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.x.grrm.get_all_xyz_file">
+<span class="sig-name descname"><span class="pre">get_all_xyz_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.x.grrm.get_all_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get all xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.x.grrm.get_atomic_positions">
+<span class="sig-name descname"><span class="pre">get_atomic_positions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.x.grrm.get_atomic_positions" title="Permalink to this definition">¶</a></dt>
+<dd><p>get atomic positiions and atomic labels from  <a href="#id89"><span class="problematic" id="id90">*</span></a>_P[0-nproc].log  file of GRRM17</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.x.grrm.get_energy">
+<span class="sig-name descname"><span class="pre">get_energy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.x.grrm.get_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>get Energy from <a href="#id91"><span class="problematic" id="id92">*</span></a>_EQ_list.log file of all EQ structures</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="esta.grrmBag.x.grrm.get_xyz_file">
+<span class="sig-name descname"><span class="pre">get_xyz_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#esta.grrmBag.x.grrm.get_xyz_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>get xyz file by reading the atomic positions and atomic labels:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>write data in xyz file specified by name <cite>outfile</cite></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><cite>outfile</cite></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.grrmBag">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-esta.grrmBag" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="file_qeBag.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">esta.qeBag package</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="file3a.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Reference Sheet</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Sonu Kumar<br/>
+    
+        &copy; Copyright 2017-2021, Sonu Kumar.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -18,7 +18,7 @@ EStA documentation!
 **EStA** software package is capable of analyzing, pre-processing, and post-processing data from different software packages such as vasp, quantum-espresso, gaussian, GRRM, xTB, and so on. It can automatically generate input files for vasp, quantum-esspresso, and other codes as well can do some model calculations. It is written in python3, Fotran90, and some part in C. In future, it will be able to perform calculations for predicting electronic and transport properties.
 
 
-Some abilities of the code
+Some abilities of the EStA
 --------------------------
 
     #.    automatic input generations for different electronic structure softwares
@@ -68,6 +68,18 @@ Keyword related to author's research areas
    :caption: EStA2:
 
    file4 
+
+.. toctree::
+   :maxdepth: 4
+   :caption: qeBag:
+
+   file_qeBag
+
+.. toctree::
+   :maxdepth: 4
+   :caption: grrmBag:
+
+   file_grrmBag 
 
 .. toctree::
    :maxdepth: 4
