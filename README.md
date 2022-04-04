@@ -1,4 +1,5 @@
 # esta version 2.6
+==================
 
 Copyright 2017-2021 Sonu Kumar
 
@@ -19,14 +20,15 @@ A few additional topics are also covered:
 
 
 Some abilities of the software:
+===============================
 
-#. automatic input generations for different electronic structure softwares
+- automatic input generations for different electronic structure softwares
 
-#. output analysis of different file formats such xml, yaml, json, and so on
+- output analysis of different file formats such xml, yaml, json, and so on
 
-#. vibrational and thermodynamical analysis of atomic and molecular systems
+- vibrational and thermodynamical analysis of atomic and molecular systems
 
-#. transition state finding using CI-NEB approach (interfaced with quantum-espresso for the time being!!)
+- transition state finding using CI-NEB approach (interfaced with quantum-espresso for the time being!!)
 
 #. zone centre phonon calculations based on gradient input (to be expanded to whole zone) 
 
