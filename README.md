@@ -1,5 +1,4 @@
-# esta version 2.6:
-==================
+# esta version 2.6
 
 Copyright 2017-2021 Sonu Kumar
 
@@ -30,21 +29,21 @@ Some abilities of the software:
 
 - transition state finding using CI-NEB approach (interfaced with quantum-espresso for the time being!!)
 
-#. zone centre phonon calculations based on gradient input (to be expanded to whole zone) 
+- zone centre phonon calculations based on gradient input (to be expanded to whole zone) 
 
-#. model calculations of lattice thermal conductivity (first principles calculation is experimental)
+- model calculations of lattice thermal conductivity (first principles calculation is experimental)
 
-#. tight binding calculation of bulk materials
+- tight binding calculation of bulk materials
 
-#. point group detection (space group detection and other stuff carried out using spglib)
+- point group detection (space group detection and other stuff carried out using spglib)
 
-#. lattice transformation analysis
+- lattice transformation analysis
 
-#. machine learning prediction of important physical property (more to add soon!!)
+- machine learning prediction of important physical property (more to add soon!!)
 
-#. easy to use unit conversion routine; axsf, bxsf, cube files .. for visualizations etc
+- easy to use unit conversion routine; axsf, bxsf, cube files .. for visualizations etc
 
-#. more routines (interfacing of xTB with GRRM, minimization procedures, fortran code for calculating static dielectric constant, mode oscillator  strength etc..) are there, but to be added to esta package!!!
+- more routines (interfacing of xTB with GRRM, minimization procedures, fortran code for calculating static dielectric constant, mode oscillator  strength etc..) are there, but to be added to esta package!!!
 
 
 
