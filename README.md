@@ -1,6 +1,6 @@
-# esta version 2.6
+# esta version 2.8
 
-Copyright 2017-2021 Sonu Kumar
+Copyright 2017-2022 Sonu Kumar
 
 
 "EStA" software package for analyzing, pre-processing, and post-processing 
