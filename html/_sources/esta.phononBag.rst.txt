@@ -1,0 +1,53 @@
+esta.phononBag package
+======================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   esta.phononBag.phonopy
+
+Submodules
+----------
+
+esta.phononBag.get\_dynG module
+-------------------------------
+
+.. automodule:: esta.phononBag.get_dynG
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.phononBag.intensity module
+-------------------------------
+
+.. automodule:: esta.phononBag.intensity
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.phononBag.ir\_intensity module
+-----------------------------------
+
+.. automodule:: esta.phononBag.ir_intensity
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.phononBag.read\_force\_constant module
+-------------------------------------------
+
+.. automodule:: esta.phononBag.read_force_constant
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: esta.phononBag
+   :members:
+   :undoc-members:
+   :show-inheritance:

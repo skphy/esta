@@ -5,10 +5,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>esta package &#8212; EStA 2.8.0 documentation</title>
+    <title>esta package &#8212; EStA 2.9.2 documentation</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet">
-  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,26 +19,37 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     
-  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link href="_static/style.css" rel="stylesheet" type="text/css">
 
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -46,24 +58,15 @@
     <div class="container-xl">
       <div class="row">
           
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
       
       
-      <img src="_static/esta_logo2.6.0_cropped.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">EStA 2.8.0 documentation</h1>
+      <h1 class="site-logo" id="site-title">EStA 2.9.2 documentation</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -73,7 +76,7 @@
     <div class="bd-toc-item active">
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  EStA1:
+  EStA:
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -95,7 +98,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  EStA2:
+  PACKAGES:
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -104,28 +107,46 @@
    esta.general package
   </a>
  </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  qeBag:
- </span>
-</p>
-<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="file_qeBag.html">
+  <a class="reference internal" href="file4.1.html">
    esta.qeBag package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="file4.2.html">
+   esta.vaspBag.inout package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="file4.3.html">
+   esta.grrmBag package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="file4.4.html">
+   esta.phonon package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="file4.5.html">
+   esta.transitionState package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="file4.6.html">
+   esta.surfReact package
   </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  grrmBag:
+  examples:
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="file_grrmBag.html">
-   esta.grrmBag package
+  <a class="reference internal" href="file_example.html">
+   Examples
   </a>
  </li>
 </ul>
@@ -137,80 +158,141 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="file3a.html">
-   Reference Sheet
+   Cheat Sheet
   </a>
  </li>
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
-<div class="sbt-scroll-pixel-helper"></div>
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            <div class="topbar-left">
-                
-                <label class="nav-toggle-button" for="__navigation">
-                    <div class="visually-hidden">Toggle navigation</div>
-                    <i class="fas fa-bars"></i>
-                </label>
-                
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
             </div>
             
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
 
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
         
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/esta.rst.txt"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.rst</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/esta.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
     </div>
 </div>
 
-            <!-- Source interaction buttons -->
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#subpackages">
    Subpackages
@@ -227,8 +309,28 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.dict_to_xlsx_csv">
+   esta.dict_to_xlsx_csv module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#module-esta.element">
    esta.element module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.element_data">
+   esta.element_data module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.extract_data">
+   esta.extract_data module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.interval2Range">
+   esta.interval2Range module
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -242,8 +344,13 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#module-esta.version">
-   esta.version module
+  <a class="reference internal nav-link" href="#module-esta.to_format">
+   esta.to_format module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.to_yaml">
+   esta.to_yaml module
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -253,12 +360,11 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>esta package</h1>
@@ -287,8 +393,28 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.dict_to_xlsx_csv">
+   esta.dict_to_xlsx_csv module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#module-esta.element">
    esta.element module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.element_data">
+   esta.element_data module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.extract_data">
+   esta.extract_data module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.interval2Range">
+   esta.interval2Range module
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -302,8 +428,13 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#module-esta.version">
-   esta.version module
+  <a class="reference internal nav-link" href="#module-esta.to_format">
+   esta.to_format module
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-esta.to_yaml">
+   esta.to_yaml module
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -317,13 +448,14 @@
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
   <div class="section" id="esta-package">
-<h1>esta package<a class="headerlink" href="#esta-package" title="Permalink to this headline">¶</a></h1>
+<h1>esta package<a class="headerlink" href="#esta-package" title="Permalink to this headline">#</a></h1>
 <div class="section" id="subpackages">
-<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">#</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="esta.abinitBag.html">esta.abinitBag package</a><ul>
@@ -340,6 +472,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="esta.dpe.html">esta.dpe package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="esta.dpe.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.dpe.html#esta-dpe-afir-module">esta.dpe.afir module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.dpe.html#esta-dpe-dpe-module">esta.dpe.dpe module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.dpe.html#module-contents">Module contents</a></li>
 </ul>
@@ -365,9 +498,12 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="esta.gaussianBag.html">esta.gaussianBag package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="esta.gaussianBag.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.gaussianBag.html#module-esta.gaussianBag.input_gaussian">esta.gaussianBag.input_gaussian module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.gaussianBag.html#module-esta.gaussianBag.input_gaussian_TODO">esta.gaussianBag.input_gaussian_TODO module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.gaussianBag.html#module-esta.gaussianBag.input_grrm">esta.gaussianBag.input_grrm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.gaussianBag.html#module-esta.gaussianBag.input_grrm_advv">esta.gaussianBag.input_grrm_advv module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.gaussianBag.html#module-esta.gaussianBag.output_gaussian_adv">esta.gaussianBag.output_gaussian_adv module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.gaussianBag.html#module-esta.gaussianBag.output_gaussian_adv0">esta.gaussianBag.output_gaussian_adv0 module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.gaussianBag.html#module-esta.gaussianBag">Module contents</a></li>
 </ul>
 </li>
@@ -378,10 +514,11 @@
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.add_vacuum_to_unit_cell">esta.general.add_vacuum_to_unit_cell module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.affine">esta.general.affine module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#esta-general-atomic-distance-density-module">esta.general.atomic_Distance_Density module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esta.general.html#id1">esta.general.atomic_distance_density module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#esta-general-average-module">esta.general.average module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.b">esta.general.b module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.bending_nanoribbon">esta.general.bending_nanoribbon module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.boltzmann">esta.general.boltzmann module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.cartAndSpherical">esta.general.cartAndSpherical module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#esta-general-charge-bader-module">esta.general.charge_bader module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.compare_scalar">esta.general.compare_scalar module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#esta-general-conjugate-gradient-module">esta.general.conjugate_gradient module</a></li>
@@ -409,13 +546,17 @@
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.manipulate">esta.general.manipulate module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.metric_tensor">esta.general.metric_tensor module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.min_trans_rot">esta.general.min_trans_rot module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.niggli_reduce">esta.general.niggli_reduce module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.operation">esta.general.operation module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.peak_position_and_average_1D">esta.general.peak_position_and_average_1D module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.pseudo_info">esta.general.pseudo_info module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.rate_const_IS0_TS1">esta.general.rate_const_IS0_TS1 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.read_force_constant">esta.general.read_force_constant module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.read_jmol">esta.general.read_jmol module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.read_kappa">esta.general.read_kappa module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.read_xyz">esta.general.read_xyz module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.reciprocal_lattice">esta.general.reciprocal_lattice module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.rename">esta.general.rename module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.reverse_array">esta.general.reverse_array module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.shift">esta.general.shift module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.shift0">esta.general.shift0 module</a></li>
@@ -425,6 +566,9 @@
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.symbol_from_atm_number">esta.general.symbol_from_atm_number module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.thermo">esta.general.thermo module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.thermo2">esta.general.thermo2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.unique_array">esta.general.unique_array module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.use_pbc_ASE">esta.general.use_pbc_ASE module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.xsf2cube">esta.general.xsf2cube module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.xyz">esta.general.xyz module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.xyz_grouped">esta.general.xyz_grouped module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.general.html#module-esta.general.xyz_images">esta.general.xyz_images module</a></li>
@@ -434,17 +578,15 @@
 <li class="toctree-l1"><a class="reference internal" href="esta.grrmBag.html">esta.grrmBag package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#submodules">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag.LUPINP">esta.grrmBag.LUPINP module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag.a">esta.grrmBag.a module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag.com2xyz">esta.grrmBag.com2xyz module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag.get_IRC_path">esta.grrmBag.get_IRC_path module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag.get_IRC_path0">esta.grrmBag.get_IRC_path0 module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag.get_LUP">esta.grrmBag.get_LUP module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag.get_LUPINP">esta.grrmBag.get_LUPINP module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag.get_LUP_profile_advv">esta.grrmBag.get_LUP_profile_advv module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag.get_nTS_nEQ_nPT">esta.grrmBag.get_nTS_nEQ_nPT module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag.input_grrm">esta.grrmBag.input_grrm module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#esta-grrmbag-input-grrm-adv-module">esta.grrmBag.input_grrm_adv module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag.input_grrm_advv">esta.grrmBag.input_grrm_advv module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#esta-grrmbag-input-grrm-advv0-module">esta.grrmBag.input_grrm_advv0 module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag.output_grrm">esta.grrmBag.output_grrm module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag.output_grrm_ITR_adv">esta.grrmBag.output_grrm_ITR_adv module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag.output_grrm_ITR_adv1">esta.grrmBag.output_grrm_ITR_adv1 module</a></li>
@@ -461,9 +603,8 @@
 <li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag.search_structure2_mod">esta.grrmBag.search_structure2_mod module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag.search_structure3">esta.grrmBag.search_structure3 module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag.to_location">esta.grrmBag.to_location module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag.to_location_adv">esta.grrmBag.to_location_adv module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag.write_xyz">esta.grrmBag.write_xyz module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag.write_xyz0">esta.grrmBag.write_xyz0 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag.write_xyz1">esta.grrmBag.write_xyz1 module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag.x">esta.grrmBag.x module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.grrmBag.html#module-esta.grrmBag">Module contents</a></li>
 </ul>
@@ -506,6 +647,30 @@
 <li class="toctree-l2"><a class="reference internal" href="esta.phonon.html#module-esta.phonon">Module contents</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="esta.phononBag.html">esta.phononBag package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="esta.phononBag.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="esta.phononBag.phonopy.html">esta.phononBag.phonopy package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="esta.phononBag.phonopy.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="esta.phononBag.phonopy.html#module-esta.phononBag.phonopy.eigen_vector">esta.phononBag.phonopy.eigen_vector module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="esta.phononBag.phonopy.html#module-esta.phononBag.phonopy.eigenvector">esta.phononBag.phonopy.eigenvector module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="esta.phononBag.phonopy.html#module-esta.phononBag.phonopy.get_phonon_disp_with_phdos">esta.phononBag.phonopy.get_phonon_disp_with_phdos module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="esta.phononBag.phonopy.html#esta-phononbag-phonopy-gruneisen-module">esta.phononBag.phonopy.gruneisen module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="esta.phononBag.phonopy.html#module-esta.phononBag.phonopy.phonon_dispersion">esta.phononBag.phonopy.phonon_dispersion module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="esta.phononBag.phonopy.html#module-esta.phononBag.phonopy.projected_phonon_dos">esta.phononBag.phonopy.projected_phonon_dos module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="esta.phononBag.phonopy.html#module-esta.phononBag.phonopy.read_force_constant">esta.phononBag.phonopy.read_force_constant module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="esta.phononBag.phonopy.html#module-esta.phononBag.phonopy">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="esta.phononBag.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.phononBag.html#esta-phononbag-get-dyng-module">esta.phononBag.get_dynG module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.phononBag.html#module-esta.phononBag.intensity">esta.phononBag.intensity module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.phononBag.html#module-esta.phononBag.ir_intensity">esta.phononBag.ir_intensity module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.phononBag.html#module-esta.phononBag.read_force_constant">esta.phononBag.read_force_constant module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.phononBag.html#module-esta.phononBag">Module contents</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="esta.plot.html">esta.plot package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="esta.plot.html#submodules">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.plot.html#esta-plot-atomic-distance-density-module">esta.plot.atomic_Distance_Density module</a></li>
@@ -513,16 +678,21 @@
 <li class="toctree-l2"><a class="reference internal" href="esta.plot.html#module-esta.plot.broken_axis_plot__most_done_only_axis_allignmnet_left">esta.plot.broken_axis_plot__most_done_only_axis_allignmnet_left module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.plot.html#esta-plot-charge-bader-module">esta.plot.charge_bader module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.plot.html#module-esta.plot.free_energy_2">esta.plot.free_energy_2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.plot.html#module-esta.plot.multiplot">esta.plot.multiplot module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.plot.html#module-esta.plot.plot2D">esta.plot.plot2D module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.plot.html#module-esta.plot.plot_2Ddata_NEB">esta.plot.plot_2Ddata_NEB module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.plot.html#module-esta.plot.plot_2Ddata_NEB_adv">esta.plot.plot_2Ddata_NEB_adv module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.plot.html#esta-plot-plot-bar-chart-bader-module">esta.plot.plot_bar_chart_bader module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.plot.html#module-esta.plot.plot_free_energy_vs_reaction_coordinate_adv">esta.plot.plot_free_energy_vs_reaction_coordinate_adv module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.plot.html#module-esta.plot.plot_pdos_Natoms_contribution_adv_both_spin_possible">esta.plot.plot_pdos_Natoms_contribution_adv_both_spin_possible module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.plot.html#module-esta.plot.plot_pdos_with_atoms_contribution_2plots_qe">esta.plot.plot_pdos_with_atoms_contribution_2plots_qe module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.plot.html#module-esta.plot.plot_xanes_">esta.plot.plot_xanes_ module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.plot.html#module-esta.plot.plotxy">esta.plot.plotxy module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.plot.html#module-esta.plot.plotxy0">esta.plot.plotxy0 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.plot.html#module-esta.plot.plotxy1">esta.plot.plotxy1 module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.plot.html#module-esta.plot.plotxy_adv">esta.plot.plotxy_adv module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.plot.html#module-esta.plot.plotxy_advv">esta.plot.plotxy_advv module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esta.plot.html#module-esta.plot.polar_plot">esta.plot.polar_plot module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.plot.html#module-esta.plot.tex_demo">esta.plot.tex_demo module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="esta.plot.html#rendering-math-equations-using-tex">Rendering math equations using TeX</a></li>
 </ul>
@@ -542,19 +712,13 @@
 <li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#submodules">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#module-esta.qeBag.23">esta.qeBag.23 module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#module-esta.qeBag.bands_kpts_band_gap">esta.qeBag.bands_kpts_band_gap module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#module-esta.qeBag.bands_kpts_band_gap0">esta.qeBag.bands_kpts_band_gap0 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#esta-qebag-gen-qeinput-copy1-module">esta.qeBag.gen_qeinput-Copy1 module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#module-esta.qeBag.gen_qeinput">esta.qeBag.gen_qeinput module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#esta-qebag-gen-qeinput0-module">esta.qeBag.gen_qeinput0 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#esta-qebag-gen-qeinput1-module">esta.qeBag.gen_qeinput1 module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#module-esta.qeBag.gen_qeinput2">esta.qeBag.gen_qeinput2 module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#module-esta.qeBag.gen_qeinput_adv">esta.qeBag.gen_qeinput_adv module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#module-esta.qeBag.gen_qeinput_adv0">esta.qeBag.gen_qeinput_adv0 module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#module-esta.qeBag.get_bands_kpts_band_gap_adv3">esta.qeBag.get_bands_kpts_band_gap_adv3 module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#module-esta.qeBag.get_output_qe">esta.qeBag.get_output_qe module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#module-esta.qeBag.get_xyz_from_qe_rlxout">esta.qeBag.get_xyz_from_qe_rlxout module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#module-esta.qeBag.neb_qe">esta.qeBag.neb_qe module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#esta-qebag-neb-qe0-module">esta.qeBag.neb_qe0 module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#module-esta.qeBag.neb_qe1">esta.qeBag.neb_qe1 module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#module-esta.qeBag.parse_pseudo">esta.qeBag.parse_pseudo module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#module-esta.qeBag.pspot_core_states">esta.qeBag.pspot_core_states module</a></li>
@@ -563,10 +727,8 @@
 <li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#module-esta.qeBag.read_write">esta.qeBag.read_write module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#module-esta.qeBag.read_write0">esta.qeBag.read_write0 module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#module-esta.qeBag.sum_pdos_atom">esta.qeBag.sum_pdos_atom module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#esta-qebag-x-read-write-module">esta.qeBag.x_read_write module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#module-esta.qeBag.xbands_kpts_band_gap">esta.qeBag.xbands_kpts_band_gap module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#module-esta.qeBag.xml_qe">esta.qeBag.xml_qe module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#esta-qebag-xml-qe0-module">esta.qeBag.xml_qe0 module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#module-esta.qeBag.zpe">esta.qeBag.zpe module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="esta.qeBag.html#module-esta.qeBag">Module contents</a></li>
 </ul>
@@ -653,14 +815,14 @@
 </div>
 </div>
 <div class="section" id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">#</a></h2>
 </div>
 <div class="section" id="module-esta.bonds">
-<span id="esta-bonds-module"></span><h2>esta.bonds module<a class="headerlink" href="#module-esta.bonds" title="Permalink to this headline">¶</a></h2>
+<span id="esta-bonds-module"></span><h2>esta.bonds module<a class="headerlink" href="#module-esta.bonds" title="Permalink to this headline">#</a></h2>
 <p>estimate the bond length between list of atoms</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="esta.bonds.get_bond_length">
-<span class="sig-prename descclassname"><span class="pre">esta.bonds.</span></span><span class="sig-name descname"><span class="pre">get_bond_length</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atomlist1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atomlist2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_property</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.bonds.get_bond_length" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">esta.bonds.</span></span><span class="sig-name descname"><span class="pre">get_bond_length</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atomlist1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atomlist2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">element_property</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.bonds.get_bond_length" title="Permalink to this definition">#</a></dt>
 <dd><p>estimate the bond length between list of atoms</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -679,11 +841,33 @@
 </dd></dl>
 
 </div>
+<div class="section" id="module-esta.dict_to_xlsx_csv">
+<span id="esta-dict-to-xlsx-csv-module"></span><h2>esta.dict_to_xlsx_csv module<a class="headerlink" href="#module-esta.dict_to_xlsx_csv" title="Permalink to this headline">#</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.dict_to_xlsx_csv.get_xlsx_csv_file">
+<span class="sig-prename descclassname"><span class="pre">esta.dict_to_xlsx_csv.</span></span><span class="sig-name descname"><span class="pre">get_xlsx_csv_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.dict_to_xlsx_csv.get_xlsx_csv_file" title="Permalink to this definition">#</a></dt>
+<dd><p>save data in xlsx and scv file from the input list of dictionaries
+containing data for each gaussian input file/ or similar files</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dictionaries</strong><strong>)</strong> (<em>data_list</em><em> (</em><em>list of</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>save data in the xlsx or csv format in file output.xlsx or output.csv</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>..note::</dt><dd><p>the input is list of dictionaries of equal number of eneteris</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
 <div class="section" id="module-esta.element">
-<span id="esta-element-module"></span><h2>esta.element module<a class="headerlink" href="#module-esta.element" title="Permalink to this headline">¶</a></h2>
+<span id="esta-element-module"></span><h2>esta.element module<a class="headerlink" href="#module-esta.element" title="Permalink to this headline">#</a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="esta.element.elements_data">
-<span class="sig-prename descclassname"><span class="pre">esta.element.</span></span><span class="sig-name descname"><span class="pre">elements_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atoms_symbols</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.element.elements_data" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">esta.element.</span></span><span class="sig-name descname"><span class="pre">elements_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atoms_symbols</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.element.elements_data" title="Permalink to this definition">#</a></dt>
 <dd><p>define Element object and then extract the elements properties</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -705,29 +889,86 @@ electron_affinity, etc</p>
 </dd></dl>
 
 </div>
+<div class="section" id="module-esta.element_data">
+<span id="esta-element-data-module"></span><h2>esta.element_data module<a class="headerlink" href="#module-esta.element_data" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="module-esta.extract_data">
+<span id="esta-extract-data-module"></span><h2>esta.extract_data module<a class="headerlink" href="#module-esta.extract_data" title="Permalink to this headline">#</a></h2>
+<p>extract data from a general file present in the array of columns.
+The text data present in the file is excluded</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.extract_data.data_from">
+<span class="sig-prename descclassname"><span class="pre">esta.extract_data.</span></span><span class="sig-name descname"><span class="pre">data_from</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.extract_data.data_from" title="Permalink to this definition">#</a></dt>
+<dd><p>extract column/s data from the file</p>
+<dl class="simple">
+<dt>filename: str</dt><dd><p>name of the file</p>
+</dd>
+<dt>columns: list of integers</dt><dd><p>columns from which the data to be extracted</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>data<span class="classifier">array</span></dt><dd><p>array data with n = no. of columns in in <cite>columns</cite> input</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.interval2Range">
+<span id="esta-interval2range-module"></span><h2>esta.interval2Range module<a class="headerlink" href="#module-esta.interval2Range" title="Permalink to this headline">#</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.interval2Range.get_range_int_from_intervals">
+<span class="sig-prename descclassname"><span class="pre">esta.interval2Range.</span></span><span class="sig-name descname"><span class="pre">get_range_int_from_intervals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_of_intervals</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.interval2Range.get_range_int_from_intervals" title="Permalink to this definition">#</a></dt>
+<dd><p>get range of integers from intervals (in the form of strings)</p>
+<blockquote>
+<div><p>list of intervals: e.g. [‘1’,’2-4’,’6-10’]
+note that elements of list are strings</p>
+</div></blockquote>
+<blockquote>
+<div><p>range of intervals: e.g. [1, 2, 3, 4, 6, 7, 8, 9, 10]
+note that elements are integers</p>
+</div></blockquote>
+</dd></dl>
+
+</div>
 <div class="section" id="module-esta.log">
-<span id="esta-log-module"></span><h2>esta.log module<a class="headerlink" href="#module-esta.log" title="Permalink to this headline">¶</a></h2>
+<span id="esta-log-module"></span><h2>esta.log module<a class="headerlink" href="#module-esta.log" title="Permalink to this headline">#</a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="esta.log.log_footer">
-<span class="sig-prename descclassname"><span class="pre">esta.log.</span></span><span class="sig-name descname"><span class="pre">log_footer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.log.log_footer" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">esta.log.</span></span><span class="sig-name descname"><span class="pre">log_footer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.log.log_footer" title="Permalink to this definition">#</a></dt>
 <dd><p>print a foote information  to the log.</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="esta.log.log_header">
-<span class="sig-prename descclassname"><span class="pre">esta.log.</span></span><span class="sig-name descname"><span class="pre">log_header</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.log.log_header" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">esta.log.</span></span><span class="sig-name descname"><span class="pre">log_header</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.log.log_header" title="Permalink to this definition">#</a></dt>
 <dd><p>print a header containing information about esta to the log.</p>
 </dd></dl>
 
 </div>
 <div class="section" id="esta-printlog-module">
-<h2>esta.printlog module<a class="headerlink" href="#esta-printlog-module" title="Permalink to this headline">¶</a></h2>
+<h2>esta.printlog module<a class="headerlink" href="#esta-printlog-module" title="Permalink to this headline">#</a></h2>
 </div>
-<div class="section" id="module-esta.version">
-<span id="esta-version-module"></span><h2>esta.version module<a class="headerlink" href="#module-esta.version" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-esta.to_format">
+<span id="esta-to-format-module"></span><h2>esta.to_format module<a class="headerlink" href="#module-esta.to_format" title="Permalink to this headline">#</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.to_format.to_format">
+<span class="sig-prename descclassname"><span class="pre">esta.to_format.</span></span><span class="sig-name descname"><span class="pre">to_format</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_array</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.to_format.to_format" title="Permalink to this definition">#</a></dt>
+<dd><p>convert numpy array data in matrix format(rank 2 array) or rank 1 array
+to csv or xlsx format</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.to_yaml">
+<span id="esta-to-yaml-module"></span><h2>esta.to_yaml module<a class="headerlink" href="#module-esta.to_yaml" title="Permalink to this headline">#</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.to_yaml.to_yaml">
+<span class="sig-prename descclassname"><span class="pre">esta.to_yaml.</span></span><span class="sig-name descname"><span class="pre">to_yaml</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dict_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_yaml</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.to_yaml.to_yaml" title="Permalink to this definition">#</a></dt>
+<dd><p>store the dictionary input into yaml file</p>
+</dd></dl>
+
 </div>
 <div class="section" id="module-esta">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-esta" title="Permalink to this headline">¶</a></h2>
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-esta" title="Permalink to this headline">#</a></h2>
 <p><strong>EStA (electronic structure analyzer) aka pytware for analyzing and calculating the electronic structure of molecules and materials.</strong></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -745,28 +986,34 @@ Some keywords are: lattice thermal transport in with and without defects;    ele
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
 <div class='prev-next-area'>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Sonu Kumar<br/>
+  
+      &copy; Copyright 2017-2022, Sonu Kumar.<br/>
+</p>
+        </footer>
+    </div>
     
-      By Sonu Kumar<br/>
-    
-        &copy; Copyright 2017-2021, Sonu Kumar.<br/>
-  </p>
-</footer>
-</main>
+</div>
 
 
       </div>
     </div>
   
-  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

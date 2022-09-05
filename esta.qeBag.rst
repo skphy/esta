@@ -20,42 +20,10 @@ esta.qeBag.bands\_kpts\_band\_gap module
    :undoc-members:
    :show-inheritance:
 
-esta.qeBag.bands\_kpts\_band\_gap0 module
------------------------------------------
-
-.. automodule:: esta.qeBag.bands_kpts_band_gap0
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-esta.qeBag.gen\_qeinput\-Copy1 module
--------------------------------------
-
-.. automodule:: esta.qeBag.gen_qeinput-Copy1
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 esta.qeBag.gen\_qeinput module
 ------------------------------
 
 .. automodule:: esta.qeBag.gen_qeinput
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-esta.qeBag.gen\_qeinput0 module
--------------------------------
-
-.. automodule:: esta.qeBag.gen_qeinput0
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-esta.qeBag.gen\_qeinput1 module
--------------------------------
-
-.. automodule:: esta.qeBag.gen_qeinput1
    :members:
    :undoc-members:
    :show-inheritance:
@@ -72,14 +40,6 @@ esta.qeBag.gen\_qeinput\_adv module
 -----------------------------------
 
 .. automodule:: esta.qeBag.gen_qeinput_adv
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-esta.qeBag.gen\_qeinput\_adv0 module
-------------------------------------
-
-.. automodule:: esta.qeBag.gen_qeinput_adv0
    :members:
    :undoc-members:
    :show-inheritance:
@@ -112,14 +72,6 @@ esta.qeBag.neb\_qe module
 -------------------------
 
 .. automodule:: esta.qeBag.neb_qe
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-esta.qeBag.neb\_qe0 module
---------------------------
-
-.. automodule:: esta.qeBag.neb_qe0
    :members:
    :undoc-members:
    :show-inheritance:
@@ -188,14 +140,6 @@ esta.qeBag.sum\_pdos\_atom module
    :undoc-members:
    :show-inheritance:
 
-esta.qeBag.x\_read\_write module
---------------------------------
-
-.. automodule:: esta.qeBag.x_read_write
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 esta.qeBag.xbands\_kpts\_band\_gap module
 -----------------------------------------
 
@@ -208,14 +152,6 @@ esta.qeBag.xml\_qe module
 -------------------------
 
 .. automodule:: esta.qeBag.xml_qe
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-esta.qeBag.xml\_qe0 module
---------------------------
-
-.. automodule:: esta.qeBag.xml_qe0
    :members:
    :undoc-members:
    :show-inheritance:

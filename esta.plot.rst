@@ -44,6 +44,14 @@ esta.plot.free\_energy\_2 module
    :undoc-members:
    :show-inheritance:
 
+esta.plot.multiplot module
+--------------------------
+
+.. automodule:: esta.plot.multiplot
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 esta.plot.plot2D module
 -----------------------
 
@@ -84,6 +92,14 @@ esta.plot.plot\_free\_energy\_vs\_reaction\_coordinate\_adv module
    :undoc-members:
    :show-inheritance:
 
+esta.plot.plot\_pdos\_Natoms\_contribution\_adv\_both\_spin\_possible module
+----------------------------------------------------------------------------
+
+.. automodule:: esta.plot.plot_pdos_Natoms_contribution_adv_both_spin_possible
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 esta.plot.plot\_pdos\_with\_atoms\_contribution\_2plots\_qe module
 ------------------------------------------------------------------
 
@@ -108,6 +124,22 @@ esta.plot.plotxy module
    :undoc-members:
    :show-inheritance:
 
+esta.plot.plotxy0 module
+------------------------
+
+.. automodule:: esta.plot.plotxy0
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.plot.plotxy1 module
+------------------------
+
+.. automodule:: esta.plot.plotxy1
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 esta.plot.plotxy\_adv module
 ----------------------------
 
@@ -120,6 +152,14 @@ esta.plot.plotxy\_advv module
 -----------------------------
 
 .. automodule:: esta.plot.plotxy_advv
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.plot.polar\_plot module
+----------------------------
+
+.. automodule:: esta.plot.polar_plot
    :members:
    :undoc-members:
    :show-inheritance:

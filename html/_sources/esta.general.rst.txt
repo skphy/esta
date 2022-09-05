@@ -44,14 +44,6 @@ esta.general.atomic\_Distance\_Density module
    :undoc-members:
    :show-inheritance:
 
-esta.general.atomic\_distance\_density module
----------------------------------------------
-
-.. automodule:: esta.general.atomic_distance_density
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 esta.general.average module
 ---------------------------
 
@@ -68,10 +60,26 @@ esta.general.b module
    :undoc-members:
    :show-inheritance:
 
+esta.general.bending\_nanoribbon module
+---------------------------------------
+
+.. automodule:: esta.general.bending_nanoribbon
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 esta.general.boltzmann module
 -----------------------------
 
 .. automodule:: esta.general.boltzmann
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.general.cartAndSpherical module
+------------------------------------
+
+.. automodule:: esta.general.cartAndSpherical
    :members:
    :undoc-members:
    :show-inheritance:
@@ -292,6 +300,14 @@ esta.general.min\_trans\_rot module
    :undoc-members:
    :show-inheritance:
 
+esta.general.niggli\_reduce module
+----------------------------------
+
+.. automodule:: esta.general.niggli_reduce
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 esta.general.operation module
 -----------------------------
 
@@ -324,10 +340,26 @@ esta.general.rate\_const\_IS0\_TS1 module
    :undoc-members:
    :show-inheritance:
 
+esta.general.read\_force\_constant module
+-----------------------------------------
+
+.. automodule:: esta.general.read_force_constant
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 esta.general.read\_jmol module
 ------------------------------
 
 .. automodule:: esta.general.read_jmol
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.general.read\_kappa module
+-------------------------------
+
+.. automodule:: esta.general.read_kappa
    :members:
    :undoc-members:
    :show-inheritance:
@@ -344,6 +376,14 @@ esta.general.reciprocal\_lattice module
 ---------------------------------------
 
 .. automodule:: esta.general.reciprocal_lattice
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.general.rename module
+--------------------------
+
+.. automodule:: esta.general.rename
    :members:
    :undoc-members:
    :show-inheritance:
@@ -416,6 +456,30 @@ esta.general.thermo2 module
 ---------------------------
 
 .. automodule:: esta.general.thermo2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.general.unique\_array module
+---------------------------------
+
+.. automodule:: esta.general.unique_array
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.general.use\_pbc\_ASE module
+---------------------------------
+
+.. automodule:: esta.general.use_pbc_ASE
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.general.xsf2cube module
+----------------------------
+
+.. automodule:: esta.general.xsf2cube
    :members:
    :undoc-members:
    :show-inheritance:

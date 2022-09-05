@@ -1,0 +1,635 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>esta.surfReact package &#8212; EStA 2.9.2 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Examples" href="file_example.html" />
+    <link rel="prev" title="esta.transitionState package" href="file4.5.html" />
+    <link href="_static/style.css" rel="stylesheet" type="text/css">
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">EStA 2.9.2 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  EStA:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="file1.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="file2.html">
+   EStA subfolders
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="file3.html">
+   Machine learning
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  PACKAGES:
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="file4.html">
+   esta.general package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="file4.1.html">
+   esta.qeBag package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="file4.2.html">
+   esta.vaspBag.inout package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="file4.3.html">
+   esta.grrmBag package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="file4.4.html">
+   esta.phonon package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="file4.5.html">
+   esta.transitionState package
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   esta.surfReact package
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  examples:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="file_example.html">
+   Examples
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Additional:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="file3a.html">
+   Cheat Sheet
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/file4.6.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   esta.surfReact package
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#submodules">
+     Submodules
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#module-esta.surfReact.conformer">
+     esta.surfReact.conformer module
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#module-esta.surfReact">
+     Module contents
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#esta-mlbag-package">
+   esta.mlBag package
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Module contents
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#esta-measure-package">
+   esta.measure package
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Submodules
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#module-esta.measure.atomic_units">
+     esta.measure.atomic_units module
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#module-esta.measure.conversion_factors">
+     esta.measure.conversion_factors module
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Module contents
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>esta.surfReact package</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   esta.surfReact package
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#submodules">
+     Submodules
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#module-esta.surfReact.conformer">
+     esta.surfReact.conformer module
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#module-esta.surfReact">
+     Module contents
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#esta-mlbag-package">
+   esta.mlBag package
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Module contents
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#esta-measure-package">
+   esta.measure package
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Submodules
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#module-esta.measure.atomic_units">
+     esta.measure.atomic_units module
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#module-esta.measure.conversion_factors">
+     esta.measure.conversion_factors module
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Module contents
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>surfReact package</strong>:
+Surface reaction tool for finding various atomic structures created using different operations … more
+documentation will be added later.</p>
+</div>
+<div class="section" id="esta-surfreact-package">
+<h1>esta.surfReact package<a class="headerlink" href="#esta-surfreact-package" title="Permalink to this headline">#</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="module-esta.surfReact.conformer">
+<span id="esta-surfreact-conformer-module"></span><h2>esta.surfReact.conformer module<a class="headerlink" href="#module-esta.surfReact.conformer" title="Permalink to this headline">#</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.surfReact.conformer.conf_surf">
+<span class="sig-prename descclassname"><span class="pre">esta.surfReact.conformer.</span></span><span class="sig-name descname"><span class="pre">conf_surf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xlattice</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.surfReact.conformer.conf_surf" title="Permalink to this definition">#</a></dt>
+<dd><p>find the conformers and store them in a
+specific place for further operation</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-esta.surfReact">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-esta.surfReact" title="Permalink to this headline">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>mlBag package</strong>:
+ML related algorithms are implemented such gaussian kernals, etc. Atomic and other descriptors creation is also
+possible provided DFT or low level calculation results are available.  Also, various other algorithms are
+called from the well known package sklearn package.</p>
+</div>
+</div>
+</div>
+<div class="section" id="esta-mlbag-package">
+<h1>esta.mlBag package<a class="headerlink" href="#esta-mlbag-package" title="Permalink to this headline">#</a></h1>
+<div class="section" id="id1">
+<h2>Module contents<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
+<span class="target" id="module-esta.mlBag"></span><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>unit conversion</strong>:
+measure contains unit conversion tool from one units to another units. Also conversion from SI units to
+atomic units (Hartree units) and atomic Rydberg units is implemented.</p>
+</div>
+</div>
+</div>
+<div class="section" id="esta-measure-package">
+<h1>esta.measure package<a class="headerlink" href="#esta-measure-package" title="Permalink to this headline">#</a></h1>
+<div class="section" id="id2">
+<h2>Submodules<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="module-esta.measure.atomic_units">
+<span id="esta-measure-atomic-units-module"></span><h2>esta.measure.atomic_units module<a class="headerlink" href="#module-esta.measure.atomic_units" title="Permalink to this headline">#</a></h2>
+<p>In electronic structure calculations, we generally employ “atomic units” (a.u.): here
+three basic units are the fundamental constants i.e. electronic charge,
+electron mass, and hbar (reduced Planck’s constatn).</p>
+<p>Here we do the conversion between atomic units (Hartree) and SI units,
+as well as conversion between Ryd atomic units and SI units.</p>
+<p>Generally atomic units (au) means Hartree units, atomic  Rydberg units (aru) means
+Rydberg units, and natural units means natural units.</p>
+<p>Right now conversion between atomic units and Si units supported.</p>
+<p>For details see: From: <a class="reference external" href="http://physics.nist.gov/constants">http://physics.nist.gov/constants</a>
+Also see the pdf file in zot. for details.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>AU or au: Atomic units:</p>
+<p>h_bar = me = e = 1   (The units in the electron’s world.)</p>
+<p>ARU or aru: Atomic Rydberg Units:</p>
+<p>Atomic Rydberg units (ARU) defined by: h_bar = 2me = e^2/2 = 1 (and 4*pi*epsiom = 1)</p>
+<p>So the unit for angular momentum is h_bar, the unit for mass is 2m and the unit for charge is e/√2 … CTM sk!!</p>
+<p>#————————————————————–
+1 Hartree = 2 Ryd</p>
+<p>! mass_e in au_ryd = 2 * mass_e in au-hartree unit, BUT energy in au_ryd = 1/2 * energy in au-hartree unit</p>
+<p>=&gt; mass in au-ryd is double than au-hartree</p>
+<p>=&gt; energy in au-ryd is half than in au-hartree
+#————————————————————–</p>
+<blockquote>
+<div><p>#=============================================================
+All Q-E codes use atomic Rydberg units</p>
+<p># i.e. energy in Ry, lengths in Bohr radii
+(or hbar=1, e^2=2, electron mass m=1/2) =&gt; charge on e=sqrt(2); mass of e = 1/2 in rau</p>
+<p># with the exception of CP that uses atomic Hartree units</p>
+<p>i.e. energy in Ha, lengths in Bohr radii
+(or hbar=1, e=1, electron mass m=1)
+#=============================================================</p>
+</div></blockquote>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>How it works:</p>
+<p>This module converts SI units to atomic units i.e. Hartree units (SI to Ryd is on the same line)!!</p>
+<p>e.g. how to convert 0.529 angstrom to au units?</p>
+<p>&gt;&gt;In [7]: import esta.measure.atomic_units as atu</p>
+<p>&gt;&gt;In [8]: 0.529e-10 * atu.length2au</p>
+<p>&gt;&gt;Out[8]: 0.9996651248084494</p>
+<p>&gt;&gt;In [8]: atu.ao2au <a href="#id3"><span class="problematic" id="id4">*</span></a>.529e-10</p>
+<p>&gt;&gt;Out[8]: 0.9996651248084494</p>
+<p>e.g. convert 82nN force to au units:</p>
+<p>&gt;&gt;In [16]: 82e-9 * atu.force2au</p>
+<p>&gt;&gt;Out[16]: 0.9953000213791756</p>
+</div>
+<p>author: skumar</p>
+<p>email : <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
+</div>
+<div class="section" id="module-esta.measure.conversion_factors">
+<span id="esta-measure-conversion-factors-module"></span><h2>esta.measure.conversion_factors module<a class="headerlink" href="#module-esta.measure.conversion_factors" title="Permalink to this headline">#</a></h2>
+<ol class="arabic simple">
+<li><p>library to get conversion factor to convert quantities from once to another</p></li>
+<li><p>get commanly use physical constants in physical and chemical sciences</p></li>
+</ol>
+<p>NOTE: ii —&gt; means –&gt; inverse</p>
+<dl>
+<dt>WARNING:  use scipy version &gt;=1.4.1</dt><dd><p>otherwise you get inaccurate constants after 6-7 decimal
+places</p>
+<blockquote>
+<div><p># with scipy version 1.1.0
+#bohr radius= 5.2917721067e-11 m ; less accurate
+#fac = cf.bohr2ang =0.529177210669 –&lt; – less accuaret and
+# as a result atoms pos and cell param are wrong after 6 dec     # places
+#In scipy version 1.4.1
+#bohr radiun = 5.29177210903e-11 m; is same as given
+# in nist data ; <a class="reference external" href="https://physics.nist.gov/cgi-bin/cuu/Value?bohrrada0">https://physics.nist.gov/cgi-bin/cuu/Value?bohrrada0</a>
+#Numerical value     5.291 772 109 03 x 10-11 m
+#fac = 0.529177210903
+# so take bohr2ang = 0.529177210903 if using lower version than required</p>
+</div></blockquote>
+</dd>
+</dl>
+<p>Author: S. Kumar,
+email:  <a class="reference external" href="mailto:sonukumar&#46;physics&#37;&#52;&#48;gmail&#46;com">sonukumar<span>&#46;</span>physics<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
+<dl class="py function">
+<dt class="sig sig-object py" id="esta.measure.conversion_factors.double">
+<span class="sig-prename descclassname"><span class="pre">esta.measure.conversion_factors.</span></span><span class="sig-name descname"><span class="pre">double</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#esta.measure.conversion_factors.double" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="id5">
+<h2>Module contents<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h2>
+<span class="target" id="module-esta.measure"></span></div>
+</div>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="file4.5.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">esta.transitionState package</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="file_example.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Examples</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Sonu Kumar<br/>
+  
+      &copy; Copyright 2017-2022, Sonu Kumar.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,69 @@
+esta.phononBag.phonopy package
+==============================
+
+Submodules
+----------
+
+esta.phononBag.phonopy.eigen\_vector module
+-------------------------------------------
+
+.. automodule:: esta.phononBag.phonopy.eigen_vector
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.phononBag.phonopy.eigenvector module
+-----------------------------------------
+
+.. automodule:: esta.phononBag.phonopy.eigenvector
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.phononBag.phonopy.get\_phonon\_disp\_with\_phdos module
+------------------------------------------------------------
+
+.. automodule:: esta.phononBag.phonopy.get_phonon_disp_with_phdos
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.phononBag.phonopy.gruneisen module
+---------------------------------------
+
+.. automodule:: esta.phononBag.phonopy.gruneisen
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.phononBag.phonopy.phonon\_dispersion module
+------------------------------------------------
+
+.. automodule:: esta.phononBag.phonopy.phonon_dispersion
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.phononBag.phonopy.projected\_phonon\_dos module
+----------------------------------------------------
+
+.. automodule:: esta.phononBag.phonopy.projected_phonon_dos
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.phononBag.phonopy.read\_force\_constant module
+---------------------------------------------------
+
+.. automodule:: esta.phononBag.phonopy.read_force_constant
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: esta.phononBag.phonopy
+   :members:
+   :undoc-members:
+   :show-inheritance:

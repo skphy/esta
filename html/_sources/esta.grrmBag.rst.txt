@@ -12,6 +12,14 @@ esta.grrmBag.LUPINP module
    :undoc-members:
    :show-inheritance:
 
+esta.grrmBag.a module
+---------------------
+
+.. automodule:: esta.grrmBag.a
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 esta.grrmBag.com2xyz module
 ---------------------------
 
@@ -24,14 +32,6 @@ esta.grrmBag.get\_IRC\_path module
 ----------------------------------
 
 .. automodule:: esta.grrmBag.get_IRC_path
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-esta.grrmBag.get\_IRC\_path0 module
------------------------------------
-
-.. automodule:: esta.grrmBag.get_IRC_path0
    :members:
    :undoc-members:
    :show-inheritance:
@@ -76,26 +76,10 @@ esta.grrmBag.input\_grrm module
    :undoc-members:
    :show-inheritance:
 
-esta.grrmBag.input\_grrm\_adv module
-------------------------------------
-
-.. automodule:: esta.grrmBag.input_grrm_adv
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 esta.grrmBag.input\_grrm\_advv module
 -------------------------------------
 
 .. automodule:: esta.grrmBag.input_grrm_advv
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-esta.grrmBag.input\_grrm\_advv0 module
---------------------------------------
-
-.. automodule:: esta.grrmBag.input_grrm_advv0
    :members:
    :undoc-members:
    :show-inheritance:
@@ -228,26 +212,18 @@ esta.grrmBag.to\_location module
    :undoc-members:
    :show-inheritance:
 
+esta.grrmBag.to\_location\_adv module
+-------------------------------------
+
+.. automodule:: esta.grrmBag.to_location_adv
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 esta.grrmBag.write\_xyz module
 ------------------------------
 
 .. automodule:: esta.grrmBag.write_xyz
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-esta.grrmBag.write\_xyz0 module
--------------------------------
-
-.. automodule:: esta.grrmBag.write_xyz0
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-esta.grrmBag.write\_xyz1 module
--------------------------------
-
-.. automodule:: esta.grrmBag.write_xyz1
    :members:
    :undoc-members:
    :show-inheritance:

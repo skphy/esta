@@ -1,0 +1,10 @@
+.. note:: **GRRM package**:
+    This package does processing of the GRRM sofware output files
+
+.. include:: ./esta.grrmBag.rst
+
+.. note:: **POINT GROUP package**:
+    This package does point group detection of molecules using C program
+
+.. include:: ./esta.pointGroup.rst
+

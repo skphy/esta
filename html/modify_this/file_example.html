@@ -1,0 +1,513 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examples &#8212; EStA 2.9.2 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link href="../_static/style.css" rel="stylesheet" type="text/css">
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">EStA 2.9.2 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  EStA:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../file1.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../file2.html">
+   EStA subfolders
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../file3.html">
+   Machine learning
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  PACKAGES:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../file4.html">
+   esta.general package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../file4.1.html">
+   esta.qeBag package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../file4.2.html">
+   esta.vaspBag.inout package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../file4.3.html">
+   esta.grrmBag package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../file4.4.html">
+   esta.phonon package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../file4.5.html">
+   esta.transitionState package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../file4.6.html">
+   esta.surfReact package
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  examples:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../file_example.html">
+   Examples
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Additional:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../file3a.html">
+   Cheat Sheet
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/modify_this/file_example.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Examples
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#use-aadhaar-class">
+     Use aadhaar class
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#use-vaspbag-class">
+     Use vaspBag class
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#use-qebag-class">
+     Use qeBag class
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#indices-and-tables">
+   Indices and tables
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Examples</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Examples
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#use-aadhaar-class">
+     Use aadhaar class
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#use-vaspbag-class">
+     Use vaspBag class
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#use-qebag-class">
+     Use qeBag class
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#indices-and-tables">
+   Indices and tables
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="section" id="examples">
+<h1>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">#</a></h1>
+<div class="section" id="use-aadhaar-class">
+<h2>Use aadhaar class<a class="headerlink" href="#use-aadhaar-class" title="Permalink to this headline">#</a></h2>
+<ol class="arabic">
+<li><p>import the aadhaar class</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">esta.general.aadhaar</span> <span class="k">as</span> <span class="nn">aadh</span>
+<span class="n">aad</span> <span class="o">=</span> <span class="n">aadh</span><span class="o">.</span><span class="n">Aadhaar</span><span class="p">()</span>
+<span class="n">aad</span><span class="o">.</span><span class="n">read_xyz</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;x.xyz&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="use-vaspbag-class">
+<h2>Use vaspBag class<a class="headerlink" href="#use-vaspbag-class" title="Permalink to this headline">#</a></h2>
+<ol class="arabic">
+<li><p>import the vasp class</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">esta.vaspBag.inout.crystal_lattice</span> <span class="k">as</span> <span class="nn">clatt</span>
+<span class="n">xlatt</span> <span class="o">=</span> <span class="n">clatt</span><span class="o">.</span><span class="n">Crystal_Lattice</span><span class="p">(</span><span class="s2">&quot;POSCAR&quot;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="o">./</span><span class="p">)</span>
+<span class="c1"># or xlatt=clatt.CrystalLattice()</span>
+<span class="n">xlatt</span><span class="o">.</span><span class="n">read_poscar</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atomic positions: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">xlatt</span><span class="o">.</span><span class="n">tau_cartesian</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;atomic positions in crystal coordinates: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">xlatt</span><span class="o">.</span><span class="n">tau_direct</span><span class="p">))</span>
+
+<span class="n">xlatt</span><span class="o">.</span><span class="n">get_cell_matrix</span>
+<span class="c1">#array([[7.35205746, 0.        , 0.        ],</span>
+<span class="c1">#       [3.67602873, 6.36706853, 0.        ],</span>
+<span class="c1">#       [3.67602873, 2.12235618, 6.00292978]])</span>
+
+<span class="n">xlatt</span><span class="o">.</span><span class="n">get_cell_vectors</span>
+<span class="c1">#(array([7.35205746, 0.        , 0.        ]),</span>
+<span class="c1"># array([3.67602873, 6.36706853, 0.        ]),</span>
+<span class="c1"># array([3.67602873, 2.12235618, 6.00292978]))</span>
+
+<span class="n">xlatt</span><span class="o">.</span><span class="n">LV1</span>
+<span class="c1">#array([7.35205746, 0.        , 0.        ])</span>
+
+<span class="n">xlatt</span><span class="o">.</span><span class="n">LV3</span>
+<span class="c1">#array([3.67602873, 2.12235618, 6.00292978])</span>
+
+<span class="n">xlatt</span><span class="o">.</span><span class="n">real_volume</span>
+<span class="c1">#281.0034678144921 in A^3</span>
+
+<span class="c1"># print each atom type</span>
+<span class="n">xlatt</span><span class="o">.</span><span class="n">get_each_atm_type</span>
+<span class="c1">#[1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]</span>
+
+<span class="c1"># print no. of atoms of each type</span>
+<span class="n">xlatt</span><span class="o">.</span><span class="n">get_natm_type</span>
+<span class="c1">#array([ 4,  4, 14])</span>
+
+<span class="o">*</span><span class="n">Similary</span> <span class="n">other</span> <span class="n">method</span> <span class="n">of</span> <span class="n">the</span> <span class="n">xlatt</span> <span class="nb">object</span> <span class="n">can</span> <span class="n">be</span> <span class="n">excessed</span><span class="p">;</span> <span class="n">currently</span> <span class="nb">all</span> <span class="n">available</span> <span class="n">methods</span> <span class="n">are</span><span class="p">:</span><span class="o">*</span>
+<span class="c1"># &#39;atm_type&#39;, &#39;each_atm_type&#39;, &#39;filename&#39;, &#39;get_all_atoms_labels&#39;, &#39;get_atm_type&#39;, &#39;get_cell_matrix&#39;,</span>
+<span class="c1"># &#39;get_cell_vectors&#39;, &#39;get_dispPOSCAR&#39;, &#39;get_each_atm_type&#39;, &#39;get_grouped_list&#39;, &#39;get_natm_type&#39;,</span>
+<span class="c1"># &#39;get_neach_type&#39;, &#39;get_poscar&#39;, &#39;get_rVolume&#39;, &#39;get_reciprocal_lattice&#39;, &#39;get_selectivePOSCAR&#39;,</span>
+<span class="c1"># &#39;get_unique_list&#39;, &#39;is_cartesian&#39;, &#39;is_crystal&#39;, &#39;is_selective_dynamics&#39;, &#39;l_SelectDynamics&#39;,</span>
+<span class="c1"># &#39;l_crystal&#39;, &#39;location&#39;, &#39;natm_type&#39;, &#39;natoms&#39;, &#39;read_poscar&#39;, &#39;real_volume&#39;, &#39;reciprocal_lattice&#39;,</span>
+<span class="c1"># &#39;tau_cartesian&#39;, &#39;tau_cartestain&#39;, &#39;tau_direct&#39;, &#39;to_cartesian&#39;, &#39;to_crystal&#39;</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="use-qebag-class">
+<h2>Use qeBag class<a class="headerlink" href="#use-qebag-class" title="Permalink to this headline">#</a></h2>
+<ol class="arabic">
+<li><p>generate intermediate atomic structures between reactant and product structures:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span>  <span class="nn">esta.vaspBag.inout.crystal_lattice</span> <span class="kn">import</span> <span class="n">CrystalLattice</span>
+<span class="kn">import</span> <span class="nn">esta.general.get_configs</span> <span class="k">as</span> <span class="nn">get_configs</span>
+
+<span class="n">output</span> <span class="o">=</span> <span class="n">CrystalLattice</span><span class="p">(</span><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;ach3oh_00_POSCAR&#39;</span><span class="p">,</span> <span class="n">location</span> <span class="o">=</span> <span class="s2">&quot;./&quot;</span><span class="p">)</span>
+<span class="n">output</span><span class="o">.</span><span class="n">get_poscar</span><span class="p">()</span>
+<span class="n">atompositions</span> <span class="o">=</span> <span class="n">output</span><span class="o">.</span><span class="n">tau_cartesian</span>
+
+<span class="n">output2</span> <span class="o">=</span> <span class="n">CrystalLattice</span><span class="p">(</span><span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;cxyz_POSCAR&#39;</span><span class="p">,</span> <span class="n">location</span> <span class="o">=</span> <span class="s2">&quot;./&quot;</span><span class="p">)</span>
+<span class="n">output2</span><span class="o">.</span><span class="n">get_poscar</span><span class="p">()</span>
+<span class="n">poscar_obj2</span> <span class="o">=</span> <span class="n">output2</span> <span class="c1">#.get_poscar()</span>
+<span class="n">atompositions2</span> <span class="o">=</span> <span class="n">output2</span><span class="o">.</span><span class="n">tau_cartesian</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="n">configurations</span> <span class="o">=</span> <span class="n">get_configs</span><span class="o">.</span><span class="n">get_atomic_configurations</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">atompositions</span><span class="p">,</span> <span class="n">atompositions2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">configurations</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="n">get_configs</span><span class="o">.</span><span class="n">get_poscar_images</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">poscar_obj</span><span class="p">,</span> <span class="n">poscar_obj2</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>similarly other components of EStA canbe excessed.</p>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">#</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="../genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="../py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="../search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Sonu Kumar<br/>
+  
+      &copy; Copyright 2017-2022, Sonu Kumar.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

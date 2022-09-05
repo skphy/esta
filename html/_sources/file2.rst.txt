@@ -21,6 +21,8 @@ EStA subfolders
     algorithms are also implemented such as GPR based on gaussian processes in the `mlBag`.
 
 
-
+.. Important::
+    Try to excess the aadhaar class in the general directory and then you can access atomic and poscar atoms 
+    informations. Also in vaspBag.inout, try to access the crystal lattice class for poscar file.
 
 

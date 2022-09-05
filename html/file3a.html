@@ -5,10 +5,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reference Sheet &#8212; EStA 2.8.0 documentation</title>
+    <title>Cheat Sheet &#8212; EStA 2.9.2 documentation</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet">
-  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,27 +19,38 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     
-  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="esta.general package" href="file4.html" />
+    <link rel="prev" title="Examples" href="file_example.html" />
     <link href="_static/style.css" rel="stylesheet" type="text/css">
 
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -47,24 +59,15 @@
     <div class="container-xl">
       <div class="row">
           
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
       
       
-      <img src="_static/esta_logo2.6.0_cropped.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">EStA 2.8.0 documentation</h1>
+      <h1 class="site-logo" id="site-title">EStA 2.9.2 documentation</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -74,7 +77,7 @@
     <div class="bd-toc-item active">
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  EStA1:
+  EStA:
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -96,13 +99,55 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  EStA2:
+  PACKAGES:
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="file4.html">
    esta.general package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="file4.1.html">
+   esta.qeBag package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="file4.2.html">
+   esta.vaspBag.inout package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="file4.3.html">
+   esta.grrmBag package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="file4.4.html">
+   esta.phonon package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="file4.5.html">
+   esta.transitionState package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="file4.6.html">
+   esta.surfReact package
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  examples:
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="file_example.html">
+   Examples
   </a>
  </li>
 </ul>
@@ -114,163 +159,235 @@
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Reference Sheet
+   Cheat Sheet
   </a>
  </li>
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
-<div class="sbt-scroll-pixel-helper"></div>
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            <div class="topbar-left">
-                
-                <label class="nav-toggle-button" for="__navigation">
-                    <div class="visually-hidden">Toggle navigation</div>
-                    <i class="fas fa-bars"></i>
-                </label>
-                
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
             </div>
             
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
 
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
         
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/file3a.rst.txt"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.rst</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/file3a.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
     </div>
 </div>
 
-            <!-- Source interaction buttons -->
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sheet-for-git-and-rst-documentation">
-   Sheet for Git and rst documentation
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Cheat Sheet
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#rst-commands">
-   rst commands
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#heading">
-     Heading
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sheet-for-git-and-rst-documentation">
+     Sheet for Git and rst documentation
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#inline-markup">
-     Inline markup
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rst-commands">
+     rst commands
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#heading">
+       Heading
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#inline-markup">
+       Inline markup
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bulleted-list">
+       Bulleted list
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#numbered-list">
+       Numbered list
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#nested-list">
+       Nested list
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#hyperlink">
+       Hyperlink
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#note">
+       Note
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#git-commands">
+     Git commands
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#bulleted-list">
-     Bulleted list
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dealing-with-the-working-tree">
+     Dealing with the Working Tree
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#numbered-list">
-     Numbered list
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#branches">
+     Branches
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#nested-list">
-     Nested list
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tags">
+     Tags
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#hyperlink">
-     Hyperlink
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#note">
-     Note
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-history-and-logs">
+     The History, and Logs
     </a>
    </li>
   </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#git-commands">
-   Git commands
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dealing-with-the-working-tree">
-   Dealing with the Working Tree
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#branches">
-   Branches
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tags">
-   Tags
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-history-and-logs">
-   The History, and Logs
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#indices-and-tables">
+   Indices and tables
   </a>
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Reference Sheet</h1>
+                <h1>Cheat Sheet</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -280,76 +397,88 @@
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sheet-for-git-and-rst-documentation">
-   Sheet for Git and rst documentation
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Cheat Sheet
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#rst-commands">
-   rst commands
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#heading">
-     Heading
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sheet-for-git-and-rst-documentation">
+     Sheet for Git and rst documentation
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#inline-markup">
-     Inline markup
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rst-commands">
+     rst commands
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#heading">
+       Heading
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#inline-markup">
+       Inline markup
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#bulleted-list">
+       Bulleted list
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#numbered-list">
+       Numbered list
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#nested-list">
+       Nested list
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#hyperlink">
+       Hyperlink
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#note">
+       Note
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#git-commands">
+     Git commands
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#bulleted-list">
-     Bulleted list
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dealing-with-the-working-tree">
+     Dealing with the Working Tree
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#numbered-list">
-     Numbered list
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#branches">
+     Branches
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#nested-list">
-     Nested list
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tags">
+     Tags
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#hyperlink">
-     Hyperlink
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#note">
-     Note
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-history-and-logs">
+     The History, and Logs
     </a>
    </li>
   </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#git-commands">
-   Git commands
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dealing-with-the-working-tree">
-   Dealing with the Working Tree
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#branches">
-   Branches
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tags">
-   Tags
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-history-and-logs">
-   The History, and Logs
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#indices-and-tables">
+   Indices and tables
   </a>
  </li>
 </ul>
@@ -358,67 +487,73 @@
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="section" id="reference-sheet">
-<h1>Reference Sheet<a class="headerlink" href="#reference-sheet" title="Permalink to this headline">¶</a></h1>
-<p>This sheet created for placing things at a single place.</p>
+  <div class="section" id="cheat-sheet">
+<h1>Cheat Sheet<a class="headerlink" href="#cheat-sheet" title="Permalink to this headline">#</a></h1>
+<p>This sheet created by me for placing things at a single place. Also, this is the link to my home
+page at git site <a class="reference external" href="https://skphy.github.io/aug20/">skumar_site</a>.</p>
 <div class="section" id="sheet-for-git-and-rst-documentation">
-<h2>Sheet for Git and rst documentation<a class="headerlink" href="#sheet-for-git-and-rst-documentation" title="Permalink to this headline">¶</a></h2>
+<h2>Sheet for Git and rst documentation<a class="headerlink" href="#sheet-for-git-and-rst-documentation" title="Permalink to this headline">#</a></h2>
 </div>
 <div class="section" id="rst-commands">
-<h2>rst commands<a class="headerlink" href="#rst-commands" title="Permalink to this headline">¶</a></h2>
+<h2>rst commands<a class="headerlink" href="#rst-commands" title="Permalink to this headline">#</a></h2>
 <div class="section" id="heading">
-<h3>Heading<a class="headerlink" href="#heading" title="Permalink to this headline">¶</a></h3>
+<h3>Heading<a class="headerlink" href="#heading" title="Permalink to this headline">#</a></h3>
 <blockquote>
-<div><p><cite>===========</cite> , <cite>————</cite>, <cite>~~~~~~~</cite>, ‘<strong>****</strong>’, <cite>^^^^^^^^^</cite></p>
+<div><p><cite>===========</cite> , <cite>————</cite>, <cite>~~~~~~~</cite>, <cite>********</cite>, <cite>^^^^^^^^^</cite></p>
 </div></blockquote>
 </div>
 <div class="section" id="inline-markup">
-<h3>Inline markup<a class="headerlink" href="#inline-markup" title="Permalink to this headline">¶</a></h3>
-<blockquote>
-<div><p><strong>text</strong>, <em>text</em>, <code class="docutils literal notranslate"><span class="pre">text</span></code></p>
-</div></blockquote>
+<h3>Inline markup<a class="headerlink" href="#inline-markup" title="Permalink to this headline">#</a></h3>
+<p><strong>text</strong>, <em>text</em>, <code class="docutils literal notranslate"><span class="pre">text</span></code></p>
 </div>
 <div class="section" id="bulleted-list">
-<h3>Bulleted list<a class="headerlink" href="#bulleted-list" title="Permalink to this headline">¶</a></h3>
+<h3>Bulleted list<a class="headerlink" href="#bulleted-list" title="Permalink to this headline">#</a></h3>
 <blockquote>
-<div><p>– this is a bullet 1.
-* this is a bullet 2, too.</p>
+<div><p>– this is a bullet 1.</p>
+<ul class="simple">
+<li><p>this is a bullet 2, too.</p></li>
+</ul>
 </div></blockquote>
 </div>
 <div class="section" id="numbered-list">
-<h3>Numbered list<a class="headerlink" href="#numbered-list" title="Permalink to this headline">¶</a></h3>
+<h3>Numbered list<a class="headerlink" href="#numbered-list" title="Permalink to this headline">#</a></h3>
 <blockquote>
-<div><p>#. number list 1
-1. number list 1, too.</p>
+<div><ol class="arabic simple">
+<li><p>number list 1</p></li>
+</ol>
+<ol class="arabic simple">
+<li><p>number list 1, too.</p></li>
+</ol>
 </div></blockquote>
 </div>
 <div class="section" id="nested-list">
-<h3>Nested list<a class="headerlink" href="#nested-list" title="Permalink to this headline">¶</a></h3>
+<h3>Nested list<a class="headerlink" href="#nested-list" title="Permalink to this headline">#</a></h3>
 <p>It  is also possible: just combine bullet list and indent the number list.</p>
 </div>
 <div class="section" id="hyperlink">
-<h3>Hyperlink<a class="headerlink" href="#hyperlink" title="Permalink to this headline">¶</a></h3>
-<blockquote>
-<div><p>this is the hyperlink to my site: <a class="reference external" href="https://skphy.github.io/aug20/">skphy site</a>.</p>
-</div></blockquote>
+<h3>Hyperlink<a class="headerlink" href="#hyperlink" title="Permalink to this headline">#</a></h3>
+<p>this is the hyperlink to my site: <a class="reference external" href="https://skphy.github.io/aug20/">skphy site</a>.</p>
 </div>
 <div class="section" id="note">
-<h3>Note<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h3>
-<blockquote>
-<div><p>this is a example of adding a note is the rst file</p>
-</div></blockquote>
+<h3>Note<a class="headerlink" href="#note" title="Permalink to this headline">#</a></h3>
+<p>this is a example of adding a note is the rst file</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>how to use these notes for understanding.</p>
+<p>These notes are kept here for the convenience, may be shifted to other page later on!!
+Similary instead of note, one may use also Tip, Exercise, Important, Warning, Danger, and so on.</p>
 </div>
-<p>Similary instead of Note use also Tip, Exercise, Important, Warning, Danger, and so on.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>These are notes are temporary and will be moves to other place in a short time.</p>
+</div>
 </div>
 </div>
 <div class="section" id="git-commands">
-<h2>Git commands<a class="headerlink" href="#git-commands" title="Permalink to this headline">¶</a></h2>
+<h2>Git commands<a class="headerlink" href="#git-commands" title="Permalink to this headline">#</a></h2>
 <p>These command are taken from <a class="reference external" href="https://gist.github.com/fogleman/">fogelman git-site</a>.</p>
 <p><strong>Clone a repository (GitHub)</strong></p>
 <p><code class="docutils literal notranslate"><span class="pre">`</span>
@@ -430,14 +565,20 @@
 <span class="pre">`</span></code></p>
 </div>
 <div class="section" id="dealing-with-the-working-tree">
-<h2>Dealing with the Working Tree<a class="headerlink" href="#dealing-with-the-working-tree" title="Permalink to this headline">¶</a></h2>
+<h2>Dealing with the Working Tree<a class="headerlink" href="#dealing-with-the-working-tree" title="Permalink to this headline">#</a></h2>
 <p><strong>Delete untracked files in your working tree</strong></p>
-<p><a href="#id1"><span class="problematic" id="id2">``</span></a>`
-git clean -f      # Remove untracked files</p>
-<p>git clean -f -d   # Also directories</p>
-<p>git clean -f -x   # Also ignored files</p>
-<p>git clean -f -X   # Just ignored files</p>
-<p><a href="#id3"><span class="problematic" id="id4">``</span></a><a href="#id5"><span class="problematic" id="id6">`</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">git</span> <span class="pre">clean</span> <span class="pre">-f</span>&#160;&#160;&#160;&#160;&#160; <span class="pre">#</span> <span class="pre">Remove</span> <span class="pre">untracked</span> <span class="pre">files</span>
+<span class="pre">`</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">git</span> <span class="pre">clean</span> <span class="pre">-f</span> <span class="pre">-d</span>&#160;&#160; <span class="pre">#</span> <span class="pre">Also</span> <span class="pre">directories</span>
+<span class="pre">`</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">git</span> <span class="pre">clean</span> <span class="pre">-f</span> <span class="pre">-x</span>&#160;&#160; <span class="pre">#</span> <span class="pre">Also</span> <span class="pre">ignored</span> <span class="pre">files</span>
+<span class="pre">`</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">git</span> <span class="pre">clean</span> <span class="pre">-f</span> <span class="pre">-X</span>&#160;&#160; <span class="pre">#</span> <span class="pre">Just</span> <span class="pre">ignored</span> <span class="pre">files</span>
+<span class="pre">`</span></code></p>
 <p><strong>Restore to the HEAD of your current branch</strong></p>
 <p>This is a good way to abort a merge in progress</p>
 <p><code class="docutils literal notranslate"><span class="pre">`</span>
@@ -449,7 +590,7 @@ git clean -f      # Remove untracked files</p>
 <span class="pre">`</span></code></p>
 </div>
 <div class="section" id="branches">
-<h2>Branches<a class="headerlink" href="#branches" title="Permalink to this headline">¶</a></h2>
+<h2>Branches<a class="headerlink" href="#branches" title="Permalink to this headline">#</a></h2>
 <p><strong>Delete a local branch</strong></p>
 <p><code class="docutils literal notranslate"><span class="pre">`</span>
 <span class="pre">git</span> <span class="pre">branch</span> <span class="pre">-d</span> <span class="pre">branchname</span>
@@ -460,7 +601,7 @@ git clean -f      # Remove untracked files</p>
 <span class="pre">`</span></code></p>
 </div>
 <div class="section" id="tags">
-<h2>Tags<a class="headerlink" href="#tags" title="Permalink to this headline">¶</a></h2>
+<h2>Tags<a class="headerlink" href="#tags" title="Permalink to this headline">#</a></h2>
 <p><strong>Create an annotated tag</strong></p>
 <p>Annotated tags are more rich than regular tags, and include date/author information.</p>
 <p><code class="docutils literal notranslate"><span class="pre">`</span>
@@ -472,46 +613,60 @@ git clean -f      # Remove untracked files</p>
 <span class="pre">`</span></code></p>
 </div>
 <div class="section" id="the-history-and-logs">
-<h2>The History, and Logs<a class="headerlink" href="#the-history-and-logs" title="Permalink to this headline">¶</a></h2>
+<h2>The History, and Logs<a class="headerlink" href="#the-history-and-logs" title="Permalink to this headline">#</a></h2>
 <p><strong>View the commit history, showing the status of files that changed</strong></p>
 <p><code class="docutils literal notranslate"><span class="pre">`</span>
 <span class="pre">git</span> <span class="pre">log</span> <span class="pre">--stat</span>
 <span class="pre">`</span></code></p>
 </div>
 </div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">#</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
 
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="file4.html" title="previous page">
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="file_example.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">esta.general package</p>
+            <p class="prev-next-title">Examples</p>
         </div>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Sonu Kumar<br/>
+  
+      &copy; Copyright 2017-2022, Sonu Kumar.<br/>
+</p>
+        </footer>
+    </div>
     
-      By Sonu Kumar<br/>
-    
-        &copy; Copyright 2017-2021, Sonu Kumar.<br/>
-  </p>
-</footer>
-</main>
+</div>
 
 
       </div>
     </div>
   
-  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

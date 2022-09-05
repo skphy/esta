@@ -1,0 +1,5 @@
+.. note:: **TransitionState package**:
+    Transition state finding using NEB and CI-NEB method for chemical reactions and diffusion processes.
+
+.. include:: ./esta.transitionState.rst
+

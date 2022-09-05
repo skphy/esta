@@ -42,7 +42,7 @@ here  :math:`\textbf{x}` is an input vector of dimensions, d (also knows as cova
 ML algorithms
 =============
 
-Here I am explaing the few basic, but important algorithm for understanding purpose. Later on, I will add working example.
+A few basics, but important algorithm for understanding purpose are given. Later on, working example will be provided,
 
 Gaussian Process
 ****************
@@ -75,8 +75,8 @@ Linear fitting
 Linear Regression
 -----------------
 
-A linear regression model just finds a linear relation between descriptors and the output. For more details see the book of Kevin Murphy or some other standard text 
-books on machine learning.
+A linear regression model just finds a linear relation between descriptors and the output. For more details see the book of mathematics of 
+machine learning and  book of Kevin Murphy or some other standard text books on machine learning.
 
 
 More information of these implementations, specifically GPR will be added latter.
@@ -86,4 +86,4 @@ References
 
 .. _`Rasmussen et al.`: http://www.gaussianprocess.org/gpml/ 
 .. _`gaussianprocess website`: http://www.gaussianprocess.org
-
+.. _`mathematics of machine learning`: https://mml-book.github.io/

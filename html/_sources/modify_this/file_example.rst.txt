@@ -1,0 +1,94 @@
+Examples
+============
+
+
+Use aadhaar class
+-------------------------
+#.
+    import the aadhaar class
+    ::
+     import esta.general.aadhaar as aadh
+     aad = aadh.Aadhaar()
+     aad.read_xyz(filename='x.xyz')
+
+
+Use vaspBag class
+-------------------------
+#.
+    import the vasp class
+    ::
+     import esta.vaspBag.inout.crystal_lattice as clatt
+     xlatt = clatt.Crystal_Lattice("POSCAR", ''./)
+     # or xlatt=clatt.CrystalLattice()
+     xlatt.read_poscar()
+     print('atomic positions: {}'.format(xlatt.tau_cartesian))
+     print('atomic positions in crystal coordinates: {}'.format(xlatt.tau_direct))
+
+     xlatt.get_cell_matrix
+     #array([[7.35205746, 0.        , 0.        ],
+     #       [3.67602873, 6.36706853, 0.        ],
+     #       [3.67602873, 2.12235618, 6.00292978]])
+
+     xlatt.get_cell_vectors
+     #(array([7.35205746, 0.        , 0.        ]),
+     # array([3.67602873, 6.36706853, 0.        ]),
+     # array([3.67602873, 2.12235618, 6.00292978]))
+
+     xlatt.LV1
+     #array([7.35205746, 0.        , 0.        ])
+
+     xlatt.LV3
+     #array([3.67602873, 2.12235618, 6.00292978])
+     
+     xlatt.real_volume
+     #281.0034678144921 in A^3
+
+     # print each atom type
+     xlatt.get_each_atm_type
+     #[1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+     
+     # print no. of atoms of each type
+     xlatt.get_natm_type
+     #array([ 4,  4, 14])
+
+     *Similary other method of the xlatt object can be excessed; currently all available methods are:*
+     # 'atm_type', 'each_atm_type', 'filename', 'get_all_atoms_labels', 'get_atm_type', 'get_cell_matrix',
+     # 'get_cell_vectors', 'get_dispPOSCAR', 'get_each_atm_type', 'get_grouped_list', 'get_natm_type',
+     # 'get_neach_type', 'get_poscar', 'get_rVolume', 'get_reciprocal_lattice', 'get_selectivePOSCAR',
+     # 'get_unique_list', 'is_cartesian', 'is_crystal', 'is_selective_dynamics', 'l_SelectDynamics',
+     # 'l_crystal', 'location', 'natm_type', 'natoms', 'read_poscar', 'real_volume', 'reciprocal_lattice',
+     # 'tau_cartesian', 'tau_cartestain', 'tau_direct', 'to_cartesian', 'to_crystal'
+
+
+Use qeBag class
+----------------
+#. 
+   generate intermediate atomic structures between reactant and product structures:
+   ::
+     import numpy as np
+     from  esta.vaspBag.inout.crystal_lattice import CrystalLattice
+     import esta.general.get_configs as get_configs
+     
+     output = CrystalLattice(filename = 'ach3oh_00_POSCAR', location = "./")
+     output.get_poscar()
+     atompositions = output.tau_cartesian
+     
+     output2 = CrystalLattice(filename = 'cxyz_POSCAR', location = "./")
+     output2.get_poscar()
+     poscar_obj2 = output2 #.get_poscar()
+     atompositions2 = output2.tau_cartesian
+     N = 9
+     configurations = get_configs.get_atomic_configurations(N, atompositions, atompositions2)
+     print(configurations[1])
+     
+     get_configs.get_poscar_images(N, poscar_obj, poscar_obj2)
+     
+similarly other components of EStA canbe excessed.
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+     

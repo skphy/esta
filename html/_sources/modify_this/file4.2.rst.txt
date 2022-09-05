@@ -1,0 +1,5 @@
+.. note:: **VASP package**:
+    This package does processing of the VASP sofware output files
+
+.. include:: ./esta.vaspBag.inout.rst
+

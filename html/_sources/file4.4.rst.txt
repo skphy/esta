@@ -1,0 +1,6 @@
+.. note:: **PHONON package**:
+    This package calculates the vibrational frequencies of atomic surfaces, interfaces, or molecules using 
+    finite displacement methodology. All the input files are automatically generated from the QE input files. 
+
+.. include:: ./esta.phonon.rst
+

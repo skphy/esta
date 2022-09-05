@@ -4,6 +4,14 @@ esta.dpe package
 Submodules
 ----------
 
+esta.dpe.afir module
+--------------------
+
+.. automodule:: esta.dpe.afir
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 esta.dpe.dpe module
 -------------------
 

@@ -1,0 +1,22 @@
+#sed -e 's/\..\/esta.general.rst/\.\/esta.general.rst/g' file4.rst 
+#sed -e 's/\..\/esta.qeBag.rst/\.\/esta.qeBag.rst/g' file4.1.rst 
+#sed -e 's/\..\/esta.vaspBag.inout.rst/\.\/esta.vaspBag.inout.rst/g' file4.2.rst 
+#sed -e 's/\..\/esta.grrmBag.rst/\.\/esta.grrmBag.rst/g' file4.3.rst 
+#sed -e 's/\..\/esta.pointGroup.rst/\.\/esta.pointGroup.rst/g' file4.3.rst 
+#sed -e 's/\..\/esta.phonon.rst/\.\/esta.phonon.rst/g' file4.4.rst 
+#sed -e 's/\..\/esta.transitionState.rst/\.\/esta.transitionState.rst/g' file4.5.rst 
+#sed -e 's/\..\/esta.surfReact.rst/\.\/esta.surfReact.rst/g' file4.6.rst 
+#sed -e 's/\..\/esta.mlBag.rst/\.\/esta.mlBag.rst/g' file4.6.rst 
+#sed -e 's/\..\/esta.measure.rst/\.\/esta.measure.rst/g' file4.6.rst 
+
+sed -i 's/\..\/esta.general.rst/\.\/esta.general.rst/g' file4.rst 
+sed -i 's/\..\/esta.qeBag.rst/\.\/esta.qeBag.rst/g' file4.1.rst 
+sed -i 's/\..\/esta.vaspBag.inout.rst/\.\/esta.vaspBag.inout.rst/g' file4.2.rst 
+sed -i 's/\..\/esta.grrmBag.rst/\.\/esta.grrmBag.rst/g' file4.3.rst 
+sed -i 's/\..\/esta.pointGroup.rst/\.\/esta.pointGroup.rst/g' file4.3.rst 
+sed -i 's/\..\/esta.phonon.rst/\.\/esta.phonon.rst/g' file4.4.rst 
+sed -i 's/\..\/esta.transitionState.rst/\.\/esta.transitionState.rst/g' file4.5.rst 
+sed -i 's/\..\/esta.surfReact.rst/\.\/esta.surfReact.rst/g' file4.6.rst 
+sed -i 's/\..\/esta.mlBag.rst/\.\/esta.mlBag.rst/g' file4.6.rst 
+sed -i 's/\..\/esta.measure.rst/\.\/esta.measure.rst/g' file4.6.rst 
+

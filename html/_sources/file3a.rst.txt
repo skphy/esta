@@ -1,9 +1,10 @@
-Reference Sheet
+Cheat Sheet
 ===============
 
 .. _skumar_site: https://skphy.github.io/aug20/
 
-This sheet created for placing things at a single place. 
+This sheet created by me for placing things at a single place. Also, this is the link to my home 
+page at git site skumar_site_.
 
 Sheet for Git and rst documentation
 -----------------------------------
@@ -14,39 +15,48 @@ rst commands
 Heading
 ^^^^^^^
 
- `===========` , `------------`, `~~~~~~~`, '********', `^^^^^^^^^`
+ `===========` , `------------`, `~~~~~~~`, `********`, `^^^^^^^^^`
 
 Inline markup
 ^^^^^^^^^^^^^
- **text**, *text*, ``text``
+
+**text**, *text*, ``text``
 
 Bulleted list
 ^^^^^^^^^^^^^
-    -- this is a bullet 1.
-    * this is a bullet 2, too.
+
+ -- this is a bullet 1.
+
+ * this is a bullet 2, too.
 
 Numbered list
 ^^^^^^^^^^^^^
+
     #. number list 1
+
     1. number list 1, too.
 
 Nested list
 ^^^^^^^^^^^
+
 It  is also possible: just combine bullet list and indent the number list.
 
 Hyperlink
 ^^^^^^^^^
- this is the hyperlink to my site: `skphy site <https://skphy.github.io/aug20/>`_.
+
+this is the hyperlink to my site: `skphy site <https://skphy.github.io/aug20/>`_.
 
 Note
 ^^^^
- this is a example of adding a note is the rst file
+
+this is a example of adding a note is the rst file
+
 .. note::
-   how to use these notes for understanding.
+    These notes are kept here for the convenience, may be shifted to other page later on!!
+    Similary instead of note, one may use also Tip, Exercise, Important, Warning, Danger, and so on.
 
-
-Similary instead of Note use also Tip, Exercise, Important, Warning, Danger, and so on.
-
+.. warning::
+    These are notes are temporary and will be moves to other place in a short time.
 
 Git commands
 ------------
@@ -68,17 +78,23 @@ git checkout branchname
 
 Dealing with the Working Tree
 -----------------------------
+
 **Delete untracked files in your working tree**
 
 ```
 git clean -f      # Remove untracked files
+```
 
+```
 git clean -f -d   # Also directories
+```
 
+```
 git clean -f -x   # Also ignored files
+```
 
+```
 git clean -f -X   # Just ignored files
-
 ```
 
 **Restore to the HEAD of your current branch**
@@ -128,8 +144,17 @@ git checkout [tagname]
 
 The History, and Logs
 ---------------------
+
 **View the commit history, showing the status of files that changed**
 
 ```
 git log --stat
 ```
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

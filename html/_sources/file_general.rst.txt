@@ -1,0 +1,21 @@
+general package
+===============
+
+.. note:: **General package**:
+    This package does general work related to files processing, manipulation, and many other
+    things to speed up the workflow.
+
+.. toctree::
+   :maxdepth: 4
+   :caption: esta.general:
+
+.. include:: ../esta.general.rst
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+

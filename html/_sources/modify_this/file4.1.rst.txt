@@ -1,0 +1,8 @@
+.. note:: **QE package**:
+    This package does processes the Quantum-Espresso files from different calculations, such as scf, relax, 
+    vc-relax, or other preprocessing outputs.
+
+    - The note contains all indented body elements.
+
+.. include:: ./esta.qeBag.rst
+

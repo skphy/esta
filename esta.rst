@@ -22,6 +22,7 @@ Subpackages
    esta.mlBag
    esta.orcaBag
    esta.phonon
+   esta.phononBag
    esta.plot
    esta.pointGroup
    esta.pymatgenBag
@@ -45,10 +46,42 @@ esta.bonds module
    :undoc-members:
    :show-inheritance:
 
+esta.dict\_to\_xlsx\_csv module
+-------------------------------
+
+.. automodule:: esta.dict_to_xlsx_csv
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 esta.element module
 -------------------
 
 .. automodule:: esta.element
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.element\_data module
+-------------------------
+
+.. automodule:: esta.element_data
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.extract\_data module
+-------------------------
+
+.. automodule:: esta.extract_data
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.interval2Range module
+--------------------------
+
+.. automodule:: esta.interval2Range
    :members:
    :undoc-members:
    :show-inheritance:
@@ -69,10 +102,18 @@ esta.printlog module
    :undoc-members:
    :show-inheritance:
 
-esta.version module
--------------------
+esta.to\_format module
+----------------------
 
-.. automodule:: esta.version
+.. automodule:: esta.to_format
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+esta.to\_yaml module
+--------------------
+
+.. automodule:: esta.to_yaml
    :members:
    :undoc-members:
    :show-inheritance:
