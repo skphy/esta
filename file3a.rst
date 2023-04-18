@@ -3,7 +3,7 @@ Cheat Sheet
 
 .. _skumar_site: https://sites.google.com/view/drkumar/
 
-This sheet created by me for placing things at a single place. Also, this is the link to my home 
+This sheet created for placing things at a single place. Also, this is the link to my home 
 page at git site skumar_site_.
 
 Sheet for Git and rst documentation
