@@ -59,7 +59,7 @@ A simple and concise presentation of function space usage in gaussian processes 
    :height: 75px
    :scale: 400%
    :alt: guassian process prior and posterior
-   :align: left
+   :align: bottom
    
    Figure: Gaussian process prior and posterior. "Panel (a) shows three functions drawn at random from a GP prior;
    the dots indicate values of y actually generated; the two other functions have (less
