@@ -37,7 +37,7 @@ release = '2.9.2'
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
-    "sphinx.ext.viewcode",
+    #"sphinx.ext.viewcode",
     "sphinx.ext.autosummary",
 ]
 
