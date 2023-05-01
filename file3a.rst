@@ -1,160 +1,161 @@
 Cheat Sheet
 ===============
 
-.. _skumar_site: https://sites.google.com/view/drkumar/
+.. code-block::
+	.. _skumar_site: https://sites.google.com/view/drkumar/
 
-This sheet created for placing things at a single place. Also, this is the link to my home 
-page at git site skumar_site_.
+	This sheet created for placing things at a single place. Also, this is the link to my home 
+	page at git site skumar_site_.
 
-Sheet for Git and rst documentation
------------------------------------
+	Sheet for Git and rst documentation
+	-----------------------------------
 
-rst commands
-------------
+	rst commands
+	------------
 
-Heading
-^^^^^^^
+	Heading
+	^^^^^^^
 
- `===========` , `------------`, `~~~~~~~`, `********`, `^^^^^^^^^`
+	 `===========` , `------------`, `~~~~~~~`, `********`, `^^^^^^^^^`
 
-Inline markup
-^^^^^^^^^^^^^
+	Inline markup
+	^^^^^^^^^^^^^
 
-**text**, *text*, ``text``
+	**text**, *text*, ``text``
 
-Bulleted list
-^^^^^^^^^^^^^
+	Bulleted list
+	^^^^^^^^^^^^^
 
- -- this is a bullet 1.
+	 -- this is a bullet 1.
 
- * this is a bullet 2, too.
+	 * this is a bullet 2, too.
 
-Numbered list
-^^^^^^^^^^^^^
+	Numbered list
+	^^^^^^^^^^^^^
 
-    #. number list 1
+	    #. number list 1
 
-    1. number list 1, too.
+	    1. number list 1, too.
 
-Nested list
-^^^^^^^^^^^
+	Nested list
+	^^^^^^^^^^^
 
-It  is also possible: just combine bullet list and indent the number list.
+	It  is also possible: just combine bullet list and indent the number list.
 
-Hyperlink
-^^^^^^^^^
+	Hyperlink
+	^^^^^^^^^
 
-this is the hyperlink to my site: `skphy site <https://skphy.github.io/aug20/>`_.
+	this is the hyperlink to my site: `skphy site <https://skphy.github.io/aug20/>`_.
 
-Note
-^^^^
+	Note
+	^^^^
 
-this is a example of adding a note is the rst file
+	this is a example of adding a note is the rst file
 
-.. note::
-    These notes are kept here for the convenience, may be shifted to other page later on!!
-    Similary instead of note, one may use also Tip, Exercise, Important, Warning, Danger, and so on.
+	.. note::
+	    These notes are kept here for the convenience, may be shifted to other page later on!!
+	    Similary instead of note, one may use also Tip, Exercise, Important, Warning, Danger, and so on.
 
-.. warning::
-    These are notes are temporary and will be moves to other place in a short time.
+	.. warning::
+	    These are notes are temporary and will be moves to other place in a short time.
 
-Git commands
-------------
+	Git commands
+	------------
 
-These command are taken from `fogelman git-site <https://gist.github.com/fogleman/>`_.
-
-
-**Clone a repository (GitHub)**
-
-```
-git clone git@github.com:username/repository.git
-```
-
-**Checkout a branch into your working tree**
-
-```
-git checkout branchname
-```
-
-Dealing with the Working Tree
------------------------------
-
-**Delete untracked files in your working tree**
-
-```
-git clean -f      # Remove untracked files
-```
-
-```
-git clean -f -d   # Also directories
-```
-
-```
-git clean -f -x   # Also ignored files
-```
-
-```
-git clean -f -X   # Just ignored files
-```
-
-**Restore to the HEAD of your current branch**
-
-This is a good way to abort a merge in progress
-
-```
-git reset --hard HEAD
-```
-
-**Restore a file from an old revision**
-
-```
-git checkout [commit_id] -- path/to/oldfile
-```
-
-Branches
---------
-
-**Delete a local branch**
-
-```
-git branch -d branchname
-```
-
-**Push a new branch for the first time**
-
-```
-git push -u origin branchname
-```
-
-Tags
-----
-**Create an annotated tag**
-
-Annotated tags are more rich than regular tags, and include date/author information.
-
-```
-git tag -a [tagname] -m "Tag Message..."
-```
-
-**Checkout a tag**
-
-```
-git checkout [tagname]
-```
-
-The History, and Logs
----------------------
-
-**View the commit history, showing the status of files that changed**
-
-```
-git log --stat
-```
+	These command are taken from `fogelman git-site <https://gist.github.com/fogleman/>`_.
 
 
-Indices and tables
-==================
+	**Clone a repository (GitHub)**
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+	```
+	git clone git@github.com:username/repository.git
+	```
+
+	**Checkout a branch into your working tree**
+
+	```
+	git checkout branchname
+	```
+
+	Dealing with the Working Tree
+	-----------------------------
+
+	**Delete untracked files in your working tree**
+
+	```
+	git clean -f      # Remove untracked files
+	```
+
+	```
+	git clean -f -d   # Also directories
+	```
+
+	```
+	git clean -f -x   # Also ignored files
+	```
+
+	```
+	git clean -f -X   # Just ignored files
+	```
+
+	**Restore to the HEAD of your current branch**
+
+	This is a good way to abort a merge in progress
+
+	```
+	git reset --hard HEAD
+	```
+
+	**Restore a file from an old revision**
+
+	```
+	git checkout [commit_id] -- path/to/oldfile
+	```
+
+	Branches
+	--------
+
+	**Delete a local branch**
+
+	```
+	git branch -d branchname
+	```
+
+	**Push a new branch for the first time**
+
+	```
+	git push -u origin branchname
+	```
+
+	Tags
+	----
+	**Create an annotated tag**
+
+	Annotated tags are more rich than regular tags, and include date/author information.
+
+	```
+	git tag -a [tagname] -m "Tag Message..."
+	```
+
+	**Checkout a tag**
+
+	```
+	git checkout [tagname]
+	```
+
+	The History, and Logs
+	---------------------
+
+	**View the commit history, showing the status of files that changed**
+
+	```
+	git log --stat
+	```
+
+
+	Indices and tables
+	==================
+
+	* :ref:`genindex`
+	* :ref:`modindex`
+	* :ref:`search`
