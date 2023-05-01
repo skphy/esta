@@ -12,8 +12,13 @@ possilbe.
 .. note:: **QE package**:
     This package does processes the Quantum-Espresso files from different calculations, such as scf, relax, 
     vc-relax, or other preprocessing outputs.
-
+    
     - The note contains all indented body elements.
+
+esta qeBag is capable of aoutomatic generation of input files for different type of calculations such as scf,
+relax, vc-relax, and post-processings. Only poscar file is needed as input. All information related to the 
+pseudo-potentials such USPP, PAW with LDA, GGA, and PBE_sol functional are automatically included in the 
+generated qe input file. So far there are 2 ways to automatically generate QE input files are implemented in EStA.
 
 .. include:: esta.qeBag.rst
 
