@@ -2,10 +2,10 @@
     This package does general work related to files processing, manipulation, and many other
     things to speed up the workflow.
 
-General package is growing with inclusion of many useful mathematical formulas as well as general 
-excecution framework to make life easy for you. It includes manipulation class to manipulate atomic
-strucutre in xyz and poscar files. Geometry related operations such affine transformation is also 
-possilbe.
+    - General package is growing with inclusion of many useful mathematical formulas as well as general 
+    excecution framework to make life easy for you. It includes manipulation class to manipulate atomic
+    strucutre in xyz and poscar files. Geometry related operations such affine transformation is also 
+    possilbe.
 
 .. include:: esta.general.rst
 
@@ -13,12 +13,10 @@ possilbe.
     This package does processes the Quantum-Espresso files from different calculations, such as scf, relax, 
     vc-relax, or other preprocessing outputs.
     
-    - The note contains all indented body elements.
-
-esta qeBag is capable of aoutomatic generation of input files for different type of calculations such as scf,
-relax, vc-relax, and post-processings. Only poscar file is needed as input. All information related to the 
-pseudo-potentials such USPP, PAW with LDA, GGA, and PBE_sol functional are automatically included in the 
-generated qe input file. So far there are 2 ways to automatically generate QE input files are implemented in EStA.
+    - qeBag is capable of aoutomatic generation of input files for different type of calculations such as scf,
+    relax, vc-relax, and post-processings. Only poscar file is needed as input. All information related to the 
+    pseudo-potentials such USPP, PAW with LDA, GGA, and PBE_sol functional are automatically included in the 
+    generated qe input file. So far there are 2 ways to automatically generate QE input files are implemented in EStA.
 
 .. include:: esta.qeBag.rst
 
