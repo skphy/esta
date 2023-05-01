@@ -1,7 +1,6 @@
 Cheat Sheet
 ===============
 
-.. code-block::
 	.. _skumar_site: https://sites.google.com/view/drkumar/
 
 	This sheet created for placing things at a single place. Also, this is the link to my home 
