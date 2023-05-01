@@ -22,7 +22,7 @@ sys.path.insert(0, os.path.abspath('..'))
 # -- Project information -----------------------------------------------------
 
 project = 'EStA'
-copyright = '2017-2022, Sonu Kumar'
+copyright = '2017-2023, Sonu Kumar'
 author = 'Sonu Kumar'
 
 # The full version, including alpha/beta/rc tags
@@ -37,7 +37,7 @@ release = '2.9.2'
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
-    #"sphinx.ext.viewcode",
+    "sphinx.ext.viewcode",
     "sphinx.ext.autosummary",
 ]
 
