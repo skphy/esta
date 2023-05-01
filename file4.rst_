@@ -2,6 +2,11 @@
     This package does general work related to files processing, manipulation, and many other
     things to speed up the workflow.
 
+General package is growing with inclusion of many useful mathematical formulas as well as general 
+excecution framework to make life easy for you. It includes manipulation class to manipulate atomic
+strucutre in xyz and poscar files. Geometry related operations such affine transformation is also 
+possilbe.
+
 .. include:: esta.general.rst
 
 .. note:: **QE package**:
