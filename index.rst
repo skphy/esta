@@ -20,35 +20,35 @@ It is written in python3, Fortran, and a small part in C. In the future, it will
 Features
 --------
 
-    *    automatic input generations for different electronic structure software
+    *    Automatic input generations for different electronic structure software
 
-    *    output analysis of different file formats such `XML`, `YAML`, `JSON`, and so on
+    *    Output analysis of different file formats such `XML`, `YAML`, `JSON`, and so on
 
-    *    vibrational and thermodynamical analysis of atomic and molecular systems
+    *    Vibrational and thermodynamical analysis of atomic and molecular systems
 
-    *    transition state finding using CI-NEB approach (interfaced with quantum espresso for the time being!!)
+    *    Transition state finding using CI-NEB approach (interfaced with quantum espresso for the time being!!)
 
-    *    zone center phonon calculations based on gradient input as implemented in the `phonon` directory (to be expanded to the whole zone)
+    *    Zone center phonon calculations based on gradient input as implemented in the `phonon` directory (to be expanded to the whole zone)
 
-    *    model calculations of lattice thermal conductivity (first principles calculation is experimental)
+    *    Model calculations of lattice thermal conductivity (first principles calculation is experimental)
 
-    *    tight binding calculation of bulk materials
+    *    Tight binding calculation of bulk materials
 
-    *    point group detection (space group detection and other stuff carried out using `Spglib`)
+    *    Point group detection (space group detection and other stuff carried out using `Spglib`)
 
-    *    lattice transformation analysis   
+    *    Lattice transformation analysis   
 
-    *    machine learning prediction of *important* physical property (more to add)
+    *    Machine learning prediction of *important* physical property (more to add)
 
-    *    easy to use unit conversion  routine; axsf, bxsf, cube files for visualizations, etc
+    *    Easy to use unit conversion  routine; axsf, bxsf, cube files for visualizations, etc
 
-    *    reading force constants from phonopy calculations at gamma or any other q-point and finding the force-constants ( :math:`\phi_{i,j})` between all pair of atoms or specific atom pairs along with respective distances; further exploration of stretching and bending force constants (:math:`\phi_{stretch}` and :math:`\phi_{bend}`)
+    *    Reading force constants from phonopy calculations at gamma or any other q-point and finding the force-constants ( :math:`\phi_{i,j})` between all pair of atoms or specific atom pairs along with respective distances; further exploration of stretching and bending force constants (:math:`\phi_{stretch}` and :math:`\phi_{bend}`)
 
     *    Infra-red and Raman-intensity calculations for periodic systems (automatically generates the needed files to compute the:math:`\epsilon_{\infty}`)
 
     *    Manipulation of atomic and crystal structures such as atomic substitution, deletion, extension, modulation, and inversion, etc.
 
-    *    more routines (interfacing of xTB with GRRM, minimization procedures, Fortran code for calculating static dielectric constant, mode oscillator strength, etc..)  is there, but to be added to esta package!!!
+    *    More routines (interfacing of xTB with GRRM, minimization procedures, Fortran code for calculating static dielectric constant, mode oscillator strength, etc..)  is there, but to be added to esta package!!!
 
 
 Author's research areas
