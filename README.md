@@ -11,13 +11,6 @@ It is written in python3, Fortran, and a small part in C. In the future, it will
 able to perform electronic structure calculations.
 
 
-A few additional topics are also covered:
-
-- an overview of theoretical results,
-- some other notable extensions,
-- bibliography.
-
-
 Some abilities of the software:
 ===============================
 
@@ -44,6 +37,12 @@ Some abilities of the software:
 - easy to use unit conversion routine; axsf, bxsf, cube files .. for visualizations etc
 
 - more routines (interfacing of xTB with GRRM, minimization procedures, Fortran code for calculating static dielectric constant, mode oscillator  strength etc..) are there, but to be added to esta package!!!
+
+* Additional topics:
+  - an overview of theoretical results
+  - some other notable extensions or dependencies
+* bibliography.
+
 
 
 
