@@ -1,13 +1,13 @@
-# esta version 2.8
+# esta version 2.9.3
 
-Copyright 2017-2022 Sonu Kumar
+Copyright 2017-2022, 2022-2024 Sonu Kumar
 
 
 "EStA" software package for analyzing, pre-processing, and post-processing 
 data from different software packages such as vasp, quantum-espresso, gaussian, 
-GRRM, xTB, and so on. It can automatically generate input files for vasp, 
-quantum-esspresso, and other codes as well can do some model calculations. 
-It is written in python3, Fotran90, and some part in C. In future, it will be 
+grrm, siesta, xtb, and so on. It can automatically generate input files for vasp, 
+quantum-espresso, gaussian, xtb, orca, siesta, and other codes as well can do some model calculations. 
+It is written in python3, Fortran, and a small part in C. In the future, it will be 
 able to perform electronic structure calculations.
 
 
