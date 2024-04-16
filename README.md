@@ -38,10 +38,10 @@ Some abilities of the software:
 
 - more routines (interfacing of xTB with GRRM, minimization procedures, Fortran code for calculating static dielectric constant, mode oscillator  strength etc..) are there, but to be added to esta package!!!
 
-* Additional topics:
+# Additional topics:
   - an overview of theoretical results
   - some other notable extensions or dependencies
-* bibliography.
+  - bibliography.
 
 
 
