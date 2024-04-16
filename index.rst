@@ -18,7 +18,7 @@ It is written in python3, Fortran, and a small part in C. In the future, it will
 
 
 Features
---------
+=========
 
     *    Automatic input generations for different electronic structure software
 
@@ -52,7 +52,8 @@ Features
 
 
 Author's research areas
-------------------------
+=======================
+
 
 **thermoelectrics, heterogeneous catalysis, homogeneous catalysis, defects, phonons, and  machine learning**
 
