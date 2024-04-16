@@ -54,8 +54,8 @@ Features
 Author's research areas
 =======================
 
-
 **thermoelectrics, heterogeneous catalysis, homogeneous catalysis, defects, phonons, and  machine learning**
+
 
 .. toctree::
    :maxdepth: 4
